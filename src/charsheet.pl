@@ -2,6 +2,9 @@
 
 /** <module> Print character sheets in glorious ASCII.
 
+The ASCII may be glorious but composing strings with formatting
+procedures must always suck so so much.
+
 */
 
 %!      pad_length(?Where,?Pad) is semidet.
@@ -54,8 +57,8 @@ print_attributes(Id):-
         ,pairs_keys_values(FRs,_,[Sp,Sk,Str,Sta,Sm,Ch,Ke,Pa])
         ,format('╠►Attributes◄~|~`═t~79+╣▓~n',[])
         ,format('║ ┌~|~`─t~87+┐ ║▓~n')
-        ,format('║ │ □ Speed.....:[__~w%] □ Skill....:[__~w%] □ Strength....:[__~w%] □ Stamina....:[__~w%] │ ║▓~n', [Sp,Sk,Str,Sta])
-        ,format('║ │ □ Smarts....:[__~w%] □ Charms...:[__~w%] □ Ken.........:[__~w%] □ Passions...:[__~w%] │ ║▓~n',[Sm,Ch,Ke,Pa])
+        ,format('║ │ □ Speed.....:[~|~`_t~w~4+%] □ Skill....:[~|~`_t~w~4+%] □ Strength....:[~|~`_t~w~4+%] □ Stamina....:[~|~`_t~w~4+%] │ ║▓~n', [Sp,Sk,Str,Sta])
+        ,format('║ │ □ Smarts....:[~|~`_t~w~4+%] □ Charms...:[~|~`_t~w~4+%] □ Ken.........:[~|~`_t~w~4+%] □ Passions...:[~|~`_t~w~4+%] │ ║▓~n',[Sm,Ch,Ke,Pa])
         ,format('║ └<^XP>────────────────<^XP>───────────────<^XP>──────────────────<^XP>──────────────────┘ ║▓~n').
 
 
@@ -70,10 +73,11 @@ print_combat_stats(Id):-
         ,pairs_keys_values(FRs,_,[Init,TR,SR,Ws])
         ,format('╠►Combat Stats◄~|~`═t~77+╣▓~n',[])
         ,format('║┌[Condition]~|~`─t~14+<Rules Reminder>~|~`─t~47+┐ ║▓~n',[])
-        ,format('║│ □ Initiative...:[__~w%] (Match/Beat to start Combat in Holding/Recoiling Disposition). │ ║▓~n',[Init])
-        ,format('║│ □ Threat Rate..:[__~w%] (Match/Beat Attacker''s TR to Hit/Miss Target)................. │ ║▓~n',[TR])
-        ,format('║│ □ Survival Rate:[__~w%] (Match/Beat Target''s SR to Hit/Miss with Base/Special Attack). │ ║▓~n',[SR])
-        ,format('║│ □ Wounds/Max...:[__/_~w] (1 Wound = 1 Shift Down. When Wounds ≥ Max, character dies)... │ ║▓~n',[Ws])
+        ,format('║│ □ Initiative...:[~|~`_t~w~4+%] (Match/Beat to start Combat in Holding/Recoiling Disposition). │ ║▓~n',[Init])
+        ,format('║│ □ Threat Rate..:[~|~`_t~w~4+%] (Match/Beat Attacker''s TR to Hit/Miss Target)................. │ ║▓~n',[TR])
+        ,format('║│ □ Survival Rate:[~|~`_t~w~4+%] (Match/Beat Target''s SR to Hit/Miss with Base/Special Attack). │ ║▓~n',[SR])
+        %,format('║│ □ Wounds/Max...:[__/_~w] (1 Wound = 1 Shift Down. When Wounds ≥ Max, character dies)... │ ║▓~n',[Ws])
+        ,format('║│ □ Wounds/Max...:[__/~|~`_t~w~2+] (1 Wound = 1 Shift Down. When Wounds ≥ Max, character dies)... │ ║▓~n',[Ws])
 	,format('║│ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧  │ ║▓~n',[])
         ,format('║├─<Disposition Track>────────────────────────────────────────────────────────────────────┤ ║▓~n',[])
 	,format('║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓~n',[])
@@ -176,11 +180,11 @@ print_abilities(Id):-
                 ,[Car,Fly,Swa,Ven,Web])
 	,format('╠►Abilities◄════════════════════════════════════════════════════════════════════════════════╣▓~n',[])
         ,format('║┌[Specific Abilities]────────┐┌[Common Abilities]────────────────────────────────────────┐ ║▓~n',[])
-        ,format('║│ Carapace..........:[__~w%] ││ □ Construction.....:[__~w%] □ Hunting...........:[__~w%] │ ║▓~n',[Car,Con,Hun])
-        ,format('║│ Flying............:[__~w%] ││ □ Eusociology......:[__~w%] □ Leadership........:[__~w%] │ ║▓~n',[Fly,Eus,Lea])
-        ,format('║│ Swarming..........:[__~w%] ││ □ Exploration......:[__~w%] □ Perception........:[__~w%] │ ║▓~n',[Swa,Exp,Per])
-        ,format('║│ Venomous..........:[__~w%] ││ □ Foraging.........:[__~w%] □ Signalling........:[__~w%] │ ║▓~n',[Ven,For,Sig])
-        ,format('║│ Web Weaving.......:[__~w%] ││ □ Healing..........:[__~w%] □ Sneaking..........:[__~w%] │ ║▓~n',[Web,Hea,Sne])
+        ,format('║│ Carapace..........:[~|~`_t~w~4+%] ││ □ Construction.....:[~|~`_t~w~4+%] □ Hunting...........:[~|~`_t~w~4+%] │ ║▓~n',[Car,Con,Hun])
+        ,format('║│ Flying............:[~|~`_t~w~4+%] ││ □ Eusociology......:[~|~`_t~w~4+%] □ Leadership........:[~|~`_t~w~4+%] │ ║▓~n',[Fly,Eus,Lea])
+        ,format('║│ Swarming..........:[~|~`_t~w~4+%] ││ □ Exploration......:[~|~`_t~w~4+%] □ Perception........:[~|~`_t~w~4+%] │ ║▓~n',[Swa,Exp,Per])
+        ,format('║│ Venomous..........:[~|~`_t~w~4+%] ││ □ Foraging.........:[~|~`_t~w~4+%] □ Signalling........:[~|~`_t~w~4+%] │ ║▓~n',[Ven,For,Sig])
+        ,format('║│ Web Weaving.......:[~|~`_t~w~4+%] ││ □ Healing..........:[~|~`_t~w~4+%] □ Sneaking..........:[~|~`_t~w~4+%] │ ║▓~n',[Web,Hea,Sne])
         ,format('║└────────────────────────────┘└<^XP>───────────────────────<^XP>─────────────────────────┘ ║▓~n',[]).
 
 
@@ -207,14 +211,15 @@ print_effects_inventory(Id):-
         ,atom_length(Nm, N)
         ,Pad is 30 - N
         ,format('║┌[Effects]───────────────────────────────────┐┌[Inventory]───────────────────────────────┐ ║▓~n',[])
-        ,format('║│ ○ Agony....:[__~w%] ○ Immobilised.:[__~w%] ││ ○ ~w~|~`_t~*+:[__~w%] │ ║▓~n',[Ago,Imm,Nm,Pad,R])
-        ,format('║│ ○ Bleeding.:[__~w%] ○ Infected....:[__~w%] ││ ○ ______________________________:[____%] │ ║▓~n',[Ble,Inf])
-        ,format('║│ ○ Blind....:[__~w%] ○ Paralysed...:[__~w%] ││ ○ ______________________________:[____%] │ ║▓~n',[Bli,Par])
-        ,format('║│ ○ Charmed..:[__~w%] ○ Poisoned....:[__~w%] ││ ○ ______________________________:[____%] │ ║▓~n',[Cha,Poi])
-        ,format('║│ ○ Confused.:[__~w%] ○ Stunned.....:[__~w%] ││ ○ ______________________________:[____%] │ ║▓~n',[Con,Stu])
+        ,format('║│ ○ Agony....:[~|~`_t~w~4+%] ○ Immobilised.:[~|~`_t~w~4+%] ││ ○ ~w~|~`_t~*+:[~|~`_t~w~4+%] │ ║▓~n',[Ago,Imm,Nm,Pad,R])
+        ,format('║│ ○ Bleeding.:[~|~`_t~w~4+%] ○ Infected....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Ble,Inf])
+        %,format('║│ ○ Blind....:[~|~`_t~w~4+%] ○ Paralysed...:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Bli,Par])
+        ,format('║│ ○ Blind....:[~|~`_t~w~4+%] ○ Paralysed...:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Bli,Par])
+        ,format('║│ ○ Charmed..:[~|~`_t~w~4+%] ○ Poisoned....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Cha,Poi])
+        ,format('║│ ○ Confused.:[~|~`_t~w~4+%] ○ Stunned.....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Con,Stu])
         ,format('║└<^Applies>──────────<^Applies>──────────────┘└<^Edible>─────────────────────────────────┘ ║▓~n',[])
         ,format('╚═══════════════════════════════════════════════════════════════════════════════════════════╝▓~n',[])
         ,format(' ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀~n',[])
         .
 
-
+%~|~`_t~w~2+
