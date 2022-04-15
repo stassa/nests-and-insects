@@ -1,5 +1,6 @@
 :-module(class, [base_wounds/1
                 ,class_attributes/3
+                ,attribute_modifiers/3
                 ,condition_modifiers/3
                 ,class_specific_ability/3
                 ,common_ability_modifiers/3
@@ -41,26 +42,30 @@ class_attributes(wasp,speed,60).
 class_attributes(wasp,smarts,25).
 
 
+%!      attribute_modifiers(?Class,?Attribute,?Modifier) is semidet.
+%
+%       Atribute Modifiers by Class.
+%
+attribute_modifiers(scorpion,stamina,+5).
+attribute_modifiers(spider,smarts,+5).
+attribute_modifiers(wasp,passions,+5).
+
+
 %!      condition_modifiers(?Class, ?Attribute, ?Modifier) is semidet.
 %
-%       Attribute Modifiers by Class.
-%
-%       @tbd These are modifiers for Attributes _and_ Conditions.
+%       Condition Modifiers by Class.
 %
 % Scorpion
-condition_modifiers(scorpion,stamina,+5).
 condition_modifiers(scorpion,init,+5).
 condition_modifiers(scorpion,tr,+5).
 condition_modifiers(scorpion,sr,+5).
 condition_modifiers(scorpion,wounds,+1).
 % Spider
-condition_modifiers(spider,smarts,+5).
 condition_modifiers(spider,init,+10).
 condition_modifiers(spider,tr,-5).
 condition_modifiers(spider,sr,-5).
 condition_modifiers(spider,wounds,+0).
 % Wasp
-condition_modifiers(wasp,passions,+5).
 condition_modifiers(wasp,init,+15).
 condition_modifiers(wasp,tr,+10).
 condition_modifiers(wasp,sr,+0).

@@ -1,5 +1,6 @@
 :-module(chargen, [class_character/2
                   ,features/3
+                  ,attribute/3
                   ,initiative/2
                   ,threat_rate/2
                   ,survival_rate/2
@@ -91,8 +92,7 @@ features(Id,F,Fs):-
 %
 attributes(C,As):-
         findall(A-R
-               ,(A_ =.. [attribute,A,R]
-                ,C:A_)
+               ,attribute(C,A,R)
                ,As).
 
 
@@ -214,6 +214,19 @@ starting_inventory(C,Is):-
                ,class_inventory(C,I,R)
                ,Is).
 
+
+
+%!      attribute(+Class,+Attribute,-Rating) is det.
+%
+%       Generate a Class' Attribute Rating.
+%
+attribute(C,A,R):-
+        A_ =.. [attribute,A,R_]
+        ,C:A_
+        ,(   class:attribute_modifiers(C,A,M)
+         ->  R is R_ + M
+         ;   R = R_
+         ).
 
 
 %!      initiative(+Class,-Initiative) is det.
@@ -378,8 +391,7 @@ attributes_mean(C,As,M):-
 attributes_ratings(C,As,Rs):-
         findall(R
                ,(member(A,As)
-                ,A_ =.. [attribute,A,R]
-                ,C:A_
+                ,attribute(C,A,R)
                 )
                ,Rs).
 
