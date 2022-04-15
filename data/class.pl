@@ -8,6 +8,9 @@
                 ,class_inventory/3
                 ]).
 
+:-use_module(ants).
+:-use_module(beetle).
+:-use_module(ladybug).
 :-use_module(scorpion).
 :-use_module(spider).
 :-use_module(wasp).
@@ -31,6 +34,15 @@ base_wounds(3).
 %
 %       The Strong and Weak Attributes of a Class.
 %
+% Ants
+class_attributes(ants,ken,60).
+class_attributes(ants,passions,25).
+% Beetle
+class_attributes(beetle,strength,60).
+class_attributes(beetle,speed,25).
+% Ladybug
+class_attributes(ladybug,skill,60).
+class_attributes(ladybug,charms,25).
 % Scorpion
 class_attributes(scorpion,passions,60).
 class_attributes(scorpion,skill,25).
@@ -46,6 +58,9 @@ class_attributes(wasp,smarts,25).
 %
 %       Atribute Modifiers by Class.
 %
+attribute_modifiers(ants,skill,+5).
+attribute_modifiers(beetle,stamina,+10).
+attribute_modifiers(ladybug,ken,+5).
 attribute_modifiers(scorpion,stamina,+5).
 attribute_modifiers(spider,smarts,+5).
 attribute_modifiers(wasp,passions,+5).
@@ -55,6 +70,21 @@ attribute_modifiers(wasp,passions,+5).
 %
 %       Condition Modifiers by Class.
 %
+% Ants
+condition_modifiers(ants,init,+0).
+condition_modifiers(ants,tr,+0).
+condition_modifiers(ants,sr,+0).
+condition_modifiers(ants,wounds,+7).
+% Beetle
+condition_modifiers(beetle,init,-10).
+condition_modifiers(beetle,tr,+0).
+condition_modifiers(beetle,sr,+15).
+condition_modifiers(beetle,wounds,+2).
+% Ladybug
+condition_modifiers(ladybug,init,+5).
+condition_modifiers(ladybug,tr,+5).
+condition_modifiers(ladybug,sr,+5).
+condition_modifiers(ladybug,wounds,+0).
 % Scorpion
 condition_modifiers(scorpion,init,+5).
 condition_modifiers(scorpion,tr,+5).
@@ -77,6 +107,14 @@ condition_modifiers(wasp,wounds,+1).
 %
 %       A Class' Rating in a Specific Ability.
 %
+% Ants
+class_specific_ability(ants,swarming,90).
+% Beetle
+class_specific_ability(beetle,carapace,60).
+class_specific_ability(beetle,flying,15).
+% Ladybug
+class_specific_ability(ladybug,carapace,45).
+class_specific_ability(ladybug,flying,60).
 % Scorpion
 class_specific_ability(scorpion,carapace,50).
 class_specific_ability(scorpion,venomous,90).
@@ -93,6 +131,18 @@ class_specific_ability(wasp,venomous,80).
 %
 %       Common Ability modifiers by Class.
 %
+% Ants
+common_ability_modifiers(ants,construction,+10).
+common_ability_modifiers(ants,eusociology,+10).
+common_ability_modifiers(ants,foraging,+10).
+% Beetle
+common_ability_modifiers(beetle,construction,+10).
+common_ability_modifiers(beetle,foraging,+10).
+common_ability_modifiers(beetle,healing,+10).
+% Ladybug
+common_ability_modifiers(ladybug,exploration,+10).
+common_ability_modifiers(ladybug,hunting,+10).
+common_ability_modifiers(ladybug,signalling,+10).
 % Scorpion
 common_ability_modifiers(scorpion,leadership,+10).
 common_ability_modifiers(scorpion,hunting,+10).
