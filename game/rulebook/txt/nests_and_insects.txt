@@ -252,3 +252,155 @@
 ║                                                                                           ║▓
 ╚════════════════════════════════════════════-3-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+╔►Nests and Insects◄═══════════════════════════════════════════════════════►Character Sheet◄╗
+║.......................................... CLASS ..........................................║▓
+╠►Attributes◄═══════════════════════════════════════════════════════════════════════════════╣▓
+║ ┌───────────────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ │ □ Speed.....:[____%] □ Skill....:[____%] □ Strength....:[____%] □ Stamina....:[____%] │ ║▓
+║ │ □ Smarts....:[____%] □ Charms...:[____%] □ Ken.........:[____%] □ Passions...:[____%] │ ║▓
+║ └<^XP>────────────────<^XP>───────────────<^XP>──────────────────<^XP>──────────────────┘ ║▓
+╠►Combat Stats◄═════════════════════════════════════════════════════════════════════════════╣▓
+║┌[Condition]──────────────<Rules Reminder>───────────────────────────────────────────────┐ ║▓
+║│ □ Initiative...:[____%] (Match/Beat to start Combat in Holding/Recoiling Disposition). │ ║▓
+║│ □ Threat Rate..:[____%] (Match/Beat Attacker's TR to Hit/Miss Target)................. │ ║▓
+║│ □ Survival Rate:[____%] (Match/Beat Target's SR to Hit/Miss with Base/Special Attack). │ ║▓
+║│ □ Wounds/Max...:[__/__] (1 Wound = 1 Shift Down. When Wounds ≥ Max, character dies)... │ ║▓
+║├─<Disposition Track>────────────────────────────────────────────────────────────────────┤ ║▓
+║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓
+║│ ○ Retreating...... ○ Recoiling...... ○ Holding...... ○ Advancing...... ○ Charging......│ ║▓
+║└<^Cant Attack>─────<^-30%>───────────<^Doing Good>───<^+30%>───────────<^Shift Up>──────┘ ║▓
+║┌[Base Attack]──────────────────────────────┐┌[Special Attack]───────────────────────────┐ ║▓
+║│ Name:.................................... ││ Name:.................................... │ ║▓
+║│ Keywords:................................ ││ Keywords:................................ │ ║▓
+║│ Wounds:.................................. ││ Wounds................................... │ ║▓
+║│ Max. Range:.............................. ││ Max. Range:.............................. │ ║▓
+║│ Hit:..................................... ││ Hit:..................................... │ ║▓
+║│ Hit (Alt):............................... ││ Hit (Alt):............................... │ ║▓
+║│ Hit (Add):............................... ││ Hit (Crit):.............................. │ ║▓
+║│ Miss:.................................... ││ Miss:.................................... │ ║▓
+║│ Miss (Alt):.............................. ││ Miss (Alt):.............................. │ ║▓
+║└───────────────────────────────────────────┘└───────────────────────────────────────────┘ ║▓
+╠►Survival◄═════════════════════════════════════════════════════════════════════════════════╣▓
+║┌[Food]───────────────────┐┌[Luck]───────────────────────────────────────────────────────┐ ║▓
+║│ ○ Hunger........[___0%] ││ [11%].[22%].[33%].[44%].[55%].[66%].[77%].[88%].[99%].[00%].│ ║▓
+║└<^Starving>──────────────┘└──^──────────────────────────────────────────────────────────┘ ║▓
+╠►Abilities◄════════════════════════════════════════════════════════════════════════════════╣▓
+║┌[Specific Abilities]────────┐┌[Common Abilities]────────────────────────────────────────┐ ║▓
+║│ Carapace..........:[___0%] ││ □ Construction.....:[____%] □ Hunting...........:[____%] │ ║▓
+║│ Flying............:[___0%] ││ □ Eusociology......:[____%] □ Leadership........:[____%] │ ║▓
+║│ Swarming..........:[___0%] ││ □ Exploration......:[____%] □ Perception........:[____%] │ ║▓
+║│ Venomous..........:[___0%] ││ □ Foraging.........:[____%] □ Signalling........:[____%] │ ║▓
+║│ Web Weaving.......:[___0%] ││ □ Healing..........:[____%] □ Sneaking..........:[____%] │ ║▓
+║└────────────────────────────┘└<^XP>───────────────────────<^XP>─────────────────────────┘ ║▓
+║┌[Effects]───────────────────────────────────┐┌[Inventory]───────────────────────────────┐ ║▓
+║│ ○ Agony....:[___0%] ○ Immobilised.:[___0%] ││ ○ ______________________________:[____%] │ ║▓
+║│ ○ Bleeding.:[___0%] ○ Infected....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
+║│ ○ Blind....:[___0%] ○ Paralysed...:[___0%] ││ ○ ______________________________:[____%] │ ║▓
+║│ ○ Charmed..:[___0%] ○ Poisoned....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
+║│ ○ Confused.:[___0%] ○ Stunned.....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
+║└<^Applies>──────────<^Applies>──────────────┘└<^Edible>─────────────────────────────────┘ ║▓
+╚═══════════════════════════════════════════════════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+╔►Nests and Insects◄═════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║                                      Character Sheet                                      ║▓
+║                                      ===============                                      ║▓
+║                                                                                           ║▓
+║ The current section describes the components of the Nests and Insects character sheet.    ║▓
+║ Each character class in Nests and Insects has its own character sheet, based on the       ║▓
+║ template in the opposite page, but with different, pre-set, values.                       ║▓
+║                                                                                           ║▓
+║ Percentile Features                                                                       ║▓
+║ -------------------                                                                       ║▓
+║                                                                                           ║▓
+║ Character sheets list characters' *Features*: game variables rated on a percentile scale, ║▓
+║ from 1 to 100. There are seven main types of Features listed in a character sheet. Table  ║▓
+║ 5 lists the seven main Feature types.                                                     ║▓
+║                                                                                           ║▓
+║ Feature Name            Description                                                       ║▓
+║ ------------            -----------                                                       ║▓
+║ Attribute               Innate Features of a class                                        ║▓
+║ Combat Condition        Initiative, Threat Rate, Survival Rate, and Wounds                ║▓
+║ Survival Features       Hunger and Luck                                                   ║▓
+║ Specific Abilities      Features that characterise a species                              ║▓
+║ Common Abilities        Features common to all characters                                 ║▓
+║ Effects                 Acquired Features detrimental to characters' survival.            ║▓
+║ Inventory Items         Possessions, resources and assets carried by a character.         ║▓
+║                                                                                           ║▓
+║ Table 5: Types of Features in a character sheet.                                          ║▓
+║                                                                                           ║▓
+║ The six Feature types are described in detail in the following sections.                  ║▓
+║                                                                                           ║▓
+║ Class Header                                                                              ║▓
+║ ------------                                                                              ║▓
+║                                                                                           ║▓
+║ The first component of a character sheet is its Class Header, listing the name of the     ║▓
+║ game and the name of a character's Class. Figure 1 illustrates the Class Header.          ║▓
+║                                                                                           ║▓
+║ ╔►Nests and Insects◄═══════════════════════════════════════════════════►Character Sheet◄╗ ║▓
+║ ║........................................ CLASS ........................................║ ║▓
+║                                                                                           ║▓
+║ Figure 1: Character sheet template, class header.                                         ║▓
+║                                                                                           ║▓
+║ The Class Header lists the name of the game and the class name. Figure 2 illustrates the  ║▓
+║ Class header for the Wasp class.                                                          ║▓
+║                                                                                           ║▓
+║ ╔►Nests and Insects◄═══════════════════════════════════════════════════►Character Sheet◄╗ ║▓
+║ ║......................................... WASP ........................................║ ║▓ 
+║                                                                                           ║▓
+║ Figure 2: Class Header of the Wasp class character sheet.                                 ║▓
+╚════════════════════════════════════════════-5-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+╔►Nests and Insects◄═════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ Attributes Section                                                                        ║▓
+║ ------------------                                                                        ║▓
+║                                                                                           ║▓
+║ Under the Class Header is the Attributes Section, listing Class Attributes: innate        ║▓
+║ abilities of characters in a Class. Figure 3 illustrates the Attributes Section.          ║▓
+║                                                                                           ║▓
+║╠►Attributes◄═════════════════════════════════════════════════════════════════════════════╣║▓
+║║ ┌─────────────────────────────────────────────────────────────────────────────────────┐ ║║▓
+║║ │ □ Speed....:[____%] □ Skill....:[____%] □ Strength...:[____%] □ Stamina....:[____%] │ ║║▓
+║║ │ □ Smarts...:[____%] □ Charms...:[____%] □ Ken........:[____%] □ Passions...:[____%] │ ║║▓
+║║ └<^XP>───────────────<^XP>───────────────<^XP>─────────────────<^XP>──────────────────┘ ║║▓
+║                                                                                           ║▓
+║ Figure 3: Character sheet template, Attributes Section.                                   ║▓
+║                                                                                           ║▓
+║ Table 6 lists characters' Attributes along with a short description.                      ║▓
+║                                                                                           ║▓
+║ Attribute        Description                                                              ║▓
+║ ---------        -----------                                                              ║▓
+║ Speed            How fast the character can move                                          ║▓
+║ Skill            Dexterity, precision and fine manipulation ability                       ║▓
+║ Strength         Physical strength, used to push, pull, lift, throw, and break do.. stuff.║▓
+║ Stamina          Physical toughness and endurance, resistance to physical harm            ║▓
+║ Smarts           Intelligence, logic, reasoning and problem solving skill                 ║▓
+║ Charms           Charisma, talent for communication and influencing others' behaviour     ║▓
+║ Ken              Wisdom, common sense, and knowledge of the world                         ║▓
+║ Passions         Willpower, morale, strength of spirit and courage                        ║▓
+║                                                                                           ║▓
+║ Table 6: Character Attributes                                                             ║▓
+║                                                                                           ║▓
+║ Strong and weak Attributes: Each Class has a strong Attribute and a weak Attribute, rated ║▓
+║ to 60% and 25%, respectively (plus any class modifiers). Figure 4 illustrates the         ║▓
+║ Attributes Section for the Wasp class.                                                    ║▓
+║                                                                                           ║▓
+║╠►Attributes◄═════════════════════════════════════════════════════════════════════════════╣║▓
+║║ ┌─────────────────────────────────────────────────────────────────────────────────────┐ ║║▓
+║║ │ □ Speed....:[__60%] □ Skill....:[__45%] □ Strength...:[__50%] □ Stamina....:[__35%] │ ║║▓
+║║ │ □ Smarts...:[__25%] □ Charms...:[__30%] □ Ken........:[__30%] □ Passions...:[__45%] │ ║║▓
+║║ └<^XP>───────────────<^XP>───────────────<^XP>─────────────────<^XP>──────────────────┘ ║║▓
+║                                                                                           ║▓
+║ Figure 4: Attributes Section of the Wasp class character sheet.                           ║▓
+║                                                                                           ║▓
+║ In Figure 4, note that the Speed rating is 60% and the Smarts rating is 25%. Wasp is      ║▓
+║ fast, but not that quick on the uptake.                                                   ║▓
+║                                                                                           ║▓
+║ Using Attributes: Attributes are used in two ways in the game: a) to calculate Combat     ║▓
+║ Conditions; and, b) to form the basis of Effort and Resistance in minigames.              ║▓
+╚════════════════════════════════════════════-N-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
