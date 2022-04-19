@@ -1,0 +1,292 @@
+╔►Nests and Insects◄═════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║                               Table of Contents                                           ║▓
+║                               =================                                           ║▓
+║                                                                                           ║▓
+║ Overview .............................................................................. 1 ║▓
+║   The Setting ......................................................................... 1 ║▓
+║   The Game ............................................................................ 1 ║▓
+║   The System .......................................................................... 2 ║▓
+║                                                                                           ║▓
+║ Character                                                                                 ║▓
+║   Character Sheet                                                                         ║▓
+║   Ants                                                                                    ║▓
+║   Beetle                                                                                  ║▓
+║   Ladybug                                                                                 ║▓
+║   Scorpion                                                                                ║▓
+║   Spider                                                                                  ║▓
+║   Wasp                                                                                    ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚════════════════════════════════════════════-i-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests and Insects◄═════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚════════════════════════════════════════════-ii-═══════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests and Insects◄═════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║                                    Overview                                               ║▓
+║                                    ========                                               ║▓
+║                                                                                           ║▓
+║ The Setting                                                                               ║▓
+║ -----------                                                                               ║▓
+║                                                                                           ║▓
+║ Nests & Insects is a tabletop roleplaying game (TTRPG) for 1 to 7 players. One player     ║▓
+║ assumes the role of the Game Queen and describes the game world to the other players. The ║▓
+║ other players control characters who explore, and interact with, the game world.          ║▓
+║                                                                                           ║▓
+║ Players' characters are arthropods that belong to one of six classes: Spider, Wasp,       ║▓
+║ Scorpion, Ladybug, Beetle and Ants (plural). The characters are mercenaries: assassins    ║▓
+║ and thugs, hired to invade a Nest and carry out a Job on behalf of some arthropod client. ║▓
+║ Nests are the homes of eusocial insects: the nests of Bees, Ants and Termites. Common     ║▓
+║ Jobs are to assasinate the Queen, or the King; steal nectar, honey, honeydew, aphids      ║▓
+║ (farmed by ants) or fungi (cultivated by termites); steal, or kill, nymphs; or sabotage   ║▓
+║ the Nest.                                                                                 ║▓
+║                                                                                           ║▓
+║ At the beginning of a new game the players' characters enter a Nest to carry out their    ║▓
+║ Job armed with their natural weapons and armour: mandibles, pincers, stingers, carapaces, ║▓
+║ wings, venom, webs. During a Job characters must survive combat with the soldier castes   ║▓
+║ guarding the Nests. They must also hunt or forage for food to avoid weakening and         ║▓
+║ starving to death. While foraging, characters may find food items, such as nectar and     ║▓
+║ fungi, that can be consumed to provide not only sustenance but also healing, enhanced     ║▓
+║ physical and mental abilities and other benefits.                                         ║▓
+║                                                                                           ║▓
+║ The Game                                                                                  ║▓
+║ --------                                                                                  ║▓
+║                                                                                           ║▓
+║ Nests & Insects is a Roguelike TTRPG. It is "Roguelike" because it is inspired by         ║▓
+║ computer roleplaying games (CRPGs) of the Roguelike genre, like Nethack, Angband, Moria   ║▓
+║ and Ancient Domains of Darkness.                                                          ║▓
+║                                                                                           ║▓
+║ A "Roguelike TTRPG" is a case of board games imitating computer games, imitating board    ║▓
+║ games: most roguelike CRPGs are inspired by TTRPGs, particularly Dungeons & Dragons, the  ║▓
+║ grandaddy of all TTRPGs (and all CRPGs to boot). Roguelikes borrow from TTRPGs the        ║▓
+║ hack-and-slash, dungeon-crawl style of gameplay and common themes of fantasy and science  ║▓
+║ fiction. Nests & Insects borrows from Roguelike CRPGs game elements like: procedural      ║▓
+║ generation; a focus on hack-and-slash gameplay; lethal combat; freedom to tackle          ║▓
+║ challenges in different ways; a focus on exploration of, and experimentation in the game  ║▓
+║ world; and the need for characters to find sustenance or die.                             ║▓
+║                                                                                           ║▓
+║ While Nests & Insects is a roleplaying game, it is not focused on roleplaying, because it ║▓
+║ is very difficult for humans to roleplay arthropods (and vice-versa). As in Roguelike     ║▓
+║ CRPGs, Nests & Insects does not come with a built-in, pre-scripted story, and it is       ║▓
+║ instead designed to encourage a story to emerge naturally from the interaction of the     ║▓
+║ players' characters with the rules of the game and the procedurally generated elements of ║▓
+║ the game world (including Jobs, Nests and Nests' inhabitants).                            ║▓
+║                                                                                           ║▓
+║ Nests & Insects is desigend to be played with no preparation other than reading some of   ║▓
+║ the rules. At the start of a new game players select a class that determines all of a     ║▓
+║ character's beginning stats (collectively called Features). The Game Queen then rolls to  ║▓
+║ procedurally generate the first Room in the entrance to the first Level of the Nest, and  ║▓
+║ the characters enter and begin their Job. After visiting a Room and defeating its         ║▓
+║ challenges characters get a chance to rest and recoup their strength, and players can use ║▓
+║ experience gained to improve their characters. The game ends when the characters fulfill  ║▓
+║ the terms of the Job, or give up, or run away, or die.                                    ║▓
+║                                                                                           ║▓
+║ Everything encountered by characters during a Job is procedurally generated. If the Game  ║▓
+║ Queen wishes, she can create hand-crafted Rooms, Levels, enemies, items, etc, and include ║▓
+║ them in the game; but that is not strictly necessary.                                     ║▓
+║                                                                                           ║▓
+║ The System                                                                                ║▓
+║ ----------                                                                                ║▓
+║                                                                                           ║▓
+║ Nests & Insects' roleplaying system is called Fuzzy d100 (fd100). fd100 is a percentile   ║▓
+║ system where characters are defined by Features rated on a scale from 1 to 100, and a     ║▓
+║ percentile die (d100) is rolled to determine the outcome of their actions.                ║▓
+║                                                                                           ║▓
+╚════════════════════════════════════════════-1-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests and Insects◄═════════════════════════════════════════════════════════════►Rulebook◄═╗
+║ Decile dice, combinations of common TTRPG polyhedral dice and a ten-sided die (d10) are   ║▓
+║ used to quantify the effects of actions on a percentile scale: the d20, d40, d60, d80 and ║▓
+║ the d100 itself. Table 1 illustrates the composition of the decile dice used in fd100.    ║▓
+║                                                                                           ║▓
+║ Decile die    Tens die    Ones die    Range                                               ║▓
+║ ----------    --------    --------    -----                                               ║▓
+║ d20           Not any!    d20         1 to 20                                             ║▓
+║ d40           d4          d10         1 to 40                                             ║▓
+║ d60           d6          d10         1 to 60                                             ║▓
+║ d80           d8          d10         1 to 80                                             ║▓
+║ d100          d10         d10         1 to 100                                            ║▓
+║                                                                                           ║▓
+║ Table 1: Decile dice, used for quantification of percentile effects.                      ║▓
+║                                                                                           ║▓
+║ fd100 is designed to eliminate mental arithmetic during combat and other "minigames"; and ║▓
+║ to encourage creative descriptions of characters' intents and actions. Minigames are      ║▓
+║ special rules for formulaic gaming situations, like Combat, Foraging or Hunting.          ║▓
+║                                                                                           ║▓
+║ To determine the outcome of characters' actions in a minigame, players roll a d100 and    ║▓
+║ compare it simultaneously to two target numbers: a character's Effort, and the Resistance ║▓
+║ of opponents or the environment. The value of the d100 roll relative to Effort and        ║▓
+║ Resistance determines the Degree of Success or Failure (DoS) of an action. Table 1        ║▓
+║ outlines the four DoS attainable by comparing a d100 roll to Effort and Resistance.       ║▓
+║                                                                                           ║▓
+║ Roll vs Effort            Roll vs Resistance        Degree of Success                     ║▓
+║ --------------            ------------------        -----------------                     ║▓
+║ Lower than or equal       Higher                    Complete Succes                       ║▓
+║ Lower than or equal       Lower than or equal       Partial Success                       ║▓
+║ Higher                    Higher                    Partial Failure                       ║▓
+║ Higher                    Lower than or equal       Complete Failure                      ║▓
+║                                                                                           ║▓
+║ Table 1: Effort, Resistance and Degree of Success.                                        ║▓
+║                                                                                           ║▓
+║ Two additional DoS, Critical Failure and Critical Success are attainable by the use of    ║▓
+║ modifiers. Static modifiers are compared to the same d100 roll as Effort and Resistance.  ║▓
+║ Dramatic modifiers are compared to one or two new d100 rolls. Characters' intents and     ║▓
+║ actions that grant dramatic modifiers must be described in more detail than static        ║▓
+║ modifiers, to encourage players to use their imagination to help their characters. Table  ║▓
+║ 2 illustrates the use of modifiers to change the DoS of a minigame action.                ║▓
+║                                                                                           ║▓
+║ Roll vs Modifier        Modifier Sign        Degree of Success                            ║▓
+║ ----------------        -------------        -----------------                            ║▓
+║ Lower than or Equal     Positive             Improves                                     ║▓
+║ Higher                  Positive             No change                                    ║▓
+║ Lower than or Equal     Negative             Worsens                                      ║▓
+║ Higher                  Negative             No change                                    ║▓
+║                                                                                           ║▓
+║ Table 2: Modifiers and change to Degree of Success. DoS can improve beyond Complete       ║▓
+║ Success to Critical Success; or worsen beyond Complete Failure to Critical Failure.       ║▓
+║                                                                                           ║▓
+║ In the Combat minigame, characters have two Attack actions: a Base Attack and a Special   ║▓
+║ Attack. The DoS of a character's Attack action determines which Attack hits, or misses.   ║▓
+║ When an Attack hits, it causes injury to the target, and may bestow detrimental effects   ║▓
+║ on enemies, or beneficial effects on allies. When an Attack misses, the attacker suffers  ║▓
+║ detrimental effects. Injury causes the DoS of subsequent actions to worsen. The Combat    ║▓
+║ minigame also tracks characters' Disposition, representing their position in battle and   ║▓
+║ their morale. Better disposition improves the DoS of subsequent Combat actions and worse  ║▓
+║ disposition worsens it. Table 3 illustrates the outcomes associated with different DoS in ║▓
+║ the context of the Combat minigame.                                                       ║▓
+║                                                                                           ║▓
+║ Degree of Success        Outcome                                                          ║▓
+║ -----------------        -------                                                          ║▓
+║ Critical Success         Both Attacks Hit                                                 ║▓
+║ Complete Success         Special Attack Hits                                              ║▓
+║ Partial Success          Base Attack Hits                                                 ║▓
+║ Partial Failure          Base Attack Misses                                               ║▓
+║ Complete Failure         Special Attack Misses                                            ║▓
+║ Critical Failure         Both Attacks Miss                                                ║▓
+║                                                                                           ║▓
+║ Table 3: Combat minigame outcomes.                                                        ║▓
+╚════════════════════════════════════════════-2-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
