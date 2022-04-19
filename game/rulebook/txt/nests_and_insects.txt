@@ -97,7 +97,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚════════════════════════════════════════════-N-════════════════════════════════════════════╝▓
+╚════════════════════════════════════════════-i-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
 ╔►Nests and Insects◄═════════════════════════════════════════════════════════════►Rulebook◄═╗
@@ -402,5 +402,56 @@
 ║                                                                                           ║▓
 ║ Using Attributes: Attributes are used in two ways in the game: a) to calculate Combat     ║▓
 ║ Conditions; and, b) to form the basis of Effort and Resistance in minigames.              ║▓
-╚════════════════════════════════════════════-N-════════════════════════════════════════════╝▓
+╚════════════════════════════════════════════-6-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+╔►Nests and Insects◄═════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ Improving Features with Experience                                                        ║▓
+║ ----------------------------------                                                        ║▓
+║                                                                                           ║▓
+║ In the Attributes Section each attribute is listed with an empty tickbox to the left,     ║▓
+║ marked "XP", as shown in Figure 5. This is an *XP tickbox*. "XP" stands for "Experience   ║▓
+║ Points". XP tickboxes are also found next to Combat Conditions, Survival Features and     ║▓
+║ Common Abilities.                                                                         ║▓
+║                                                                                           ║▓
+║ ┌────────────────────                                                                     ║▓
+║ │ □ Speed....:[____%]                                                                     ║▓
+║ │ □ Smarts...:[____%]                                                                     ║▓
+║ └<^XP>───────────────                                                                     ║▓
+║                                                                                           ║▓
+║ Figure 5: The XP tickbox for Speed and Smarts in the Attribute Section.                   ║▓
+║                                                                                           ║▓
+║ The XP tickbox is ticked to indicate that the relevant Feature has a chance to increase.  ║▓
+║ Figure 6 shows the Speed tickbox in Figure 5 ticked with the ✓ character (U+2713):        ║▓
+║                                                                                           ║▓
+║ ┌────────────────────                                                                     ║▓
+║ │ ✓ Speed....:[____%]                                                                     ║▓
+║ │ □ Smarts...:[____%]                                                                     ║▓
+║ └<^XP>───────────────                                                                     ║▓
+║                                                                                           ║▓
+║ Figure 6: Ticked XP tickbox for Speed                                                     ║▓
+║                                                                                           ║▓
+║ Gaining XP: An XP tickbox next to a Feature is ticked when:                               ║▓
+║                                                                                           ║▓
+║   * the character achieves a Critical Success in a minigame Action that uses the Feature  ║▓
+║     as the basis of Effort or Resistance; or,                                             ║▓
+║                                                                                           ║▓
+║   * when the character Succeeds in a Boolean Roll (discussed in Section Boolean Rolls)    ║▓
+║     for a simple Action that uses that Feature.                                           ║▓
+║                                                                                           ║▓
+║ Using XP: XP are used during the Resting and Healing minigame (see Section Resting and    ║▓
+║ Healing) to increase the rating of a Feature, following the steps listed below:           ║▓
+║                                                                                           ║▓
+║    1. Find the Decile die whose maximum is closest to the current rating of the Feature   ║▓
+║       to be improved.                                                                     ║▓
+║                                                                                           ║▓
+║    2. Roll the chosen Decile die.                                                         ║▓
+║                                                                                           ║▓
+║    3. If the Decile die roll is higher than the current rating of the Feature, set the    ║▓
+║       Feature's value to the roll value and untick the Feature's XP tickbox.              ║▓
+║                                                                                           ║▓
+║    4. Otherwise, only untick the XP tickbox- the Feature doesn't improve this time.       ║▓
+║                                                                                           ║▓
+╚════════════════════════════════════════════-7-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
