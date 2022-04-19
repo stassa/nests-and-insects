@@ -6,13 +6,8 @@ ants:attribute(strength,45).
 ants:attribute(stamina,50).
 ants:attribute(smarts,35).
 ants:attribute(charms,30).
-ants:attribute(ken,30).
-ants:attribute(passions,60).
-
-ants:condition(init,0).
-ants:condition(tr,0).
-ants:condition(sr,0).
-ants:condition(wounds,0).
+ants:attribute(ken,60).
+ants:attribute(passions,25).
 
 ants:base_attack([name-'Pincer Attack'
                      ,keywords-['Crushing','Shredding']

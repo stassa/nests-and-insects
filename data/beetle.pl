@@ -1,24 +1,19 @@
 :-module(beetle, []).
 
-beetle:attribute(speed,35).
-beetle:attribute(skill,25).
-beetle:attribute(strength,45).
-beetle:attribute(stamina,50).
+beetle:attribute(speed,25).
+beetle:attribute(skill,45).
+beetle:attribute(strength,50).
+beetle:attribute(stamina,60).
 beetle:attribute(smarts,35).
 beetle:attribute(charms,30).
 beetle:attribute(ken,30).
-beetle:attribute(passions,60).
+beetle:attribute(passions,35).
 
-beetle:condition(init,0).
-beetle:condition(tr,0).
-beetle:condition(sr,0).
-beetle:condition(wounds,0).
-
-beetle:base_attack([name-'Pincer Attack'
-                     ,keywords-['Crushing','Shredding']
+beetle:base_attack([name-'Horn Attack'
+                     ,keywords-['Crushing','Impact']
                      ,wounds-1
                      ,max_range-'Close'
-                     ,hit-'Target Recoils'
+                     ,hit-'Target Stunned: d60'
                      ,hit_2-['(Alt)','']
                      ,hit_3-['(Add)','']
                      ,miss_1-'Attacker Recoils'
@@ -26,13 +21,13 @@ beetle:base_attack([name-'Pincer Attack'
                      ]
                     ).
 
-beetle:special_attack([name-'Stinger Attack'
-                        ,keywords-['Piercing','Venomous','Lethal']
+beetle:special_attack([name-'Flying Horn Attack'
+                        ,keywords-['Crushing','Impact']
                         ,wounds-2
-                        ,max_range-'Close'
-                        ,hit-'Target in Agony: d60'
-                        ,hit_2-['(Alt)','']
-                        ,hit_3-['(Crit)','Target Killed']
-                        ,miss_1-'Attacker Recoils'
-                        ,miss_2-['(Alt)','']]
+                        ,max_range-'Medium (Area)'
+                        ,hit-'Targets Stunned: ld80'
+                        ,hit_2-['(Add)','Targets Recoil']
+                        ,hit_3-['(Crit)','Targets take +2 Wounds']
+                        ,miss_1-'Attacker Stunned: ld80'
+                        ,miss_2-['(Crit)','Attacker Bleeding: d60']]
                        ).
