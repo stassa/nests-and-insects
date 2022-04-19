@@ -196,7 +196,7 @@
 ║ To determine the outcome of characters' actions in a minigame, players roll a d100 and    ║▓
 ║ compare it simultaneously to two target numbers: a character's Effort, and the Resistance ║▓
 ║ of opponents or the environment. The value of the d100 roll relative to Effort and        ║▓
-║ Resistance determines the Degree of Success or Failure (DoS) of an action. Table 1        ║▓
+║ Resistance determines the Degree of Success or Failure (DoS) of an action. Table 2        ║▓
 ║ outlines the four DoS attainable by comparing a d100 roll to Effort and Resistance.       ║▓
 ║                                                                                           ║▓
 ╚════════════════════════════════════════════-2-════════════════════════════════════════════╝▓
@@ -217,7 +217,7 @@
 ║ Dramatic modifiers are compared to one or two new d100 rolls. Characters' intents and     ║▓
 ║ actions that grant dramatic modifiers must be described in more detail than static        ║▓
 ║ modifiers, to encourage players to use their imagination to help their characters. Table  ║▓
-║ 2 illustrates the use of modifiers to change the DoS of a minigame action.                ║▓
+║ 3 illustrates the use of modifiers to change the DoS of a minigame action.                ║▓
 ║                                                                                           ║▓
 ║ Roll vs Modifier        Modifier Sign        Degree of Success                            ║▓
 ║ ----------------        -------------        -----------------                            ║▓
@@ -236,7 +236,7 @@
 ║ detrimental effects. Injury causes the DoS of subsequent actions to worsen. The Combat    ║▓
 ║ minigame also tracks characters' Disposition, representing their position in battle and   ║▓
 ║ their morale. Better disposition improves the DoS of subsequent Combat actions and worse  ║▓
-║ disposition worsens it. Table 3 illustrates the outcomes associated with different DoS in ║▓
+║ disposition worsens it. Table 4 illustrates the outcomes associated with different DoS in ║▓
 ║ the context of the Combat minigame.                                                       ║▓
 ║                                                                                           ║▓
 ║ Degree of Success        Outcome                                                          ║▓
