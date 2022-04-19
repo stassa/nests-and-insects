@@ -210,7 +210,7 @@
 ║ Higher                    Higher                    Partial Failure                       ║▓
 ║ Higher                    Lower than or equal       Complete Failure                      ║▓
 ║                                                                                           ║▓
-║ Table 1: Effort, Resistance and Degree of Success.                                        ║▓
+║ Table 2: Effort, Resistance and Degree of Success.                                        ║▓
 ║                                                                                           ║▓
 ║ Two additional DoS, Critical Failure and Critical Success are attainable by the use of    ║▓
 ║ modifiers. Static modifiers are compared to the same d100 roll as Effort and Resistance.  ║▓
@@ -226,7 +226,7 @@
 ║ Lower than or Equal     Negative             Worsens                                      ║▓
 ║ Higher                  Negative             No change                                    ║▓
 ║                                                                                           ║▓
-║ Table 2: Modifiers and change to Degree of Success. DoS can improve beyond Complete       ║▓
+║ Table 3: Modifiers and change to Degree of Success. DoS can improve beyond Complete       ║▓
 ║ Success to Critical Success; or worsen beyond Complete Failure to Critical Failure.       ║▓
 ║                                                                                           ║▓
 ║ In the Combat minigame, characters have two Attack actions: a Base Attack and a Special   ║▓
@@ -248,7 +248,7 @@
 ║ Complete Failure         Special Attack Misses                                            ║▓
 ║ Critical Failure         Both Attacks Miss                                                ║▓
 ║                                                                                           ║▓
-║ Table 3: Combat minigame outcomes.                                                        ║▓
+║ Table 4: Combat minigame outcomes.                                                        ║▓
 ║                                                                                           ║▓
 ╚════════════════════════════════════════════-3-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
