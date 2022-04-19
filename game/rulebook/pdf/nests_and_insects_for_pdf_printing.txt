@@ -9,70 +9,74 @@
 ║   The System .......................................................................... 2 ║▓
 ║                                                                                           ║▓
 ║ Character                                                                                 ║▓
-║   Character Sheet                                                                         ║▓
-║   Ants                                                                                    ║▓
-║   Beetle                                                                                  ║▓
-║   Ladybug                                                                                 ║▓
-║   Scorpion                                                                                ║▓
-║   Spider                                                                                  ║▓
-║   Wasp                                                                                    ║▓
+║   Character Sheet ..................................................................... 3 ║▓
+║     Attributes Section ................................................................ 4 ║▓
+║     Improving Features with Experience ................................................ 5 ║▓
+║     Combat Conditions .............................................................. TODO ║▓
+║       Initiative ................................................................... TODO ║▓
+║       Threat Rate .................................................................. TODO ║▓
+║       Survival Rate ................................................................ TODO ║▓
+║       Wounds ....................................................................... TODO ║▓
+║       Disposition Track ............................................................ TODO ║▓
+║       Attacks ...................................................................... TODO ║▓
+║         Base Attack ................................................................ TODO ║▓
+║         Special Attack ............................................................. TODO ║▓
+║     Survival Features .............................................................. TODO ║▓
+║       Food ......................................................................... TODO ║▓
+║       Luck ......................................................................... TODO ║▓
+║       Abilities Section ............................................................ TODO ║▓
+║         Specific Abilities ......................................................... TODO ║▓
+║         Common Abilities ........................................................... TODO ║▓
+║         Effects .................................................................... TODO ║▓
+║         Inventory .................................................................. TODO ║▓
+║   Character Classes                                                                       ║▓
+║     Ants ........................................................................... TODO ║▓
+║     Beetle ......................................................................... TODO ║▓
+║     Ladybug ........................................................................ TODO ║▓
+║     Scorpion ....................................................................... TODO ║▓
+║     Spider ......................................................................... TODO ║▓
+║     Wasp ........................................................................... TODO ║▓
 ║                                                                                           ║▓
+║ System ............................................................................. TODO ║▓
+║   Fuzzy dxxx ....................................................................... TODO ║▓
+║     Percentile die ................................................................. TODO ║▓
+║     Decile dice .................................................................... TODO ║▓
+║       Nominal reading .............................................................. TODO ║▓
+║       Literal reading .............................................................. TODO ║▓
+║   Taking Actions ................................................................... TODO ║▓
+║     Intent ......................................................................... TODO ║▓
+║     Qualification Roll ............................................................. TODO ║▓
+║     Modification Roll .............................................................. TODO ║▓
+║     Quantification Roll ............................................................ TODO ║▓
+║     Boolean Roll ................................................................... TODO ║▓
+║   Minigames ........................................................................ TODO ║▓
+║     Combat ......................................................................... TODO ║▓
+║     Survival ....................................................................... TODO ║▓
+║     Hunting and Foraging ........................................................... TODO ║▓
+║     Resting and Healing ............................................................ TODO ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ Setting ............................................................................ TODO ║▓
+║   Clients and Jobs ................................................................. TODO ║▓
+║   Environment ...................................................................... TODO ║▓
+║     Nests .......................................................................... TODO ║▓
+║     Levels ......................................................................... TODO ║▓
+║     Rooms .......................................................................... TODO ║▓
+║   Enemies .......................................................................... TODO ║▓
+║     Ants ........................................................................... TODO ║▓
+║     Bees ........................................................................... TODO ║▓
+║     Termites ....................................................................... TODO ║▓
+║   Food Items ....................................................................... TODO ║▓
+║     Fungi .......................................................................... TODO ║▓
+║     Honey .......................................................................... TODO ║▓
+║     Honeydew ....................................................................... TODO ║▓
 ╚════════════════════════════════════════════-i-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests and Insects◄═════════════════════════════════════════════════════════════►Rulebook◄═╗
+║     Nectar ......................................................................... TODO ║▓
+║     Prey ........................................................................... TODO ║▓
 ║                                                                                           ║▓
+║ Procedural Generation .............................................................. TODO ║▓
+║   Generator mechanics .............................................................. TODO ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -138,11 +142,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-╚════════════════════════════════════════════-ii-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-ii-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests and Insects◄═════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -239,7 +239,7 @@
 ║ To determine the outcome of characters' actions in a minigame, players roll a d100 and    ║▓
 ║ compare it simultaneously to two target numbers: a character's Effort, and the Resistance ║▓
 ║ of opponents or the environment. The value of the d100 roll relative to Effort and        ║▓
-║ Resistance determines the Degree of Success or Failure (DoS) of an action. Table 1        ║▓
+║ Resistance determines the Degree of Success or Failure (DoS) of an action. Table 2        ║▓
 ║ outlines the four DoS attainable by comparing a d100 roll to Effort and Resistance.       ║▓
 ║                                                                                           ║▓
 ║ Roll vs Effort            Roll vs Resistance        Degree of Success                     ║▓
@@ -249,14 +249,14 @@
 ║ Higher                    Higher                    Partial Failure                       ║▓
 ║ Higher                    Lower than or equal       Complete Failure                      ║▓
 ║                                                                                           ║▓
-║ Table 1: Effort, Resistance and Degree of Success.                                        ║▓
+║ Table 2: Effort, Resistance and Degree of Success.                                        ║▓
 ║                                                                                           ║▓
 ║ Two additional DoS, Critical Failure and Critical Success are attainable by the use of    ║▓
 ║ modifiers. Static modifiers are compared to the same d100 roll as Effort and Resistance.  ║▓
 ║ Dramatic modifiers are compared to one or two new d100 rolls. Characters' intents and     ║▓
 ║ actions that grant dramatic modifiers must be described in more detail than static        ║▓
 ║ modifiers, to encourage players to use their imagination to help their characters. Table  ║▓
-║ 2 illustrates the use of modifiers to change the DoS of a minigame action.                ║▓
+║ 3 illustrates the use of modifiers to change the DoS of a minigame action.                ║▓
 ║                                                                                           ║▓
 ║ Roll vs Modifier        Modifier Sign        Degree of Success                            ║▓
 ║ ----------------        -------------        -----------------                            ║▓
@@ -265,7 +265,7 @@
 ║ Lower than or Equal     Negative             Worsens                                      ║▓
 ║ Higher                  Negative             No change                                    ║▓
 ║                                                                                           ║▓
-║ Table 2: Modifiers and change to Degree of Success. DoS can improve beyond Complete       ║▓
+║ Table 3: Modifiers and change to Degree of Success. DoS can improve beyond Complete       ║▓
 ║ Success to Critical Success; or worsen beyond Complete Failure to Critical Failure.       ║▓
 ║                                                                                           ║▓
 ║ In the Combat minigame, characters have two Attack actions: a Base Attack and a Special   ║▓
@@ -275,7 +275,7 @@
 ║ detrimental effects. Injury causes the DoS of subsequent actions to worsen. The Combat    ║▓
 ║ minigame also tracks characters' Disposition, representing their position in battle and   ║▓
 ║ their morale. Better disposition improves the DoS of subsequent Combat actions and worse  ║▓
-║ disposition worsens it. Table 3 illustrates the outcomes associated with different DoS in ║▓
+║ disposition worsens it. Table 4 illustrates the outcomes associated with different DoS in ║▓
 ║ the context of the Combat minigame.                                                       ║▓
 ║                                                                                           ║▓
 ║ Degree of Success        Outcome                                                          ║▓
@@ -287,6 +287,298 @@
 ║ Complete Failure         Special Attack Misses                                            ║▓
 ║ Critical Failure         Both Attacks Miss                                                ║▓
 ║                                                                                           ║▓
-║ Table 3: Combat minigame outcomes.                                                        ║▓
+║ Table 4: Combat minigame outcomes.                                                        ║▓
 ╚════════════════════════════════════════════-2-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests and Insects◄═══════════════════════════════════════════════════════►Character Sheet◄╗
+║.......................................... CLASS ..........................................║▓
+╠►Attributes◄═══════════════════════════════════════════════════════════════════════════════╣▓
+║ ┌───────────────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ │ □ Speed.....:[____%] □ Skill....:[____%] □ Strength....:[____%] □ Stamina....:[____%] │ ║▓
+║ │ □ Smarts....:[____%] □ Charms...:[____%] □ Ken.........:[____%] □ Passions...:[____%] │ ║▓
+║ └<^XP>────────────────<^XP>───────────────<^XP>──────────────────<^XP>──────────────────┘ ║▓
+╠►Combat Stats◄═════════════════════════════════════════════════════════════════════════════╣▓
+║┌[Condition]──────────────<Rules Reminder>───────────────────────────────────────────────┐ ║▓
+║│ □ Initiative...:[____%] (Match/Beat to start Combat in Holding/Recoiling Disposition). │ ║▓
+║│ □ Threat Rate..:[____%] (Match/Beat Attacker's TR to Hit/Miss Target)................. │ ║▓
+║│ □ Survival Rate:[____%] (Match/Beat Target's SR to Hit/Miss with Base/Special Attack). │ ║▓
+║│ □ Wounds/Max...:[__/__] (1 Wound = 1 Shift Down. When Wounds ≥ Max, character dies)... │ ║▓
+║├─<Disposition Track>────────────────────────────────────────────────────────────────────┤ ║▓
+║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓
+║│ ○ Retreating...... ○ Recoiling...... ○ Holding...... ○ Advancing...... ○ Charging......│ ║▓
+║└<^Cant Attack>─────<^-30%>───────────<^Doing Good>───<^+30%>───────────<^Shift Up>──────┘ ║▓
+║┌[Base Attack]──────────────────────────────┐┌[Special Attack]───────────────────────────┐ ║▓
+║│ Name:.................................... ││ Name:.................................... │ ║▓
+║│ Keywords:................................ ││ Keywords:................................ │ ║▓
+║│ Wounds:.................................. ││ Wounds................................... │ ║▓
+║│ Max. Range:.............................. ││ Max. Range:.............................. │ ║▓
+║│ Hit:..................................... ││ Hit:..................................... │ ║▓
+║│ Hit (Alt):............................... ││ Hit (Alt):............................... │ ║▓
+║│ Hit (Add):............................... ││ Hit (Crit):.............................. │ ║▓
+║│ Miss:.................................... ││ Miss:.................................... │ ║▓
+║│ Miss (Alt):.............................. ││ Miss (Alt):.............................. │ ║▓
+║└───────────────────────────────────────────┘└───────────────────────────────────────────┘ ║▓
+╠►Survival◄═════════════════════════════════════════════════════════════════════════════════╣▓
+║┌[Food]───────────────────┐┌[Luck]───────────────────────────────────────────────────────┐ ║▓
+║│ ○ Hunger........[___0%] ││ [11%].[22%].[33%].[44%].[55%].[66%].[77%].[88%].[99%].[00%].│ ║▓
+║└<^Starving>──────────────┘└──^──────────────────────────────────────────────────────────┘ ║▓
+╠►Abilities◄════════════════════════════════════════════════════════════════════════════════╣▓
+║┌[Specific Abilities]────────┐┌[Common Abilities]────────────────────────────────────────┐ ║▓
+║│ Carapace..........:[___0%] ││ □ Construction.....:[____%] □ Hunting...........:[____%] │ ║▓
+║│ Flying............:[___0%] ││ □ Eusociology......:[____%] □ Leadership........:[____%] │ ║▓
+║│ Swarming..........:[___0%] ││ □ Exploration......:[____%] □ Perception........:[____%] │ ║▓
+║│ Venomous..........:[___0%] ││ □ Foraging.........:[____%] □ Signalling........:[____%] │ ║▓
+║│ Web Weaving.......:[___0%] ││ □ Healing..........:[____%] □ Sneaking..........:[____%] │ ║▓
+║└────────────────────────────┘└<^XP>───────────────────────<^XP>─────────────────────────┘ ║▓
+║┌[Effects]───────────────────────────────────┐┌[Inventory]───────────────────────────────┐ ║▓
+║│ ○ Agony....:[___0%] ○ Immobilised.:[___0%] ││ ○ ______________________________:[____%] │ ║▓
+║│ ○ Bleeding.:[___0%] ○ Infected....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
+║│ ○ Blind....:[___0%] ○ Paralysed...:[___0%] ││ ○ ______________________________:[____%] │ ║▓
+║│ ○ Charmed..:[___0%] ○ Poisoned....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
+║│ ○ Confused.:[___0%] ○ Stunned.....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
+║└<^Applies>──────────<^Applies>──────────────┘└<^Edible>─────────────────────────────────┘ ║▓
+╚═══════════════════════════════════════════════════════════════════════════════════════════╝▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚════════════════════════════════════════════-3-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests and Insects◄═════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║                                      Character Sheet                                      ║▓
+║                                      ===============                                      ║▓
+║                                                                                           ║▓
+║ The current section describes the components of the Nests and Insects character sheet.    ║▓
+║ Each character class in Nests and Insects has its own character sheet, based on the       ║▓
+║ template in the opposite page, but with different, pre-set, values.                       ║▓
+║                                                                                           ║▓
+║ Percentile Features                                                                       ║▓
+║ -------------------                                                                       ║▓
+║                                                                                           ║▓
+║ Character sheets list characters' *Features*: game variables rated on a percentile scale, ║▓
+║ from 1 to 100. There are seven main types of Features listed in a character sheet. Table  ║▓
+║ 5 lists the seven main Feature types.                                                     ║▓
+║                                                                                           ║▓
+║ Feature Name            Description                                                       ║▓
+║ ------------            -----------                                                       ║▓
+║ Attribute               Innate Features of a class                                        ║▓
+║ Combat Condition        Initiative, Threat Rate, Survival Rate, and Wounds                ║▓
+║ Survival Features       Hunger and Luck                                                   ║▓
+║ Specific Abilities      Features that characterise a species                              ║▓
+║ Common Abilities        Features common to all characters                                 ║▓
+║ Effects                 Acquired Features detrimental to characters' survival.            ║▓
+║ Inventory Items         Possessions, resources and assets carried by a character.         ║▓
+║                                                                                           ║▓
+║ Table 5: Types of Features in a character sheet.                                          ║▓
+║                                                                                           ║▓
+║ The six Feature types are described in detail in the following sections.                  ║▓
+║                                                                                           ║▓
+║ Class Header                                                                              ║▓
+║ ------------                                                                              ║▓
+║                                                                                           ║▓
+║ The first component of a character sheet is its Class Header, listing the name of the     ║▓
+║ game and the name of a character's Class. Figure 1 illustrates the Class Header.          ║▓
+║                                                                                           ║▓
+║ ╔►Nests and Insects◄═══════════════════════════════════════════════════►Character Sheet◄╗ ║▓
+║ ║........................................ CLASS ........................................  ║▓
+║                                                                                           ║▓
+║ Figure 1: Character sheet template, class header.                                         ║▓
+║                                                                                           ║▓
+║ The Class Header lists the name of the game and the class name. Figure 2 illustrates the  ║▓
+║ Class header for the Wasp class.                                                          ║▓
+║                                                                                           ║▓
+║ ╔►Nests and Insects◄═══════════════════════════════════════════════════►Character Sheet◄╗ ║▓
+║ ║......................................... WASP ........................................  ║▓
+║                                                                                           ║▓
+║ Figure 2: Class Header of the Wasp class character sheet.                                 ║▓
+║                                                                                           ║▓
+║ Attributes Section                                                                        ║▓
+║ ------------------                                                                        ║▓
+║                                                                                           ║▓
+║ Under the Class Header is the Attributes Section, listing Class Attributes: innate        ║▓
+║ abilities of characters in a Class. Figure 3 illustrates the Attributes Section.          ║▓
+║                                                                                           ║▓
+║╠►Attributes◄═════════════════════════════════════════════════════════════════════════════╣║▓
+║║ ┌─────────────────────────────────────────────────────────────────────────────────────┐ ║║▓
+║║ │ □ Speed....:[____%] □ Skill....:[____%] □ Strength...:[____%] □ Stamina....:[____%] │ ║║▓
+║║ │ □ Smarts...:[____%] □ Charms...:[____%] □ Ken........:[____%] □ Passions...:[____%] │ ║║▓
+║║ └<^XP>───────────────<^XP>───────────────<^XP>─────────────────<^XP>──────────────────┘ ║║▓
+║                                                                                           ║▓
+║ Figure 3: Character sheet template, Attributes Section.                                   ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚════════════════════════════════════════════-4-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests and Insects◄═════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ Table 6 lists characters' Attributes along with a short description.                      ║▓
+║                                                                                           ║▓
+║ Attribute        Description                                                              ║▓
+║ ---------        -----------                                                              ║▓
+║ Speed            How fast the character can move                                          ║▓
+║ Skill            Dexterity, precision and fine manipulation ability                       ║▓
+║ Strength         Physical strength, used to push, pull, lift, throw, and break do.. stuff.║▓
+║ Stamina          Physical toughness and endurance, resistance to physical harm            ║▓
+║ Smarts           Intelligence, logic, reasoning and problem solving skill                 ║▓
+║ Charms           Charisma, talent for communication and influencing others' behaviour     ║▓
+║ Ken              Wisdom, common sense, and knowledge of the world                         ║▓
+║ Passions         Willpower, morale, strength of spirit and courage                        ║▓
+║                                                                                           ║▓
+║ Table 6: Character Attributes                                                             ║▓
+║                                                                                           ║▓
+║ Strong and weak Attributes: Each Class has a strong Attribute and a weak Attribute, rated ║▓
+║ to 60% and 25%, respectively (plus any class modifiers). Figure 4 illustrates the         ║▓
+║ Attributes Section for the Wasp class.                                                    ║▓
+║                                                                                           ║▓
+║╠►Attributes◄═════════════════════════════════════════════════════════════════════════════╣║▓
+║║ ┌─────────────────────────────────────────────────────────────────────────────────────┐ ║║▓
+║║ │ □ Speed....:[__60%] □ Skill....:[__45%] □ Strength...:[__50%] □ Stamina....:[__35%] │ ║║▓
+║║ │ □ Smarts...:[__25%] □ Charms...:[__30%] □ Ken........:[__30%] □ Passions...:[__45%] │ ║║▓
+║║ └<^XP>───────────────<^XP>───────────────<^XP>─────────────────<^XP>──────────────────┘ ║║▓
+║                                                                                           ║▓
+║ Figure 4: Attributes Section of the Wasp class character sheet.                           ║▓
+║                                                                                           ║▓
+║ In Figure 4, note that the Speed rating is 60% and the Smarts rating is 25%. Wasp is      ║▓
+║ fast, but not that quick on the uptake.                                                   ║▓
+║                                                                                           ║▓
+║ Using Attributes: Attributes are used in two ways in the game: a) to calculate Combat     ║▓
+║ Conditions; and, b) to form the basis of Effort and Resistance in minigames.              ║▓
+║                                                                                           ║▓
+║ Improving Features with Experience                                                        ║▓
+║ ----------------------------------                                                        ║▓
+║                                                                                           ║▓
+║ In the Attributes Section each attribute is listed with an empty tickbox to the left,     ║▓
+║ marked "XP", as shown in Figure 5. This is an *XP tickbox*. "XP" stands for "Experience   ║▓
+║ Points". XP tickboxes are also found next to Combat Conditions, Survival Features and     ║▓
+║ Common Abilities.                                                                         ║▓
+║                                                                                           ║▓
+║ ┌────────────────────                                                                     ║▓
+║ │ □ Speed....:[____%]                                                                     ║▓
+║ │ □ Smarts...:[____%]                                                                     ║▓
+║ └<^XP>───────────────                                                                     ║▓
+║                                                                                           ║▓
+║ Figure 5: The XP tickbox for Speed and Smarts in the Attribute Section.                   ║▓
+║                                                                                           ║▓
+║ The XP tickbox is ticked to indicate that the relevant Feature has a chance to increase.  ║▓
+║ Figure 6 shows the Speed tickbox in Figure 5 ticked with the ✓ character (U+2713):        ║▓
+║                                                                                           ║▓
+║ ┌────────────────────                                                                     ║▓
+║ │ ✓ Speed....:[____%]                                                                     ║▓
+║ │ □ Smarts...:[____%]                                                                     ║▓
+║ └<^XP>───────────────                                                                     ║▓
+║                                                                                           ║▓
+║ Figure 6: Ticked XP tickbox for Speed                                                     ║▓
+║                                                                                           ║▓
+║ Gaining XP: An XP tickbox next to a Feature is ticked when:                               ║▓
+║                                                                                           ║▓
+║   * the character achieves a Critical Success in a minigame Action that uses the Feature  ║▓
+║     as the basis of Effort or Resistance; or,                                             ║▓
+║                                                                                           ║▓
+║   * when the character Succeeds in a Boolean Roll (discussed in Section Boolean Rolls)    ║▓
+║     for a simple Action that uses that Feature.                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚════════════════════════════════════════════-5-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests and Insects◄═════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ Using XP: XP are used during the Resting and Healing minigame (see Section Resting and    ║▓
+║ Healing) to increase the rating of a Feature, following the steps listed below:           ║▓
+║                                                                                           ║▓
+║    1. Find the Decile die whose maximum is closest to the current rating of the Feature   ║▓
+║       to be improved.                                                                     ║▓
+║                                                                                           ║▓
+║    2. Roll the chosen Decile die.                                                         ║▓
+║                                                                                           ║▓
+║    3. If the Decile die roll is higher than the current rating of the Feature, set the    ║▓
+║       Feature's value to the roll value and untick the Feature's XP tickbox.              ║▓
+║                                                                                           ║▓
+║    4. Otherwise, only untick the XP tickbox- the Feature doesn't improve this time.       ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚════════════════════════════════════════════-6-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
