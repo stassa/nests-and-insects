@@ -7,6 +7,9 @@ Tabletop Roleplaying Game (TTRPG).
 Nests & Insects is still a work in progress, at the early stages of design and
 playtesting.
 
+Reading the rulebooks
+---------------------
+
 For now you can check out the game's overview in the rules document under
 `games/rulebook/txt/nests_and_insects.txt` (or the .pdf version in the adjacent /pdf
 directory).
@@ -25,3 +28,10 @@ The cover and the rulebook are best rendered in the free font DejaVu Sans Mono. 
 download it from here:
 
 https://dejavu-fonts.github.io/
+
+Running the code
+----------------
+
+The ironically named /codez directory contains Prolog code used to manage game data and
+generate characters, character sheets etc. It is not necessary to peruse this directory
+to play the game- it is only included for the game developer's convenience.
