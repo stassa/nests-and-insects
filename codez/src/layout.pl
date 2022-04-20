@@ -58,15 +58,15 @@ format_lines(Ls,N,Fs):-
         ,N_ is N - 2
         ,format_lines(Ls,1,1,N_,W,[],Fs).
 
-%!      format_lines(+Lines,+Pages,+Count,+Page,+Acc,-Formatted) is det.
+%!      format_lines(+Text,+Pages,+Lines,+Max,+Acc,-Formatted) is det.
 %
 %       Business end of format_lines/2.
 %
 %       Pages: current pages count.
 %
-%       Count: current line count.
+%       Lines: current line count.
 %
-%       Page: number of lines per page.
+%       Max: number of lines per page.
 %
 format_lines([],P,_N,_M,W,Acc,Fs):-
 % Format the last line in the entire text.
@@ -90,6 +90,17 @@ format_lines(['\\newpage'|Ls],P,N,M,W,Acc,Bind):-
         ,succ(P,P_)
         ,reverse(Acc_,Acc_R)
         ,format_lines(Ls,P_,1,M,W,Acc_R,Bind).
+format_lines(['\\begin{nolayout}'|Ls],P,N,M,W,Acc,Bind):-
+% Skip inserted pages, already formatted.
+        !
+        ,noformat_lines(Ls,N,Acc,Acc_,Ls_,N_)
+        ,(   N_ =:= M + 2
+         ->  succ(P,P_)
+            ,N_i = 1
+         ;   P = P_
+            ,N_i = N_
+         )
+        ,format_lines(Ls_,P_,N_i,M,W,Acc_,Bind).
 format_lines([L|Ls],P,N,M,W,Acc,Bind):-
 % Keep formatting lines
         format_line(L,N,W,Acc,Acc_)
@@ -158,18 +169,75 @@ format_line(L,_N,W,Acc,[F|Acc]):-
         .
 
 
+%!      noformat_lines(+Lines,Count,+Acc,-New,-Rest,-NewCount) is det.
+%
+%       Skip inserted lines, already formatted.
+%
+%       Lines is a list of lines directly following a
+%       '\\begin{nolayout}' switch. These lines are assumed to be
+%       already a formatted page that is to be inserted at the current
+%       point in the text and should require no additional formatting.
+%
+%       Count is the counter of lines in the pre-formatted page so far.
+%       This should begin at 1.
+%
+%       Acc is the accumulator of pre-formatted lines to be added to the
+%       formatted text as a new page.
+%
+%       New is the binding variable, that will hold the lines of the
+%       pre-formatted page.
+%
+%       Rest is the lines in Lines directly following the
+%       '\end{nolayout}' switch, which means that the last line of the
+%       pre-formatted page has been processed.
+%
+%       NewCount is the updated Count, incremented by the number of
+%       lines in the inserted page.
+%
+%       @tbd This predicate is called by format_lines/7 to allow a
+%       pre-formatted page to be inserted in the text. Currently this
+%       is used to insert character sheets in the rules text. This
+%       predicate is also called by text_width/3 to skip counting lines
+%       of inserted pages. The latter use is necessary because inserted
+%       pages already have borders whose width would otherwise be
+%       counted when looking for the longest line in the text to
+%       calculate where to put borders in all pages in the text.
+%
+noformat_lines(['\\end{nolayout}'|Ls],N,Acc,Acc,Ls,N):-
+        !.
+noformat_lines([L|Ls],N,Acc,Bind,Ls_Bind,N_Bind):-
+        succ(N,N_)
+        ,noformat_lines(Ls,N_,[L|Acc],Bind,Ls_Bind,N_Bind).
+
+
 
 %!      text_width(+Lines,-Width) is det.
 %
 %       Width is the width in column of the longest of Lines.
 %
 text_width(Ls,W):-
-        setof(W_
-             ,L^Ls^(member(L,Ls)
-                   ,atom_length(L,W_)
-              )
-             ,Ws)
-        ,reverse(Ws,[W|_]).
+        text_width(Ls,0,W).
+
+%!      text_width(+Lines,+Acc,-Widest) is det.
+%
+%       Business end of text_width/2.
+%
+text_width([],W,W):-
+        !.
+text_width(['\\begin{nolayout}'|Ls],Wi,Bind):-
+% Skip inserted pages, already formated.
+% See noformat_lines/6 for exaplanation.
+        !
+        ,noformat_lines(Ls,1,[],_,Ls_,_)
+        ,text_width(Ls_,Wi,Bind).
+text_width([L|Ls],Wi,Bind):-
+        atom_length(L,Wj)
+        ,(   Wj > Wi
+         ->  Wk = Wj
+         ;   Wk = Wi
+         )
+        ,text_width(Ls,Wk,Bind).
+
 
 
 %!      read_lines(+File, -Lines) is det.
