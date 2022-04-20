@@ -90,22 +90,12 @@ format_lines(['\\newpage'|Ls],P,N,M,W,Acc,Bind):-
         ,succ(P,P_)
         ,reverse(Acc_,Acc_R)
         ,format_lines(Ls,P_,1,M,W,Acc_R,Bind).
-format_lines(['\\begin{nolayout}'|Ls],P,N,M,W,Acc,Bind):-
+format_lines(['\\begin{nolayout}'|Ls],P,_N,M,W,Acc,Bind):-
 % Skip inserted pages, already formatted.
         !
-        ,noformat_lines(Ls,N,Acc,Acc_,Ls_,N_)
-        % 3 is the number of lines added in heades and footers
-        % M is the adjusted number of lines per page
-        % Pre-formatted pages already have 3 lines extra
-        % hence M + 3 is the offset of N the line count needed
-        % to decide that we must start a new page.
-        ,(   N_ =:= M + 3
-         ->  succ(P,P_)
-            ,N_i = 1
-         ;   P = P_
-            ,N_i = N_
-         )
-        ,format_lines(Ls_,P_,N_i,M,W,Acc_,Bind).
+        ,noformat_lines(Ls,1,Acc,Acc_,Ls_,_)
+        ,succ(P,P_)
+        ,format_lines(Ls_,P_,1,M,W,Acc_,Bind).
 format_lines([L|Ls],P,N,M,W,Acc,Bind):-
 % Keep formatting lines
         format_line(L,N,W,Acc,Acc_)
