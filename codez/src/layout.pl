@@ -1,6 +1,7 @@
 ﻿:-module(layout, [layout_rulebook/3
                  ,read_lines/2
                  ,format_lines/3
+                 ,longest_line/4
                  ]).
 
 /** <module> Layout and formatting for text-based rulebooks.
@@ -184,3 +185,25 @@ read_lines(S,Acc,Bind):-
 read_lines(S,Acc,Ls):-
         read_line_to_codes(S,end_of_file)
         ,reverse(Acc,Ls).
+
+
+%!      longest_line(+Lines,-Line,-Index,-Width) is det.
+%
+%       Find the longest Line in a list of Lines.
+%
+%       Lines is a list of lines of text.
+%
+%       Line is the line in Lines with the highest width, i.e. number of
+%       characters.
+%
+%       Index is the (1-based) index of Line in Lines.
+%
+%       Width is the width of Lines, in characters.
+%
+longest_line(Ls,L,I,W):-
+        findall(Wi-I-Li
+             ,(nth1(I,Ls,Li)
+              ,atom_length(Li,Wi)
+              )
+               ,Ws)
+        ,sort(1,@>,Ws,[W-I-L|_Ws]).
