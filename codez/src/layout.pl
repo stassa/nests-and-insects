@@ -13,7 +13,7 @@
 %
 %       @tbd This should be in the configuration module.
 %
-border(upper_left_corner,'╔►Nests and Insects◄').
+border(upper_left_corner,'╔►Nests & Insects◄').
 border(upper_right_corner,'►Rulebook◄═╗').
 border(horizontal,'═').
 border(vertical,'║').

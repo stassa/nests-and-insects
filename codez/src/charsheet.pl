@@ -44,7 +44,7 @@ print_class_name(Id):-
         % Because we want to print the class Id in the middle of the padded line.
         ,P is ceil(L/2) + N_ + 1
         ,upcase_atom(Id,ID)
-        ,format('╔►Nests and Insects◄~|~`═t~55+►Character Sheet◄╗~n',[])
+        ,format('╔►Nests & Insects◄~|~`═t~57+►Character Sheet◄╗~n',[])
         ,format('║~`.t ~w~*| ~`.t~92|║▓~n',[ID,P]).
 
 
