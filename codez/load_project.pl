@@ -6,6 +6,7 @@
 user:file_search_path(src, project_root(src)).
 user:file_search_path(lib, project_root(lib)).
 user:file_search_path(data, project_root(data)).
+user:file_search_path(output, project_root(input)).
 user:file_search_path(output, project_root(output)).
 
 :-doc_browser.
@@ -23,6 +24,7 @@ edit_files:-
 	,edit(src(chargen))
 	,edit(src(display))
 %	,edit(src(charsheet))
+	,edit(src(layout))
 	.
 :-edit_files.
 
