@@ -79,6 +79,17 @@ format_lines([L|Ls],P,M,M,W,Acc,Bind):-
         ,format_line(nil,last(P),W,Acc,Acc_)
         ,succ(P,P_)
         ,format_lines([L|Ls],P_,1,M,W,Acc_,Bind).
+format_lines(['\\begin{coverpage}'|Ls],P,N,M,W,Acc,Bind):-
+        !
+        ,noformat_lines(Ls,1,Acc,Acc_,Ls_,_)
+        ,format_lines(Ls_,P,N,M,W,Acc_,Bind).
+format_lines(['\\begin{toc}'|Ls],P,N,M,W,Acc,Bind):-
+% This is a separate clause from the one dealing with the coverpage
+% because we might (we will) want to add numbering to the ToC pages.
+% But not to the coverpage.
+        !
+        ,noformat_lines(Ls,1,Acc,Acc_,Ls_,_)
+        ,format_lines(Ls_,P,N,M,W,Acc_,Bind).
 format_lines(['\\newpage'|Ls],P,N,M,W,Acc,Bind):-
 % Fill the rest of the page with blanks.
         !
@@ -188,16 +199,22 @@ format_line(L,_N,W,Acc,[F|Acc]):-
 %       lines in the inserted page.
 %
 %       @tbd This predicate is called by format_lines/7 to allow a
-%       pre-formatted page to be inserted in the text. Currently this
-%       is used to insert character sheets in the rules text. This
-%       predicate is also called by text_width/3 to skip counting lines
-%       of inserted pages. The latter use is necessary because inserted
-%       pages already have borders whose width would otherwise be
-%       counted when looking for the longest line in the text to
-%       calculate where to put borders in all pages in the text.
+%       pre-formatted page (including the cover page and the ToC pages)
+%       to be inserted in the text. Currently this is used to insert
+%       character sheets in the rules text. This predicate is also
+%       called by text_width/3 to skip counting lines of inserted pages.
+%       The latter use is necessary because inserted pages already have
+%       borders whose width would otherwise be counted when looking for
+%       the longest line in the text to calculate where to put borders
+%       in all pages in the text.
 %
-noformat_lines(['\\end{nolayout}'|Ls],N,Acc,Acc,Ls,N):-
-        !.
+%       @tbd This could be made sole responsible for deciding when to
+%       skip a line, rather than having that responsibility spread out
+%       over three bloody predicates as it is now.
+%
+noformat_lines([L|Ls],N,Acc,Acc,Ls,N):-
+        memberchk(L,['\\end{nolayout}','\\end{coverpage}','\\end{toc}'])
+        ,!.
 noformat_lines([L|Ls],N,Acc,Bind,Ls_Bind,N_Bind):-
         succ(N,N_)
         ,noformat_lines(Ls,N_,[L|Acc],Bind,Ls_Bind,N_Bind).
@@ -217,10 +234,11 @@ text_width(Ls,W):-
 %
 text_width([],W,W):-
         !.
-text_width(['\\begin{nolayout}'|Ls],Wi,Bind):-
-% Skip inserted pages, already formated.
+text_width([L|Ls],Wi,Bind):-
+% Skip Cover page, ToC, inserted pages, already formated.
 % See noformat_lines/6 for exaplanation.
-        !
+        memberchk(L,['\\begin{nolayout}','\\begin{coverpage}','\\begin{toc}'])
+        ,!
         ,noformat_lines(Ls,1,[],_,Ls_,_)
         ,text_width(Ls_,Wi,Bind).
 text_width([L|Ls],Wi,Bind):-
