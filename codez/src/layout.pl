@@ -163,7 +163,8 @@ text_width(Ls,W):-
 %
 read_lines(F,Ls):-
         O = open(F,read,S,[alias(input_file)
-                      ,close_on_abort(true)
+                          ,close_on_abort(true)
+                          ,encoding(utf8)
                       ])
         ,R = read_lines(S,[],Ls)
         ,C = close(S)
