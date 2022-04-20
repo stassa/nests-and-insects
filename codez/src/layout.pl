@@ -55,24 +55,31 @@ format_lines(Ls,N,Fs):-
         % One line of header and two lines of footer
         % Plus off-by-one offset
         ,N_ is N - 2
-        ,format_lines(Ls,1,N_,W,[],Fs).
+        ,format_lines(Ls,1,1,N_,W,[],Fs).
 
-%!      format_lines(+Lines,+Counter,+Page,+Acc,-Formatted) is det.
+%!      format_lines(+Lines,+Pages,+Count,+Page,+Acc,-Formatted) is det.
 %
 %       Business end of format_lines/2.
 %
-format_lines([],_N,_M,W,Acc,Fs):-
-        format_line(nil,last,W,Acc,Acc_)
+%       Pages: current pages count.
+%
+%       Count: current line count.
+%
+%       Page: number of lines per page.
+%
+format_lines([],P,_N,_M,W,Acc,Fs):-
+        format_line(nil,last(P),W,Acc,Acc_)
         ,reverse(Acc_,Fs)
         ,!.
-format_lines([L|Ls],M,M,W,Acc,Bind):-
+format_lines([L|Ls],P,M,M,W,Acc,Bind):-
         !
-        ,format_line(nil,last,W,Acc,Acc_)
-        ,format_lines([L|Ls],1,M,W,Acc_,Bind).
-format_lines([L|Ls],N,M,W,Acc,Bind):-
+        ,format_line(nil,last(P),W,Acc,Acc_)
+        ,succ(P,P_)
+        ,format_lines([L|Ls],P_,1,M,W,Acc_,Bind).
+format_lines([L|Ls],P,N,M,W,Acc,Bind):-
         format_line(L,N,W,Acc,Acc_)
         ,succ(N,N_)
-        ,format_lines(Ls,N_,M,W,Acc_,Bind).
+        ,format_lines(Ls,P,N_,M,W,Acc_,Bind).
 
 
 %!      format_line(+Line,+Lnum,+Width,+Acc,-New) is det.
@@ -82,8 +89,8 @@ format_lines([L|Ls],N,M,W,Acc,Bind):-
 %       Line is a line of text, pre-formatted to Width characters.
 %
 %       Lnum is the index of Line in the list of lines of text.
-%       Alternatively, Lnum may be the atom 'last' which means what you
-%       think it means.
+%       Alternatively, Lnum may be the term 'last(N)' which means we're
+%       at the last line of the N'th page in the text.
 %
 %       Width is the number of columns in the line.
 %
@@ -94,8 +101,9 @@ format_lines([L|Ls],N,M,W,Acc,Bind):-
 %
 %       If Lnum is 1, a header line is added to Acc, before Line.
 %
-%       If lnum is the atom last, then Line is the atom 'nil' and the
-%       addition to Acc is the two lines of the footer.
+%       If lnum is the term last(N), then Line is the atom 'nil' and the
+%       addition to Acc is the two lines of the footer, the first of
+%       which has N in the middle as the page count.
 %
 format_line(L,1,W,Acc,[L_,F|Acc]):-
 % Process first line
@@ -108,7 +116,7 @@ format_line(L,1,W,Acc,[L_,F|Acc]):-
         ,atom_codes(HOR,[C])
         ,format(atom(F),'~|~w~*t~w~*|',[ULC,C,URC,W_])
         ,format_line(L,nil,W,[],[L_]).
-format_line(nil,last,W,Acc,[F2,F1|Acc]):-
+format_line(nil,last(P),W,Acc,[F2,F1|Acc]):-
 % Process last line
         !
         ,border(lower_left_corner,ULC)
@@ -122,7 +130,7 @@ format_line(nil,last,W,Acc,[F2,F1|Acc]):-
         ,W2 is (W + 5)
         ,atom_codes(HOR,[C1])
         ,atom_codes(SHA_H,[C2])
-        ,format(atom(F1),'~|~w~*t~w~*|~w',[ULC,C1,URC,W1,SHA_V])
+        ,format(atom(F1),'~|~w~*t-~w-~*t~w~*|~w',[ULC,C1,P,C1,URC,W1,SHA_V])
         ,format(atom(F2),' ~|~*t~*|',[C2,W2]).
 format_line(L,_N,W,Acc,[F|Acc]):-
 % Process all other lines
