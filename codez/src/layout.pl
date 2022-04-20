@@ -294,9 +294,30 @@ read_lines(S,Acc,Ls):-
 %       Width is the width of Lines, in characters.
 %
 longest_line(Ls,L,I,W):-
-        findall(Wi-I-Li
-             ,(nth1(I,Ls,Li)
-              ,atom_length(Li,Wi)
-              )
-               ,Ws)
-        ,sort(1,@>,Ws,[W-I-L|_Ws]).
+        longest_line(Ls,['',1,0],[L,I,W]).
+
+%!      longest_line(+Lines,+Acc,-Widest) is det.
+%
+%       Business end of longest_line/4.
+%
+%       Widest is a list [L,I,W], where L is the longest line in Lines,
+%       I is the index of L in Lines and W is the width of L in
+%       characters.
+%
+longest_line([],W,W):-
+        !.
+longest_line([L|Ls],Acc,Bind):-
+% Skip Cover page, ToC, inserted pages, already formated.
+% See noformat_lines/6 for exaplanation.
+        memberchk(L,['\\begin{nolayout}','\\begin{coverpage}','\\begin{toc}'])
+        ,!
+        ,noformat_lines(Ls,1,[],_,Ls_,_)
+        ,longest_line(Ls_,Acc,Bind).
+longest_line([Lj|Ls],[Li,I,Wi],Bind):-
+        succ(I,J)
+        ,atom_length(Lj,Wj)
+        ,(   Wj > Wi
+         ->  Acc = [Lj,J,Wj]
+         ;   Acc = [Li,I,Wi]
+         )
+        ,longest_line(Ls,Acc,Bind).
