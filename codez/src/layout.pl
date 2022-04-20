@@ -69,15 +69,29 @@ format_lines(Ls,N,Fs):-
 %       Page: number of lines per page.
 %
 format_lines([],P,_N,_M,W,Acc,Fs):-
+% Format the last line in the entire text.
         format_line(nil,last(P),W,Acc,Acc_)
         ,reverse(Acc_,Fs)
         ,!.
 format_lines([L|Ls],P,M,M,W,Acc,Bind):-
+% Format the last line in the current page.
         !
         ,format_line(nil,last(P),W,Acc,Acc_)
         ,succ(P,P_)
         ,format_lines([L|Ls],P_,1,M,W,Acc_,Bind).
+format_lines(['\\newpage'|Ls],P,N,M,W,Acc,Bind):-
+% Fill the rest of the page with blanks.
+        !
+        ,M_ is M - N
+        ,findall(''
+               ,between(1,M_,_K)
+               ,Ss)
+        ,format_lines(Ss,P,N,M,W,Acc,Acc_)
+        ,succ(P,P_)
+        ,reverse(Acc_,Acc_R)
+        ,format_lines(Ls,P_,1,M,W,Acc_R,Bind).
 format_lines([L|Ls],P,N,M,W,Acc,Bind):-
+% Keep formatting lines
         format_line(L,N,W,Acc,Acc_)
         ,succ(N,N_)
         ,format_lines(Ls,P,N_,M,W,Acc_,Bind).
