@@ -87,8 +87,7 @@ format_lines(['\\newpage'|Ls],P,N,M,W,Acc,Bind):-
                ,between(1,M_,_K)
                ,Ss)
         ,append(Ss,Ls,Ls_)
-        ,succ(P,P_)
-        ,format_lines(Ls_,P_,N,M,W,Acc,Bind).
+        ,format_lines(Ls_,P,N,M,W,Acc,Bind).
 format_lines(['\\begin{nolayout}'|Ls],P,_N,M,W,Acc,Bind):-
 % Skip inserted pages, already formatted.
         !
