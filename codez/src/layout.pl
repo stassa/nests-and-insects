@@ -94,7 +94,12 @@ format_lines(['\\begin{nolayout}'|Ls],P,N,M,W,Acc,Bind):-
 % Skip inserted pages, already formatted.
         !
         ,noformat_lines(Ls,N,Acc,Acc_,Ls_,N_)
-        ,(   N_ =:= M + 2
+        % 3 is the number of lines added in heades and footers
+        % M is the adjusted number of lines per page
+        % Pre-formatted pages already have 3 lines extra
+        % hence M + 3 is the offset of N the line count needed
+        % to decide that we must start a new page.
+        ,(   N_ =:= M + 3
          ->  succ(P,P_)
             ,N_i = 1
          ;   P = P_
