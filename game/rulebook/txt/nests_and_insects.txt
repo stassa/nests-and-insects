@@ -978,7 +978,7 @@
 ║└───────────────────────────────────────────┘└───────────────────────────────────────────┘ ║▓
 ╠►Survival◄═════════════════════════════════════════════════════════════════════════════════╣▓
 ║┌[Food]───────────────────┐┌[Luck]───────────────────────────────────────────────────────┐ ║▓
-║│ ○ Hunger........[___0%] ││ [11%].[22%].[33%].[44%].[55%].[66%].[77%].[88%].[99%].[00%].│ ║▓
+║│ ○ Hunger........[_NONE] ││ [11%].[22%].[33%].[44%].[55%].[66%].[77%].[88%].[99%].[00%].│ ║▓
 ║└<^Starving>──────────────┘└──^──────────────────────────────────────────────────────────┘ ║▓
 ╠►Abilities◄════════════════════════════════════════════════════════════════════════════════╣▓
 ║┌[Specific Abilities]────────┐┌[Common Abilities]────────────────────────────────────────┐ ║▓
@@ -1103,28 +1103,28 @@
 ║                                         Scorpion                                          ║▓
 ║                                         ========                                          ║▓
 ║                                                                                           ║▓
+║ Pronouns: he/him/his                                                                      ║▓
+║ --------                                                                                  ║▓
 ║                                                                                           ║▓
+║ Description                                                                               ║▓
+║ -----------                                                                               ║▓
 ║                                                                                           ║▓
+║ Scorpions are not insects! They are arthropods, like insects, but they belong to their    ║▓
+║ own Order, Arachnica (the Arachnids), along with spiders and vinegaroons. Scorpions, like ║▓
+║ most Arachnids, have eight legs and a pair of appendages, their frightful pincers,        ║▓
+║ specialised to grasp and manipulate, in particular, their food. Scorpions' tails are      ║▓
+║ infamous for their stinger that injects an extremely painful, lethal venom. Scorpions can ║▓
+║ move with precision on their eight legs but are slowed down by their exoskeleton that     ║▓
+║ functions as a carapace armour. In Combat, Scorpions can use their excellent Leadership   ║▓
+║ to support their allies by improving their Disposition. They can also use their           ║▓
+║ Signalling to display their pincers and stinger in such a fashion as to scare their       ║▓
+║ enemies and worsen their Disposition.                                                     ║▓
 ║                                                                                           ║▓
+║ Choose this class:                                                                        ║▓
+║ ------------------                                                                        ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ If you want your character to be a lethal, well-protected, tactician specialised in heavy ║▓
+║ support.                                                                                  ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -1203,28 +1203,28 @@
 ║                                          Spider                                           ║▓
 ║                                          ======                                           ║▓
 ║                                                                                           ║▓
+║ Pronouns: she/her/hers.                                                                   ║▓
+║ --------                                                                                  ║▓
 ║                                                                                           ║▓
+║ Description                                                                               ║▓
+║ -----------                                                                               ║▓
 ║                                                                                           ║▓
+║ Like Scorpions, Spiders are Arachnids- indeed, the Order Arachnida is named after the     ║▓
+║ Greek name of Spider, *Arachne*. Spiders, like most Arachnids, have eight legs and two    ║▓
+║ front appendages, called the pedipals, that function like external mouthparts. Spiders    ║▓
+║ can move very fast and with great precision on their eight legs. They are frightfully     ║▓
+║ clever and use their intelligence to hunt and ambush prey. The defining characteristic of ║▓
+║ spides is their webs that they can spin, or spit. In Combat, SPiders' webs can immobilise ║▓
+║ enemies or stabilise allies bleeding hemolymph (the web essentially acts as a bandage).   ║▓
+║ Spiders' bites inject venom that can paralyse prey, and can heal allies, removing their   ║▓
+║ Wounds. They are, unfortunately quite frail and have no carapace to protect them from     ║▓
+║ attacks.                                                                                  ║▓
 ║                                                                                           ║▓
+║ Choose this class:                                                                        ║▓
+║ ------------------                                                                        ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ If you want your character to be a lethal, fast, intelligent, but frail healer, and       ║▓
+║ hunter.                                                                                   ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -1303,29 +1303,29 @@
 ║                                           Wasp                                            ║▓
 ║                                           ====                                            ║▓
 ║                                                                                           ║▓
+║ Pronouns: me/ ME/ MINE!                                                                   ║▓
+║ --------                                                                                  ║▓
 ║                                                                                           ║▓
+║ Description                                                                               ║▓
+║ -----------                                                                               ║▓
 ║                                                                                           ║▓
+║ Wasps are mean, flying killing machines. Wasps are fast and precise fliers that can hover ║▓
+║ in place. They have yellow- or orange-and-black aposematic stripes that warn enemies of   ║▓
+║ their dedlinesss. Their Stings inhect lethal venom, but unlike Spiders' venom, Wasp venom ║▓
+║ can only wound, not heal. Unlike Bees, Wasps do not lose their stings and die when they   ║▓
+║ sting an enemy, so they can keep stinging away fro as long as they like. In Combat Wasps  ║▓
+║ are high-mobility, shock troops optimised for menoeuverability and damage, but they have  ║▓
+║ soft bodies without a protective carapace armour. They can use their high Signalling to   ║▓
+║ perform aggessive displays and drain the morale of their enemies, thus reducing their     ║▓
+║ Disposition. Wasps have good knowledge of eusocial insects' domains thanks to their high  ║▓
+║ Eusociology, acquired over years of raiding the nests of Bees. They are excellent at      ║▓
+║ Foraging and can identify valuable or dangerous Food items.                               ║▓
 ║                                                                                           ║▓
+║ Choose this class:                                                                        ║▓
+║ ------------------                                                                        ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ If you want your character to be mobile, deadly and feared by its enemies, with good      ║▓
+║ survival skills.                                                                          ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
