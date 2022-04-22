@@ -79,32 +79,11 @@ format_lines([L|Ls],P,M,M,W,Acc,Bind):-
         ,format_line(nil,last(P),W,Acc,Acc_)
         ,succ(P,P_)
         ,format_lines([L|Ls],P_,1,M,W,Acc_,Bind).
-format_lines(['\\begin{coverpage}'|Ls],P,N,M,W,Acc,Bind):-
-        !
-        ,noformat_lines(Ls,1,Acc,Acc_,Ls_,_)
-        ,format_lines(Ls_,P,N,M,W,Acc_,Bind).
-format_lines(['\\begin{toc}'|Ls],P,N,M,W,Acc,Bind):-
-% This is a separate clause from the one dealing with the coverpage
-% because we might (we will) want to add numbering to the ToC pages.
-% But not to the coverpage.
-        !
-        ,noformat_lines(Ls,1,Acc,Acc_,Ls_,_)
-        ,format_lines(Ls_,P,N,M,W,Acc_,Bind).
-format_lines(['\\newpage'|Ls],P,N,M,W,Acc,Bind):-
-% Fill the rest of the page with blanks.
-        !
-        ,M_ is M - N
-        ,findall(''
-               ,between(1,M_,_K)
-               ,Ss)
-        ,append(Ss,Ls,Ls_)
-        ,format_lines(Ls_,P,N,M,W,Acc,Bind).
-format_lines(['\\begin{nolayout}'|Ls],P,_N,M,W,Acc,Bind):-
-% Skip inserted pages, already formatted.
-        !
-        ,noformat_lines(Ls,1,Acc,Acc_,Ls_,_)
-        ,succ(P,P_)
-        ,format_lines(Ls_,P_,1,M,W,Acc_,Bind).
+format_lines([L|Ls],P,N,M,W,Acc,Bind):-
+% Execute a formatting command.
+        format_command(L,Ls,[P,N,M,W],Acc,Acc_,Ls_,[P_,N_,M_,W_])
+        ,!
+        ,format_lines(Ls_,P_,N_,M_,W_,Acc_,Bind).
 format_lines([L|Ls],P,N,M,W,Acc,Bind):-
 % Keep formatting lines
         format_line(L,N,W,Acc,Acc_)
@@ -171,6 +150,61 @@ format_line(L,_N,W,Acc,[F|Acc]):-
         ,format(atom(F),'~w ~w~` t~*|~w~w',[VER,L,W_,VER,SHA])
         %                  ^ Here's the space!
         .
+
+
+%!      format_command(+Command,+Lines,+Counts,+Acc,-NewAcc,-NewLines,-NewCounts
+%       is det.
+%
+%       Execute a formatting Command on subsequent Lines.
+%
+%       Command is a formatting command found in the text. Those are
+%       described below.
+%
+%       Lines is the list of lines in the input text after the Command.
+%
+%       Counts is a list [P,N,M,W] where each element is a number and P
+%       is the current Page count, Lines is the current line count for
+%       the current page, M is the maximum number of lines per page and
+%       W is the maximum width of text in a page.
+%
+%       Acc is the accumulator of processsed lines.
+%
+%       NewAcc_ is Acc updated with lines processed according to
+%       Command.
+%
+%       NewLines is the lines remaining in Lines after Command has
+%       processed as many lines as it needs.
+%
+%       NewCounts is the list [P_,N_,M_,W_] where each element is an
+%       element of Counts updated after the execution of Command.
+%
+%       _Formatting Commands_
+%
+%       * \\begin{coverpage}: marks the beginning the cover page of the
+%       entire text.
+%
+%       * \\begin{toc}: marks the beginning of the Table of Contents.
+%
+%       * \\newpage: inserts a new page or completes the current page by
+%       filling it with empty lines until it is M lines long.
+%
+%       * \\begin{nolayout}: beginning of a pre-formatted page. This
+%       should be exactly M lines.
+%
+format_command('\\begin{coverpage}',Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N,M,W]):-
+        noformat_lines(Ls,1,Acc,Acc_,Ls_,_).
+format_command('\\begin{toc}',Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N,M,W]):-
+        noformat_lines(Ls,1,Acc,Acc_,Ls_,_).
+format_command('\\newpage',Ls,[P,N,M,W],Acc,Acc,Ls_,[P,N,M,W]):-
+        M_ is M - N
+        ,findall(''
+               ,between(1,M_,_K)
+               ,Ss)
+        ,append(Ss,Ls,Ls_).
+format_command('\\begin{nolayout}',Ls,[P,_N,M,W],Acc,Acc_,Ls_,[P_,1,M,W]):-
+        noformat_lines(Ls,1,Acc,Acc_,Ls_,_)
+        ,succ(P,P_).
+
 
 
 %!      noformat_lines(+Lines,Count,+Acc,-New,-Rest,-NewCount) is det.
