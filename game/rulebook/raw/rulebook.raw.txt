@@ -66,13 +66,13 @@
 ║   Character Sheet ..................................................................... 7 ║▓
 ║     Class Header ...................................................................... 7 ║▓
 ║     Attributes Area ................................................................... 7 ║▓
-║     Combat Stats Area ................................................................. 8 ║▓
+║     Combat Stats Area ................................................................. 9 ║▓
 ║       Condition box ................................................................... 9 ║▓
 ║       Disposition Track ............................................................... 9 ║▓
 ║       Attack boxes ................................................................... 10 ║▓
-║     Survival Area .................................................................... 10 ║▓
+║     Survival Area .................................................................... 11 ║▓
 ║       Food box ....................................................................... 11 ║▓
-║       Luck box ....................................................................... 11 ║▓
+║       Luck box ....................................................................... 12 ║▓
 ║       Abilities Area ................................................................. 11 ║▓
 ║         Specific Abilities box ....................................................... 12 ║▓
 ║         Common Abilities box ......................................................... 13 ║▓
@@ -390,10 +390,12 @@ Table 4: Combat minigame outcomes.
                                      ===============
 
 In Nests & Insects characters are described by percentile-rated Features, listed in a
-character sheet. There are five categories of Features: Attributes, Combat Conditions,
-Survival Features, Abilities and Inventory Items. Features and their use in the game are
-described in detail in the "Features" Section of the "System" Chapter. This Section
-briefly introduces the different Features as they are listed in the character sheet.
+character sheet. 
+
+There are five categories of Features: Attributes, Combat Conditions, Survival Features,
+Abilities and Inventory Items. Features and their use in the game are described in detail
+in the "Features" Section of the "System" Chapter. This Section briefly introduces the
+different Features as they are listed in the character sheet.
 
 Each character class has its own character sheet, based on the character sheet template
 in the preceding page, with its own, pre-set, values. The Character Sheet is divided into
@@ -426,8 +428,10 @@ replaced by the name of the character's class, e.g. Wasp, Spider, Ants, etc.
 Attributes Area
 ---------------
 
-Under the Class Header is the Attributes Area (Figure 2), listing Class Attributes:
-innate abilities of characters in a Class.
+Under the Class Header is the Attributes Area (Figure 2), listing Class Attributes.
+Attributes are Features that represent innate abilities of characters in a Class.
+
+
 
 ╠►Attributes◄═══════════════════════════════════════════════════════════════════════════╣
 ║┌─────────────────────────────────────────────────────────────────────────────────────┐║
@@ -474,6 +478,8 @@ Figure 4 shows the Speed tickbox in Figure 3 ticked with the ✓ character (U+27
 ─────────────────────
 Figure 4: Ticked XP tickbox for Speed
 
+
+
 Combat Stats Area
 -----------------
 
@@ -519,6 +525,8 @@ Disposition Track
 The Disposition Track (Figure 7) follows a character's Disposition, a representation of
 both position and morale in Combat.
 
+
+
 ├─<Disposition Track>───────────────────────────────────────────────────────────────────┤
 │ (Advance this way -->) ........................................ (<-- Recoil this way) │
 │ ○ Retreating...... ○ Recoiling..... ○ Holding...... ○ Advancing...... ○ Charging..... │
@@ -563,6 +571,9 @@ Attack and Special Attack. Each character class has its own Base and Special Att
 ────────────────────────────────────────────────────────────────────────────────────────
 Figure 8: Attack boxes
 
+
+
+
 Survival Area
 -------------
 
@@ -601,9 +612,14 @@ an up-arrow (^) in the bottom of the Luck box.
 ───────────────────────────────────────────────────────────────
 Figure 11: Luck box, with the Luck marker on 11% (starting Luck).
 
-A character's Luck rating changes whenever the player rolls a d100 and the same digit
-appears on both d10s. This is known as "rolling a double". When a double is rolled, the
-Luck marker is moved to the rating that matches the double.
+Characters start the game with 11% Luck. During the game A character's Luck rating
+changes whenever the player rolls a d100 and the same digit appears on both d10s. This is
+known as "rolling a double". When a double is rolled, the Luck marker is moved to the
+rating that matches the double.
+
+
+
+
 
 Abilities Area
 --------------
@@ -621,7 +637,8 @@ Specific Abilities box
 ----------------------
 
 The Specific Abilities box (Figure 13) lists Abilities that are particular to a Species
-(hence, "Specific"). Nests & Insects Classes model individuals of particular species.
+(hence, "Specific"). Nests & Insects classes model individuals of a species hence each
+character class has its own Specific Abilities.
 
 ┌[Specific Abilities]────────┐
 │ Carapace..........:[___0%] │
@@ -693,10 +710,10 @@ Table 7: Common Abilities with brief description.
 Effects box
 -----------
 
-Effects are generally detrimental conditions that can affect a character as a result of
-Attacks in combat, and other Minigames.
-
 The Effects box (Figure 15) lists ten Effects that a character can be subject to.
+
+Effects are generally detrimental conditions that can affect a character as a result of
+Attacks in Combat, and other minigames.
 
 ┌[Effects]───────────────────────────────────┐
 │ ○ Agony....:[___0%] ○ Immobilised.:[___0%] │
@@ -708,7 +725,7 @@ The Effects box (Figure 15) lists ten Effects that a character can be subject to
 ──────────────────────────────────────────────
 Figure 15: Effects box.
 
-Effects each have a radio-button. When this is ticked it marks that the Effect "Applies",
+Effects each have a radio button. When this is ticked it marks that the Effect "Applies",
 i.e. that the character is currently subject to the Effect. The ten Effects in the Effect
 box are listed in Table 8 along with a brief description of each.
 

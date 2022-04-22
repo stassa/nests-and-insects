@@ -63,13 +63,13 @@
 ║   Character Sheet ..................................................................... 7 ║▓
 ║     Class Header ...................................................................... 7 ║▓
 ║     Attributes Area ................................................................... 7 ║▓
-║     Combat Stats Area ................................................................. 8 ║▓
+║     Combat Stats Area ................................................................. 9 ║▓
 ║       Condition box ................................................................... 9 ║▓
 ║       Disposition Track ............................................................... 9 ║▓
 ║       Attack boxes ................................................................... 10 ║▓
-║     Survival Area .................................................................... 10 ║▓
+║     Survival Area .................................................................... 11 ║▓
 ║       Food box ....................................................................... 11 ║▓
-║       Luck box ....................................................................... 11 ║▓
+║       Luck box ....................................................................... 12 ║▓
 ║       Abilities Area ................................................................. 11 ║▓
 ║         Specific Abilities box ....................................................... 12 ║▓
 ║         Common Abilities box ......................................................... 13 ║▓
@@ -454,10 +454,12 @@
 ║                                      ===============                                      ║▓
 ║                                                                                           ║▓
 ║ In Nests & Insects characters are described by percentile-rated Features, listed in a     ║▓
-║ character sheet. There are five categories of Features: Attributes, Combat Conditions,    ║▓
-║ Survival Features, Abilities and Inventory Items. Features and their use in the game are  ║▓
-║ described in detail in the "Features" Section of the "System" Chapter. This Section       ║▓
-║ briefly introduces the different Features as they are listed in the character sheet.      ║▓
+║ character sheet.                                                                          ║▓
+║                                                                                           ║▓
+║ There are five categories of Features: Attributes, Combat Conditions, Survival Features,  ║▓
+║ Abilities and Inventory Items. Features and their use in the game are described in detail ║▓
+║ in the "Features" Section of the "System" Chapter. This Section briefly introduces the    ║▓
+║ different Features as they are listed in the character sheet.                             ║▓
 ║                                                                                           ║▓
 ║ Each character class has its own character sheet, based on the character sheet template   ║▓
 ║ in the preceding page, with its own, pre-set, values. The Character Sheet is divided into ║▓
@@ -490,15 +492,17 @@
 ║ Attributes Area                                                                           ║▓
 ║ ---------------                                                                           ║▓
 ║                                                                                           ║▓
-║ Under the Class Header is the Attributes Area (Figure 2), listing Class Attributes:       ║▓
-║ innate abilities of characters in a Class.                                                ║▓
+║ Under the Class Header is the Attributes Area (Figure 2), listing Class Attributes.       ║▓
+║ Attributes are Features that represent innate abilities of characters in a Class.         ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚════════════════════════════════════════════-7-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║ ╠►Attributes◄═══════════════════════════════════════════════════════════════════════════╣ ║▓
 ║ ║┌─────────────────────────────────────────────────────────────────────────────────────┐║ ║▓
 ║ ║│ □ Speed....:[____%] □ Skill....:[____%] □ Strength...:[____%] □ Stamina....:[____%] │║ ║▓
-╚════════════════════════════════════════════-7-════════════════════════════════════════════╝▓
- ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║ ║│ □ Smarts...:[____%] □ Charms...:[____%] □ Ken........:[____%] □ Passions...:[____%] │║ ║▓
 ║ ║└<^XP>───────────────<^XP>───────────────<^XP>─────────────────<^XP>──────────────────┘║ ║▓
 ║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
@@ -541,14 +545,16 @@
 ║ ─────────────────────                                                                     ║▓
 ║ Figure 4: Ticked XP tickbox for Speed                                                     ║▓
 ║                                                                                           ║▓
+║                                                                                           ║▓
+╚════════════════════════════════════════════-8-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
 ║ Combat Stats Area                                                                         ║▓
 ║ -----------------                                                                         ║▓
 ║                                                                                           ║▓
 ║ The Combat Stats area starts with the Combat Stats header (Figure 5).                     ║▓
 ║                                                                                           ║▓
-╚════════════════════════════════════════════-8-════════════════════════════════════════════╝▓
- ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║ ╠►Combat Stats◄════════════════════════════════════════════════════════════════════════╣▓ ║▓
 ║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
 ║ Figure 5: Header of the Combat Stats Area.                                                ║▓
@@ -589,6 +595,11 @@
 ║ The Disposition Track (Figure 7) follows a character's Disposition, a representation of   ║▓
 ║ both position and morale in Combat.                                                       ║▓
 ║                                                                                           ║▓
+║                                                                                           ║▓
+╚════════════════════════════════════════════-9-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
 ║ ├─<Disposition Track>───────────────────────────────────────────────────────────────────┤ ║▓
 ║ │ (Advance this way -->) ........................................ (<-- Recoil this way) │ ║▓
 ║ │ ○ Retreating...... ○ Recoiling..... ○ Holding...... ○ Advancing...... ○ Charging..... │ ║▓
@@ -596,9 +607,6 @@
 ║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
 ║ Figure 7: Disposition Track. Modifiers apply to all Actions in Combat.                    ║▓
 ║                                                                                           ║▓
-╚════════════════════════════════════════════-9-════════════════════════════════════════════╝▓
- ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║ The Disposition track includes reminder text to point out the direction in which          ║▓
 ║ Disposition Advances (increases) or Recoils (decreases) in Combat. Disposition is better  ║▓
 ║ the further it moves towards "Charging".                                                  ║▓
@@ -636,6 +644,12 @@
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
 ║ Figure 8: Attack boxes                                                                    ║▓
 ║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-10-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
 ║ Survival Area                                                                             ║▓
 ║ -------------                                                                             ║▓
 ║                                                                                           ║▓
@@ -646,9 +660,6 @@
 ║ Figure 9: Survival header, demarkating the Survival Area.                                 ║▓
 ║                                                                                           ║▓
 ║ The Survival Area has two sub-Areas: the Food box, used in the Survival minigame; and the ║▓
-╚═══════════════════════════════════════════-10-════════════════════════════════════════════╝▓
- ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║ Luck box.                                                                                 ║▓
 ║                                                                                           ║▓
 ║ Food box                                                                                  ║▓
@@ -677,9 +688,17 @@
 ║ ───────────────────────────────────────────────────────────────                           ║▓
 ║ Figure 11: Luck box, with the Luck marker on 11% (starting Luck).                         ║▓
 ║                                                                                           ║▓
-║ A character's Luck rating changes whenever the player rolls a d100 and the same digit     ║▓
-║ appears on both d10s. This is known as "rolling a double". When a double is rolled, the   ║▓
-║ Luck marker is moved to the rating that matches the double.                               ║▓
+║ Characters start the game with 11% Luck. During the game A character's Luck rating        ║▓
+║ changes whenever the player rolls a d100 and the same digit appears on both d10s. This is ║▓
+║ known as "rolling a double". When a double is rolled, the Luck marker is moved to the     ║▓
+║ rating that matches the double.                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-11-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║ Abilities Area                                                                            ║▓
 ║ --------------                                                                            ║▓
@@ -696,11 +715,9 @@
 ║ Specific Abilities box                                                                    ║▓
 ║ ----------------------                                                                    ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-11-════════════════════════════════════════════╝▓
- ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║ The Specific Abilities box (Figure 13) lists Abilities that are particular to a Species   ║▓
-║ (hence, "Specific"). Nests & Insects Classes model individuals of particular species.     ║▓
+║ (hence, "Specific"). Nests & Insects classes model individuals of a species hence each    ║▓
+║ character class has its own Specific Abilities.                                           ║▓
 ║                                                                                           ║▓
 ║ ┌[Specific Abilities]────────┐                                                            ║▓
 ║ │ Carapace..........:[___0%] │                                                            ║▓
@@ -729,6 +746,9 @@
 ║                                                                                           ║▓
 ║   A character with low Swarming starts as a single individual but can summon more         ║▓
 ║   individuals of her species. Wasp has low Swarming.                                      ║▓
+╚═══════════════════════════════════════════-12-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║ * Venomous: the character has a venomous bite or sting and can bestow Effects such as     ║▓
 ║   Agony, Immobilised, Paralysed, or Poisoned to enemies in Combat, or otherwise.          ║▓
@@ -746,9 +766,6 @@
 ║ │ □ Eusociology......:[____%] □ Leadership........:[____%] │                              ║▓
 ║ │ □ Exploration......:[____%] □ Perception........:[____%] │                              ║▓
 ║ │ □ Foraging.........:[____%] □ Signalling........:[____%] │                              ║▓
-╚═══════════════════════════════════════════-12-════════════════════════════════════════════╝▓
- ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║ │ □ Healing..........:[____%] □ Sneaking..........:[____%] │                              ║▓
 ║ └<^XP>───────────────────────<^XP>─────────────────────────┘                              ║▓
 ║ ────────────────────────────────────────────────────────────                              ║▓
@@ -775,10 +792,13 @@
 ║ Effects box                                                                               ║▓
 ║ -----------                                                                               ║▓
 ║                                                                                           ║▓
-║ Effects are generally detrimental conditions that can affect a character as a result of   ║▓
-║ Attacks in combat, and other Minigames.                                                   ║▓
-║                                                                                           ║▓
 ║ The Effects box (Figure 15) lists ten Effects that a character can be subject to.         ║▓
+║                                                                                           ║▓
+║ Effects are generally detrimental conditions that can affect a character as a result of   ║▓
+║ Attacks in Combat, and other minigames.                                                   ║▓
+╚═══════════════════════════════════════════-13-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║ ┌[Effects]───────────────────────────────────┐                                            ║▓
 ║ │ ○ Agony....:[___0%] ○ Immobilised.:[___0%] │                                            ║▓
@@ -790,15 +810,12 @@
 ║ ──────────────────────────────────────────────                                            ║▓
 ║ Figure 15: Effects box.                                                                   ║▓
 ║                                                                                           ║▓
-║ Effects each have a radio-button. When this is ticked it marks that the Effect "Applies", ║▓
+║ Effects each have a radio button. When this is ticked it marks that the Effect "Applies", ║▓
 ║ i.e. that the character is currently subject to the Effect. The ten Effects in the Effect ║▓
 ║ box are listed in Table 8 along with a brief description of each.                         ║▓
 ║                                                                                           ║▓
 ║ Effects        The character...                                                           ║▓
 ║ ───────        ────────────────                                                           ║▓
-╚═══════════════════════════════════════════-13-════════════════════════════════════════════╝▓
- ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║ Agony          ...is in agony and must overcome her pain to act                           ║▓
 ║ Bleeding       ...automatically takes a Wound each Combat Turn                            ║▓
 ║ Blind          ...can't see. Ants start the game Blind                                    ║▓
@@ -829,6 +846,9 @@
 ║ Figure 16: Inventory box.                                                                 ║▓
 ║                                                                                           ║▓
 ║ Each line in the Inventory box is an Inventory item. Items have an "Edible" radio button  ║▓
+╚═══════════════════════════════════════════-14-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║ that indicates whether the item is a Food item that can be consumed to reduce Hunger.     ║▓
 ║                                                                                           ║▓
 ║ Characters can only carry as many items as there are lines in the Inventory box: that is  ║▓
@@ -846,7 +866,37 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-14-════════════════════════════════════════════╝▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-15-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -896,7 +946,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-15-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-16-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═════════════════════════════════════════════════════════►Character Sheet◄╗
 ║.......................................... BEETLE .........................................║▓
@@ -996,7 +1046,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-17-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-18-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═════════════════════════════════════════════════════════►Character Sheet◄╗
 ║......................................... SCORPION ........................................║▓
@@ -1096,7 +1146,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-19-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-20-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═════════════════════════════════════════════════════════►Character Sheet◄╗
 ║.......................................... SPIDER .........................................║▓
@@ -1196,7 +1246,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-21-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-22-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═════════════════════════════════════════════════════════►Character Sheet◄╗
 ║........................................... WASP ..........................................║▓
@@ -1296,5 +1346,5 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-23-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-24-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
