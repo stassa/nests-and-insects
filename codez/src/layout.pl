@@ -285,14 +285,12 @@ box_lines(N,['\\end{box}'|Ls],W,Acc,Acc_,Ls,N):-
         ,W_ is W + 2
         ,format(atom(F),'~|└~`─t┘~*| ',[W_])
         ,format_line(F,nil,W,Acc,Acc_).
-
 box_lines(1,[T|Ls],W,Acc,Bind,Ls_Bind,N_Bind):-
         !
         ,W_ is W + 2
         ,format(atom(F),'~|┌[~w]~`─t┐~*| ',[T,W_])
         ,format_line(F,nil,W,Acc,Acc_)
         ,box_lines(2,Ls,W,Acc_,Bind,Ls_Bind,N_Bind).
-
 box_lines(N,[L|Ls],W,Acc,Bind,Ls_Bind,N_Bind):-
         format(atom(F),'│ ~w~` t~*| │ ',[L,W])
         ,format_line(F,nil,W,Acc,Acc_)
