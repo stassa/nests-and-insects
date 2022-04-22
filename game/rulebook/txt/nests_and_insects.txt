@@ -50,8 +50,8 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║                               Table of Contents                                           ║▓
-║                               =================                                           ║▓
+║                                     Table of Contents                                     ║▓
+║                                     =================                                     ║▓
 ║                                                                                           ║▓
 ║ Overview .............................................................................. 1 ║▓
 ║   The Setting ......................................................................... 1 ║▓
@@ -196,11 +196,11 @@
 ║ fiction. Nests & Insects borrows from Roguelike CRPGs game elements like: procedural      ║▓
 ║ generation; a focus on hack-and-slash gameplay; lethal combat; freedom to tackle          ║▓
 ║ challenges in different ways; a focus on exploration of, and experimentation in the game  ║▓
-║ world; and the need for characters to find sustenance or die.                             ║▓
-║                                                                                           ║▓
 ╚════════════════════════════════════════════-1-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║ world; and the need for characters to find sustenance or die.                             ║▓
+║                                                                                           ║▓
 ║ While Nests & Insects is a roleplaying game, it is not focused on roleplaying, because it ║▓
 ║ is very difficult for humans to roleplay arthropods (and vice-versa). As in Roguelike     ║▓
 ║ CRPGs, Nests & Insects does not come with a built-in, pre-scripted story, and it is       ║▓
@@ -246,11 +246,11 @@
 ║ Two additional DoS, Critical Failure and Critical Success are attainable by the use of    ║▓
 ║ modifiers. Static modifiers are compared to the same d100 roll as Effort and Resistance.  ║▓
 ║ Dramatic modifiers are compared to one or two new d100 rolls. Characters' intents and     ║▓
-║ actions that grant dramatic modifiers must be described in more detail than static        ║▓
-║ modifiers, to encourage players to use their imagination to help their characters. Table  ║▓
 ╚════════════════════════════════════════════-2-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║ actions that grant dramatic modifiers must be described in more detail than static        ║▓
+║ modifiers, to encourage players to use their imagination to help their characters. Table  ║▓
 ║ 2 illustrates the use of modifiers to change the DoS of an action.                        ║▓
 ║                                                                                           ║▓
 ║ Roll vs Modifier        Modifier Sign        Degree of Success                            ║▓
@@ -294,15 +294,17 @@
 ║ Table 3: Decile dice, used for quantification of percentile effects. d100 is also a       ║▓
 ║ decile die. The d20 does not need a "tens" die and is rolled on its own.                  ║▓
 ║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚════════════════════════════════════════════-3-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║ Minigames                                                                                 ║▓
 ║ ---------                                                                                 ║▓
 ║                                                                                           ║▓
 ║ Nests & Insects is organised around "minigames" that define special rules for common      ║▓
 ║ in-game tasks. There are four minigames: Combat; Survival; Hunting and Foraging; and      ║▓
 ║ Resting and Healing. Minigames are described in detail in Section "Minigames" of the      ║▓
-╚════════════════════════════════════════════-3-════════════════════════════════════════════╝▓
- ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║ "System" Chapter.                                                                         ║▓
 ║                                                                                           ║▓
 ║ In the Combat minigame, characters have two Attack actions: a Base Attack and a Special   ║▓
@@ -329,12 +331,6 @@
 ║ Critical Failure         Both Attacks Miss                                                ║▓
 ║ ──────────────────────────────────────────                                                ║▓
 ║ Table 4: Combat minigame outcomes.                                                        ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
