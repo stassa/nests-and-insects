@@ -270,11 +270,11 @@
 ║ -----------                                                                                ║▓
 ║                                                                                            ║▓
 ║ Some actions require quantification of their effects. To quantify the effects of actions   ║▓
-║ on the same percentile scale as characters' Features, Nests & Insects uses Decile Dice.    ║▓
+║ on the same percentile scale as characters' Features, Nests & Insects uses decile dice.    ║▓
 ║ Those are pairs of a common TTRPG polyhedral die and a ten-sided die, rolled together and  ║▓
 ║ read as one: the d10 is the "ones" of the roll and the other die is the "tens". When the   ║▓
 ║ highest digit on the "tens" die is rolled it is read as a zero, unless the d10 also shows  ║▓
-║ a "0". In that case the two dice are read as the maximum of the Decile die's range.        ║▓
+║ a "0". In that case the two dice are read as the maximum of the decile die's range.        ║▓
 ║                                                                                            ║▓
 ║ ┌[Example 1]────────────────────────────────────────────────────────────────────────────┐  ║▓
 ║ │ The d60 is composed of a d6 and a d10. When the d6 shows a "6" it is read as a zero,  │  ║▓
@@ -295,7 +295,7 @@
 ║ d100          d10         d10         1 to 100                                             ║▓
 ║ ──────────────────────────────────────────────                                             ║▓
 ║ Table 3: Decile dice, used for quantification of percentile effects. d100 is also a        ║▓
-║ Decile die. The d20 does not need a "tens" die and is rolled on its own.                   ║▓
+║ decile die. The d20 does not need a "tens" die and is rolled on its own.                   ║▓
 ╚════════════════════════════════════════════-3-═════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄════════════════════════════════════════════════════════════════►Rulebook◄═╗
@@ -311,17 +311,6 @@
 ║ In the Combat minigame, characters have two Attack actions: a Base Attack and a Special    ║▓
 ║ Attack. The DoS of a character's Attack action determines which Attack hits, or misses.    ║▓
 ║                                                                                            ║▓
-║ Degree of Success        Outcome                                                           ║▓
-║ ─────────────────        ───────                                                           ║▓
-║ Critical Success         Both Attacks Hit                                                  ║▓
-║ Complete Success         Special Attack Hits                                               ║▓
-║ Partial Success          Base Attack Hits                                                  ║▓
-║ Partial Failure          Base Attack Misses                                                ║▓
-║ Complete Failure         Special Attack Misses                                             ║▓
-║ Critical Failure         Both Attacks Miss                                                 ║▓
-║ ──────────────────────────────────────────                                                 ║▓
-║ Table 4: Combat minigame outcomes.                                                         ║▓
-║                                                                                            ║▓
 ║ When an Attack hits, it causes injury to the target, and may bestow detrimental effects    ║▓
 ║ on enemies, or beneficial effects on allies. When an Attack misses, the attacker suffers   ║▓
 ║ detrimental effects. Injury causes the DoS of subsequent actions to worsen.                ║▓
@@ -332,6 +321,17 @@
 ║                                                                                            ║▓
 ║ Table 4 illustrates the outcomes associated with different DoS in the context of the       ║▓
 ║ Combat minigame.                                                                           ║▓
+║                                                                                            ║▓
+║ Degree of Success        Outcome                                                           ║▓
+║ ─────────────────        ───────                                                           ║▓
+║ Critical Success         Both Attacks Hit                                                  ║▓
+║ Complete Success         Special Attack Hits                                               ║▓
+║ Partial Success          Base Attack Hits                                                  ║▓
+║ Partial Failure          Base Attack Misses                                                ║▓
+║ Complete Failure         Special Attack Misses                                             ║▓
+║ Critical Failure         Both Attacks Miss                                                 ║▓
+║ ──────────────────────────────────────────                                                 ║▓
+║ Table 4: Combat minigame outcomes.                                                         ║▓
 ║                                                                                            ║▓
 ║                                                                                            ║▓
 ║                                                                                            ║▓
