@@ -155,15 +155,12 @@
 
                                         Overview
                                         ========
-
-┌[Note to the reader]───────────────────────────────────────────────────────────────────┐
-│                                                                                       │
-│ This Section is a short introduction to the setting, the game and the system of Nests │
-│ & Insects. It is designed to give you a general idea of the game. It is not designed  │
-│ to give you everything you need to play the game. That information is found in the    │
-│ text that follows this Overview Section.                                              │
-│                                                                                       │
-└───────────────────────────────────────────────────────────────────────────────────────┘
+\begin{box}[Note to the reader]
+This Section is a short introduction to the setting, the game and the system of Nests
+& Insects. It is designed to give you a general idea of the game. It is not designed
+to give you everything you need to play the game. That information is found in the
+text that follows this Overview Section.
+\end{box}
 
 The Setting
 -----------
@@ -273,12 +270,12 @@ read as one: the d10 is the "ones" of the roll and the other die is the "tens". 
 highest digit on the "tens" die is rolled it is read as a zero, unless the d10 also shows
 a "0". In that case the two dice are read as the maximum of the decile die's range.
 
-┌[Example 1]────────────────────────────────────────────────────────────────────────────┐
-│ The d60 is composed of a d6 and a d10. When the d6 shows a "6" it is read as a zero,  │
-│ unless the d10 also shows a "0", in which case the "6" is read as a 6. Suppose the d6 │
-│ shows "6" and the d10 shows "3": in that case the d60 result is 63. Suppose the d6    │
-│ shows "6" and the d10 shows "0": in that case the d60 result is 60.                   │
-└───────────────────────────────────────────────────────────────────────────────────────┘
+\begin{box}[Example 1]
+The d60 is composed of a d6 and a d10. When the d6 shows a "6" it is read as a zero, 
+unless the d10 also shows a "0", in which case the "6" is read as a 6. Suppose the d6
+shows "6" and the d10 shows "3": in that case the d60 result is 63. Suppose the d6   
+shows "6" and the d10 shows "0": in that case the d60 result is 60.                  
+\end{box}
 
 Table 3 lists the five Decile dice used in fd100 and their component polyhedrals. Decile
 dice are described in full detail in Section "Decile dice" in the "System" Chapter.
