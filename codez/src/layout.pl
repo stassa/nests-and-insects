@@ -206,8 +206,11 @@ format_command(C,Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N_,M,W]):-
         ,N_ is N + K - 2.
 format_command('\\begin{coverpage}',Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N,M,W]):-
         skip_lines('\\end{coverpage}',Ls,1,Acc,Acc_,Ls_,_).
+
 format_command('\\begin{toc}',Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N,M,W]):-
-        skip_lines('\\end{toc}',Ls,1,Acc,Acc_,Ls_,_).
+        toc_lines(['\\begin{toc}'|Ls],[1,N,M,W],Acc,Acc_,Ls_).
+
+
 format_command('\\newpage',Ls,[P,N,M,W],Acc,Acc,Ls_,[P,N,M,W]):-
         M_ is M - N
         ,findall(''
@@ -297,6 +300,91 @@ box_lines(N,[L|Ls],W,Acc,Bind,Ls_Bind,N_Bind):-
         ,succ(N,N_)
         ,box_lines(N_,Ls,W,Acc_,Bind,Ls_Bind,N_Bind).
 
+
+%!      toc_lines(+Lines,+Counts,+Acc,-New,-Rest) is det.
+%
+%       Format Table of Content Lines.
+%
+%       Lines is a list of lines of text. The first line should be the
+%       command '\\begin{toc}'. This predicate will add borders and
+%       number pages with Roman numerals until the closing tag
+%       '\\end{toc}'.
+%
+%       Counts is ta list [P,N,M,W] with counts of pages, lines, maximum
+%       lines and width, inherited from format_command/7.
+%
+%       Acc is the accumulator of processed lines inherited from
+%       format_lines/7.
+%
+%       New is Acc updated with the formatted lines of the ToC.
+%
+%       Rest is the list of lines remaining in Lines after the
+%       '\\end{toc}' tag is encountered.
+%
+%       This predicate will pad the last page of the ToC up to the
+%       maximum page length (M in Counts). Unfortunately this can't be
+%       done easily with the \newpage command because that doesn't know
+%       to stop when it encounters another command. Maybe something to
+%       fix later.
+%
+toc_lines(['\\begin{toc}',L|Ls],[P,N,M,W],Acc,Bind,Ls_Bind):-
+        !
+        ,format_line(L,1,W,Acc,Acc_)
+        ,succ(N,N_)
+        ,toc_lines(Ls,[P,N_,M,W],Acc_,Bind,Ls_Bind).
+toc_lines(['\\end{toc}'|Ls],[P,N,M,W],Acc,Acc_,Ls):-
+        !
+        % Offset lines so far er plus ... one? Why?
+        ,M_ is M - N + 1
+        ,pad_toc(1,M_,W,Acc,Acc_1)
+        ,arabic_roman(P,R)
+        ,format_line(nil,last(R),W,Acc_1,Acc_).
+toc_lines(Ls,[P,M,M,W],Acc,Bind,Ls_Bind):-
+        !
+        ,arabic_roman(P,R)
+        ,format_line(nil,last(R),W,Acc,Acc_)
+        ,succ(P,P_)
+        ,toc_lines(Ls,[P_,1,M,W],Acc_,Bind,Ls_Bind).
+toc_lines([L|Ls],[P,N,M,W],Acc,Bind,Ls_Bind):-
+        format_line(L,N,W,Acc,Acc_)
+        ,succ(N,N_)
+        ,toc_lines(Ls,[P,N_,M,W],Acc_,Bind,Ls_Bind).
+
+
+%!      pad_toc(+Count,+Max,+Width,+Acc,-New) is det.
+%
+%       Pad the last ToC page with empty lines up to Max.
+%
+%       This should normally be done with \newpage, but the commands
+%       don't really stop and call each other recursively so a new
+%       predicate was needed to pad the toc. This might be reused to pad
+%       other special pages, e.g. maybe it can be used with character
+%       sheets.
+%
+pad_toc(M,M,_W,Ps,Ps).
+pad_toc(N,M,W,Acc,Bind):-
+        format_line('',nil,W,Acc,Acc_)
+        ,succ(N,N_)
+        ,pad_toc(N_,M,W,Acc_,Bind).
+
+
+%!      arabic_roman(?Roman,?Arabic) is semidet.
+%
+%       Convert between an Arabic and a Roman numeral.
+%
+%       Simple version that converts numbers from 1 to 10, pending a
+%       more complete version.
+%
+arabic_roman(1,i).
+arabic_roman(2,ii).
+arabic_roman(3,iii).
+arabic_roman(4,iv).
+arabic_roman(5,v).
+arabic_roman(6,vi).
+arabic_roman(7,vii).
+arabic_roman(8,viii).
+arabic_roman(9,ix).
+arabic_roman(10,x).
 
 
 %!      noformat_lines(+Lines,Count,+Acc,-New,-Rest,-NewCount) is det.
