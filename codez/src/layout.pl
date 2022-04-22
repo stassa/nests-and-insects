@@ -180,6 +180,9 @@ format_line(L,_N,W,Acc,[F|Acc]):-
 %
 %       _Formatting Commands_
 %
+%       * \\begin{box}[Title]: marks the beginning of a text box. Title
+%       is the box title. Closing tag: \\end{box}.
+%
 %       * \\begin{coverpage}: marks the beginning the cover page of the
 %       entire text. Closing tag: \\end{coverpage}.
 %
@@ -193,9 +196,16 @@ format_line(L,_N,W,Acc,[F|Acc]):-
 %       * \\begin{nolayout}: beginning of a pre-formatted page. This
 %       should be exactly M lines. Closing tag: \\end{nolayout}
 %
+format_command(C,Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N_,M,W]):-
+        atom_concat('\\begin{box}',T,C)
+        ,sub_atom(T,1,_A,1,Title)
+        % Offse by box borders
+        ,W_ is W - 2
+        ,box_lines(1,[Title|Ls],W_,Acc,Acc_,Ls_,K)
+        % Offset by box header and footer.
+        ,N_ is N + K - 2.
 format_command('\\begin{coverpage}',Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N,M,W]):-
         skip_lines('\\end{coverpage}',Ls,1,Acc,Acc_,Ls_,_).
-
 format_command('\\begin{toc}',Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N,M,W]):-
         skip_lines('\\end{toc}',Ls,1,Acc,Acc_,Ls_,_).
 format_command('\\newpage',Ls,[P,N,M,W],Acc,Acc,Ls_,[P,N,M,W]):-
@@ -234,6 +244,60 @@ skip_lines(C,[C|Ls],N,Acc,Acc,Ls,N):-
 skip_lines(C,[L|Ls],N,Acc,Bind,Ls_Bind,N_Bind):-
         succ(N,N_)
         ,skip_lines(C,Ls,N_,[L|Acc],Bind,Ls_Bind,N_Bind).
+
+
+%!      box_lines(+Count,+Lines,+Width,+Acc,-New,-Rest,-NewCount)
+%!      is det.
+%
+%       Wrap lines in a text box with a title.
+%
+%       Count is the count of lines to be wrapped. This is only really
+%       used to find the first line and update the count of lines in
+%       the current page.
+%
+%       Lines is a list of lines of text. All the lines in Lines up to
+%       the \end{box} tag are to be placed in a box. They should be
+%       already formatted to a width less than the full width of the
+%       rest of the document. You'll have to find how much that is
+%       empirically more or less.
+%
+%       Width is the width of the longest line in Lines. See above for
+%       the maximum width of lines in Lines.
+%
+%       Acc is the accumulator of processed lines in the current page
+%       (and in the document so far).
+%
+%       New is Acc updated with the lines in Lines placed in a box and
+%       also wrapped inpage borders.
+%
+%       Rest is the lines remaining in Lines after the \end{box} tag.
+%
+%       NewCount is the final count of lines in the box, including the
+%       header and footer of the box. This is used to update the count
+%       of lines in the current page.
+%
+%       @tbd Indent lines to 86 for boxing text in 94-column text.
+%
+%       @tbd Make box borders configurable.
+%
+box_lines(N,['\\end{box}'|Ls],W,Acc,Acc_,Ls,N):-
+        !
+        ,W_ is W + 2
+        ,format(atom(F),'~|└~`─t┘~*| ',[W_])
+        ,format_line(F,nil,W,Acc,Acc_).
+
+box_lines(1,[T|Ls],W,Acc,Bind,Ls_Bind,N_Bind):-
+        !
+        ,W_ is W + 2
+        ,format(atom(F),'~|┌[~w]~`─t┐~*| ',[T,W_])
+        ,format_line(F,nil,W,Acc,Acc_)
+        ,box_lines(2,Ls,W,Acc_,Bind,Ls_Bind,N_Bind).
+
+box_lines(N,[L|Ls],W,Acc,Bind,Ls_Bind,N_Bind):-
+        format(atom(F),'│ ~w~` t~*| │ ',[L,W])
+        ,format_line(F,nil,W,Acc,Acc_)
+        ,succ(N,N_)
+        ,box_lines(N_,Ls,W,Acc_,Bind,Ls_Bind,N_Bind).
 
 
 %!      noformat_lines(+Lines,Count,+Acc,-New,-Rest,-NewCount) is det.
