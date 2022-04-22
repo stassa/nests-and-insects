@@ -199,18 +199,15 @@ format_line(L,_N,W,Acc,[F|Acc]):-
 format_command(C,Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N_,M,W]):-
         atom_concat('\\begin{box}',T,C)
         ,sub_atom(T,1,_A,1,Title)
-        % Offse by box borders
+        % Offset by box borders
         ,W_ is W - 2
         ,box_lines(1,['\\begin{box}',Title|Ls],W_,Acc,Acc_,Ls_,K)
         % Offset by box header and footer.
         ,N_ is N + K - 2.
 format_command('\\begin{coverpage}',Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N,M,W]):-
         skip_lines('\\end{coverpage}',Ls,1,Acc,Acc_,Ls_,_).
-
 format_command('\\begin{toc}',Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N,M,W]):-
         toc_lines(['\\begin{toc}'|Ls],[1,N,M,W],Acc,Acc_,Ls_).
-
-
 format_command('\\newpage',Ls,[P,N,M,W],Acc,Acc,Ls_,[P,N,M,W]):-
         M_ is M - N
         ,findall(''
