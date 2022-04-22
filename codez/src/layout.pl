@@ -202,8 +202,8 @@ format_command(C,Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N_,M,W]):-
         % Offset by box borders
         ,W_ is W - 2
         ,box_lines(1,['\\begin{box}',Title|Ls],W_,Acc,Acc_,Ls_,K)
-        % Offset by box header and footer.
-        ,N_ is N + K - 2.
+        % Offset by box lines, header and footer.
+        ,N_ is N + K.
 format_command('\\begin{coverpage}',Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N,M,W]):-
         skip_lines('\\end{coverpage}',Ls,1,Acc,Acc_,Ls_,_).
 format_command('\\begin{toc}',Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N,M,W]):-
