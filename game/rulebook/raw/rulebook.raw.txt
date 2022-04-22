@@ -153,15 +153,15 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 \end{toc}
 
-                                   Overview
-                                   ========
+                                        Overview
+                                        ========
 
-┌─[Note to the reader]──────────────────────────────────────────────────────────────────┐
+┌[Note to the reader]───────────────────────────────────────────────────────────────────┐
 │                                                                                       │
 │ This Section is a short introduction to the setting, the game and the system of Nests │
-│ and Insects. It is designed to give you a general idea of the game. It is not         │
-│ designed to give you everything you need to play the game. That information is found  │
-│ in the text that follows this Overview Section.                                       │
+│ & Insects. It is designed to give you a general idea of the game. It is not designed  │
+│ to give you everything you need to play the game. That information is found in the    │
+│ text that follows this Overview Section.                                              │
 │                                                                                       │
 └───────────────────────────────────────────────────────────────────────────────────────┘
 
@@ -228,28 +228,13 @@ The System
 ----------
 
 Nests & Insects' roleplaying system is called Fuzzy d100 (fd100). fd100 is a percentile
-system where characters are defined by Features rated on a scale from 1 to 100, and a
-percentile die (d100) is rolled to determine the outcome of their actions.
+system where characters are defined by Features rated on a percentile scale from 1 to
+100, and a hundred-sided die (d100) is rolled to determine the outcome of their actions.
 
-Decile dice, combinations of common TTRPG polyhedral dice and a ten-sided die (d10) are
-used to quantify the effects of actions on a percentile scale: the d20, d40, d60, d80 and
-the d100 itself. Table 1 illustrates the composition of the five decile dice used in
-fd100.
-
-Decile die    Tens die    Ones die    Range
-──────────    ────────    ────────    ─────
-d20           Not any!    d20         1 to 20
-d40           d4          d10         1 to 40
-d60           d6          d10         1 to 60
-d80           d8          d10         1 to 80
-d100          d10         d10         1 to 100
-──────────────────────────────────────────────
-Table 1: Decile dice, used for quantification of percentile effects.
-
-To determine the outcome of characters' actions in a minigame, players roll a d100 and
-compare it simultaneously to two target numbers: a character's Effort, and the Resistance
-of opponents or the environment. The value of the d100 roll relative to Effort and
-Resistance determines the Degree of Success or Failure (DoS) of an action. Table 2
+To determine the outcome of characters' actions, players roll a d100 and compare it
+simultaneously to two target numbers: a character's Effort, and the Resistance of
+opponents or the environment. The value of the d100 roll relative to Effort and
+Resistance determines the Degree of Success or Failure (DoS) of an action. Table 1
 outlines the four DoS attainable by comparing a d100 roll to Effort and Resistance.
 
 Roll vs Effort        Roll vs Resistance        Degree of Success
@@ -259,28 +244,66 @@ Under or equal        Under or equal            Partial Success
 Over                  Over                      Partial Failure
 Over                  Under or equal            Complete Failure
 ────────────────────────────────────────────────────────────────
-Table 2: Effort, Resistance and Degree of Success.
+Table 1: Effort, Resistance and Degree of Success.
 
 Two additional DoS, Critical Failure and Critical Success are attainable by the use of
 modifiers. Static modifiers are compared to the same d100 roll as Effort and Resistance.
 Dramatic modifiers are compared to one or two new d100 rolls. Characters' intents and
 actions that grant dramatic modifiers must be described in more detail than static
 modifiers, to encourage players to use their imagination to help their characters. Table
-3 illustrates the use of modifiers to change the DoS of a minigame action.
+2 illustrates the use of modifiers to change the DoS of an action.
 
 Roll vs Modifier        Modifier Sign        Degree of Success
 ────────────────        ─────────────        ─────────────────
-Under or Equal          Positive             Improves
+Under or Equal          Positive             Improves towards Critical Success
 Over                    Positive             No change
-Under or Equal          Negative             Worsens
+Under or Equal          Negative             Worsens towards Critical Failure
 Over                    Negative             No change
 ──────────────────────────────────────────────────────
-Table 3: Modifiers and change to Degree of Success. DoS can improve beyond Complete
+Table 2: Modifiers and change to Degree of Success. DoS can improve beyond Complete
 Success to Critical Success; or worsen beyond Complete Failure to Critical Failure.
 
-Combat minigame: In the Combat minigame, characters have two Attack actions: a Base
-Attack and a Special Attack. The DoS of a character's Attack action determines which
-Attack hits, or misses.
+Decile dice
+-----------
+
+Some actions require quantification of their effects. To quantify the effects of actions
+on the same percentile scale as characters' Features, Nests & Insects uses Decile Dice.
+Those are pairs of a common TTRPG polyhedral die and a ten-sided die, rolled together and
+read as one: the d10 is the "ones" of the roll and the other die is the "tens". When the
+highest digit on the "tens" die is rolled it is read as a zero, unless the d10 also shows
+a "0". In that case the two dice are read as the maximum of the Decile die's range.
+
+┌[Example 1]────────────────────────────────────────────────────────────────────────────┐ 
+│ The d60 is composed of a d6 and a d10. When the d6 shows a "6" it is read as a zero,  │ 
+│ unless the d10 also shows a "0", in which case the "6" is read as a 6. Suppose the d6 │
+│ shows "6" and the d10 shows "3": in that case the d60 result is 63. Suppose the d6    │
+│ shows "6" and the d10 shows "0": in that case the d60 result is 60.                   │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+
+Table 3 lists the five Decile dice used in fd100 and their component polyhedrals. Decile
+dice are described in full detail in Section "Decile dice" in the "System" Chapter.
+
+Decile die    Tens die    Ones die    Range
+──────────    ────────    ────────    ─────
+d20           Not any!    d20         1 to 20
+d40           d4          d10         1 to 40
+d60           d6          d10         1 to 60
+d80           d8          d10         1 to 80
+d100          d10         d10         1 to 100
+──────────────────────────────────────────────
+Table 3: Decile dice, used for quantification of percentile effects. d100 is also a
+Decile die. The d20 does not need a "tens" die and is rolled on its own.
+
+Minigames
+---------
+
+Nests & Insects is organised around "minigames" that define special rules for common
+in-game tasks. There are four minigames: Combat; Survival; Hunting and Foraging; and
+Resting and Healing. Minigames are described in detail in Section "Minigames" of the
+"System" Chapter.
+
+In the Combat minigame, characters have two Attack actions: a Base Attack and a Special
+Attack. The DoS of a character's Attack action determines which Attack hits, or misses.
 
 Degree of Success        Outcome
 ─────────────────        ───────
@@ -1035,12 +1058,12 @@ Description
 
 Wasps are mean, flying killing machines. Wasps are fast and precise fliers that can hover
 in place. They have yellow- or orange-and-black aposematic stripes that warn enemies of
-their dedlinesss. Their Stings inhect lethal venom, but unlike Spiders' venom, Wasp venom
-can only wound, not heal. Unlike Bees, Wasps do not lose their stings and die when they
-sting an enemy, so they can keep stinging away fro as long as they like. In Combat Wasps
-are high-mobility, shock troops optimised for menoeuverability and damage, but they have
-soft bodies without a protective carapace armour. They can use their high Signalling to
-perform aggessive displays and drain the morale of their enemies, thus reducing their
+their deadlinesss. Their Stings inject lethal venom, but unlike Spiders' venom, Wasp
+venom can only wound, not heal. Unlike Bees, Wasps do not lose their stings and die when
+they sting an enemy, so they can keep stinging away for as long as they like. In Combat
+Wasps are high-mobility, shock troops optimised for menoeuverability and damage, but they
+have soft bodies without a protective carapace armour. They can use their high Signalling
+to perform aggessive displays and drain the morale of their enemies, thus reducing their
 Disposition. Wasps have good knowledge of eusocial insects' domains thanks to their high
 Eusociology, acquired over years of raiding the nests of Bees. They are excellent at
 Foraging and can identify valuable or dangerous Food items.
