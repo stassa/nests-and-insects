@@ -273,8 +273,8 @@ read as one: the d10 is the "ones" of the roll and the other die is the "tens". 
 highest digit on the "tens" die is rolled it is read as a zero, unless the d10 also shows
 a "0". In that case the two dice are read as the maximum of the decile die's range.
 
-┌[Example 1]────────────────────────────────────────────────────────────────────────────┐ 
-│ The d60 is composed of a d6 and a d10. When the d6 shows a "6" it is read as a zero,  │ 
+┌[Example 1]────────────────────────────────────────────────────────────────────────────┐
+│ The d60 is composed of a d6 and a d10. When the d6 shows a "6" it is read as a zero,  │
 │ unless the d10 also shows a "0", in which case the "6" is read as a 6. Suppose the d6 │
 │ shows "6" and the d10 shows "3": in that case the d60 result is 63. Suppose the d6    │
 │ shows "6" and the d10 shows "0": in that case the d60 result is 60.                   │
@@ -389,11 +389,15 @@ Table 4: Combat minigame outcomes.
                                      Character Sheet
                                      ===============
 
-The current Section describes the components of the Nests & Insects character sheet.
-Each character class in Nests & Insects has its own character sheet, based on the
-character sheet template in the preceding page, with its own, pre-set, values.
+In Nests & Insects characters are described by percentile-rated Features, listed in a
+character sheet. There are five categories of Features: Attributes, Combat Conditions,
+Survival Features, Abilities and Inventory Items. Features and their use in the game are
+described in detail in the "Features" Section of the "System" Chapter. This Section
+briefly introduces the different Features as they are listed in the character sheet.
 
-The character sheet is divided into 5 areas. They are listed in Table 5.
+Each character class has its own character sheet, based on the character sheet template
+in the preceding page, with its own, pre-set, values. The Character Sheet is divided into
+5 areas, some with sub-areas. These are listed in Table 5.
 
 Area Name        Sub-Areas
 ─────────        ─────────
@@ -405,7 +409,7 @@ Abilities        Specific Abilities box, Common Abilities box, Effects box, Inve
 ─────────────────────────────────────────────────────────────────────────────────────────
 Table 5: Areas and sub-areas in a character sheet.
 
-The following Sections introduce each area and sub-area of the character sheet.
+The following Sections describe each area and sub-area of the character sheet.
 
 Class Header
 ------------
@@ -447,9 +451,6 @@ Ken              Wisdom, common sense, and knowledge of the world
 Passions         Willpower, morale, strength of spirit and courage
 ──────────────────────────────────────────────────────────────────
 Table 6: Character Attributes
-
-The eight Attributes and their use in the game are described in more detail in the
-"Attributes" Section later in this Chapter.
 
 XP Tickboxes: In the Attributes Area each attribute is listed with an empty tickbox to
 the left, marked "XP", as shown in Figure 3. This is an *XP tickbox*. "XP" stands for
@@ -546,7 +547,7 @@ Attack boxes
 ------------
 
 The Attack boxes (Figure 8) list the details of a character's two Attacks: her Base
-Attack and Special Attack.
+Attack and Special Attack. Each character class has its own Base and Special Attacks.
 
 ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐ 
 │ Name:................................... ││ Name:................................... │ 
@@ -561,9 +562,6 @@ Attack and Special Attack.
 └──────────────────────────────────────────┘└──────────────────────────────────────────┘ 
 ────────────────────────────────────────────────────────────────────────────────────────
 Figure 8: Attack boxes
-
-Each character class has its own Base and Special Attacks. These are described in detail
-in the "Character Clases" Section later in this Chapter. 
 
 Survival Area
 -------------
@@ -692,9 +690,6 @@ Sneaking              Move and act with stealth
 ───────────────────────────────────────────────
 Table 7: Common Abilities with brief description.
 
-Common Abilities are described in more detail in the Section "Common Abilities" later in
-this Chapter.
-
 Effects box
 -----------
 
@@ -732,8 +727,6 @@ Stunned        ...loses her next Turn in Combat
 ───────────────────────────────────────────────
 Table 8: Effects, with brief description of how a character is affected.
 
-Effects are described in more detail in Section "Effects" later in this Chapter.
-
 Inventory box
 -------------
 
@@ -756,7 +749,6 @@ that indicates whether the item is a Food item that can be consumed to reduce Hu
 Characters can only carry as many items as there are lines in the Inventory box: that is
 5 lines, for 5 items.
 
-Inventory Items are listed in Section "Inventory" later in this Chapter.
 \newpage
 
                                     Character Classes
