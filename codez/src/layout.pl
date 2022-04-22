@@ -152,7 +152,7 @@ format_line(L,_N,W,Acc,[F|Acc]):-
         .
 
 
-%!      format_command(+Command,+Lines,+Counts,+Acc,-NewAcc,-NewLines,-NewCounts
+%!      format_command(+Command,+Lines,+Counts,+Acc,-NewAcc,-NewLines,-NewCounts)
 %       is det.
 %
 %       Execute a formatting Command on subsequent Lines.
@@ -181,20 +181,23 @@ format_line(L,_N,W,Acc,[F|Acc]):-
 %       _Formatting Commands_
 %
 %       * \\begin{coverpage}: marks the beginning the cover page of the
-%       entire text.
+%       entire text. Closing tag: \\end{coverpage}.
 %
 %       * \\begin{toc}: marks the beginning of the Table of Contents.
+%       Closing tag: \\end{toc}
 %
 %       * \\newpage: inserts a new page or completes the current page by
-%       filling it with empty lines until it is M lines long.
+%       filling it with empty lines until it is M lines long. Closing
+%       tag: None.
 %
 %       * \\begin{nolayout}: beginning of a pre-formatted page. This
-%       should be exactly M lines.
+%       should be exactly M lines. Closing tag: \\end{nolayout}
 %
 format_command('\\begin{coverpage}',Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N,M,W]):-
-        noformat_lines(Ls,1,Acc,Acc_,Ls_,_).
+        skip_lines('\\end{coverpage}',Ls,1,Acc,Acc_,Ls_,_).
+
 format_command('\\begin{toc}',Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N,M,W]):-
-        noformat_lines(Ls,1,Acc,Acc_,Ls_,_).
+        skip_lines('\\end{toc}',Ls,1,Acc,Acc_,Ls_,_).
 format_command('\\newpage',Ls,[P,N,M,W],Acc,Acc,Ls_,[P,N,M,W]):-
         M_ is M - N
         ,findall(''
@@ -202,9 +205,35 @@ format_command('\\newpage',Ls,[P,N,M,W],Acc,Acc,Ls_,[P,N,M,W]):-
                ,Ss)
         ,append(Ss,Ls,Ls_).
 format_command('\\begin{nolayout}',Ls,[P,_N,M,W],Acc,Acc_,Ls_,[P_,1,M,W]):-
-        noformat_lines(Ls,1,Acc,Acc_,Ls_,_)
+        skip_lines('\\end{nolayout}',Ls,1,Acc,Acc_,Ls_,_)
         ,succ(P,P_).
 
+
+%!      skip_lines(+End,+Lines,+Count,+Acc,-New,-Newlines,-NewCount)
+%!      is det.
+%
+%       Skip formatting Lines until an End marker is reached.
+%
+%       End is a closing tag of a formatting command, as listed in
+%       format_command/7.
+%
+%       Lines is the list of lines after the opening task preceding End.
+%
+%       Count is the count of lines in the page currently processed.
+%
+%       Acc is the accumulator of _formatted_ lines, passed in from
+%       format_line/5.
+%
+%       New is the list of lines in Acc updated with the lines skipped
+%       by this predicate, i.e. lines left unformatted.
+%
+%       NewCount is Count updated with the number of lines skipped.
+%
+skip_lines(C,[C|Ls],N,Acc,Acc,Ls,N):-
+        !.
+skip_lines(C,[L|Ls],N,Acc,Bind,Ls_Bind,N_Bind):-
+        succ(N,N_)
+        ,skip_lines(C,Ls,N_,[L|Acc],Bind,Ls_Bind,N_Bind).
 
 
 %!      noformat_lines(+Lines,Count,+Acc,-New,-Rest,-NewCount) is det.
@@ -246,6 +275,8 @@ format_command('\\begin{nolayout}',Ls,[P,_N,M,W],Acc,Acc_,Ls_,[P_,1,M,W]):-
 %       skip a line, rather than having that responsibility spread out
 %       over three bloody predicates as it is now.
 %
+%       @tbd This can be replaced with skip_lines/7 now.
+%
 noformat_lines([L|Ls],N,Acc,Acc,Ls,N):-
         memberchk(L,['\\end{nolayout}','\\end{coverpage}','\\end{toc}'])
         ,!.
@@ -265,6 +296,8 @@ text_width(Ls,W):-
 %!      text_width(+Lines,+Acc,-Widest) is det.
 %
 %       Business end of text_width/2.
+%
+%       @tbd Use skip_lines/7 rather than noformat_lines/6.
 %
 text_width([],W,W):-
         !.
