@@ -201,7 +201,7 @@ format_command(C,Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N_,M,W]):-
         ,sub_atom(T,1,_A,1,Title)
         % Offse by box borders
         ,W_ is W - 2
-        ,box_lines(1,[Title|Ls],W_,Acc,Acc_,Ls_,K)
+        ,box_lines(1,['\\begin{box}',Title|Ls],W_,Acc,Acc_,Ls_,K)
         % Offset by box header and footer.
         ,N_ is N + K - 2.
 format_command('\\begin{coverpage}',Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N,M,W]):-
@@ -285,7 +285,7 @@ box_lines(N,['\\end{box}'|Ls],W,Acc,Acc_,Ls,N):-
         ,W_ is W + 2
         ,format(atom(F),'~|└~`─t┘~*| ',[W_])
         ,format_line(F,nil,W,Acc,Acc_).
-box_lines(1,[T|Ls],W,Acc,Bind,Ls_Bind,N_Bind):-
+box_lines(1,['\\begin{box}',T|Ls],W,Acc,Bind,Ls_Bind,N_Bind):-
         !
         ,W_ is W + 2
         ,format(atom(F),'~|┌[~w]~`─t┐~*| ',[T,W_])
@@ -296,6 +296,7 @@ box_lines(N,[L|Ls],W,Acc,Bind,Ls_Bind,N_Bind):-
         ,format_line(F,nil,W,Acc,Acc_)
         ,succ(N,N_)
         ,box_lines(N_,Ls,W,Acc_,Bind,Ls_Bind,N_Bind).
+
 
 
 %!      noformat_lines(+Lines,Count,+Acc,-New,-Rest,-NewCount) is det.
