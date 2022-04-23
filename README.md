@@ -10,15 +10,16 @@ playtesting.
 Reading the rulebooks
 ---------------------
 
-The text-based rulebook is here:
+The text-based rulebook is in the following path:
 ```
 <project root>/games/rulebook/txt/nests_and_insects.txt
 ```
 
 _The text-based version is the main version of the rulebook._
 
-The pdf version is updated sporadically, or not at all. If you are looking for the latest
-changes (and additions) to the rules, you should read the text-based version.
+There exists a pdf version but it is updated sporadically, or not at all. _If you are
+looking for the latest changes (and additions) to the rules, you should read the
+text-based version_.
 
 To read the text-based rulebook, navigate to its directory and open it with a pager like
 less or more etc.
