@@ -217,14 +217,14 @@ opponents or the environment. The value of the d100 roll relative to Effort and
 Resistance determines the Degree of Success or Failure (DoS) of an action. Table 1
 outlines the four DoS attainable by comparing a d100 roll to Effort and Resistance.
 
-Roll vs Effort        Roll vs Resistance        Degree of Success
-──────────────        ──────────────────        ─────────────────
-Under or equal        Over                      Complete Succes
-Under or equal        Under or equal            Partial Success
-Over                  Over                      Partial Failure
-Over                  Under or equal            Complete Failure
-────────────────────────────────────────────────────────────────
+\begin{table}
+Roll vs Effort&        Roll vs Resistance&        Degree of Success
+Under or equal&        Over              &        Complete Succes
+Under or equal&        Under or equal    &        Partial Success
+Over          &        Over              &        Partial Failure
+Over          &        Under or equal    &        Complete Failure
 Table 1: Effort, Resistance and Degree of Success.
+\end{table}
 
 Two additional DoS, Critical Failure and Critical Success are attainable by the use of
 modifiers. Static modifiers are compared to the same d100 roll as Effort and Resistance.
@@ -233,14 +233,14 @@ actions that grant dramatic modifiers must be described in more detail than stat
 modifiers, to encourage players to use their imagination to help their characters. Table
 2 illustrates the use of modifiers to change the DoS of an action.
 
-Roll vs Modifier        Modifier Sign        Degree of Success
-────────────────        ─────────────        ─────────────────
-Under or Equal          Positive             Improves towards Critical Success
-Over                    Positive             No change
-Under or Equal          Negative             Worsens towards Critical Failure
-Over                    Negative             No change
-──────────────────────────────────────────────────────
+\begin{table}
+Roll vs Modifier&        Modifier Sign&        Degree of Success
+Under or Equal  &        Positive     &        Improves towards Critical Success
+Over            &        Positive     &        No change
+Under or Equal  &        Negative     &        Worsens towards Critical Failure
+Over            &        Negative     &        No change
 Table 2: Modifiers and change to Degree of Success. DoS can improve beyond Complete
+\end{table}
 Success to Critical Success; or worsen beyond Complete Failure to Critical Failure.
 
 Decile dice
