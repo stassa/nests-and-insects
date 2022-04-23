@@ -31,9 +31,9 @@ less nests_and_insects.txt
 
 You should then be greeted by the glorious ASCII of the rulebook cover. 
 
-Alternatively, you can open the above file in your favourite text editor. On Windows,
-Notepad and Notepad++ work fine. On windows and everywhere else, vim, emacs and friends
-should work as well as usual.
+Alternatively, you can open the rulebook file in your favourite text editor. On
+Windows, Notepad and Notepad++ work fine. On Windows and everywhere else, vim, emacs
+and friends should work as well as usual.
 
 The cover and the rulebook are best rendered in the free font DejaVu Sans Mono. You can
 download it from here:
@@ -53,5 +53,5 @@ Reporting Errors
 
 The text-based rulebook is formatted with the code in the Prolog module
 `codez/src/layout.pl`. This, too, is a work in progress. If you find major formatting
-errors, or any errors, in the rulebook please report it by emailing the game's author
-at `ep2216@ic.ac.uk`.
+errors, or any errors, in the rulebook, please report it by emailing the game's author
+at `ep2216@ic.ac.uk`. You're welcome to send a pull request instead.
