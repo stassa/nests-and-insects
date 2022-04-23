@@ -299,6 +299,7 @@
 ╚════════════════════════════════════════════-3-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
 ║ Minigames                                                                                 ║▓
 ║ ---------                                                                                 ║▓
 ║                                                                                           ║▓
@@ -318,9 +319,6 @@
 ║ battle and their morale. Better disposition improves the DoS of subsequent Combat actions ║▓
 ║ and worse disposition worsens it.                                                         ║▓
 ║                                                                                           ║▓
-║ Table 4 illustrates the outcomes associated with different DoS in the context of the      ║▓
-║ Combat minigame.                                                                          ║▓
-║                                                                                           ║▓
 ║ Degree of Success        Outcome                                                          ║▓
 ║ ─────────────────        ───────                                                          ║▓
 ║ Critical Success         Both Attacks Hit                                                 ║▓
@@ -329,8 +327,10 @@
 ║ Partial Failure          Base Attack Misses                                               ║▓
 ║ Complete Failure         Special Attack Misses                                            ║▓
 ║ Critical Failure         Both Attacks Miss                                                ║▓
-║ ──────────────────────────────────────────                                                ║▓
+║ ──────────────────────────────────────────────                                            ║▓
 ║ Table 4: Combat minigame outcomes.                                                        ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -465,14 +465,14 @@
 ║ in the preceding page, with its own, pre-set, values. The Character Sheet is divided into ║▓
 ║ 5 areas, some with sub-areas. These are listed in Table 5.                                ║▓
 ║                                                                                           ║▓
-║ Area Name        Sub-Areas                                                                ║▓
-║ ─────────        ─────────                                                                ║▓
-║ Class Header     None                                                                     ║▓
-║ Attributes       None                                                                     ║▓
-║ Combat Stats     Condition box, Disposition Track, Attack boxes                           ║▓
-║ Survival         Hunger box, Luck box                                                     ║▓
-║ Abilities        Specific Abilities box, Common Abilities box, Effects box, Inventory box ║▓
-║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
+║ Area Name       Sub-Areas                                                                 ║▓
+║ ─────────       ─────────                                                                 ║▓
+║ Class Header    None                                                                      ║▓
+║ Attributes      None                                                                      ║▓
+║ Combat Stats    Condition box, Disposition Track, Attack boxes                            ║▓
+║ Survival        Hunger box, Luck box                                                      ║▓
+║ Abilities       Specific Abilities box, Common Abilities box, Effects box, Inventory box  ║▓
+║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
 ║ Table 5: Areas and sub-areas in a character sheet.                                        ║▓
 ║                                                                                           ║▓
 ║ The following Sections describe each area and sub-area of the character sheet.            ║▓
@@ -520,7 +520,7 @@
 ║ Charms           Charisma, talent for communication and influencing others' behaviour     ║▓
 ║ Ken              Wisdom, common sense, and knowledge of the world                         ║▓
 ║ Passions         Willpower, morale, strength of spirit and courage                        ║▓
-║ ──────────────────────────────────────────────────────────────────                        ║▓
+║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
 ║ Table 6: Character Attributes                                                             ║▓
 ║                                                                                           ║▓
 ║ XP Tickboxes: In the Attributes Area each attribute is listed with an empty tickbox to    ║▓
@@ -786,7 +786,7 @@
 ║ Perception            Find secrets and hidden items and Rooms                             ║▓
 ║ Signalling            Display aposematic markings, emit pheromonic signals                ║▓
 ║ Sneaking              Move and act with stealth                                           ║▓
-║ ───────────────────────────────────────────────                                           ║▓
+║ ─────────────────────────────────────────────────────────────────────────────────         ║▓
 ║ Table 7: Common Abilities with brief description.                                         ║▓
 ║                                                                                           ║▓
 ║ Effects box                                                                               ║▓
@@ -826,7 +826,7 @@
 ║ Paralysed      ...cannot take any Actions                                                 ║▓
 ║ Poisoned       ...has a negative modifier equal to Poisoned to all Actions                ║▓
 ║ Stunned        ...loses her next Turn in Combat                                           ║▓
-║ ───────────────────────────────────────────────                                           ║▓
+║ ──────────────────────────────────────────────────────────────────────────                ║▓
 ║ Table 8: Effects, with brief description of how a character is affected.                  ║▓
 ║                                                                                           ║▓
 ║ Inventory box                                                                             ║▓

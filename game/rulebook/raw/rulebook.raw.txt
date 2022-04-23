@@ -217,14 +217,14 @@ opponents or the environment. The value of the d100 roll relative to Effort and
 Resistance determines the Degree of Success or Failure (DoS) of an action. Table 1
 outlines the four DoS attainable by comparing a d100 roll to Effort and Resistance.
 
-\begin{table}
-Roll vs Effort&        Roll vs Resistance&        Degree of Success
-Under or equal&        Over              &        Complete Succes
-Under or equal&        Under or equal    &        Partial Success
-Over          &        Over              &        Partial Failure
-Over          &        Under or equal    &        Complete Failure
+Roll vs Effort        Roll vs Resistance        Degree of Success
+──────────────        ──────────────────        ─────────────────
+Under or equal        Over                      Complete Succes
+Under or equal        Under or equal            Partial Success
+Over                  Over                      Partial Failure
+Over                  Under or equal            Complete Failure
+─────────────────────────────────────────────────────────────────
 Table 1: Effort, Resistance and Degree of Success.
-\end{table}
 
 Two additional DoS, Critical Failure and Critical Success are attainable by the use of
 modifiers. Static modifiers are compared to the same d100 roll as Effort and Resistance.
@@ -233,14 +233,14 @@ actions that grant dramatic modifiers must be described in more detail than stat
 modifiers, to encourage players to use their imagination to help their characters. Table
 2 illustrates the use of modifiers to change the DoS of an action.
 
-\begin{table}
-Roll vs Modifier&        Modifier Sign&        Degree of Success
-Under or Equal  &        Positive     &        Improves towards Critical Success
-Over            &        Positive     &        No change
-Under or Equal  &        Negative     &        Worsens towards Critical Failure
-Over            &        Negative     &        No change
+Roll vs Modifier        Modifier Sign        Degree of Success
+────────────────        ─────────────        ─────────────────
+Under or Equal          Positive             Improves towards Critical Success
+Over                    Positive             No change
+Under or Equal          Negative             Worsens towards Critical Failure
+Over                    Negative             No change
+──────────────────────────────────────────────────────────────────────────────
 Table 2: Modifiers and change to Degree of Success. DoS can improve beyond Complete
-\end{table}
 Success to Critical Success; or worsen beyond Complete Failure to Critical Failure.
 
 Decile dice
@@ -276,6 +276,7 @@ decile die. The d20 does not need a "tens" die and is rolled on its own.
 
 
 
+
 Minigames
 ---------
 
@@ -295,9 +296,6 @@ The Combat minigame also tracks characters' Disposition, representing their posi
 battle and their morale. Better disposition improves the DoS of subsequent Combat actions
 and worse disposition worsens it. 
 
-Table 4 illustrates the outcomes associated with different DoS in the context of the
-Combat minigame.
-
 Degree of Success        Outcome
 ─────────────────        ───────
 Critical Success         Both Attacks Hit
@@ -306,9 +304,8 @@ Partial Success          Base Attack Hits
 Partial Failure          Base Attack Misses
 Complete Failure         Special Attack Misses
 Critical Failure         Both Attacks Miss
-──────────────────────────────────────────
+──────────────────────────────────────────────
 Table 4: Combat minigame outcomes.
-
 \newpage
 
                                    Character
@@ -383,14 +380,14 @@ Each character class has its own character sheet, based on the character sheet t
 in the preceding page, with its own, pre-set, values. The Character Sheet is divided into
 5 areas, some with sub-areas. These are listed in Table 5.
 
-Area Name        Sub-Areas
-─────────        ─────────
-Class Header     None
-Attributes       None
-Combat Stats     Condition box, Disposition Track, Attack boxes
-Survival         Hunger box, Luck box
-Abilities        Specific Abilities box, Common Abilities box, Effects box, Inventory box
-─────────────────────────────────────────────────────────────────────────────────────────
+Area Name       Sub-Areas
+─────────       ─────────
+Class Header    None
+Attributes      None
+Combat Stats    Condition box, Disposition Track, Attack boxes
+Survival        Hunger box, Luck box
+Abilities       Specific Abilities box, Common Abilities box, Effects box, Inventory box
+────────────────────────────────────────────────────────────────────────────────────────
 Table 5: Areas and sub-areas in a character sheet.
 
 The following Sections describe each area and sub-area of the character sheet.
@@ -435,7 +432,7 @@ Smarts           Intelligence, logic, reasoning and problem solving skill
 Charms           Charisma, talent for communication and influencing others' behaviour
 Ken              Wisdom, common sense, and knowledge of the world
 Passions         Willpower, morale, strength of spirit and courage
-──────────────────────────────────────────────────────────────────
+─────────────────────────────────────────────────────────────────────────────────────────
 Table 6: Character Attributes
 
 XP Tickboxes: In the Attributes Area each attribute is listed with an empty tickbox to
@@ -686,7 +683,7 @@ Leadership            Support allies and improve their Disposition in Combat
 Perception            Find secrets and hidden items and Rooms
 Signalling            Display aposematic markings, emit pheromonic signals
 Sneaking              Move and act with stealth
-───────────────────────────────────────────────
+─────────────────────────────────────────────────────────────────────────────────
 Table 7: Common Abilities with brief description.
 
 Effects box
@@ -723,7 +720,7 @@ Infected       ...acquires a random Effect each Turn this Effect Applies
 Paralysed      ...cannot take any Actions
 Poisoned       ...has a negative modifier equal to Poisoned to all Actions
 Stunned        ...loses her next Turn in Combat
-───────────────────────────────────────────────
+──────────────────────────────────────────────────────────────────────────
 Table 8: Effects, with brief description of how a character is affected.
 
 Inventory box
