@@ -1,7 +1,7 @@
 Nests & Insects
 ===============
 
-This is the repository for the code and rulebooks for Nests & Insects, a Roguelike
+This is the repository for the rulebooks and code for Nests & Insects, a Roguelike
 Tabletop Roleplaying Game (TTRPG).
 
 Nests & Insects is still a work in progress, at the early stages of design and
@@ -9,8 +9,6 @@ playtesting.
 
 Reading the rulebooks
 ---------------------
-
-There are two versions of the rulebook: one text-based and one pdf- er, pdf.
 
 The text-based rulebook is here:
 ```
@@ -48,3 +46,11 @@ The ironically named /codez directory contains Prolog code used to manage game d
 generate characters, character sheets etc. Also, to lay-out the text-based rulebooks. It
 is not necessary to peruse the codez directory to play the game- it is only included for
 the game developer's convenience.
+
+Reporting Errors
+----------------
+
+The text-based rulebook is formatted with the code in the Prolog module
+`codez/src/layout.pl`. This, too, is a work in progress. If you find major formatting
+errors, or any errors, in the rulebook please report it by emailing the game's author
+at `ep2216@ic.ac.uk`.
