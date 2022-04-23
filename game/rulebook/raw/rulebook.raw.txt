@@ -110,16 +110,22 @@ System .........................................................................
     Hunting and Foraging ........................................................... TODO
     Resting and Healing ............................................................ TODO
 
-Setting ............................................................................ TODO
+Setting .............................................................................. 25
   Clients and Jobs ................................................................. TODO
   Environment ...................................................................... TODO
     Nests .......................................................................... TODO
     Levels ......................................................................... TODO
     Rooms .......................................................................... TODO
-  Enemies .......................................................................... TODO
+  Enemies ............................................................................ 26
     Ants ........................................................................... TODO
     Bees ........................................................................... TODO
-    Termites ....................................................................... TODO
+    Termites ......................................................................... 28
+      Worker ......................................................................... 27
+      Minor Soldier - Autothyte ...................................................... 29
+      Major Soldier - Authotyte ...................................................... 31
+      Nasute Soldier ................................................................. 32
+      Alates - King ................................................................ TODO
+      Alates - Queen ............................................................... TODO
   Food Items ....................................................................... TODO
     Fungi .......................................................................... TODO
     Honey .......................................................................... TODO
@@ -1050,5 +1056,269 @@ Choose this class:
 If you want your character to be mobile, deadly and feared by its enemies, with good
 survival skills.
 
+
+\newpage
+
+                                         Setting
+                                         =======
+
+\newpage
+
+                                         Enemies
+                                         =======
+
+\newpage
+
+                                        Termites
+                                        --------
+
+Termites are detritivores: they live on rotting plant matter, wood and leaves. They make
+their nests underground, by borrowing into wood, or by building above-ground structures
+with soil and plant matter bound with their feces. Well, yes. Termite nests are connected
+to networks of underground tunnels that are used to forage in safety. In Nests & Insects
+Termite Nests are gigagntic Cathedrals extending to many meters above and below ground.
+
+Termites are orgranised into castes, most of them without reproductive ability or
+orgrans, and without wings and blind. Termite life is hard but the Nest thrives. The
+worker caste forage and tend to the Nest and the other castes. The Soldier caset protects
+the nest willingly sacrificing its life. The two reproductive castes, the King and Queen,
+are responsible for making sure the Nest is always full of millions of Termites of all
+castes.
+\newpage
+
+Worker
+------
+
+Worker termites are unarmed and blind, and cannot fight, but they are numerous, swarm and
+will raise the alarm as soon as they become aware that the Nest has been breached.
+Workers raise the alarm by bumping into each other and causing each other to release
+alarm pheromones. The pheromone trail spreads throughout the nest attracting more workers
+and, soon enough, soldiers. Attacking a swarm of workers causes them to release alarm
+pheromones faster.
+
+Feature          Rating
+───────          ──────
+Initiative       20%
+Threat Rate      0%
+Survival Rate    25%
+Wounds Max       d20
+Swarming         90%
+Sp,Sk,Str,Sta    20%
+Sm,Ch,Kn,Pa      10%
+Blind            100%
+───────────────────────
+Table: Termite Worker Features
+
+\begin{box}[Special Rule - Alarm]
+
+Every Turn of Combat, Worker Termites automatically roll Swarming. If the roll
+succeeds, new Termites arrive. Roll on the Termite Worker Summons Table below and
+choose the result with the lowest Chance higher than or equal to the roll value.
+
+\end{box}
+
+Termite Caste & Numbers Summoned       Chance to Summon
+────────────────────────────────       ────────────────
+d20 Workers                            80%
+1 Minor Autothyte Soldiers             60%
+5 Major Autothyte Soldiers             30%
+3 Nasute Soldiers                      25%
+───────────────────────────────────────────────────────
+Table: Termite Worker summons
+\newpage
+
+Minor Soldier - Autothyte
+-------------------------
+
+Minor Soldiers are about as big as workers, mobile and form swarms. Like Ants, they don't
+suffer wound penalties and are blind. They cannot fly. In Combat they attack intruders by
+grabbing them with their mandibles and attempting to crush them. When their Special
+Attack hits, they explode and spread a sticky liquid that immobilises enemies caught in
+it. To be clear: the attack kills the Soldier (but only the one that actually exploded-
+its friends soldier on; mechanically speaking that means the Soldiers lose one wound).
+
+Feature          Rating
+───────          ──────
+Initiative       50%
+Threat Rate      45%
+Survival Rate    50%
+Wounds Max       10
+Carapace         40% (Armoured Head)
+Swarming         80%
+Sp,Sk,Str,Sta    40%
+Sm,Ch,Kn,Pa      20%
+Blind            100%
+────────────────────────────────────
+Table: Minor Termite Soldier Features
+
+┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐
+│ Name:....................Mandible Attack ││ Name:..........Autothysis (Self-Rupture) │
+│ Keywords:.......................Crushing ││ Keywords:...........Area Attack, Noxious │
+│ Wounds.................................1 ││ Wounds.................................0 │
+│ Max. Range:........................Close ││ Max. Range:................Medium (Area) │
+│ Hit:..............Target Immobilised d40 ││ Hit:............Targets Immobilised ld60 │
+│ Hit (Alt):.............................. ││ Hit(Add):.........Attacker takes 1 Wound │
+│ Hit (Add):.............................. ││ Hit (Crit):............................. │
+│ Miss:....................Atacker Recoils ││ Miss:............Attacker takes 2 Wounds │
+│ Miss:................................... ││ Miss:................................... │
+└──────────────────────────────────────────┘└──────────────────────────────────────────┘
+────────────────────────────────────────────────────────────────────────────────────────
+Figure: Minor Tremite Soldier Attacks
+
+\begin{box}[Special Rule - Swarm]
+
+Minor Autothyte Soldiers do not suffer Wound penalties. The swarm is killed when its
+wounds reach their Maximum.
+
+\end{box}
+\newpage
+
+\begin{box}[Special Rule - Alarm]
+Same as for Worker Termites.
+\end{box}
+
+\begin{box}[Special Rule - Self-Sacrificing]
+
+Termite Soldiers cannot Retreat, or Charge. Their Disposition track has the following
+elements: Recoiling, Recoiling, Holding, Advancing, Advancing.
+
+├─<Disposition Track>───────────────────────────────────────────────────────────────┤
+│ (Advance this way -->) .................................... (<-- Recoil this way) │
+│ ○ Rcoiling...... ○ Recoiling.... ○ Holding...... ○ Advancing..... ○ Advancing.....│
+└<^-30>───────────<^-30%>─────────<^Doing Good>───<^+30%>──────────<^+30>───────────┘
+─────────────────────────────────────────────────────────────────────────────────────
+Figure: Minor Termite Soldier Disposition Track
+
+\end{box}
+
+\begin{box}[Special Rule - Nest Guardians]
+
+Autothyte Soldiers do not set upon enemies directly, rather they stand in place in
+front of their tunnels and attempt to stop intruders from entering the tunnels. When
+an Autothyte Soldier's Special Attack fires, there is a 60% chance that the tunnel
+entrance that it is guarding will be blocked by the sticky substance secreted during
+the attack, and become impassable.
+
+\end{box}
+
+\newpage
+
+Major Soldier - Autothyte
+-------------------------
+
+The Major Soldier is a larger, stronger version of the Minor Soldier, but also rarer. In
+mechanical terms, Major Autothye Soldiers have more powerful versions of the Minor
+Soldiers' Attacks and do not Swarm.
+
+Feature          Rating
+───────          ──────
+Initiative       55%
+Threat Rate      50%
+Survival Rate    55%
+Wounds/Max       5
+Carapace         60% (Head)
+Swarming         0%
+Sp,Sk            30%
+Str,Sta          60%
+Sm,Ch,Kn         20%
+Pa               50%
+Blind            100%
+──────────────────────────
+Figure: Major Termite Soldier Features
+
+┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐
+│ Name:....................Mandible Attack ││ Name:..Greater Autothysis (Self-Rupture) │
+│ Keywords:.......................Crushing ││ Keywords:..........Area Attack, Chemical │
+│ Wounds.................................1 ││ Wounds.................................2 │
+│ Max. Range:........................Close ││ Max. Range:.................Close (Area) │
+│ Hit:.............Target Immobilised ld40 ││ Hit:..............Targets Paralysed ld60 │
+│ Hit (Alt):.............................. ││ Hit (Add):...............Attacker killed │
+│ Hit (Add):.............................. ││ Hit (Crit):............................. │
+│ Miss:....................Atacker Recoils ││ Miss:...........Targets Immobilised ld60 │
+│ Miss:................................... ││ Miss:....................Attacker killed │
+└──────────────────────────────────────────┘└──────────────────────────────────────────┘
+────────────────────────────────────────────────────────────────────────────────────────
+Figure: Major Termite Soldier Attacks
+
+\begin{box}[Special Rule - Self Sacrificing]
+Same as for Minor Termite Soldiers.
+\end{box}
+
+\begin{box}[Special Rule - Nest Guardians]
+Same as for Minor Termite Soldiers.
+\end{box}
+\newpage
+
+Nasute Soldier
+--------------
+
+Nasute Soldiers have an elongated snout in place of the large crushing mandibles of other
+Soldier termites. In Combat Nasutes eject from this snout a noxious liquid that
+immobilises intruders and can kill them just with the force of the blow. This is called a
+Fontanellar Gun. While Nasutes are blind as other worker and soldier termites, they are
+wicked shots with their Fontanellar Guns and can hit targets at Long range. Nasutes can
+fire their Fontanellar Guns repeatedly even though it tears off the lower part of their
+modified mandibles. I swear I am not making this up. Look up "Fontanellar Gun" on
+wikipedia if you don't believe me.
+
+Feature          Rating
+───────          ──────
+Initiative       55%
+Threat Rate      55%
+Survival Rate    55%
+Wounds/Max       6
+Carapace         70% (Head)
+Swarming         0%
+Sp,Sk            50%
+Str,Sta          60%
+Sm,Ch,Kn         30%
+Pa               55%
+Blind            100%
+──────────────────────────
+Figure: Nasute Termite Soldier Features
+
+┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐
+│ Name:.............Fontanellar Gun Attack ││ Name:.....Greater Fontanellar Gun Attack │
+│ Keywords:............Projectile, Noxious ││ Keywords:............Projectile, Noxious │
+│ Wounds.................................2 ││ Wounds.................................1 │
+│ Max. Range:.........................Long ││ Max. Range:..................Long (area) │
+│ Hit:................Target Poisoned ld40 ││ Hit:...............Targets Poisoned ld60 │
+│ Hit (Add):..............Attacker Recoils ││ Hit (Add):..............Attacker Recoils │
+│ Hit (Alt):.............................. ││ Hit (Crit):............................. │
+│ Miss:.............Target Immobilised d40 ││ Miss:...........Targets Immobilised ld40 │
+│ Miss:.............Attacker Recoils twice ││ Miss:.............Attacker Recoils twice │
+└──────────────────────────────────────────┘└──────────────────────────────────────────┘
+────────────────────────────────────────────────────────────────────────────────────────
+Figure: Nasute Termite Soldier Attacks
+
+\begin{box}[Special Rule - Self-Sacrificing]
+Same as for Minor Termite Soldiers.
+\end{box}
+\newpage
+
+\begin{box}[Special Rule - Nest Guardians]
+Same as for Minor Termite Soldiers.
+\end{box}
+
+\begin{box}[Special Rule - Alarm Gun]
+
+The ejecta of the Fontanellar Gun include an alarm pheromone that compels other
+Nasutes in the vicinity of a Gun's discharge to fire their own, towards the same
+direction.
+
+Mechanically, whenever a Nasute soldier A discharges its Fontanellar Gun, there is a
+40% chance that another Nasute Soldier B participating in Combat but who has not yet
+taken an Attack Action this Turn, will Attack the same target. 
+
+The Attack is made in the Turn of the Nasute Soldier A. The Attack counts as Nasute
+Soldier B's Attack for the Round (that means it can't take another Attack Action in
+the same Round).
+
+Nasute Soldier's B discharge of its Fontanellar Gun is also subject to this rule, so
+it is possible, with a bit of bad luck, for all the Nasutes participating in Combat 
+to discharge their guns towards the same target in one Turn, one after another, in a
+chain of sticky, noxious death.
+
+\end{box}
 
 \newpage
