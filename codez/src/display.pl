@@ -77,7 +77,10 @@ pp_feature_category(Id,C):-
         ,Rows = [Ns,Us,Rs]
         ,format('~w:~n',[N])
         ,forall(member(Row,Rows)
-               ,format(FA,Row)).
+               ,(format(FA,Row)
+                ,nl
+                )
+               ).
 
 
 %!      percentalise(+Features,-Percentiles) is det.
@@ -221,8 +224,8 @@ formatting_atom([V1|Vs],S,F):-
         ,length([V1|Vs],N)
         % Table width calculation
         ,TW is CWs + (N * S)
-        % End of formatting string with tab and newline
-        ,atomic_list_concat(['~t~',TW,'|~n'],'',F_n)
+        % End of formatting string with tab. NOTE: no newline!
+        ,atomic_list_concat(['~t~',TW,'|'],'',F_n)
         ,append([F_1|Fs],[F_n],Fs_)
         ,atomic_list_concat(Fs_,'',F)
         ,debug(formatting_atom,'Formatting atom: ~w',[F]).

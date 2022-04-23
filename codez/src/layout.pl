@@ -4,6 +4,8 @@
                  ,longest_line/4
                  ]).
 
+:-use_module(library(clp/clpfd)).
+
 /** <module> Layout and formatting for text-based rulebooks.
 */
 
@@ -196,6 +198,9 @@ format_line(L,_N,W,Acc,[F|Acc]):-
 %       * \\begin{nolayout}: beginning of a pre-formatted page. This
 %       should be exactly M lines. Closing tag: \\end{nolayout}
 %
+%       * \\begin{table}: beginning of the rows of a table, including a
+%       caption line. Closing tag: \\end{table}.
+%
 format_command(C,Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N_,M,W]):-
         atom_concat('\\begin{box}',T,C)
         ,sub_atom(T,1,_A,1,Title)
@@ -217,12 +222,135 @@ format_command('\\newpage',Ls,[P,N,M,W],Acc,Acc,Ls_,[P,N,M,W]):-
 format_command('\\begin{nolayout}',Ls,[P,_N,M,W],Acc,Acc_,Ls_,[P_,1,M,W]):-
         skip_lines('\\end{nolayout}',Ls,1,Acc,Acc_,Ls_,_)
         ,succ(P,P_).
-
 format_command(C,[_L|Ls],[P,N,M,W],Acc,Acc,Ls,[P,N,M,W]):-
         atom_concat('%',_T,C).
-
 format_command('/*',Ls,[P,N,M,W],Acc,Acc,Ls_,[P,N,M,W]):-
         skip_lines('*/',Ls,0,[],_,Ls_,_).
+format_command('\\begin{table}',Ls,[P,N,M,W],Acc,Acc,Rs,[P,N,M,W]):-
+% Yes yes. Very inefficent - reverse, append, flatten...
+% Make work first, optimise later.
+        skip_lines('\\end{table}',Ls,1,[],Ts,Acc,_Acc,Ls_,_K)
+        ,lines_rows(Ts,Rows,C)
+        ,reverse(Rows,Rows_)
+        ,table_formatting(Rows_,8,FR,FC)
+        ,format_table_rows(Rows_,FR,RA)
+        ,flatten([RA,FC,C],Fs)
+        ,append(Fs,Ls_,Rs).
+
+
+%!      lines_rows(+Lines,-Rows,-Caption) is det.
+%
+%       Extract Rows of a table from a list of text Lines.
+%
+%       Lines is a list of text lines between \begin{table}
+%       and \end{table} tags, in other words a list of lines
+%       representing a table.
+%
+%       Lines includes the header row of the table in the first line of
+%       Lines right after the \begin{table} tag.
+%
+%       Rows is a list-of-lists where each sub-list is a row of the
+%       table following from the header and each element of each
+%       sub-list is the text of one column in the table.
+%
+%       Caption is the last row of the table, just before the
+%       \end{table} tag.
+%
+lines_rows(Ls,Rs,C):-
+        findall(Row
+                ,(member(L,Ls)
+                 ,atom_string(L,S)
+                 ,split_string(S,'&',' ',Ss)
+                 ,findall(S_
+                         ,member(S_,Ss)
+                         ,Row)
+                 )
+                ,[C|Rs]).
+
+
+%!      table_formatting(+Rows,+Space,-Row_Format,-Caption_Format)
+%!      is det.
+%
+%       Construct a Formatting atom for a table's rows and Caption line.
+%
+%       Rows is the list of rows in a table, inherited from
+%       lines_rows/4, including the header but excluding the caption.
+%
+%       Space is the number of spaces to insert between table columns.
+%
+%       Row_Format is a format string for format/2, constructed so as to
+%       format rows into neat columns with even spacing equal to Space.
+%
+%       Caption_Format is a formatting atom for the table caption and
+%       its overline.
+%
+%       Note that while this predicate constructs a formatting atom
+%       for the table's caption, it doesn't take the caption itself as
+%       an input argument. The length of the overline in the
+%       Caption_Format atom is determined by the length of the longest
+%       table row in Rows, instead. That means that the table caption
+%       may occasionally be longer than the caption overline. That is
+%       not a problem to be solved by this predicate though.
+%
+%       @tbd Note also that Rows is assumed to be in the same order as
+%       the order in which the lines of the table are to be printed out
+%       to the final document. Table rows are actually returned in
+%       reverse order by lines_rows/4 so they need to be reversed before
+%       being passed to this predicate. This is clearly not ideal and
+%       avoiding the successive reverses and appends etc that happen
+%       afterwards will also improve efficiency.
+%
+table_formatting(Rows,S,FR,FC):-
+        transpose(Rows,Cols)
+        ,display:columns_widths(Cols,Ws)
+        ,display:formatting_atom(Ws,S,FR)
+        ,caption_formatting(Ws,FC).
+
+
+%!      caption_formatting(+Widths,-Format_Atom) is det.
+%
+%       Construct a Format_Atom for a table's caption.
+%
+%       Widths is a list of numbers representing the widths of columns
+%       in a table, inherited from the call to columns_widths/2 in
+%       table_formatting/2. We want to use these widths to calculate the
+%       length of the caption overline that is to be placed under the
+%       table, and we want that overline to be as long as the longest
+%       row in the table.
+%
+%       Format_Atom is an atom that formats the caption overline for a
+%       table. It just repeats an overline character to create a line
+%       that stretches to the width of the longest table row.
+%
+caption_formatting(Ws,FA):-
+        sumlist(Ws,CWs)
+        ,length(Ws,RW)
+        % Skip last column
+        ,RW_ is RW - 1
+        ,TW is CWs + (RW_ * 8)
+        ,format(atom(FA),'~|~`─t~*|',[TW]).
+
+
+%!      format_table_header(+Rows,+Format_Atom,-Formatted) is det.
+%
+%       Construct a formatting atom for a table's Rows.
+%
+%       Rows is a list-of-lists where each sub-list is a row in a
+%       table, including the header row as the first element of Rows.
+%
+%       Format_Atom is the formatting atom for the table's rows,
+%       including the header row, constructed by table_formatting/4.
+%
+%       Formatted is the list of rows in Rows as atoms formattted
+%       according to Format_Atom.
+%
+format_table_rows([Hs|Rows],FA,RAs):-
+        display:underline(Hs,─,Us)
+        ,findall(RA
+               ,(member(R,[Hs,Us|Rows])
+                ,format(atom(RA),FA,R)
+                )
+               ,RAs).
 
 
 %!      skip_lines(+End,+Lines,+Count,+Acc,-New,-Newlines,-NewCount)
@@ -250,6 +378,16 @@ skip_lines(C,[C|Ls],N,Acc,Acc,Ls,N):-
 skip_lines(C,[L|Ls],N,Acc,Bind,Ls_Bind,N_Bind):-
         succ(N,N_)
         ,skip_lines(C,Ls,N_,[L|Acc],Bind,Ls_Bind,N_Bind).
+
+
+%!      skip_lines(+End,+Lns,+Cnt,+Acc1,-Sks,+Acc2,-Prs,-Rest,-Newcnt)
+%!      is  det.
+skip_lines(C,[C|Ls],N,Ss,Ss,Ps,Ps,Ls,N):-
+        !.
+skip_lines(C,[L|Ls],N,Ss_Acc,Ss_Bind,Ps_Acc,Ps_Bind,Ls_Bind,N_Bind):-
+        succ(N,N_)
+        ,skip_lines(C,Ls,N_,[L|Ss_Acc],Ss_Bind,[L|Ps_Acc],Ps_Bind,Ls_Bind,N_Bind).
+
 
 
 %!      box_lines(+Count,+Lines,+Width,+Acc,-New,-Rest,-NewCount)
