@@ -1,8 +1,8 @@
 Nests & Insects
 ===============
 
-This is the repository for the rulebooks and code for Nests & Insects, a Roguelike
-Tabletop Roleplaying Game (TTRPG).
+This is the repository for the rulebooks and code of Nests & Insects, a Roguelike
+Tabletop Roleplaying Game.
 
 Nests & Insects is still a work in progress, at the early stages of design and
 playtesting.
