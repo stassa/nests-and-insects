@@ -83,7 +83,9 @@ format_table([L1|Ls],S,Fs):-
         ,columns_width_args(Cs,Ws_Acc,As)
         ,format_atom(Cs,FA)
         ,F = format(atom(_F1),FA,As)
-        ,format_table(Ls,Ws,Ws_Acc,S,[F],Fs).
+        ,row_underline('-',W,U)
+        ,format_table(Ls,Ws,Ws_Acc,S,[U,F],W,Fs).
+
 
 %!      format_table(+Lines,+Widths,+W_Acc,+Space,+Acc,-Format) is det.
 %
@@ -94,7 +96,7 @@ format_table([L1|Ls],S,Fs):-
 %
 %       Widths is a list of numbers, the maximum widths of table
 %       columns, except the last. Widths is updated with the maximum
-%       widths of columns as format_table/6 walks over table rows.
+%       widths of columns as format_table/7 walks over table rows.
 %
 %       W_Acc is a variable used to increase the maximum column widths
 %       in Widths with Space spaces and then to instantiate the
@@ -120,18 +122,20 @@ format_table([L1|Ls],S,Fs):-
 %       terms' argument lists. We bind the width arguments at the end of
 %       processing when we know the maximums.
 %
-format_table([],Ws,Ws_,S,[F|Acc],Fs):-
+format_table([],Ws,Ws_,S,[F|Acc],UW,Fs):-
         F = format(atom(_A),_FA,As)
         ,maplist(plus(S),Ws,Ws_)
         ,bind_width_args(As,Ws_)
-        ,reverse([F|Acc],Fs).
-format_table([L_j|Ls],Ws_i,Ws_Acc,S,Fs_Acc,Fs_Bind):-
+        ,underline_width(Ws_,S,UW)
+        ,row_underline('-',UW,U)
+        ,reverse([U,F|Acc],Fs).
+format_table([L_j|Ls],Ws_i,Ws_Acc,S,Fs_Acc,UW,Fs_Bind):-
         columns_widths(L_j,Cs,Ws_j)
         ,columns_width_args(Cs,Ws_Acc,As)
         ,format_atom(Cs,FA)
         ,F_j = format(atom(_F),FA,As)
         ,max_widths(Ws_i,Ws_j,Ws_k)
-        ,format_table(Ls,Ws_k,Ws_Acc,S,[F_j|Fs_Acc],Fs_Bind).
+        ,format_table(Ls,Ws_k,Ws_Acc,S,[F_j|Fs_Acc],UW,Fs_Bind).
 
 
 %!      columns_widths(+Line,-Columns,-Widths) is det.
@@ -166,7 +170,7 @@ columns_widths(L,Cs,Ws):-
 %       we finally know the width of the longest row in the table.
 %
 %       Args is a list of arguments to pass to the format/2 term
-%       constructed at the end of format_table/6. The list is of the
+%       constructed at the end of format_table/7. The list is of the
 %       form:
 %
 %       [T1,V1,..., Tn]
@@ -175,7 +179,7 @@ columns_widths(L,Cs,Ws):-
 %       variable in Width_Vars corresponding to that column.
 %
 %       Column widths bound to Width_Vars as calculated at the end of a
-%       call to format_table/6 are used to pad the text of columns in
+%       call to format_table/7 are used to pad the text of columns in
 %       Columns (i.e. each of the Ti in Args) with the number of spaces
 %       needed to have a well-formatted table, with equal spacing
 %       between columns.
@@ -205,10 +209,10 @@ columns_width_args(I,[C|Cs],Ws,Acc,Bind):-
 %       Update the mximum widths of columns in a table.
 %
 %       Widths_1 is the list of maximum widths of columns found so-far
-%       durin the execution of format_table/6.
+%       durin the execution of format_table/7.
 %
 %       Widths_2 is the list of maximum widths of the column currently
-%       being processed by format_table/6. Both Widths_1 and Widths_2
+%       being processed by format_table/7. Both Widths_1 and Widths_2
 %       are constructed by columns_widths/3.
 %
 %       Max_Widths is a list of numbers where each number at index i
@@ -221,10 +225,10 @@ columns_width_args(I,[C|Cs],Ws,Acc,Bind):-
 %       Max = [5, 6, 4].
 %       ==
 %
-%       This predicate is used during the execution of format_table/6 to
+%       This predicate is used during the execution of format_table/7 to
 %       keep track of the maximum width of text in each column. The
 %       maximum widths found that way are used at the end of
-%       format_table/6 to evenly space out the columns of the table.
+%       format_table/7 to evenly space out the columns of the table.
 %
 max_widths(Ws_1,Ws_2,Ws_max):-
         transpose([Ws_1,Ws_2],Ts)
@@ -275,6 +279,44 @@ format_atom([_C|Cs],Acc,Bind):-
         format_atom(Cs,['~|~w~*+'|Acc],Bind).
 
 
+%!      row_underline(+Char,+Width,-Format) is det.
+%
+%       Construct a format/2 call for a row's underline.
+%
+%       Char is the character used for the underline.
+%
+%       Width is the width of the underline.
+%
+%       Format is a format/2 call used to underline a row of the table.
+%
+row_underline(S,W,F):-
+        atom_char(S,C)
+        ,F = format(atom(_A),'~*t~*|',[C,W]).
+
+
+%!      underline_width(+Widths,+Space,-Width) is det.
+%
+%       Calculate the underline length for rows in a table.
+%
+%       Widths is the list of maximum column lengths in the table.
+%
+%       Space is the space padding length between columns.
+%
+%       Width is the width of an underline for the header row and the
+%       last row of the table.
+%
+underline_width(Ws,S,W):-
+        underline_width(Ws,S,0,W).
+
+underline_width([W],S,Acc,W_):-
+% Subtract S padding chars from last column.
+        !
+        ,W_ is Acc + W - S.
+underline_width([W|Ws],S,Acc,Bind):-
+        W_ is Acc + W
+        ,underline_width(Ws,S,W_,Bind).
+
+
 %!      bind_width_args(+Args,+Widths) is det.
 %
 %       Instantiate the widths of columns in a table.
@@ -282,13 +324,13 @@ format_atom([_C|Cs],Acc,Bind):-
 %       Args is a list of arguments passed to format/2, as constructed
 %       by columns_width_args/3. Args is a list [T1,W1 ,..., Tn] where
 %       each Ti is the text of the last column in a table processed by
-%       format_table/6 and each Wi is a variable that must be
+%       format_table/7 and each Wi is a variable that must be
 %       instantiated to the width of that column (plus spaces).
 %
 %       Widths is the list of widths of columns calculated during
-%       execution of format_table/6. These are variables shared by all
+%       execution of format_table/7. These are variables shared by all
 %       argument-lists of all format/2 terms constructed by
-%       format_table/6 and they must now be bound with the finally
+%       format_table/7 and they must now be bound with the finally
 %       calculated column widths for the table.
 %
 bind_width_args(As,Ws):-
