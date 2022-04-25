@@ -810,14 +810,14 @@ Characters can only carry as many items as there are lines in the Inventory box:
 ║│ ○ Retreating...... ○ Recoiling...... ○ Holding...... ○ Advancing...... ○ Charging......│ ║▓
 ║└<^Cant Attack>─────<^-30%>───────────<^Doing Good>───<^+30%>───────────<^Shift Up>──────┘ ║▓
 ║┌[Base Attack]──────────────────────────────┐┌[Special Attack]───────────────────────────┐ ║▓
-║│ Name:.........................Horn Attack ││ Name:..................Flying Horn Attack │ ║▓
-║│ Keywords:.................Crushing,Impact ││ Keywords:.................Crushing,Impact │ ║▓
-║│ Wounds:.................................1 ││ Wounds..................................2 │ ║▓
+║│ Name:.....................Mandible Attack ││ Name:..................Flying Horn Attack │ ║▓
+║│ Keywords:........................Crushing ││ Keywords:..........................Impact │ ║▓
+║│ Wounds:.................................2 ││ Wounds..................................4 │ ║▓
 ║│ Max. Range:.........................Close ││ Max. Range:.................Medium (Area) │ ║▓
-║│ Hit:..................Target Stunned: d60 ││ Hit:................Targets Stunned: ld80 │ ║▓
-║│ Hit (Alt):............................... ││ Hit (Add):.................Targets Recoil │ ║▓
-║│ Hit (Add):............................... ││ Hit (Crit):........Targets take +2 Wounds │ ║▓
-║│ Miss:....................Attacker Recoils ││ Miss:..............Attacker Stunned: ld80 │ ║▓
+║│ Hit:..................Target Bleeding d40 ││ Hit:.................Targets Stunned: d60 │ ║▓
+║│ Hit (Alt):............................... ││ Hit (Crit):.........Targets take 6 Wounds │ ║▓
+║│ Hit (Add):............................... ││ Hit (Crit Add):.....Targets Bleeding: d60 │ ║▓
+║│ Miss:....................Attacker Recoils ││ Miss:...............Attacker Stunned: d60 │ ║▓
 ║│ Miss (Alt):.............................. ││ Miss (Crit):.......Attacker Bleeding: d60 │ ║▓
 ║└───────────────────────────────────────────┘└───────────────────────────────────────────┘ ║▓
 ╠►Survival◄═════════════════════════════════════════════════════════════════════════════════╣▓
@@ -827,7 +827,7 @@ Characters can only carry as many items as there are lines in the Inventory box:
 ╠►Abilities◄════════════════════════════════════════════════════════════════════════════════╣▓
 ║┌[Specific Abilities]────────┐┌[Common Abilities]────────────────────────────────────────┐ ║▓
 ║│ Carapace..........:[__60%] ││ □ Construction.....:[__65%] □ Hunting...........:[__28%] │ ║▓
-║│ Flying............:[__15%] ││ □ Eusociology......:[__33%] □ Leadership........:[__35%] │ ║▓
+║│ Flying............:[__35%] ││ □ Eusociology......:[__33%] □ Leadership........:[__35%] │ ║▓
 ║│ Swarming..........:[___0%] ││ □ Exploration......:[__38%] □ Perception........:[__30%] │ ║▓
 ║│ Venomous..........:[___0%] ││ □ Foraging.........:[__43%] □ Signalling........:[__33%] │ ║▓
 ║│ Web Weaving.......:[___0%] ││ □ Healing..........:[__48%] □ Sneaking..........:[__35%] │ ║▓
@@ -847,7 +847,49 @@ Characters can only carry as many items as there are lines in the Inventory box:
                                          Beetle
                                          ======
 
-\newpage
+Pronouns: he/him/his
+--------------------
+
+Diet: Vegetarian (but see Description)
+--------------------------------------
+
+Description
+-----------
+
+Beetles are the armoured kngiths of the insect kingdom¹. They have an outer pair of wings
+modified into a hardened wing-case, the elytra (Greek for "sheath"), that protect their
+delicate flying wings and also, their bodies. Their heads are also large and armoured and
+armed with powerful mandibles that can deliver crushing bites. Beetles' heads come in a
+wild variety of shapes, sizes and forms, specialised for digging, fighting, or feeding.
+
+The Nests & Insects Beetle character class is modelled after the European rhinoceros
+beetle. These beetles' heads are armed with horns that they normally use in mating fights
+with other males; in the game, they use them to attack Nests' guardians. They can fly,
+but their elytra make them clumsy and slow fliers. They can, however, combine their
+flying abiity and their horned head to perform a devastating cannonbal attack that can
+strike right at the heart of a swarm.
+
+Beetle characters are adults of their species and do not need to feed: they subsist
+during their short lives on the food consumed as larvae. Mechanically speaking Beetle
+characters' Hunger rating is replaced with the word NONE and cannot change with the
+consumption of Food items. Beetle characters cannot become Starving. They can, however,
+benefit from the effects of Food items such as Nectars or Fungi, thus their Diet is
+recorded as "vegetarian" for this purpose only.
+
+Choose this class:
+------------------
+
+If you wish your character to be a heavily armoured main battle tank without the need to
+feed.
+
+
+
+
+
+______________
+
+¹ Technically, insects are a taxonomic *Class*.
+
 \begin{nolayout}
 ╔►Nests & Insects◄═════════════════════════════════════════════════════════►Character Sheet◄╗
 ║......................................... SCORPION ........................................║▓
@@ -907,24 +949,28 @@ Characters can only carry as many items as there are lines in the Inventory box:
 Pronouns: he/him/his
 --------------------
 
+Diet: Carnivore
+---------------
+
 Description
 -----------
 
 Scorpions are not insects! They are arthropods, like insects, but they belong to their
-own taxonomic Class, Arachnida (the Arachnids), along with spiders and vinegaroons.
-Scorpions, like most Arachnids, have eight legs and a pair of appendages, their frightful
-pincers, specialised to grasp and manipulate, in particular, their food. Scorpions' tails
-are infamous for their stinger that injects an extremely painful, lethal venom. Scorpions
-can move with precision on their eight legs but are slowed down by their exoskeleton that
-functions as a carapace armour. In Combat, Scorpions can use their excellent Leadership
-to support their allies by improving their Disposition. They can also use their
-Signalling to display their pincers and stinger in such a fashion as to scare their
-enemies and worsen their Disposition.
+own taxonomic Class, Arachnida (the Arachnids), along with spiders. Scorpions, like most
+Arachnids, have eight legs and a front pair of appendages, their frightful pincers,
+specialised to grasp and manipulate, in particular, their food. Scorpions' tails are
+aremed with their fearful stinger that injects an extremely painful, lethal venom.
+Scorpions can move with precision on their eight legs but are slowed down by their tough
+exoskeleton that functions as a carapace armour. Nests & Insects Scorpions can use their
+excellent Leadership to support their allies in Combat by improving their Disposition.
+They can also use their Signalling to perform an aggressive display showcasing their
+pincers and stinger in such a fashion as to frighten their enemies and worsen their
+Disposition.
 
 Choose this class:
 ------------------
 
-If you want your character to be a lethal, well-protected, tactician specialised in heavy
+If you want your character to be a lethal, well-protected tactician specialised in heavy
 support.
 
 
@@ -988,25 +1034,27 @@ support.
 Pronouns: she/her/hers.
 -----------------------
 
+Diet: Carnivore
+---------------
+
 Description
 -----------
 
-Like Scorpions, Spiders are Arachnids- indeed, the Order Arachnida is named after the
+Like Scorpions, Spiders are Arachnids- indeed, the Class Arachnida is named after the
 Greek name of Spider, *Arachne*. Spiders, like most Arachnids, have eight legs and two
 front appendages, called the pedipalps, that function like external mouthparts. Spiders
 can move very fast and with great precision on their eight legs. They are frightfully
 clever and use their intelligence to hunt and ambush prey. The defining characteristic of
-spiders is their webs that they can spin, or spit. In Combat, Spiders' webs can
-immobilise enemies or stabilise allies bleeding hemolymph (the web essentially acts as a
-bandage). Spiders' bites inject venom that can paralyse prey, and can heal allies,
-removing their Wounds. They are, unfortunately quite frail and have no carapace to
-protect them from attacks.
+spiders is their ability to weave webs. In Combat, Spiders' webs can immobilise enemies
+or stabilise allies bleeding hemolymph (the web essentially acts as a bandage). Spiders'
+bites inject venom that can paralyse prey, and can heal allies, removing their Wounds.
+They are, unfortunately quite frail and have no carapace to protect them from attacks.
 
 Choose this class: 
 ------------------ 
 
-If you want your character to be a lethal, fast, intelligent, but frail healer, and
-hunter.
+If you want your character to be a lethal, fast, intelligent, but frail hunter, and
+healer.
 
 
 \newpage
@@ -1069,26 +1117,32 @@ hunter.
 Pronouns: me/ ME/ MINE!
 -----------------------
 
+Diet: Vegetarian
+----------------
+
 Description
 -----------
 
-Wasps are mean, flying killing machines. Wasps are fast and precise fliers that can hover
-in place. They have yellow- or orange-and-black aposematic stripes that warn enemies of
-their deadlinesss. Their Stings inject lethal venom, but unlike Spiders' venom, Wasp
-venom can only wound, not heal. Unlike Bees, Wasps do not lose their stings and die when
-they sting an enemy, so they can keep stinging away for as long as they like. In Combat
-Wasps are high-mobility, shock troops optimised for menoeuverability and damage, but they
-have soft bodies without a protective carapace armour. They can use their high Signalling
-to perform aggessive displays and drain the morale of their enemies, thus reducing their
-Disposition. Wasps have good knowledge of eusocial insects' domains thanks to their high
-Eusociology, acquired over years of raiding the nests of Bees. They are excellent at
-Foraging and can identify valuable or dangerous Food items.
+Wasps are mean, flying killing machines. Wasps are fast and precise fliers capable of
+hovering in place. They have yellow- or orange-and-black aposematic stripes that warn
+enemies of their deadlinesss. Their Stings inject lethal venom, but unlike Spiders'
+venom, Wasp venom can only wound, not heal. Unlike Bees, Wasps do not lose their stings
+and die when they sting an enemy, so they can keep stinging away for as long as they
+like.
+
+In Nests & Insects Wasps are high-mobility, shock troops optimised for menoeuverability
+and damage, but they have soft bodies without a protective carapace armour. They can use
+their high Signalling to perform aggessive displays of their death stripes and drain the
+morale of their enemies, thus reducing their Disposition. Wasps have good knowledge of
+eusocial insects' domains thanks to their high Eusociology, acquired over years of
+raiding the nests of Bees. They are excellent at Foraging and can identify valuable or
+dangerous Food items.
 
 Choose this class:
 ------------------
 
-If you want your character to be mobile, deadly and feared by its enemies, with good
-survival skills.
+If you want your character to be a mobile, deadly fighter, specialised for fast attack,
+feared by its enemies, and equipped with good survival skills.
 
 
 \newpage
