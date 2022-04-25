@@ -120,10 +120,10 @@
 ║   Enemies ............................................................................ 26 ║▓
 ║     Ants ........................................................................... TODO ║▓
 ║     Bees ........................................................................... TODO ║▓
-║     Termites ......................................................................... 28 ║▓
-║       Worker ......................................................................... 27 ║▓
-║       Minor Soldier - Autothyte ...................................................... 29 ║▓
-║       Major Soldier - Authotyte ...................................................... 31 ║▓
+║     Termites ......................................................................... 27 ║▓
+║       Worker Termite ................................................................. 28 ║▓
+║       Minor Termite Soldier - Autothyte .............................................. 29 ║▓
+║       Major Termite Soldier - Authotyte .............................................. 31 ║▓
 ║       Nasute Soldier ................................................................. 32 ║▓
 ║       Alates - King ................................................................ TODO ║▓
 ║       Alates - Queen ............................................................... TODO ║▓
@@ -1521,7 +1521,7 @@
 ║ Smarts, Charms, Ken,Passions         10%                                                  ║▓
 ║ Blind                                100%                                                 ║▓
 ║ ───────────────────────────────────────────                                               ║▓
-║ Table: Termite Worker Features                                                            ║▓
+║ Table: Worker Termite Features                                                            ║▓
 ║                                                                                           ║▓
 ║ ┌[Special Rule - Alarm Pheromones]──────────────────────────────────────────────────────┐ ║▓
 ║ │                                                                                       │ ║▓
@@ -1531,14 +1531,14 @@
 ║ │                                                                                       │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-║ Termite Caste                   Numbers Summoned        Chance to Summon                  ║▓
-║ ────────────────────────────────────────────────────────────────────────                  ║▓
-║ Workers                         d20                     80%                               ║▓
-║ Minor Autothyte Soldiers        1                       60%                               ║▓
-║ Major Autothyte Soldiers        5                       30%                               ║▓
-║ Nasute Soldiers                 3                       25%                               ║▓
-║ ────────────────────────────────────────────────────────────────────────                  ║▓
-║ Table: Termite Worker summons                                                             ║▓
+║ Termite Caste                 Numbers Summoned        Chance to Summon                    ║▓
+║ ──────────────────────────────────────────────────────────────────────                    ║▓
+║ Worker Termites               d20                     80%                                 ║▓
+║ Minor Termite Soldiers        1                       60%                                 ║▓
+║ Major Termite Soldiers        5                       30%                                 ║▓
+║ Nasute Soldiers               3                       25%                                 ║▓
+║ ──────────────────────────────────────────────────────────────────────                    ║▓
+║ Table: Worker Termite summons                                                             ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -1550,15 +1550,16 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ Minor Soldier - Autothyte                                                                 ║▓
-║ -------------------------                                                                 ║▓
+║ Minor Termite Soldier - Autothyte                                                         ║▓
+║ ---------------------------------                                                         ║▓
 ║                                                                                           ║▓
-║ Minor Soldiers are about as big as workers, mobile and form swarms. Like Ants, they don't ║▓
-║ suffer wound penalties and are blind. They cannot fly. In Combat they attack intruders by ║▓
-║ grabbing them with their mandibles and attempting to crush them. When their Special       ║▓
-║ Attack hits, they explode and spread a sticky liquid that immobilises enemies caught in   ║▓
-║ it. To be clear: the attack kills the Soldier (but only the one that actually exploded-   ║▓
-║ its friends soldier on; mechanically speaking that means the Soldiers lose one wound).    ║▓
+║ Minor Termite Soldiers are about as big as Worker Termites, but can fight and form        ║▓
+║ swarms. Like Ants, they don't suffer wound penalties and are blind. They cannot fly. In   ║▓
+║ Combat they attack intruders by grabbing them with their mandibles and attempting to      ║▓
+║ crush them. When their Special Attack hits, they explode and spread a sticky liquid that  ║▓
+║ immobilises enemies caught in it. To be clear: the attack kills the Soldier (but only the ║▓
+║ one that actually exploded- its friends soldier on; mechanically speaking that means the  ║▓
+║ Soldiers lose one wound).                                                                 ║▓
 ║                                                                                           ║▓
 ║ Feature                                Rating                                             ║▓
 ║ ──────────────────────────────────────────────────────────                                ║▓
@@ -1590,11 +1591,10 @@
 ║                                                                                           ║▓
 ║ ┌[Special Rule - Swarm]─────────────────────────────────────────────────────────────────┐ ║▓
 ║ │                                                                                       │ ║▓
-║ │ Minor Autothyte Soldiers do not suffer Wound penalties. The swarm is killed when its  │ ║▓
+║ │ Minor Termite Soldiers do not suffer Wound penalties. The swarm is killed when its    │ ║▓
 ║ │ wounds reach their Maximum.                                                           │ ║▓
 ║ │                                                                                       │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
-║                                                                                           ║▓
 ║                                                                                           ║▓
 ╚═══════════════════════════════════════════-29-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
@@ -1650,12 +1650,12 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ Major Soldier - Autothyte                                                                 ║▓
-║ -------------------------                                                                 ║▓
+║ Major Termite Soldier - Autothyte                                                         ║▓
+║ ---------------------------------                                                         ║▓
 ║                                                                                           ║▓
-║ The Major Soldier is a larger, stronger version of the Minor Soldier, but also rarer. In  ║▓
-║ mechanical terms, Major Autothye Soldiers have more powerful versions of the Minor        ║▓
-║ Soldiers' Attacks and do not Swarm.                                                       ║▓
+║ The Major Termite Soldier is a larger, stronger version of the Minor Soldier, but also    ║▓
+║ rarer. In mechanical terms, Major Autothye Soldiers have more powerful versions of the    ║▓
+║ Minor Soldiers' Attacks and do not Swarm.                                                 ║▓
 ║                                                                                           ║▓
 ║ Feature                    Rating                                                         ║▓
 ║ ─────────────────────────────────────                                                     ║▓
@@ -1704,12 +1704,12 @@
 ║ --------------                                                                            ║▓
 ║                                                                                           ║▓
 ║ Nasute Soldiers have an elongated snout in place of the large crushing mandibles of other ║▓
-║ Soldier termites. In Combat Nasutes eject from this snout a noxious liquid that           ║▓
+║ Soldier termites. In Combat, Nasutes eject from this snout a noxious liquid that          ║▓
 ║ immobilises intruders and can kill them just with the force of the blow. This is called a ║▓
 ║ Fontanellar Gun. While Nasutes are blind as other worker and soldier termites, they are   ║▓
 ║ wicked shots with their Fontanellar Guns and can hit targets at Long range. Nasutes can   ║▓
 ║ fire their Fontanellar Guns repeatedly even though it tears off the lower part of their   ║▓
-║ modified mandibles. I swear I am not making this up. Nasute soldiers are wild!            ║▓
+║ modified mandibles.                                                                       ║▓
 ║                                                                                           ║▓
 ║ Feature                    Rating                                                         ║▓
 ║ ─────────────────────────────────────                                                     ║▓
@@ -1725,7 +1725,7 @@
 ║ Passions                   55%                                                            ║▓
 ║ Blind                      100%                                                           ║▓
 ║ ─────────────────────────────────────                                                     ║▓
-║ Figure: Nasute Termite Soldier Features                                                   ║▓
+║ Figure: Nasute Soldier Features                                                           ║▓
 ║                                                                                           ║▓
 ║ ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐  ║▓
 ║ │ Name:.............Fontanellar Gun Attack ││ Name:.....Greater Fontanellar Gun Attack │  ║▓
@@ -1739,7 +1739,7 @@
 ║ │ Miss:.............Attacker Recoils twice ││ Miss:.............Attacker Recoils twice │  ║▓
 ║ └──────────────────────────────────────────┘└──────────────────────────────────────────┘  ║▓
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
-║ Figure: Nasute Termite Soldier Attacks                                                    ║▓
+║ Figure: Nasute Soldier Attacks                                                            ║▓
 ║                                                                                           ║▓
 ║ ┌[Special Rule - Self-Sacrificing]──────────────────────────────────────────────────────┐ ║▓
 ║ │ Same as for Minor Termite Soldiers.                                                   │ ║▓
@@ -1756,12 +1756,12 @@
 ║                                                                                           ║▓
 ║ ┌[Special Rule - Alarm Gun]─────────────────────────────────────────────────────────────┐ ║▓
 ║ │                                                                                       │ ║▓
-║ │ The ejecta of the Fontanellar Gun include an alarm pheromone that compels other       │ ║▓
-║ │ Nasutes in the vicinity of a Gun's discharge to fire their own, towards the same      │ ║▓
+║ │ The ejecta of the Nasutes' Fontanellar Gun include an alarm pheromone that compels    │ ║▓
+║ │ other Nasutes in the vicinity of a Gun's discharge to fire their own, towards the same │ ║▓
 ║ │ direction.                                                                            │ ║▓
 ║ │                                                                                       │ ║▓
 ║ │ Mechanically, whenever a Nasute soldier A discharges its Fontanellar Gun, there is a  │ ║▓
-║ │ 40% chance that another Nasute Soldier B participating in Combat but who has not yet  │ ║▓
+║ │ 40% chance that another Nasute Soldier B, participating in Combat but who has not yet │ ║▓
 ║ │ taken an Attack Action this Turn, will Attack the same target.                        │ ║▓
 ║ │                                                                                       │ ║▓
 ║ │ The Attack is made in the Turn of the Nasute Soldier A. The Attack counts as Nasute   │ ║▓
