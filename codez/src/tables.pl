@@ -1,7 +1,9 @@
-:-module(tables, [format_table/3
+:-module(tables, [format_table/4
                  ]).
 
 :-use_module(library(clpfd)).
+
+%:-encoding(utf8).
 
 /** <module> Predicates to format table rows.
 
@@ -49,7 +51,7 @@ true.
 */
 
 
-%!      format_table(+Lines,+Space,-Formatted) is det.
+%!      format_table(+Lines,+Space,+Underline,-Formatted) is det.
 %
 %       Format a list of text Lines as a table.
 %
@@ -63,6 +65,9 @@ true.
 %
 %       Space is the number of space characters to insert between table
 %       columns.
+%
+%       Underline is the character to use to underline the header row
+%       and the last row in the table.
 %
 %       Formatted is a list of format/2 calls of the form:
 %
@@ -78,16 +83,17 @@ true.
 %
 %       See the module header for examples of use fo format_table/2.
 %
-format_table([L1|Ls],S,Fs):-
+format_table([L1|Ls],S,C,Fs):-
         columns_widths(L1,Cs,Ws)
         ,columns_width_args(Cs,Ws_Acc,As)
         ,format_atom(Cs,FA)
         ,F = format(atom(_F1),FA,As)
-        ,row_underline('-',W,U)
-        ,format_table(Ls,Ws,Ws_Acc,S,[U,F],W,Fs).
+        ,row_underline(C,W,U)
+        ,format_table(Ls,Ws,Ws_Acc,S,[U,F],C,W,Fs).
 
 
-%!      format_table(+Lines,+Widths,+W_Acc,+Space,+Acc,-Format) is det.
+%!     format_table(+Lines,+Widths,+W_Acc,+Space,+Char,+UWid,+Acc,-Format)
+%!     is det.
 %
 %       Business end of format_table/2.
 %
@@ -96,7 +102,7 @@ format_table([L1|Ls],S,Fs):-
 %
 %       Widths is a list of numbers, the maximum widths of table
 %       columns, except the last. Widths is updated with the maximum
-%       widths of columns as format_table/7 walks over table rows.
+%       widths of columns as format_table/8 walks over table rows.
 %
 %       W_Acc is a variable used to increase the maximum column widths
 %       in Widths with Space spaces and then to instantiate the
@@ -105,6 +111,13 @@ format_table([L1|Ls],S,Fs):-
 %       details.
 %
 %       Acc is the accumulator of format/2 terms.
+%
+%       Space is the number of spaces to pad columns with.
+%
+%       Char is the character to use in underlines.
+%
+%       UWid is the width of the underlines, to be instantiated at the
+%       end of processing in a similar way as W_Acc.
 %
 %       Format is a list of format/2 terms, one for each row, as
 %       described in format_table/3.
@@ -122,20 +135,20 @@ format_table([L1|Ls],S,Fs):-
 %       terms' argument lists. We bind the width arguments at the end of
 %       processing when we know the maximums.
 %
-format_table([],Ws,Ws_,S,[F|Acc],UW,Fs):-
+format_table([],Ws,Ws_,S,[F|Acc],UC,UW,Fs):-
         F = format(atom(_A),_FA,As)
         ,maplist(plus(S),Ws,Ws_)
         ,bind_width_args(As,Ws_)
         ,underline_width(Ws_,S,UW)
-        ,row_underline('-',UW,U)
+        ,row_underline(UC,UW,U)
         ,reverse([U,F|Acc],Fs).
-format_table([L_j|Ls],Ws_i,Ws_Acc,S,Fs_Acc,UW,Fs_Bind):-
+format_table([L_j|Ls],Ws_i,Ws_Acc,S,Fs_Acc,UC,UW,Fs_Bind):-
         columns_widths(L_j,Cs,Ws_j)
         ,columns_width_args(Cs,Ws_Acc,As)
         ,format_atom(Cs,FA)
         ,F_j = format(atom(_F),FA,As)
         ,max_widths(Ws_i,Ws_j,Ws_k)
-        ,format_table(Ls,Ws_k,Ws_Acc,S,[F_j|Fs_Acc],UW,Fs_Bind).
+        ,format_table(Ls,Ws_k,Ws_Acc,S,[F_j|Fs_Acc],UC,UW,Fs_Bind).
 
 
 %!      columns_widths(+Line,-Columns,-Widths) is det.
@@ -170,7 +183,7 @@ columns_widths(L,Cs,Ws):-
 %       we finally know the width of the longest row in the table.
 %
 %       Args is a list of arguments to pass to the format/2 term
-%       constructed at the end of format_table/7. The list is of the
+%       constructed at the end of format_table/8. The list is of the
 %       form:
 %
 %       [T1,V1,..., Tn]
@@ -179,7 +192,7 @@ columns_widths(L,Cs,Ws):-
 %       variable in Width_Vars corresponding to that column.
 %
 %       Column widths bound to Width_Vars as calculated at the end of a
-%       call to format_table/7 are used to pad the text of columns in
+%       call to format_table/8 are used to pad the text of columns in
 %       Columns (i.e. each of the Ti in Args) with the number of spaces
 %       needed to have a well-formatted table, with equal spacing
 %       between columns.
@@ -209,10 +222,10 @@ columns_width_args(I,[C|Cs],Ws,Acc,Bind):-
 %       Update the mximum widths of columns in a table.
 %
 %       Widths_1 is the list of maximum widths of columns found so-far
-%       durin the execution of format_table/7.
+%       durin the execution of format_table/8.
 %
 %       Widths_2 is the list of maximum widths of the column currently
-%       being processed by format_table/7. Both Widths_1 and Widths_2
+%       being processed by format_table/8. Both Widths_1 and Widths_2
 %       are constructed by columns_widths/3.
 %
 %       Max_Widths is a list of numbers where each number at index i
@@ -225,10 +238,10 @@ columns_width_args(I,[C|Cs],Ws,Acc,Bind):-
 %       Max = [5, 6, 4].
 %       ==
 %
-%       This predicate is used during the execution of format_table/7 to
+%       This predicate is used during the execution of format_table/8 to
 %       keep track of the maximum width of text in each column. The
 %       maximum widths found that way are used at the end of
-%       format_table/7 to evenly space out the columns of the table.
+%       format_table/8 to evenly space out the columns of the table.
 %
 max_widths(Ws_1,Ws_2,Ws_max):-
         transpose([Ws_1,Ws_2],Ts)
@@ -324,13 +337,13 @@ underline_width([W|Ws],S,Acc,Bind):-
 %       Args is a list of arguments passed to format/2, as constructed
 %       by columns_width_args/3. Args is a list [T1,W1 ,..., Tn] where
 %       each Ti is the text of the last column in a table processed by
-%       format_table/7 and each Wi is a variable that must be
+%       format_table/8 and each Wi is a variable that must be
 %       instantiated to the width of that column (plus spaces).
 %
 %       Widths is the list of widths of columns calculated during
-%       execution of format_table/7. These are variables shared by all
+%       execution of format_table/8. These are variables shared by all
 %       argument-lists of all format/2 terms constructed by
-%       format_table/7 and they must now be bound with the finally
+%       format_table/8 and they must now be bound with the finally
 %       calculated column widths for the table.
 %
 bind_width_args(As,Ws):-

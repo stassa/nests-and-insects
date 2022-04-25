@@ -5,6 +5,7 @@
                  ]).
 
 :-use_module(library(clp/clpfd)).
+:-use_module(src(tables)).
 
 /** <module> Layout and formatting for text-based rulebooks.
 
@@ -247,101 +248,14 @@ format_command(C,Ls,[P,N,M,W],Acc,Acc,Rs,[P,N,M,W]):-
         ,sub_atom(S,1,_A,1,Space)
         ,atom_number(Space,Sp)
         ,skip_lines('\\end{table}',Ls,1,[],Ts,Acc,_Acc,Ls_,_K)
-        ,lines_rows(Ts,Sp,Rows)
+        ,reverse(Ts,Ts_)
+        ,tables:format_table(Ts_,Sp,─,Fs)
+        ,findall(A
+                ,(member(format(atom(A),FA,As),Fs)
+                 ,format(atom(A),FA,As)
+                 )
+                ,Rows)
         ,append(Rows,Ls_,Rs).
-
-
-%!      lines_rows(+Lines,+Column_Width,-Rows) is det.
-%
-%       Convert Lines of text to formatted table Rows.
-%
-%       Column_Width is the width of columns in the table, provided by
-%       the user.
-%
-lines_rows(Ls,W,[Hr,Ur|Rs_]):-
-        underline_header(Ls,W,Ur)
-        ,lines_rows_(Ls,W,[],[Hr|Rs],0,N)
-        ,format(atom(F),'~`─t~*|',[N])
-        ,append(Rs,[F],Rs_).
-
-
-%!      underline_header(+Rows,+Width,-Underlined) is det.
-%
-%       Underline the header row in a table.
-%
-%       Rows is a list of lines, the rows of a table.
-%
-%       Width is the user-defined table column width.
-%
-%       Underlined is an underline for the header row in Rows.
-%
-underline_header(Ls,W,Us_):-
-        last(Ls,L)
-        ,split_string(L,'&',' ',Ss)
-        ,display:underline(Ss,─,Us)
-        ,row_format(Us,W,Us_).
-
-
-%!      lines_rows(+Lines,+Width,+Acc,-Rows,+Acc2,-Longest) is det.
-%
-%       Format a list of Lines to rows of a table.
-%
-%       Lines is a list of lines of text between a \begin{table} and an
-%       \end{table} tag, i.e. the rows of a table.
-%
-%       Width is the user-provided table width.
-%
-%       Acc is the accumulator of formatted table rows.
-%
-%       Rows is the list of lines in Lines formatted for printing as
-%       rows of a table, arranged in columns of the given Width padded
-%       with spaces.
-%
-%       Acc2 is the accumulator of the row-length count.
-%
-%       Longest is the highest number placed in Acc2, used to draw an
-%       underline under the table, which must be equal to the longest
-%       row in the table.
-%
-lines_rows_([],_W,Fs,Fs,N,N).
-lines_rows_([L|Ls],W,Acc,Bind,Ni,M):-
-        atom_string(L,S)
-        ,split_string(S,'&',' ',Ss)
-        ,row_format(Ss,W,F)
-        ,atom_length(F,Nj)
-        ,(   Ni > Nj
-         ->  Nk = Ni
-         ;   Nk = Nj
-         )
-        ,lines_rows_(Ls,W,[F|Acc],Bind,Nk,M).
-
-
-%!      row_format(+Row,+Width,-Format) is det.
-%
-%       Format a Row of a table.
-%
-%       Row is list of strings, the columns in a single table row.
-%
-%       Width is the user-provided table column width.
-%
-%       Format is the Row formatted for printing, with columns of the
-%       given Width and padded with spaces.
-%
-row_format(Ss,W,F):-
-        row_format(Ss,W,[],Fs)
-        ,atomic_list_concat(Fs,'',F).
-
-%!      row_format(+Row,+Width,+Acc,-Format) is det.
-%
-%       Business end of row_format/3.
-%
-row_format([S],_W,Acc,Bind):-
-        format(atom(F),'~w',[S])
-        ,reverse([F|Acc],Bind).
-row_format([S|Ss],W,Acc,Bind):-
-        atom_string(S,A)
-        ,format(atom(F),'~|~w~` t~*+',[A,W])
-        ,row_format(Ss,W,[F|Acc],Bind).
 
 
 %!      skip_lines(+End,+Lines,+Count,+Acc,-New,-Newlines,-NewCount)
