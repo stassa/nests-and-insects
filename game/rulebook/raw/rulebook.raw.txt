@@ -223,6 +223,7 @@ opponents or the environment. The value of the d100 roll relative to Effort and
 Resistance determines the Degree of Success or Failure (DoS) of an action. Table 1
 outlines the four DoS attainable by comparing a d100 roll to Effort and Resistance.
 
+/*
 Roll vs Effort        Roll vs Resistance        Degree of Success
 ──────────────        ──────────────────        ─────────────────
 Under or equal        Over                      Complete Succes
@@ -230,6 +231,15 @@ Under or equal        Under or equal            Partial Success
 Over                  Over                      Partial Failure
 Over                  Under or equal            Complete Failure
 ─────────────────────────────────────────────────────────────────
+Table 1: Effort, Resistance and Degree of Success.
+*/
+\begin{table}[8]
+Roll vs Effort&       Roll vs Resistance&       Degree of Success
+Under or equal&       Over              &       Complete Succes
+Under or equal&       Under or equal    &       Partial Success
+Over          &       Over              &       Partial Failure
+Over          &       Under or equal    &       Complete Failure
+\end{table}
 Table 1: Effort, Resistance and Degree of Success.
 
 Two additional DoS, Critical Failure and Critical Success are attainable by the use of
@@ -239,6 +249,7 @@ actions that grant dramatic modifiers must be described in more detail than stat
 modifiers, to encourage players to use their imagination to help their characters. Table
 2 illustrates the use of modifiers to change the DoS of an action.
 
+/*
 Roll vs Modifier        Modifier Sign        Degree of Success
 ────────────────        ─────────────        ─────────────────
 Under or Equal          Positive             Improves towards Critical Success
@@ -246,6 +257,16 @@ Over                    Positive             No change
 Under or Equal          Negative             Worsens towards Critical Failure
 Over                    Negative             No change
 ──────────────────────────────────────────────────────────────────────────────
+Table 2: Modifiers and change to Degree of Success. DoS can improve beyond Complete
+Success to Critical Success; or worsen beyond Complete Failure to Critical Failure.
+*/
+\begin{table}[8]
+Roll vs Modifier&       Modifier Sign&       Degree of Success
+Under or Equal  &       Positive     &       Improves towards Critical Success
+Over            &       Positive     &       No change
+Under or Equal  &       Negative     &       Worsens towards Critical Failure
+Over            &       Negative     &       No change
+\end{table}
 Table 2: Modifiers and change to Degree of Success. DoS can improve beyond Complete
 Success to Critical Success; or worsen beyond Complete Failure to Critical Failure.
 
@@ -269,6 +290,7 @@ shows "6" and the d10 shows "0": in that case the d60 result is 60.
 Table 3 lists the five Decile dice used in fd100 and their component polyhedrals. Decile
 dice are described in full detail in Section "Decile dice" in the "System" Chapter.
 
+/*
 Decile die    Tens die    Ones die    Range
 ──────────    ────────    ────────    ─────
 d20           Not any!    d20         1 to 20
@@ -279,9 +301,18 @@ d100          d10         d10         1 to 100
 ──────────────────────────────────────────────
 Table 3: Decile dice, used for quantification of percentile effects. d100 is also a
 decile die. The d20 does not need a "tens" die and is rolled on its own.
-
-
-
+*/
+\begin{table}[6]
+Decile die&    Tens die&    Ones die&    Range
+d20       &    Not any!&    d20     &    1 to 20
+d40       &    d4      &    d10     &    1 to 40
+d60       &    d6      &    d10     &    1 to 60
+d80       &    d8      &    d10     &    1 to 80
+d100      &    d10     &    d10     &    1 to 100
+\end{table}
+Table 3: Decile dice, used for quantification of percentile effects. d100 is also a
+decile die. The d20 does not need a "tens" die and is rolled on its own.
+\newpage
 
 Minigames
 ---------
@@ -302,6 +333,7 @@ The Combat minigame also tracks characters' Disposition, representing their posi
 battle and their morale. Better disposition improves the DoS of subsequent Combat actions
 and worse disposition worsens it. 
 
+/*
 Degree of Success        Outcome
 ─────────────────        ───────
 Critical Success         Both Attacks Hit
@@ -311,6 +343,17 @@ Partial Failure          Base Attack Misses
 Complete Failure         Special Attack Misses
 Critical Failure         Both Attacks Miss
 ──────────────────────────────────────────────
+Table 4: Combat minigame outcomes.
+*/
+\begin{table}[8]
+Degree of Success&        Outcome
+Critical Success &        Both Attacks Hit
+Complete Success &        Special Attack Hits
+Partial Success  &        Base Attack Hits
+Partial Failure  &        Base Attack Misses
+Complete Failure &        Special Attack Misses
+Critical Failure &        Both Attacks Miss
+\end{table}
 Table 4: Combat minigame outcomes.
 \newpage
 
@@ -386,14 +429,14 @@ Each character class has its own character sheet, based on the character sheet t
 in the preceding page, with its own, pre-set, values. The Character Sheet is divided into
 5 areas, some with sub-areas. These are listed in Table 5.
 
-Area Name       Sub-Areas
-─────────       ─────────
-Class Header    None
-Attributes      None
-Combat Stats    Condition box, Disposition Track, Attack boxes
-Survival        Hunger box, Luck box
-Abilities       Specific Abilities box, Common Abilities box, Effects box, Inventory box
-────────────────────────────────────────────────────────────────────────────────────────
+\begin{table}[4]
+Area Name   &   Sub-Areas
+Class Header&   None
+Attributes  &   None
+Combat Stats&   Condition box, Disposition Track, Attack boxes
+Survival    &   Hunger box, Luck box
+Abilities   &   Specific Abilities box, Common Abilities box, Effects box, Inventory box
+\end{table}
 Table 5: Areas and sub-areas in a character sheet.
 
 The following Sections describe each area and sub-area of the character sheet.
@@ -415,8 +458,7 @@ Attributes Area
 
 Under the Class Header is the Attributes Area (Figure 2), listing Class Attributes.
 Attributes are Features that represent innate abilities of characters in a Class.
-
-
+\newpage
 
 ╠►Attributes◄═══════════════════════════════════════════════════════════════════════════╣
 ║┌─────────────────────────────────────────────────────────────────────────────────────┐║
@@ -428,17 +470,17 @@ Figure 2: Attributes Area.
 
 Nests & Insects characters have eight Attributes (Table 6).
 
-Attribute        Description
-─────────        ───────────
-Speed            How fast the character can move
-Skill            Dexterity, precision and fine manipulation ability
-Strength         Physical strength, used to push, pull, lift, throw, and break doo- stuff
-Stamina          Physical toughness and endurance, resistance to physical harm
-Smarts           Intelligence, logic, reasoning and problem solving skill
-Charms           Charisma, talent for communication and influencing others' behaviour
-Ken              Wisdom, common sense, and knowledge of the world
-Passions         Willpower, morale, strength of spirit and courage
-─────────────────────────────────────────────────────────────────────────────────────────
+\begin{table}[6]
+Attribute&       Description
+Speed    &       How fast the character can move
+Skill    &       Dexterity, precision and fine manipulation ability
+Strength &       Physical strength, used to push, pull, lift, throw, and break doo- stuff
+Stamina  &       Physical toughness and endurance, resistance to physical harm
+Smarts   &       Intelligence, logic, reasoning and problem solving skill
+Charms   &       Charisma, talent for communication and influencing others' behaviour
+Ken      &       Wisdom, common sense, and knowledge of the world
+Passions &       Willpower, morale, strength of spirit and courage
+\end{table}
 Table 6: Character Attributes
 
 XP Tickboxes: In the Attributes Area each attribute is listed with an empty tickbox to
@@ -462,8 +504,7 @@ Figure 4 shows the Speed tickbox in Figure 3 ticked with the ✓ character (U+27
 └<^XP>───────────────
 ─────────────────────
 Figure 4: Ticked XP tickbox for Speed
-
-
+\newpage
 
 Combat Stats Area
 -----------------
@@ -509,8 +550,7 @@ Disposition Track
 
 The Disposition Track (Figure 7) follows a character's Disposition, a representation of
 both position and morale in Combat.
-
-
+\newpage
 
 ├─<Disposition Track>───────────────────────────────────────────────────────────────────┤
 │ (Advance this way -->) ........................................ (<-- Recoil this way) │
@@ -555,9 +595,7 @@ Attack and Special Attack. Each character class has its own Base and Special Att
 └──────────────────────────────────────────┘└──────────────────────────────────────────┘ 
 ────────────────────────────────────────────────────────────────────────────────────────
 Figure 8: Attack boxes
-
-
-
+\newpage
 
 Survival Area
 -------------
@@ -601,10 +639,7 @@ Characters start the game with 11% Luck. During the game A character's Luck rati
 changes whenever the player rolls a d100 and the same digit appears on both d10s. This is
 known as "rolling a double". When a double is rolled, the Luck marker is moved to the
 rating that matches the double.
-
-
-
-
+\newpage
 
 Abilities Area
 --------------
@@ -677,19 +712,19 @@ Figure 14: Common Abilities
 Like Atributes and Conditions, Common Abilities have an XP Tickbox and can be improved
 with experience. Table 7 briefly describes Common Abilities and their use.
 
-Common Ability        Description
-──────────────        ───────────
-Construction          Make traps, secure a Room for Resting and Healing
-Eusociology           Knowledge of the ways of Nests and their inhabitants
-Exploration           Search a Room, or scout ahead to unvisited Rooms
-Foraging              Search for sustenance, or Food Items with special abilities
-Healing               Remove Wounds or detrimental Effects
-Hunting               Hunt prey for sustenance or other uses
-Leadership            Support allies and improve their Disposition in Combat
-Perception            Find secrets and hidden items and Rooms
-Signalling            Display aposematic markings, emit pheromonic signals
-Sneaking              Move and act with stealth
-─────────────────────────────────────────────────────────────────────────────────
+\begin{table}[8]
+Common Ability&        Description
+Construction  &        Make traps, secure a Room for Resting and Healing
+Eusociology   &        Knowledge of the ways of Nests and their inhabitants
+Exploration   &        Search a Room, or scout ahead to unvisited Rooms
+Foraging      &        Search for sustenance, or Food Items with special abilities
+Healing       &        Remove Wounds or detrimental Effects
+Hunting       &        Hunt prey for sustenance or other uses
+Leadership    &        Support allies and improve their Disposition in Combat
+Perception    &        Find secrets and hidden items and Rooms
+Signalling    &        Display aposematic markings, emit pheromonic signals
+Sneaking      &        Move and act with stealth
+\end{table}
 Table 7: Common Abilities with brief description.
 
 Effects box
@@ -714,8 +749,8 @@ Effects each have a radio button. When this is ticked it marks that the Effect "
 i.e. that the character is currently subject to the Effect. The ten Effects in the Effect
 box are listed in Table 8 along with a brief description of each.
 
+\begin{table}[6]
 Effects        The character...
-───────        ────────────────
 Agony          ...is in agony and must overcome her pain to act
 Bleeding       ...automatically takes a Wound each Combat Turn
 Blind          ...can't see. Ants start the game Blind
@@ -726,7 +761,7 @@ Infected       ...acquires a random Effect each Turn this Effect Applies
 Paralysed      ...cannot take any Actions
 Poisoned       ...has a negative modifier equal to Poisoned to all Actions
 Stunned        ...loses her next Turn in Combat
-──────────────────────────────────────────────────────────────────────────
+\end{table}
 Table 8: Effects, with brief description of how a character is affected.
 
 Inventory box
@@ -750,7 +785,6 @@ that indicates whether the item is a Food item that can be consumed to reduce Hu
 
 Characters can only carry as many items as there are lines in the Inventory box: that is
 5 lines, for 5 items.
-
 \newpage
 
                                     Character Classes
@@ -871,7 +905,7 @@ Characters can only carry as many items as there are lines in the Inventory box:
                                         ========
 
 Pronouns: he/him/his
---------
+--------------------
 
 Description
 -----------
@@ -952,7 +986,7 @@ support.
                                          ======
 
 Pronouns: she/her/hers.
---------
+-----------------------
 
 Description
 -----------
@@ -1033,7 +1067,7 @@ hunter.
                                           ====
 
 Pronouns: me/ ME/ MINE!
---------
+-----------------------
 
 Description
 -----------
@@ -1072,7 +1106,7 @@ survival skills.
                                         Termites
                                         --------
 
-Termites are detritivores: they live on rotting plant matter, wood and leaves. They make
+Termites are detritivores: they feed on rotting plant matter, wood and leaves. They make
 their nests underground, by borrowing into wood, or by building above-ground structures
 with soil and plant matter bound with their feces. Well, yes. Termite nests are connected
 to networks of underground tunnels that are used to forage in safety. In Nests & Insects
@@ -1086,30 +1120,30 @@ are responsible for making sure the Nest is always full of millions of Termites 
 castes.
 \newpage
 
-Worker
-------
+Worker Termite
+--------------
 
-Worker termites are unarmed and blind, and cannot fight, but they are numerous, swarm and
+Worker Termites are unarmed and blind, and cannot fight, but they are numerous, swarm and
 will raise the alarm as soon as they become aware that the Nest has been breached.
 Workers raise the alarm by bumping into each other and causing each other to release
 alarm pheromones. The pheromone trail spreads throughout the nest attracting more workers
 and, soon enough, soldiers. Attacking a swarm of workers causes them to release alarm
 pheromones faster.
 
-Feature          Rating
-───────          ──────
-Initiative       20%
-Threat Rate      0%
-Survival Rate    25%
-Wounds Max       d20
-Swarming         90%
-Sp,Sk,Str,Sta    20%
-Sm,Ch,Kn,Pa      10%
-Blind            100%
-───────────────────────
+\begin{table}[8]
+Feature                      &    Rating
+Initiative                   &    20%
+Threat Rate                  &    0%
+Survival Rate                &    25%
+Wounds Max                   &    d20
+Swarming                     &    90%
+Speed, Skill,Strength,Stamina&    20%
+Smarts, Charms, Ken,Passions &    10%
+Blind                        &    100%
+\end{table}
 Table: Termite Worker Features
 
-\begin{box}[Special Rule - Alarm]
+\begin{box}[Special Rule - Alarm Pheromones]
 
 Every Turn of Combat, Worker Termites automatically roll Swarming. If the roll
 succeeds, new Termites arrive. Roll on the Termite Worker Summons Table below and
@@ -1117,13 +1151,24 @@ choose the result with the lowest Chance higher than or equal to the roll value.
 
 \end{box}
 
-Termite Caste & Numbers Summoned       Chance to Summon
-────────────────────────────────       ────────────────
-d20 Workers                            80%
-1 Minor Autothyte Soldiers             60%
-5 Major Autothyte Soldiers             30%
-3 Nasute Soldiers                      25%
-───────────────────────────────────────────────────────
+/*
+\begin{table}[8]
+Termite Caste and Numbers Summoned&       Chance to Summon
+d20 Workers                       &       80%
+1 Minor Autothyte Soldiers        &       60%
+5 Major Autothyte Soldiers        &       30%
+3 Nasute Soldiers                 &       25%
+\end{table}
+Table: Termite Worker summons
+\newpage
+*/
+\begin{table}[8]
+Termite Caste           &    Numbers Summoned&    Chance to Summon
+Workers                 &    d20             &    80%
+Minor Autothyte Soldiers&    1               &    60%
+Major Autothyte Soldiers&    5               &    30%
+Nasute Soldiers         &    3               &    25%
+\end{table}
 Table: Termite Worker summons
 \newpage
 
@@ -1137,18 +1182,18 @@ Attack hits, they explode and spread a sticky liquid that immobilises enemies ca
 it. To be clear: the attack kills the Soldier (but only the one that actually exploded-
 its friends soldier on; mechanically speaking that means the Soldiers lose one wound).
 
-Feature          Rating
-───────          ──────
-Initiative       50%
-Threat Rate      45%
-Survival Rate    50%
-Wounds Max       10
-Carapace         40% (Armoured Head)
-Swarming         80%
-Sp,Sk,Str,Sta    40%
-Sm,Ch,Kn,Pa      20%
-Blind            100%
-────────────────────────────────────
+\begin{table}[8]
+Feature                        &    Rating
+Initiative                     &    50%
+Threat Rate                    &    45%
+Survival Rate                  &    50%
+Wounds Max                     &    10
+Carapace                       &    40% (Armoured Head)
+Swarming                       &    80%
+Speed, Skill, Strength, Stamina&    40%
+Smarts, Charms, Ken, Passions  &    20%
+Blind                          &    100%
+\end{table}
 Table: Minor Termite Soldier Features
 
 ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐
@@ -1173,7 +1218,7 @@ wounds reach their Maximum.
 \end{box}
 \newpage
 
-\begin{box}[Special Rule - Alarm]
+\begin{box}[Special Rule - Alarm Pheromones]
 Same as for Worker Termites.
 \end{box}
 
@@ -1200,7 +1245,6 @@ entrance that it is guarding will be blocked by the sticky substance secreted du
 the attack, and become impassable.
 
 \end{box}
-
 \newpage
 
 Major Soldier - Autothyte
@@ -1210,20 +1254,20 @@ The Major Soldier is a larger, stronger version of the Minor Soldier, but also r
 mechanical terms, Major Autothye Soldiers have more powerful versions of the Minor
 Soldiers' Attacks and do not Swarm.
 
-Feature          Rating
-───────          ──────
-Initiative       55%
-Threat Rate      50%
-Survival Rate    55%
-Wounds/Max       5
-Carapace         60% (Head)
-Swarming         0%
-Sp,Sk            30%
-Str,Sta          60%
-Sm,Ch,Kn         20%
-Pa               50%
-Blind            100%
-──────────────────────────
+\begin{table}[8]
+Feature            &    Rating
+Initiative         &    55%
+Threat Rate        &    50%
+Survival Rate      &    55%
+Wounds Max         &    5
+Carapace           &    60% (Head)
+Swarming           &    0%
+Speed, Skill       &    30%
+Strength, Stamina  &    60%
+Smarts, Charms, Ken&    20%
+Passions           &    50%
+Blind              &    100%
+\end{table}
 Figure: Major Termite Soldier Features
 
 ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐
@@ -1240,14 +1284,15 @@ Figure: Major Termite Soldier Features
 ────────────────────────────────────────────────────────────────────────────────────────
 Figure: Major Termite Soldier Attacks
 
+\begin{box}[Special Rule - Alarm Pheromones]
+Same as for Worker Termites.
+\end{box}
 \begin{box}[Special Rule - Self Sacrificing]
 Same as for Minor Termite Soldiers.
 \end{box}
-
 \begin{box}[Special Rule - Nest Guardians]
 Same as for Minor Termite Soldiers.
 \end{box}
-\newpage
 
 Nasute Soldier
 --------------
@@ -1258,23 +1303,22 @@ immobilises intruders and can kill them just with the force of the blow. This is
 Fontanellar Gun. While Nasutes are blind as other worker and soldier termites, they are
 wicked shots with their Fontanellar Guns and can hit targets at Long range. Nasutes can
 fire their Fontanellar Guns repeatedly even though it tears off the lower part of their
-modified mandibles. I swear I am not making this up. Look up "Fontanellar Gun" on
-wikipedia if you don't believe me.
+modified mandibles. I swear I am not making this up. Nasute soldiers are wild!
 
-Feature          Rating
-───────          ──────
-Initiative       55%
-Threat Rate      55%
-Survival Rate    55%
-Wounds/Max       6
-Carapace         70% (Head)
-Swarming         0%
-Sp,Sk            50%
-Str,Sta          60%
-Sm,Ch,Kn         30%
-Pa               55%
-Blind            100%
-──────────────────────────
+\begin{table}[8]
+Feature            &    Rating
+Initiative         &    55%
+Threat Rate        &    55%
+Survival Rate      &    55%
+Wounds Max         &    6
+Carapace           &    70% (Head)
+Swarming           &    0%
+Speed, Skill       &    50%
+Strength, Stamina  &    60%
+Smarts, Charms, Ken&    30%
+Passions           &    55%
+Blind              &    100%
+\end{table}
 Figure: Nasute Termite Soldier Features
 
 ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐

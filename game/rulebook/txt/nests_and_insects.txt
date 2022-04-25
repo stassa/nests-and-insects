@@ -235,7 +235,7 @@
 ║ outlines the four DoS attainable by comparing a d100 roll to Effort and Resistance.       ║▓
 ║                                                                                           ║▓
 ║ Roll vs Effort        Roll vs Resistance        Degree of Success                         ║▓
-║ ──────────────        ──────────────────        ─────────────────                         ║▓
+║ ─────────────────────────────────────────────────────────────────                         ║▓
 ║ Under or equal        Over                      Complete Succes                           ║▓
 ║ Under or equal        Under or equal            Partial Success                           ║▓
 ║ Over                  Over                      Partial Failure                           ║▓
@@ -254,7 +254,7 @@
 ║ 2 illustrates the use of modifiers to change the DoS of an action.                        ║▓
 ║                                                                                           ║▓
 ║ Roll vs Modifier        Modifier Sign        Degree of Success                            ║▓
-║ ────────────────        ─────────────        ─────────────────                            ║▓
+║ ──────────────────────────────────────────────────────────────────────────────            ║▓
 ║ Under or Equal          Positive             Improves towards Critical Success            ║▓
 ║ Over                    Positive             No change                                    ║▓
 ║ Under or Equal          Negative             Worsens towards Critical Failure             ║▓
@@ -283,14 +283,14 @@
 ║ Table 3 lists the five Decile dice used in fd100 and their component polyhedrals. Decile  ║▓
 ║ dice are described in full detail in Section "Decile dice" in the "System" Chapter.       ║▓
 ║                                                                                           ║▓
-║ Decile die    Tens die    Ones die    Range                                               ║▓
-║ ──────────    ────────    ────────    ─────                                               ║▓
-║ d20           Not any!    d20         1 to 20                                             ║▓
-║ d40           d4          d10         1 to 40                                             ║▓
-║ d60           d6          d10         1 to 60                                             ║▓
-║ d80           d8          d10         1 to 80                                             ║▓
-║ d100          d10         d10         1 to 100                                            ║▓
-║ ──────────────────────────────────────────────                                            ║▓
+║ Decile die      Tens die      Ones die      Range                                         ║▓
+║ ────────────────────────────────────────────────────                                      ║▓
+║ d20             Not any!      d20           1 to 20                                       ║▓
+║ d40             d4            d10           1 to 40                                       ║▓
+║ d60             d6            d10           1 to 60                                       ║▓
+║ d80             d8            d10           1 to 80                                       ║▓
+║ d100            d10           d10           1 to 100                                      ║▓
+║ ────────────────────────────────────────────────────                                      ║▓
 ║ Table 3: Decile dice, used for quantification of percentile effects. d100 is also a       ║▓
 ║ decile die. The d20 does not need a "tens" die and is rolled on its own.                  ║▓
 ║                                                                                           ║▓
@@ -320,7 +320,7 @@
 ║ and worse disposition worsens it.                                                         ║▓
 ║                                                                                           ║▓
 ║ Degree of Success        Outcome                                                          ║▓
-║ ─────────────────        ───────                                                          ║▓
+║ ──────────────────────────────────────────────                                            ║▓
 ║ Critical Success         Both Attacks Hit                                                 ║▓
 ║ Complete Success         Special Attack Hits                                              ║▓
 ║ Partial Success          Base Attack Hits                                                 ║▓
@@ -466,7 +466,7 @@
 ║ 5 areas, some with sub-areas. These are listed in Table 5.                                ║▓
 ║                                                                                           ║▓
 ║ Area Name       Sub-Areas                                                                 ║▓
-║ ─────────       ─────────                                                                 ║▓
+║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
 ║ Class Header    None                                                                      ║▓
 ║ Attributes      None                                                                      ║▓
 ║ Combat Stats    Condition box, Disposition Track, Attack boxes                            ║▓
@@ -510,17 +510,17 @@
 ║                                                                                           ║▓
 ║ Nests & Insects characters have eight Attributes (Table 6).                               ║▓
 ║                                                                                           ║▓
-║ Attribute        Description                                                              ║▓
-║ ─────────        ───────────                                                              ║▓
-║ Speed            How fast the character can move                                          ║▓
-║ Skill            Dexterity, precision and fine manipulation ability                       ║▓
-║ Strength         Physical strength, used to push, pull, lift, throw, and break doo- stuff ║▓
-║ Stamina          Physical toughness and endurance, resistance to physical harm            ║▓
-║ Smarts           Intelligence, logic, reasoning and problem solving skill                 ║▓
-║ Charms           Charisma, talent for communication and influencing others' behaviour     ║▓
-║ Ken              Wisdom, common sense, and knowledge of the world                         ║▓
-║ Passions         Willpower, morale, strength of spirit and courage                        ║▓
-║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
+║ Attribute      Description                                                                ║▓
+║ ───────────────────────────────────────────────────────────────────────────────────────   ║▓
+║ Speed          How fast the character can move                                            ║▓
+║ Skill          Dexterity, precision and fine manipulation ability                         ║▓
+║ Strength       Physical strength, used to push, pull, lift, throw, and break doo- stuff   ║▓
+║ Stamina        Physical toughness and endurance, resistance to physical harm              ║▓
+║ Smarts         Intelligence, logic, reasoning and problem solving skill                   ║▓
+║ Charms         Charisma, talent for communication and influencing others' behaviour       ║▓
+║ Ken            Wisdom, common sense, and knowledge of the world                           ║▓
+║ Passions       Willpower, morale, strength of spirit and courage                          ║▓
+║ ───────────────────────────────────────────────────────────────────────────────────────   ║▓
 ║ Table 6: Character Attributes                                                             ║▓
 ║                                                                                           ║▓
 ║ XP Tickboxes: In the Attributes Area each attribute is listed with an empty tickbox to    ║▓
@@ -775,7 +775,7 @@
 ║ with experience. Table 7 briefly describes Common Abilities and their use.                ║▓
 ║                                                                                           ║▓
 ║ Common Ability        Description                                                         ║▓
-║ ──────────────        ───────────                                                         ║▓
+║ ─────────────────────────────────────────────────────────────────────────────────         ║▓
 ║ Construction          Make traps, secure a Room for Resting and Healing                   ║▓
 ║ Eusociology           Knowledge of the ways of Nests and their inhabitants                ║▓
 ║ Exploration           Search a Room, or scout ahead to unvisited Rooms                    ║▓
@@ -815,7 +815,7 @@
 ║ box are listed in Table 8 along with a brief description of each.                         ║▓
 ║                                                                                           ║▓
 ║ Effects        The character...                                                           ║▓
-║ ───────        ────────────────                                                           ║▓
+║ ──────────────────────────────────────────────────────────────────────────                ║▓
 ║ Agony          ...is in agony and must overcome her pain to act                           ║▓
 ║ Bleeding       ...automatically takes a Wound each Combat Turn                            ║▓
 ║ Blind          ...can't see. Ants start the game Blind                                    ║▓
@@ -1104,7 +1104,7 @@
 ║                                         ========                                          ║▓
 ║                                                                                           ║▓
 ║ Pronouns: he/him/his                                                                      ║▓
-║ --------                                                                                  ║▓
+║ --------------------                                                                      ║▓
 ║                                                                                           ║▓
 ║ Description                                                                               ║▓
 ║ -----------                                                                               ║▓
@@ -1204,7 +1204,7 @@
 ║                                          ======                                           ║▓
 ║                                                                                           ║▓
 ║ Pronouns: she/her/hers.                                                                   ║▓
-║ --------                                                                                  ║▓
+║ -----------------------                                                                   ║▓
 ║                                                                                           ║▓
 ║ Description                                                                               ║▓
 ║ -----------                                                                               ║▓
@@ -1304,7 +1304,7 @@
 ║                                           ====                                            ║▓
 ║                                                                                           ║▓
 ║ Pronouns: me/ ME/ MINE!                                                                   ║▓
-║ --------                                                                                  ║▓
+║ -----------------------                                                                   ║▓
 ║                                                                                           ║▓
 ║ Description                                                                               ║▓
 ║ -----------                                                                               ║▓
@@ -1453,7 +1453,7 @@
 ║                                         Termites                                          ║▓
 ║                                         --------                                          ║▓
 ║                                                                                           ║▓
-║ Termites are detritivores: they live on rotting plant matter, wood and leaves. They make  ║▓
+║ Termites are detritivores: they feed on rotting plant matter, wood and leaves. They make  ║▓
 ║ their nests underground, by borrowing into wood, or by building above-ground structures   ║▓
 ║ with soil and plant matter bound with their feces. Well, yes. Termite nests are connected ║▓
 ║ to networks of underground tunnels that are used to forage in safety. In Nests & Insects  ║▓
@@ -1500,30 +1500,30 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ Worker                                                                                    ║▓
-║ ------                                                                                    ║▓
+║ Worker Termite                                                                            ║▓
+║ --------------                                                                            ║▓
 ║                                                                                           ║▓
-║ Worker termites are unarmed and blind, and cannot fight, but they are numerous, swarm and ║▓
+║ Worker Termites are unarmed and blind, and cannot fight, but they are numerous, swarm and ║▓
 ║ will raise the alarm as soon as they become aware that the Nest has been breached.        ║▓
 ║ Workers raise the alarm by bumping into each other and causing each other to release      ║▓
 ║ alarm pheromones. The pheromone trail spreads throughout the nest attracting more workers ║▓
 ║ and, soon enough, soldiers. Attacking a swarm of workers causes them to release alarm     ║▓
 ║ pheromones faster.                                                                        ║▓
 ║                                                                                           ║▓
-║ Feature          Rating                                                                   ║▓
-║ ───────          ──────                                                                   ║▓
-║ Initiative       20%                                                                      ║▓
-║ Threat Rate      0%                                                                       ║▓
-║ Survival Rate    25%                                                                      ║▓
-║ Wounds Max       d20                                                                      ║▓
-║ Swarming         90%                                                                      ║▓
-║ Sp,Sk,Str,Sta    20%                                                                      ║▓
-║ Sm,Ch,Kn,Pa      10%                                                                      ║▓
-║ Blind            100%                                                                     ║▓
-║ ───────────────────────                                                                   ║▓
+║ Feature                              Rating                                               ║▓
+║ ───────────────────────────────────────────                                               ║▓
+║ Initiative                           20%                                                  ║▓
+║ Threat Rate                          0%                                                   ║▓
+║ Survival Rate                        25%                                                  ║▓
+║ Wounds Max                           d20                                                  ║▓
+║ Swarming                             90%                                                  ║▓
+║ Speed, Skill,Strength,Stamina        20%                                                  ║▓
+║ Smarts, Charms, Ken,Passions         10%                                                  ║▓
+║ Blind                                100%                                                 ║▓
+║ ───────────────────────────────────────────                                               ║▓
 ║ Table: Termite Worker Features                                                            ║▓
 ║                                                                                           ║▓
-║ ┌[Special Rule - Alarm]─────────────────────────────────────────────────────────────────┐ ║▓
+║ ┌[Special Rule - Alarm Pheromones]──────────────────────────────────────────────────────┐ ║▓
 ║ │                                                                                       │ ║▓
 ║ │ Every Turn of Combat, Worker Termites automatically roll Swarming. If the roll        │ ║▓
 ║ │ succeeds, new Termites arrive. Roll on the Termite Worker Summons Table below and     │ ║▓
@@ -1531,13 +1531,13 @@
 ║ │                                                                                       │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-║ Termite Caste & Numbers Summoned       Chance to Summon                                   ║▓
-║ ────────────────────────────────       ────────────────                                   ║▓
-║ d20 Workers                            80%                                                ║▓
-║ 1 Minor Autothyte Soldiers             60%                                                ║▓
-║ 5 Major Autothyte Soldiers             30%                                                ║▓
-║ 3 Nasute Soldiers                      25%                                                ║▓
-║ ───────────────────────────────────────────────────────                                   ║▓
+║ Termite Caste                   Numbers Summoned        Chance to Summon                  ║▓
+║ ────────────────────────────────────────────────────────────────────────                  ║▓
+║ Workers                         d20                     80%                               ║▓
+║ Minor Autothyte Soldiers        1                       60%                               ║▓
+║ Major Autothyte Soldiers        5                       30%                               ║▓
+║ Nasute Soldiers                 3                       25%                               ║▓
+║ ────────────────────────────────────────────────────────────────────────                  ║▓
 ║ Table: Termite Worker summons                                                             ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -1560,18 +1560,18 @@
 ║ it. To be clear: the attack kills the Soldier (but only the one that actually exploded-   ║▓
 ║ its friends soldier on; mechanically speaking that means the Soldiers lose one wound).    ║▓
 ║                                                                                           ║▓
-║ Feature          Rating                                                                   ║▓
-║ ───────          ──────                                                                   ║▓
-║ Initiative       50%                                                                      ║▓
-║ Threat Rate      45%                                                                      ║▓
-║ Survival Rate    50%                                                                      ║▓
-║ Wounds Max       10                                                                       ║▓
-║ Carapace         40% (Armoured Head)                                                      ║▓
-║ Swarming         80%                                                                      ║▓
-║ Sp,Sk,Str,Sta    40%                                                                      ║▓
-║ Sm,Ch,Kn,Pa      20%                                                                      ║▓
-║ Blind            100%                                                                     ║▓
-║ ────────────────────────────────────                                                      ║▓
+║ Feature                                Rating                                             ║▓
+║ ──────────────────────────────────────────────────────────                                ║▓
+║ Initiative                             50%                                                ║▓
+║ Threat Rate                            45%                                                ║▓
+║ Survival Rate                          50%                                                ║▓
+║ Wounds Max                             10                                                 ║▓
+║ Carapace                               40% (Armoured Head)                                ║▓
+║ Swarming                               80%                                                ║▓
+║ Speed, Skill, Strength, Stamina        40%                                                ║▓
+║ Smarts, Charms, Ken, Passions          20%                                                ║▓
+║ Blind                                  100%                                               ║▓
+║ ──────────────────────────────────────────────────────────                                ║▓
 ║ Table: Minor Termite Soldier Features                                                     ║▓
 ║                                                                                           ║▓
 ║ ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐  ║▓
@@ -1600,7 +1600,7 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ ┌[Special Rule - Alarm]─────────────────────────────────────────────────────────────────┐ ║▓
+║ ┌[Special Rule - Alarm Pheromones]──────────────────────────────────────────────────────┐ ║▓
 ║ │ Same as for Worker Termites.                                                          │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
@@ -1657,20 +1657,20 @@
 ║ mechanical terms, Major Autothye Soldiers have more powerful versions of the Minor        ║▓
 ║ Soldiers' Attacks and do not Swarm.                                                       ║▓
 ║                                                                                           ║▓
-║ Feature          Rating                                                                   ║▓
-║ ───────          ──────                                                                   ║▓
-║ Initiative       55%                                                                      ║▓
-║ Threat Rate      50%                                                                      ║▓
-║ Survival Rate    55%                                                                      ║▓
-║ Wounds/Max       5                                                                        ║▓
-║ Carapace         60% (Head)                                                               ║▓
-║ Swarming         0%                                                                       ║▓
-║ Sp,Sk            30%                                                                      ║▓
-║ Str,Sta          60%                                                                      ║▓
-║ Sm,Ch,Kn         20%                                                                      ║▓
-║ Pa               50%                                                                      ║▓
-║ Blind            100%                                                                     ║▓
-║ ──────────────────────────                                                                ║▓
+║ Feature                    Rating                                                         ║▓
+║ ─────────────────────────────────────                                                     ║▓
+║ Initiative                 55%                                                            ║▓
+║ Threat Rate                50%                                                            ║▓
+║ Survival Rate              55%                                                            ║▓
+║ Wounds Max                 5                                                              ║▓
+║ Carapace                   60% (Head)                                                     ║▓
+║ Swarming                   0%                                                             ║▓
+║ Speed, Skill               30%                                                            ║▓
+║ Strength, Stamina          60%                                                            ║▓
+║ Smarts, Charms, Ken        20%                                                            ║▓
+║ Passions                   50%                                                            ║▓
+║ Blind                      100%                                                           ║▓
+║ ─────────────────────────────────────                                                     ║▓
 ║ Figure: Major Termite Soldier Features                                                    ║▓
 ║                                                                                           ║▓
 ║ ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐  ║▓
@@ -1687,15 +1687,15 @@
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
 ║ Figure: Major Termite Soldier Attacks                                                     ║▓
 ║                                                                                           ║▓
+║ ┌[Special Rule - Alarm Pheromones]──────────────────────────────────────────────────────┐ ║▓
+║ │ Same as for Worker Termites.                                                          │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║ ┌[Special Rule - Self Sacrificing]──────────────────────────────────────────────────────┐ ║▓
 ║ │ Same as for Minor Termite Soldiers.                                                   │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
-║                                                                                           ║▓
 ║ ┌[Special Rule - Nest Guardians]────────────────────────────────────────────────────────┐ ║▓
 ║ │ Same as for Minor Termite Soldiers.                                                   │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
 ╚═══════════════════════════════════════════-31-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
@@ -1709,23 +1709,22 @@
 ║ Fontanellar Gun. While Nasutes are blind as other worker and soldier termites, they are   ║▓
 ║ wicked shots with their Fontanellar Guns and can hit targets at Long range. Nasutes can   ║▓
 ║ fire their Fontanellar Guns repeatedly even though it tears off the lower part of their   ║▓
-║ modified mandibles. I swear I am not making this up. Look up "Fontanellar Gun" on         ║▓
-║ wikipedia if you don't believe me.                                                        ║▓
+║ modified mandibles. I swear I am not making this up. Nasute soldiers are wild!            ║▓
 ║                                                                                           ║▓
-║ Feature          Rating                                                                   ║▓
-║ ───────          ──────                                                                   ║▓
-║ Initiative       55%                                                                      ║▓
-║ Threat Rate      55%                                                                      ║▓
-║ Survival Rate    55%                                                                      ║▓
-║ Wounds/Max       6                                                                        ║▓
-║ Carapace         70% (Head)                                                               ║▓
-║ Swarming         0%                                                                       ║▓
-║ Sp,Sk            50%                                                                      ║▓
-║ Str,Sta          60%                                                                      ║▓
-║ Sm,Ch,Kn         30%                                                                      ║▓
-║ Pa               55%                                                                      ║▓
-║ Blind            100%                                                                     ║▓
-║ ──────────────────────────                                                                ║▓
+║ Feature                    Rating                                                         ║▓
+║ ─────────────────────────────────────                                                     ║▓
+║ Initiative                 55%                                                            ║▓
+║ Threat Rate                55%                                                            ║▓
+║ Survival Rate              55%                                                            ║▓
+║ Wounds Max                 6                                                              ║▓
+║ Carapace                   70% (Head)                                                     ║▓
+║ Swarming                   0%                                                             ║▓
+║ Speed, Skill               50%                                                            ║▓
+║ Strength, Stamina          60%                                                            ║▓
+║ Smarts, Charms, Ken        30%                                                            ║▓
+║ Passions                   55%                                                            ║▓
+║ Blind                      100%                                                           ║▓
+║ ─────────────────────────────────────                                                     ║▓
 ║ Figure: Nasute Termite Soldier Features                                                   ║▓
 ║                                                                                           ║▓
 ║ ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐  ║▓
@@ -1745,6 +1744,7 @@
 ║ ┌[Special Rule - Self-Sacrificing]──────────────────────────────────────────────────────┐ ║▓
 ║ │ Same as for Minor Termite Soldiers.                                                   │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
 ║                                                                                           ║▓
 ╚═══════════════════════════════════════════-32-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
