@@ -222,7 +222,7 @@ print_effects_inventory(Id):-
         ,atom_length(Nm, N)
         ,Pad is 30 - N
         ,format('║┌[Effects]───────────────────────────────────┐┌[Inventory]───────────────────────────────┐ ║▓~n',[])
-        ,format('║│ ○ Agony....:[~|~`_t~w~4+%] ○ Immobilised.:[~|~`_t~w~4+%] ││ ○ ~w~|~`_t~*+:[~|~`_t~w~4+%] │ ║▓~n',[Ago,Imm,Nm,Pad,R])
+        ,format('║│ ○ Agony....:[~|~`_t~w~4+%] ○ Immobilised.:[~|~`_t~w~4+%] ││ ✓ ~w~|~`_t~*+:[~|~`_t~w~4+%] │ ║▓~n',[Ago,Imm,Nm,Pad,R])
         ,format('║│ ○ Bleeding.:[~|~`_t~w~4+%] ○ Infected....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Ble,Inf])
         ,format('║│ ○ Blind....:[~|~`_t~w~4+%] ○ Paralysed...:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Bli,Par])
         ,format('║│ ○ Charmed..:[~|~`_t~w~4+%] ○ Poisoned....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Cha,Poi])
