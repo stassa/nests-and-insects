@@ -2,6 +2,7 @@
                 ,class_attributes/3
                 ,attribute_modifiers/3
                 ,condition_modifiers/3
+                ,starting_survival/3
                 ,class_specific_ability/3
                 ,common_ability_modifiers/3
                 ,class_effects/3
@@ -101,6 +102,14 @@ condition_modifiers(wasp,tr,+10).
 condition_modifiers(wasp,sr,+0).
 condition_modifiers(wasp,wounds,+1).
 
+
+%!      starting_survival(?Class,?Survival,?Modifier) is semidet.
+%
+%       A Class' starting rating at a Survival Feature.
+%
+%       Currently only used to mark the Beetle class' non-need to feed.
+%
+starting_survival(beetle,hunger,'NONE').
 
 
 %!      class_specific_ability(?Class, ?Ability, ?Rating) is semidet.
