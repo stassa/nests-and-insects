@@ -71,12 +71,17 @@ print_combat_stats(Id):-
 % Courrier. Use Deja Vu Sans Mono to display correctly in editor.
         chargen:features(Id,condition,FRs)
         ,pairs_keys_values(FRs,_,[Init,TR,SR,Ws])
+        ,(   Id = ladybug
+         ->  Rem = '1 Wound: Advance Disposition.'
+         ;   Rem = '1 Wound = 1 Shift Down.'
+         )
         ,format('╠►Combat Stats◄~|~`═t~77+╣▓~n',[])
         ,format('║┌[Condition]~|~`─t~14+<Rules Reminder>~|~`─t~47+┐ ║▓~n',[])
         ,format('║│ □ Initiative...:[~|~`_t~w~4+%] (Match/Beat to start Combat in Holding/Recoiling Disposition). │ ║▓~n',[Init])
         ,format('║│ □ Threat Rate..:[~|~`_t~w~4+%] (Match/Beat Attacker''s TR to Hit/Miss Target)................. │ ║▓~n',[TR])
         ,format('║│ □ Survival Rate:[~|~`_t~w~4+%] (Match/Beat Target''s SR to Hit/Miss with Base/Special Attack). │ ║▓~n',[SR])
-        ,format('║│ □ Wounds/Max...:[__/~|~`_t~w~2+] (1 Wound = 1 Shift Down. When Wounds ≥ Max, character dies)... │ ║▓~n',[Ws])
+        %,format('║│ □ Wounds/Max...:[__/~|~`_t~w~2+] (1 Wound = 1 Shift Down. When Wounds ≥ Max, character dies)... │ ║▓~n',[Ws])
+        ,format('║│ □ Wounds/Max...:[__/~|~`_t~w~2+] (~w If Wounds ≥ Max character dies)~`.t~89| │ ║▓~n',[Ws,Rem])
 	%,format('║│ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧  │ ║▓~n',[])
         ,format('║├─<Disposition Track>────────────────────────────────────────────────────────────────────┤ ║▓~n',[])
 	,format('║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓~n',[])
