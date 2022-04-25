@@ -1,19 +1,19 @@
 :-module(ladybug, []).
 
-ladybug:attribute(speed,35).
+ladybug:attribute(speed,45).
 ladybug:attribute(skill,60).
-ladybug:attribute(strength,45).
-ladybug:attribute(stamina,50).
-ladybug:attribute(smarts,35).
+ladybug:attribute(strength,50).
+ladybug:attribute(stamina,35).
+ladybug:attribute(smarts,30).
 ladybug:attribute(charms,25).
 ladybug:attribute(ken,30).
-ladybug:attribute(passions,60).
+ladybug:attribute(passions,35).
 
-ladybug:base_attack([name-'Pincer Attack'
-                     ,keywords-['Crushing','Shredding']
+ladybug:base_attack([name-'Bite Attack'
+                     ,keywords-['Piercing','Shredding']
                      ,wounds-1
                      ,max_range-'Close'
-                     ,hit-'Target Recoils'
+                     ,hit-'Target Bleeding: d40'
                      ,hit_2-['(Alt)','']
                      ,hit_3-['(Add)','']
                      ,miss_1-'Attacker Recoils'
@@ -21,13 +21,13 @@ ladybug:base_attack([name-'Pincer Attack'
                      ]
                     ).
 
-ladybug:special_attack([name-'Stinger Attack'
-                        ,keywords-['Piercing','Venomous','Lethal']
+ladybug:special_attack([name-'Furious Bite Attack'
+                        ,keywords-['Piercing','Shredding']
                         ,wounds-2
                         ,max_range-'Close'
-                        ,hit-'Target in Agony: d60'
+                        ,hit-'Target Bleeding: d60'
                         ,hit_2-['(Alt)','']
-                        ,hit_3-['(Crit)','Target Killed']
-                        ,miss_1-'Attacker Recoils'
+                        ,hit_3-['(Crit)','Attack Again']
+                        ,miss_1-'Attacker Stunned: d60'
                         ,miss_2-['(Alt)','']]
                        ).

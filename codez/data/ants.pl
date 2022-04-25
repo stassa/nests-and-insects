@@ -1,19 +1,19 @@
 :-module(ants, []).
 
 ants:attribute(speed,35).
-ants:attribute(skill,25).
-ants:attribute(strength,45).
-ants:attribute(stamina,50).
+ants:attribute(skill,50).
+ants:attribute(strength,30).
+ants:attribute(stamina,30).
 ants:attribute(smarts,35).
-ants:attribute(charms,30).
+ants:attribute(charms,45).
 ants:attribute(ken,60).
 ants:attribute(passions,25).
 
-ants:base_attack([name-'Pincer Attack'
+ants:base_attack([name-'Bite Attack'
                      ,keywords-['Crushing','Shredding']
-                     ,wounds-1
+                     ,wounds-2
                      ,max_range-'Close'
-                     ,hit-'Target Recoils'
+                     ,hit-'Target Immobilised: d40'
                      ,hit_2-['(Alt)','']
                      ,hit_3-['(Add)','']
                      ,miss_1-'Attacker Recoils'
@@ -21,13 +21,13 @@ ants:base_attack([name-'Pincer Attack'
                      ]
                     ).
 
-ants:special_attack([name-'Stinger Attack'
-                        ,keywords-['Piercing','Venomous','Lethal']
-                        ,wounds-2
-                        ,max_range-'Close'
-                        ,hit-'Target in Agony: d60'
+ants:special_attack([name-'Acid Spray'
+                        ,keywords-['Noxious']
+                        ,wounds-4
+                        ,max_range-'Medium (Area)'
+                        ,hit-'Target Poisoned: d60'
                         ,hit_2-['(Alt)','']
-                        ,hit_3-['(Crit)','Target Killed']
+                        ,hit_3-['(Crit)','Target Poisoned: ld80']
                         ,miss_1-'Attacker Recoils'
                         ,miss_2-['(Alt)','']]
                        ).

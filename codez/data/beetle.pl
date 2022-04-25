@@ -9,11 +9,11 @@ beetle:attribute(charms,30).
 beetle:attribute(ken,30).
 beetle:attribute(passions,35).
 
-beetle:base_attack([name-'Horn Attack'
-                     ,keywords-['Crushing','Impact']
-                     ,wounds-1
+beetle:base_attack([name-'Bite Attack'
+                     ,keywords-['Crushing']
+                     ,wounds-2
                      ,max_range-'Close'
-                     ,hit-'Target Stunned: d60'
+                     ,hit-'Target Bleeding: ld40'
                      ,hit_2-['(Alt)','']
                      ,hit_3-['(Add)','']
                      ,miss_1-'Attacker Recoils'
@@ -22,12 +22,12 @@ beetle:base_attack([name-'Horn Attack'
                     ).
 
 beetle:special_attack([name-'Flying Horn Attack'
-                        ,keywords-['Crushing','Impact']
-                        ,wounds-2
+                        ,keywords-['Impact']
+                        ,wounds-4
                         ,max_range-'Medium (Area)'
-                        ,hit-'Targets Stunned: ld80'
-                        ,hit_2-['(Add)','Targets Recoil']
-                        ,hit_3-['(Crit)','Targets take +2 Wounds']
-                        ,miss_1-'Attacker Stunned: ld80'
+                        ,hit-'Targets Stunned: d60'
+                        ,hit_2-['(Crit)','Targets take 6 Wounds']
+                        ,hit_3-['(Crit Add)','Targets Bleeding: d60']
+                        ,miss_1-'Attacker Stunned: d60'
                         ,miss_2-['(Crit)','Attacker Bleeding: d60']]
                        ).

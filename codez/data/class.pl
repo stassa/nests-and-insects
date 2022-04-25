@@ -120,7 +120,7 @@ starting_survival(beetle,hunger,'NONE').
 class_specific_ability(ants,swarming,90).
 % Beetle
 class_specific_ability(beetle,carapace,60).
-class_specific_ability(beetle,flying,15).
+class_specific_ability(beetle,flying,35).
 % Ladybug
 class_specific_ability(ladybug,carapace,45).
 class_specific_ability(ladybug,flying,60).
@@ -142,8 +142,13 @@ class_specific_ability(wasp,venomous,80).
 %
 % Ants
 common_ability_modifiers(ants,construction,+10).
-common_ability_modifiers(ants,eusociology,+10).
+common_ability_modifiers(ants,eusociology,+15).
+common_ability_modifiers(ants,exploration,+10).
 common_ability_modifiers(ants,foraging,+10).
+common_ability_modifiers(ants,healing,-10).
+common_ability_modifiers(ants,hunting,-20).
+common_ability_modifiers(ants,signalling,+15).
+common_ability_modifiers(ants,sneaking,-15).
 % Beetle
 common_ability_modifiers(beetle,construction,+15).
 common_ability_modifiers(beetle,exploration,-5).
