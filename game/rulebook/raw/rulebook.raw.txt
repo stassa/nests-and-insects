@@ -223,16 +223,6 @@ opponents or the environment. The value of the d100 roll relative to Effort and
 Resistance determines the Degree of Success or Failure (DoS) of an action. Table 1
 outlines the four DoS attainable by comparing a d100 roll to Effort and Resistance.
 
-/*
-Roll vs Effort        Roll vs Resistance        Degree of Success
-──────────────        ──────────────────        ─────────────────
-Under or equal        Over                      Complete Succes
-Under or equal        Under or equal            Partial Success
-Over                  Over                      Partial Failure
-Over                  Under or equal            Complete Failure
-─────────────────────────────────────────────────────────────────
-Table 1: Effort, Resistance and Degree of Success.
-*/
 \begin{table}[8]
 Roll vs Effort&       Roll vs Resistance&       Degree of Success
 Under or equal&       Over              &       Complete Succes
@@ -249,17 +239,6 @@ actions that grant dramatic modifiers must be described in more detail than stat
 modifiers, to encourage players to use their imagination to help their characters. Table
 2 illustrates the use of modifiers to change the DoS of an action.
 
-/*
-Roll vs Modifier        Modifier Sign        Degree of Success
-────────────────        ─────────────        ─────────────────
-Under or Equal          Positive             Improves towards Critical Success
-Over                    Positive             No change
-Under or Equal          Negative             Worsens towards Critical Failure
-Over                    Negative             No change
-──────────────────────────────────────────────────────────────────────────────
-Table 2: Modifiers and change to Degree of Success. DoS can improve beyond Complete
-Success to Critical Success; or worsen beyond Complete Failure to Critical Failure.
-*/
 \begin{table}[8]
 Roll vs Modifier&       Modifier Sign&       Degree of Success
 Under or Equal  &       Positive     &       Improves towards Critical Success
@@ -290,18 +269,6 @@ shows "6" and the d10 shows "0": in that case the d60 result is 60.
 Table 3 lists the five Decile dice used in fd100 and their component polyhedrals. Decile
 dice are described in full detail in Section "Decile dice" in the "System" Chapter.
 
-/*
-Decile die    Tens die    Ones die    Range
-──────────    ────────    ────────    ─────
-d20           Not any!    d20         1 to 20
-d40           d4          d10         1 to 40
-d60           d6          d10         1 to 60
-d80           d8          d10         1 to 80
-d100          d10         d10         1 to 100
-──────────────────────────────────────────────
-Table 3: Decile dice, used for quantification of percentile effects. d100 is also a
-decile die. The d20 does not need a "tens" die and is rolled on its own.
-*/
 \begin{table}[6]
 Decile die&    Tens die&    Ones die&    Range
 d20       &    Not any!&    d20     &    1 to 20
@@ -333,18 +300,6 @@ The Combat minigame also tracks characters' Disposition, representing their posi
 battle and their morale. Better disposition improves the DoS of subsequent Combat actions
 and worse disposition worsens it. 
 
-/*
-Degree of Success        Outcome
-─────────────────        ───────
-Critical Success         Both Attacks Hit
-Complete Success         Special Attack Hits
-Partial Success          Base Attack Hits
-Partial Failure          Base Attack Misses
-Complete Failure         Special Attack Misses
-Critical Failure         Both Attacks Miss
-──────────────────────────────────────────────
-Table 4: Combat minigame outcomes.
-*/
 \begin{table}[8]
 Degree of Success&        Outcome
 Critical Success &        Both Attacks Hit
