@@ -104,6 +104,8 @@ format_combat_stats(Id,Com):-
         ,pairs_keys_values(FRs,_,[Init,TR,SR,Ws])
         ,(   Id = ladybug
          ->  Rem = '1 Wound: Advance Disposition.'
+         ;   Id = ants
+         ->  Rem = '1 Wound: 1 Ant lost.'
          ;   Rem = '1 Wound = 1 Shift Down.'
          )
         ,format(atom(Com_H),'╠►Combat Stats◄~|~`═t~77+╣▓~n',[])
