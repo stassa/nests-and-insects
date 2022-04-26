@@ -1,4 +1,5 @@
-﻿:-module(charsheet, [print_charsheet/1]).
+﻿:-module(charsheet, [format_charsheet/2,
+                     print_charsheet/1]).
 
 /** <module> Print character sheets in glorious ASCII.
 
@@ -15,6 +16,27 @@ procedures must always suck so so much.
 %       characters, smart arse.
 %
 pad_length(class_name, 91).
+
+
+%!      format_charsheet(+Class,-Formatted) is det.
+%
+%       Format a Class' character sheet as an atom for printing.
+%
+format_charsheet(Id,CS):-
+        format_class_header(Id,CH)
+        ,format_attributes(Id,Atr)
+        ,format_combat_stats(Id,Com)
+        ,format_attacks(Id,Att)
+        ,format_survival(Id,Sur)
+        ,format_abilities(Id,Abl)
+        ,format_effects_inventory(Id,Efs)
+        ,atomic_list_concat([CH
+                            ,Atr
+                            ,Com
+                            ,Att
+                            ,Sur
+                            ,Abl
+                            ,Efs],'',CS).
 
 
 %!      print_charsheet(+Class) is det.

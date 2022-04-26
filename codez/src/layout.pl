@@ -6,6 +6,7 @@
 
 :-use_module(library(clp/clpfd)).
 :-use_module(src(tables)).
+:-use_module(src/charsheet).
 
 /** <module> Layout and formatting for text-based rulebooks.
 
@@ -218,6 +219,11 @@ format_line(L,_N,W,Acc,[F|Acc]):-
 %       * \\begin{table}: beginning of the rows of a table, including a
 %       caption line. Closing tag: \\end{table}.
 %
+format_command(C,Ls,[P,_N,M,W],Acc,[CS|Acc],Ls,[P_,1,M,W]):-
+        atom_concat('\\charsheet',T,C)
+        ,sub_atom(T,1,_A,1,Class)
+        ,format_charsheet(Class,CS)
+        ,succ(P,P_).
 format_command(C,Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N_,M,W]):-
         atom_concat('\\begin{box}',T,C)
         ,sub_atom(T,1,_A,1,Title)
