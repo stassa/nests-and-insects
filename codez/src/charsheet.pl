@@ -103,7 +103,7 @@ format_combat_stats(Id,Com):-
         chargen:features(Id,condition,FRs)
         ,pairs_keys_values(FRs,_,[Init,TR,SR,Ws])
         ,(   Id = ladybug
-         ->  Rem = '1 Wound: Advance Disposition.'
+         ->  Rem = 'Wounds Advance Disposition.'
          ;   Id = ants
          ->  Rem = '1 Wound: 1 Ant lost.'
          ;   Rem = '1 Wound = 1 Shift Down.'
@@ -114,7 +114,7 @@ format_combat_stats(Id,Com):-
         ,format(atom(Com_TR),'║│ □ Threat Rate..:[~|~`_t~w~4+%] (Match/Beat Attacker''s TR to Hit/Miss Target)................. │ ║▓~n',[TR])
         ,format(atom(Com_SR),'║│ □ Survival Rate:[~|~`_t~w~4+%] (Match/Beat Target''s SR to Hit/Miss with Base/Special Attack). │ ║▓~n',[SR])
        %,format(atom(Com_Ws),'║│ □ Wounds/Max...:[__/~|~`_t~w~2+] (1 Wound = 1 Shift Down. When Wounds ≥ Max, character dies)... │ ║▓~n',[Ws])
-        ,format(atom(Com_Ws),'║│ □ Wounds/Max...:[__/~|~`_t~w~2+] (~w If Wounds ≥ Max character dies)~`.t~89| │ ║▓~n',[Ws,Rem])
+        ,format(atom(Com_Ws),'║│ □ Wounds/Max...:[__/~|~`_t~w~2+] (~w When Wounds ≥ Max character dies)~`.t~89| │ ║▓~n',[Ws,Rem])
        %,format(atom(Com_Sep1),'║│ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧  │ ║▓~n',[])
         ,format(atom(Com_Dis),'║├─<Disposition Track>────────────────────────────────────────────────────────────────────┤ ║▓~n',[])
 	,format(atom(Com_Rem),'║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓~n',[])
