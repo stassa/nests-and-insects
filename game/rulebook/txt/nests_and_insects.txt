@@ -960,7 +960,7 @@
 ║│ □ Initiative...:[__32%] (Match/Beat to start Combat in Holding/Recoiling Disposition). │ ║▓
 ║│ □ Threat Rate..:[__37%] (Match/Beat Attacker's TR to Hit/Miss Target)................. │ ║▓
 ║│ □ Survival Rate:[__40%] (Match/Beat Target's SR to Hit/Miss with Base/Special Attack). │ ║▓
-║│ □ Wounds/Max...:[__/10] (1 Wound: 1 Ant lost. If Wounds ≥ Max character dies)......... │ ║▓
+║│ □ Wounds/Max...:[__/10] (1 Wound: 1 Ant lost. When Wounds ≥ Max character dies)....... │ ║▓
 ║├─<Disposition Track>────────────────────────────────────────────────────────────────────┤ ║▓
 ║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓
 ║│ ○ Retreating...... ○ Recoiling...... ○ Holding...... ○ Advancing...... ○ Charging......│ ║▓
@@ -1060,7 +1060,7 @@
 ║│ □ Initiative...:[__22%] (Match/Beat to start Combat in Holding/Recoiling Disposition). │ ║▓
 ║│ □ Threat Rate..:[__45%] (Match/Beat Attacker's TR to Hit/Miss Target)................. │ ║▓
 ║│ □ Survival Rate:[__62%] (Match/Beat Target's SR to Hit/Miss with Base/Special Attack). │ ║▓
-║│ □ Wounds/Max...:[__/_5] (1 Wound = 1 Shift Down. If Wounds ≥ Max character dies)...... │ ║▓
+║│ □ Wounds/Max...:[__/_5] (1 Wound = 1 Shift Down. When Wounds ≥ Max character dies).... │ ║▓
 ║├─<Disposition Track>────────────────────────────────────────────────────────────────────┤ ║▓
 ║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓
 ║│ ○ Retreating...... ○ Recoiling...... ○ Holding...... ○ Advancing...... ○ Charging......│ ║▓
@@ -1160,7 +1160,7 @@
 ║│ □ Initiative...:[__42%] (Match/Beat to start Combat in Holding/Recoiling Disposition). │ ║▓
 ║│ □ Threat Rate..:[__54%] (Match/Beat Attacker's TR to Hit/Miss Target)................. │ ║▓
 ║│ □ Survival Rate:[__47%] (Match/Beat Target's SR to Hit/Miss with Base/Special Attack). │ ║▓
-║│ □ Wounds/Max...:[__/_3] (1 Wound: Advance Disposition. If Wounds ≥ Max character dies) │ ║▓
+║│ □ Wounds/Max...:[__/_3] (Wounds Advance Disposition. When Wounds ≥ Max character dies) │ ║▓
 ║├─<Disposition Track>────────────────────────────────────────────────────────────────────┤ ║▓
 ║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓
 ║│ ○ Retreating...... ○ Recoiling...... ○ Holding...... ○ Advancing...... ○ Charging......│ ║▓
@@ -1260,7 +1260,7 @@
 ║│ □ Initiative...:[__49%] (Match/Beat to start Combat in Holding/Recoiling Disposition). │ ║▓
 ║│ □ Threat Rate..:[__49%] (Match/Beat Attacker's TR to Hit/Miss Target)................. │ ║▓
 ║│ □ Survival Rate:[__44%] (Match/Beat Target's SR to Hit/Miss with Base/Special Attack). │ ║▓
-║│ □ Wounds/Max...:[__/_4] (1 Wound = 1 Shift Down. If Wounds ≥ Max character dies)...... │ ║▓
+║│ □ Wounds/Max...:[__/_4] (1 Wound = 1 Shift Down. When Wounds ≥ Max character dies).... │ ║▓
 ║├─<Disposition Track>────────────────────────────────────────────────────────────────────┤ ║▓
 ║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓
 ║│ ○ Retreating...... ○ Recoiling...... ○ Holding...... ○ Advancing...... ○ Charging......│ ║▓
@@ -1360,7 +1360,7 @@
 ║│ □ Initiative...:[__60%] (Match/Beat to start Combat in Holding/Recoiling Disposition). │ ║▓
 ║│ □ Threat Rate..:[__29%] (Match/Beat Attacker's TR to Hit/Miss Target)................. │ ║▓
 ║│ □ Survival Rate:[__39%] (Match/Beat Target's SR to Hit/Miss with Base/Special Attack). │ ║▓
-║│ □ Wounds/Max...:[__/_3] (1 Wound = 1 Shift Down. If Wounds ≥ Max character dies)...... │ ║▓
+║│ □ Wounds/Max...:[__/_3] (1 Wound = 1 Shift Down. When Wounds ≥ Max character dies).... │ ║▓
 ║├─<Disposition Track>────────────────────────────────────────────────────────────────────┤ ║▓
 ║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓
 ║│ ○ Retreating...... ○ Recoiling...... ○ Holding...... ○ Advancing...... ○ Charging......│ ║▓
@@ -1460,7 +1460,7 @@
 ║│ □ Initiative...:[__59%] (Match/Beat to start Combat in Holding/Recoiling Disposition). │ ║▓
 ║│ □ Threat Rate..:[__57%] (Match/Beat Attacker's TR to Hit/Miss Target)................. │ ║▓
 ║│ □ Survival Rate:[__35%] (Match/Beat Target's SR to Hit/Miss with Base/Special Attack). │ ║▓
-║│ □ Wounds/Max...:[__/_4] (1 Wound = 1 Shift Down. If Wounds ≥ Max character dies)...... │ ║▓
+║│ □ Wounds/Max...:[__/_4] (1 Wound = 1 Shift Down. When Wounds ≥ Max character dies).... │ ║▓
 ║├─<Disposition Track>────────────────────────────────────────────────────────────────────┤ ║▓
 ║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓
 ║│ ○ Retreating...... ○ Recoiling...... ○ Holding...... ○ Advancing...... ○ Charging......│ ║▓
