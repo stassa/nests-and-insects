@@ -22,20 +22,27 @@ pad_length(class_name, 91).
 %       Print a Class' character sheet in glorious ASCII.
 %
 print_charsheet(Id):-
-        print_class_name(Id)
-        ,print_attributes(Id)
-        ,print_combat_stats(Id)
-        ,print_attacks(Id)
-        ,print_survival(Id)
-        ,print_abilities(Id)
-        ,print_effects_inventory(Id).
+        format_class_header(Id,CH)
+        ,format(CH)
+        ,format_attributes(Id,Atr)
+        ,format(Atr)
+        ,format_combat_stats(Id,Com)
+        ,format(Com)
+        ,format_attacks(Id,Att)
+        ,format(Att)
+        ,format_survival(Id,Sur)
+        ,format(Sur)
+        ,format_abilities(Id,Abl)
+        ,format(Abl)
+        ,format_effects_inventory(Id,Efs)
+        ,format(Efs).
 
 
-%!      print_class_name(+Class) is det.
+%!      format_class_header(+Class) is det.
 %
-%       Print the Class name.
+%       Format the Class Header part of a character sheet.
 %
-print_class_name(Id):-
+format_class_header(Id,CH):-
         pad_length(class_name, L)
         % Length of the Class Id
         ,atom_length(Id, N)
@@ -44,29 +51,31 @@ print_class_name(Id):-
         % Because we want to print the class Id in the middle of the padded line.
         ,P is ceil(L/2) + N_ + 1
         ,upcase_atom(Id,ID)
-        ,format('╔►Nests & Insects◄~|~`═t~57+►Character Sheet◄╗~n',[])
-        ,format('║~`.t ~w~*| ~`.t~92|║▓~n',[ID,P]).
+        ,format(atom(CH1),'╔►Nests & Insects◄~|~`═t~57+►Character Sheet◄╗~n',[])
+        ,format(atom(CH2),'║~`.t ~w~*| ~`.t~92|║▓~n',[ID,P])
+        ,atomic_list_concat([CH1,CH2],'',CH).
 
 
 %!      print_class_name(+Class) is det.
 %
-%       Print the Class Attributes and their ratings.
+%       Format the Attributes Area and their ratings.
 %
-print_attributes(Id):-
+format_attributes(Id,Att):-
         chargen:features(Id,attribute,FRs)
         ,pairs_keys_values(FRs,_,[Sp,Sk,Str,Sta,Sm,Ch,Ke,Pa])
-        ,format('╠►Attributes◄~|~`═t~79+╣▓~n',[])
-        ,format('║ ┌~|~`─t~87+┐ ║▓~n')
-        ,format('║ │ □ Speed.....:[~|~`_t~w~4+%] □ Skill....:[~|~`_t~w~4+%] □ Strength....:[~|~`_t~w~4+%] □ Stamina....:[~|~`_t~w~4+%] │ ║▓~n', [Sp,Sk,Str,Sta])
-        ,format('║ │ □ Smarts....:[~|~`_t~w~4+%] □ Charms...:[~|~`_t~w~4+%] □ Ken.........:[~|~`_t~w~4+%] □ Passions...:[~|~`_t~w~4+%] │ ║▓~n',[Sm,Ch,Ke,Pa])
-        ,format('║ └<^XP>────────────────<^XP>───────────────<^XP>──────────────────<^XP>──────────────────┘ ║▓~n').
+        ,format(atom(Att_H),'╠►Attributes◄~|~`═t~79+╣▓~n',[])
+        ,format(atom(Att_1),'║ ┌~|~`─t~87+┐ ║▓~n',[])
+        ,format(atom(Att_2),'║ │ □ Speed.....:[~|~`_t~w~4+%] □ Skill....:[~|~`_t~w~4+%] □ Strength....:[~|~`_t~w~4+%] □ Stamina....:[~|~`_t~w~4+%] │ ║▓~n', [Sp,Sk,Str,Sta])
+        ,format(atom(Att_3),'║ │ □ Smarts....:[~|~`_t~w~4+%] □ Charms...:[~|~`_t~w~4+%] □ Ken.........:[~|~`_t~w~4+%] □ Passions...:[~|~`_t~w~4+%] │ ║▓~n',[Sm,Ch,Ke,Pa])
+        ,format(atom(Att_F),'║ └<^XP>────────────────<^XP>───────────────<^XP>──────────────────<^XP>──────────────────┘ ║▓~n',[])
+        ,atomic_list_concat([Att_H,Att_1,Att_2,Att_3,Att_F],'',Att).
 
 
-%!      print_combat_stats(+Class) is det.
+%!      format_combat_stats(+Class) is det.
 %
-%       Print the Class' Combat Conditions and Disposition Track.
+%       Format the Class' Combat Conditions and Disposition Track.
 %
-print_combat_stats(Id):-
+format_combat_stats(Id,Com):-
 % Lots of distortion in this predicate because of missing fonts in
 % Courrier. Use Deja Vu Sans Mono to display correctly in editor.
         chargen:features(Id,condition,FRs)
@@ -75,29 +84,38 @@ print_combat_stats(Id):-
          ->  Rem = '1 Wound: Advance Disposition.'
          ;   Rem = '1 Wound = 1 Shift Down.'
          )
-        ,format('╠►Combat Stats◄~|~`═t~77+╣▓~n',[])
-        ,format('║┌[Condition]~|~`─t~14+<Rules Reminder>~|~`─t~47+┐ ║▓~n',[])
-        ,format('║│ □ Initiative...:[~|~`_t~w~4+%] (Match/Beat to start Combat in Holding/Recoiling Disposition). │ ║▓~n',[Init])
-        ,format('║│ □ Threat Rate..:[~|~`_t~w~4+%] (Match/Beat Attacker''s TR to Hit/Miss Target)................. │ ║▓~n',[TR])
-        ,format('║│ □ Survival Rate:[~|~`_t~w~4+%] (Match/Beat Target''s SR to Hit/Miss with Base/Special Attack). │ ║▓~n',[SR])
-        %,format('║│ □ Wounds/Max...:[__/~|~`_t~w~2+] (1 Wound = 1 Shift Down. When Wounds ≥ Max, character dies)... │ ║▓~n',[Ws])
-        ,format('║│ □ Wounds/Max...:[__/~|~`_t~w~2+] (~w If Wounds ≥ Max character dies)~`.t~89| │ ║▓~n',[Ws,Rem])
-	%,format('║│ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧  │ ║▓~n',[])
-        ,format('║├─<Disposition Track>────────────────────────────────────────────────────────────────────┤ ║▓~n',[])
-	,format('║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓~n',[])
-	,format('║│ ○ Retreating...... ○ Recoiling...... ○ Holding...... ○ Advancing...... ○ Charging......│ ║▓~n',[])
-	,format('║└<^Cant Attack>─────<^-30%>───────────<^Doing Good>───<^+30%>───────────<^Shift Up>──────┘ ║▓~n',[])
-	%,format('║ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ║▓~n',[])
-	.
+        ,format(atom(Com_H),'╠►Combat Stats◄~|~`═t~77+╣▓~n',[])
+        ,format(atom(Com_Con),'║┌[Condition]~|~`─t~14+<Rules Reminder>~|~`─t~47+┐ ║▓~n',[])
+        ,format(atom(Com_Ini),'║│ □ Initiative...:[~|~`_t~w~4+%] (Match/Beat to start Combat in Holding/Recoiling Disposition). │ ║▓~n',[Init])
+        ,format(atom(Com_TR),'║│ □ Threat Rate..:[~|~`_t~w~4+%] (Match/Beat Attacker''s TR to Hit/Miss Target)................. │ ║▓~n',[TR])
+        ,format(atom(Com_SR),'║│ □ Survival Rate:[~|~`_t~w~4+%] (Match/Beat Target''s SR to Hit/Miss with Base/Special Attack). │ ║▓~n',[SR])
+       %,format(atom(Com_Ws),'║│ □ Wounds/Max...:[__/~|~`_t~w~2+] (1 Wound = 1 Shift Down. When Wounds ≥ Max, character dies)... │ ║▓~n',[Ws])
+        ,format(atom(Com_Ws),'║│ □ Wounds/Max...:[__/~|~`_t~w~2+] (~w If Wounds ≥ Max character dies)~`.t~89| │ ║▓~n',[Ws,Rem])
+       %,format(atom(Com_Sep1),'║│ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧  │ ║▓~n',[])
+        ,format(atom(Com_Dis),'║├─<Disposition Track>────────────────────────────────────────────────────────────────────┤ ║▓~n',[])
+	,format(atom(Com_Rem),'║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓~n',[])
+	,format(atom(Com_Tra),'║│ ○ Retreating...... ○ Recoiling...... ○ Holding...... ○ Advancing...... ○ Charging......│ ║▓~n',[])
+	,format(atom(Com_Mod),'║└<^Cant Attack>─────<^-30%>───────────<^Doing Good>───<^+30%>───────────<^Shift Up>──────┘ ║▓~n',[])
+       %,format(atom(Com_Sep2),'║ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ║▓~n',[])
+	,atomic_list_concat([Com_H
+                            ,Com_Con
+                            ,Com_Ini
+                            ,Com_TR
+                            ,Com_SR
+                            ,Com_Ws
+                            ,Com_Dis
+                            ,Com_Rem
+                            ,Com_Tra
+                            ,Com_Mod],'',Com).
 
 
-%!      print_attacks(+Class) is det.
+%!      format_attacks(+Class) is det.
 %
-%       Print a Class' Attack descriptions.
+%       Format a Class' Attack descriptions.
 %
 %       I warn you now, before you look at the code: this is gonna hurt.
 %
-print_attacks(Id):-
+format_attacks(Id,Att):-
 % Comments show examples of expected input to ease the pain.
 % The pain... THE PAIN!
         chargen:features(Id,attacks,[BA,SA])
@@ -143,23 +161,36 @@ print_attacks(Id):-
         % This is the bit that really hurts.
         % There's no way to line up these format strings without messing up formatting.
         % But the way they look I'm not sure I'll be ever capable of debugging this.
-        ,format('║┌[Base Attack]──────────────────────────────┐┌[Special Attack]───────────────────────────┐ ║▓~n',[])
-        ,format('║│ ~|Name:~`.t~w~41+ ││ ~|Name:~`.t~w~41+ │ ║▓~n',[BA_Name,SA_Name])
-        ,format('║│ ~|Keywords:~`.t~w~41+ ││ ~|Keywords:~`.t~w~41+ │ ║▓~n',[BAK,SAK])
-        ,format('║│ ~|Wounds:~`.t~w~41+ ││ ~|Wounds~`.t~w~41+ │ ║▓~n',[BA_Ws,SA_Ws])
-        ,format('║│ ~|Max. Range:~`.t~w~41+ ││ ~|Max. Range:~`.t~w~41+ │ ║▓~n',[BA_Max_Range,SA_Max_Range])
-        ,format('║│ ~|Hit:~`.t~w~41+ ││ ~|Hit:~`.t~w~41+ │ ║▓~n',[BA_Hit1,SA_Hit1])
-	,format('║│ ~|Hit ~w:~`.t~w~41+ ││ ~|Hit ~w:~`.t~w~41+ │ ║▓~n',[Rem1,BA_Hit2,Rem4,SA_Hit2])
-        ,format('║│ ~|Hit ~w:~`.t~w~41+ ││ ~|Hit ~w:~`.t~w~41+ │ ║▓~n',[Rem2,BA_Hit3,Rem5,SA_Hit3])
-        ,format('║│ ~|Miss:~`.t~w~41+ ││ ~|Miss:~`.t~w~41+ │ ║▓~n',[BA_Miss1,SA_Miss1])
-        ,format('║│ ~|Miss ~w:~`.t~w~41+ ││ ~|Miss ~w:~`.t~w~41+ │ ║▓~n',[Rem3,BA_Miss2,Rem6,SA_Miss2])
-        ,format('║└───────────────────────────────────────────┘└───────────────────────────────────────────┘ ║▓~n',[]).
+        ,format(atom(Att_H),'║┌[Base Attack]──────────────────────────────┐┌[Special Attack]───────────────────────────┐ ║▓~n',[])
+        ,format(atom(Att_Nm),'║│ ~|Name:~`.t~w~41+ ││ ~|Name:~`.t~w~41+ │ ║▓~n',[BA_Name,SA_Name])
+        ,format(atom(Att_Kw),'║│ ~|Keywords:~`.t~w~41+ ││ ~|Keywords:~`.t~w~41+ │ ║▓~n',[BAK,SAK])
+        ,format(atom(Att_Ws),'║│ ~|Wounds:~`.t~w~41+ ││ ~|Wounds~`.t~w~41+ │ ║▓~n',[BA_Ws,SA_Ws])
+        ,format(atom(Att_Rg),'║│ ~|Max. Range:~`.t~w~41+ ││ ~|Max. Range:~`.t~w~41+ │ ║▓~n',[BA_Max_Range,SA_Max_Range])
+        ,format(atom(Att_H1),'║│ ~|Hit:~`.t~w~41+ ││ ~|Hit:~`.t~w~41+ │ ║▓~n',[BA_Hit1,SA_Hit1])
+	,format(atom(Att_H2),'║│ ~|Hit ~w:~`.t~w~41+ ││ ~|Hit ~w:~`.t~w~41+ │ ║▓~n',[Rem1,BA_Hit2,Rem4,SA_Hit2])
+        ,format(atom(Att_H3),'║│ ~|Hit ~w:~`.t~w~41+ ││ ~|Hit ~w:~`.t~w~41+ │ ║▓~n',[Rem2,BA_Hit3,Rem5,SA_Hit3])
+        ,format(atom(Att_M1),'║│ ~|Miss:~`.t~w~41+ ││ ~|Miss:~`.t~w~41+ │ ║▓~n',[BA_Miss1,SA_Miss1])
+        ,format(atom(Att_M2),'║│ ~|Miss ~w:~`.t~w~41+ ││ ~|Miss ~w:~`.t~w~41+ │ ║▓~n',[Rem3,BA_Miss2,Rem6,SA_Miss2])
+        ,format(atom(Att_F),'║└───────────────────────────────────────────┘└───────────────────────────────────────────┘ ║▓~n',[])
+        ,atomic_list_concat([Att_H
+                            ,Att_Nm
+                            ,Att_Kw
+                            ,Att_Ws
+                            ,Att_Rg
+                            ,Att_H1
+                            ,Att_H2
+                            ,Att_H3
+                            ,Att_M1
+                            ,Att_M2
+                            ,Att_F],'',Att).
+% I warned you.
 
-%!      print_survival(+Class) is det.
+
+%!      format_survival(+Class) is det.
 %
-%       Print a Class' Survival Features and their ratings.
+%       Format a Class' Survival Features and their ratings.
 %
-print_survival(Id):-
+format_survival(Id,Sur):-
 	chargen:survival_features(Id,[hunger-Hun,_Luck])
         ,(   Id = beetle
          ->  Pad = 5
@@ -169,18 +200,19 @@ print_survival(Id):-
             ,Per = '%'
             ,Tic = '○'
          )
-        ,format('╠►Survival◄═════════════════════════════════════════════════════════════════════════════════╣▓~n',[])
-        ,format('║┌[Food]───────────────────┐┌[Luck]───────────────────────────────────────────────────────┐ ║▓~n',[])
-        ,format('║│ ~w Hunger........[~|~`_t~w~*+~w] ││ [11%].[22%].[33%].[44%].[55%].[66%].[77%].[88%].[99%].[00%].│ ║▓~n',[Tic,Hun,Pad,Per])
-        ,format('║└<^Starving>──────────────┘└──^──────────────────────────────────────────────────────────┘ ║▓~n',[]).
+        ,format(atom(Sur_Hed),'╠►Survival◄═════════════════════════════════════════════════════════════════════════════════╣▓~n',[])
+        ,format(atom(Sur_Box),'║┌[Food]───────────────────┐┌[Luck]───────────────────────────────────────────────────────┐ ║▓~n',[])
+        ,format(atom(Sur_Fea),'║│ ~w Hunger........[~|~`_t~w~*+~w] ││ [11%].[22%].[33%].[44%].[55%].[66%].[77%].[88%].[99%].[00%].│ ║▓~n',[Tic,Hun,Pad,Per])
+        ,format(atom(Sur_Fot),'║└<^Starving>──────────────┘└──^──────────────────────────────────────────────────────────┘ ║▓~n',[])
+        ,atomic_list_concat([Sur_Hed,Sur_Box,Sur_Fea,Sur_Fot],'',Sur).
 
 
 
-%!      print_abilities(+Class) is det.
+%!      format_abilities(+Class) is det.
 %
-%       Print a Class' Specific and Common Abilities and their ratings.
+%       Format a Class' Specific and Common Abilities and their ratings.
 %
-print_abilities(Id):-
+format_abilities(Id,Abl):-
         maplist(chargen:features(Id),[specific_ability,common_ability],[SAs,CAs])
         ,maplist(pairs_keys_values,[SAs,CAs],[_,_],[SA_Rs%[Ca,Fl,Sw,Ven,Web]
                                                    ,[Con,Eus,Exp,For,Hea,Hun,Lea,Per,Sig,Sne]])
@@ -192,25 +224,33 @@ print_abilities(Id):-
                   )
                  )
                 ,[Car,Fly,Swa,Ven,Web])
-	,format('╠►Abilities◄════════════════════════════════════════════════════════════════════════════════╣▓~n',[])
-        ,format('║┌[Specific Abilities]────────┐┌[Common Abilities]────────────────────────────────────────┐ ║▓~n',[])
-        ,format('║│ Carapace..........:[~|~`_t~w~4+%] ││ □ Construction.....:[~|~`_t~w~4+%] □ Hunting...........:[~|~`_t~w~4+%] │ ║▓~n',[Car,Con,Hun])
-        ,format('║│ Flying............:[~|~`_t~w~4+%] ││ □ Eusociology......:[~|~`_t~w~4+%] □ Leadership........:[~|~`_t~w~4+%] │ ║▓~n',[Fly,Eus,Lea])
-        ,format('║│ Swarming..........:[~|~`_t~w~4+%] ││ □ Exploration......:[~|~`_t~w~4+%] □ Perception........:[~|~`_t~w~4+%] │ ║▓~n',[Swa,Exp,Per])
-        ,format('║│ Venomous..........:[~|~`_t~w~4+%] ││ □ Foraging.........:[~|~`_t~w~4+%] □ Signalling........:[~|~`_t~w~4+%] │ ║▓~n',[Ven,For,Sig])
-        ,format('║│ Web Weaving.......:[~|~`_t~w~4+%] ││ □ Healing..........:[~|~`_t~w~4+%] □ Sneaking..........:[~|~`_t~w~4+%] │ ║▓~n',[Web,Hea,Sne])
-        ,format('║└────────────────────────────┘└<^XP>───────────────────────<^XP>─────────────────────────┘ ║▓~n',[]).
+	,format(atom(Abl_H),'╠►Abilities◄════════════════════════════════════════════════════════════════════════════════╣▓~n',[])
+        ,format(atom(Abl_Box),'║┌[Specific Abilities]────────┐┌[Common Abilities]────────────────────────────────────────┐ ║▓~n',[])
+        ,format(atom(Abl_Ln1),'║│ Carapace..........:[~|~`_t~w~4+%] ││ □ Construction.....:[~|~`_t~w~4+%] □ Hunting...........:[~|~`_t~w~4+%] │ ║▓~n',[Car,Con,Hun])
+        ,format(atom(Abl_Ln2),'║│ Flying............:[~|~`_t~w~4+%] ││ □ Eusociology......:[~|~`_t~w~4+%] □ Leadership........:[~|~`_t~w~4+%] │ ║▓~n',[Fly,Eus,Lea])
+        ,format(atom(Abl_Ln3),'║│ Swarming..........:[~|~`_t~w~4+%] ││ □ Exploration......:[~|~`_t~w~4+%] □ Perception........:[~|~`_t~w~4+%] │ ║▓~n',[Swa,Exp,Per])
+        ,format(atom(Abl_Ln4),'║│ Venomous..........:[~|~`_t~w~4+%] ││ □ Foraging.........:[~|~`_t~w~4+%] □ Signalling........:[~|~`_t~w~4+%] │ ║▓~n',[Ven,For,Sig])
+        ,format(atom(Abl_Ln5),'║│ Web Weaving.......:[~|~`_t~w~4+%] ││ □ Healing..........:[~|~`_t~w~4+%] □ Sneaking..........:[~|~`_t~w~4+%] │ ║▓~n',[Web,Hea,Sne])
+        ,format(atom(Abl_Fot),'║└────────────────────────────┘└<^XP>───────────────────────<^XP>─────────────────────────┘ ║▓~n',[])
+        ,atomic_list_concat([Abl_H,
+                             Abl_Box,
+                             Abl_Ln1,
+                             Abl_Ln2,
+                             Abl_Ln3,
+                             Abl_Ln4,
+                             Abl_Ln5,
+                             Abl_Fot],'',Abl).
 
 
-%!      print_effects_inventory(+Class) is det.
+%!      format_effects_inventory(+Class) is det.
 %
-%       Print starting Effects and Inventory Items and their ratings.
+%       Format starting Effects and Inventory Items and their ratings.
 %
 %       @bug Currently this can only print a single inventory item. I
 %       don't think there's any class that has more than one starting
 %       item so far but if one does, then this better be fixed.
 %
-print_effects_inventory(Id):-
+format_effects_inventory(Id,Efs):-
         maplist(chargen:features(Id),[effect,inventory_item],[Es,Is])
         ,maplist(pairs_keys_values,[Es,Is],[_,[It]],[E_Rs ,[R] ])
         ,findall(W-Tic
@@ -235,12 +275,21 @@ print_effects_inventory(Id):-
         ,character:inventory_item(It,Nm)
         ,atom_length(Nm, N)
         ,Pad is 30 - N
-        ,format('║┌[Effects]───────────────────────────────────┐┌[Inventory]───────────────────────────────┐ ║▓~n',[])
-        ,format('║│ ~w Agony....:[~|~`_t~w~4+%] ~w Immobilised.:[~|~`_t~w~4+%] ││ ✓ ~w~|~`_t~*+:[~|~`_t~w~4+%] │ ║▓~n',[Ago_Tic,Ago,Imm_Tic,Imm,Nm,Pad,R])
-        ,format('║│ ~w Bleeding.:[~|~`_t~w~4+%] ~w Infected....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Ble_Tic,Ble,Inf_Tic,Inf])
-        ,format('║│ ~w Blind....:[~|~`_t~w~4+%] ~w Paralysed...:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Bli_Tic,Bli,Par_Tic,Par])
-        ,format('║│ ~w Charmed..:[~|~`_t~w~4+%] ~w Poisoned....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Cha_Tic,Cha,Poi_Tic,Poi])
-        ,format('║│ ~w Confused.:[~|~`_t~w~4+%] ~w Stunned.....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Con_Tic,Con,Stu_Tic,Stu])
-        ,format('║└<^Applies>──────────<^Applies>──────────────┘└<^Edible>─────────────────────────────────┘ ║▓~n',[])
-        ,format('╚═══════════════════════════════════════════════════════════════════════════════════════════╝▓~n',[])
-        ,format(' ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀~n',[]).
+        ,format(atom(Efs_Box),'║┌[Effects]───────────────────────────────────┐┌[Inventory]───────────────────────────────┐ ║▓~n',[])
+        ,format(atom(Efs_Ln1),'║│ ~w Agony....:[~|~`_t~w~4+%] ~w Immobilised.:[~|~`_t~w~4+%] ││ ✓ ~w~|~`_t~*+:[~|~`_t~w~4+%] │ ║▓~n',[Ago_Tic,Ago,Imm_Tic,Imm,Nm,Pad,R])
+        ,format(atom(Efs_Ln2),'║│ ~w Bleeding.:[~|~`_t~w~4+%] ~w Infected....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Ble_Tic,Ble,Inf_Tic,Inf])
+        ,format(atom(Efs_Ln3),'║│ ~w Blind....:[~|~`_t~w~4+%] ~w Paralysed...:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Bli_Tic,Bli,Par_Tic,Par])
+        ,format(atom(Efs_Ln4),'║│ ~w Charmed..:[~|~`_t~w~4+%] ~w Poisoned....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Cha_Tic,Cha,Poi_Tic,Poi])
+        ,format(atom(Efs_Ln5),'║│ ~w Confused.:[~|~`_t~w~4+%] ~w Stunned.....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Con_Tic,Con,Stu_Tic,Stu])
+        ,format(atom(Efs_Foo),'║└<^Applies>──────────<^Applies>──────────────┘└<^Edible>─────────────────────────────────┘ ║▓~n',[])
+        ,format(atom(Efs_End),'╚═══════════════════════════════════════════════════════════════════════════════════════════╝▓~n',[])
+        ,format(atom(Efs_Sha),' ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀~n',[])
+        ,atomic_list_concat([Efs_Box,
+                             Efs_Ln1,
+                             Efs_Ln2,
+                             Efs_Ln3,
+                             Efs_Ln4,
+                             Efs_Ln5,
+                             Efs_Foo,
+                             Efs_End,
+                             Efs_Sha],'',Efs).
