@@ -213,24 +213,34 @@ print_abilities(Id):-
 print_effects_inventory(Id):-
         maplist(chargen:features(Id),[effect,inventory_item],[Es,Is])
         ,maplist(pairs_keys_values,[Es,Is],[_,[It]],[E_Rs ,[R] ])
-        ,findall(W
+        ,findall(W-Tic
                 ,(member(SA,E_Rs)
                  ,(   SA == 0
-                  ->  W = '__'
+                  ->  W = '' % Value of the Effect field
+                      ,Tic = '○'
                   ;   W = SA
+                     ,Tic = '✓'
                   )
                  )
-                ,[Ago,Ble,Bli,Cha,Con,Imm,Inf,Par,Poi,Stu])
+                ,[Ago-Ago_Tic
+                 ,Ble-Ble_Tic
+                 ,Bli-Bli_Tic
+                 ,Cha-Cha_Tic
+                 ,Con-Con_Tic
+                 ,Imm-Imm_Tic
+                 ,Inf-Inf_Tic
+                 ,Par-Par_Tic
+                 ,Poi-Poi_Tic
+                 ,Stu-Stu_Tic])
         ,character:inventory_item(It,Nm)
         ,atom_length(Nm, N)
         ,Pad is 30 - N
         ,format('║┌[Effects]───────────────────────────────────┐┌[Inventory]───────────────────────────────┐ ║▓~n',[])
-        ,format('║│ ○ Agony....:[~|~`_t~w~4+%] ○ Immobilised.:[~|~`_t~w~4+%] ││ ✓ ~w~|~`_t~*+:[~|~`_t~w~4+%] │ ║▓~n',[Ago,Imm,Nm,Pad,R])
-        ,format('║│ ○ Bleeding.:[~|~`_t~w~4+%] ○ Infected....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Ble,Inf])
-        ,format('║│ ○ Blind....:[~|~`_t~w~4+%] ○ Paralysed...:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Bli,Par])
-        ,format('║│ ○ Charmed..:[~|~`_t~w~4+%] ○ Poisoned....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Cha,Poi])
-        ,format('║│ ○ Confused.:[~|~`_t~w~4+%] ○ Stunned.....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Con,Stu])
+        ,format('║│ ~w Agony....:[~|~`_t~w~4+%] ~w Immobilised.:[~|~`_t~w~4+%] ││ ✓ ~w~|~`_t~*+:[~|~`_t~w~4+%] │ ║▓~n',[Ago_Tic,Ago,Imm_Tic,Imm,Nm,Pad,R])
+        ,format('║│ ~w Bleeding.:[~|~`_t~w~4+%] ~w Infected....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Ble_Tic,Ble,Inf_Tic,Inf])
+        ,format('║│ ~w Blind....:[~|~`_t~w~4+%] ~w Paralysed...:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Bli_Tic,Bli,Par_Tic,Par])
+        ,format('║│ ~w Charmed..:[~|~`_t~w~4+%] ~w Poisoned....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Cha_Tic,Cha,Poi_Tic,Poi])
+        ,format('║│ ~w Confused.:[~|~`_t~w~4+%] ~w Stunned.....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Con_Tic,Con,Stu_Tic,Stu])
         ,format('║└<^Applies>──────────<^Applies>──────────────┘└<^Edible>─────────────────────────────────┘ ║▓~n',[])
         ,format('╚═══════════════════════════════════════════════════════════════════════════════════════════╝▓~n',[])
-        ,format(' ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀~n',[])
-        .
+        ,format(' ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀~n',[]).
