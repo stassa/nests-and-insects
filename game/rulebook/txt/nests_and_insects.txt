@@ -960,7 +960,7 @@
 ║│ □ Initiative...:[__32%] (Match/Beat to start Combat in Holding/Recoiling Disposition). │ ║▓
 ║│ □ Threat Rate..:[__37%] (Match/Beat Attacker's TR to Hit/Miss Target)................. │ ║▓
 ║│ □ Survival Rate:[__40%] (Match/Beat Target's SR to Hit/Miss with Base/Special Attack). │ ║▓
-║│ □ Wounds/Max...:[__/10] (1 Wound = 1 Shift Down. If Wounds ≥ Max character dies)...... │ ║▓
+║│ □ Wounds/Max...:[__/10] (1 Wound: 1 Ant lost. If Wounds ≥ Max character dies)......... │ ║▓
 ║├─<Disposition Track>────────────────────────────────────────────────────────────────────┤ ║▓
 ║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓
 ║│ ○ Retreating...... ○ Recoiling...... ○ Holding...... ○ Advancing...... ○ Charging......│ ║▓
