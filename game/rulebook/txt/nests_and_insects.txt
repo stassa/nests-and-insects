@@ -93,18 +93,19 @@
 ║ System ............................................................................. TODO ║▓
 ║   Fuzzy d100 ....................................................................... TODO ║▓
 ║     Percentile Features ............................................................ TODO ║▓
-║     Decile dice .................................................................... TODO ║▓
-║       Nominal reading .............................................................. TODO ║▓
-║       Literal reading .............................................................. TODO ║▓
+║   Taking Actions ................................................................... TODO ║▓
+║     Describing Intent .............................................................. TODO ║▓
+║     Qualification Roll ............................................................. TODO ║▓
 ╚════════════════════════════════════════════-i-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
-║   Taking Actions ................................................................... TODO ║▓
-║     Intent ......................................................................... TODO ║▓
-║     Qualification Roll ............................................................. TODO ║▓
 ║     Modification Roll  ............................................................. TODO ║▓
-║     Quantification Roll  ........................................................... TODO ║▓
 ║     Boolean Roll ................................................................... TODO ║▓
+║   Quantiying results                                                                      ║▓
+║     Quantification Roll  ........................................................... TODO ║▓
+║     Decile dice .................................................................... TODO ║▓
+║       Nominal reading .............................................................. TODO ║▓
+║       Literal reading .............................................................. TODO ║▓
 ║   Minigames ........................................................................ TODO ║▓
 ║     Combat ......................................................................... TODO ║▓
 ║     Survival ....................................................................... TODO ║▓
@@ -141,7 +142,6 @@
 ║   Generating Rooms ................................................................. TODO ║▓
 ║   Generating Items ................................................................. TODO ║▓
 ║   Generating Enemies ............................................................... TODO ║▓
-║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -1550,6 +1550,456 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
+║                                          System                                           ║▓
+║                                          ======                                           ║▓
+║                                                                                           ║▓
+║ This chapter introduces the roleplaying system used in Nests & Insects. For ease of       ║▓
+║ reference, the system is called Fuzzy d100, shortened to fd100.                           ║▓
+║                                                                                           ║▓
+║ fd100 is a percentile system, in the sense that it describes characters in terms of       ║▓
+║ percentile-valued Features and that the die rolled to determine the success or failure of ║▓
+║ characters' actions is the d100, ranging from 1 to 100. Decile dice: the d20, d40, d60,   ║▓
+║ d80, and the d100 itself, are used to quantify Effects and other Features on the game's   ║▓
+║ percentile scale. The d40, d60 and d80 are composed of pairs of a standard polyhedral     ║▓
+║ die: the d4, d6 and d8, respectively; and a d10, rolled together and read as one - just   ║▓
+║ as the d100 is composed of two d10 rolled together and read as one.                       ║▓
+║                                                                                           ║▓
+║ fd100 is designed to eliminate mental arithmetic from the process used to determine the   ║▓
+║ outcome of characters' actions ("action resolution"), and to encourage players to use     ║▓
+║ their imagination to overcome challenges faced by their characters in-game.               ║▓
+║                                                                                           ║▓
+║ To determine the outcome of a character's actions, a player begins by describing the      ║▓
+║ character's Intent, then rolls a d100 and compares its result to two target numbers,      ║▓
+║ Effort and Resistance, determined by Features of the character, and enemies or the Nest   ║▓
+║ environment, respectively. The player wants to roll under Effort and over Resistance. The ║▓
+║ comparison determines one of four initial Degrees of Success or Failure for the action:   ║▓
+║ Complete Failure, Partial Failure, Partial Success or Complete Success, in order from     ║▓
+║ worst to best.                                                                            ║▓
+║                                                                                           ║▓
+║ Two additional Degrees of Success, Critical Failure (worse than Complete Failure) and     ║▓
+║ Critical Success (better than Complete Success) can be achieved by comparing the initial  ║▓
+║ d100 roll to "static" modifiers, or making up to two new d100 rolls and comparing them to ║▓
+║ "dramatic" modifiers. The comparison to modifiers may move ("Shift") the Degree of        ║▓
+║ Success up or down the six-degree ordering from Critical Failure to Critical Success.     ║▓
+║                                                                                           ║▓
+║ Finally, the results of actions may need to be quantified by rolling a decile die. The    ║▓
+║ Game Queen (GQ) then describes the outcome of the action according to the character's     ║▓
+║ Intent and the Degree of Success of the action.                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-29-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║                                        Fuzzy d100                                         ║▓
+║                                        ==========                                         ║▓
+║                                                                                           ║▓
+║ Six Degrees of Success and Failure                                                        ║▓
+║ ----------------------------------                                                        ║▓
+║                                                                                           ║▓
+║ The "Fuzzy" in the fd100 name alludes to the "fuzzy" action resolution that allows for    ║▓
+║ six Degrees of Success and Failure (DoS) as the outcome of an action. Those are listed in ║▓
+║ the Six Degrees of Success Table below.                                                   ║▓
+║                                                                                           ║▓
+║ Degree of Success        Action outcome                      Determined by                ║▓
+║ ───────────────────────────────────────────────────────────────────────────────           ║▓
+║ Critical Success         Satisfies Intent with reward        Modifiers                    ║▓
+║ Complete Success         Satisfies Intent                    Qualification Roll           ║▓
+║ Partial Success          Satisfies Intent marginally         Qualification Roll           ║▓
+║ Partial Failure          Thwarts Intent marginally           Qualification Roll           ║▓
+║ Complete Failure         Thwarts Intent                      Qualification Roll           ║▓
+║ Critical Failure         Thwarts Intent with penalty         Modifiers                    ║▓
+║ ───────────────────────────────────────────────────────────────────────────────           ║▓
+║ Table: Six Degrees of Success                                                             ║▓
+║                                                                                           ║▓
+║ The six DoS are ordered from worst (Critical Failure) to best (Critical Success) with     ║▓
+║ respect to the outcome of an Action. The exact outcome of an Action, such as rewards or   ║▓
+║ penalties on a Critical Success or Failure, depends on the Intent of the character        ║▓
+║ attempting an Action, and the context of the Action, for example whether it's taken       ║▓
+║ during a minigame in which case the outcome of the Action is defined by the rules of the  ║▓
+║ minigame. Intent is described in the "Describing Intent" Section and minigames in the     ║▓
+║ "Minigames" Section, both later in this Chapter.                                          ║▓
+║                                                                                           ║▓
+║ Four of the DoS listed in the Table are determined by the result of an initial            ║▓
+║ Qualification Roll (described in the "Qualification" Section) compared to Effort and      ║▓
+║ Resistance. Two additional DoS can be achieved by the use of modifiers. Modifiers can     ║▓
+║ make the DoS indicated by the Qualification Roll better or worse, by conferring a Shift   ║▓
+║ Up or Down the DoS ordering (from worst to best, or bottom to top on the Table).          ║▓
+║ Modifiers and DoS Shifts are described in the "Modification" Section.                     ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-30-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ Percentile Features                                                                       ║▓
+║ -------------------                                                                       ║▓
+║                                                                                           ║▓
+║ ┌[Rule Summaries]───────────────────────────────────────────────────────────────────────┐ ║▓
+║ │ Throughout this Chapter you will find text boxes summarising definitions and rules.   │ ║▓
+║ │ Rules Summary 1, below, summarises Features.                                          │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ ┌[Rules Summary 1: fd100 Features]──────────────────────────────────────────────────────┐ ║▓
+║ │ A Feature is a game variable that describes a game entity. A Feature has a unique     │ ║▓
+║ │ identifier, its "name" and can take a value in the percentile range [1,100], its      │ ║▓
+║ │ "rating". Nests & Insects Feature names are usually single-word descriptors. A        │ ║▓
+║ │ Feature's name describes a property, ability or condition of the character. A         │ ║▓
+║ │ Feature's rating represents the chance that a character will succeed at a task or     │ ║▓
+║ │ overcome a condition described by the Feature's name. Exceptionally, the Wounds       │ ║▓
+║ │ Feature is a simple count and its rating is an integer. The ratings of Features other │ ║▓
+║ │ than Wounds are used as the Effort and Resistance values in die rolls.                │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ In fd100, game entities such as characters, enemy creatures and Rooms in Nests are        ║▓
+║ defined in terms of their "Features". Features are game variables with a unique           ║▓
+║ identifier, and a value in the percentile range from 1 to 100.                            ║▓
+║                                                                                           ║▓
+║ In Nests & Insects the unique identifier of a Feature is usually a single-word descriptor ║▓
+║ that we call the Feature's "name". A Feature's percentile value is its "rating".          ║▓
+║                                                                                           ║▓
+║ Features represent important properties, or abilities, of a character, something that a   ║▓
+║ character is, or can do, or a condition affecting the character.                          ║▓
+║                                                                                           ║▓
+║ Features' percentile ratings represent the chance that the character will successfully    ║▓
+║ carry out a task relevant to the Feature's name, or the chance that she can overcome a    ║▓
+║ condition.                                                                                ║▓
+║                                                                                           ║▓
+║ The exception to percentile Feature ratings is the Wounds Feature that measures physical  ║▓
+║ injury acquired by characters usually during Combat. The value of the Wounds Feature is   ║▓
+║ always an integer, normally in the low tens, and interpreted as a simple count of the     ║▓
+║ wounds inflicted on a character.                                                          ║▓
+║                                                                                           ║▓
+║ Percentile Features' ratings are used as the Effort and Resistance values for die rolls   ║▓
+║ made to determine the outcome of characters' actions. Wounds' counts are never used as    ║▓
+║ Effort or Resistance.                                                                     ║▓
+║                                                                                           ║▓
+║ Nests & Insects Features are grouped in different categories such as Attributes, Combat   ║▓
+║ Conditions, Effects, etc. The "Character Sheet" chapter briefly describes the different   ║▓
+║ categories of character Features. Complete descriptions of the Features of characters and ║▓
+║ enemies, and their use in the game, are given in the Chapters "Character", and "Setting". ║▓
+╚═══════════════════════════════════════════-31-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                      Taking Actions                                       ║▓
+║                                      ==============                                       ║▓
+║                                                                                           ║▓
+║ Action resolution steps                                                                   ║▓
+║ -----------------------                                                                   ║▓
+║                                                                                           ║▓
+║ Players' characters can take actions to achieve their goals within the context of         ║▓
+║ minigames, and without. Actions are resolved in up to eight steps, summarised below and   ║▓
+║ discussed in detail in the following sections.                                            ║▓
+║                                                                                           ║▓
+║ ┌[Rules Summary 2: Action Resolution]───────────────────────────────────────────────────┐ ║▓
+║ │                                                                                       │ ║▓
+║ │ 1. Intent: Describe the character's intent.                                           │ ║▓
+║ │                                                                                       │ ║▓
+║ │ 2. Effort and Resistance: Decide which Features to use as Effort and Resistance.      │ ║▓
+║ │                                                                                       │ ║▓
+║ │ 3. Qualification: Roll a d100 and compare it to Effort and Resistance.                │ ║▓
+║ │                                                                                       │ ║▓
+║ │ 4. Degree of Success: Determine the Degree of Success or Failure (DoS) of the Action. │ ║▓
+║ │                                                                                       │ ║▓
+║ │ 5. Modification: Apply modifiers. The DoS may Shift up or Down and become Critical.   │ ║▓
+║ │                                                                                       │ ║▓
+║ │ 7. Quantification: Roll a decile die to quantify the results of the Action.           │ ║▓
+║ │                                                                                       │ ║▓
+║ │ 8. Resolution: Describe the outcome of the Action.                                    │ ║▓
+║ │                                                                                       │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ Not all of the above steps are necessary to resolve all Actions. For instance, some       ║▓
+║ Actions may require Quantification, but others may not; modifiers may apply to some       ║▓
+║ Actions but not others; etc.                                                              ║▓
+║                                                                                           ║▓
+║ _Terminology_ gaming terms like "Qualification", "Modification", "Degree of Success" and  ║▓
+║ so on are used for easy reference to important game concepts. You do not have to learn    ║▓
+║ them by heart.                                                                            ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-32-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ Describing Intent                                                                         ║▓
+║ -----------------                                                                         ║▓
+║                                                                                           ║▓
+║ ┌[Rules Summary 3: Intent]──────────────────────────────────────────────────────────────┐ ║▓
+║ │ An Action begins with a description of the character's Intent. The description must   │ ║▓
+║ │ be sufficiently detailed to help determine the Features to be used as Effort and      │ ║▓
+║ │ Resistance, or modifiers, for the Action. Minigame rules define the Intent of         │ ║▓
+║ │ formulaic minigame Actions and the Features to use as Effort, Resistance and          │ ║▓
+║ │ modifiers for such Actions.                                                           │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ A player begins resolving a character's Action by describing the character's Intent: why  ║▓
+║ or how the character is acting, what she hopes to achieve. This description can be as     ║▓
+║ elaborate or simple as the character, and the player group, feel like.                    ║▓
+║                                                                                           ║▓
+║ The only requirement is that the description of the character's Intent is sufficiently    ║▓
+║ detailed for the GQ to be able to determine the Features to be used as Effort and         ║▓
+║ Resistance, or static modifiers.                                                          ║▓
+║                                                                                           ║▓
+║ ┌[Example 2]────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ │ Cody declares his character's intent: "Spider attacks the second Nasute Soldier".     │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ ┌[Example 3]────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ │ Brody declares his character's intent: "I want Wasp to display her stripes and scare  │ ║▓
+║ │ the living beejeesus out of the Worker Bees! I want her to dive in towards them,      │ ║▓
+║ │ buzzing menacingly and waving her abdomen around in, like, a threatening and          │ ║▓
+║ │ provocative manner! I want them to run away screaming from buzzing, venomous DEATH!   │ ║▓
+║ │ BzzZZZzzZZZZzz!"                                                                      │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ Both styles illustrated in Examples 1 and 2 are fine, as far as the game rules are        ║▓
+║ concerned. It doesn't matter that Bees cannot scream and won't run away.                  ║▓
+║                                                                                           ║▓
+║ In Example 1 it is clear that Cody's character is attacking. His character is acting      ║▓
+║ either during Combat, or just before Combat begins, so the Effort and Resistance should   ║▓
+║ be Spider's Threat Rate and the Nasute Soldier's Survival Rate, as determined by the      ║▓
+║ Combat minigame.                                                                          ║▓
+║                                                                                           ║▓
+║ In Example 2, Brody is clearly describing the use of Wasp's Flying and Signalling to      ║▓
+║ perform an aggressive display with the purpose of scaring the Worker Bees. Effort is      ║▓
+║ Wasp's Signalling and Resistance is most likely the Bees' Passions. Wasp's Flying can be  ║▓
+║ used as a static modifier, or as a dramatic modifier, or ignored.                         ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-33-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ Effort and Resistance                                                                     ║▓
+║ ---------------------                                                                     ║▓
+║                                                                                           ║▓
+║ Effort and Resistance are the two target numbers for the Qualification Roll that          ║▓
+║ determines the initial DoS of an Action.                                                  ║▓
+║                                                                                           ║▓
+║ ┌[Rules Summary 4: Effort]──────────────────────────────────────────────────────────────┐ ║▓
+║ │ Effort represents the character's effort to achieve her Intent, as described by the   │ ║▓
+║ │ player. The value of Effort is equal to one of the acting character's Features that   │ ║▓
+║ │ is most appropriate for the attempted Action, according to the Feature's name.        │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ ┌[Rules Summary 5: Resistance]──────────────────────────────────────────────────────────┐ ║▓
+║ │ Resistance represents the resistance of game entities to the character's Action. The  │ ║▓
+║ │ value of Resistance is equal to an appropriate Feature of an enemy creature, or of    │ ║▓
+║ │ the Nest's environment, or any game entity opposing the character's Intent.           │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ ┌[Rules Summary 5: Choosing Effort and Resistance]──────────────────────────────────────┐ ║▓
+║ │ The description of the character's Intent informs the selection of Features used as   │ ║▓
+║ │ Effort and Resistance. Minigame rules define the Features to use as Effort and        │ ║▓
+║ │ Resistance for formulaic minigame Actions with predefined Intent.                     │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ _Minigame Actions_ If the Action is taking place during a minigame, and it is one of the  ║▓
+║ minigame's formulaic Actions, the minigame rules will define a formula that determines    ║▓
+║ Effort and Resistance Features.                                                           ║▓
+║                                                                                           ║▓
+║ _Other Actions_ If the Action is taking place outwith a minigame, or a minigame does not  ║▓
+║ define a formula for the attempted Action, the player and the GQ together decide what     ║▓
+║ Features are best used as Effort and Resistance. Use Features' names and descriptions     ║▓
+║ and apply gaming sense. Usually, the GQ will suggest a relevant pair of Features. The     ║▓
+║ player is free to negotiate a different pair but the GQ has the final word. Any           ║▓
+║ negotiation should not take as long as to bore the rest of the group.                     ║▓
+║                                                                                           ║▓
+║ ┌[Example 4]────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ │ Cody negotiates with the GQ: "But Wasp is Venomous so she can display her Stinger and │ ║▓
+║ │ maximise the intimidation of the Minor Termite Soldiers".                             │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ In Example 4 Cody is negotiating the use of Wasp's Venomous: 80% Specific Abiliy as       ║▓
+║ Effort to an Action with intent to intimidate some Termite Soldiers. Normally, an Action  ║▓
+║ with this Intent would use a character's Signalling Feature as Effort. Wasp's Signalling  ║▓
+║ is 68% which is already pretty good, but Cody wants to maximise the chance to intimidate  ║▓
+║ the Termites. It's up to the GQ whether to accept this or not. If the GQ decides that     ║▓
+║ Signalling is the appropriate Feature to use as Effort, so it is.                         ║▓
+╚═══════════════════════════════════════════-34-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ Qualification                                                                             ║▓
+║ -------------                                                                             ║▓
+║                                                                                           ║▓
+║ ┌[Rules Summary 6: Qualification Roll]──────────────────────────────────────────────────┐ ║▓
+║ │ To make a Qualification Roll means to roll a d100 and compare it to Effort and        │ ║▓
+║ │ Resistance, simultaneously. To roll under, or equal to, Effort is to achieve or       │ ║▓
+║ │ "match" Effort. To roll over Resistance is to overcome, or "beat" Resistance.         │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ Once Effort and Resistance are chosen the player rolls a d100 and compares its result to  ║▓
+║ Effort and Resistance. This is called a "Qualification Roll". To achieve the best outcome ║▓
+║ in a Qualification Roll the player wants to roll under, or equal to Effort, and over      ║▓
+║ Resistance. The former is to "match" Effort and the latter is to "beat" Resistance.       ║▓
+║                                                                                           ║▓
+║ The result of the d100 roll relative to Effort and Resistance determines four initial     ║▓
+║ Degrees of Success or Failure: Complete Failure, Partial Failure, Partial Success or      ║▓
+║ Complete Success, in order from worst to best for the purpose of satisfying the           ║▓
+║ character's Intent. The four initial Degrees of Success and Failure are summarised in the ║▓
+║ Degree of Success Table below.                                                            ║▓
+║                                                                                           ║▓
+║ Roll matches Effort        Roll beats Resistance        Degree of Success                 ║▓
+║ ─────────────────────────────────────────────────────────────────────────                 ║▓
+║ True                       True                         Complete Succes                   ║▓
+║ True                       False                        Partial Success                   ║▓
+║ False                      True                         Partial Failure                   ║▓
+║ False                      False                        Complete Failure                  ║▓
+║ ─────────────────────────────────────────────────────────────────────────                 ║▓
+║ Table: Degree of Success.                                                                 ║▓
+║                                                                                           ║▓
+║ ┌[Rules Summary 7: Degree of Success and Failure]───────────────────────────────────────┐ ║▓
+║ │ If the Qualification Roll matches Effort, then the Action is a "Success"; otherwise,  │ ║▓
+║ │ it is a "Failure". If the Qualification Roll beats Resistance, then the Action is a   │ ║▓
+║ │ "Complete" Success, or a "Partial" Failure; otherwise it is a Complete Failure, or a  │ ║▓
+║ │ Partial Success.                                                                      │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ _Possible Degrees of Success_ Not all Degrees of Success and Failure are possible to      ║▓
+║ achieve just with a Qualification Roll. If Effort is lower than Resistance, Complete      ║▓
+║ Success is not possible. If Effort is higher than Resistance, Complete Failure is not     ║▓
+║ possible. All six DoS, including Critical Success and Critical Failure are only           ║▓
+║ achievable through the use of modifiers, described in the "Modification" Section,         ║▓
+║ following.                                                                                ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-35-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ Modification                                                                              ║▓
+║ ------------                                                                              ║▓
+║                                                                                           ║▓
+║ ┌[Rules Summary 8: Static and Dramatic Modifiers]───────────────────────────────────────┐ ║▓
+║ │ Modifiers change the DoS of an Action. There are two types of modifiers: static       │ ║▓
+║ │ modifiers model common complications to ordinary Actions, particularly minigames'     │ ║▓
+║ │ formulaic Actions. Dramatic modifiers model uncommon and surprising variation to      │ ║▓
+║ │ Actions. Static modifiers are compared to the d100 result of the Qualification roll.  │ ║▓
+║ │ For each dramatic modifier a new d100 roll is made and the dramatic modifier compared │ ║▓
+║ │ to the result of the roll.                                                            │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ ┌[Rules Summary 9: Positive and Negative Modifiers]─────────────────────────────────────┐ ║▓
+║ │ Modifiers can be positive or negative. Positive modifiers support a character's       │ ║▓
+║ │ Effort and negative modifiers support the Resistance to her Action. Matching a        │ ║▓
+║ │ positive modifier confers a Shift Up to the Dos. Failiing to match a negative         │ ║▓
+║ │ modifier confers a shift Down to the DoS.                                             │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ ┌[Rules Summary 10: Shifts Up and Shifts Down]──────────────────────────────────────────┐ ║▓
+║ │ A Shift Up changes the DoS from worst to best. A Shift Down changes the DoS from best │ ║▓
+║ │ to worst. A Shift Up from Complete Success changes the DoS to Critical Success. A     │ ║▓
+║ │ Shift Down from Complete Failure changes the DoS to Critical Failure.                 │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ Modifiers are Features of a character or game entities that further support or hinder the ║▓
+║ character's Actions, in addition to Effort and Resistance. Like Effort and Resistance,    ║▓
+║ what modifiers apply to an Action depends on the character's Intent, as described by the  ║▓
+║ player or defined by a minigame formula.                                                  ║▓
+║                                                                                           ║▓
+║ In mechanical terms, modifiers confer Shifts Up or Down to the DoS of an Action, after it ║▓
+║ is determined by an initial Qualification Roll. A Shift moves the DoS up or down, from    ║▓
+║ worst to best.                                                                            ║▓
+║                                                                                           ║▓
+║ There are two types of modifiers: static modifiers and dramatic modifiers. Both can be    ║▓
+║ either positive or negative.                                                              ║▓
+║                                                                                           ║▓
+║ Static modifiers are compared to the d100 result of the Qualification Roll. Dramatic      ║▓
+║ modifiers are each compared to a new d100 roll.                                           ║▓
+║                                                                                           ║▓
+║ When a d100 roll matches a positive modifier, the DoS of the Action Shifts Up. When a     ║▓
+║ d100 roll fails to match a negative modifier, the DoS Shifts Down. A Shift Up moves the   ║▓
+║ Dos from worst to best, and a Shift Down moves the DoS from best to worst. A Shift Up     ║▓
+║ from a Complete Success moves the DoS to a Critical Success. A Shift Down from a Complete ║▓
+║ Failure moves the DoS to a Critical Failure. Thus all six DoS are possible to reach with  ║▓
+║ modifiers, starting from any DoS determined by an initial Qualification Roll.             ║▓
+╚═══════════════════════════════════════════-36-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ Choosing modifiers                                                                        ║▓
+║ ------------------                                                                        ║▓
+║                                                                                           ║▓
+║ Static modifiers model routine complications to ordinary Actions, in particular minigame  ║▓
+║ Actions. Dramatic modifiers model uncommon or surprising variation to Actions.            ║▓
+║                                                                                           ║▓
+║ Static modifiers are usually defined by minigame formulae. Dramatic modifiers might be    ║▓
+║ proposed by a player and are ultimately granted by the GQ. The GQ should grant a dramatic ║▓
+║ modifier when a character takes an Action that is high-stakes, spectacular, or            ║▓
+║ unexpected, or impresses and surprises the group in some other way. In other words:       ║▓
+║ dramatic modifiers should apply when it is dramatically appropriate to take additional    ║▓
+║ information into account that might change the course of the game.                        ║▓
+║                                                                                           ║▓
+║ ┌[Rules Summary 11: The Rule of Two]────────────────────────────────────────────────────┐ ║▓
+║ │ At most two dramatic modifiers may be applied to a single Action: either a) two       │ ║▓
+║ │ positive, or b) two negative, or c) one positive and one negative.                    │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ No more than two dramatic modifiers may be applied to a single Action: either two         ║▓
+║ positive or two negative, or one of each sign. This is in the interest of reducing the    ║▓
+║ number of rolls needed to resolve an Action. Static modifiers are compared to the result  ║▓
+║ of the Qualification roll, and do not need a separate roll, therefore there is no         ║▓
+║ restriction to the number of static modifiers that can apply to an Action.                ║▓
+║                                                                                           ║▓
+║ Dramatic modifiers should be used sparingly, in special circumstances. As a rough rule of ║▓
+║ thumb, the GQ should grant no more than two or three dramatic modifiers per game session. ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-37-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
 ║                                          Setting                                          ║▓
 ║                                          =======                                          ║▓
 ║                                                                                           ║▓
@@ -1596,7 +2046,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-29-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-38-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -1646,7 +2096,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-30-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-39-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -1696,7 +2146,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-31-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-40-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -1746,7 +2196,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-32-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-41-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -1796,7 +2246,7 @@
 ║ │                                                                                       │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-33-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-42-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -1846,7 +2296,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-34-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-43-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -1896,7 +2346,7 @@
 ║ ┌[Special Rule - Nest Guardians]────────────────────────────────────────────────────────┐ ║▓
 ║ │ Same as for Minor Termite Soldiers.                                                   │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
-╚═══════════════════════════════════════════-35-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-44-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -1946,7 +2396,7 @@
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-36-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-45-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -1996,5 +2446,5 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-37-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-46-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
