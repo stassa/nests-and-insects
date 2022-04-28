@@ -25,20 +25,20 @@
 ║                                   ▁▂▃▅▆██████████▉▆▅▃▂▁                                   ║▓
 ║                                 ▉▉▉▀▀▀▀ ██◆███◆██ ▀▀▀▀▉▉▉                                 ║▓
 ║                              ▉▉▀▀▀     ◄█████████►     ▀▀▀▉▉                              ║▓
-║                           ██▀▀▀          ███◆███►         ▀▀▀██                           ║▓
+║                           ██▀▀▀         ◄███◆███►         ▀▀▀██                           ║▓
 ║                          ██      ▁▂▃▄▅▆▇███████▉▉▆▅▃▂▁       ██                           ║▓
 ║                       ██▀▀       ▉▉▉▀▀▀▀▀▀█████▀▀▀▀▀▀▉▉▉      ▀▀██                        ║▓
 ║                     ◢■◤        ▉▉▀▀▀       ███       ▀▀▀▉▉       ◥■◣                      ║▓
-║                    ◢◤       ██▀▀▀       ◂███████▸       ▀▀██       ◥◣                     ║▓
-║                            ██          ◂██◆███◆██▸         ██                             ║▓
-║                           ██          ◂▇█████████▇▸         ██                            ║▓
-║                           ██         ◂▆█◆███◆███◆█▆▸        ██                            ║▓
-║                          ██           ▀███████████▀          ██                           ║▓
-║                          ██            ▀██◆███◆██▀           ██                           ║▓
-║                         ██             ◂█████████▸            ██                          ║▓
-║                        ██               ◂███◆███▸              ██                         ║▓
-║                       ◢■◤                ◂█████▸               ◥■◣                        ║▓
-║                      ◢◤                    ▀█▀                   ◥◣                       ║▓
+║                    ◢◤       ██▀▀▀       ◂███████▸       ▀▀▀██       ◥◣                    ║▓
+║                            ██          ◂██◆███◆██▸          ██                            ║▓
+║                           ██          ◂▇█████████▇▸          ██                           ║▓
+║                           ██         ◂▆█◆███◆███◆█▆▸         ██                           ║▓
+║                          ██           ▀███████████▀           ██                          ║▓
+║                          ██            ▀██◆███◆██▀            ██                          ║▓
+║                         ██             ◂█████████▸             ██                         ║▓
+║                        ██               ◂███◆███▸               ██                        ║▓
+║                       ◢■◤                ◂█████▸                ◥■◣                       ║▓
+║                      ◢◤                    ▀█▀                    ◥◣                      ║▓
 ║                                             ▼                                             ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -102,7 +102,9 @@ System .........................................................................
     Effort and Resistance ............................................................ 34
     Qualification .................................................................... 35
     Modification ..................................................................... 36
-    Boolean Roll ................................................................... TODO
+    Choosing modifiers ............................................................... 37
+    Boolean Roll ..................................................................... 38
+    Contested Boolean Roll ........................................................... 39
   Quantiying results
     Quantification Roll  ........................................................... TODO
     Decile dice .................................................................... TODO
@@ -114,20 +116,20 @@ System .........................................................................
     Hunting and Foraging ........................................................... TODO
     Resting and Healing ............................................................ TODO
 
-Setting .............................................................................. 38
+Setting .............................................................................. 40
   Clients and Jobs ................................................................. TODO
   Environment ...................................................................... TODO
     Nests .......................................................................... TODO
     Levels ......................................................................... TODO
     Rooms .......................................................................... TODO
-  Enemies ............................................................................ 39
+  Enemies ............................................................................ 41
     Ants ........................................................................... TODO
     Bees ........................................................................... TODO
-    Termites ......................................................................... 40
-      Worker Termite ................................................................. 41
-      Minor Termite Soldier - Autothyte .............................................. 42
-      Major Termite Soldier - Authotyte .............................................. 44
-      Nasute Soldier ................................................................. 45
+    Termites ......................................................................... 42
+      Worker Termite ................................................................. 43
+      Minor Termite Soldier - Autothyte .............................................. 44
+      Major Termite Soldier - Authotyte .............................................. 46
+      Nasute Soldier ................................................................. 47
       Alates - King ................................................................ TODO
       Alates - Queen ............................................................... TODO
   Food Items ....................................................................... TODO
@@ -1059,7 +1061,6 @@ Conditions, Effects, etc. The "Character Sheet" chapter briefly describes the di
 categories of character Features. Complete descriptions of the Features of characters and
 enemies, and their use in the game, are given in the Chapters "Character", and "Setting".
 
-
                                      Taking Actions
                                      ==============
 
@@ -1309,6 +1310,88 @@ restriction to the number of static modifiers that can apply to an Action.
 
 Dramatic modifiers should be used sparingly, in special circumstances. As a rough rule of
 thumb, the GQ should grant no more than two or three dramatic modifiers per game session.
+
+\newpage
+
+Boolean Roll
+------------
+
+A Boolean Roll is a simpler form of the Qualification Roll that only determines Success
+or Failure, without any finer gradation. Only an Effort value need be chosen to make
+a Boolean roll- neither Resistance, nor modifiers are taken into account.
+
+\begin{box}[Rules Summary 12: Boolean Roll]
+To make a Boolean Roll describe the character's Intent and choose Effort as for a
+Qualification Roll, then roll d100 and compare the result to Effort. If the result of
+the d100 roll matches Effort, the attempted Action Succeeds. Otherwise, it Fails.
+\end{box}
+
+\begin{table}[8]
+Roll matches Feature&        Action Outcome
+True                &        Success       
+False               &        Failure       
+\end{table}
+Table: Boolean Roll
+
+A Boolean Roll may be called for by the rules of minigames. For example, the Combat
+minigame calls for a Boolean Roll to determine a character's starting Disposition at the
+start of Combat, or to resist an Effect for a Turn.
+
+The GQ may also call for a Boolean Roll when the complexity of determining the full Six
+Degrees of Success and Failure of a Qualification Roll with modifiers is not deemed
+necessary, or when it is not clear from the context of an Action what the difference is
+between different DoS.
+
+\begin{box}[Example 5]
+Beetle is trying to lift a piece of debris from the Nest's floor. This is a simple
+Action that can either succeed or fail. The GQ asks for a Boolean Roll against
+Beetle's Strength: 55%. The player rolls: 78. The outcome of the Action is Failure
+and Beetle fails to lift the piece of debris from the floor.
+\end{box}
+
+\begin{box}[Note 1]
+In percentile systems the Boolean Roll is more often known as as a "Skill Check" or
+"Test". Nests & Insects calls it a "Boolean Roll" to distinguish its crisp, binary
+determination of success and Failure from the "fuzzy" one of the Qualification Roll.
+\end{box}
+
+\newpage
+
+Contested Boolean Roll
+----------------------
+
+A Contested Boolean Roll is a Boolean Roll that also takes into account the Resistance of
+a game entity to a character's Effort, but like the ordinary Boolean Roll, only
+determines Success or Failure, without any degrees thereof.
+
+\begin{box}[Rules Summary 13: Contested Boolean Roll]
+To make a Boolean Roll describe the character's Intent and choose Effort and
+Resistance as for a Qualification Roll, then roll d100 and compare the result to
+Effort and Resistance simultaneously. If the result of the d100 roll matches Effort
+and beats Resistance, the attempted Action Succeeds. Otherwise, it fails.
+\end{box}
+
+\begin{table}[8]
+Roll matches Effort & Roll beats Resistance &   Action Outcome
+True                & True                  &   Success       
+True                & False                 &   Failure
+False               & True                  &   Failure      
+False               & False                 &   Failure       
+\end{table}
+Table: Contested Boolean Roll
+
+Unlike the Boolean Roll, the Contested Boolean Roll is not called for by any minigames.
+The main use of the Contested Boolean Roll is to simplify the resolution of Actions where
+it makes sense to take into account the Resistance to a character's Effort, but where the
+full complexity of the Six Degrees of Success of the Qualification Roll is not needed.
+
+\begin{box}[Example 6]
+Beetle is trying to lift a piece of debris from the Nest's floor. The GQ asks the
+Beetle player for a Contested Boolean Roll. Effort is Beetle's Strength: 55%, and
+Resistance is 45%, because the GQ determines the piece of debris is not too heavy.
+The Beetle player rolls: 15. That matches Beetle's Effort but does not beat
+Resistance. The Action outcome is a Failure and Beetle cannot lift the debris.
+\end{box}
 
 \newpage
 
