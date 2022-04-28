@@ -7,19 +7,15 @@ Tabletop Roleplaying Game.
 Nests & Insects is still a work in progress, at the early stages of design and
 playtesting.
 
-Reading the rulebooks
----------------------
+Reading the rulebook
+--------------------
 
 The text-based rulebook is in the following path:
 ```
 <project root>/games/rulebook/txt/nests_and_insects.txt
 ```
 
-_The text-based version is the main version of the rulebook._
-
-There exists a pdf version but it is updated sporadically, or not at all. _If you are
-looking for the latest changes (and additions) to the rules, you should read the
-text-based version_.
+_The text-based version is the only version of the rulebook._
 
 To read the text-based rulebook, navigate to its directory and open it with a pager like
 less or more etc.
