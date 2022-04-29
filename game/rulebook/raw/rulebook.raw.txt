@@ -1243,19 +1243,15 @@ Modification
 ------------
 
 \begin{box}[Rules Summary 8: Static and Dramatic Modifiers]
-Modifiers change the DoS of an Action. There are two types of modifiers: static
-modifiers model common complications to ordinary Actions, particularly minigames'
-formulaic Actions. Dramatic modifiers model uncommon and surprising variation to
-Actions. Static modifiers are compared to the d100 result of the Qualification roll.
+Modifiers change the DoS of an Action. There are two types of modifiers: static and
+dramatic. Static modifiers are compared to the d100 result of the Qualification roll.
 For each dramatic modifier a new d100 roll is made and the dramatic modifier compared
 to the result of the roll.
 \end{box}
 
 \begin{box}[Rules Summary 9: Positive and Negative Modifiers]
-Modifiers can be positive or negative. Positive modifiers support a character's
-Effort and negative modifiers support the Resistance to her Action. Matching a
-positive modifier confers a Shift Up to the Dos. Failiing to match a negative
-modifier confers a shift Down to the DoS.
+Modifiers can be positive or negative. Matching a positive modifier confers a Shift
+Up to the Dos. Failiing to match a negative modifier confers a shift Down to the DoS.
 \end{box}
 
 \begin{box}[Rules Summary 10: Shifts Up and Shifts Down]
@@ -1269,22 +1265,25 @@ character's Actions, in addition to Effort and Resistance. Like Effort and Resis
 what modifiers apply to an Action depends on the character's Intent, as described by the
 player or defined by a minigame formula.
 
+There are two types of modifiers: static modifiers and dramatic modifiers. Both can be
+either positive or negative. Static modifiers are compared to the d100 result of the
+Qualification Roll. Dramatic modifiers are each compared to a new d100 roll.
+
 In mechanical terms, modifiers confer Shifts Up or Down to the DoS of an Action, after it
 is determined by an initial Qualification Roll. A Shift moves the DoS up or down, from
-worst to best.
+worst to best. The Changes to DoS by the use of modifiers are summarised in the Table
+below.
 
-There are two types of modifiers: static modifiers and dramatic modifiers. Both can be
-either positive or negative.
+\begin{table}[8]
+Roll vs Modifier&       Modifier Sign&       Change to DoS
+Under or Equal  &       Positive     &       Shift Up
+Over            &       Positive     &       No change
+Under or Equal  &       Negative     &       Shift Down
+Over            &       Negative     &       No change
+\end{table}
+Table: Modifiers and change to DoS.
 
-Static modifiers are compared to the d100 result of the Qualification Roll. Dramatic
-modifiers are each compared to a new d100 roll.
-
-When a d100 roll matches a positive modifier, the DoS of the Action Shifts Up. When a
-d100 roll fails to match a negative modifier, the DoS Shifts Down. A Shift Up moves the
-Dos from worst to best, and a Shift Down moves the DoS from best to worst. A Shift Up
-from a Complete Success moves the DoS to a Critical Success. A Shift Down from a Complete
-Failure moves the DoS to a Critical Failure. Thus all six DoS are possible to reach with
-modifiers, starting from any DoS determined by an initial Qualification Roll.
+\newpage
 
 Choosing modifiers
 ------------------
