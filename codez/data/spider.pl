@@ -16,7 +16,7 @@ spider:condition(wounds,0).
 
 spider:base_attack([name-'Web Attack'
                      ,keywords-['Entangling','Healing']
-                     ,wounds-0
+                     ,damage-'N/A'
                      ,max_range-'Medium'
                      ,hit-'Enemy Immobilised: d60'
                      ,hit_2-['(Alt)','Ally Stabilised']
@@ -28,7 +28,7 @@ spider:base_attack([name-'Web Attack'
 
 spider:special_attack([name-'Bite Attack'
                         ,keywords-['Piercing','Venomous','Paralysing']
-                        ,wounds-1
+                        ,damage-'1 Wound'
                         ,max_range-'Close'
                         ,hit-'Enemy Paralysed: d80'
                         ,hit_2-['(Alt)','Ally Healed']

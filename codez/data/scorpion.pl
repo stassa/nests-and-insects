@@ -16,7 +16,7 @@ scorpion:condition(wounds,0).
 
 scorpion:base_attack([name-'Pincer Attack'
                      ,keywords-['Crushing','Shredding']
-                     ,wounds-1
+                     ,damage-'1 Wound'
                      ,max_range-'Close'
                      ,hit-'Target Recoils'
                      ,hit_2-['(Alt)','']
@@ -28,7 +28,7 @@ scorpion:base_attack([name-'Pincer Attack'
 
 scorpion:special_attack([name-'Stinger Attack'
                         ,keywords-['Piercing','Venomous','Lethal']
-                        ,wounds-2
+                        ,damage-'2 Wounds'
                         ,max_range-'Close'
                         ,hit-'Target in Agony: d60'
                         ,hit_2-['(Alt)','']

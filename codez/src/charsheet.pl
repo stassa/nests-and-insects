@@ -148,7 +148,7 @@ format_attacks(Id,Att):-
               %,keywords-['Crushing','Shredding']
               ,keywords-BA_Keywords
               %,wounds-1
-              ,wounds-BA_Ws
+              ,damage-BA_Ws
               %,max_range-'Close'
               ,max_range-BA_Max_Range
               %,hit-'Taregt Recoils'
@@ -167,7 +167,7 @@ format_attacks(Id,Att):-
               %,keywords-['Piercing','Venomous','Lethal']
               ,keywords-SA_Keywords
               %,wounds-2
-              ,wounds-SA_Ws
+              ,damage-SA_Ws
               %,max_range-'Close'
               ,max_range-SA_Max_Range
               %,hit-'Taregt in Agony: d60'
@@ -188,7 +188,7 @@ format_attacks(Id,Att):-
         ,format(atom(Att_H),'║┌[Base Attack]──────────────────────────────┐┌[Special Attack]───────────────────────────┐ ║▓~n',[])
         ,format(atom(Att_Nm),'║│ ~|Name:~`.t~w~41+ ││ ~|Name:~`.t~w~41+ │ ║▓~n',[BA_Name,SA_Name])
         ,format(atom(Att_Kw),'║│ ~|Keywords:~`.t~w~41+ ││ ~|Keywords:~`.t~w~41+ │ ║▓~n',[BAK,SAK])
-        ,format(atom(Att_Ws),'║│ ~|Wounds:~`.t~w~41+ ││ ~|Wounds~`.t~w~41+ │ ║▓~n',[BA_Ws,SA_Ws])
+        ,format(atom(Att_Ws),'║│ ~|Damage:~`.t~w~41+ ││ ~|Damage:~`.t~w~41+ │ ║▓~n',[BA_Ws,SA_Ws])
         ,format(atom(Att_Rg),'║│ ~|Max. Range:~`.t~w~41+ ││ ~|Max. Range:~`.t~w~41+ │ ║▓~n',[BA_Max_Range,SA_Max_Range])
         ,format(atom(Att_H1),'║│ ~|Hit:~`.t~w~41+ ││ ~|Hit:~`.t~w~41+ │ ║▓~n',[BA_Hit1,SA_Hit1])
 	,format(atom(Att_H2),'║│ ~|Hit ~w:~`.t~w~41+ ││ ~|Hit ~w:~`.t~w~41+ │ ║▓~n',[Rem1,BA_Hit2,Rem4,SA_Hit2])

@@ -11,7 +11,7 @@ beetle:attribute(passions,35).
 
 beetle:base_attack([name-'Bite Attack'
                      ,keywords-['Crushing']
-                     ,wounds-2
+                     ,damage-'2 Wounds'
                      ,max_range-'Close'
                      ,hit-'Target Bleeding: ld40'
                      ,hit_2-['(Alt)','']
@@ -23,10 +23,10 @@ beetle:base_attack([name-'Bite Attack'
 
 beetle:special_attack([name-'Flying Horn Attack'
                         ,keywords-['Impact']
-                        ,wounds-4
+                        ,damage-'4 Wounds'
                         ,max_range-'Medium (Area)'
                         ,hit-'Targets Stunned: d60'
-                        ,hit_2-['(Crit)','Targets take 6 Wounds']
+                        ,hit_2-['(Crit)','Damage: 6 Wounds']
                         ,hit_3-['(Crit Add)','Targets Bleeding: d60']
                         ,miss_1-'Attacker Stunned: d60'
                         ,miss_2-['(Crit)','Attacker Bleeding: d60']]

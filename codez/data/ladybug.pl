@@ -11,7 +11,7 @@ ladybug:attribute(passions,35).
 
 ladybug:base_attack([name-'Bite Attack'
                      ,keywords-['Piercing','Shredding']
-                     ,wounds-1
+                     ,damage-'1 Wound'
                      ,max_range-'Close'
                      ,hit-'Target Bleeding: d40'
                      ,hit_2-['(Alt)','']
@@ -23,7 +23,7 @@ ladybug:base_attack([name-'Bite Attack'
 
 ladybug:special_attack([name-'Furious Bite Attack'
                         ,keywords-['Piercing','Shredding']
-                        ,wounds-2
+                        ,damage-'2 Wounds'
                         ,max_range-'Close'
                         ,hit-'Target Bleeding: d60'
                         ,hit_2-['(Alt)','']

@@ -11,7 +11,7 @@ ants:attribute(passions,25).
 
 ants:base_attack([name-'Bite Attack'
                      ,keywords-['Crushing','Shredding']
-                     ,wounds-2
+                     ,damage-'1 Wound per Ant'
                      ,max_range-'Close'
                      ,hit-'Target Immobilised: d40'
                      ,hit_2-['(Alt)','']
@@ -21,13 +21,13 @@ ants:base_attack([name-'Bite Attack'
                      ]
                     ).
 
-ants:special_attack([name-'Acid Spray'
-                        ,keywords-['Noxious']
-                        ,wounds-4
+ants:special_attack([name-'Swarming Attack'
+                        ,keywords-['Crushing','Shredding']
+                        ,damage-'2 Wounds per Ant'
                         ,max_range-'Medium (Area)'
                         ,hit-'Target Poisoned: d60'
                         ,hit_2-['(Alt)','']
-                        ,hit_3-['(Crit)','Target Poisoned: ld80']
+                        ,hit_3-['(Crit)','Target Immobilised: ld80']
                         ,miss_1-'Attacker Recoils'
                         ,miss_2-['(Alt)','']]
                        ).

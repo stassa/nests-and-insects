@@ -11,7 +11,7 @@ wasp:attribute(passions,40).
 
 wasp:base_attack([name-'Bite Attack'
                      ,keywords-['Shredding']
-                     ,wounds-1
+                     ,damage-'1 Wound'
                      ,max_range-'Close'
                      ,hit-'Target Recoils'
                      ,hit_2-['(Alt)','']
@@ -23,7 +23,7 @@ wasp:base_attack([name-'Bite Attack'
 
 wasp:special_attack([name-'Stinger Attack'
                         ,keywords-['Piercing','Venomous','Lethal']
-                        ,wounds-2
+                        ,damage-'2 Wounds'
                         ,max_range-'Close'
                         ,hit-'Target Poisoned: d60'
                         ,hit_2-['(Alt)','']
