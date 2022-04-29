@@ -26,8 +26,8 @@ wasp:special_attack([name-'Stinger Attack'
                         ,damage-'2 Wounds'
                         ,max_range-'Close'
                         ,hit-'Target Poisoned: d60'
-                        ,hit_2-['(Alt)','']
-                        ,hit_3-['(Crit)','Target Killed']
+                        ,hit_2-['(Crit)','Target Killed']
+                        ,hit_3-['(Crit,Rem)','(Swarms take 2 Wounds)']
                         ,miss_1-'Attacker Stunned: ld80'
                         ,miss_2-['(Alt)','']]
                        ).
