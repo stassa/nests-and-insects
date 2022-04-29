@@ -185,16 +185,16 @@ The Game
 
 Nests & Insects is a Roguelike TTRPG. It is "Roguelike" because it is inspired by
 computer roleplaying games (CRPGs) of the Roguelike genre, like Nethack, Angband, Moria
-and Ancient Domains of Darkness.
+and Ancient Domains of Mystery.
 
 A "Roguelike TTRPG" is a case of board games imitating computer games, imitating board
 games: most roguelike CRPGs are inspired by TTRPGs, particularly Dungeons & Dragons, the
 grandaddy of all TTRPGs (and all CRPGs to boot). Roguelikes borrow from TTRPGs the
-hack-and-slash, dungeon-crawl style of gameplay and common themes of fantasy and science
-fiction. Nests & Insects borrows from Roguelike CRPGs game elements like: procedural
-generation; a focus on hack-and-slash gameplay; lethal combat; freedom to tackle
-challenges in different ways; a focus on exploration of, and experimentation in the game
-world; and the need for characters to find sustenance or die.
+hack-and-slash, dungeon-crawling style of gameplay and common themes of fantasy and
+science fiction. Nests & Insects borrows from Roguelike CRPGs game elements like:
+procedural generation; a focus on hack-and-slash gameplay; lethal combat; freedom to
+tackle challenges in different ways; a focus on exploration of, and experimentation in
+the game world; and the need for characters to find sustenance or die.
 
 While Nests & Insects is a roleplaying game, it is not focused on roleplaying, because it
 is very difficult for humans to roleplay arthropods (and vice-versa). As in Roguelike
@@ -209,7 +209,7 @@ character's beginning stats (collectively called Features). The Game Queen then 
 procedurally generate the first Room in the entrance to the first Level of the Nest, and
 the characters enter and begin their Job. After visiting a Room and defeating its
 challenges characters get a chance to rest and recoup their strength, and players can use
-experience gained to improve their characters.  The game ends when the characters fulfill
+experience gained to improve their characters. The game ends when the characters fulfill
 the terms of the Job, or give up, or run away, or die.
 
 Everything encountered by characters during a Job is procedurally generated. If the Game
@@ -575,7 +575,7 @@ Food box
 
 The Food box (Figure 10) lists the character's Hunger rating and has a radio-button for
 the Starving Effect. Starving is ticked when Hunger reaches 100%. While Starving, a
-character takes a penalty in the DoS of all minigame actions.
+character takes a penalty in the DoS of all minigame Actions.
 
 ┌[Food]───────────────────┐
 │ ○ Hunger........[___0%] │
@@ -596,7 +596,7 @@ an up-arrow (^) in the bottom of the Luck box.
 ───────────────────────────────────────────────────────────────
 Figure 11: Luck box, with the Luck marker on 11% (starting Luck).
 
-Characters start the game with 11% Luck. During the game A character's Luck rating
+Characters start the game with 11% Luck. During the game a character's Luck rating
 changes whenever the player rolls a d100 and the same digit appears on both d10s. This is
 known as "rolling a double". When a double is rolled, the Luck marker is moved to the
 rating that matches the double.
@@ -925,9 +925,9 @@ In Nests & Insects Wasps are high-mobility, shock troops optimised for menoeuver
 and damage, but they have soft bodies without a protective carapace armour. They can use
 their high Signalling to perform aggessive displays of their death stripes and drain the
 morale of their enemies, thus reducing their Disposition. Wasps have good knowledge of
-eusocial insects' domains thanks to their high Eusociology, acquired over years of
-raiding the nests of Bees. They are excellent at Foraging and can identify valuable or
-dangerous Food items.
+eusocial insects' domains thanks to their high Eusociology, acquired while raiding the
+nests of Bees, and tending to their own. They are excellent at Foraging and can identify
+valuable or dangerous Food items.
 
 Choose this class:
 ------------------
