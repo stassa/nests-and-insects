@@ -1622,21 +1622,21 @@
 ║ character's Intent, then rolls a d100 and compares its result to two target numbers,      ║▓
 ║ Effort and Resistance, determined by Features of the character, and enemies or the Nest   ║▓
 ║ environment, respectively. The player wants to roll under Effort and over Resistance. The ║▓
-║ comparison determines one of four initial Degrees of Success or Failure for the action:   ║▓
+║ comparison determines one of four initial Degrees of Success (or Failure) for the action: ║▓
 ║ Complete Failure, Partial Failure, Partial Success or Complete Success, in order from     ║▓
 ║ worst to best.                                                                            ║▓
 ║                                                                                           ║▓
-║ Two additional Degrees of Success, Critical Failure (worse than Complete Failure) and     ║▓
-║ Critical Success (better than Complete Success) can be achieved by comparing the initial  ║▓
-║ d100 roll to "static" modifiers, or making up to two new d100 rolls and comparing them to ║▓
-║ "dramatic" modifiers. The comparison to modifiers may move ("Shift") the Degree of        ║▓
-║ Success up or down the six-degree ordering from Critical Failure to Critical Success.     ║▓
+║ Modifiers may change the Degree of Success. "Static" modifiers are compared to the        ║▓
+║ initial d100 Roll. "Dramatic" modifiers are compared each to a new d100 roll. Both types  ║▓
+║ of modifier can be positive or negative. Rolling under, or equal to a positive modifier   ║▓
+║ "Shifts Up" (improves) the Degree of Success; rolling under, or equal to a negative       ║▓
+║ modifier "Shifts Down" (worsens) the Degree of Success. A Shift Up changes a Complete     ║▓
+║ Success to a Critical Success and a Shift Down changes a Complete Failure to a Critical   ║▓
+║ Failure.                                                                                  ║▓
 ║                                                                                           ║▓
 ║ Finally, the results of actions may need to be quantified by rolling a decile die. The    ║▓
 ║ Game Queen (GQ) then describes the outcome of the action according to the character's     ║▓
 ║ Intent and the Degree of Success of the action.                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -2136,12 +2136,12 @@
 ║ │ Resistance. The Action outcome is a Failure and Beetle cannot lift the debris.        │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ ┌[Note 2]───────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ │ The outcome of a Contested Boolean Roll can only be Success when Effort is equal to,  │ ║▓
+║ │ or higher than Resistance. When Resistance is higher than Effort, the Action can only │ ║▓
+║ │ fail. In that case, either don't make any rolls at all, or make a full Qualification  │ ║▓
+║ │ Roll or a simple Boolean Roll instead.                                                │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
