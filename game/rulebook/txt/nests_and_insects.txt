@@ -92,45 +92,45 @@
 ║                                                                                           ║▓
 ║ System ............................................................................... 29 ║▓
 ║   Fuzzy d100 ......................................................................... 30 ║▓
-║     Six Degrees of Success and Failure ............................................... 30 ║▓
-║     Percentile Features .............................................................. 31 ║▓
-║   Taking Actions ..................................................................... 32 ║▓
-║     Action resolution steps .......................................................... 32 ║▓
+║     D100 ............................................................................. 30 ║▓
+║     Decile dice ...................................................................... 31 ║▓
+║     Six Degrees of Success and Failure ............................................... 32 ║▓
+║     Percentile Features .............................................................. 33 ║▓
 ╚════════════════════════════════════════════-i-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
-║     Describing Intent ................................................................ 33 ║▓
-║     Effort and Resistance ............................................................ 34 ║▓
-║     Qualification .................................................................... 35 ║▓
-║     Modification ..................................................................... 36 ║▓
-║     Choosing modifiers ............................................................... 37 ║▓
-║     Boolean Roll ..................................................................... 38 ║▓
-║     Contested Boolean Roll ........................................................... 39 ║▓
-║   Quantiying results ............................................................... TODO ║▓
-║     Quantification Roll  ........................................................... TODO ║▓
-║     Decile dice .................................................................... TODO ║▓
-║       Nominal reading .............................................................. TODO ║▓
-║       Literal reading .............................................................. TODO ║▓
+║   Taking Actions ..................................................................... 34 ║▓
+║     Action resolution steps .......................................................... 34 ║▓
+║     Describing Intent ................................................................ 35 ║▓
+║     Effort and Resistance ............................................................ 36 ║▓
+║     Qualification .................................................................... 37 ║▓
+║     Modification ..................................................................... 38 ║▓
+║     Choosing modifiers ............................................................... 39 ║▓
+║     Quantification ................................................................... 40 ║▓
+║     Resolution ....................................................................... 41 ║▓
+║   Simplified Rolls ................................................................... 42 ║▓
+║     Boolean Roll ..................................................................... 42 ║▓
+║     Contested Boolean Roll ........................................................... 43 ║▓
 ║   Minigames ........................................................................ TODO ║▓
 ║     Combat ......................................................................... TODO ║▓
 ║     Survival ....................................................................... TODO ║▓
 ║     Hunting and Foraging ........................................................... TODO ║▓
 ║     Resting and Healing ............................................................ TODO ║▓
 ║                                                                                           ║▓
-║ Setting .............................................................................. 40 ║▓
+║ Setting .............................................................................. 44 ║▓
 ║   Clients and Jobs ................................................................. TODO ║▓
 ║   Environment ...................................................................... TODO ║▓
 ║     Nests .......................................................................... TODO ║▓
 ║     Levels ......................................................................... TODO ║▓
 ║     Rooms .......................................................................... TODO ║▓
-║   Enemies ............................................................................ 41 ║▓
+║   Enemies ............................................................................ 45 ║▓
 ║     Ants ........................................................................... TODO ║▓
 ║     Bees ........................................................................... TODO ║▓
-║     Termites ......................................................................... 42 ║▓
-║       Worker Termite ................................................................. 43 ║▓
-║       Minor Termite Soldier - Autothyte .............................................. 44 ║▓
-║       Major Termite Soldier - Authotyte .............................................. 46 ║▓
-║       Nasute Soldier ................................................................. 47 ║▓
+║     Termites ......................................................................... 46 ║▓
+║       Worker Termite ................................................................. 47 ║▓
+║       Minor Termite Soldier - Autothyte .............................................. 48 ║▓
+║       Major Termite Soldier - Authotyte .............................................. 50 ║▓
+║       Nasute Soldier ................................................................. 51 ║▓
 ║       Alates - King ................................................................ TODO ║▓
 ║       Alates - Queen ............................................................... TODO ║▓
 ║   Food Items ....................................................................... TODO ║▓
@@ -1652,6 +1652,103 @@
 ║                                                                                           ║▓
 ║                                        Fuzzy d100                                         ║▓
 ║                                        ==========                                         ║▓
+║ D100                                                                                      ║▓
+║ ----                                                                                      ║▓
+║                                                                                           ║▓
+║ The die used for action resolution in fd100 is the "d100". This is nominally a            ║▓
+║ hundred-sided die, but, in practice, a composite die comprised of two, ten-sided dice     ║▓
+║ (d10s), rolled together and read as one to generate numbers in the range 1 to 100.        ║▓
+║                                                                                           ║▓
+║ One of the d10 should be a "percentile" die, noted d10%, with sides inscribed with the    ║▓
+║ numbers: 00, 10, 20, 30, 40, 50, 60, 70, 80 and 90. This is to be the "tens" die,         ║▓
+║ generating powers of ten, the decades of the percentile roll.                             ║▓
+║                                                                                           ║▓
+║ The other d10 should be a "d10", with sides inscribed with the single digits: 0, 1, 2, 3, ║▓
+║ 4, 5, 6, 7, 8, and 9. This is to be the "ones" die generating powers of 1, the units of   ║▓
+║ the percentile roll.                                                                      ║▓
+║                                                                                           ║▓
+║ The d10% and the d10 are rolled together. Most of the time the numbers they show are read ║▓
+║ as they appear on the two dice, with the d10% result read first. For example, if the d10% ║▓
+║ shows "40" and the d10 shows "3", the two dice together are read as "forty three" and the ║▓
+║ d100 result is "43". There are a few special cases, listed below.                         ║▓
+║                                                                                           ║▓
+║ 1. When the d10% shows "00" and the d10 shows "0", the d100 result is "100".              ║▓
+║                                                                                           ║▓
+║ 2. When the d10% shows "00" and the d10 any digit other than a "0" the d100 result is     ║▓
+║    equal to the value of the digit showing on the d10. For example, when the d10% shows   ║▓
+║    "00" and the d10 shows "4", the d100 result is "4".                                    ║▓
+║                                                                                           ║▓
+║ 3. When the d10% shows "10" and the d10 shows "0", the d100 result is read as "ten" - not ║▓
+║    as ten-zero, and not as 100!                                                           ║▓
+║                                                                                           ║▓
+║ 4. When the d10% shows "10" and the d10 shows any digit other than a "0", the d100 result ║▓
+║    is read as "eleven", "twelve", "thirteen", etc, not as "ten-one", "ten-two" etc!       ║▓
+║                                                                                           ║▓
+║ The d100 results Table below summarises the reading of some of the d100 special cases.    ║▓
+║                                                                                           ║▓
+║ d10% shows    d10 shows    Read as          d100 result                                   ║▓
+║ ───────────────────────────────────────────────────────                                   ║▓
+║ 00            1            "one"            01                                            ║▓
+║ 00            9            "nine"           09                                            ║▓
+║ 00            0            "one hundred"    100                                           ║▓
+║ 10            1            "eleven"         11                                            ║▓
+║ 10            9            "nineteen"       19                                            ║▓
+║ 10            0            "ten"            10                                            ║▓
+║ ───────────────────────────────────────────────────────                                   ║▓
+║ Table: d100 results                                                                       ║▓
+╚═══════════════════════════════════════════-30-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ Decile dice                                                                               ║▓
+║ -----------                                                                               ║▓
+║                                                                                           ║▓
+║ The results of some Actions may need to be quantified. This is particularly the case for  ║▓
+║ Actions that bestow an Effect on a character or another game entity. To quantify results  ║▓
+║ of Actions on the same percentile scale as Features, Nests & Insects uses "decile dice",  ║▓
+║ combinations of two polyhedral dice, rolled together and read as one.                     ║▓
+║                                                                                           ║▓
+║ Nests & Insects uses five decile dice: the d20, d40, d60, d80 and the d100 that is also   ║▓
+║ used in Action resolution. The d20 is a single die. The d40, d60, d80 and d100 are        ║▓
+║ composite dice, compirsed of a pair of a polyhedral die: the d4, d6, d8, and d10%, used   ║▓
+║ to generate the "tens" of the roll; and a d10 used to generate the "ones".                ║▓
+║                                                                                           ║▓
+║ Nominal and literal readings                                                              ║▓
+║ ----------------------------                                                              ║▓
+║                                                                                           ║▓
+║ There are two ways to read a decile die: the "nominal" reading, and the "literal"         ║▓
+║ reading.                                                                                  ║▓
+║                                                                                           ║▓
+║ In the nominal reading, the highest digit on the tens die is read as "0" unless the       ║▓
+║ "ones" d10 also shows a "0", in which case the highest digit on the tens die is read as   ║▓
+║ itself and the result of the decile die is read as the maximum value in the nominal range ║▓
+║ (40, 60, 80, 90 and 100).                                                                 ║▓
+║                                                                                           ║▓
+║ In the literal reading, the digits on each die are read exactly as they come up. This     ║▓
+║ includes the d100! The d20 is always read literally. The two readings yield two slightly  ║▓
+║ different decile ranges, summarised in the Table below.                                   ║▓
+║                                                                                           ║▓
+║ Decile die      Tens die      Ones die      Nominal Range    Literal Range                ║▓
+║ ──────────────────────────────────────────────────────────────────────────                ║▓
+║ d20             Not any!      d20           1 to 20          1 to 20                      ║▓
+║ d40             d4            d10           1 to 40          10 to 49                     ║▓
+║ d60             d6            d10           1 to 60          10 to 69                     ║▓
+║ d80             d8            d10           1 to 80          10 to 89                     ║▓
+║ d100            d10%          d10           1 to 100         10 to 110                    ║▓
+║ ──────────────────────────────────────────────────────────────────────────                ║▓
+║ Table: Decile dice, nominal and literal readings.                                         ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-31-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║ Six Degrees of Success and Failure                                                        ║▓
 ║ ----------------------------------                                                        ║▓
@@ -1696,7 +1793,10 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-30-════════════════════════════════════════════╝▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-32-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -1746,7 +1846,7 @@
 ║ Conditions, Effects, etc. The "Character Sheet" chapter briefly describes the different   ║▓
 ║ categories of character Features. Complete descriptions of the Features of characters and ║▓
 ║ enemies, and their use in the game, are given in the Chapters "Character", and "Setting". ║▓
-╚═══════════════════════════════════════════-31-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-33-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -1796,7 +1896,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-32-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-34-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -1846,7 +1946,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-33-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-35-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -1868,7 +1968,7 @@
 ║ │ the Nest's environment, or any game entity opposing the character's Intent.           │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-║ ┌[Rules Summary 5: Choosing Effort and Resistance]──────────────────────────────────────┐ ║▓
+║ ┌[Rules Summary 6: Choosing Effort and Resistance]──────────────────────────────────────┐ ║▓
 ║ │ The description of the character's Intent informs the selection of Features used as   │ ║▓
 ║ │ Effort and Resistance. Minigame rules define the Features to use as Effort and        │ ║▓
 ║ │ Resistance for formulaic minigame Actions with predefined Intent.                     │ ║▓
@@ -1896,14 +1996,14 @@
 ║ is 68% which is already pretty good, but Cody wants to maximise the chance to intimidate  ║▓
 ║ the Termites. It's up to the GQ whether to accept this or not. If the GQ decides that     ║▓
 ║ Signalling is the appropriate Feature to use as Effort, so it is.                         ║▓
-╚═══════════════════════════════════════════-34-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-36-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║ Qualification                                                                             ║▓
 ║ -------------                                                                             ║▓
 ║                                                                                           ║▓
-║ ┌[Rules Summary 6: Qualification Roll]──────────────────────────────────────────────────┐ ║▓
+║ ┌[Rules Summary 7: Qualification Roll]──────────────────────────────────────────────────┐ ║▓
 ║ │ To make a Qualification Roll means to roll a d100 and compare it to Effort and        │ ║▓
 ║ │ Resistance, simultaneously. To roll under, or equal to, Effort is to achieve or       │ ║▓
 ║ │ "match" Effort. To roll over Resistance is to overcome, or "beat" Resistance.         │ ║▓
@@ -1929,7 +2029,7 @@
 ║ ─────────────────────────────────────────────────────────────────────────                 ║▓
 ║ Table: Degree of Success.                                                                 ║▓
 ║                                                                                           ║▓
-║ ┌[Rules Summary 7: Degree of Success and Failure]───────────────────────────────────────┐ ║▓
+║ ┌[Rules Summary 8: Degree of Success and Failure]───────────────────────────────────────┐ ║▓
 ║ │ If the Qualification Roll matches Effort, then the Action is a "Success"; otherwise,  │ ║▓
 ║ │ it is a "Failure". If the Qualification Roll beats Resistance, then the Action is a   │ ║▓
 ║ │ "Complete" Success, or a "Partial" Failure; otherwise it is a Complete Failure, or a  │ ║▓
@@ -1946,26 +2046,26 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-35-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-37-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║ Modification                                                                              ║▓
 ║ ------------                                                                              ║▓
 ║                                                                                           ║▓
-║ ┌[Rules Summary 8: Static and Dramatic Modifiers]───────────────────────────────────────┐ ║▓
+║ ┌[Rules Summary 9: Static and Dramatic Modifiers]───────────────────────────────────────┐ ║▓
 ║ │ Modifiers change the DoS of an Action. There are two types of modifiers: static and   │ ║▓
 ║ │ dramatic. Static modifiers are compared to the d100 result of the Qualification roll. │ ║▓
 ║ │ For each dramatic modifier a new d100 roll is made and the dramatic modifier compared │ ║▓
 ║ │ to the result of the roll.                                                            │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-║ ┌[Rules Summary 9: Positive and Negative Modifiers]─────────────────────────────────────┐ ║▓
+║ ┌[Rules Summary 10: Positive and Negative Modifiers]────────────────────────────────────┐ ║▓
 ║ │ Modifiers can be positive or negative. Matching a positive modifier confers a Shift   │ ║▓
 ║ │ Up to the Dos. Failiing to match a negative modifier confers a shift Down to the DoS. │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-║ ┌[Rules Summary 10: Shifts Up and Shifts Down]──────────────────────────────────────────┐ ║▓
+║ ┌[Rules Summary 11: Shifts Up and Shifts Down]──────────────────────────────────────────┐ ║▓
 ║ │ A Shift Up changes the DoS from worst to best. A Shift Down changes the DoS from best │ ║▓
 ║ │ to worst. A Shift Up from Complete Success changes the DoS to Critical Success. A     │ ║▓
 ║ │ Shift Down from Complete Failure changes the DoS to Critical Failure.                 │ ║▓
@@ -1996,7 +2096,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-36-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-38-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2013,7 +2113,7 @@
 ║ dramatic modifiers should apply when it is dramatically appropriate to take additional    ║▓
 ║ information into account that might change the course of the game.                        ║▓
 ║                                                                                           ║▓
-║ ┌[Rules Summary 11: The Rule of Two]────────────────────────────────────────────────────┐ ║▓
+║ ┌[Rules Summary 12: The Rule of Two]────────────────────────────────────────────────────┐ ║▓
 ║ │ At most two dramatic modifiers may be applied to a single Action: either a) two       │ ║▓
 ║ │ positive, or b) two negative, or c) one positive and one negative.                    │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
@@ -2046,9 +2146,112 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-37-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-39-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ Quantification                                                                            ║▓
+║ --------------                                                                            ║▓
+║                                                                                           ║▓
+║ ┌[Rules Summary 13: Quantification Roll]────────────────────────────────────────────────┐ ║▓
+║ │ To make a Quantification Roll means to roll a decile die and change the rating of a   │ ║▓
+║ │ Feature according to the result. There are three types of Quantification Roll: a Roll │ ║▓
+║ │ to Set, a Roll to Increase, and a Roll to Decrease, the value of a Feature.           │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ ┌[Rules Summary 14: Roll to Set]────────────────────────────────────────────────────────┐ ║▓
+║ │ To make a Quantification Roll to set the rating of a Feature, roll a decile die and   │ ║▓
+║ │ change the rating of the Feature to the result of the decile die.                     │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ ┌[Rules Summary 15: Roll to Increase]───────────────────────────────────────────────────┐ ║▓
+║ │ To make a Quantification Roll to increase the rating of a Feature, roll a decile die  │ ║▓
+║ │ and compare it to the rating of the Feature. If the result of the roll is higher,     │ ║▓
+║ │ change the rating of the Feature to the result of the decile die.                     │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ ┌[Rules Summary 16: Roll to Decrease]───────────────────────────────────────────────────┐ ║▓
+║ │ To make a Quantification Roll to decrease the rating of a Feature, roll a decile die  │ ║▓
+║ │ and compare it to the rating of the Feature. If the result of the roll is lower,      │ ║▓
+║ │ change the rating of the Feature to the result of the decile die.                     │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ A Quantification Roll is made to quantify the results of an Action. Invariably, the       ║▓
+║ Quantification Roll modifies the rating of a Feature of a character, an enemy, or the     ║▓
+║ Nest environment. The rating of the Feature is directly set to the value of the           ║▓
+║ Quantification Roll, without addition or subtraction, as summarised in Rules Summaries    ║▓
+║ 17-19.                                                                                    ║▓
+║                                                                                           ║▓
+║ If the results of an Action need to be quantified, this will be explicitly stated in the  ║▓
+║ rules: either the rules of a minigame, or the description of a Feature. The GQ may also   ║▓
+║ decide that an Action needs quantification.                                               ║▓
+║                                                                                           ║▓
+║ A Quantification Roll is only made after the Modification step of Action resolution, when ║▓
+║ the final DoS of an Action is known. This is because the decile die to roll will usually  ║▓
+║ depend on the DoS of the Action.                                                          ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-40-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ Resolution                                                                                ║▓
+║ ----------                                                                                ║▓
+║                                                                                           ║▓
+║ ┌[Rules Summary 17: Outcome description]────────────────────────────────────────────────┐ ║▓
+║ │ The outcome of Actions is described by the GQ.                                        │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ Once the Qualification roll is made, the final DoS of the Action is known, Action results ║▓
+║ are Quantified and Features' ratings are changed as necessary, the GQ describes the       ║▓
+║ outcome of the Action.                                                                    ║▓
+║                                                                                           ║▓
+║ _The role of the GQ_ The GQ's responsibility is to be the eyes and ears of the players in ║▓
+║ the game world and the only interface between the players and the their characters. Only  ║▓
+║ what the GQ describes, actually happens in the game world. In that sense, the role of the ║▓
+║ GQ is that of a benevolent dictator: she has absolute authority over the game world, but  ║▓
+║ she must ensure that the game is worthwhile for the entire group.                         ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-41-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║                                     Simplified Rolls                                      ║▓
+║                                     ================                                      ║▓
 ║                                                                                           ║▓
 ║ Boolean Roll                                                                              ║▓
 ║ ------------                                                                              ║▓
@@ -2057,7 +2260,7 @@
 ║ or Failure, without any finer gradation. Only an Effort value need be chosen to make      ║▓
 ║ a Boolean roll- neither Resistance, nor modifiers are taken into account.                 ║▓
 ║                                                                                           ║▓
-║ ┌[Rules Summary 12: Boolean Roll]───────────────────────────────────────────────────────┐ ║▓
+║ ┌[Rules Summary 18: Boolean Roll]───────────────────────────────────────────────────────┐ ║▓
 ║ │ To make a Boolean Roll describe the character's Intent and choose Effort as for a     │ ║▓
 ║ │ Qualification Roll, then roll d100 and compare the result to Effort. If the result of │ ║▓
 ║ │ the d100 roll matches Effort, the attempted Action Succeeds. Otherwise, it Fails.     │ ║▓
@@ -2075,9 +2278,9 @@
 ║ start of Combat, or to resist an Effect for a Turn.                                       ║▓
 ║                                                                                           ║▓
 ║ The GQ may also call for a Boolean Roll when the complexity of determining the full Six   ║▓
-║ Degrees of Success and Failure of a Qualification Roll with modifiers is not deemed       ║▓
-║ necessary, or when it is not clear from the context of an Action what the difference is   ║▓
-║ between different DoS.                                                                    ║▓
+║ Degrees of Success and Failure of a Qualification Roll with modifiers is not justified by ║▓
+║ the context of the Action, or when it is not clear from the context of an Action what the ║▓
+║ difference is between different DoS.                                                      ║▓
 ║                                                                                           ║▓
 ║ ┌[Example 5]────────────────────────────────────────────────────────────────────────────┐ ║▓
 ║ │ Beetle is trying to lift a piece of debris from the Nest's floor. This is a simple    │ ║▓
@@ -2090,13 +2293,10 @@
 ║ │ In percentile systems the Boolean Roll is more often known as as a "Skill Check" or   │ ║▓
 ║ │ "Test". Nests & Insects calls it a "Boolean Roll" to distinguish its crisp, binary    │ ║▓
 ║ │ determination of success and Failure from the "fuzzy" one of the Qualification Roll.  │ ║▓
+║ │ Unfortunately, the alternative "Crisp Roll" was not thematically appropriate.         │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-╚═══════════════════════════════════════════-38-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-42-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2107,9 +2307,9 @@
 ║ a game entity to a character's Effort, but like the ordinary Boolean Roll, only           ║▓
 ║ determines Success or Failure, without any degrees thereof.                               ║▓
 ║                                                                                           ║▓
-║ ┌[Rules Summary 13: Contested Boolean Roll]─────────────────────────────────────────────┐ ║▓
-║ │ To make a Boolean Roll describe the character's Intent and choose Effort and          │ ║▓
-║ │ Resistance as for a Qualification Roll, then roll d100 and compare the result to      │ ║▓
+║ ┌[Rules Summary 19: Contested Boolean Roll]─────────────────────────────────────────────┐ ║▓
+║ │ To make a Contested Boolean Roll describe the character's Intent and choose Effort    │ ║▓
+║ │ and Resistance as for a Qualification Roll, then roll d100 and compare the result to  │ ║▓
 ║ │ Effort and Resistance simultaneously. If the result of the d100 roll matches Effort   │ ║▓
 ║ │ and beats Resistance, the attempted Action Succeeds. Otherwise, it fails.             │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
@@ -2124,7 +2324,8 @@
 ║ Table: Contested Boolean Roll                                                             ║▓
 ║                                                                                           ║▓
 ║ Unlike the Boolean Roll, the Contested Boolean Roll is not called for by any minigames.   ║▓
-║ The main use of the Contested Boolean Roll is to simplify the resolution of Actions where ║▓
+║ It's up to the GQ to decide when a Contested Boolean Roll is the preferred option. The    ║▓
+║ main use of the Contested Boolean Roll is to simplify the resolution of Actions where     ║▓
 ║ it makes sense to take into account the Resistance to a character's Effort, but where the ║▓
 ║ full complexity of the Six Degrees of Success of the Qualification Roll is not needed.    ║▓
 ║                                                                                           ║▓
@@ -2145,8 +2346,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-╚═══════════════════════════════════════════-39-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-43-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2196,7 +2396,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-40-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-44-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2246,7 +2446,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-41-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-45-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2296,7 +2496,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-42-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-46-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2346,7 +2546,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-43-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-47-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2396,7 +2596,7 @@
 ║ │                                                                                       │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-44-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-48-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2446,7 +2646,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-45-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-49-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2496,7 +2696,7 @@
 ║ ┌[Special Rule - Nest Guardians]────────────────────────────────────────────────────────┐ ║▓
 ║ │ Same as for Minor Termite Soldiers.                                                   │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
-╚═══════════════════════════════════════════-46-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-50-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2546,7 +2746,7 @@
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-47-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-51-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2596,5 +2796,5 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-48-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-52-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
