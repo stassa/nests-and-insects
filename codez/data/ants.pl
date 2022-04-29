@@ -24,7 +24,7 @@ ants:base_attack([name-'Bite Attack'
 ants:special_attack([name-'Swarming Attack'
                         ,keywords-['Crushing','Shredding']
                         ,damage-'2 Wounds per Ant'
-                        ,max_range-'Medium (Area)'
+                        ,max_range-'Close'
                         ,hit-'Target Poisoned: d60'
                         ,hit_2-['(Alt)','']
                         ,hit_3-['(Crit)','Target Immobilised: ld80']
