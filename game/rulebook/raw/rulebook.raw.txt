@@ -110,6 +110,7 @@ System .........................................................................
   Simplified Rolls ................................................................... 42
     Boolean Roll ..................................................................... 42
     Contested Boolean Roll ........................................................... 43
+  Acting in tandem ................................................................. TODO
   Minigames ........................................................................ TODO
     Combat ......................................................................... TODO
     Survival ....................................................................... TODO
@@ -444,7 +445,7 @@ Passions &       Willpower, morale, strength of spirit and courage
 \end{table}
 Table 6: Character Attributes
 
-XP Tickboxes: In the Attributes Area each attribute is listed with an empty tickbox to
+_XP Tickboxes_ In the Attributes Area each attribute is listed with an empty tickbox to
 the left, marked "XP", as shown in Figure 3. This is an *XP tickbox*. "XP" stands for
 "Experience Points". XP tickboxes are also found next to Combat Conditions, Survival
 Features and Common Abilities.
@@ -1571,19 +1572,19 @@ with soil and plant matter bound with their feces. Well, yes. Termite nests are 
 to networks of underground tunnels that are used to forage in safety. In Nests & Insects
 Termite Nests are gigagntic Cathedrals extending to many meters above and below ground.
 
-Termites are orgranised into castes, most of them without reproductive ability or
-orgrans, and without wings and blind. Termite life is hard but the Nest thrives. The
-worker caste forage and tend to the Nest and the other castes. The Soldier caset protects
-the nest willingly sacrificing its life. The two reproductive castes, the King and Queen,
-are responsible for making sure the Nest is always full of millions of Termites of all
+Termites are orgranised into castes, most of them without reproductive ability or organs,
+and without wings or eyes. Termite life is hard but the Nest thrives. The worker caste
+forage and tend to the Nest and the other castes. The Soldier caset protects the nest
+willingly sacrificing its life. The two reproductive castes, the King and Queen, are
+responsible for making sure the Nest is always full of millions of Termites of all
 castes.
 \newpage
 
 Worker Termite
 --------------
 
-Worker Termites are unarmed and blind, and cannot fight, but they are numerous, swarm and
-will raise the alarm as soon as they become aware that the Nest has been breached.
+Worker Termites are unarmed and blind, and cannot fight, but they are numerous, swarm,
+and will raise the alarm as soon as they become aware that the Nest has been breached.
 Workers raise the alarm by bumping into each other and causing each other to release
 alarm pheromones. The pheromone trail spreads throughout the nest attracting more workers
 and, soon enough, soldiers. Attacking a swarm of workers causes them to release alarm
@@ -1604,23 +1605,13 @@ Table: Worker Termite Features
 
 \begin{box}[Special Rule - Alarm Pheromones]
 
-Every Turn of Combat, Worker Termites automatically roll Swarming. If the roll
-succeeds, new Termites arrive. Roll on the Termite Worker Summons Table below and
-choose the result with the lowest Chance higher than or equal to the roll value.
+At the start of each Combat Turn the GQ makes a Boolean Roll against the Worker
+Termites' Swarming. If the roll succeeds, new Termites arrive. Roll on the Termite
+Worker Summons Table below and choose the result with the lowest Chance higher than
+or equal to the roll value.
 
 \end{box}
 
-/*
-\begin{table}[8]
-Termite Caste and Numbers Summoned&       Chance to Summon
-d20 Workers                       &       80%
-1 Minor Autothyte Soldiers        &       60%
-5 Major Autothyte Soldiers        &       30%
-3 Nasute Soldiers                 &       25%
-\end{table}
-Table: Termite Worker summons
-\newpage
-*/
 \begin{table}[8]
 Termite Caste           &    Numbers Summoned&    Chance to Summon
 Worker Termites         &    d20             &    80%
