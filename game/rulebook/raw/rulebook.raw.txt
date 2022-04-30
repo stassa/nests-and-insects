@@ -111,26 +111,37 @@ System .........................................................................
     Boolean Roll ..................................................................... 42
     Contested Boolean Roll ........................................................... 43
   Acting in tandem ................................................................. TODO
-  Minigames ........................................................................ TODO
-    Combat ......................................................................... TODO
-    Survival ....................................................................... TODO
+  Minigames .......................................................................... 44
+    Minigame Formulaic Actions ....................................................... 45
+    Combat ........................................................................... 46
+      Combat Summary ................................................................. 46
+      Combat Steps ................................................................... 47
+      Determine Combatants and Sides ................................................. 48
+      Starting Disposition ........................................................... 49
+      Initiative Order ............................................................... 50
+      Combat Rounds .................................................................. 51
+      Attack Action .................................................................. 52
+      Suppress Action ................................................................ 53
+      Support Action ................................................................. 54
+      Resisting Effects .............................................................. 55
+    Survival and Exploration ....................................................... TODO
     Hunting and Foraging ........................................................... TODO
     Resting and Healing ............................................................ TODO
 
-Setting .............................................................................. 44
+Setting .............................................................................. 56
   Clients and Jobs ................................................................. TODO
   Environment ...................................................................... TODO
     Nests .......................................................................... TODO
     Levels ......................................................................... TODO
     Rooms .......................................................................... TODO
-  Enemies ............................................................................ 45
+  Enemies ............................................................................ 57
     Ants ........................................................................... TODO
     Bees ........................................................................... TODO
-    Termites ......................................................................... 46
-      Worker Termite ................................................................. 47
-      Minor Termite Soldier - Autothyte .............................................. 48
-      Major Termite Soldier - Authotyte .............................................. 50
-      Nasute Soldier ................................................................. 51
+    Termites ......................................................................... 58
+      Worker Termite ................................................................. 59
+      Minor Termite Soldier - Autothyte .............................................. 60
+      Major Termite Soldier - Authotyte .............................................. 62
+      Nasute Soldier ................................................................. 63
       Alates - King ................................................................ TODO
       Alates - Queen ............................................................... TODO
   Food Items ....................................................................... TODO
@@ -1553,6 +1564,401 @@ Roll or a simple Boolean Roll instead.
 
 \newpage
 
+                                      Minigames
+                                      =========
+
+Nests & Insects is organised around four "minigames". A minigame is a set of special
+rules for a special game situation that Nests & Insects wants to model with more detail
+than the standard fd100 rules. Combat is the most detailed and elaborate of Nests &
+Insects' minigames. The other three are Survival and Exploration; Hunting and Foraging;
+and Resting and Healing.
+
+_Combat_ The Combat minigame defines rules for, well, combat between the players'
+characters and a Nest's denizens.
+
+_Survival and Exploration_ The Survival and Exploration minigame defines rules for
+characters to explore, and the GQ to roll the dice to procedurally generate, a Nest.
+
+_Hunting and Foraging_ The Hunting and Foraging minigame defines rules for finding
+sustenance and medicinal Food items.
+
+_Resting and Healing_ The Resting and Healing minigame defines rules for healing from
+wounds and Effects, consuming food Items to reduce Hunger, and using XP to improve
+characters' Features.
+
+\newpage
+
+Minigame Formulaic Actions
+--------------------------
+
+Each minigame is characterised by a set of standard Actions that characters typically
+take during the circumstances modelled by the minigame. For example, during Combat,
+characters typically attack enemies. Such Actions are a minigame's "formulaic" Actions.
+
+Minigames define each of their formulaic Actions by means of a Formula that includes at
+least a listing of Effort, Resistanc and modifier Features and a table listing the
+outcome of a formulaic Action for each DoS of a Qualification Roll. The Minigame Formula
+Template figure below illustrates the template used to define minigame formulae.
+
+Name of the Minigame: ............... (The minigame that defines this formula)
+Participating Entities: ............. (Characters, enemies or other game entities)
+List of Minigame Intents: ........... (Pre-determined character Intents)
+List of Minigame Actions: ........... (Formulaic minigame Actions)
+Effort Variables: ................... (The names of Features used as Effort)
+Resistance Variables: ............... (The names of Features used as Resistance)
+Modifier Variables: ................. (The names of Features used as modifiers)
+
+Outcomes of the six Degrees of Success and Failure:
+
+\begin{table}[12]
+Degree of Success &    Outcome
+Critical Success  &    (Critical Success outcome)
+Complete Success  &    (Complete Success outcome)
+Partial Success   &    (Partial Success outcome)
+Partial Failure   &    (Partial Failure outcome)
+Complete Failure  &    (Complete Failure outcome)
+Critical Failure  &    (Critical Failure outcome)
+\end{table}
+Figure: Minigame Formula Template
+
+\newpage
+
+                                         Combat
+                                         ======
+
+Combat Summary
+--------------
+
+Combat begins when the characters and a group of enemies attack one another. Combat is
+divided into Rounds, divided into Turns in which characters and enemies participating in
+Combat (Combatants) get to act, and players and the GQ roll dice to decide the outcome of
+Combatants' Actions.
+
+At the start of Combat, before the first Round, Combatants' starting Disposition and
+Initiative Order are decided, then the first Round begins and Combatants take Turns in
+order of their Initiative. Combatants can take Actions out of Turn for example to
+Suppress an enemy or Support an ally, or Resist an Effect.
+
+Players decide their characters' Actions and the GQ decides the actions of enemies.
+
+The goal of Combat Actions is to inflict Wounds or bestow detrimental Effects on enemies
+in order to kill them, or reduce their effectiveness in Combat, or reduce their
+Disposition until they are Retreating.
+
+Wounds cause the DoS of all subsequent Combat Actions to Shift Down. Reduced Disposition
+similarly imposes negative modifiers to subsequent Actions. Once a character or enemy's
+Disposition reaches Retreating the Combatant cannot take Actions other than fleeing form
+Combat. If a Combatant's Wounds reach or exceed the maximum marked on her sheet, the
+Combatant is killed.
+
+A Combat Round Ends when all Combatants on one side are either killed, or Retreating.
+
+\newpage
+
+Combat Steps
+------------
+
+The Combat minigame plays out in nine Steps, two of which repeat until Combat ends. The
+nine Combat Steps are summarised in Rules Summary 20, below, and discussed in detail in
+the following Sections.
+
+\begin{box}[Rules Summary 20: Combat Steps]
+
+1. Determine Combat participants (Combatants) and the Sides they fight on.
+
+2. Determine all Combatants' starting Disposition.
+
+3. Determine Combatants' Initiative Order.
+
+4. A new Combat Round begins.
+
+5. A new Combat Turn begins.
+
+6. The Combatant whose Turn it is takes an Action
+
+7. Repeat from Step 5 until all Combatants have taken a Turn, or passed.
+
+8. Repeat from Step 4 until all Combatants on one side of Combat are killed, or
+   Retreating.
+
+9. End Combat.
+
+\end{box}
+
+\newpage
+
+Determine Combatants and Sides
+------------------------------
+
+Combat begins when either the characters, or Nest creatures attack one another. 
+
+All characters in the Room where Combat is taking place make up one Side of Combat.
+
+All creatures of the same species as the creature attacking or attacked by the the
+characters and in the same Room as that creature make up the other Side of Combat.
+
+Characters or creatures on the same Side are "allies" and those on the opposite Side are
+"enemies".
+
+All the creatures on the two Sides of Combat are Combatants for the duration of Combat.
+
+\newpage
+
+Starting Disposition
+--------------------
+
+Before the start of the first Combat Round each player makes a Boolean Roll against their
+character's Initiative, and the GQ similarly makes a Boolean Roll against Initiative for
+each of the enemies. Each Combatant whose Initiative roll is Successful starts Combat in
+Holding Disposition. Each Combatant whose Initiative roll is Failued, starts Combat in
+Recoiling Disposition.
+
+\begin{table}[8]
+Initiative Roll Result &    Starting Disposition
+Success                &    Holding
+Failure                &    Recoiling
+\end{table}
+Table: Starting Disposition
+
+\newpage
+
+Initiative Order
+----------------
+
+Before the start of the first Combat Round and after Starting Disposition is determined,
+the GQ decides the Initiative Order for all Combatants.
+
+Combatants take Turns in order of their Initiative. The Combatant with the highest
+Initiative Order takes the first Turn, the one with the next highest Initiative Order
+takes the second Turn, and so on.
+
+Initiative Order is determined as follows:
+
+* For each Combatant, their Initiative Order is equal to their Initiative rating.
+
+* If two Combatants are tied for Initiative, the Combatant with the most advanced
+  Disposition (closest to Charging) takes a Turn before the other Combatants.
+
+* If two or more Combatants are still tied after Initiative and Disposition are compared,
+  the GQ rolls a die or flips a coin to break the tie.
+
+The die to roll to break ties depends on the Combatants tied for Initiative: if there are
+two Combatants tied, flip a coin. If there are three, roll a d6 divided by three. If
+there are four, roll a d4. And so on.
+
+\newpage
+
+Combat Rounds
+-------------
+
+Once Initiative Order is determined the first Round of Combat begins and Combatants take
+Actions in Turn, in order of Initiative.
+
+Combatants can take up to three Actions per Round: 
+
+* one Tactical Action which can be an Attack, Suppress or Support Action;
+
+* one Resistance Action; 
+
+* and one Manoeuver Action. 
+
+Characters can pass the chance to take any or all of their three Actions, or take one or
+two additional Manoeuver Actions in place of their other two Actions.
+
+During a combat Round a Combatant can:
+
+* In her Turn, take an Attack Action targeting an enemy.
+
+* In her Turn, take a Suppress Action targeting an enemy.
+
+* In an ally's Turn, take a Support Action targeting that ally.
+
+* In any Turn, before taking another Action, take a Resistance Action targeting one
+  Effect she is subject to.
+
+* In her Turn, take a Manoeuver Action.
+
+\newpage
+
+Attack Action
+-------------
+
+In her Turn, a Combatant can take one Attack Action targeting an enemy with her Base or
+Special Attack. The DoS of the Attack determines which Attack Hits or Misses.
+
+To determine the outcome of an Attack make a Qualifying Roll with Effort equal to the
+Attacker's Threat Rate and Resistance equal to the target's Survival Rate. If the target
+has Flying or Carapace, they may be used as modifiers to the Roll.
+
+Following is the Combat minigame formula for the Attack Action.
+
+Name of the Minigame ................ Combat
+Participating Entities .............. Characters, Enemies
+List of Minigame Intents ............ Kill
+List of Minigame Actions ............ Attack
+Effort Variables .................... Threat Rate
+Resistance Variables ................ Survival Rate
+Modifier Variables .................. Carapace, Flying
+
+Outcomes of the six Degrees of Success and Failure:
+
+\begin{table}[12]
+Degree of Success &    Outcome
+Critical Success  &    Base and Special Attacks Hit
+Complete Success  &    Special Attack Hits
+Partial Success   &    Base Attack Hits
+Partial Failure   &    Base Attack Misses
+Complete Failure  &    Special Attack Misses
+Critical Failure  &    Base and Special Attacks Miss
+\end{table}
+
+_Carapace_ If an Attack has keywords Crushing, Piercing or Shredding and the target has
+Carapace > 0%, the target's Carapace rating is a negative static modifier to the Attack
+Roll.
+
+_Flying_ I the target of an Attack has Flying > 0%, the target's Flying rating is a
+negative, static modifier to the Attack Roll. Additionally, Close range Attacks can only
+target a Combatant with Flying > 0% if the attacker also has Flying > 0%. 
+
+_Targeting allies_ Spider's Base and Special Attacks have an Alternative Hit result that
+can heal, or remove Bleeding from an Ally. Spider can target an ally with her Attack.
+\newpage
+
+Suppress Action
+---------------
+
+In an enemy's Turn, a Combatant can take the following Suppress Actions:
+
+1. Attempt to confuse an enemy: roll Smarts vs. Ken to bestow a Confused Effect.
+
+2. Attempt to charm an enemy: roll Charms vs. Passions to bestow a Charmed Effect.
+
+3. Attempt to intimidate an enemy: roll Signalling vs. Passions to Shift Disposition
+   Down.
+
+Following is the Combat minigame Formula for the Suppress Action.
+
+Name of the Minigame ................ Combat
+Participating Entities .............. Characters, Enemies
+List of Minigame Intents ............ Suppress enemy
+List of Minigame Actions ............ Confuse, Charm, Intimidate
+Effort Variables .................... Action-specific (see below)
+Resistance Variables ................ Action-specific
+Modifier Variables .................. Action-specific
+
+Outcomes of the six Degrees of Success and Failure:
+
+\begin{table}[4]
+Degree of Success&    Intimidate Outcome &    Charm or Confuse Outcome
+Critical Success &    Target Retreats    &    Bestow Charmed / Confused: d80
+Complete Success &    Target Recoils     &    Bestow Charmed / Confused: d60
+Partial Success  &    Target Recoils     &    Bestow Charmed / Confused: d40
+Partial Failure  &    Target Holds       &    Bestow Confused: d40 on random Ally
+Complete Failure &    Target Advances    &    Bestow Confused: d60 on random Ally
+Critical Failure &    Target Charges     &    Bestow Confused: d80 on random Ally
+\end{table}
+
+Suppress Action-specific Effort, Resistance and modifier Features:
+
+\begin{table}[4]
+Action    &    Effort    &    Resistance&    Static Modifiers
+Charm     &    Charm     &    Passions  &    Smarts, Confused
+Confuse   &    Smarts    &    Ken       &    Leadership, Passions
+Intimidate&    Signalling&    Passions  &    Leadership, Swarming
+\end{table}
+
+\newpage
+
+Support Action
+--------------
+
+In an ally's Turn, a Combatant can take the following Support Actions.
+
+1. Attempt to rally the ally, if the ally is Retreating: roll Leadership vs. Passions.
+
+2. Attempt to encouarge the ally to improve her Disposition: roll Leadership vs.
+   Passions. The ally must not be Retreating.
+
+3. Attempt to focus a Confused ally's mind: roll Smarts vs. the ally's Confused.
+ 
+4. Attempt to snap a Charmed ally out of it: roll Charms vs the ally's Charmed.
+
+Following is the Combat minigame Formula for the Support Action.
+
+Name of the Minigame: ................ Combat
+Participating Entities: .............. Characters, Allies
+List of Minigame Intents: ............ Support Ally
+List of Minigame Actions: ............ Rally, Encourage, Focus, Shake
+Effort Variables: .................... Action-specific (listed below)
+Resistance Variables: ................ Action-specific
+Modifier Variables: .................. Action-specific 
+
+Outcomes of the six Degrees of Success and Failure:
+
+\begin{table}[4]
+Degree of Success&  Rally or Encourage Outcome&  Focus or Shake Outcome
+Critical Success &  Ally Charges              &  Remove Effect and Shift Disposition Up
+Complete Success &  Ally Advances             &  Remove Effect (reduce to 0%)
+Partial Success  &  Ally Holds                &  Reduce Effect (roll to decrease)
+Partial Failure  &  Ally Recoils              &  Effect remains
+Complete Failure &  Ally Recoils              &  Effect is enhanced (roll to increase)
+Critical Failure &  Ally Retreats             &  Effect is maximised (set to 100%)
+\end{table}
+
+Support Action-specific Effort, Resistance and modifier Features:
+
+\begin{table}[6]
+Action   &     Effort    &    Resistance&    Static Modifiers
+Encourage&     Leadership&    Passions  &    Smarts
+Focus    &     Smarts    &    Confused  &    Charms
+Rally    &     Leadership&    Passions  &    Threat Rate
+Shake    &     Charms    &    Charmed   &    Passions
+\end{table}
+
+
+Resisting Effects
+-----------------
+
+In any Turn, before taking another Action, a Combatant can take a Resistance Action to
+ignore a single Effect for the duration of the remaining Combat Round. 
+
+Name of the Minigame: ................ Combat
+Participating Entities: .............. Character or enemy
+List of Minigame Intents: ............ Ignore Effect temporarily
+List of Minigame Actions: ............ Resist Effect
+Effort Variables: .................... Effect-specific (see below)
+Resistance Variables: ................ Effect-specific
+Modifier Variables: .................. None
+
+Outcomes of the six Degrees of Success and Failure:
+
+\begin{table}[8]
+Degree of Success &    Outcome
+Critical Success  &    Remove Effect and Shift Disposition Up
+Complete Success  &    Remove Effect (reduce to 0%)
+Partial Success   &    Reduce Effect (roll to decrease)
+Partial Failure   &    Effect remains
+Complete Failure  &    Effect is enhanced (roll to increase)
+Critical Failure  &    Effect is maximised (set to 100%)
+\end{table}
+
+Effect-specific Effort variables:
+
+\begin{table}[8]
+Effect      &  Resist with
+Agony       &  Passions
+Bleeding    &  Stamina
+Blind       &  Smarts
+Charmed     &  Passions
+Confused    &  Smarts
+Immobilised &  Strength
+Infected    &  Stamina
+Paralysed   &  Passions
+Poisoned    &  Stamina
+Stunned     &  None (cannot resist)!
+\end{table}
+
+\newpage
                                          Setting
                                          =======
 
