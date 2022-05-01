@@ -28,6 +28,6 @@ wasp:special_attack([name-'Stinger Attack'
                         ,hit-'Target Poisoned: d60'
                         ,hit_2-['(Crit)','Target Killed']
                         ,hit_3-['(Crit,Rem)','(Swarms take 2 Wounds)']
-                        ,miss_1-'Attacker Stunned: ld80'
+                        ,miss_1-'Attacker Stunned: d60'
                         ,miss_2-['(Alt)','']]
                        ).

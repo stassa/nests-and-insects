@@ -235,9 +235,12 @@ them in the game; but that is not strictly necessary.
 The System
 ----------
 
-Nests & Insects' roleplaying system is called Fuzzy d100 (fd100). fd100 is a percentile
+Nests & Insects' roleplaying system is called Fuzzy d100 (fd100). fd100 is a "percentile"
 system where characters are defined by Features rated on a percentile scale from 1 to
 100, and a hundred-sided die (d100) is rolled to determine the outcome of their actions.
+The d100 in Nests & Insects is a composite die comprised of two ten-sided dice (d10) each
+numbered: 0, 1, 2, ...., 9. The two d10 are rolled together and read as one, generating
+numbers from 00 to 99.
 
 To determine the outcome of characters' actions, players roll a d100 and compare it
 simultaneously to two target numbers: a character's Effort, and the Resistance of
@@ -246,27 +249,28 @@ Resistance determines the Degree of Success or Failure (DoS) of an action. Table
 outlines the four DoS attainable by comparing a d100 roll to Effort and Resistance.
 
 \begin{table}[8]
-Roll vs Effort&       Roll vs Resistance&       Degree of Success
-Under or equal&       Over              &       Complete Succes
-Under or equal&       Under or equal    &       Partial Success
-Over          &       Over              &       Partial Failure
-Over          &       Under or equal    &       Complete Failure
+Roll vs Effort&    Roll vs Resistance&    Degree of Success
+Under         &    Over or equal     &    Complete Succes  
+Under         &    Under             &    Partial Success  
+Over or equal &    Over or equal     &    Partial Failure  
+Over or equal &    Under             &    Complete Failure 
 \end{table}
 Table 1: Effort, Resistance and Degree of Success.
 
-Two additional DoS, Critical Failure and Critical Success are attainable by the use of
-modifiers. Static modifiers are compared to the same d100 roll as Effort and Resistance.
-Dramatic modifiers are compared to one or two new d100 rolls. Characters' intents and
-actions that grant dramatic modifiers must be described in more detail than static
-modifiers, to encourage players to use their imagination to help their characters. Table
-2 illustrates the use of modifiers to change the DoS of an action.
+
+Two further DoS, Critical Failure and Critical Success are attainable by the use of
+additional target numbers called "modifiers". "Static" modifiers are compared to the same
+d100 roll as Effort and Resistance. "Dramatic" modifiers are compared to a new d100 roll.
+Characters' intents and actions that grant dramatic modifiers must be described in more
+detail than static modifiers, to encourage players to use their imagination to help their
+characters. Table 2 illustrates the use of modifiers to change the DoS of an action.
 
 \begin{table}[8]
 Roll vs Modifier&       Modifier Sign&       Degree of Success
-Under or Equal  &       Positive     &       Improves towards Critical Success
-Over            &       Positive     &       No change
-Under or Equal  &       Negative     &       Worsens towards Critical Failure
-Over            &       Negative     &       No change
+Under           &       Positive     &       Improves towards Critical Success
+Over or Equal   &       Positive     &       No change
+Under           &       Negative     &       Worsens towards Critical Failure
+Over or Equal   &       Negative     &       No change
 \end{table}
 Table 2: Modifiers and change to Degree of Success. DoS can improve beyond Complete
 Success to Critical Success; or worsen beyond Complete Failure to Critical Failure.
@@ -274,42 +278,55 @@ Success to Critical Success; or worsen beyond Complete Failure to Critical Failu
 Decile dice
 -----------
 
-Some actions require quantification of their effects. To quantify the effects of actions
-on the same percentile scale as characters' Features, Nests & Insects uses decile dice.
-Those are pairs of a common TTRPG polyhedral die and a ten-sided die, rolled together and
-read as one: the d10 is the "ones" of the roll and the other die is the "tens". When the
-highest digit on the "tens" die is rolled it is read as a zero, unless the d10 also shows
-a "0". In that case the two dice are read as the maximum of the decile die's range.
+Some actions require quantification of their results. To quantify the results of actions
+on the same percentile scale as characters' Features, Nests & Insects uses "decile dice":
+the d20, d40, d60, d80 and the d100 itself. The d20 is a single, twenty-sided die, with
+faces numbered 0, 1, 2, ..., 19. The d40, d60, d80 and d100 are composite dice, each
+comprised of a d4, d6, d8, and d10, respectively, as the "ones" die; and a d10 as the
+"tens" die. Both the "ones" and "tens" dice have faces numbered 0, 1, 2 ..., n-1, where n
+is the number of faces on the die, just like the d10's comprising the d100. For example,
+the d4 has faces numbered 0, 1, 2, 3, the d6 has faces numbered 0, 1, 2, 3, 4, 5, etc.
+
+To generate a decile die result, the "ones" and "tens" of the decile die are rolled
+together, the "tens" die is placed to the left of the "ones" die and the digits on the
+top faces of the two dice read left-to-right, as if reading a printed numeral. This way,
+each decile die generates numbers from 00 to one less than the number of faces on the
+decile die: 39 on a d40, 59 on a d60, 79 on a d80, and 99 on a d100. The d20 needs no
+special reading and generates numbers in the range 0 to 19.
 
 \begin{box}[Example 1]
-The d60 is composed of a d6 and a d10. When the d6 shows a "6" it is read as a zero, 
-unless the d10 also shows a "0", in which case the "6" is read as a 6. Suppose the d6
-shows "6" and the d10 shows "3": in that case the d60 result is 63. Suppose the d6   
-shows "6" and the d10 shows "0": in that case the d60 result is 60.                  
+The d60 is a composite decile die comprised of a d6, with faces numbered 0, 1, 2, 3,
+4, 5 as a "tens" die, and a d10, with faces numbered 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 as
+a "ones" die. When a d60 roll is made, the d6 and d10 are rolled together, the d6 is
+placed to the left of the d10 and the digits showing are read left-to-right. Let a
+d60 be rolled and suppose the d6 shows a "0", while the d10 shows a "0": in that
+case, the d60 result is "00", or just "0". Suppose the d6 shows a "0" while the d10
+shows a "4": in that case, the d60 result is "04", or just "4". Suppose the d6 shows
+a "3" while the d10 shows an "8": in that case, the d60 result is "38".
 \end{box}
 
-Table 3 lists the five Decile dice used in fd100 and their component polyhedrals. Decile
-dice are described in full detail in Section "Decile dice" in the "System" Chapter.
+Table 3 lists the five decile dice used in fd100, their component polyhedrals and their
+numeric ranges. Decile dice are described in full detail in Section "Decile Dice" in the
+"System" Chapter.
 
-\begin{table}[6]
-Decile die&    Tens die&    Ones die&    Range
-d20       &    Not any!&    d20     &    1 to 20
-d40       &    d4      &    d10     &    1 to 40
-d60       &    d6      &    d10     &    1 to 60
-d80       &    d8      &    d10     &    1 to 80
-d100      &    d10     &    d10     &    1 to 100
+\begin{table}[4]
+Decile die&  Range   &    Tens die &  Numbered  &  Ones die&  Numbered  
+d20       &  0 to 19 &    Not any! &            &  d20     &  0,1,...,19
+d40       &  0 to 39 &    d4       &  0,1,...,3 &  d10     &  0,1,...,9 
+d60       &  0 to 59 &    d6       &  0,1,...,5 &  d10     &  0,1,...,9 
+d80       &  0 to 79 &    d8       &  0,1,...,7 &  d10     &  0,1,...,9 
+d100      &  0 to 99 &    d10      &  0,1,...,9 &  d10     &  0,1,...,9 
 \end{table}
 Table 3: Decile dice, used for quantification of percentile effects. d100 is also a
 decile die. The d20 does not need a "tens" die and is rolled on its own.
-\newpage
 
 Minigames
 ---------
 
 Nests & Insects is organised around "minigames" that define special rules for common
-in-game tasks. There are four minigames: Combat; Survival; Hunting and Foraging; and
-Resting and Healing. Minigames are described in detail in Section "Minigames" of the
-"System" Chapter.
+in-game tasks. There are four minigames: Combat; Survival and Exploration; Hunting and
+Foraging; and Resting and Healing. Minigames are described in detail in Section
+"Minigames" of the "System" Chapter.
 
 In the Combat minigame, characters have two Attack actions: a Base Attack and a Special
 Attack. The DoS of a character's Attack action determines which Attack hits, or misses.
@@ -962,11 +979,11 @@ reference, the system is called Fuzzy d100, shortened to fd100.
 
 fd100 is a percentile system, in the sense that it describes characters in terms of
 percentile-valued Features and that the die rolled to determine the success or failure of
-characters' actions is the d100, ranging from 1 to 100. Decile dice: the d20, d40, d60,
+characters' actions is the d100, ranging from 00 to 99. Decile dice: the d20, d40, d60,
 d80, and the d100 itself, are used to quantify Effects and other Features on the game's
-percentile scale. The d40, d60 and d80 are composed of pairs of a standard polyhedral
-die: the d4, d6 and d8, respectively; and a d10, rolled together and read as one - just
-as the d100 is composed of two d10 rolled together and read as one.
+percentile scale. The d40, d60 and d80 are composed of pairs of a polyhedral die: the d4,
+d6 and d8, respectively; and a d10, rolled together and read as one - just as the d100 is
+composed of two d10 rolled together and read as one.
 
 fd100 is designed to eliminate mental arithmetic from the process used to determine the
 outcome of characters' actions ("action resolution"), and to encourage players to use
@@ -975,18 +992,17 @@ their imagination to overcome challenges faced by their characters in-game.
 To determine the outcome of a character's actions, a player begins by describing the
 character's Intent, then rolls a d100 and compares its result to two target numbers,
 Effort and Resistance, determined by Features of the character, and enemies or the Nest
-environment, respectively. The player wants to roll under Effort and over Resistance. The
-comparison determines one of four initial Degrees of Success (or Failure) for the action:
-Complete Failure, Partial Failure, Partial Success or Complete Success, in order from
-worst to best.
+environment, respectively. The player wants to roll under Effort and equal to, or over
+Resistance. The comparison determines one of four initial Degrees of Success (or Failure)
+for the action: Complete Failure, Partial Failure, Partial Success or Complete Success,
+in order from worst to best.
 
 Modifiers may change the Degree of Success. "Static" modifiers are compared to the
 initial d100 Roll. "Dramatic" modifiers are compared each to a new d100 roll. Both types
-of modifier can be positive or negative. Rolling under, or equal to a positive modifier
-"Shifts Up" (improves) the Degree of Success; rolling under, or equal to a negative
-modifier "Shifts Down" (worsens) the Degree of Success. A Shift Up changes a Complete
-Success to a Critical Success and a Shift Down changes a Complete Failure to a Critical
-Failure.
+of modifier can be positive or negative. Rolling under a positive modifier "Shifts Up"
+(improves) the Degree of Success; rolling under a negative modifier "Shifts Down"
+(worsens) the Degree of Success. A Shift Up changes a Complete Success to a Critical
+Success and a Shift Down changes a Complete Failure to a Critical Failure.
 
 Finally, the results of actions may need to be quantified by rolling a decile die. The
 Game Queen (GQ) then describes the outcome of the action according to the character's
@@ -996,90 +1012,144 @@ Intent and the Degree of Success of the action.
 
                                        Fuzzy d100
                                        ==========
-D100
-----
 
-The die used for action resolution in fd100 is the "d100". This is nominally a
-hundred-sided die, but, in practice, a composite die comprised of two, ten-sided dice
-(d10s), rolled together and read as one to generate numbers in the range 1 to 100.
-
-One of the d10 should be a "percentile" die, noted d10%, with sides inscribed with the
-numbers: 00, 10, 20, 30, 40, 50, 60, 70, 80 and 90. This is to be the "tens" die,
-generating powers of ten, the decades of the percentile roll.
-
-The other d10 should be a "d10", with sides inscribed with the single digits: 0, 1, 2, 3,
-4, 5, 6, 7, 8, and 9. This is to be the "ones" die generating powers of 1, the units of
-the percentile roll.
-
-The d10% and the d10 are rolled together. Most of the time the numbers they show are read
-as they appear on the two dice, with the d10% result read first. For example, if the d10%
-shows "40" and the d10 shows "3", the two dice together are read as "forty three" and the
-d100 result is "43". There are a few special cases, listed below.
-
-1. When the d10% shows "00" and the d10 shows "0", the d100 result is "100".
-
-2. When the d10% shows "00" and the d10 any digit other than a "0" the d100 result is
-   equal to the value of the digit showing on the d10. For example, when the d10% shows
-   "00" and the d10 shows "4", the d100 result is "4".
-
-3. When the d10% shows "10" and the d10 shows "0", the d100 result is read as "ten" - not
-   as ten-zero, and not as 100!
-
-4. When the d10% shows "10" and the d10 shows any digit other than a "0", the d100 result
-   is read as "eleven", "twelve", "thirteen", etc, not as "ten-one", "ten-two" etc!
-
-The d100 results Table below summarises the reading of some of the d100 special cases.
-
-\begin{table}[4]
-d10% shows&    d10 shows&    Read as       &   d100 result
-00        &    1        &    "one"         &   01
-00        &    9        &    "nine"        &   09
-00        &    0        &    "one hundred" &   100
-10        &    1        &    "eleven"      &   11
-10        &    9        &    "nineteen"    &   19
-10        &    0        &    "ten"         &   10
-\end{table}
-Table: d100 results
-
-Decile dice
+Decile Dice
 -----------
 
-The results of some Actions may need to be quantified. This is particularly the case for
-Actions that bestow an Effect on a character or another game entity. To quantify results
-of Actions on the same percentile scale as Features, Nests & Insects uses "decile dice",
-combinations of two polyhedral dice, rolled together and read as one.
+The die used to roll for action resolution in fd100 is the "d100". This is nominally a
+hundred-sided die, but, in practice, a composite die comprised of two, ten-sided dice
+(d10s), numbered 0, 1, 2, ..., 9, which are rolled together and read as one to generate
+numbers from 00 to 99.
 
-Nests & Insects uses five decile dice: the d20, d40, d60, d80 and the d100 that is also
-used in Action resolution. The d20 is a single die. The d40, d60, d80 and d100 are
-composite dice, compirsed of a pair of a polyhedral die: the d4, d6, d8, and d10%, used
-to generate the "tens" of the roll; and a d10 used to generate the "ones".
+In Nests & Insects' nomenclature, the d100 is one of five "decile dice": the d20, d40,
+d60, d80 and the d100 itself. The d20 is a twenty-sided die with faces numbered 0, 1,
+..., 19. The d40, d60, d80 and the d100 are each a pair of polyhedral dice: a d4, d6, d8
+and d10, respectively, numbered 0, 1, ..., n-1, where "n" is the number of faces on the
+die, and used to generate the "tens" of the roll; and a d10, also numbered 0, 1, ..., 9,
+and used to generate the "ones" of the roll.
 
-Nominal and literal readings
-----------------------------
+To generate a result in a decile die's range, the "tens" and "ones" die are rolled
+together, the "tens" die is placed to the left of the "ones" die and the numbers showing
+on the two dice are read left-to-right, like a printed numeral. The d20 is rolled on its
+own and its results read as they come up. This way, each decile die generates numbers in
+the range 00 to m-1, where "m" is the number of faces on the decile die. For example, the
+d40 decile die has 40 faces and generates results in the range 00 to 39; the d60 decile
+die has 60 faces and generates results in the range 00 to 59; and so on.
 
-There are two ways to read a decile die: the "nominal" reading, and the "literal"
-reading.
+The d100 is the only die used to determine the Degree of Success of an Action. The other
+decile dice (and the d100 itself) are used to quantify the results of Actions on the same
+percentile scale as Features. This is particularly the case for Actions that bestow an
+Effect on a character or another game entity.
 
-In the nominal reading, the highest digit on the tens die is read as "0" unless the
-"ones" d10 also shows a "0", in which case the highest digit on the tens die is read as
-itself and the result of the decile die is read as the maximum value in the nominal range
-(40, 60, 80, 90 and 100).
+Table 3 in the Section "Decile dice" of the "Overview" Chapter illustrates Decile dice.
+The Table is reproduced here for ease of reference:
 
-In the literal reading, the digits on each die are read exactly as they come up. This
-includes the d100! The d20 is always read literally. The two readings yield two slightly
-different decile ranges, summarised in the Table below.
-
-\begin{table}[6]
-Decile die&    Tens die&    Ones die&    Nominal Range    Literal Range
-d20       &    Not any!&    d20     &    1 to 20          1 to 20
-d40       &    d4      &    d10     &    1 to 40          10 to 49
-d60       &    d6      &    d10     &    1 to 60          10 to 69
-d80       &    d8      &    d10     &    1 to 80          10 to 89
-d100      &    d10%    &    d10     &    1 to 100         10 to 110
+\begin{table}[4]
+Decile die&  Range   &    Tens die &  Numbered  &  Ones die&  Numbered  
+d20       &  0 to 19 &    Not any! &            &  d20     &  0,1,...,19
+d40       &  0 to 39 &    d4       &  0,1,...,3 &  d10     &  0,1,...,9 
+d60       &  0 to 59 &    d6       &  0,1,...,5 &  d10     &  0,1,...,9 
+d80       &  0 to 79 &    d8       &  0,1,...,7 &  d10     &  0,1,...,9 
+d100      &  0 to 99 &    d10      &  0,1,...,9 &  d10     &  0,1,...,9 
 \end{table}
-Table: Decile dice, nominal and literal readings.
+Table: Decile dice, used for quantification on a percentile scale. d100 is also a decile
+die, and the only one used for Action resolution. The d20 does not need a "tens" die and
+is rolled on its own.
 
-\newpage
+
+Implementing Decile Dice
+------------------------
+
+While the d20, d4, d6, and d8 are commonly used in TTRPGs and so are easy to find, they
+typically have faces numbered 1, 2, ..., n (where "n" is the number of faces of the die).
+Let's call such dice "one-based". d10s typically have faces numbered 0, 1, ..., 9 (or 00,
+10, ..., 90). Let's call those "zero-based". Accordingly the Nests & Insects polyhedrals
+used to compose decile dice are all "zero-based", just like the typical d10. Most
+roleplayers will not have zero-based polyhedral dice, other than d10s. What to do then,
+to play Nests & Insects? There are three alternatives, listed below.
+
+1. Get you a set of blank polyhedral dice and paint in the desired numbers.
+
+   In that case, you get a blank d20, d4, d6 and d8, and paint their faces with the
+   following numbers:
+
+   d20: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+
+   d4: 0, 1, 2, 3
+
+   d6: 0, 1, 2, 3, 4, 5
+
+   d8: 0, 1, 2, 3, 4, 5, 6, 7
+
+   In this case, you can keep using the standard, zero-based d10s as the "tens" for the
+   d100 and the "ones" for all other decile dice. The only reason to get a blank d10 is
+   to have a full set of zero-based polyhedral dice in the same style. In that case, feel
+   free to give the same treatment to the also-standard d12, and, why not, the (rarer,
+   but readily available) d14, d16, and d18. Now you have more decile dice: d120, d140,
+   d160 and d180. You can even go up to d200! Sooner or later, someone's going to come up
+   with a game to use those!
+
+2. Use the standard, one-based polyhedral dice and adjust the decile die roll by
+   subtraction.
+
+   In this case, the decile d20 is a one-based, twenty-sided die with faces numbered 1,
+   2, ..., 20. When you roll a one-based d20, subtract 1 from the result of the roll to
+   generate numbers in the range of a zero-based d20.
+
+   The decile d40, d60 and d80 are composite dice, comprised of a one-based d4, d6 and
+   d8, respectively, as the "tens" of the decile die; and a zero-based d10 as the "ones"
+   die. To generate a decile die result, roll the "tens" and "ones" dice together, place
+   the "tens" die to the left of the "ones" die, and read them left-to-right as before.
+   Only this time *subtract 10 from the result* to generate a number in the range of the
+   decile die. 
+
+
+   The d100 doesn't change: it is comprised of two zero-based d10s read side-by-side, and
+   generating numbers from 00 to 99.
+
+3. Use the standard, one-based polyhedral dice and interpret the results as if they were
+   zero-based.
+
+   In this case, the decile d20 is a one-based, twenty-sided die with faces numbered 1,
+   2, ..., 20, as in Alternative 2. When you roll the d20 as a decile die, read a "20" as
+   "0". This will give you twenty numbers, from 0 to 19, as the range of the decile d20.
+
+   As in Alternative 2, the decile d40, d60 and d80 are composite dice comprised of a
+   one-based d4, d6 and d8, respectively, as the "tens" of the decile die; and a
+   zero-based d10 as the "ones". To generate a zero-based decile die result, roll the
+   "tens" and "ones" dice together, place the "tens" die to the left of the "ones" die,
+   and read them left-to-right as before. Only this time, when the tens die shows its
+   highest digit: "4" on a d4, "6" on a d6 and "8" on a d8, read that digit as "0",
+   *unless the "ones" d10 also shows a "0"* (in which case you read the highest digit as
+   itself).
+
+   As with Alternative 2, the d100 doesn't change and is comprised of two, zero-based
+   d10s read side-by-side to generate numbers from 00 to 99.
+
+   For example, in this case, the decile d60 is comprised of a one-based d6 as the "tens"
+   die and a zero-based d10 as the "ones" die. When the one-based d6 shows a "6", you
+   read it as "0", unless the d10 also shows a "0". Suppose the d6 is showing a "6" and
+   the d10 is showing a "5". In that case, the result of the d60 decile die is "05", or
+   just "5". Suppose the d6 is showing a "6" and the d10 is showing a "0". In that case,
+   the result of the d60 is "60".
+
+4. Use a die-rolling app.
+
+   If you are an avid roleplayer, you probably have one of those on your phone already.
+
+   One downside of this method is a slight risk of distraction when using one's phone in
+   the middle of a game.
+
+   Another downside is that you don't get to roll any actual dice. Some of us just like
+   the physical sensation of dice clicking soothingly in the palm of the hand!
+
+Nests & Insects' preferred decile die implementation is the one described in Alternative
+1, above. Unlike the other alternatives it does not require a special way to read the
+dice, as Alternative 3, and it doesn't require mental arithmetic (however simple) as
+Alternative 2. Alternative 2 in particular breaks fd100's claim to "eliminate mental
+arithmetic" during Action resolution! The best thing with Alternative 1, of course, is
+that it makes a perfect excuse to collect even more weird gaming dice.
+
 
 Six Degrees of Success and Failure
 ----------------------------------
@@ -1299,13 +1369,13 @@ Qualification
 
 \begin{box}[Rules Summary 7: Qualification Roll]
 To make a Qualification Roll means to roll a d100 and compare it to Effort and
-Resistance, simultaneously. To roll under, or equal to, Effort is to achieve or
-"match" Effort. To roll over Resistance is to overcome, or "beat" Resistance.
+Resistance, simultaneously. To roll under Effort is to achieve or "match" Effort. To
+roll over, or equal to, Resistance is to overcome, or "beat" Resistance.
 \end{box}
 
 Once Effort and Resistance are chosen the player rolls a d100 and compares its result to
 Effort and Resistance. This is called a "Qualification Roll". To achieve the best outcome
-in a Qualification Roll the player wants to roll under, or equal to Effort, and over
+in a Qualification Roll the player wants to roll under Effort, and over or equal to
 Resistance. The former is to "match" Effort and the latter is to "beat" Resistance.
 
 The result of the d100 roll relative to Effort and Resistance determines four initial
@@ -1331,9 +1401,9 @@ Partial Success.
 \end{box}
 
 _Possible Degrees of Success_ Not all Degrees of Success and Failure are possible to
-achieve just with a Qualification Roll. If Effort is lower than Resistance, Complete
-Success is not possible. If Effort is higher than Resistance, Complete Failure is not
-possible. All six DoS, including Critical Success and Critical Failure are only
+achieve just with a Qualification Roll. If Effort is lower than or equal to Resistance,
+Complete Success is not possible. If Effort is higher than Resistance, Complete Failure
+is not possible. All six DoS, including Critical Success and Critical Failure are only
 achievable through the use of modifiers, described in the "Modification" Section,
 following.
 
@@ -1351,7 +1421,7 @@ to the result of the roll.
 
 \begin{box}[Rules Summary 10: Positive and Negative Modifiers]
 Modifiers can be positive or negative. Matching a positive modifier confers a Shift
-Up to the Dos. Failiing to match a negative modifier confers a shift Down to the DoS.
+Up to the Dos. Failiing to beat a negative modifier confers a shift Down to the DoS.
 \end{box}
 
 \begin{box}[Rules Summary 11: Shifts Up and Shifts Down]
@@ -1375,11 +1445,11 @@ worst to best. The Changes to DoS by the use of modifiers are summarised in the 
 below.
 
 \begin{table}[8]
-Roll vs Modifier&       Modifier Sign&       Change to DoS
-Under or Equal  &       Positive     &       Shift Up
-Over            &       Positive     &       No change
-Under or Equal  &       Negative     &       Shift Down
-Over            &       Negative     &       No change
+D100 Roll...    &       Modifier Sign&       Change to DoS
+Matches Modifier&       Positive     &       Shift Up
+Beats Modifier  &       Positive     &       No change
+Matches Modifier&       Negative     &       Shift Down
+Beats Modifier  &       Negative     &       No change
 \end{table}
 Table: Modifiers and change to DoS.
 
@@ -1510,8 +1580,8 @@ difference is between different DoS.
 \begin{box}[Example 5]
 Beetle is trying to lift a piece of debris from the Nest's floor. This is a simple
 Action that can either succeed or fail. The GQ asks for a Boolean Roll against
-Beetle's Strength: 55%. The player rolls: 78. The outcome of the Action is Failure
-and Beetle fails to lift the piece of debris from the floor.
+Beetle's Strength: 55%. The player rolls: 78. The result does not match Beetle's
+Strength so Beetle fails to lift the piece of debris from the floor.
 \end{box}
 
 \begin{box}[Note 1]
@@ -1537,11 +1607,11 @@ and beats Resistance, the attempted Action Succeeds. Otherwise, it fails.
 \end{box}
 
 \begin{table}[8]
-Roll matches Effort & Roll beats Resistance &   Action Outcome
-True                & True                  &   Success       
-True                & False                 &   Failure
-False               & True                  &   Failure      
-False               & False                 &   Failure       
+Roll matches Effort &   Roll beats Resistance &   Action Outcome
+True                &   True                  &   Success       
+True                &   False                 &   Failure
+False               &   True                  &   Failure      
+False               &   False                 &   Failure       
 \end{table}
 Table: Contested Boolean Roll
 
@@ -1560,10 +1630,10 @@ Resistance. The Action outcome is a Failure and Beetle cannot lift the debris.
 \end{box}
 
 \begin{box}[Note 2]
-The outcome of a Contested Boolean Roll can only be Success when Effort is equal to,
-or higher than Resistance. When Resistance is higher than Effort, the Action can only
-fail. In that case, either don't make any rolls at all, or make a full Qualification
-Roll or a simple Boolean Roll instead.
+The outcome of a Contested Boolean Roll can only be Success when Effort is higher
+than Resistance. When Resistance is equal to, or higher than Effort, the Action can
+only fail. In that case, either don't make any rolls at all, or make a full
+Qualification Roll or a simple Boolean Roll instead.
 \end{box}
 
 \newpage
@@ -1823,7 +1893,7 @@ _Carapace_ If an Attack has keywords Crushing, Piercing or Shredding and the tar
 Carapace > 0%, the target's Carapace rating is a negative static modifier to the Attack
 Roll.
 
-_Flying_ I the target of an Attack has Flying > 0%, the target's Flying rating is a
+_Flying_ If the target of an Attack has Flying > 0%, the target's Flying rating is a
 negative, static modifier to the Attack Roll. Additionally, Close range Attacks can only
 target a Combatant with Flying > 0% if the attacker also has Flying > 0%. 
 
@@ -2121,8 +2191,8 @@ Table: Worker Termite Features
 
 At the start of each Combat Turn the GQ makes a Boolean Roll against the Worker
 Termites' Swarming. If the roll succeeds, new Termites arrive. Roll on the Termite
-Worker Summons Table below and choose the result with the lowest Chance higher than
-or equal to the roll value.
+Worker Summons Table below and choose the result with the lowest "Chance to Summon"
+that is higher than the roll value.
 
 \end{box}
 
@@ -2164,9 +2234,9 @@ Table: Minor Termite Soldier Features
 ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐
 │ Name:....................Mandible Attack ││ Name:..........Autothysis (Self-Rupture) │
 │ Keywords:.......................Crushing ││ Keywords:...........Area Attack, Noxious │
-│ Wounds.................................1 ││ Wounds.................................0 │
+│ Damage:..........................1 Wound ││ Damage:................................0 │
 │ Max. Range:........................Close ││ Max. Range:................Medium (Area) │
-│ Hit:..............Target Immobilised d40 ││ Hit:............Targets Immobilised ld60 │
+│ Hit:..............Target Immobilised d40 ││ Hit:.............Targets Immobilised d60 │
 │ Hit (Alt):.............................. ││ Hit(Add):.........Attacker takes 1 Wound │
 │ Hit (Add):.............................. ││ Hit (Crit):............................. │
 │ Miss:....................Atacker Recoils ││ Miss:............Attacker takes 2 Wounds │
@@ -2226,7 +2296,7 @@ Threat Rate        &    50%
 Survival Rate      &    55%
 Wounds Max         &    5
 Carapace           &    60% (Head)
-Swarming           &    0%
+Swarming           &    60%
 Speed, Skill       &    30%
 Strength, Stamina  &    60%
 Smarts, Charms, Ken&    20%
@@ -2238,12 +2308,12 @@ Figure: Major Termite Soldier Features
 ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐
 │ Name:....................Mandible Attack ││ Name:..Greater Autothysis (Self-Rupture) │
 │ Keywords:.......................Crushing ││ Keywords:..........Area Attack, Chemical │
-│ Wounds.................................1 ││ Wounds.................................2 │
-│ Max. Range:........................Close ││ Max. Range:.................Close (Area) │
-│ Hit:.............Target Immobilised ld40 ││ Hit:..............Targets Paralysed ld60 │
+│ Damage:..........................1 Wound ││ Wounds..........................2 Wounds │
+│ Max. Range:........................Close ││ Max. Range:................Medium (Area) │
+│ Hit:..............Target Immobilised d40 ││ Hit:...............Targets Paralysed d60 │
 │ Hit (Alt):.............................. ││ Hit (Add):...............Attacker killed │
 │ Hit (Add):.............................. ││ Hit (Crit):............................. │
-│ Miss:....................Atacker Recoils ││ Miss:...........Targets Immobilised ld60 │
+│ Miss:....................Atacker Recoils ││ Miss:............Targets Immobilised d60 │
 │ Miss:................................... ││ Miss:....................Attacker killed │
 └──────────────────────────────────────────┘└──────────────────────────────────────────┘
 ────────────────────────────────────────────────────────────────────────────────────────
@@ -2277,7 +2347,7 @@ Threat Rate        &    55%
 Survival Rate      &    55%
 Wounds Max         &    6
 Carapace           &    70% (Head)
-Swarming           &    0%
+Swarming           &    40%
 Speed, Skill       &    50%
 Strength, Stamina  &    60%
 Smarts, Charms, Ken&    30%
@@ -2289,12 +2359,12 @@ Figure: Nasute Soldier Features
 ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐
 │ Name:.............Fontanellar Gun Attack ││ Name:.....Greater Fontanellar Gun Attack │
 │ Keywords:............Projectile, Noxious ││ Keywords:............Projectile, Noxious │
-│ Wounds.................................2 ││ Wounds.................................1 │
+│ Damage:.........................2 Wounds ││ Wounds..........................2 Wounds │
 │ Max. Range:.........................Long ││ Max. Range:..................Long (area) │
-│ Hit:................Target Poisoned ld40 ││ Hit:...............Targets Poisoned ld60 │
+│ Hit:.................Target Poisoned d40 ││ Hit:................Targets Poisoned d60 │
 │ Hit (Add):..............Attacker Recoils ││ Hit (Add):..............Attacker Recoils │
 │ Hit (Alt):.............................. ││ Hit (Crit):............................. │
-│ Miss:.............Target Immobilised d40 ││ Miss:...........Targets Immobilised ld40 │
+│ Miss:.............Target Immobilised d40 ││ Miss:............Targets Immobilised d60 │
 │ Miss:.............Attacker Recoils twice ││ Miss:.............Attacker Recoils twice │
 └──────────────────────────────────────────┘└──────────────────────────────────────────┘
 ────────────────────────────────────────────────────────────────────────────────────────

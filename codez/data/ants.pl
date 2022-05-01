@@ -27,7 +27,7 @@ ants:special_attack([name-'Swarming Attack'
                         ,max_range-'Close'
                         ,hit-'Target Poisoned: d60'
                         ,hit_2-['(Alt)','']
-                        ,hit_3-['(Crit)','Target Immobilised: ld80']
+                        ,hit_3-['(Crit)','Target Immobilised: d80']
                         ,miss_1-'Attacker Recoils'
                         ,miss_2-['(Alt)','']]
                        ).

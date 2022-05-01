@@ -13,7 +13,7 @@ beetle:base_attack([name-'Bite Attack'
                      ,keywords-['Crushing']
                      ,damage-'2 Wounds'
                      ,max_range-'Close'
-                     ,hit-'Target Bleeding: ld40'
+                     ,hit-'Target Bleeding: d40'
                      ,hit_2-['(Alt)','']
                      ,hit_3-['(Add)','']
                      ,miss_1-'Attacker Recoils'
