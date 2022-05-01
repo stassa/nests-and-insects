@@ -1373,6 +1373,13 @@ Resistance, simultaneously. To roll under Effort is to achieve or "match" Effort
 roll over, or equal to, Resistance is to overcome, or "beat" Resistance.
 \end{box}
 
+\begin{box}[Rules Summary 8: Degree of Success and Failure]
+If the Qualification Roll matches Effort, then the Action is a "Success"; otherwise,
+it is a "Failure". If the Qualification Roll beats Resistance, then the Action is a
+"Complete" Success, or a "Partial" Failure; otherwise it is a Complete Failure, or a
+Partial Success.
+\end{box}
+
 Once Effort and Resistance are chosen the player rolls a d100 and compares its result to
 Effort and Resistance. This is called a "Qualification Roll". To achieve the best outcome
 in a Qualification Roll the player wants to roll under Effort, and over or equal to
@@ -1392,13 +1399,6 @@ False              &       True                 &       Partial Failure
 False              &       False                &       Complete Failure
 \end{table}
 Table: Degree of Success.
-
-\begin{box}[Rules Summary 8: Degree of Success and Failure]
-If the Qualification Roll matches Effort, then the Action is a "Success"; otherwise,
-it is a "Failure". If the Qualification Roll beats Resistance, then the Action is a
-"Complete" Success, or a "Partial" Failure; otherwise it is a Complete Failure, or a
-Partial Success.
-\end{box}
 
 _Possible Degrees of Success_ Not all Degrees of Success and Failure are possible to
 achieve just with a Qualification Roll. If Effort is lower than or equal to Resistance,
@@ -1458,6 +1458,11 @@ Table: Modifiers and change to DoS.
 Choosing modifiers
 ------------------
 
+\begin{box}[Rules Summary 12: The Rule of Two]
+At most two dramatic modifiers may be applied to a single Action: either a) two
+positive, or b) two negative, or c) one positive and one negative.
+\end{box}
+
 Static modifiers model routine complications to ordinary Actions, in particular minigame
 Actions. Dramatic modifiers model uncommon or surprising variation to Actions. 
 
@@ -1467,11 +1472,6 @@ modifier when a character takes an Action that is high-stakes, spectacular, or
 unexpected, or impresses and surprises the group in some other way. In other words:
 dramatic modifiers should apply when it is dramatically appropriate to take additional
 information into account that might change the course of the game.
-
-\begin{box}[Rules Summary 12: The Rule of Two]
-At most two dramatic modifiers may be applied to a single Action: either a) two
-positive, or b) two negative, or c) one positive and one negative.
-\end{box}
 
 No more than two dramatic modifiers may be applied to a single Action: either two
 positive or two negative, or one of each sign. This is in the interest of reducing the
@@ -1645,20 +1645,19 @@ Nests & Insects is organised around four "minigames". A minigame is a set of spe
 rules for a special game situation that Nests & Insects wants to model with more detail
 than the standard fd100 rules. Combat is the most detailed and elaborate of Nests &
 Insects' minigames. The other three are Survival and Exploration; Hunting and Foraging;
-and Resting and Healing.
+and Resting and Healing. Brief descriptions are listed below.
 
-_Combat_ The Combat minigame defines rules for, well, combat between the players'
-characters and a Nest's denizens.
+* The Combat minigame defines rules for, well, combat between the players' characters and
+  a Nest's denizens.
 
-_Survival and Exploration_ The Survival and Exploration minigame defines rules for
-characters to explore, and the GQ to roll the dice to procedurally generate, a Nest.
+* The Survival and Exploration minigame defines rules for characters to explore, and the
+  GQ to roll the dice to procedurally generate, a Nest.
 
-_Hunting and Foraging_ The Hunting and Foraging minigame defines rules for finding
-sustenance and medicinal Food items.
+* The Hunting and Foraging minigame defines rules for finding sustenance and medicinal
+  Food items.
 
-_Resting and Healing_ The Resting and Healing minigame defines rules for healing from
-wounds and Effects, consuming food Items to reduce Hunger, and using XP to improve
-characters' Features.
+* The Resting and Healing minigame defines rules for healing from wounds and Effects,
+  consuming food Items to reduce Hunger, and using XP to improve characters' Features.
 
 \newpage
 
@@ -2133,9 +2132,6 @@ exist for rules purposes.
 Nothing else worthy of note happens at the end of Combat. 
 
 \newpage
-
-
-
 
                                          Setting
                                          =======
