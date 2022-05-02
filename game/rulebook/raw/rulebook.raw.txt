@@ -818,7 +818,7 @@ Description
 
 Beetles are the armoured knights of the insect kingdom¹. They have an outer pair of wings
 modified into a hardened wing-case, the elytra (Greek for "sheaths"), that protect their
-delicate flying wings and also, their bodies. Their heads are also large and armoured and
+delicate flying wings and also, their bodies. Their heads are large and armoured, and
 armed with powerful mandibles that can deliver crushing bites. Beetles' heads come in a
 wild variety of shapes, sizes and forms, specialised for digging, fighting, or feeding.
 
@@ -920,10 +920,11 @@ Greek name of Spider, *Arachne*. Spiders, like most Arachnids, have eight legs a
 front appendages, called the pedipalps, that function like external mouthparts. Spiders
 can move very fast and with great precision on their eight legs. They are frightfully
 clever and use their intelligence to hunt and ambush prey. The defining characteristic of
-spiders is their ability to weave webs. In Combat, Spiders' webs can immobilise enemies
-or stabilise allies bleeding hemolymph (the web essentially acts as a bandage). Spiders'
-bites inject venom that can paralyse prey, and can heal allies, removing their Wounds.
-They are, unfortunately quite frail and have no carapace to protect them from attacks.
+spiders is their ability to weave webs. In Combat, Nests & Insects Spiders' webs can
+immobilise enemies or stabilise allies bleeding hemolymph (the web essentially acts as a
+bandage). Spiders' bites inject venom that can paralyse prey, and can heal allies,
+removing their Wounds. They are, unfortunately quite frail and have no carapace to
+protect them from attacks.
 
 Choose this class: 
 ------------------ 
@@ -950,9 +951,9 @@ Description
 Wasps are mean, flying killing machines. Wasps are fast and precise fliers capable of
 hovering in place. They have yellow- or orange-and-black aposematic stripes that warn
 enemies of their deadlinesss. Their Stings inject lethal venom, but unlike Spiders'
-venom, Wasp venom can only wound, not heal. Unlike Bees, Wasps do not lose their stings
-and die when they sting an enemy, so they can keep stinging away for as long as they
-like.
+venom, Nests & Insects' Wasp venom can only wound, not heal. Unlike Bees, Wasps do not
+lose their stings and die when they sting an enemy, so they can keep stinging away for as
+long as they like.
 
 In Nests & Insects Wasps are high-mobility, shock troops optimised for menoeuverability
 and damage, but they have soft bodies without a protective carapace armour. They can use
@@ -1066,7 +1067,7 @@ Let's call such dice "one-based". d10s typically have faces numbered 0, 1, ..., 
 10, ..., 90). Let's call those "zero-based". Accordingly the Nests & Insects polyhedrals
 used to compose decile dice are all "zero-based", just like the typical d10. Most
 roleplayers will not have zero-based polyhedral dice, other than d10s. What to do then,
-to play Nests & Insects? There are three alternatives, listed below.
+to play Nests & Insects? There are four alternatives, listed below.
 
 1. Get you a set of blank polyhedral dice and paint in the desired numbers.
 
@@ -1288,7 +1289,7 @@ elaborate or simple as the character, and the player group, feel like.
 
 The only requirement is that the description of the character's Intent is sufficiently
 detailed for the GQ to be able to determine the Features to be used as Effort and
-Resistance, or static modifiers.
+Resistance, or modifiers.
 
 \begin{box}[Example 2]
 Cody declares his character's intent: "Spider attacks the second Nasute Soldier".
@@ -1374,10 +1375,10 @@ roll over, or equal to, Resistance is to overcome, or "beat" Resistance.
 \end{box}
 
 \begin{box}[Rules Summary 8: Degree of Success and Failure]
-If the Qualification Roll matches Effort, then the Action is a "Success"; otherwise,
-it is a "Failure". If the Qualification Roll beats Resistance, then the Action is a
-"Complete" Success, or a "Partial" Failure; otherwise it is a Complete Failure, or a
-Partial Success.
+If the Qualification Roll matches Effort, then the DoS of the Action is a "Success";
+otherwise, it is a "Failure". If the Qualification Roll beats Resistance, then the
+DoS of the Action is a "Complete" Success, or a "Partial" Failure; otherwise it is a
+Complete Failure, or a Partial Success.
 \end{box}
 
 Once Effort and Resistance are chosen the player rolls a d100 and compares its result to
@@ -1421,13 +1422,13 @@ to the result of the roll.
 
 \begin{box}[Rules Summary 10: Positive and Negative Modifiers]
 Modifiers can be positive or negative. Matching a positive modifier confers a Shift
-Up to the Dos. Failiing to beat a negative modifier confers a shift Down to the DoS.
+Up to the Dos. Failiing to beat a negative modifier confers a Shift Down to the DoS.
 \end{box}
 
 \begin{box}[Rules Summary 11: Shifts Up and Shifts Down]
-A Shift Up changes the DoS from worst to best. A Shift Down changes the DoS from best
-to worst. A Shift Up from Complete Success changes the DoS to Critical Success. A
-Shift Down from Complete Failure changes the DoS to Critical Failure.
+A Shift Up changes the DoS from worse to better. A Shift Down changes the DoS from
+better to worse. A Shift Up from Complete Success changes the DoS to Critical
+Success. A Shift Down from Complete Failure changes the DoS to Critical Failure.
 \end{box}
 
 Modifiers are Features of a character or game entities that further support or hinder the
@@ -1538,10 +1539,10 @@ are Quantified and Features' ratings are changed as necessary, the GQ describes 
 outcome of the Action.
 
 _The role of the GQ_ The GQ's responsibility is to be the eyes and ears of the players in
-the game world and the only interface between the players and the their characters. Only
-what the GQ describes, actually happens in the game world. In that sense, the role of the
-GQ is that of a benevolent dictator: she has absolute authority over the game world, but
-she must ensure that the game is worthwhile for the entire group.
+the game world and the only interface between the players and their characters. Only what
+the GQ describes, actually happens in the game world. In that sense, the role of the GQ
+is that of a benevolent dictator: she has absolute authority over the game world, but she
+must ensure that the game is worthwhile for the entire group.
 
 \newpage
 
@@ -1551,15 +1552,15 @@ she must ensure that the game is worthwhile for the entire group.
 Boolean Roll
 ------------
 
-A Boolean Roll is a simpler form of the Qualification Roll that only determines Success
-or Failure, without any finer gradation. Only an Effort value need be chosen to make
-a Boolean roll- neither Resistance, nor modifiers are taken into account.
-
 \begin{box}[Rules Summary 18: Boolean Roll]
 To make a Boolean Roll describe the character's Intent and choose Effort as for a
 Qualification Roll, then roll d100 and compare the result to Effort. If the result of
 the d100 roll matches Effort, the attempted Action Succeeds. Otherwise, it Fails.
 \end{box}
+
+A Boolean Roll is a simpler form of the Qualification Roll that only determines Success
+or Failure, without any finer gradation. Only an Effort value need be chosen to make
+a Boolean roll- neither Resistance, nor modifiers are taken into account.
 
 \begin{table}[8]
 Roll matches Feature&        Action Outcome
@@ -1595,16 +1596,16 @@ Unfortunately, the alternative "Crisp Roll" was not thematically appropriate.
 Contested Boolean Roll
 ----------------------
 
-A Contested Boolean Roll is a Boolean Roll that also takes into account the Resistance of
-a game entity to a character's Effort, but like the ordinary Boolean Roll, only
-determines Success or Failure, without any degrees thereof.
-
 \begin{box}[Rules Summary 19: Contested Boolean Roll]
 To make a Contested Boolean Roll describe the character's Intent and choose Effort
 and Resistance as for a Qualification Roll, then roll d100 and compare the result to
 Effort and Resistance simultaneously. If the result of the d100 roll matches Effort
 and beats Resistance, the attempted Action Succeeds. Otherwise, it fails.
 \end{box}
+
+A Contested Boolean Roll is a Boolean Roll that also takes into account the Resistance of
+a game entity to a character's Effort, but like the ordinary Boolean Roll, only
+determines Success or Failure, without any degrees thereof.
 
 \begin{table}[8]
 Roll matches Effort &   Roll beats Resistance &   Action Outcome

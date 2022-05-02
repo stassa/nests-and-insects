@@ -11,7 +11,7 @@ wasp:attribute(passions,40).
 
 wasp:base_attack([name-'Bite Attack'
                      ,keywords-['Shredding']
-                     ,damage-'1 Wound'
+                     ,damage-'2 Wounds'
                      ,max_range-'Close'
                      ,hit-'Target Recoils'
                      ,hit_2-['(Alt)','']
