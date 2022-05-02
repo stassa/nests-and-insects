@@ -274,48 +274,48 @@
 ║ The System                                                                                ║▓
 ║ ----------                                                                                ║▓
 ║                                                                                           ║▓
-║ Nests & Insects' roleplaying system is called Fuzzy d100 (fd100). fd100 is a "percentile" ║▓
+║ Nests & Insects' roleplaying system is called Fuzzy d100 (fd100). It is a "percentile"    ║▓
 ║ system where characters are defined by Features rated on a percentile scale from 1 to     ║▓
-║ 100, and a hundred-sided die (d100) is rolled to determine the outcome of their actions.  ║▓
-║ The d100 in Nests & Insects is a composite die comprised of two ten-sided dice (d10) each ║▓
-║ numbered: 0, 1, 2, ...., 9. The two d10 are rolled together and read as one, generating   ║▓
-║ numbers from 00 to 99.                                                                    ║▓
+║ 100, and where a composite, "percentile" die (d100) is rolled to determine the outcome of ║▓
+║ characters' actions. In Nests & Insects the d100 is comprised of two ten-sided dice       ║▓
+║ (d10s) with faces numbered 0, 1, ..., 9, rolled together and read as one to generate      ║▓
+║ results from "00" to "99".                                                                ║▓
 ║                                                                                           ║▓
-║ To determine the outcome of characters' actions, players roll a d100 and compare it       ║▓
-║ simultaneously to two target numbers: a character's Effort, and the Resistance of         ║▓
-║ opponents or the environment. The value of the d100 roll relative to Effort and           ║▓
-║ Resistance determines the Degree of Success or Failure (DoS) of an action. Table 1        ║▓
-║ outlines the four DoS attainable by comparing a d100 roll to Effort and Resistance.       ║▓
+║ The "Fuzzy" in the d100 name refers to the six possible Degrees of Success or Failure of  ║▓
+║ an action (DoS). To determine the DoS of an action, players describe the character's      ║▓
+║ intent, then roll a d100 and compare it to two target numbers, "Effort" and "Resistance". ║▓
 ║                                                                                           ║▓
-║ Roll vs Effort        Roll vs Resistance        Degree of Success                         ║▓
-║ ─────────────────────────────────────────────────────────────────                         ║▓
-║ Under                 Over or equal             Complete Succes                           ║▓
-║ Under                 Under                     Partial Success                           ║▓
-║ Over or equal         Over or equal             Partial Failure                           ║▓
-║ Over or equal         Under                     Complete Failure                          ║▓
-║ ─────────────────────────────────────────────────────────────────                         ║▓
-║ Table 1: Effort, Resistance and Degree of Success.                                        ║▓
+║ To roll under Effort is to "match" Effort. To roll over, or equal to, Resistance, is to   ║▓
+║ "beat" Resistance. If the d100 roll matches Effort, the initial DoS is a Success,         ║▓
+║ otherwise it is a Failure. If the d100 roll beats Resistance, the initial Dos is a        ║▓
+║ Complete Success or a Partial Failure, otherwise it is a Partial Success or a Complete    ║▓
+║ Failure.                                                                                  ║▓
 ║                                                                                           ║▓
+║ The initial DoS may change by comparison with additional target numbers, called           ║▓
+║ "modifiers", that can be either positive or negative. Matching a positive modifier        ║▓
+║ improves the DoS and failing to beat a negative modifier worsens the DoS. With modifiers, ║▓
+║ the DoS may improve beyond a Complete Success, to a Critical Success, or worsen beyond a  ║▓
+║ Complete Failure, to a Critical Failure.                                                  ║▓
 ╚════════════════════════════════════════════-2-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ Two further DoS, Critical Failure and Critical Success are attainable by the use of       ║▓
-║ additional target numbers called "modifiers". "Static" modifiers are compared to the same ║▓
-║ d100 roll as Effort and Resistance. "Dramatic" modifiers are compared to a new d100 roll. ║▓
-║ Characters' intents and actions that grant dramatic modifiers must be described in more   ║▓
-║ detail than static modifiers, to encourage players to use their imagination to help their ║▓
-║ characters. Table 2 illustrates the use of modifiers to change the DoS of an action.      ║▓
+║ What the DoS of an action means depends on the character's description of the character's ║▓
+║ intent. Once the DoS of the action is known, the GQ describes what happens as a result of ║▓
+║ the character's action.                                                                   ║▓
 ║                                                                                           ║▓
-║ Roll vs Modifier        Modifier Sign        Degree of Success                            ║▓
-║ ──────────────────────────────────────────────────────────────────────────────            ║▓
-║ Under                   Positive             Improves towards Critical Success            ║▓
-║ Over or Equal           Positive             No change                                    ║▓
-║ Under                   Negative             Worsens towards Critical Failure             ║▓
-║ Over or Equal           Negative             No change                                    ║▓
-║ ──────────────────────────────────────────────────────────────────────────────            ║▓
-║ Table 2: Modifiers and change to Degree of Success. DoS can improve beyond Complete       ║▓
-║ Success to Critical Success; or worsen beyond Complete Failure to Critical Failure.       ║▓
+║ Table 1 describes the six Degrees of Success and Failure, and how they can be achieved.   ║▓
+║                                                                                           ║▓
+║ Degree of Success        Achieved by                                                      ║▓
+║ ─────────────────────────────────────────────────────────────────────────────────────     ║▓
+║ Critical Success         Matching a positive Modifier after a Complete Success            ║▓
+║ Complete Success         Matching Effort and Beating Resistance                           ║▓
+║ Partial Success          Matching Effort and Failing to Beat Resistance                   ║▓
+║ Partial Failure          Failing to Match Effort and Beating Resistance                   ║▓
+║ Complete Failure         Failing to Match Effort and Failing to Beat Resistance           ║▓
+║ Critical Failure         Failing to Beat a Negative Modifier after a Complete Failure     ║▓
+║ ─────────────────────────────────────────────────────────────────────────────────────     ║▓
+║ Table 1: Six Degrees of Success                                                           ║▓
 ║                                                                                           ║▓
 ║ Decile dice                                                                               ║▓
 ║ -----------                                                                               ║▓
@@ -350,7 +350,7 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ Table 3 lists the five decile dice used in fd100, their component polyhedrals and their   ║▓
+║ Table 2 lists the five decile dice used in fd100, their component polyhedrals and their   ║▓
 ║ numeric ranges. Decile dice are described in full detail in Section "Decile Dice" in the  ║▓
 ║ "System" Chapter.                                                                         ║▓
 ║                                                                                           ║▓
@@ -362,7 +362,7 @@
 ║ d80           0 to 79    d8          0,1,...,7    d10         0,1,...,9                   ║▓
 ║ d100          0 to 99    d10         0,1,...,9    d10         0,1,...,9                   ║▓
 ║ ────────────────────────────────────────────────────────────────────────                  ║▓
-║ Table 3: Decile dice, used for quantification of percentile effects. d100 is also a       ║▓
+║ Table 2: Decile dice, used for quantification of percentile effects. d100 is also a       ║▓
 ║ decile die. The d20 does not need a "tens" die and is rolled on its own.                  ║▓
 ║                                                                                           ║▓
 ║ Minigames                                                                                 ║▓
@@ -393,7 +393,7 @@
 ║ Complete Failure         Special Attack Misses                                            ║▓
 ║ Critical Failure         Both Attacks Miss                                                ║▓
 ║ ──────────────────────────────────────────────                                            ║▓
-║ Table 4: Combat minigame outcomes.                                                        ║▓
+║ Table 3: Combat minigame outcomes.                                                        ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ╚════════════════════════════════════════════-4-════════════════════════════════════════════╝▓
@@ -513,7 +513,7 @@
 ║                                                                                           ║▓
 ║ Each character class has its own character sheet, based on the character sheet template   ║▓
 ║ in the preceding page, with its own, pre-set, values. The Character Sheet is divided into ║▓
-║ 5 areas, some with sub-areas. These are listed in Table 5.                                ║▓
+║ 5 areas, some with sub-areas. These are listed in Table 4.                                ║▓
 ║                                                                                           ║▓
 ║ Area Name       Sub-Areas                                                                 ║▓
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
@@ -523,7 +523,7 @@
 ║ Survival        Hunger box, Luck box                                                      ║▓
 ║ Abilities       Specific Abilities box, Common Abilities box, Effects box, Inventory box  ║▓
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
-║ Table 5: Areas and sub-areas in a character sheet.                                        ║▓
+║ Table 4: Areas and sub-areas in a character sheet.                                        ║▓
 ║                                                                                           ║▓
 ║ The following Sections describe each area and sub-area of the character sheet.            ║▓
 ║                                                                                           ║▓

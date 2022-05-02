@@ -235,45 +235,45 @@ them in the game; but that is not strictly necessary.
 The System
 ----------
 
-Nests & Insects' roleplaying system is called Fuzzy d100 (fd100). fd100 is a "percentile"
+Nests & Insects' roleplaying system is called Fuzzy d100 (fd100). It is a "percentile"
 system where characters are defined by Features rated on a percentile scale from 1 to
-100, and a hundred-sided die (d100) is rolled to determine the outcome of their actions.
-The d100 in Nests & Insects is a composite die comprised of two ten-sided dice (d10) each
-numbered: 0, 1, 2, ...., 9. The two d10 are rolled together and read as one, generating
-numbers from 00 to 99.
+100, and where a composite, "percentile" die (d100) is rolled to determine the outcome of
+characters' actions. In Nests & Insects the d100 is comprised of two ten-sided dice
+(d10s) with faces numbered 0, 1, ..., 9, rolled together and read as one to generate
+results from "00" to "99".
 
-To determine the outcome of characters' actions, players roll a d100 and compare it
-simultaneously to two target numbers: a character's Effort, and the Resistance of
-opponents or the environment. The value of the d100 roll relative to Effort and
-Resistance determines the Degree of Success or Failure (DoS) of an action. Table 1
-outlines the four DoS attainable by comparing a d100 roll to Effort and Resistance.
+The "Fuzzy" in the d100 name refers to the six possible Degrees of Success or Failure of
+an action (DoS). To determine the DoS of an action, players describe the character's
+intent, then roll a d100 and compare it to two target numbers, "Effort" and "Resistance".
+
+To roll under Effort is to "match" Effort. To roll over, or equal to, Resistance, is to
+"beat" Resistance. If the d100 roll matches Effort, the initial DoS is a Success,
+otherwise it is a Failure. If the d100 roll beats Resistance, the initial Dos is a
+Complete Success or a Partial Failure, otherwise it is a Partial Success or a Complete
+Failure.
+
+The initial DoS may change by comparison with additional target numbers, called
+"modifiers", that can be either positive or negative. Matching a positive modifier
+improves the DoS and failing to beat a negative modifier worsens the DoS. With modifiers,
+the DoS may improve beyond a Complete Success, to a Critical Success, or worsen beyond a
+Complete Failure, to a Critical Failure.
+
+What the DoS of an action means depends on the character's description of the character's
+intent. Once the DoS of the action is known, the Game Queen describes what happens as a
+result of the character's action.
+
+Table 1 describes the six Degrees of Success and Failure, and how they can be achieved.
 
 \begin{table}[8]
-Roll vs Effort&    Roll vs Resistance&    Degree of Success
-Under         &    Over or equal     &    Complete Succes  
-Under         &    Under             &    Partial Success  
-Over or equal &    Over or equal     &    Partial Failure  
-Over or equal &    Under             &    Complete Failure 
+Degree of Success &    Achieved by
+Critical Success  &    Matching a positive Modifier after a Complete Success
+Complete Success  &    Matching Effort and Beating Resistance
+Partial Success   &    Matching Effort and Failing to Beat Resistance
+Partial Failure   &    Failing to Match Effort and Beating Resistance
+Complete Failure  &    Failing to Match Effort and Failing to Beat Resistance
+Critical Failure  &    Failing to Beat a Negative Modifier after a Complete Failure
 \end{table}
-Table 1: Effort, Resistance and Degree of Success.
-
-
-Two further DoS, Critical Failure and Critical Success are attainable by the use of
-additional target numbers called "modifiers". "Static" modifiers are compared to the same
-d100 roll as Effort and Resistance. "Dramatic" modifiers are compared to a new d100 roll.
-Characters' intents and actions that grant dramatic modifiers must be described in more
-detail than static modifiers, to encourage players to use their imagination to help their
-characters. Table 2 illustrates the use of modifiers to change the DoS of an action.
-
-\begin{table}[8]
-Roll vs Modifier&       Modifier Sign&       Degree of Success
-Under           &       Positive     &       Improves towards Critical Success
-Over or Equal   &       Positive     &       No change
-Under           &       Negative     &       Worsens towards Critical Failure
-Over or Equal   &       Negative     &       No change
-\end{table}
-Table 2: Modifiers and change to Degree of Success. DoS can improve beyond Complete
-Success to Critical Success; or worsen beyond Complete Failure to Critical Failure.
+Table 1: Six Degrees of Success
 
 Decile dice
 -----------
@@ -305,7 +305,7 @@ shows a "4": in that case, the d60 result is "04", or just "4". Suppose the d6 s
 a "3" while the d10 shows an "8": in that case, the d60 result is "38".
 \end{box}
 
-Table 3 lists the five decile dice used in fd100, their component polyhedrals and their
+Table 2 lists the five decile dice used in fd100, their component polyhedrals and their
 numeric ranges. Decile dice are described in full detail in Section "Decile Dice" in the
 "System" Chapter.
 
@@ -317,7 +317,7 @@ d60       &  0 to 59 &    d6       &  0,1,...,5 &  d10     &  0,1,...,9
 d80       &  0 to 79 &    d8       &  0,1,...,7 &  d10     &  0,1,...,9 
 d100      &  0 to 99 &    d10      &  0,1,...,9 &  d10     &  0,1,...,9 
 \end{table}
-Table 3: Decile dice, used for quantification of percentile effects. d100 is also a
+Table 2: Decile dice, used for quantification of percentile effects. d100 is also a
 decile die. The d20 does not need a "tens" die and is rolled on its own.
 
 Minigames
@@ -348,7 +348,7 @@ Partial Failure  &        Base Attack Misses
 Complete Failure &        Special Attack Misses
 Critical Failure &        Both Attacks Miss
 \end{table}
-Table 4: Combat minigame outcomes.
+Table 3: Combat minigame outcomes.
 \newpage
 
                                    Character
@@ -421,7 +421,7 @@ different Features as they are listed in the character sheet.
 
 Each character class has its own character sheet, based on the character sheet template
 in the preceding page, with its own, pre-set, values. The Character Sheet is divided into
-5 areas, some with sub-areas. These are listed in Table 5.
+5 areas, some with sub-areas. These are listed in Table 4.
 
 \begin{table}[4]
 Area Name   &   Sub-Areas
@@ -431,7 +431,7 @@ Combat Stats&   Condition box, Disposition Track, Attack boxes
 Survival    &   Hunger box, Luck box
 Abilities   &   Specific Abilities box, Common Abilities box, Effects box, Inventory box
 \end{table}
-Table 5: Areas and sub-areas in a character sheet.
+Table 4: Areas and sub-areas in a character sheet.
 
 The following Sections describe each area and sub-area of the character sheet.
 
@@ -462,7 +462,7 @@ Attributes are Features that represent innate abilities of characters in a Class
 ─────────────────────────────────────────────────────────────────────────────────────────
 Figure 2: Attributes Area.
 
-Nests & Insects characters have eight Attributes (Table 6).
+Nests & Insects characters have eight Attributes (Table 5).
 
 \begin{table}[6]
 Attribute&       Description
@@ -475,7 +475,7 @@ Charms   &       Charisma, talent for communication and influencing others' beha
 Ken      &       Wisdom, common sense, and knowledge of the world
 Passions &       Willpower, morale, strength of spirit and courage
 \end{table}
-Table 6: Character Attributes
+Table 5: Character Attributes
 
 _XP Tickboxes_ In the Attributes Area each attribute is listed with an empty tickbox to
 the left, marked "XP", as shown in Figure 3. This is an *XP tickbox*. "XP" stands for
@@ -704,7 +704,7 @@ The Common Abilities box (Figure 14) lists Abilities common to all character cla
 Figure 14: Common Abilities
 
 Like Atributes and Conditions, Common Abilities have an XP Tickbox and can be improved
-with experience. Table 7 briefly describes Common Abilities and their use.
+with experience. Table 6 briefly describes Common Abilities and their use.
 
 \begin{table}[8]
 Common Ability&        Description
@@ -719,7 +719,7 @@ Perception    &        Find secrets and hidden items and Rooms
 Signalling    &        Display aposematic markings, emit pheromonic signals
 Sneaking      &        Move and act with stealth
 \end{table}
-Table 7: Common Abilities with brief description.
+Table 6: Common Abilities with brief description.
 
 Effects box
 -----------
@@ -741,7 +741,7 @@ Figure 15: Effects box.
 
 Effects each have a radio button. When this is ticked it marks that the Effect "Applies",
 i.e. that the character is currently subject to the Effect. The ten Effects in the Effect
-box are listed in Table 8 along with a brief description of each.
+box are listed in Table 7 along with a brief description of each.
 
 \begin{table}[6]
 Effects        The character...
@@ -756,7 +756,7 @@ Paralysed      ...cannot take any Actions
 Poisoned       ...has a negative modifier equal to Poisoned to all Actions
 Stunned        ...loses her next Turn in Combat
 \end{table}
-Table 8: Effects, with brief description of how a character is affected.
+Table 7: Effects, with brief description of how a character is affected.
 
 Inventory box
 -------------
@@ -1041,7 +1041,7 @@ decile dice (and the d100 itself) are used to quantify the results of Actions on
 percentile scale as Features. This is particularly the case for Actions that bestow an
 Effect on a character or another game entity.
 
-Table 3 in the Section "Decile dice" of the "Overview" Chapter illustrates Decile dice.
+Table 2 in the Section "Decile dice" of the "Overview" Chapter illustrates Decile dice.
 The Table is reproduced here for ease of reference:
 
 \begin{table}[4]
