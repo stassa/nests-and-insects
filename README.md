@@ -44,6 +44,9 @@ Nests & Insects is a "Roguelike" TTRPG: it is inspired by Roguelike Computer
 RPGs (CRPGs) such as Nethack, Angband, Moria and ADoM. From Roguelike CRPGs it
 borrows: hack-and-slash, dungeon-crawling gameplay; lethal combat; hunger
 mechanics; and a focus on exploration and experimentation with the game world.
+From TTRPGs it borrows: weird dice; tortuous terminology with Pompous
+Capitalisation; over-engineered rules; unclear motivation to learn yet another
+roleplaying system; and crunch Crunch CRrRUNCH!
 
 Reading the rulebook
 --------------------
