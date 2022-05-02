@@ -4,7 +4,7 @@ Nests & Insects
 This is the repository for the rulebooks and code of Nests & Insects, a Roguelike
 Tabletop Roleplaying Game.
 
-Nests & Insects is still a work in progress, at the early stages of design and
+Nests & Insects is still a work in progress, in the early stages of design and
 playtesting.
 
 The Game
