@@ -36,8 +36,9 @@ Nests & Insects is a tabletop roleplaying game: the players say what their
 characters want to do and roll the dice to see what happens. Then the Game Queen
 describes the results of the characters' actions. Nests & Insects' roleplaying
 system is a percentile system where a composite, "percentile" die (d100) is
-rolled to determine the outcome of actions and "decile dice" (d20, d40, d60, d80
-and the d100 itself) are rolled to quantify the results of actions.
+rolled to determine the outcome of actions and composite "decile dice" (d20,
+d40, d60, d80 and the d100 itself) are rolled to quantify the results of
+actions.
 
 Nests & Insects is a "Roguelike" TTRPG: it is inspired by Roguelike Computer
 RPGs (CRPGs) such as Nethack, Angband, Moria and ADoM. From CRPGs it borrows:
