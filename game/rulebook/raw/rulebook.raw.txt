@@ -216,7 +216,7 @@ While Nests & Insects is a roleplaying game, it is not focused on roleplaying, b
 is very difficult for humans to roleplay arthropods (and vice-versa). As in Roguelike
 CRPGs, Nests & Insects does not come with a built-in, pre-scripted story, and it is
 instead designed to encourage a story to emerge naturally from the interaction of the
-players' characters with the rules of the game and the procedurally generated elements
+players' characters with the rules of the game and the procedurally generated elements of
 the game world (including Jobs, Nests and Nests' inhabitants).
 
 Nests & Insects is designed to be played with no preparation other than reading some of
@@ -598,7 +598,7 @@ The Survival Area begins with the Survival header (Figure 9).
 
 ╠►Survival◄════════════════════════════════════════════════════════════════════════════╣▓
 ─────────────────────────────────────────────────────────────────────────────────────────
-Figure 9: Survival header, demarkating the Survival Area.
+Figure 9: Survival header, demarcating the Survival Area.
 
 The Survival Area has two sub-Areas: the Food box, used in the Survival minigame; and the
 Luck box.
@@ -642,7 +642,7 @@ The Abilities Area begins with the Abilities header (Figure 12).
 
 ╠►Abilities◄═══════════════════════════════════════════════════════════════════════════╣▓
 ─────────────────────────────────────────────────────────────────────────────────────────
-Figure 12: Abilities header, demarkating the Abilities area.
+Figure 12: Abilities header, demarcating the Abilities area.
 
 The Abilities Area has four sub-Areas: the Specific Abilities box, the Common Abilities
 box, the Effects box and the Inventory box.
@@ -671,7 +671,7 @@ Swarming, Venomous, or Web Weaving. These are briefly described below.
   Ladybug and Scorpion have Carapace.
 
 * Flying: the character can fly. Flying characters are harder to hit in Combat by
-  terrestrial attackes. Ladybug and Wasp have Flying.
+  terrestrial attackers. Beetle, Ladybug and Wasp have Flying.
 
 * Swarming: the character is a swarm of individual insects, or can summon conspecifics to
   assist her.
@@ -744,17 +744,17 @@ i.e. that the character is currently subject to the Effect. The ten Effects in t
 box are listed in Table 7 along with a brief description of each.
 
 \begin{table}[6]
-Effects        The character...
-Agony          ...is in agony and must overcome her pain to act
-Bleeding       ...automatically takes a Wound each Combat Turn
-Blind          ...can't see. Ants start the game Blind
-Charmed        ...joins her enemies and fights against her Allies
-Confused       ...has a chance to Attack her Allies instead of enemies
-Immobilised    ...cannot move and can only Attack in close range
-Infected       ...acquires a random Effect each Turn this Effect Applies
-Paralysed      ...cannot take any Actions
-Poisoned       ...has a negative modifier equal to Poisoned to all Actions
-Stunned        ...loses her next Turn in Combat
+Effect     &    The character...
+Agony      &    ...is in agony and must overcome her pain to act
+Bleeding   &    ...automatically takes a Wound each Combat Turn
+Blind      &    ...can't see. Ants start the game Blind
+Charmed    &    ...joins her enemies and fights against her Allies
+Confused   &    ...has a chance to Attack her Allies instead of enemies
+Immobilised&    ...cannot move and can only Attack in close range
+Infected   &    ...acquires a random Effect each Turn this Effect Applies
+Paralysed  &    ...cannot take any Actions
+Poisoned   &    ...has a negative modifier equal to Poisoned to all Actions
+Stunned    &    ...loses her next Turn in Combat
 \end{table}
 Table 7: Effects, with brief description of how a character is affected.
 

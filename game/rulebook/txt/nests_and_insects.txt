@@ -255,7 +255,7 @@
 ║ is very difficult for humans to roleplay arthropods (and vice-versa). As in Roguelike     ║▓
 ║ CRPGs, Nests & Insects does not come with a built-in, pre-scripted story, and it is       ║▓
 ║ instead designed to encourage a story to emerge naturally from the interaction of the     ║▓
-║ players' characters with the rules of the game and the procedurally generated elements    ║▓
+║ players' characters with the rules of the game and the procedurally generated elements of ║▓
 ║ the game world (including Jobs, Nests and Nests' inhabitants).                            ║▓
 ║                                                                                           ║▓
 ║ Nests & Insects is designed to be played with no preparation other than reading some of   ║▓
@@ -301,8 +301,8 @@
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║ What the DoS of an action means depends on the character's description of the character's ║▓
-║ intent. Once the DoS of the action is known, the GQ describes what happens as a result of ║▓
-║ the character's action.                                                                   ║▓
+║ intent. Once the DoS of the action is known, the Game Queen describes what happens as a   ║▓
+║ result of the character's action.                                                         ║▓
 ║                                                                                           ║▓
 ║ Table 1 describes the six Degrees of Success and Failure, and how they can be achieved.   ║▓
 ║                                                                                           ║▓
@@ -558,7 +558,7 @@
 ║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
 ║ Figure 2: Attributes Area.                                                                ║▓
 ║                                                                                           ║▓
-║ Nests & Insects characters have eight Attributes (Table 6).                               ║▓
+║ Nests & Insects characters have eight Attributes (Table 5).                               ║▓
 ║                                                                                           ║▓
 ║ Attribute      Description                                                                ║▓
 ║ ───────────────────────────────────────────────────────────────────────────────────────   ║▓
@@ -571,7 +571,7 @@
 ║ Ken            Wisdom, common sense, and knowledge of the world                           ║▓
 ║ Passions       Willpower, morale, strength of spirit and courage                          ║▓
 ║ ───────────────────────────────────────────────────────────────────────────────────────   ║▓
-║ Table 6: Character Attributes                                                             ║▓
+║ Table 5: Character Attributes                                                             ║▓
 ║                                                                                           ║▓
 ║ _XP Tickboxes_ In the Attributes Area each attribute is listed with an empty tickbox to   ║▓
 ║ the left, marked "XP", as shown in Figure 3. This is an *XP tickbox*. "XP" stands for     ║▓
@@ -707,7 +707,7 @@
 ║                                                                                           ║▓
 ║ ╠►Survival◄════════════════════════════════════════════════════════════════════════════╣▓ ║▓
 ║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
-║ Figure 9: Survival header, demarkating the Survival Area.                                 ║▓
+║ Figure 9: Survival header, demarcating the Survival Area.                                 ║▓
 ║                                                                                           ║▓
 ║ The Survival Area has two sub-Areas: the Food box, used in the Survival minigame; and the ║▓
 ║ Luck box.                                                                                 ║▓
@@ -757,7 +757,7 @@
 ║                                                                                           ║▓
 ║ ╠►Abilities◄═══════════════════════════════════════════════════════════════════════════╣▓ ║▓
 ║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
-║ Figure 12: Abilities header, demarkating the Abilities area.                              ║▓
+║ Figure 12: Abilities header, demarcating the Abilities area.                              ║▓
 ║                                                                                           ║▓
 ║ The Abilities Area has four sub-Areas: the Specific Abilities box, the Common Abilities   ║▓
 ║ box, the Effects box and the Inventory box.                                               ║▓
@@ -786,7 +786,7 @@
 ║   Ladybug and Scorpion have Carapace.                                                     ║▓
 ║                                                                                           ║▓
 ║ * Flying: the character can fly. Flying characters are harder to hit in Combat by         ║▓
-║   terrestrial attackes. Ladybug and Wasp have Flying.                                     ║▓
+║   terrestrial attackers. Beetle, Ladybug and Wasp have Flying.                            ║▓
 ║                                                                                           ║▓
 ║ * Swarming: the character is a swarm of individual insects, or can summon conspecifics to ║▓
 ║   assist her.                                                                             ║▓
@@ -822,7 +822,7 @@
 ║ Figure 14: Common Abilities                                                               ║▓
 ║                                                                                           ║▓
 ║ Like Atributes and Conditions, Common Abilities have an XP Tickbox and can be improved    ║▓
-║ with experience. Table 7 briefly describes Common Abilities and their use.                ║▓
+║ with experience. Table 6 briefly describes Common Abilities and their use.                ║▓
 ║                                                                                           ║▓
 ║ Common Ability        Description                                                         ║▓
 ║ ─────────────────────────────────────────────────────────────────────────────────         ║▓
@@ -837,7 +837,7 @@
 ║ Signalling            Display aposematic markings, emit pheromonic signals                ║▓
 ║ Sneaking              Move and act with stealth                                           ║▓
 ║ ─────────────────────────────────────────────────────────────────────────────────         ║▓
-║ Table 7: Common Abilities with brief description.                                         ║▓
+║ Table 6: Common Abilities with brief description.                                         ║▓
 ║                                                                                           ║▓
 ║ Effects box                                                                               ║▓
 ║ -----------                                                                               ║▓
@@ -862,22 +862,22 @@
 ║                                                                                           ║▓
 ║ Effects each have a radio button. When this is ticked it marks that the Effect "Applies", ║▓
 ║ i.e. that the character is currently subject to the Effect. The ten Effects in the Effect ║▓
-║ box are listed in Table 8 along with a brief description of each.                         ║▓
+║ box are listed in Table 7 along with a brief description of each.                         ║▓
 ║                                                                                           ║▓
-║ Effects        The character...                                                           ║▓
-║ ──────────────────────────────────────────────────────────────────────────                ║▓
-║ Agony          ...is in agony and must overcome her pain to act                           ║▓
-║ Bleeding       ...automatically takes a Wound each Combat Turn                            ║▓
-║ Blind          ...can't see. Ants start the game Blind                                    ║▓
-║ Charmed        ...joins her enemies and fights against her Allies                         ║▓
-║ Confused       ...has a chance to Attack her Allies instead of enemies                    ║▓
-║ Immobilised    ...cannot move and can only Attack in close range                          ║▓
-║ Infected       ...acquires a random Effect each Turn this Effect Applies                  ║▓
-║ Paralysed      ...cannot take any Actions                                                 ║▓
-║ Poisoned       ...has a negative modifier equal to Poisoned to all Actions                ║▓
-║ Stunned        ...loses her next Turn in Combat                                           ║▓
-║ ──────────────────────────────────────────────────────────────────────────                ║▓
-║ Table 8: Effects, with brief description of how a character is affected.                  ║▓
+║ Effect           The character...                                                         ║▓
+║ ────────────────────────────────────────────────────────────────────────────              ║▓
+║ Agony            ...is in agony and must overcome her pain to act                         ║▓
+║ Bleeding         ...automatically takes a Wound each Combat Turn                          ║▓
+║ Blind            ...can't see. Ants start the game Blind                                  ║▓
+║ Charmed          ...joins her enemies and fights against her Allies                       ║▓
+║ Confused         ...has a chance to Attack her Allies instead of enemies                  ║▓
+║ Immobilised      ...cannot move and can only Attack in close range                        ║▓
+║ Infected         ...acquires a random Effect each Turn this Effect Applies                ║▓
+║ Paralysed        ...cannot take any Actions                                               ║▓
+║ Poisoned         ...has a negative modifier equal to Poisoned to all Actions              ║▓
+║ Stunned          ...loses her next Turn in Combat                                         ║▓
+║ ────────────────────────────────────────────────────────────────────────────              ║▓
+║ Table 7: Effects, with brief description of how a character is affected.                  ║▓
 ║                                                                                           ║▓
 ║ Inventory box                                                                             ║▓
 ║ -------------                                                                             ║▓
@@ -1681,7 +1681,7 @@
 ║ percentile scale as Features. This is particularly the case for Actions that bestow an    ║▓
 ║ Effect on a character or another game entity.                                             ║▓
 ║                                                                                           ║▓
-║ Table 3 in the Section "Decile dice" of the "Overview" Chapter illustrates Decile dice.   ║▓
+║ Table 2 in the Section "Decile dice" of the "Overview" Chapter illustrates Decile dice.   ║▓
 ║ The Table is reproduced here for ease of reference:                                       ║▓
 ║                                                                                           ║▓
 ║ Decile die    Range      Tens die    Numbered     Ones die    Numbered                    ║▓
