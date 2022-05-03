@@ -92,3 +92,22 @@ The text-based rulebook is formatted with the code in the Prolog module
 `codez/src/layout.pl`. This, too, is a work in progress. If you find major formatting
 errors, or any errors, in the rulebook, please report it by emailing the game's author
 at `ep2216@ic.ac.uk`. You're welcome to send a pull request instead.
+
+License matters
+---------------
+
+The contents of this repository come with the text of a LICENSE - the GNU
+General Public License version 3 (GNU GPL v.3 for short-er). The GNU GPL v.3 is
+a "copyleft license for software and other kinds of works" therefore I assume
+and hereby declare my conviction that it also covers the contents of the game/
+directory, which are not, strictly speaking, "software" in the commonly
+understood sense of "source code writte in a programming language".
+
+In particular, where the word "software" appears in the GNU GPL v.3 ", and for
+the puproses of licensing Nests & Insects, that word should be interpreted as
+saying _software and other kinds of works, including game rules text_, instead.
+
+Should there be any doubts about the licensing of parts of the text in this
+repository, assume that all text is the source code of a programming language,
+except that some text may not have a compiler, or may not be designed to be
+executed by a computer, but a human brain.
