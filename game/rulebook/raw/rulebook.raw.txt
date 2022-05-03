@@ -1670,7 +1670,7 @@ take during the circumstances modelled by the minigame. For example, during Comb
 characters typically attack enemies. Such Actions are a minigame's "formulaic" Actions.
 
 Minigames define each of their formulaic Actions by means of a Formula that includes at
-least a listing of Effort, Resistanc and modifier Features and a table listing the
+least a listing of Effort, Resistance and modifier Features and a table listing the
 outcome of a formulaic Action for each DoS of a Qualification Roll. The Minigame Formula
 Template figure below illustrates the template used to define minigame formulae.
 
@@ -1680,7 +1680,7 @@ List of Minigame Intents: ........... (Pre-determined character Intents)
 List of Minigame Actions: ........... (Formulaic minigame Actions)
 Effort Variables: ................... (The names of Features used as Effort)
 Resistance Variables: ............... (The names of Features used as Resistance)
-Modifier Variables: ................. (The names of Features used as modifiers)
+Modifier Variables: ................. (The names of Features used as static modifiers)
 
 Outcomes of the six Degrees of Success and Failure:
 
@@ -1725,7 +1725,7 @@ Disposition reaches Retreating the Combatant cannot take Actions other than flee
 Combat. If a Combatant's Wounds reach or exceed the maximum marked on her sheet, the
 Combatant is killed.
 
-A Combat Round Ends when all Combatants on one side are either killed, or Retreating.
+Combat ends when all Combatants on one side are either killed, or Retreating.
 
 \newpage
 
@@ -1768,8 +1768,8 @@ Combat begins when either the characters, or Nest creatures attack one another.
 
 All characters in the Room where Combat is taking place make up one Side of Combat.
 
-All creatures of the same species as the creature attacking or attacked by the the
-characters and in the same Room as that creature make up the other Side of Combat.
+All creatures of the same species as the creature attacking or attacked by the characters
+and in the same Room as that creature make up the other Side of Combat.
 
 Characters or creatures on the same Side are "allies" and those on the opposite Side are
 "enemies".
@@ -1784,7 +1784,7 @@ Starting Disposition
 Before the start of the first Combat Round each player makes a Boolean Roll against their
 character's Initiative, and the GQ similarly makes a Boolean Roll against Initiative for
 each of the enemies. Each Combatant whose Initiative roll is Successful starts Combat in
-Holding Disposition. Each Combatant whose Initiative roll is Failued, starts Combat in
+Holding Disposition. Each Combatant whose Initiative roll is Failud, starts Combat in
 Recoiling Disposition.
 
 \begin{table}[8]
@@ -1816,9 +1816,9 @@ Initiative Order is determined as follows:
 * If two or more Combatants are still tied after Initiative and Disposition are compared,
   the GQ rolls a die or flips a coin to break the tie.
 
-The die to roll to break ties depends on the Combatants tied for Initiative: if there are
-two Combatants tied, flip a coin. If there are three, roll a d6 divided by three. If
-there are four, roll a d4. And so on.
+The die to roll to break ties depends on the number of Combatants tied for Initiative: if
+there are two Combatants tied, flip a coin. If there are three, roll a d6 divided by two.
+If there are four, roll a d4. And so on.
 
 \newpage
 
@@ -1855,6 +1855,15 @@ During a combat Round a Combatant can:
 
 * In her Turn, take a Manoeuver Action.
 
+/*
+_Deferring a Turn_ Combatants can delay their Actions to a Turn in the Round after their
+own in the Turn Order. The player declares that her character is deferring her Turn, or
+"waiting" or something similar. Later in the Round, when it is the Turn of another
+character or enemy the player can declare that her character will now take her deferred
+Turn. Her character then takes a Turn and the character whose Turn it was originally
+takes the Turn after that. 
+*/
+
 \newpage
 
 Attack Action
@@ -1863,15 +1872,15 @@ Attack Action
 In her Turn, a Combatant can take one Attack Action targeting an enemy with her Base or
 Special Attack. The DoS of the Attack determines which Attack Hits or Misses.
 
-To determine the outcome of an Attack make a Qualifying Roll with Effort equal to the
+To determine the outcome of an Attack make a Qualification Roll with Effort equal to the
 Attacker's Threat Rate and Resistance equal to the target's Survival Rate. If the target
-has Flying or Carapace, they may be used as modifiers to the Roll.
+has nonzero Flying or Carapace, they are used as static modifiers to the Roll.
 
 Following is the Combat minigame formula for the Attack Action.
 
 Name of the Minigame ................ Combat
 Participating Entities .............. Characters, Enemies
-List of Minigame Intents ............ Kill
+List of Minigame Intents ............ Kill, Hurt, Injure, Rout
 List of Minigame Actions ............ Attack
 Effort Variables .................... Threat Rate
 Resistance Variables ................ Survival Rate
@@ -1944,6 +1953,30 @@ Confuse   &    Smarts    &    Ken       &    Leadership, Passions
 Intimidate&    Signalling&    Passions  &    Leadership, Swarming
 \end{table}
 
+/*
+\begin{table}[4]
+Action    &  Effort    &  Resistance&  Positive Modifiers² &  Negative Modifiers²
+Charm     &  Charm     &  Passions  &  N/A                 &  Smarts, Confused
+Confuse   &  Smarts    &  Ken       &  N/A                 &  Leadership, Passions
+Intimidate&  Signalling&  Passions  &  N/A                 &  Leadership, Swarming
+\end{table}
+________
+
+² Positive Modifiers to Tactical Actions are Features of the Attacking character.
+Negative modifiers to Tactical Actions are Features of the Target.
+*/
+/*
+\begin{table}[4]
+Action    &  Effort    &  Resistance&  Attacker Modifiers &  Target Modifiers²
+Charm     &  Charm     &  Passions  &  N/A                &  -Smarts, +Confused
+Confuse   &  Smarts    &  Ken       &  N/A                &  -Leadership, -Passions
+Intimidate&  Signalling&  Passions  &  N/A                &  -Leadership, -Swarming
+\end{table}
+_______________
+
+² All modifiers are applied to the Attacker's Suppress Roll. Attacker Modifiers are
+Features of the acting character; Target Modifiers are Features of the target.
+*/
 \newpage
 
 Support Action
@@ -2030,9 +2063,9 @@ Charmed     &  Passions
 Confused    &  Smarts
 Immobilised &  Strength
 Infected    &  Stamina
-Paralysed   &  Passions
+Paralysed   &  None (cannot take Actions!)
 Poisoned    &  Stamina
-Stunned     &  None (cannot resist)!
+Stunned     &  None (cannot resist!)
 \end{table}
 
 \newpage
@@ -2076,10 +2109,10 @@ Features can be used to take a Manoeuver Action. Below are some example Manoeuve
 Manoeuvers are an opportunity for players to use their imagination to come up with
 creative ways to gain an advantage in Combat, or for the GQ to use hers to create
 interesting and challenging situations for the players to overcome. A character's
-Intent, as described her player, should guide the GQ to "houserule" the character's
-Actions. Accordingly the GQ should not hesitate to play the Nest's guardians as more
-than dumb automata, who can also use their (simple) insectoid brains to protect their
-home.
+Intent, as described by her player, should guide the GQ to "houserule" the
+character's Actions. Accordingly the GQ should not hesitate to play the Nest's
+guardians as more than dumb automata, who can also use their (simple) insectoid
+brains to protect their home.
 \end{box}
 \newpage
 
@@ -2155,10 +2188,11 @@ Termite Nests are gigagntic Cathedrals extending to many meters above and below 
 
 Termites are orgranised into castes, most of them without reproductive ability or organs,
 and without wings or eyes. Termite life is hard but the Nest thrives. The worker caste
-forage and tend to the Nest and the other castes. The Soldier caset protects the nest
+forage and tend to the Nest and the other castes. The Soldier caste protects the nest,
 willingly sacrificing its life. The two reproductive castes, the King and Queen, are
 responsible for making sure the Nest is always full of millions of Termites of all
 castes.
+
 \newpage
 
 Worker Termite
@@ -2170,6 +2204,8 @@ Workers raise the alarm by bumping into each other and causing each other to rel
 alarm pheromones. The pheromone trail spreads throughout the nest attracting more workers
 and, soon enough, soldiers. Attacking a swarm of workers causes them to release alarm
 pheromones faster.
+% TODO: that last bit is missing a rule.
+
 
 \begin{table}[8]
 Feature                      &    Rating
@@ -2194,11 +2230,11 @@ that is higher than the roll value.
 \end{box}
 
 \begin{table}[8]
-Termite Caste           &    Numbers Summoned&    Chance to Summon
-Worker Termites         &    d20             &    80%
-Minor Termite Soldiers  &    1               &    60%
-Major Termite Soldiers  &    5               &    30%
-Nasute Soldiers         &    3               &    25%
+Termite Caste           &    Numbers Summoned  &    Chance to Summon
+Worker Termites         &    d20 Wounds Swarm  &    80%
+Minor Termite Soldiers  &    1                 &    60%
+Major Termite Soldiers  &    5                 &    30%
+Nasute Soldiers         &    3                 &    25%
 \end{table}
 Table: Worker Termite summons
 \newpage
@@ -2235,9 +2271,9 @@ Table: Minor Termite Soldier Features
 │ Max. Range:........................Close ││ Max. Range:................Medium (Area) │
 │ Hit:..............Target Immobilised d40 ││ Hit:.............Targets Immobilised d60 │
 │ Hit (Alt):.............................. ││ Hit(Add):.........Attacker takes 1 Wound │
-│ Hit (Add):.............................. ││ Hit (Crit):............................. │
+│ Hit (Add):.............................. ││ Hit (Crit):....1 Target Dies (Randomise) │
 │ Miss:....................Atacker Recoils ││ Miss:............Attacker takes 2 Wounds │
-│ Miss:................................... ││ Miss:................................... │
+│ Miss:................................... ││ Miss (Crit):.....Attacker takes 4 Wounds │
 └──────────────────────────────────────────┘└──────────────────────────────────────────┘
 ────────────────────────────────────────────────────────────────────────────────────────
 Figure: Minor Tremite Soldier Attacks
@@ -2284,7 +2320,7 @@ Major Termite Soldier - Autothyte
 
 The Major Termite Soldier is a larger, stronger version of the Minor Soldier, but also
 rarer. In mechanical terms, Major Autothye Soldiers have more powerful versions of the
-Minor Soldiers' Attacks and do not Swarm.
+Minor Soldiers' Attacks and do not swarm.
 
 \begin{table}[8]
 Feature            &    Rating
@@ -2293,7 +2329,7 @@ Threat Rate        &    50%
 Survival Rate      &    55%
 Wounds Max         &    5
 Carapace           &    60% (Head)
-Swarming           &    60%
+Swarming           &    45%
 Speed, Skill       &    30%
 Strength, Stamina  &    60%
 Smarts, Charms, Ken&    20%
@@ -2304,14 +2340,14 @@ Figure: Major Termite Soldier Features
 
 ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐
 │ Name:....................Mandible Attack ││ Name:..Greater Autothysis (Self-Rupture) │
-│ Keywords:.......................Crushing ││ Keywords:..........Area Attack, Chemical │
-│ Damage:..........................1 Wound ││ Wounds..........................2 Wounds │
+│ Keywords:.......................Crushing ││ Keywords:...........Area Attack, Noxious │
+│ Damage:.........................2 Wounds ││ Damage:..........................1 Wound │
 │ Max. Range:........................Close ││ Max. Range:................Medium (Area) │
 │ Hit:..............Target Immobilised d40 ││ Hit:...............Targets Paralysed d60 │
 │ Hit (Alt):.............................. ││ Hit (Add):...............Attacker killed │
-│ Hit (Add):.............................. ││ Hit (Crit):............................. │
+│ Hit (Add):.............................. ││ Hit (Crit):....2 Targets Die (Randomise) │
 │ Miss:....................Atacker Recoils ││ Miss:............Targets Immobilised d60 │
-│ Miss:................................... ││ Miss:....................Attacker killed │
+│ Miss:................................... ││ Miss (Add):..............Attacker killed │
 └──────────────────────────────────────────┘└──────────────────────────────────────────┘
 ────────────────────────────────────────────────────────────────────────────────────────
 Figure: Major Termite Soldier Attacks
@@ -2360,7 +2396,7 @@ Figure: Nasute Soldier Features
 │ Max. Range:.........................Long ││ Max. Range:..................Long (area) │
 │ Hit:.................Target Poisoned d40 ││ Hit:................Targets Poisoned d60 │
 │ Hit (Add):..............Attacker Recoils ││ Hit (Add):..............Attacker Recoils │
-│ Hit (Alt):.............................. ││ Hit (Crit):............................. │
+│ Hit (Alt):.............................. ││ Hit (Crit):....Each Target takes 1 Wound │
 │ Miss:.............Target Immobilised d40 ││ Miss:............Targets Immobilised d60 │
 │ Miss:.............Attacker Recoils twice ││ Miss:.............Attacker Recoils twice │
 └──────────────────────────────────────────┘└──────────────────────────────────────────┘
@@ -2384,7 +2420,8 @@ same direction.
 
 Mechanically, whenever a Nasute soldier A discharges its Fontanellar Gun, there is a
 40% chance that another Nasute Soldier B, participating in Combat but who has not yet
-taken an Attack Action this Turn, will Attack the same target. 
+taken an Attack Action this Turn, will Attack the same target. Roll to randomly
+select Nasute Soldier B if necessary.
 
 The Attack is made in the Turn of the Nasute Soldier A. The Attack counts as Nasute
 Soldier B's Attack for the Round (that means it can't take another Attack Action in
