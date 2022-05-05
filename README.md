@@ -10,7 +10,7 @@ playtesting.
 The Game
 --------
 
-Nests & Insects is a tabletop roleplaying game (TTRPG) for 1 to 7 players. One
+Nests & Insects is a tabletop roleplaying game (TTRPG) for 2 to 7 players. One
 player assumes the role of the Game Queen and describes the game world to the
 other players. The other players control characters who explore, and interact
 with, the game world.
