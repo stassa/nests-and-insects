@@ -130,27 +130,30 @@
 ║       Consuming Food in Combat ....................................................... 58 ║▓
 ║       Joining Combat ................................................................. 58 ║▓
 ║       Combat Ends .................................................................... 59 ║▓
-║     Survival and Exploration ....................................................... TODO ║▓
+║     Survival and Exploration ......................................................... 60 ║▓
+║       How Procedural Generation Works ................................................ 60 ║▓
+║       Nest Levels .................................................................... 61 ║▓
+║       Rooms .......................................................................... 61 ║▓
 ║     Hunting and Foraging ........................................................... TODO ║▓
 ║     Resting and Healing ............................................................ TODO ║▓
 ║                                                                                           ║▓
-║ Setting .............................................................................. 60 ║▓
+║ Setting .............................................................................. 62 ║▓
 ║   Clients and Jobs ................................................................. TODO ║▓
 ║   Environment ...................................................................... TODO ║▓
 ║     Nests .......................................................................... TODO ║▓
 ║     Levels ......................................................................... TODO ║▓
 ║     Rooms .......................................................................... TODO ║▓
-║   Enemies ............................................................................ 61 ║▓
+║   Enemies ............................................................................ 63 ║▓
 ║     Ants ........................................................................... TODO ║▓
 ║     Bees ........................................................................... TODO ║▓
-║     Termites ......................................................................... 62 ║▓
-║       Worker Termite ................................................................. 63 ║▓
-║       Minor Termite Soldier - Autothyte .............................................. 64 ║▓
 ╚═══════════════════════════════════════════-ii-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
-║       Major Termite Soldier - Authotyte .............................................. 66 ║▓
-║       Nasute Soldier ................................................................. 67 ║▓
+║     Termites ......................................................................... 64 ║▓
+║       Worker Termite ................................................................. 65 ║▓
+║       Minor Termite Soldier - Autothyte .............................................. 66 ║▓
+║       Major Termite Soldier - Authotyte .............................................. 68 ║▓
+║       Nasute Soldier ................................................................. 69 ║▓
 ║       Alates - King ................................................................ TODO ║▓
 ║       Alates - Queen ............................................................... TODO ║▓
 ║   Food Items ....................................................................... TODO ║▓
@@ -160,12 +163,9 @@
 ║     Nectar ......................................................................... TODO ║▓
 ║     Prey ........................................................................... TODO ║▓
 ║                                                                                           ║▓
-║ Procedural Generation .............................................................. TODO ║▓
-║   How Procedural Generation Works .................................................. TODO ║▓
-║   Just-In-Time Generation .......................................................... TODO ║▓
-║   Rooms are resources .............................................................. TODO ║▓
-║   Costs, Risks and Rewards ......................................................... TODO ║▓
-║   Generator Tables ................................................................. TODO ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -3153,93 +3153,93 @@
 ║                               Survival and Exploration                                    ║▓
 ║                               ========================                                    ║▓
 ║                                                                                           ║▓
-║ During the Survival and Exploration minigame, the Nest's environment is procedurally      ║▓
-║ generated. The following Sections give a high-level overview of procedural generation in  ║▓
-║ Nests & Insects.                                                                          ║▓
+║ The Survival and Exploration minigame defines rules for the procedural generation of a    ║▓
+║ Nest's environment. During the Survival and Exploration minigame, characters explore the  ║▓
+║ Nest, while players and the GQ roll dice to determine what the characters find.           ║▓
+║                                                                                           ║▓
+║ Note that Procedural Generation also takes place during the Hunting and Foraging          ║▓
+║ minigame. However, in order for Hunting and Foraging to be initiated, the characters must ║▓
+║ first explore the Nest by means of the Survival and Exploration minigame.                 ║▓
+║                                                                                           ║▓
+║ In Nests & Insects procedural generation is an abstraction: no floor plans or maps are    ║▓
+║ generated. Instead what is generated are game entities that include the spaces inside the ║▓
+║ Nests, the creatures that roam them, items that populate them- and their Features.        ║▓
 ║                                                                                           ║▓
 ║ How Procedural Generation Works                                                           ║▓
 ║ -------------------------------                                                           ║▓
 ║                                                                                           ║▓
-║ As most everything else in Nests & Insects, procedural generation is the result of die    ║▓
-║ rolls: a d100 is rolled to generate elements of a Nest's environment and more Decile Dice ║▓
-║ are rolled to quantify them.                                                              ║▓
+║ The core mechanic of procedural generation is "rolling on tables". No, that is not to be  ║▓
+║ taken literally. It means that the players or the GQ roll a d100 and cross-reference the  ║▓
+║ result with the rows of a table. The table lists what the characters find and what        ║▓
+║ happens to them while they explore the Nest.                                              ║▓
 ║                                                                                           ║▓
-║ In Nests & Insects, procedural generation of Nests' environments is an abstraction:       ║▓
-║ instead of generating floor plans and maps, what is generated instead are the Features of ║▓
-║ each Room visited by the players' characters as they explore the Nest, and Events that    ║▓
-║ occur during their exploration.                                                           ║▓
+║ Survival and Exploration starts with an Exploration Action. This is a full Qualification  ║▓
+║ Action and its outcomes determine the types, and numbers, of Events that occur as the     ║▓
+║ characters explore the Nest. There are three types of Events: Costs, Risks and Rewards.   ║▓
+║ Any Exploration Action may cause up to three Events to occur. A better DoS to the         ║▓
+║ Exploration Action causes more Rewards to occur while a worse one causes more Costs and   ║▓
+║ Risks to occur.                                                                           ║▓
 ║                                                                                           ║▓
-║ Procedural generation taks place during the Survival and Exploration minigame and its     ║▓
-║ results depend on the outcome of the Exploration Actions taken by characters during that  ║▓
-║ minigame. As a result of the Exploration Action, players' characters find Rooms.          ║▓
-║ Mechanically speaking, Rooms are resources that can be spent to initiate two more         ║▓
-║ minigames: the Foraging and Hunting minigame; and the Resting and Healing minigame.       ║▓
+║ Once the type and number of Events is determined, the players roll on the relevant Event  ║▓
+║ tables (i.e. the Costs, Risks, and Rewards tables) to find which specific Event occurs.   ║▓
+║ This roll is a Boolean Roll, where the target number is the Chance for the Event to occur ║▓
+║ (it doesn't make sense to call this target number an "Effort" as in ordinary Boolean      ║▓
+║ Rolls). Some Events may also require a Quantification roll to quantify their Features.    ║▓
 ║                                                                                           ║▓
-║ When a Room is entered to initate a minigame, and while the Room is explored during the   ║▓
-║ minigame, some of the Room's Features may be quantified, and one or more Events may be    ║▓
-║ generated and quantified. Events are categoriesed as: Costs, Risks, or Rewards. Rooms     ║▓
-║ themselves are Rewards, and give a chance for more Rooms to be generated. In a way, Rooms ║▓
-║ generate more Rooms as the characters explore the Nest.                                   ║▓
+║ The Chance for an Event to occur is determined by two values: one is a base Chance listed ║▓
+║ in the corresponding Event table; the other is the rating of the Nest Level on which the  ║▓
+║ characters are currently located. In some cases a Feature of the exploring Character may  ║▓
+║ be used as the base Chance for an Event to occur, instead. Nest Levels also define the    ║▓
+║ Decile Dice to roll for Quantification of the three kinds of Events and their Features.   ║▓
 ║                                                                                           ║▓
-║ Remember that players' characters do not visit a Nest to loot and get rich. Rather, they  ║▓
-║ are mercenaries, raiding a Nest to carry out a Job. Accordingly, Rewards do not represent ║▓
-║ treasures, rather they are things that help the characters carry out their Job            ║▓
-║ successfully.                                                                             ║▓
 ║                                                                                           ║▓
-║ Just-in-Time Generation                                                                   ║▓
-║ -----------------------                                                                   ║▓
 ║                                                                                           ║▓
-║ Rooms, their Featurs, and the Events that may occur in them, are only generated when they ║▓
-║ are needed, which is to say, only when characters actively explore the Nest. This happens ║▓
-║ during the Survival and Exploration and Foraging and Hunting minigames. Nests & Insects   ║▓
-║ calls this the "Just-in-Time" (JIT), or "Lazy", model of procedural generation.           ║▓
 ║                                                                                           ║▓
-║ During JIT generation players roll to quantify Rooms' Features, and roll to generate and  ║▓
-║ quantify the Costs, Risks and Rewards in a Room. Each Room belongs to a Level, and each   ║▓
+║                                                                                           ║▓
 ╚═══════════════════════════════════════════-60-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
-║ Level has a percentile rating, which is also the Level rating of the Room. The Level      ║▓
-║ rating increases as the characters delve deeper in the Nest. As the Level rating          ║▓
-║ increases, Costs increase and Risks become more dangerous and numbers, while Rewards      ║▓
-║ dwindle.                                                                                  ║▓
-║                                                                                           ║▓
-║ The location of the target of the characters' Job is finally found when the Level of the  ║▓
-║ last visited Room reaches 100%. How quickly this happens will vary, depending on the      ║▓
-║ results of procedural generation and the decisions of the players during the Survival and ║▓
-║ Exploration minigame.                                                                     ║▓
 ║                                                                                           ║▓
 ║ Nest Levels                                                                               ║▓
 ║ -----------                                                                               ║▓
 ║                                                                                           ║▓
-║ A Nest is an "Environment" that consists of multiple Levels, each consisting of multiple  ║▓
-║ Rooms, and Passages connecting Rooms. Imagine the Rooms making up a Level as resting next ║▓
-║ to each other at a similar distance from teh ground, and as being sandwiched between the  ║▓
-║ Rooms of the Levels above and below them in the Nest.                                     ║▓
+║ A Nest is an environment that consists of multiple Nest Levels, each comprised of         ║▓
+║ multiple Rooms, and Passages connecting Rooms.                                            ║▓
 ║                                                                                           ║▓
-║ In mechanical terms, a Room's Level becomes the Resistance to Exploration actions. A      ║▓
-║ Room's Level also determines the Quantification die rolled to quantify the Featuers of    ║▓
-║ the Room and also the Events (Costs, Risks and Rewards) that occur while characters       ║▓
-║ explore the Room.                                                                         ║▓
+║ A Nest Level is a group of Rooms connected by Passages and situated in about the same     ║▓
+║ distance from the ground, much like a floor in a multi-storey house.                      ║▓
 ║                                                                                           ║▓
-║ While exploring a Room there is a chance to find an etnrace to a new Level. The new Level ║▓
-║ is always deeper in the Nest (its rating is always higher) than the current one and takes ║▓
-║ the characters closer to the target of their Job (for example: the Queen's quarters; or   ║▓
-║ the Ants' nursery; or the Termites' Fungal Gardens).                                      ║▓
+║ In mechanical terms, Levels have a percentile rating that is used as the Resistance to    ║▓
+║ Exploration Actions. As the characters delve deeper into the Nest, the Nest Level of the  ║▓
+║ Rooms they visit increases. With it, the chance for Cost and Risk Events to occur         ║▓
+║ increases, and the chance for Reward Events to occur decreases. When the Nest Level       ║▓
+║ reaches 100% the location of the target of the current Job is found and the characters    ║▓
+║ can attempt to fulfill the terms of their contract.                                       ║▓
 ║                                                                                           ║▓
-║ Room Features                                                                             ║▓
-║ -------------                                                                             ║▓
+║ ┌[Note 4]───────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ │ Remember that the players' characters do not visit a Nest to loot. Rather, they are   │ ║▓
+║ │ hired to carry out a Job. Accordingly, Rewards they find during Exploration are not   │ ║▓
+║ │ treasures and richess, rather they are things that help the characters get their Job  │ ║▓
+║ │ done.                                                                                 │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-║ Rooms' Features may include at least a Room's Level, which is an abstract representation  ║▓
-║ of the position of a group of Rooms in the structure of a Nest; the lighting conditions   ║▓
-║ (more precisely, the Darkness) in a room; and the Area and Height of a Room. Darkness can ║▓
-║ hinder characters who rely on their vision to perceive the world. A Room's Area rating    ║▓
-║ may affect the efficacy of Attacks, according to their Range. A Room's Height may         ║▓
-║ interfere with characters' Flying ability.                                                ║▓
+║ Rooms                                                                                     ║▓
+║ -----                                                                                     ║▓
 ║                                                                                           ║▓
+║ Rooms are represented as Rewards and are only generated (i.e. found) when a character     ║▓
+║ takes an Exploration Action. Rooms have Features such as their Area, Height, or Darkness, ║▓
+║ that require Quantification.                                                              ║▓
 ║                                                                                           ║▓
+║ Room Featurs are only quantified when characters must interact with them. For example,    ║▓
+║ Height affects the ability of a character to Fly, so it is only Quantified when a         ║▓
+║ character actually attempts to Fly. Nests & Insects calls this "Just-in-Time" (JIT)       ║▓
+║ generation.                                                                               ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
+║ JIT generation is also used to generate Costs, Risks and Rewards (including Rooms).  In   ║▓
+║ particular, Costs are only generated when a character enters a Room, while Risks and      ║▓
+║ Rewards are generated everytime a character takes an Exploration, Hunting, or Foraging    ║▓
+║ Action (in other words, when a character is searching for something, and there is a       ║▓
+║ chance that they might find it).                                                          ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
