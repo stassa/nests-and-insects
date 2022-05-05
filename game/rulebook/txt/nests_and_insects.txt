@@ -3100,8 +3100,8 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ Combat End                                                                                ║▓
-║ ----------                                                                                ║▓
+║ Combat Ends                                                                               ║▓
+║ -----------                                                                               ║▓
 ║                                                                                           ║▓
 ║ When Combat ends, all Combatants cease to be Combatants and the two Sides cease to        ║▓
 ║ exist for rules purposes.                                                                 ║▓
@@ -3147,6 +3147,106 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ╚═══════════════════════════════════════════-59-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║                               Survival and Exploration                                    ║▓
+║                               ========================                                    ║▓
+║                                                                                           ║▓
+║ During the Survival and Exploration minigame, the Nest's environment is procedurally      ║▓
+║ generated. The following Sections give a high-level overview of procedural generation in  ║▓
+║ Nests & Insects.                                                                          ║▓
+║                                                                                           ║▓
+║ How Procedural Generation Works                                                           ║▓
+║ -------------------------------                                                           ║▓
+║                                                                                           ║▓
+║ As most everything else in Nests & Insects, procedural generation is the result of die    ║▓
+║ rolls: a d100 is rolled to generate elements of a Nest's environment and more Decile Dice ║▓
+║ are rolled to quantify them.                                                              ║▓
+║                                                                                           ║▓
+║ In Nests & Insects, procedural generation of Nests' environments is an abstraction:       ║▓
+║ instead of generating floor plans and maps, what is generated instead are the Features of ║▓
+║ each Room visited by the players' characters as they explore the Nest, and Events that    ║▓
+║ occur during their exploration.                                                           ║▓
+║                                                                                           ║▓
+║ Procedural generation taks place during the Survival and Exploration minigame and its     ║▓
+║ results depend on the outcome of the Exploration Actions taken by characters during that  ║▓
+║ minigame. As a result of the Exploration Action, players' characters find Rooms.          ║▓
+║ Mechanically speaking, Rooms are resources that can be spent to initiate two more         ║▓
+║ minigames: the Foraging and Hunting minigame; and the Resting and Healing minigame.       ║▓
+║                                                                                           ║▓
+║ When a Room is entered to initate a minigame, and while the Room is explored during the   ║▓
+║ minigame, some of the Room's Features may be quantified, and one or more Events may be    ║▓
+║ generated and quantified. Events are categoriesed as: Costs, Risks, or Rewards. Rooms     ║▓
+║ themselves are Rewards, and give a chance for more Rooms to be generated. In a way, Rooms ║▓
+║ generate more Rooms as the characters explore the Nest.                                   ║▓
+║                                                                                           ║▓
+║ Remember that players' characters do not visit a Nest to loot and get rich. Rather, they  ║▓
+║ are mercenaries, raiding a Nest to carry out a Job. Accordingly, Rewards do not represent ║▓
+║ treasures, rather they are things that help the characters carry out their Job            ║▓
+║ successfully.                                                                             ║▓
+║                                                                                           ║▓
+║ Just-in-Time Generation                                                                   ║▓
+║ -----------------------                                                                   ║▓
+║                                                                                           ║▓
+║ Rooms, their Featurs, and the Events that may occur in them, are only generated when they ║▓
+║ are needed, which is to say, only when characters actively explore the Nest. This happens ║▓
+║ during the Survival and Exploration and Foraging and Hunting minigames. Nests & Insects   ║▓
+║ calls this the "Just-in-Time" (JIT), or "Lazy", model of procedural generation.           ║▓
+║                                                                                           ║▓
+║ During JIT generation players roll to quantify Rooms' Features, and roll to generate and  ║▓
+║ quantify the Costs, Risks and Rewards in a Room. Each Room belongs to a Level, and each   ║▓
+╚═══════════════════════════════════════════-60-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║ Level has a percentile rating, which is also the Level rating of the Room. The Level      ║▓
+║ rating increases as the characters delve deeper in the Nest. As the Level rating          ║▓
+║ increases, Costs increase and Risks become more dangerous and numbers, while Rewards      ║▓
+║ dwindle.                                                                                  ║▓
+║                                                                                           ║▓
+║ The location of the target of the characters' Job is finally found when the Level of the  ║▓
+║ last visited Room reaches 100%. How quickly this happens will vary, depending on the      ║▓
+║ results of procedural generation and the decisions of the players during the Survival and ║▓
+║ Exploration minigame.                                                                     ║▓
+║                                                                                           ║▓
+║ Nest Levels                                                                               ║▓
+║ -----------                                                                               ║▓
+║                                                                                           ║▓
+║ A Nest is an "Environment" that consists of multiple Levels, each consisting of multiple  ║▓
+║ Rooms, and Passages connecting Rooms. Imagine the Rooms making up a Level as resting next ║▓
+║ to each other at a similar distance from teh ground, and as being sandwiched between the  ║▓
+║ Rooms of the Levels above and below them in the Nest.                                     ║▓
+║                                                                                           ║▓
+║ In mechanical terms, a Room's Level becomes the Resistance to Exploration actions. A      ║▓
+║ Room's Level also determines the Quantification die rolled to quantify the Featuers of    ║▓
+║ the Room and also the Events (Costs, Risks and Rewards) that occur while characters       ║▓
+║ explore the Room.                                                                         ║▓
+║                                                                                           ║▓
+║ While exploring a Room there is a chance to find an etnrace to a new Level. The new Level ║▓
+║ is always deeper in the Nest (its rating is always higher) than the current one and takes ║▓
+║ the characters closer to the target of their Job (for example: the Queen's quarters; or   ║▓
+║ the Ants' nursery; or the Termites' Fungal Gardens).                                      ║▓
+║                                                                                           ║▓
+║ Room Features                                                                             ║▓
+║ -------------                                                                             ║▓
+║                                                                                           ║▓
+║ Rooms' Features may include at least a Room's Level, which is an abstract representation  ║▓
+║ of the position of a group of Rooms in the structure of a Nest; the lighting conditions   ║▓
+║ (more precisely, the Darkness) in a room; and the Area and Height of a Room. Darkness can ║▓
+║ hinder characters who rely on their vision to perceive the world. A Room's Area rating    ║▓
+║ may affect the efficacy of Attacks, according to their Range. A Room's Height may         ║▓
+║ interfere with characters' Flying ability.                                                ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-61-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3196,7 +3296,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-60-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-62-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3246,7 +3346,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-61-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-63-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3296,7 +3396,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-62-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-64-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3346,7 +3446,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-63-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-65-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3396,7 +3496,7 @@
 ║ │                                                                                       │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-64-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-66-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3446,7 +3546,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-65-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-67-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3496,7 +3596,7 @@
 ║ ┌[Special Rule - Nest Guardians]────────────────────────────────────────────────────────┐ ║▓
 ║ │ Same as for Minor Termite Soldiers.                                                   │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
-╚═══════════════════════════════════════════-66-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-68-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3546,7 +3646,7 @@
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-67-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-69-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3596,5 +3696,5 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-68-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-70-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
