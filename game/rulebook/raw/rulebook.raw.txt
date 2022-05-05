@@ -133,23 +133,27 @@ System .........................................................................
       How Procedural Generation Works ................................................ 60
       Nest Levels .................................................................... 61
       Rooms .......................................................................... 61
+      Initiating Survival and Exploration ............................................ 62
+      Exploration Action ............................................................. 63
+      Event Generation ............................................................... 64
+      Level Quantification Dice ...................................................... 65
     Hunting and Foraging ........................................................... TODO
     Resting and Healing ............................................................ TODO
 
-Setting .............................................................................. 62
+Setting .............................................................................. 66
   Clients and Jobs ................................................................. TODO
   Environment ...................................................................... TODO
     Nests .......................................................................... TODO
     Levels ......................................................................... TODO
     Rooms .......................................................................... TODO
-  Enemies ............................................................................ 63
+  Enemies ............................................................................ 67
     Ants ........................................................................... TODO
     Bees ........................................................................... TODO
-    Termites ......................................................................... 64
-      Worker Termite ................................................................. 65
-      Minor Termite Soldier - Autothyte .............................................. 66
-      Major Termite Soldier - Authotyte .............................................. 68
-      Nasute Soldier ................................................................. 69
+    Termites ......................................................................... 68
+      Worker Termite ................................................................. 69
+      Minor Termite Soldier - Autothyte .............................................. 70
+      Major Termite Soldier - Authotyte .............................................. 72
+      Nasute Soldier ................................................................. 73
       Alates - King ................................................................ TODO
       Alates - Queen ............................................................... TODO
   Food Items ....................................................................... TODO
@@ -2237,18 +2241,149 @@ Rooms are represented as Rewards and are only generated (i.e. found) when a char
 takes an Exploration Action. Rooms have Features such as their Area, Height, or Darkness,
 that require Quantification.
 
-Room Featurs are only quantified when characters must interact with them. For example,
+Room Features are only quantified when characters must interact with them. For example,
 Height affects the ability of a character to Fly, so it is only Quantified when a
 character actually attempts to Fly. Nests & Insects calls this "Just-in-Time" (JIT)
 generation.
 
 JIT generation is also used to generate Costs, Risks and Rewards (including Rooms).  In
 particular, Costs are only generated when a character enters a Room, while Risks and
-Rewards are generated everytime a character takes an Exploration, Hunting, or Foraging
+Rewards are generated every time a character takes an Exploration, Hunting, or Foraging
 Action (in other words, when a character is searching for something, and there is a
 chance that they might find it).
 
 \newpage
+
+Initiating Survival and Exploration
+-----------------------------------
+
+Players' characters have a shared pool of Rooms that they can spend at any time to
+initiate a new instance of the Survival and Exploration minigame. Rooms can also be spent
+to initiate the Hunting and Foraging, and Resting and Healing minigames.
+
+When the game begins, the characters are given one Room, which represents their Entrance
+to the Nest. The Nest Entrance can be spent immediately to initiate a first Survival and
+Exploration minigame. It is advisable to only spend the Nest Entrance to initiate a
+Survival and Exploration minigame, so as to ensure that more Rooms are generated as a
+result of Exploration (but note that the Hunting and Foraging minigame can also generate
+Rooms).
+
+When a Room is spent, it is removed from the players' pool of Rooms. The players and GQ
+are free to track the pool of Rooms in any way they like. The Survival and Exploration
+minigame takes place immediately after the Room is removed from the players' pool.
+
+\newpage
+
+Exploration Action
+------------------
+
+The Survival and Exploration Minigame is initiated whenever a player declares that her
+character is exploring the Nest.
+
+_Exploration party_ More than one characer may take part in the Exploration Action
+(indeed, this is typical). In that case, one character is the Acting character and every
+other character taking part in the Action supports the Action with their Exploration
+Feature applied as a positive modifier to the Acting character's Effort.
+
+The outcome of the Exploration Action determines the number, and type of Events that
+occur as a result of the Action. Up to three Events of up to three different types may
+occur at once, depending on the DoS of the Exploration Action. The formula for the
+Exploration Action is listed below.
+
+Name of the Minigame: ............... Survival and Exploration
+Participating Entities: ............. Characters, Nest Environment
+List of Minigame Intents: ........... Explore the Nest
+List of Minigame Actions: ........... Explore
+Effort Variables: ................... Exploration
+Resistance Variables: ............... Nest Level
+Modifier Variables: ................. +Eusociology, +Perception
+
+Outcomes of the six Degrees of Success and Failure:
+
+\begin{table}[12]
+Degree of Success &    Outcome
+Critical Success  &    Reward, Reward, Reward
+Complete Success  &    Risk, Reward, Reward
+Partial Success   &    Cost, Risk, Reward
+Partial Failure   &    Cost, Risk, Risk
+Complete Failure  &    Cost, Cost, Risk
+Critical Failure  &    Cost, Cost, Cost
+\end{table}
+Figure: Exploration Action Formula
+
+\newpage
+
+Event Generation
+----------------
+
+Costs are generated every time a character enters a new Room. Risks and Rewards are
+generated every time a character takes an Exploration Action.
+
+To generate an Event of the appropriate type, the characters or the GQ roll on the
+appropriate Event table. Event tables are presented below.
+
+\begin{table}[4]
+Cost    &  Chance
+Hunger  &  50% + Level
+Passage &  45% + Level
+Effects &  30% + Level
+Darkness&  25% + Level
+\end{table}
+Table: Costs
+
+\begin{table}[4]
+Risk          &  Chance
+Encounter     &  50% + Level
+Item (Unknown)&  30% + Level
+Obstacle      &  20% + Level
+Infection     &  10% + Level
+\end{table}
+Table: Risks
+
+\begin{table}[4]
+Reward      &  Chance
+Room        &  100% - Level
+Shortcut    &  Level - 50
+Level       &  25% + Level
+Item (Known)&  25% + Level
+Resource    &  15% + Level
+Secret      &  Perception - Level
+\end{table}
+Table: Rewards
+
+\newpage
+
+Level Quantification Dice
+-------------------------
+
+When an Event, or a Feature of the Nest environment need to be quantified, the
+Quantification Die rolled depends on the Nest Level. An example of a Nest environment
+Feature that requires quantification is the rating of Darkness in a Room.
+
+Each Nest Level has a percentile rating. The Nest Level Table below lists Nest Levels'
+ratings and their corresponding Quantification dice, used to quantify Nest Features and
+Events.
+
+\begin{table}[4]
+Level  &   Features Die&   Costs / Risks Die&   Rewards Die
+0-20%  &   d20         &   d40              &   d120
+21-40% &   d40         &   d60              &   d100
+41-60% &   d60         &   d80              &   d80
+61-80% &   d80         &   d100             &   d60 
+81-100%&   d100        &   d120             &   d40 
+\end{table}
+Table: Nest Levels and Quantification dice
+
+_Increasing Level ratings_ The rating of the Nest Level changes every time a character
+spends a Level Reward to explore a new Nest Level. At that time, the Costs/Riks Die
+corresponding to the current Nest Level is rolled to quantify the new Level's rating. The
+effect of this Quantification method is that as the characters delve deeper into the
+Nest, the chance to find a Level with 100% rating, where the target of their Job is
+found, increases.
+
+\newpage
+
+
 
                                          Setting
                                          =======
