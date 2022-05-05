@@ -3357,38 +3357,38 @@
 ║ generated every time a character takes an Exploration Action.                             ║▓
 ║                                                                                           ║▓
 ║ To generate an Event of the appropriate type, the characters or the GQ roll on the        ║▓
-║ appropriate Event table. Event tables are presented below.                                ║▓
+║ appropriate Event table. Event tables are presented below. Each Event in the Tables is    ║▓
+║ given a brief description. Detailed Descriptions and mechanics for each kind of Event     ║▓
+║ follow in a subsequent Section.                                                           ║▓
 ║                                                                                           ║▓
-║ Cost        Chance                                                                        ║▓
-║ ───────────────────────                                                                   ║▓
-║ Hunger      50% + Level                                                                   ║▓
-║ Passage     45% + Level                                                                   ║▓
-║ Effects     30% + Level                                                                   ║▓
-║ Darkness    25% + Level                                                                   ║▓
-║ ───────────────────────                                                                   ║▓
+║ Cost        Chance         Description                                                    ║▓
+║ ─────────────────────────────────────────────────────────────────────────────             ║▓
+║ Hunger      50% + Level    Increase Hunger, reduce Food, bestow Starving                  ║▓
+║ Passage     45% + Level    Grants a chance to find a new Room                             ║▓
+║ Effects     30% + Level    Apply, or modify the rating of deleterious Effects             ║▓
+║ Darkness    25% + Level    Reduce lighting Items or suffer in Darkness                    ║▓
+║ ─────────────────────────────────────────────────────────────────────────────             ║▓
 ║ Table: Costs                                                                              ║▓
 ║                                                                                           ║▓
-║ Risk              Chance                                                                  ║▓
-║ ─────────────────────────────                                                             ║▓
-║ Encounter         50% + Level                                                             ║▓
-║ Item (Unknown)    30% + Level                                                             ║▓
-║ Obstacle          20% + Level                                                             ║▓
-║ Infection         10% + Level                                                             ║▓
-║ ─────────────────────────────                                                             ║▓
+║ Risk              Chance         Description                                              ║▓
+║ ──────────────────────────────────────────────────────────────────────────                ║▓
+║ Encounter         50% + Level    Meet the nest's denizens                                 ║▓
+║ Item (Unknown)    30% + Level    Find as yet unidentified Food Items                      ║▓
+║ Obstacle          20% + Level    Prevent further Exploration until removed                ║▓
+║ Infection         10% + Level    Bestows the Infection Effect                             ║▓
+║ ──────────────────────────────────────────────────────────────────────────                ║▓
 ║ Table: Risks                                                                              ║▓
 ║                                                                                           ║▓
-║ Reward          Chance                                                                    ║▓
-║ ──────────────────────────────────                                                        ║▓
-║ Room            100% - Level                                                              ║▓
-║ Shortcut        Level - 50                                                                ║▓
-║ Level           25% + Level                                                               ║▓
-║ Item (Known)    25% + Level                                                               ║▓
-║ Resource        15% + Level                                                               ║▓
-║ Secret          Perception - Level                                                        ║▓
-║ ──────────────────────────────────                                                        ║▓
+║ Reward         Chance               Description                                           ║▓
+║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
+║ Room           100% - Level         Spend a Room to Explore, Hunt or Forage               ║▓
+║ Shortcut       Level - 50           Takes you closer to the Job Target                    ║▓
+║ Level          25% + Level          Entrance to a new, deeper Nest Level                  ║▓
+║ Item (Known)   25% + Level          Find a previously identified Food Item                ║▓
+║ Resource       15% + Level          Materials to build a Shelter for Resting and Healing  ║▓
+║ Secret         Perception - Level   Generates a random Cost, Risk or Reward.              ║▓
+║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
 ║ Table: Rewards                                                                            ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -3450,10 +3450,10 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
 ║                                          Setting                                          ║▓
 ║                                          =======                                          ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
