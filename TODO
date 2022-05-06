@@ -1,0 +1,63 @@
+07/05/22
+========
+
+game/
+-----
+
+TODO: Flesh out Events rules.
+
+TODO: Write up a brief description of Food Items.
+
+TODO: Write up Ants class description.
+
+TODO: Write up Ladybug class description.
+
+TODO: Write up Termite Alates (King, Queen).
+
+TODO: Flesh out Termites description (Nests, behaviour, etc). 
+
+TODO: Write up supported Action rules ("Acting in tandem" Section).
+
+TODO: Write up Character Chapter introduction section (clarify chargen).
+
+TODO: Write up Hunting and Foraging minigame rules.
+
+TODO: Write up Resting and Healing minigame rules.
+
+TODO: Write up Character Features Chapter.
+
+TODO: Complete Clients and Jobs Section in Setting Chapter.
+
+TODO: Start up Ants Subsection in Enemies Section.
+
+TODO: Start up Bees Subsection in Enemies Section.
+
+
+codez/
+------
+
+TODO: Automate ToC generation.
+
+TODO: Automate incrementing count of Tables, boxes, Figures.
+
+TODO: Automate typesetting of Chapter, Section etc. headers.
+
+TODO: Automatically insert charsheet template (as with class charsheets)
+
+TODO: Automatically insert enemies' Features, Attacks, special rules.
+
+TODO: Automatically insert and populate Tables.
+
+TODO: Automatically insert Figures (including future illustrations).
+
+TODO: Automatically insert and populate minigame formulae.
+
+TODO: Simulate game to collect statistics (a.k.a. automate playtesting).
+
+TODO: Do the text formatting in the code, rather than vim.
+
+TODO: Implement hyphenation, enabling text justification.
+
+TODO: Add vim tags for easier searches.
+
+TODO: Add syntax highlighting file for vim, Notepad++, other editors (?).
