@@ -259,7 +259,7 @@ improves the DoS and failing to beat a negative modifier worsens the DoS. With m
 the DoS may improve beyond a Complete Success, to a Critical Success, or worsen beyond a
 Complete Failure, to a Critical Failure.
 
-What the DoS of an action means depends on the character's description of the character's
+What the DoS of an action means depends on the player's description of the character's
 intent. Once the DoS of the action is known, the Game Queen describes what happens as a
 result of the character's action.
 
@@ -2180,8 +2180,8 @@ minigame. However, in order for Hunting and Foraging to be initiated, the charac
 first explore the Nest by means of the Survival and Exploration minigame.
 
 In Nests & Insects procedural generation is an abstraction: no floor plans or maps are
-generated. Instead what is generated are game entities that include the spaces inside the
-Nests, the creatures that roam them, items that populate them- and their Features.
+generated. Instead what is generated are the Features of game entities, including the
+spaces inside the Nests, the creatures that roam them, and items that populate them.
 
 How Procedural Generation Works
 -------------------------------
@@ -2191,12 +2191,12 @@ taken literally. It means that the players or the GQ roll a d100 and cross-refer
 result with the rows of a table. The table lists what the characters find and what
 happens to them while they explore the Nest.
 
-Survival and Exploration starts with an Exploration Action. This is a full Qualification
-Action and its outcomes determine the types, and numbers, of Events that occur as the
-characters explore the Nest. There are three types of Events: Costs, Risks and Rewards.
-Any Exploration Action may cause up to three Events to occur. A better DoS to the
-Exploration Action causes more Rewards to occur while a worse one causes more Costs and
-Risks to occur.
+Survival and Exploration starts with an Exploration Action. This Action is resolved by a
+full Qualification Roll and its outcome determines the types, and numbers, of Events that
+occur as the characters explore the Nest. There are three types of Events: Costs, Risks
+and Rewards. Any Exploration Action may cause up to three Events to occur. A better DoS
+to the Exploration Action causes more Rewards to occur while a worse one causes more
+Costs and Risks to occur.
 
 Once the type and number of Events is determined, the players roll on the relevant Event
 tables (i.e. the Costs, Risks, and Rewards tables) to find which specific Event occurs.
@@ -2256,6 +2256,8 @@ chance that they might find it).
 
 Initiating Survival and Exploration
 -----------------------------------
+
+% Explain how Rooms are resources to be spent to initiate S&E
 
 Players' characters have a shared pool of Rooms that they can spend at any time to
 initiate a new instance of the Survival and Exploration minigame. Rooms can also be spent
@@ -2352,6 +2354,9 @@ Resource    &  15% + Level        & Materials to build a Shelter for Resting and
 Secret      &  Perception - Level & Generates a random Cost, Risk or Reward.
 \end{table}
 Table: Rewards
+
+% Explain how all Events with a Chance above the roll result occur, and that one roll is
+% made for each Event determined by the DoS of the Exploration Action.
 
 \newpage
 

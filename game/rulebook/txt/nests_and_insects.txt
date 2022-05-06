@@ -300,7 +300,7 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ What the DoS of an action means depends on the character's description of the character's ║▓
+║ What the DoS of an action means depends on the player's description of the character's    ║▓
 ║ intent. Once the DoS of the action is known, the Game Queen describes what happens as a   ║▓
 ║ result of the character's action.                                                         ║▓
 ║                                                                                           ║▓
@@ -3162,8 +3162,8 @@
 ║ first explore the Nest by means of the Survival and Exploration minigame.                 ║▓
 ║                                                                                           ║▓
 ║ In Nests & Insects procedural generation is an abstraction: no floor plans or maps are    ║▓
-║ generated. Instead what is generated are game entities that include the spaces inside the ║▓
-║ Nests, the creatures that roam them, items that populate them- and their Features.        ║▓
+║ generated. Instead what is generated are the Features of game entities, including the     ║▓
+║ spaces inside the Nests, the creatures that roam them, and items that populate them.      ║▓
 ║                                                                                           ║▓
 ║ How Procedural Generation Works                                                           ║▓
 ║ -------------------------------                                                           ║▓
@@ -3173,12 +3173,12 @@
 ║ result with the rows of a table. The table lists what the characters find and what        ║▓
 ║ happens to them while they explore the Nest.                                              ║▓
 ║                                                                                           ║▓
-║ Survival and Exploration starts with an Exploration Action. This is a full Qualification  ║▓
-║ Action and its outcomes determine the types, and numbers, of Events that occur as the     ║▓
-║ characters explore the Nest. There are three types of Events: Costs, Risks and Rewards.   ║▓
-║ Any Exploration Action may cause up to three Events to occur. A better DoS to the         ║▓
-║ Exploration Action causes more Rewards to occur while a worse one causes more Costs and   ║▓
-║ Risks to occur.                                                                           ║▓
+║ Survival and Exploration starts with an Exploration Action. This Action is resolved by a  ║▓
+║ full Qualification Roll and its outcome determines the types, and numbers, of Events that ║▓
+║ occur as the characters explore the Nest. There are three types of Events: Costs, Risks   ║▓
+║ and Rewards. Any Exploration Action may cause up to three Events to occur. A better DoS   ║▓
+║ to the Exploration Action causes more Rewards to occur while a worse one causes more      ║▓
+║ Costs and Risks to occur.                                                                 ║▓
 ║                                                                                           ║▓
 ║ Once the type and number of Events is determined, the players roll on the relevant Event  ║▓
 ║ tables (i.e. the Costs, Risks, and Rewards tables) to find which specific Event occurs.   ║▓
