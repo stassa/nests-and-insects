@@ -57,7 +57,7 @@
 ║   The Setting ......................................................................... 1 ║▓
 ║   The Game ............................................................................ 1 ║▓
 ║   The System .......................................................................... 2 ║▓
-║     Decile dice ....................................................................... 3 ║▓
+║     Decile Dice ....................................................................... 3 ║▓
 ║     Minigames ......................................................................... 4 ║▓
 ║                                                                                           ║▓
 ║ Character ............................................................................. 5 ║▓
@@ -92,7 +92,7 @@
 ║                                                                                           ║▓
 ║ System ............................................................................... 29 ║▓
 ║   Fuzzy d100 ......................................................................... 30 ║▓
-║     Decile dice ...................................................................... 30 ║▓
+║     Decile Dice ...................................................................... 30 ║▓
 ║     Implementing Decile Dice ......................................................... 31 ║▓
 ║     Six Degrees of Success and Failure ............................................... 33 ║▓
 ║     Percentile Features .............................................................. 34 ║▓
@@ -317,24 +317,24 @@
 ║ ─────────────────────────────────────────────────────────────────────────────────────     ║▓
 ║ Table 1: Six Degrees of Success                                                           ║▓
 ║                                                                                           ║▓
-║ Decile dice                                                                               ║▓
+║ Decile Dice                                                                               ║▓
 ║ -----------                                                                               ║▓
 ║                                                                                           ║▓
 ║ Some actions require quantification of their results. To quantify the results of actions  ║▓
 ║ on the same percentile scale as characters' Features, Nests & Insects uses "decile dice": ║▓
-║ the d20, d40, d60, d80 and the d100 itself. The d20 is a single, twenty-sided die, with   ║▓
-║ faces numbered 0, 1, 2, ..., 19. The d40, d60, d80 and d100 are composite dice, each      ║▓
-║ comprised of a d4, d6, d8, and d10, respectively, as the "ones" die; and a d10 as the     ║▓
-║ "tens" die. Both the "ones" and "tens" dice have faces numbered 0, 1, 2 ..., n-1, where n ║▓
-║ is the number of faces on the die, just like the d10's comprising the d100. For example,  ║▓
-║ the d4 has faces numbered 0, 1, 2, 3, the d6 has faces numbered 0, 1, 2, 3, 4, 5, etc.    ║▓
+║ the d20, d40, d60, d80, d120 and the d100 itself. The d20 is a single, twenty-sided die,  ║▓
+║ with faces numbered 0, 1, ..., 19. The d40, d60, d80, d100 and d120 are composite dice,   ║▓
+║ each comprised of a d4, d6, d8, d10, and d12, respectively, as the "ones" die; and a d10  ║▓
+║ as the "tens" die. Both the ones and tens dice have faces numbered 0, 1, ..., n-1, where  ║▓
+║ "n" is the number of faces on the die, just like the d10's comprising the d100. Thus, the ║▓
+║ d4 has faces numbered 0, 1, 2, 3, the d6 has faces numbered 0, 1, 2, 3, 4, 5, etc.        ║▓
 ║                                                                                           ║▓
-║ To generate a decile die result, the "ones" and "tens" of the decile die are rolled       ║▓
-║ together, the "tens" die is placed to the left of the "ones" die and the digits on the    ║▓
-║ top faces of the two dice read left-to-right, as if reading a printed numeral. This way,  ║▓
+║ To generate a decile die result, the ones and tens dice of the decile die are rolled      ║▓
+║ together, the tens die is placed to the left of the ones die and the digits on the top    ║▓
+║ faces of the two dice are read left-to-right, as if reading a printed numeral. This way,  ║▓
 ║ each decile die generates numbers from 00 to one less than the number of faces on the     ║▓
-║ decile die: 39 on a d40, 59 on a d60, 79 on a d80, and 99 on a d100. The d20 needs no     ║▓
-║ special reading and generates numbers in the range 0 to 19.                               ║▓
+║ decile die: 39 on a d40, 59 on a d60, 79 on a d80, 99 on a d100, and 119 on a d120. The   ║▓
+║ d20 needs no special reading and generates numbers in the range 0 to 19.                  ║▓
 ║                                                                                           ║▓
 ║ ┌[Example 1]────────────────────────────────────────────────────────────────────────────┐ ║▓
 ║ │ The d60 is a composite decile die comprised of a d6, with faces numbered 0, 1, 2, 3,  │ ║▓
@@ -350,18 +350,19 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ Table 2 lists the five decile dice used in fd100, their component polyhedrals and their   ║▓
+║ Table 2 lists the six decile dice used in fd100, their component polyhedrals and their    ║▓
 ║ numeric ranges. Decile dice are described in full detail in Section "Decile Dice" in the  ║▓
 ║ "System" Chapter.                                                                         ║▓
 ║                                                                                           ║▓
-║ Decile die    Range      Tens die    Numbered     Ones die    Numbered                    ║▓
-║ ────────────────────────────────────────────────────────────────────────                  ║▓
-║ d20           0 to 19    Not any!                 d20         0,1,...,19                  ║▓
-║ d40           0 to 39    d4          0,1,...,3    d10         0,1,...,9                   ║▓
-║ d60           0 to 59    d6          0,1,...,5    d10         0,1,...,9                   ║▓
-║ d80           0 to 79    d8          0,1,...,7    d10         0,1,...,9                   ║▓
-║ d100          0 to 99    d10         0,1,...,9    d10         0,1,...,9                   ║▓
-║ ────────────────────────────────────────────────────────────────────────                  ║▓
+║ Decile die    Range       Tens die    Numbered      Ones die    Numbered                  ║▓
+║ ──────────────────────────────────────────────────────────────────────────                ║▓
+║ d20           0 to 19     Not any!                  d20         0,1,...,19                ║▓
+║ d40           0 to 39     d4          0,1,...,3     d10         0,1,...,9                 ║▓
+║ d60           0 to 59     d6          0,1,...,5     d10         0,1,...,9                 ║▓
+║ d80           0 to 79     d8          0,1,...,7     d10         0,1,...,9                 ║▓
+║ d100          0 to 99     d10         0,1,...,9     d10         0,1,...,9                 ║▓
+║ d120          0 to 119    d12         0,1,...,11    d10         0,1,...,9                 ║▓
+║ ──────────────────────────────────────────────────────────────────────────                ║▓
 ║ Table 2: Decile dice, used for quantification of percentile effects. d100 is also a       ║▓
 ║ decile die. The d20 does not need a "tens" die and is rolled on its own.                  ║▓
 ║                                                                                           ║▓
@@ -394,7 +395,6 @@
 ║ Critical Failure         Both Attacks Miss                                                ║▓
 ║ ──────────────────────────────────────────────                                            ║▓
 ║ Table 3: Combat minigame outcomes.                                                        ║▓
-║                                                                                           ║▓
 ║                                                                                           ║▓
 ╚════════════════════════════════════════════-4-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
@@ -1609,10 +1609,10 @@
 ║ fd100 is a percentile system, in the sense that it describes characters in terms of       ║▓
 ║ percentile-valued Features and that the die rolled to determine the success or failure of ║▓
 ║ characters' actions is the d100, ranging from 00 to 99. Decile dice: the d20, d40, d60,   ║▓
-║ d80, and the d100 itself, are used to quantify Effects and other Features on the game's   ║▓
-║ percentile scale. The d40, d60 and d80 are composed of pairs of a polyhedral die: the d4, ║▓
-║ d6 and d8, respectively; and a d10, rolled together and read as one - just as the d100 is ║▓
-║ composed of two d10 rolled together and read as one.                                      ║▓
+║ d80, d120, and the d100 itself, are used to quantify Effects and other Features on the    ║▓
+║ game's percentile scale. The d40, d60, d80, and d120 are composed of pairs of a           ║▓
+║ polyhedral die: the d4, d6, d8, and d12, respectively; and a d10, rolled together and     ║▓
+║ read as one - just as the d100 is composed of two d10 rolled together and read as one.    ║▓
 ║                                                                                           ║▓
 ║ fd100 is designed to eliminate mental arithmetic from the process used to determine the   ║▓
 ║ outcome of characters' actions ("action resolution"), and to encourage players to use     ║▓
@@ -1658,15 +1658,15 @@
 ║                                                                                           ║▓
 ║ The die used to roll for action resolution in fd100 is the "d100". This is nominally a    ║▓
 ║ hundred-sided die, but, in practice, a composite die comprised of two, ten-sided dice     ║▓
-║ (d10s), numbered 0, 1, 2, ..., 9, which are rolled together and read as one to generate   ║▓
+║ (d10s), numbered 0, 1, ..., 9, which are rolled together and read as one to generate      ║▓
 ║ numbers from 00 to 99.                                                                    ║▓
 ║                                                                                           ║▓
 ║ In Nests & Insects' nomenclature, the d100 is one of five "decile dice": the d20, d40,    ║▓
-║ d60, d80 and the d100 itself. The d20 is a twenty-sided die with faces numbered 0, 1,     ║▓
-║ ..., 19. The d40, d60, d80 and the d100 are each a pair of polyhedral dice: a d4, d6, d8  ║▓
-║ and d10, respectively, numbered 0, 1, ..., n-1, where "n" is the number of faces on the   ║▓
-║ die, and used to generate the "tens" of the roll; and a d10, also numbered 0, 1, ..., 9,  ║▓
-║ and used to generate the "ones" of the roll.                                              ║▓
+║ d60, d80, d120, and the d100 itself. The d20 is a twenty-sided die with faces numbered 0, ║▓
+║ 1, ..., 19. The d40, d60, d80, d100, and d120 are each a pair of polyhedral dice: a d4,   ║▓
+║ d6, d8, d10, and d12, respectively, numbered 0, 1, ..., n-1, where "n" is the number of   ║▓
+║ faces on the die, and used to generate the "tens" of the roll; and a d10, also numbered   ║▓
+║ 0, 1, ..., 9, and used to generate the "ones" of the roll.                                ║▓
 ║                                                                                           ║▓
 ║ To generate a result in a decile die's range, the "tens" and "ones" die are rolled        ║▓
 ║ together, the "tens" die is placed to the left of the "ones" die and the numbers showing  ║▓
@@ -1681,21 +1681,21 @@
 ║ percentile scale as Features. This is particularly the case for Actions that bestow an    ║▓
 ║ Effect on a character or another game entity.                                             ║▓
 ║                                                                                           ║▓
-║ Table 2 in the Section "Decile dice" of the "Overview" Chapter illustrates Decile dice.   ║▓
+║ Table 2 in the Section "Decile Dice" of the "Overview" Chapter illustrates decile dice.   ║▓
 ║ The Table is reproduced here for ease of reference:                                       ║▓
 ║                                                                                           ║▓
-║ Decile die    Range      Tens die    Numbered     Ones die    Numbered                    ║▓
-║ ────────────────────────────────────────────────────────────────────────                  ║▓
-║ d20           0 to 19    Not any!                 d20         0,1,...,19                  ║▓
-║ d40           0 to 39    d4          0,1,...,3    d10         0,1,...,9                   ║▓
-║ d60           0 to 59    d6          0,1,...,5    d10         0,1,...,9                   ║▓
-║ d80           0 to 79    d8          0,1,...,7    d10         0,1,...,9                   ║▓
-║ d100          0 to 99    d10         0,1,...,9    d10         0,1,...,9                   ║▓
-║ ────────────────────────────────────────────────────────────────────────                  ║▓
+║ Decile die    Range       Tens die    Numbered      Ones die    Numbered                  ║▓
+║ ──────────────────────────────────────────────────────────────────────────                ║▓
+║ d20           0 to 19     Not any!                  d20         0,1,...,19                ║▓
+║ d40           0 to 39     d4          0,1,...,3     d10         0,1,...,9                 ║▓
+║ d60           0 to 59     d6          0,1,...,5     d10         0,1,...,9                 ║▓
+║ d80           0 to 79     d8          0,1,...,7     d10         0,1,...,9                 ║▓
+║ d100          0 to 99     d10         0,1,...,9     d10         0,1,...,9                 ║▓
+║ d120          0 to 119    d12         0,1,...,11    d10         0,1,...,9                 ║▓
+║ ──────────────────────────────────────────────────────────────────────────                ║▓
 ║ Table: Decile dice, used for quantification on a percentile scale. d100 is also a decile  ║▓
 ║ die, and the only one used for Action resolution. The d20 does not need a "tens" die and  ║▓
 ║ is rolled on its own.                                                                     ║▓
-║                                                                                           ║▓
 ╚═══════════════════════════════════════════-30-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
@@ -1703,20 +1703,18 @@
 ║ Implementing Decile Dice                                                                  ║▓
 ║ ------------------------                                                                  ║▓
 ║                                                                                           ║▓
-║ While the d20, d4, d6, and d8 are commonly used in TTRPGs and so are easy to find, they   ║▓
-║ typically have faces numbered 1, 2, ..., n (where "n" is the number of faces of the die). ║▓
-║ Let's call such dice "one-based". d10s typically have faces numbered 0, 1, ..., 9 (or 00, ║▓
-║ 10, ..., 90). Let's call those "zero-based". Accordingly the Nests & Insects polyhedrals  ║▓
-║ used to compose decile dice are all "zero-based", just like the typical d10. Most         ║▓
-║ roleplayers will not have zero-based polyhedral dice, other than d10s. What to do then,   ║▓
-║ to play Nests & Insects? There are four alternatives, listed below.                       ║▓
+║ While the d4, d6, d8, d12, and d20 are commonly used in TTRPGs and so are easy to find,   ║▓
+║ they typically have faces numbered 1, 2, ..., n (where "n" is the number of faces of the  ║▓
+║ die). Let's call such dice "one-based". d10s typically have faces numbered 0, 1, ..., 9   ║▓
+║ (or 00, 10, ..., 90). Let's call those "zero-based". Accordingly the Nests & Insects      ║▓
+║ polyhedrals used to compose decile dice are all "zero-based", just like the typical d10.  ║▓
+║ Most roleplayers will not have zero-based polyhedral dice, other than d10s. What to do    ║▓
+║ then, to play Nests & Insects? There are four alternatives, listed below.                 ║▓
 ║                                                                                           ║▓
-║ 1. Get you a set of blank polyhedral dice and paint in the desired numbers.               ║▓
+║ 1. Get you a set of blank polyhedral dice and paint-in the desired numbers.               ║▓
 ║                                                                                           ║▓
-║    In that case, you get a blank d20, d4, d6 and d8, and paint their faces with the       ║▓
+║    In that case, you get a blank d4, d6, d8, d12, and d20 and paint their faces with the  ║▓
 ║    following numbers:                                                                     ║▓
-║                                                                                           ║▓
-║    d20: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19              ║▓
 ║                                                                                           ║▓
 ║    d4: 0, 1, 2, 3                                                                         ║▓
 ║                                                                                           ║▓
@@ -1724,13 +1722,13 @@
 ║                                                                                           ║▓
 ║    d8: 0, 1, 2, 3, 4, 5, 6, 7                                                             ║▓
 ║                                                                                           ║▓
+║    d12: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11                                              ║▓
+║                                                                                           ║▓
+║    d20: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19              ║▓
+║                                                                                           ║▓
 ║    In this case, you can keep using the standard, zero-based d10s as the "tens" for the   ║▓
 ║    d100 and the "ones" for all other decile dice. The only reason to get a blank d10 is   ║▓
-║    to have a full set of zero-based polyhedral dice in the same style. In that case, feel ║▓
-║    free to give the same treatment to the also-standard d12, and, why not, the (rarer,    ║▓
-║    but readily available) d14, d16, and d18. Now you have more decile dice: d120, d140,   ║▓
-║    d160 and d180. You can even go up to d200! Sooner or later, someone's going to come up ║▓
-║    with a game to use those!                                                              ║▓
+║    to have a full set of zero-based polyhedral dice in the same style.                    ║▓
 ║                                                                                           ║▓
 ║ 2. Use the standard, one-based polyhedral dice and adjust the decile die roll by          ║▓
 ║    subtraction.                                                                           ║▓
@@ -1739,19 +1737,18 @@
 ║    2, ..., 20. When you roll a one-based d20, subtract 1 from the result of the roll to   ║▓
 ║    generate numbers in the range of a zero-based d20.                                     ║▓
 ║                                                                                           ║▓
-║    The decile d40, d60 and d80 are composite dice, comprised of a one-based d4, d6 and    ║▓
-║    d8, respectively, as the "tens" of the decile die; and a zero-based d10 as the "ones"  ║▓
-║    die. To generate a decile die result, roll the "tens" and "ones" dice together, place  ║▓
-║    the "tens" die to the left of the "ones" die, and read them left-to-right as before.   ║▓
-║    Only this time *subtract 10 from the result* to generate a number in the range of the  ║▓
-║    decile die.                                                                            ║▓
-║                                                                                           ║▓
-╚═══════════════════════════════════════════-31-════════════════════════════════════════════╝▓
- ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║    The decile d40, d60, d80, and d120 are composite dice, comprised of a one-based d4,    ║▓
+║    d6, d8, and d12, respectively, as the "tens" of the decile die; and a zero-based d10   ║▓
+║    as the "ones" die. To generate a decile die result, roll the "tens" and "ones" dice    ║▓
+║    together, place the "tens" die to the left of the "ones" die, and read them            ║▓
+║    left-to-right as before. Only this time *subtract 10 from the result* to generate a    ║▓
+║    number in the range of the decile die.                                                 ║▓
 ║                                                                                           ║▓
 ║    The d100 doesn't change: it is comprised of two zero-based d10s read side-by-side, and ║▓
 ║    generating numbers from 00 to 99.                                                      ║▓
+╚═══════════════════════════════════════════-31-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║ 3. Use the standard, one-based polyhedral dice and interpret the results as if they were  ║▓
 ║    zero-based.                                                                            ║▓
@@ -1760,24 +1757,23 @@
 ║    2, ..., 20, as in Alternative 2. When you roll the d20 as a decile die, read a "20" as ║▓
 ║    "0". This will give you twenty numbers, from 0 to 19, as the range of the decile d20.  ║▓
 ║                                                                                           ║▓
-║    As in Alternative 2, the decile d40, d60 and d80 are composite dice comprised of a     ║▓
-║    one-based d4, d6 and d8, respectively, as the "tens" of the decile die; and a          ║▓
-║    zero-based d10 as the "ones". To generate a zero-based decile die result, roll the     ║▓
+║    As in Alternative 2, the decile d40, d60, d80, and d120 are composite dice comprised   ║▓
+║    of a one-based d4, d6, d8, and d12, respectively, as the "tens" of the decile die; and ║▓
+║    a zero-based d10 as the "ones". To generate a zero-based decile die result, roll the   ║▓
 ║    "tens" and "ones" dice together, place the "tens" die to the left of the "ones" die,   ║▓
 ║    and read them left-to-right as before. Only this time, when the tens die shows its     ║▓
-║    highest digit: "4" on a d4, "6" on a d6 and "8" on a d8, read that digit as "0",       ║▓
-║    *unless the "ones" d10 also shows a "0"* (in which case you read the highest digit as  ║▓
-║    itself).                                                                               ║▓
+║    highest digit: "4" on a d4, "6" on a d6, "8" on a d8, and "12" on a d12, read that     ║▓
+║    digit as "0".                                                                          ║▓
 ║                                                                                           ║▓
 ║    As with Alternative 2, the d100 doesn't change and is comprised of two, zero-based     ║▓
 ║    d10s read side-by-side to generate numbers from 00 to 99.                              ║▓
 ║                                                                                           ║▓
 ║    For example, in this case, the decile d60 is comprised of a one-based d6 as the "tens" ║▓
 ║    die and a zero-based d10 as the "ones" die. When the one-based d6 shows a "6", you     ║▓
-║    read it as "0", unless the d10 also shows a "0". Suppose the d6 is showing a "6" and   ║▓
-║    the d10 is showing a "5". In that case, the result of the d60 decile die is "05", or   ║▓
-║    just "5". Suppose the d6 is showing a "6" and the d10 is showing a "0". In that case,  ║▓
-║    the result of the d60 is "60".                                                         ║▓
+║    read it as "0", so that the entire, composite d60 is zero-based. Suppose the d6 is     ║▓
+║    showing a "6" and the d10 is showing a "5". In that case, the result of the d60 decile ║▓
+║    die is "05", or just "5". Suppose the d6 is showing a "6" and the d10 is showing a     ║▓
+║    "0". In that case, the result of the d60 is "00", or just "0".                         ║▓
 ║                                                                                           ║▓
 ║ 4. Use a die-rolling app.                                                                 ║▓
 ║                                                                                           ║▓
@@ -1795,6 +1791,10 @@
 ║ Alternative 2. Alternative 2 in particular breaks fd100's claim to "eliminate mental      ║▓
 ║ arithmetic" during Action resolution! The best thing with Alternative 1, of course, is    ║▓
 ║ that it makes a perfect excuse to collect even more weird gaming dice.                    ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
 ║                                                                                           ║▓
 ╚═══════════════════════════════════════════-32-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
@@ -3190,7 +3190,7 @@
 ║ in the corresponding Event table; the other is the rating of the Nest Level on which the  ║▓
 ║ characters are currently located. In some cases a Feature of the exploring Character may  ║▓
 ║ be used as the base Chance for an Event to occur, instead. Nest Levels also define the    ║▓
-║ Decile Dice to roll for Quantification of the three kinds of Events and their Features.   ║▓
+║ decile dice to roll for Quantification of the three kinds of Events and their Features.   ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -3422,19 +3422,19 @@
 ║ Table: Nest Levels and Quantification dice                                                ║▓
 ║                                                                                           ║▓
 ║ _Increasing Level ratings_ The rating of the Nest Level changes every time a character    ║▓
-║ spends a Level Reward to explore a new Nest Level. At that time, the Costs/Riks Die       ║▓
+║ spends a Level Reward to explore a new Nest Level. At that time, the Costs/Risks Die      ║▓
 ║ corresponding to the current Nest Level is rolled to quantify the new Level's rating. The ║▓
 ║ effect of this Quantification method is that as the characters delve deeper into the      ║▓
 ║ Nest, the chance to find a Level with 100% rating, where the target of their Job is       ║▓
 ║ found, increases.                                                                         ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ _d120 Quantification_ When the d120 is rolled for Quantification of Events its effective  ║▓
+║ range is "capped" at 100. That is to say, a Feature's rating can never exceed 100, even   ║▓
+║ if the d120 is used to quantify the Feature's rating, and the result rolled is higher     ║▓
+║ than 100. The d120 is only used to increase the chance to roll high, and generate a       ║▓
+║ higher percentile rating for a Feature, slightly above the chance to do so with a d100.   ║▓
+║ The only use of the d120 in Nests & Insects is to quantify Events and Features of the     ║▓
+║ Nest Environment.                                                                         ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
