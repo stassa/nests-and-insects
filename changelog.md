@@ -3,6 +3,14 @@
 
 Version: v.1.0.0
 
+* Started on: Inventory Items Section.
+
+
+07/05/22
+========
+
+Version: v.1.0.0
+
 Rulebook
 --------
 

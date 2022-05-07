@@ -971,6 +971,88 @@ Choose this class:
 If you want your character to be a mobile, deadly fighter, specialised for fast attack,
 feared by its enemies, and equipped with good survival skills.
 
+\newpage
+
+                                   Character Features
+                                   ==================
+
+\newpage
+
+                                     Inventory Items
+                                     ===============
+
+Inventory Items are consumable resources that a character must use in order to take
+certain Actions during a minigame, or to pay Costs generated during the Survival and
+Exploration minigame. 
+
+Carrying Items
+--------------
+
+Inventory Items are carried about the character's person and kept track of in the
+character's Inventory. A character can only carry as many resources as there are entry
+"slots" in her Inventory. 
+
+_Acquiring Items_ When a new Item is acquired, add an entry for it in the character's
+Inventory. If the character's Inventory is full, the item is "dropped" instead (no entry
+is made for it in the character's Inventory).
+
+_Dropped Items_ When an Inventory Item is "dropped" it is left lying on the floor of the
+Nest in the Room where the character is currently in. Characters (including the character
+who dropped an Item), or Nest denizens, may pick up dropped Items and add them to their
+own Inventory.
+
+_Lost Items_ Dropped Items stay on the floor of a Room where they were dropped, but have
+a chance to be lost. Lost Items disappear, and they can no longer be found or picked up.
+When all characters leave a Room where an Item was dropped (by anyone) the GQ makes a
+Boolean Roll with Effort equal to the Nest Level of the Room. If the Roll succeeds, the
+Item remains on the Room floor. If the Roll fails, the Item is lost.
+
+See Section "Boolean Roll" under "Simplified Rolls" in the "System" Chapter for a
+description of Boolean Rolls. See Section "Nest Levels" under "Survival and Exploration"
+in the "System" Chapter for a description of Nest Levels.
+
+_Voluntarily dropping Items_ A character is free to "drop" Items from her Inventory at
+any time, to make space for other Items, or for any other reason. Dropped Items are
+removed from the player's Inventory. The exception is Cursed Items, which may not be
+removed from a character's Inventory, until their Curse is lifted.
+
+\newpage
+
+Consuming Items
+---------------
+
+Inventory Items are "consumed" and may become "depleted" or "exhausted" as a result of
+their consumption. An Inventory Item is depleted when its rating is reduced; it is
+exhausted when its rating is reduced to 0%.
+
+_Consuming Items_ To consume an Inventory Item to take an Action or pay a Cost, make a
+Boolean Roll. The Effort for the Roll is the Item's rating. The Roll is made immediately
+after the Action is resolved, or in the process of paying the Cost.
+
+* If the Roll succeeds, the Item is not depleted (the Item's rating remains unchanged).
+
+* If the Roll fails, the Item must be depleted: in that case, make a Quantification Roll
+  to reduce the Item's rating. The Quantification die for the Roll is the first decile
+  die whose maximum result is less than, or equal to, the current rating of the Item, or
+  the d20 if the current rating of the Item is less than 19%.
+
+The player of the character taking the Action or paying the Cost makes both Rolls.
+
+_Exhausted Items_ When an Inventory Item is exhausted, it can no longer be consumed to
+take Actions or pay Costs. Remove the Item's entry from the character's Inventory.
+Exhausted Items are not "dropped": they just disappear and cannot be picked up by other
+characters.
+
+\begin{box}[Example 2]
+The GQ tells Cody that his Spider character must pay a Hunger Cost. Spider has a Moth
+23% Item in her Inventory, and the Moth Item is marked as edible, meaning that Spider
+can consume it to pay a Hunger Cost. Cody rolls d100 to use the Moth to pay the
+Hunger Cost for Spider: 45. The Boolean Roll is Failed and the Moth Item is depleted.
+Cody must now make a Quantification Roll to reduce the Moth Item's rating. The first
+decile die with a maximum result less than the Moth Item's current rating of 23% is
+the d20. Cody Rolls d20: 11. The Moth Item's new rating is 11%. Cody modifies the
+rating on Spider's character sheet and paying the Cost is completed.
+\end{box}
 
 \newpage
 
@@ -1290,11 +1372,11 @@ The only requirement is that the description of the character's Intent is suffic
 detailed for the GQ to be able to determine the Features to be used as Effort and
 Resistance, or modifiers.
 
-\begin{box}[Example 2]
+\begin{box}[Example 3]
 Cody declares his character's intent: "Spider attacks the second Nasute Soldier".
 \end{box}
 
-\begin{box}[Example 3]
+\begin{box}[Example 4]
 Brody declares his character's intent: "I want Wasp to display her stripes and scare
 the living beejeesus out of the Worker Bees! I want her to dive in towards them,
 buzzing menacingly and waving her abdomen around in, like, a threatening and
@@ -1352,7 +1434,7 @@ and apply gaming sense. Usually, the GQ will suggest a relevant pair of Features
 player is free to negotiate a different pair but the GQ has the final word. Any
 negotiation should not take as long as to bore the rest of the group.
 
-\begin{box}[Example 4]
+\begin{box}[Example 5]
 Cody negotiates with the GQ: "But Wasp is Venomous so she can display her Stinger and
 maximise the intimidation of the Minor Termite Soldiers".
 \end{box}
@@ -1577,7 +1659,7 @@ Degrees of Success and Failure of a Qualification Roll with modifiers is not jus
 the context of the Action, or when it is not clear from the context of an Action what the
 difference is between different DoS.
 
-\begin{box}[Example 5]
+\begin{box}[Example 6]
 Beetle is trying to lift a piece of debris from the Nest's floor. This is a simple
 Action that can either succeed or fail. The GQ asks for a Boolean Roll against
 Beetle's Strength: 55%. The player rolls: 78. The result does not match Beetle's
@@ -1621,7 +1703,7 @@ main use of the Contested Boolean Roll is to simplify the resolution of Actions 
 it makes sense to take into account the Resistance to a character's Effort, but where the
 full complexity of the Six Degrees of Success of the Qualification Roll is not needed.
 
-\begin{box}[Example 6]
+\begin{box}[Example 7]
 Beetle is trying to lift a piece of debris from the Nest's floor. The GQ asks the
 Beetle player for a Contested Boolean Roll. Effort is Beetle's Strength: 55%, and
 Resistance is 45%, because the GQ determines the piece of debris is not too heavy.
