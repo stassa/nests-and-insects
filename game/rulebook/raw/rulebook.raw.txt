@@ -2337,7 +2337,7 @@ Table: Costs
 Risk          &  Chance     &  Description
 Encounter     &  50% + Level&  Meet the nest's denizens
 Item (Unknown)&  30% + Level&  Find as yet unidentified Food Items
-Obstacle      &  20% + Level&  Prevent further Exploration until removed
+Obstacle      &  20% + Level&  Prevents further Exploration until removed
 Infection     &  10% + Level&  Bestows the Infection Effect
 \end{table}
 Table: Risks
