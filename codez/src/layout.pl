@@ -591,6 +591,6 @@ longest_line([Lj|Ls],[Li,I,Wi],Bind):-
         ,atom_length(Lj,Wj)
         ,(   Wj > Wi
          ->  Acc = [Lj,J,Wj]
-         ;   Acc = [Li,I,Wi]
+         ;   Acc = [Li,J,Wi]
          )
         ,longest_line(Ls,Acc,Bind).
