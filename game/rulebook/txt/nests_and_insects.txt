@@ -1700,6 +1700,56 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
+║ Item Types                                                                                ║▓
+║ ----------                                                                                ║▓
+║                                                                                           ║▓
+║ Inventory Items can belong to one of six types. An Item's type is recorded next to its    ║▓
+║ name on a character's sheet, in parentheses. The six Item types are listed in the Item    ║▓
+║ Types Table, below, along with a brief description thereof:                               ║▓
+║                                                                                           ║▓
+║ Item Type    Description                                                                  ║▓
+║ ────────────────────────────────────────────────────────────────────────────              ║▓
+║ Companion    A creature accompanying a character. May be Edible.                          ║▓
+║ Food         Used to pay a Hunger Cost. May bestow Effects, grant Abilities.              ║▓
+║ Hint         May provide useful information.                                              ║▓
+║ Lighting     Used to pay a Darkness Cost. May be Edible.                                  ║▓
+║ Materials    Used to build a Shelter for Resting and Healing.                             ║▓
+║ Message      Must be collected or delivered as part of a Job.                             ║▓
+║ ────────────────────────────────────────────────────────────────────────────              ║▓
+║ Table: Item Types.                                                                        ║▓
+║                                                                                           ║▓
+║ _Items With Multiple Types_ Some Items may have multiple types, the "Food" type, and one  ║▓
+║ or more other types. Such Items can be used to pay a Hunger Cost and perform another      ║▓
+║ function, such as paying a Darkness Cost. However, if a Food Item is used to pay a Hunger ║▓
+║ Cost, all Types it has other than Food are removed from it and the Item can henceforth    ║▓
+║ only be used as a Food Item. The Item's name is changed to indicate it is only Food, by   ║▓
+║ appending the word "Carcass" or "Remains" to its original name.                           ║▓
+║                                                                                           ║▓
+║ ┌[Example 2]────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ │ Cody's Spider character has a Gloworm: 45% Item in her Inventory. The Gloworm Item    │ ║▓
+║ │ has types Food and Lighting. Spider must pay a Hunger Cost and Cody decides that she  │ ║▓
+║ │ will eat some of the Gloworm to pay it. The Gloworm is now no longer a Lighting Item. │ ║▓
+║ │ Cody changes the Gloworm's name on Spider's character sheet to "Gloworm Carcass" as a │ ║▓
+║ │ reminder that the Gloworm is now only useable as Food.                                │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ _Spoiled Items_ Food Items can become spoiled as the result of paying a Spoilage Cost     ║▓
+║ during the Survival and Exploration or Hunting and Foraging minigames. Spoiled Items are  ║▓
+║ past their expiry date and cannot be consumed without risking adverse effects. The name   ║▓
+║ of Spoiled Food Items is prepended with "Spoiled" to indicate their Spoiled status.       ║▓
+║                                                                                           ║▓
+║ ┌[Example 3]────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ │ Brody's Ants character is carrying an Item named "Rare Red Fungus of Collocation"     │ ║▓
+║ │ marked as Edible. The Item becomes Spoiled as the result of paying a Spoilage Cost.   │ ║▓
+║ │ Brody changes the name of the Item to indicate it's spoiled. The Item is now called:  │ ║▓
+║ │ "Spoiled Rare Red Fungus of Collocation".                                             │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-31-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
 ║ Acquiring Items                                                                           ║▓
 ║ ---------------                                                                           ║▓
 ║                                                                                           ║▓
@@ -1713,6 +1763,8 @@
 ║   initial rating is generated by a Quantification Roll according to the rules of Survival ║▓
 ║   and Exploration. If an Item is edible, this is listed in the Item's listing (TBD).      ║▓
 ║                                                                                           ║▓
+║ See Section "Quantification" under "Taking Actions" in the "System" Chapter for a         ║▓
+║ description of Quantification Rolls.                                                      ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -1729,58 +1781,6 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-╚═══════════════════════════════════════════-31-════════════════════════════════════════════╝▓
- ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
-║                                                                                           ║▓
-║ Item Types                                                                                ║▓
-║ ----------                                                                                ║▓
-║                                                                                           ║▓
-║ Inentory Items can belong to one of six types. An Item's type is recorded next to its     ║▓
-║ name on a character's sheet. The six Item types are listed in the Item Types Table,       ║▓
-║ below, along with a brief description thereof:                                            ║▓
-║                                                                                           ║▓
-║ Item Type    Description                                                                  ║▓
-║ ────────────────────────────────────────────────────────────────────────────              ║▓
-║ Companion    A creature accompanying a character. May be Edible.                          ║▓
-║ Food         Used to pay a Hunger Cost. May bestow Effects, grant Abilities.              ║▓
-║ Hint         May provide useful information.                                              ║▓
-║ Lighting     Used to pay a Darkness Cost. May be Edible.                                  ║▓
-║ Materials    Used to build a Shelter for Resting and Healing.                             ║▓
-║ Message      Must be delivered as part of a Job.                                          ║▓
-║ ────────────────────────────────────────────────────────────────────────────              ║▓
-║ Table: Item Types.                                                                        ║▓
-║                                                                                           ║▓
-║ _Changing Item Names and Types_ Some Items may have two types, the "Food" type, and one   ║▓
-║ other type. Such Items can be used to pay a Hunger Cost or perform another function, such ║▓
-║ as paying a Darkness Cost. If a Food Item is used to pay a Hunger Cost, all Types it has  ║▓
-║ other than Food are removed from it. The Item can henceforth only be used as a Food Item, ║▓
-║ to pay Hunger Costs. The Item's name is changed to indicate it is only Food.              ║▓
-║                                                                                           ║▓
-║ ┌[Example 2]────────────────────────────────────────────────────────────────────────────┐ ║▓
-║ │ Brody's Wasp character has a Gloworm: 45% Item in her Inventory. The Gloworm is a     │ ║▓
-║ │ Lighting Item and a Food Item. Wasp must pay a Hunger Cost and Brody decides that     │ ║▓
-║ │ Wasp will eat some of the Gloworm to pay it. The Gloworm's name changes to "Gloworm   │ ║▓
-║ │ Carcass" and is no longer a Lighting Item. Brody changes the Gloworm's name on Wasp's │ ║▓
-║ │ character sheet as a reminder that the Gloworm is now only useable as Food.           │ ║▓
-║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -1870,7 +1870,7 @@
 ║                                                                                           ║▓
 ║ The player of the character taking the Action or paying the Cost makes both Rolls.        ║▓
 ║                                                                                           ║▓
-║ ┌[Example 3]────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ ┌[Example 4]────────────────────────────────────────────────────────────────────────────┐ ║▓
 ║ │ The GQ tells Cody that his Spider character must pay a Hunger Cost. Spider has a Moth │ ║▓
 ║ │ 23% Item in her Inventory, and the Moth Item is marked as edible, meaning that Spider │ ║▓
 ║ │ can consume it to pay a Hunger Cost. Cody rolls d100 to use the Moth to pay the       │ ║▓
@@ -2269,11 +2269,11 @@
 ║ detailed for the GQ to be able to determine the Features to be used as Effort and         ║▓
 ║ Resistance, or modifiers.                                                                 ║▓
 ║                                                                                           ║▓
-║ ┌[Example 4]────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ ┌[Example 5]────────────────────────────────────────────────────────────────────────────┐ ║▓
 ║ │ Cody declares his character's intent: "Spider attacks the second Nasute Soldier".     │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-║ ┌[Example 5]────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ ┌[Example 6]────────────────────────────────────────────────────────────────────────────┐ ║▓
 ║ │ Brody declares his character's intent: "I want Wasp to display her stripes and scare  │ ║▓
 ║ │ the living beejeesus out of the Worker Bees! I want her to dive in towards them,      │ ║▓
 ║ │ buzzing menacingly and waving her abdomen around in, like, a threatening and          │ ║▓
@@ -2284,12 +2284,12 @@
 ║ Both styles illustrated in Examples 1 and 2 are fine, as far as the game rules are        ║▓
 ║ concerned. It doesn't matter that Bees cannot scream and won't run away.                  ║▓
 ║                                                                                           ║▓
-║ In Example 4 it is clear that Cody's character is attacking. His character is acting      ║▓
+║ In Example 5 it is clear that Cody's character is attacking. His character is acting      ║▓
 ║ either during Combat, or just before Combat begins, so the Effort and Resistance should   ║▓
 ║ be Spider's Threat Rate and the Nasute Soldier's Survival Rate, as determined by the      ║▓
 ║ Combat minigame.                                                                          ║▓
 ║                                                                                           ║▓
-║ In Example 5, Brody is clearly describing the use of Wasp's Flying and Signalling to      ║▓
+║ In Example 6, Brody is clearly describing the use of Wasp's Flying and Signalling to      ║▓
 ║ perform an aggressive display with the purpose of scaring the Worker Bees. Effort is      ║▓
 ║ Wasp's Signalling and Resistance is most likely the Bees' Passions. Wasp's Flying can be  ║▓
 ║ used as a static modifier, or as a dramatic modifier, or ignored.                         ║▓
@@ -2335,12 +2335,12 @@
 ║ player is free to negotiate a different pair but the GQ has the final word. Any           ║▓
 ║ negotiation should not take as long as to bore the rest of the group.                     ║▓
 ║                                                                                           ║▓
-║ ┌[Example 6]────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ ┌[Example 7]────────────────────────────────────────────────────────────────────────────┐ ║▓
 ║ │ Cody negotiates with the GQ: "But Wasp is Venomous so she can display her Stinger and │ ║▓
 ║ │ maximise the intimidation of the Minor Termite Soldiers".                             │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-║ In Example 6 Cody is negotiating the use of Wasp's Venomous: 80% Specific Abiliy as       ║▓
+║ In Example 7 Cody is negotiating the use of Wasp's Venomous: 80% Specific Abiliy as       ║▓
 ║ Effort to an Action with intent to intimidate some Termite Soldiers. Normally, an Action  ║▓
 ║ with this Intent would use a character's Signalling Feature as Effort. Wasp's Signalling  ║▓
 ║ is 68% which is already pretty good, but Cody wants to maximise the chance to intimidate  ║▓
@@ -2632,7 +2632,7 @@
 ║ the context of the Action, or when it is not clear from the context of an Action what the ║▓
 ║ difference is between different DoS.                                                      ║▓
 ║                                                                                           ║▓
-║ ┌[Example 7]────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ ┌[Example 8]────────────────────────────────────────────────────────────────────────────┐ ║▓
 ║ │ Beetle is trying to lift a piece of debris from the Nest's floor. This is a simple    │ ║▓
 ║ │ Action that can either succeed or fail. The GQ asks for a Boolean Roll against        │ ║▓
 ║ │ Beetle's Strength: 55%. The player rolls: 78. The result does not match Beetle's      │ ║▓
@@ -2679,7 +2679,7 @@
 ║ it makes sense to take into account the Resistance to a character's Effort, but where the ║▓
 ║ full complexity of the Six Degrees of Success of the Qualification Roll is not needed.    ║▓
 ║                                                                                           ║▓
-║ ┌[Example 8]────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ ┌[Example 9]────────────────────────────────────────────────────────────────────────────┐ ║▓
 ║ │ Beetle is trying to lift a piece of debris from the Nest's floor. The GQ asks the     │ ║▓
 ║ │ Beetle player for a Contested Boolean Roll. Effort is Beetle's Strength: 55%, and     │ ║▓
 ║ │ Resistance is 45%, because the GQ determines the piece of debris is not too heavy.    │ ║▓
