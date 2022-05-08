@@ -167,12 +167,12 @@ Setting ........................................................................
 
                                         Overview
                                         ========
-\begin{box}[Note to the reader]
+\begin*{note_reader}
 This Section is a short introduction to the setting, the game and the system of Nests
 & Insects. It is designed to give you a general idea of the game. It is not designed
 to give you everything you need to play the game. That information is found in the
 text that follows this Overview Section.
-\end{box}
+\end{note_reader}
 
 The Setting
 -----------
@@ -295,7 +295,7 @@ each decile die generates numbers from 00 to one less than the number of faces o
 decile die: 39 on a d40, 59 on a d60, 79 on a d80, 99 on a d100, and 119 on a d120. The
 d20 needs no special reading and generates numbers in the range 0 to 19.
 
-\begin{box}[Example 1]
+\begin{example}
 The d60 is a composite decile die comprised of a d6, with faces numbered 0, 1, 2, 3,
 4, 5 as a "tens" die, and a d10, with faces numbered 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 as
 a "ones" die. When a d60 roll is made, the d6 and d10 are rolled together, the d6 is
@@ -304,7 +304,7 @@ d60 be rolled and suppose the d6 shows a "0", while the d10 shows a "0": in that
 case, the d60 result is "00", or just "0". Suppose the d6 shows a "0" while the d10
 shows a "4": in that case, the d60 result is "04", or just "4". Suppose the d6 shows
 a "3" while the d10 shows an "8": in that case, the d60 result is "38".
-\end{box}
+\end{example}
 
 Table 2 lists the six decile dice used in fd100, their component polyhedrals and their
 numeric ranges. Decile dice are described in full detail in Section "Decile Dice" in the
@@ -972,25 +972,25 @@ Cost, all Types it has other than Food are removed from it and the Item can henc
 only be used as a Food Item. The Item's name is changed to indicate it is only Food, by
 appending the word "Carcass" or "Remains" to its original name.
 
-\begin{box}[Example 2]
+\begin{example}
 Cody's Spider character has a Gloworm: 45% Item in her Inventory. The Gloworm Item
 has types Food and Lighting. Spider must pay a Hunger Cost and Cody decides that she
 will eat some of the Gloworm to pay it. The Gloworm is now no longer a Lighting Item.
 Cody changes the Gloworm's name on Spider's character sheet to "Gloworm Carcass" as a
 reminder that the Gloworm is now only useable as Food.
-\end{box}
+\end{example}
 
 _Spoiled Items_ Food Items can become spoiled as the result of paying a Spoilage Cost
 during the Survival and Exploration or Hunting and Foraging minigames. Spoiled Items are
 past their expiry date and cannot be consumed without risking adverse effects. The name
 of Spoiled Food Items is prepended with "Spoiled" to indicate their Spoiled status.
 
-\begin{box}[Example 3]
+\begin{example}
 Brody's Ants character is carrying an Item named "Rare Red Fungus of Collocation"
 marked as Edible. The Item becomes Spoiled as the result of paying a Spoilage Cost.
 Brody changes the name of the Item to indicate it's spoiled. The Item is now called:
 "Spoiled Rare Red Fungus of Collocation".
-\end{box}
+\end{example}
 
 \newpage
 
@@ -1074,7 +1074,7 @@ after the Action is resolved, or in the process of paying the Cost.
 
 The player of the character taking the Action or paying the Cost makes both Rolls.
 
-\begin{box}[Example 4]
+\begin{example}
 The GQ tells Cody that his Spider character must pay a Hunger Cost. Spider has a Moth
 23% Item in her Inventory, and the Moth Item is marked as edible, meaning that Spider
 can consume it to pay a Hunger Cost. Cody rolls d100 to use the Moth to pay the
@@ -1083,7 +1083,7 @@ Cody must now make a Quantification Roll to reduce the Moth Item's rating. The f
 decile die with a maximum result less than the Moth Item's current rating of 23% is
 the d20. Cody Rolls d20: 11. The Moth Item's new rating is 11%. Cody modifies the
 rating on Spider's character sheet and paying the Cost is completed.
-\end{box}
+\end{example}
 
 _Exhausted Items_ When an Inventory Item is exhausted, it can no longer be consumed to
 take Actions or pay Costs. Remove the Item's entry from the character's Inventory.
@@ -1312,7 +1312,7 @@ Throughout this Chapter you will find text boxes summarising definitions and rul
 Rules Summary 1, below, summarises Features.
 \end{box}
 
-\begin{box}[Rules Summary 1: fd100 Features]
+\begin{rules_summary}[fd100 Features]
 A Feature is a game variable that describes a game entity. A Feature has a unique
 identifier, its "name" and can take a value in the percentile range [1,100], its
 "rating". Nests & Insects Feature names are usually single-word descriptors. A
@@ -1321,7 +1321,7 @@ Feature's rating represents the chance that a character will succeed at a task o
 overcome a condition described by the Feature's name. Exceptionally, the Wounds
 Feature is a simple count and its rating is an integer. The ratings of Features other
 than Wounds are used as the Effort and Resistance values in die rolls.
-\end{box}
+\end{rules_summary}
 
 In fd100, game entities such as characters, enemy creatures and Rooms in Nests are
 defined in terms of their "Features". Features are game variables with a unique
@@ -1361,7 +1361,7 @@ Players' characters can take actions to achieve their goals within the context o
 minigames, and without. Actions are resolved in up to eight steps, summarised below and
 discussed in detail in the following sections.
 
-\begin{box}[Rules Summary 2: Action Resolution]
+\begin{rules_summary}[Action Resolution]
 
 1. Intent: Describe the character's intent.
 
@@ -1377,7 +1377,7 @@ discussed in detail in the following sections.
 
 8. Resolution: Describe the outcome of the Action.
 
-\end{box}
+\end{rules_summary}
 
 Not all of the above steps are necessary to resolve all Actions. For instance, some
 Actions may require Quantification, but others may not; modifiers may apply to some
@@ -1392,13 +1392,13 @@ them by heart.
 Describing Intent
 -----------------
 
-\begin{box}[Rules Summary 3: Intent]
+\begin{rules_summary}[Intent]
 An Action begins with a description of the character's Intent. The description must
 be sufficiently detailed to help determine the Features to be used as Effort and
 Resistance, or modifiers, for the Action. Minigame rules define the Intent of
 formulaic minigame Actions and the Features to use as Effort, Resistance and
 modifiers for such Actions.
-\end{box}
+\end{rules_summary}
 
 A player begins resolving a character's Action by describing the character's Intent: why
 or how the character is acting, what she hopes to achieve. This description can be as
@@ -1408,17 +1408,17 @@ The only requirement is that the description of the character's Intent is suffic
 detailed for the GQ to be able to determine the Features to be used as Effort and
 Resistance, or modifiers.
 
-\begin{box}[Example 5]
+\begin{example}
 Cody declares his character's intent: "Spider attacks the second Nasute Soldier".
-\end{box}
+\end{example}
 
-\begin{box}[Example 6]
+\begin{example}
 Brody declares his character's intent: "I want Wasp to display her stripes and scare
 the living beejeesus out of the Worker Bees! I want her to dive in towards them,
 buzzing menacingly and waving her abdomen around in, like, a threatening and
 provocative manner! I want them to run away screaming from buzzing, venomous DEATH!
 BzzZZZzzZZZZzz!"
-\end{box}
+\end{example}
 
 Both styles illustrated in Examples 1 and 2 are fine, as far as the game rules are
 concerned. It doesn't matter that Bees cannot scream and won't run away.
@@ -1441,23 +1441,23 @@ Effort and Resistance
 Effort and Resistance are the two target numbers for the Qualification Roll that
 determines the initial DoS of an Action.
 
-\begin{box}[Rules Summary 4: Effort]
+\begin{rules_summary}[Effort]
 Effort represents the character's effort to achieve her Intent, as described by the
 player. The value of Effort is equal to one of the acting character's Features that
 is most appropriate for the attempted Action, according to the Feature's name.
-\end{box}
+\end{rules_summary}
 
-\begin{box}[Rules Summary 5: Resistance]
+\begin{rules_summary}[Resistance]
 Resistance represents the resistance of game entities to the character's Action. The
 value of Resistance is equal to an appropriate Feature of an enemy creature, or of
 the Nest's environment, or any game entity opposing the character's Intent.
-\end{box}
+\end{rules_summary}
 
-\begin{box}[Rules Summary 6: Choosing Effort and Resistance]
+\begin{rules_summary}[Choosing Effort and Resistance]
 The description of the character's Intent informs the selection of Features used as
 Effort and Resistance. Minigame rules define the Features to use as Effort and
 Resistance for formulaic minigame Actions with predefined Intent.
-\end{box}
+\end{rules_summary}
 
 _Minigame Actions_ If the Action is taking place during a minigame, and it is one of the
 minigame's formulaic Actions, the minigame rules will define a formula that determines
@@ -1470,10 +1470,10 @@ and apply gaming sense. Usually, the GQ will suggest a relevant pair of Features
 player is free to negotiate a different pair but the GQ has the final word. Any
 negotiation should not take as long as to bore the rest of the group.
 
-\begin{box}[Example 7]
+\begin{example}
 Cody negotiates with the GQ: "But Wasp is Venomous so she can display her Stinger and
 maximise the intimidation of the Minor Termite Soldiers".
-\end{box}
+\end{example}
 
 In Example 7 Cody is negotiating the use of Wasp's Venomous: 80% Specific Abiliy as
 Effort to an Action with intent to intimidate some Termite Soldiers. Normally, an Action
@@ -1485,18 +1485,18 @@ Signalling is the appropriate Feature to use as Effort, so it is.
 Qualification
 -------------
 
-\begin{box}[Rules Summary 7: Qualification Roll]
+\begin{rules_summary}[Qualification Roll]
 To make a Qualification Roll means to roll a d100 and compare it to Effort and
 Resistance, simultaneously. To roll under Effort is to achieve or "match" Effort. To
 roll over, or equal to, Resistance is to overcome, or "beat" Resistance.
-\end{box}
+\end{rules_summary}
 
-\begin{box}[Rules Summary 8: Degree of Success and Failure]
+\begin{rules_summary}[Degree of Success and Failure]
 If the Qualification Roll matches Effort, then the DoS of the Action is a "Success";
 otherwise, it is a "Failure". If the Qualification Roll beats Resistance, then the
 DoS of the Action is a "Complete" Success, or a "Partial" Failure; otherwise it is a
 Complete Failure, or a Partial Success.
-\end{box}
+\end{rules_summary}
 
 Once Effort and Resistance are chosen the player rolls a d100 and compares its result to
 Effort and Resistance. This is called a "Qualification Roll". To achieve the best outcome
@@ -1530,23 +1530,23 @@ following.
 Modification
 ------------
 
-\begin{box}[Rules Summary 9: Static and Dramatic Modifiers]
+\begin{rules_summary}[Static and Dramatic Modifiers]
 Modifiers change the DoS of an Action. There are two types of modifiers: static and
 dramatic. Static modifiers are compared to the d100 result of the Qualification roll.
 For each dramatic modifier a new d100 roll is made and the dramatic modifier compared
 to the result of the roll.
-\end{box}
+\end{rules_summary}
 
-\begin{box}[Rules Summary 10: Positive and Negative Modifiers]
+\begin{rules_summary}[Positive and Negative Modifiers]
 Modifiers can be positive or negative. Matching a positive modifier confers a Shift
 Up to the Dos. Failiing to beat a negative modifier confers a Shift Down to the DoS.
-\end{box}
+\end{rules_summary}
 
-\begin{box}[Rules Summary 11: Shifts Up and Shifts Down]
+\begin{rules_summary}[Shifts Up and Shifts Down]
 A Shift Up changes the DoS from worse to better. A Shift Down changes the DoS from
 better to worse. A Shift Up from Complete Success changes the DoS to Critical
 Success. A Shift Down from Complete Failure changes the DoS to Critical Failure.
-\end{box}
+\end{rules_summary}
 
 Modifiers are Features of a character or game entities that further support or hinder the
 character's Actions, in addition to Effort and Resistance. Like Effort and Resistance,
@@ -1576,10 +1576,10 @@ Table: Modifiers and change to DoS.
 Choosing modifiers
 ------------------
 
-\begin{box}[Rules Summary 12: The Rule of Two]
+\begin{rules_summary}[The Rule of Two]
 At most two dramatic modifiers may be applied to a single Action: either a) two
 positive, or b) two negative, or c) one positive and one negative.
-\end{box}
+\end{rules_summary}
 
 Static modifiers model routine complications to ordinary Actions, in particular minigame
 Actions. Dramatic modifiers model uncommon or surprising variation to Actions. 
@@ -1605,28 +1605,28 @@ thumb, the GQ should grant no more than two or three dramatic modifiers per game
 Quantification
 --------------
 
-\begin{box}[Rules Summary 13: Quantification Roll]
+\begin{rules_summary}[Quantification Roll]
 To make a Quantification Roll means to roll a decile die and change the rating of a
 Feature according to the result. There are three types of Quantification Roll: a Roll
 to Set, a Roll to Increase, and a Roll to Decrease, the value of a Feature.
-\end{box}
+\end{rules_summary}
 
-\begin{box}[Rules Summary 14: Roll to Set]
+\begin{rules_summary}[Roll to Set]
 To make a Quantification Roll to set the rating of a Feature, roll a decile die and
 change the rating of the Feature to the result of the decile die.
-\end{box}
+\end{rules_summary}
 
-\begin{box}[Rules Summary 15: Roll to Increase]
+\begin{rules_summary}[Roll to Increase]
 To make a Quantification Roll to increase the rating of a Feature, roll a decile die
 and compare it to the rating of the Feature. If the result of the roll is higher,
 change the rating of the Feature to the result of the decile die.
-\end{box}
+\end{rules_summary}
 
-\begin{box}[Rules Summary 16: Roll to Decrease]
+\begin{rules_summary}[Roll to Decrease]
 To make a Quantification Roll to decrease the rating of a Feature, roll a decile die
 and compare it to the rating of the Feature. If the result of the roll is lower,
 change the rating of the Feature to the result of the decile die.
-\end{box}
+\end{rules_summary}
 
 A Quantification Roll is made to quantify the results of an Action. Invariably, the
 Quantification Roll modifies the rating of a Feature of a character, an enemy, or the
@@ -1647,9 +1647,9 @@ depend on the DoS of the Action.
 Resolution
 ----------
 
-\begin{box}[Rules Summary 17: Outcome description]
+\begin{rules_summary}[Outcome description]
 The outcome of Actions is described by the GQ.
-\end{box}
+\end{rules_summary}
 
 Once the Qualification roll is made, the final DoS of the Action is known, Action results
 are Quantified and Features' ratings are changed as necessary, the GQ describes the
@@ -1669,11 +1669,11 @@ must ensure that the game is worthwhile for the entire group.
 Boolean Roll
 ------------
 
-\begin{box}[Rules Summary 18: Boolean Roll]
+\begin{rules_summary}[Boolean Roll]
 To make a Boolean Roll describe the character's Intent and choose Effort as for a
 Qualification Roll, then roll d100 and compare the result to Effort. If the result of
 the d100 roll matches Effort, the attempted Action Succeeds. Otherwise, it Fails.
-\end{box}
+\end{rules_summary}
 
 A Boolean Roll is a simpler form of the Qualification Roll that only determines Success
 or Failure, without any finer gradation. Only an Effort value need be chosen to make
@@ -1695,30 +1695,30 @@ Degrees of Success and Failure of a Qualification Roll with modifiers is not jus
 the context of the Action, or when it is not clear from the context of an Action what the
 difference is between different DoS.
 
-\begin{box}[Example 8]
+\begin{example}
 Beetle is trying to lift a piece of debris from the Nest's floor. This is a simple
 Action that can either succeed or fail. The GQ asks for a Boolean Roll against
 Beetle's Strength: 55%. The player rolls: 78. The result does not match Beetle's
 Strength so Beetle fails to lift the piece of debris from the floor.
-\end{box}
+\end{example}
 
-\begin{box}[Note 1]
+\begin{note}
 In percentile systems the Boolean Roll is more often known as as a "Skill Check" or
 "Test". Nests & Insects calls it a "Boolean Roll" to distinguish its crisp, binary
 determination of success and Failure from the "fuzzy" one of the Qualification Roll.
 Unfortunately, the alternative "Crisp Roll" was not thematically appropriate.
-\end{box}
+\end{note}
 
 
 Contested Boolean Roll
 ----------------------
 
-\begin{box}[Rules Summary 19: Contested Boolean Roll]
+\begin{rules_summary}[Contested Boolean Roll]
 To make a Contested Boolean Roll describe the character's Intent and choose Effort
 and Resistance as for a Qualification Roll, then roll d100 and compare the result to
 Effort and Resistance simultaneously. If the result of the d100 roll matches Effort
 and beats Resistance, the attempted Action Succeeds. Otherwise, it fails.
-\end{box}
+\end{rules_summary}
 
 A Contested Boolean Roll is a Boolean Roll that also takes into account the Resistance of
 a game entity to a character's Effort, but like the ordinary Boolean Roll, only
@@ -1739,20 +1739,20 @@ main use of the Contested Boolean Roll is to simplify the resolution of Actions 
 it makes sense to take into account the Resistance to a character's Effort, but where the
 full complexity of the Six Degrees of Success of the Qualification Roll is not needed.
 
-\begin{box}[Example 9]
+\begin{example}
 Beetle is trying to lift a piece of debris from the Nest's floor. The GQ asks the
 Beetle player for a Contested Boolean Roll. Effort is Beetle's Strength: 55%, and
 Resistance is 45%, because the GQ determines the piece of debris is not too heavy.
 The Beetle player rolls: 15. That matches Beetle's Effort but does not beat
 Resistance. The Action outcome is a Failure and Beetle cannot lift the debris.
-\end{box}
+\end{example}
 
-\begin{box}[Note 2]
+\begin{note}
 The outcome of a Contested Boolean Roll can only be Success when Effort is higher
 than Resistance. When Resistance is equal to, or higher than Effort, the Action can
 only fail. In that case, either don't make any rolls at all, or make a full
 Qualification Roll or a simple Boolean Roll instead.
-\end{box}
+\end{note}
 
 \newpage
 
@@ -1853,7 +1853,7 @@ The Combat minigame plays out in nine Steps, two of which repeat until Combat en
 nine Combat Steps are summarised in Rules Summary 20, below, and discussed in detail in
 the following Sections.
 
-\begin{box}[Rules Summary 20: Combat Steps]
+\begin{rules_summary}[Combat Steps]
 
 1. Determine Combat participants (Combatants) and the Sides they fight on.
 
@@ -1874,7 +1874,7 @@ the following Sections.
 
 9. Combat Ends.
 
-\end{box}
+\end{rules_summary}
 
 \newpage
 
@@ -2266,11 +2266,11 @@ enemy is joining Combat. At the start of that Round, before any Combatants' Turn
 determine the new Combatant's Disposition and Initiative Order, then she takes her first
 Turn in Initiative Order, as normal.
 
-\begin{box}[Note 3]
+\begin{note}
 A common reason for new Combatants to join Combat is when the Nest's Guardians summon
 their conspecifics to help them repell the intruders. In that case, when the summoned
 allies arrive, they Join Combat as described above.
-\end{box}
+\end{note}
 
 \newpage
 
@@ -2343,12 +2343,12 @@ increases, and the chance for Reward Events to occur decreases. When the Nest Le
 reaches 100% the location of the target of the current Job is found and the characters
 can attempt to fulfill the terms of their contract.
 
-\begin{box}[Note 4]
+\begin{note}
 Remember that the players' characters do not visit a Nest to loot. Rather, they are
 hired to carry out a Job. Accordingly, Rewards they find during Exploration are not
 treasures and richess, rather they are things that help the characters get their Job
 done.
-\end{box}
+\end{note}
 
 Rooms
 -----
