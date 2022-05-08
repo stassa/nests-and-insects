@@ -6,6 +6,7 @@
 
 :-use_module(library(clp/clpfd)).
 :-use_module(src(tables)).
+:-use_module(src(theorem)).
 :-use_module(src/charsheet).
 
 /** <module> Layout and formatting for text-based rulebooks.
@@ -76,9 +77,11 @@ format_lines(Ls,N,Fs):-
         % One line of header and two lines of footer
         % Plus off-by-one offset
         ,N_ is N - 2
-        ,format_lines(Ls,1,1,N_,W,[],Fs).
+        ,format_lines(Ls,1,1,N_,W,[],[],Fs).
 
-%!      format_lines(+Text,+Pages,+Lines,+Max,+Acc,-Formatted) is det.
+
+%!      format_lines(+Text,+Pages,+Lines,+Max,+Counts,+Acc,-Formatted)
+%!      is det.
 %
 %       Business end of format_lines/2.
 %
@@ -88,27 +91,29 @@ format_lines(Ls,N,Fs):-
 %
 %       Max: number of lines per page.
 %
-format_lines([],P,_N,_M,W,Acc,Fs):-
+%       Counts: list of theorem counts.
+%
+format_lines([],P,_N,_M,W,_Cs,Acc,Fs):-
 % Format the last line in the entire text.
         format_line(nil,last(P),W,Acc,Acc_)
         ,reverse(Acc_,Fs)
         ,!.
-format_lines([L|Ls],P,M,M,W,Acc,Bind):-
+format_lines([L|Ls],P,M,M,W,Cs,Acc,Bind):-
 % Format the last line in the current page.
         !
         ,format_line(nil,last(P),W,Acc,Acc_)
         ,succ(P,P_)
-        ,format_lines([L|Ls],P_,1,M,W,Acc_,Bind).
-format_lines([L|Ls],P,N,M,W,Acc,Bind):-
+        ,format_lines([L|Ls],P_,1,M,W,Cs,Acc_,Bind).
+format_lines([L|Ls],P,N,M,W,Cs,Acc,Bind):-
 % Execute a formatting command.
-        format_command(L,Ls,[P,N,M,W],Acc,Acc_,Ls_,[P_,N_,M_,W_])
+        format_command(L,Ls,[P,N,M,W,Cs],Acc,Acc_,Ls_,[P_,N_,M_,W_,Cs_])
         ,!
-        ,format_lines(Ls_,P_,N_,M_,W_,Acc_,Bind).
-format_lines([L|Ls],P,N,M,W,Acc,Bind):-
+        ,format_lines(Ls_,P_,N_,M_,W_,Cs_,Acc_,Bind).
+format_lines([L|Ls],P,N,M,W,Cs,Acc,Bind):-
 % Keep formatting lines
         format_line(L,N,W,Acc,Acc_)
         ,succ(N,N_)
-        ,format_lines(Ls,P,N_,M,W,Acc_,Bind).
+        ,format_lines(Ls,P,N_,M,W,Cs,Acc_,Bind).
 
 
 %!      format_line(+Line,+Lnum,+Width,+Acc,-New) is det.
@@ -203,6 +208,10 @@ format_line(L,_N,W,Acc,[F|Acc]):-
 %       * \\begin{box}[Title]: marks the beginning of a text box. Title
 %       is the box title. Closing tag: \\end{box}.
 %
+%       * \\begin{Theorem}: marks the beginning of a boxed and numbered
+%       theorem. Title is the theorem's title. Closing tag:
+%       \\end(Theorem).
+%
 %       * \\begin{coverpage}: marks the beginning the cover page of the
 %       entire text. Closing tag: \\end{coverpage}.
 %
@@ -219,12 +228,12 @@ format_line(L,_N,W,Acc,[F|Acc]):-
 %       * \\begin{table}: beginning of the rows of a table, including a
 %       caption line. Closing tag: \\end{table}.
 %
-format_command(C,Ls,[P,_N,M,W],Acc,[CS|Acc],Ls,[P_,1,M,W]):-
+format_command(C,Ls,[P,_N,M,W,Cs],Acc,[CS|Acc],Ls,[P_,1,M,W,Cs]):-
         atom_concat('\\charsheet',T,C)
         ,sub_atom(T,1,_A,1,Class)
         ,format_charsheet(Class,CS)
         ,succ(P,P_).
-format_command(C,Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N_,M,W]):-
+format_command(C,Ls,[P,N,M,W,Cs],Acc,Acc_,Ls_,[P,N_,M,W,Cs]):-
         atom_concat('\\begin{box}',T,C)
         ,sub_atom(T,1,_A,1,Title)
         % Offset by box borders
@@ -232,24 +241,28 @@ format_command(C,Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N_,M,W]):-
         ,box_lines(1,['\\begin{box}',Title|Ls],W_,Acc,Acc_,Ls_,K)
         % Offset by box lines, header and footer.
         ,N_ is N + K.
-format_command('\\begin{coverpage}',Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N,M,W]):-
+format_command(C,Ls,[P,N,M,W,Cs],Acc,Acc,Rs,[P,N,M,W,Cs_]):-
+% Format theorem.
+        theorem_lines([C|Ls],Cs,W,Fs,Cs_,Ls_,_K)
+        ,append(Fs,Ls_,Rs).
+format_command('\\begin{coverpage}',Ls,[P,N,M,W,Cs],Acc,Acc_,Ls_,[P,N,M,W,Cs]):-
         skip_lines('\\end{coverpage}',Ls,1,Acc,Acc_,Ls_,_).
-format_command('\\begin{toc}',Ls,[P,N,M,W],Acc,Acc_,Ls_,[P,N,M,W]):-
+format_command('\\begin{toc}',Ls,[P,N,M,W,Cs],Acc,Acc_,Ls_,[P,N,M,W,Cs]):-
         toc_lines(['\\begin{toc}'|Ls],[1,N,M,W],Acc,Acc_,Ls_).
-format_command('\\newpage',Ls,[P,N,M,W],Acc,Acc,Ls_,[P,N,M,W]):-
+format_command('\\newpage',Ls,[P,N,M,W,Cs],Acc,Acc,Ls_,[P,N,M,W,Cs]):-
         M_ is M - N
         ,findall(''
                ,between(1,M_,_K)
                ,Ss)
         ,append(Ss,Ls,Ls_).
-format_command('\\begin{nolayout}',Ls,[P,_N,M,W],Acc,Acc_,Ls_,[P_,1,M,W]):-
+format_command('\\begin{nolayout}',Ls,[P,_N,M,W,Cs],Acc,Acc_,Ls_,[P_,1,M,W,Cs]):-
         skip_lines('\\end{nolayout}',Ls,1,Acc,Acc_,Ls_,_)
         ,succ(P,P_).
-format_command(C,Ls,[P,N,M,W],Acc,Acc,Ls,[P,N,M,W]):-
+format_command(C,Ls,[P,N,M,W,Cs],Acc,Acc,Ls,[P,N,M,W,Cs]):-
         atom_concat('%',_T,C).
-format_command('/*',Ls,[P,N,M,W],Acc,Acc,Ls_,[P,N,M,W]):-
+format_command('/*',Ls,[P,N,M,W,Cs],Acc,Acc,Ls_,[P,N,M,W,Cs]):-
         skip_lines('*/',Ls,0,[],_,Ls_,_).
-format_command(C,Ls,[P,N,M,W],Acc,Acc,Rs,[P,N,M,W]):-
+format_command(C,Ls,[P,N,M,W,Cs],Acc,Acc,Rs,[P,N,M,W,Cs]):-
         atom_concat('\\begin{table}',S,C)
         ,sub_atom(S,1,_A,1,Space)
         ,atom_number(Space,Sp)
