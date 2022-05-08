@@ -278,12 +278,11 @@ format_effects_inventory(Id,Efs):-
         maplist(chargen:features(Id),[effect,inventory_item],[Es,Is])
         ,maplist(pairs_keys_values,[Es,Is],[_,[It]],[E_Rs ,[R] ])
         ,findall(W-Tic
-                ,(member(SA,E_Rs)
-                 ,(   SA == 0
-                  ->  W = '' % Value of the Effect field
-                      ,Tic = '○'
-                  ;   W = SA
-                     ,Tic = '✓'
+                ,(member(W,E_Rs)
+                 ,(   W = 0 % Value of the Effect field
+                  ->  Tic = '○'
+                  ;   W > 0
+                  ->  Tic = '✓'
                   )
                  )
                 ,[Ago-Ago_Tic
@@ -299,8 +298,12 @@ format_effects_inventory(Id,Efs):-
         ,character:inventory_item(It,Nm)
         ,atom_length(Nm, N)
         ,Pad is 30 - N
+        ,(   Nm == ''
+         ->  Itm_Tic = '○'
+         ;   Itm_Tic = '✓'
+         )
         ,format(atom(Efs_Box),'║┌[Effects]───────────────────────────────────┐┌[Inventory]───────────────────────────────┐ ║▓~n',[])
-        ,format(atom(Efs_Ln1),'║│ ~w Agony....:[~|~`_t~w~4+%] ~w Immobilised.:[~|~`_t~w~4+%] ││ ✓ ~w~|~`_t~*+:[~|~`_t~w~4+%] │ ║▓~n',[Ago_Tic,Ago,Imm_Tic,Imm,Nm,Pad,R])
+        ,format(atom(Efs_Ln1),'║│ ~w Agony....:[~|~`_t~w~4+%] ~w Immobilised.:[~|~`_t~w~4+%] ││ ~w ~w~|~`_t~*+:[~|~`_t~w~4+%] │ ║▓~n',[Ago_Tic,Ago,Imm_Tic,Imm,Itm_Tic,Nm,Pad,R])
         ,format(atom(Efs_Ln2),'║│ ~w Bleeding.:[~|~`_t~w~4+%] ~w Infected....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Ble_Tic,Ble,Inf_Tic,Inf])
         ,format(atom(Efs_Ln3),'║│ ~w Blind....:[~|~`_t~w~4+%] ~w Paralysed...:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Bli_Tic,Bli,Par_Tic,Par])
         ,format(atom(Efs_Ln4),'║│ ~w Charmed..:[~|~`_t~w~4+%] ~w Poisoned....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Cha_Tic,Cha,Poi_Tic,Poi])

@@ -30,6 +30,7 @@ character_class(ladybug,'Ladybug').
 character_class(scorpion,'Scorpion').
 character_class(spider,'Spider').
 character_class(wasp,'Wasp').
+character_class(template,'TEMPLATE').
 
 
 %!      character_pronouns(?Id,?Pronouns) is semidet.
@@ -145,4 +146,5 @@ inventory_item(aphids,'Aphids').
 inventory_item(crickets,'Crickets').
 inventory_item(firefly,'Firefly').
 inventory_item(nectar_healing,'Nectar of Healing').
+inventory_item(empty,'').
 

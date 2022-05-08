@@ -15,6 +15,7 @@
 :-use_module(scorpion).
 :-use_module(spider).
 :-use_module(wasp).
+:-use_module(template).
 
 /** <module> Class Features.
 
@@ -53,7 +54,8 @@ class_attributes(spider,stamina,25).
 % Wasp
 class_attributes(wasp,speed,60).
 class_attributes(wasp,smarts,25).
-
+% Template
+class_attributes(template,smarts,0).
 
 %!      attribute_modifiers(?Class,?Attribute,?Modifier) is semidet.
 %
@@ -65,6 +67,7 @@ attribute_modifiers(ladybug,ken,+5).
 attribute_modifiers(scorpion,stamina,+5).
 attribute_modifiers(spider,smarts,+5).
 attribute_modifiers(wasp,passions,+5).
+attribute_modifiers(template,passions,+0).
 
 
 %!      condition_modifiers(?Class, ?Attribute, ?Modifier) is semidet.
@@ -101,6 +104,8 @@ condition_modifiers(wasp,init,+15).
 condition_modifiers(wasp,tr,+10).
 condition_modifiers(wasp,sr,+0).
 condition_modifiers(wasp,wounds,+1).
+% Template
+condition_modifiers(template,init,+0).
 
 
 %!      starting_survival(?Class,?Survival,?Modifier) is semidet.
@@ -134,6 +139,8 @@ class_specific_ability(spider,web_weaving,90).
 class_specific_ability(wasp,flying,60).
 class_specific_ability(wasp,swarming,25).
 class_specific_ability(wasp,venomous,80).
+% Template
+class_specific_ability(template,venomous,0).
 
 
 %!      class_specific_ability(?Class, ?Ability, ?Modifier) is semidet.
@@ -177,6 +184,8 @@ common_ability_modifiers(wasp,eusociology,+30).
 common_ability_modifiers(wasp,foraging,+35).
 common_ability_modifiers(wasp,hunting,-20).
 common_ability_modifiers(wasp,signalling,+30).
+% Template
+common_ability_modifiers(template,signalling,+0).
 
 
 %!      class_effects(?Class, ?Effect, ?Rating) is semidet.
@@ -196,4 +205,4 @@ class_inventory(ladybug,aphids,45).
 class_inventory(scorpion,crickets,45).
 class_inventory(spider,firefly,45).
 class_inventory(wasp,nectar_healing,45).
-
+class_inventory(template,empty,'').
