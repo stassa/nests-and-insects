@@ -9,4 +9,5 @@
 theorem(note_reader,'Note to the reader').
 theorem(example,'Example').
 theorem(note,'Note').
+theorem(rules_summary,'Rules Summary').
 

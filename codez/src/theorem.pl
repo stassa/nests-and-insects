@@ -71,14 +71,15 @@ N = 6.
 %       Ln is the number of lines taken up by the boxed theorem.
 %
 theorem_lines([C|Ls],Cs,W,Fs,Cs_,Ls_,N):-
-        theorem_title(C,begin,T,S)
+        theorem_title(C,begin,T,S,G)
         ,!
         % Offset by theorem borders
         ,W_ is W - 2
         ,theorem_count(Cs,T,S,K,Cs_)
-        ,theorem_lines(1,T,K,S,Ls,W_,[],Fs,Ls_,N).
+        ,theorem_lines(1,T,K,S,G,Ls,W_,[],Fs,Ls_,N).
 
-%!      theorem_lines(+N,+T,+K,+S,+Ls,+W,+Acc,-Acc1,-Rest,-N1) is det.
+%!      theorem_lines(+N,+T,+K,+S,+G,+Ls,+W,+Acc,-Acc1,-Rest,-N1)
+%       is det.
 %
 %       Business end of theorem_lines/7
 %
@@ -89,34 +90,52 @@ theorem_lines([C|Ls],Cs,W,Fs,Cs_,Ls_,N):-
 %
 %       N1 is the updated line count of the theorem.
 %
-%       The others are inherited from the caller.
+%       The other args are inherited from the caller.
 %
-theorem_lines(N,T,_K,_S,[C|Ls],W,Acc,Fs,Ls,N):-
-        theorem_title(C,end,T,_)
+theorem_lines(N,T,_K,_S,_G,[C|Ls],W,Acc,Fs,Ls,N):-
+        theorem_title(C,end,T,_,_)
         ,!
         ,W_ is W + 2
         ,format(atom(F),'~|└~`─t┘~*| ',[W_])
         ,reverse([F|Acc],Fs).
-theorem_lines(1,T,K,S,Ls,W,Acc,Bind,Ls_Bind,N_Bind):-
+theorem_lines(1,T,K,S,G,Ls,W,Acc,Bind,Ls_Bind,N_Bind):-
         !
         ,W_ is W + 2
         ,configuration:theorem(T,T_)
-        ,(   S == *
-         ->  FS = '~|┌[~w]~`─t┐~*| '
-            ,As = [T_,W_]
-         ;   S == nil
-         ->  FS = '~|┌[~w ~w]~`─t┐~*| '
-            ,As = [T_,K,W_]
-         )
+        ,format_string_args(W_,T_,K,S,G,FS,As)
         ,format(atom(F),FS,As)
-        ,theorem_lines(2,T,K,S,Ls,W,[F|Acc],Bind,Ls_Bind,N_Bind).
-theorem_lines(N,T,K,S,[L|Ls],W,Acc,Bind,Ls_Bind,N_Bind):-
+        ,theorem_lines(2,T,K,S,G,Ls,W,[F|Acc],Bind,Ls_Bind,N_Bind).
+theorem_lines(N,T,K,S,G,[L|Ls],W,Acc,Bind,Ls_Bind,N_Bind):-
         format(atom(F),'│ ~w~` t~*| │ ',[L,W])
         ,succ(N,N_)
-        ,theorem_lines(N_,T,K,S,Ls,W,[F|Acc],Bind,Ls_Bind,N_Bind).
+        ,theorem_lines(N_,T,K,S,G,Ls,W,[F|Acc],Bind,Ls_Bind,N_Bind).
 
 
-%!      theorem_title(+Text,?StarEnd,-Title,-Star) is det.
+%!      format_string_args(?Width,?Title,?Count,?Star,?Format,?Args)
+%!       is det.
+%
+%       Format string and arguments for theorem header.
+%
+%       Width: the width of the theorem box.
+%
+%       Title: the title of the theorem.
+%
+%       Count: the theorem counter.
+%
+%       Star: Whether the theorem is starred and takes no count.
+%
+%       Format: a format/2 format string to print out the theorem
+%       header.
+%
+%       Args: the arguments to format/2 to print out the theorem header.
+%
+format_string_args(W,T,_K,*,'','~|┌[~w]~`─t┐~*| ',[T,W]).
+format_string_args(W,T,_K,*,G,'~|┌[~w: ~w]~`─t┐~*| ',[T,G,W]).
+format_string_args(W,T,K,nil,'','~|┌[~w ~w]~`─t┐~*| ',[T,K,W]).
+format_string_args(W,T,K,nil,G,'~|┌[~w ~w: ~w]~`─t┐~*| ',[T,K,G,W]).
+
+
+%!      theorem_title(+Text,?StarEnd,-Title,-Star,-Legend) is det.
 %
 %       Extract the title field from a theorem.
 %
@@ -130,22 +149,43 @@ theorem_lines(N,T,K,S,[L|Ls],W,Acc,Bind,Ls_Bind,N_Bind):-
 %       Star is either the atom '*' or the atom 'nil'. If S is '*', then
 %       the theorem is not to be numbered.
 %
-%       tbd: a bit of copy pasta here, rather. Abstract?
+%       Legend is a legend to add to the theorem header.
 %
-theorem_title(C,begin,Title,*):-
-        atom_concat('\\begin*',T,C)
-        ,sub_atom(T,1,_A,1,Title)
-        ,configuration:theorem(Title,_)
+theorem_title(C,begin,T,*,L):-
+        theorem_command(C,'\\begin*',T,L)
         ,!.
-theorem_title(C,begin,Title,nil):-
-        atom_concat('\\begin',T,C)
-        ,sub_atom(T,1,_A,1,Title)
-        ,configuration:theorem(Title,_)
+theorem_title(C,begin,T,nil,L):-
+        theorem_command(C,'\\begin',T,L)
         ,!.
-theorem_title(C,end,Title,nil):-
-        atom_concat('\\end',T,C)
-        ,sub_atom(T,1,_A,1,Title)
-        ,configuration:theorem(Title,_).
+theorem_title(C,end,T,nil,L):-
+        theorem_command(C,'\\end',T,L).
+
+
+%!      theorem_command(+Text,?Delimiter,?Title,?Legend) is det.
+%
+%       Parse a theorem command to its constituents.
+%
+%       Delimiter, Title and Legend are all atoms.
+%
+theorem_command(C,D_,T_,L_):-
+        atom_chars(C,Cs)
+        ,once(phrase(theorem_command(D,T,L),Cs))
+        ,maplist(atomic_list_concat,[D,T,L],['','',''],[D_,T_,L_])
+        ,configuration:theorem(T_,_).
+
+%!      theorem_command// is nondet.
+%
+%       Theorem command parser.
+theorem_command(D,T,L) --> delimiter(D), title(T), legend(L).
+
+delimiter(['\\'|D]) --> ['\\'], string(D).
+title(T) --> ['{'],string(T),['}'].
+legend(L) --> ['['],string(L),[']'].
+legend(['']) --> ['[',']'].
+legend(['']) --> [].
+
+string([S|Ss]) --> [S], string(Ss).
+string([S]) --> [S].
 
 
 %!      theorem_count(+Counts,+Title,+Star,+K,-New_counts) is det.
