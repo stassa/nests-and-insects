@@ -1,3 +1,14 @@
+
+08/05/22
+========
+
+Version: v.1.0.0
+
+[FIXED] Line comments gobble up the next line.
+
+[DONE] Automatically insert charsheet template (as with class charsheets)
+
+
 07/05/22
 ========
 
