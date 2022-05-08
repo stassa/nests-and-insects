@@ -449,18 +449,18 @@
 ╚════════════════════════════════════════════-5-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═════════════════════════════════════════════════════════►Character Sheet◄╗
-║.......................................... CLASS ..........................................║▓
+║......................................... TEMPLATE ........................................║▓
 ╠►Attributes◄═══════════════════════════════════════════════════════════════════════════════╣▓
 ║ ┌───────────────────────────────────────────────────────────────────────────────────────┐ ║▓
-║ │ □ Speed.....:[____%] □ Skill....:[____%] □ Strength....:[____%] □ Stamina....:[____%] │ ║▓
-║ │ □ Smarts....:[____%] □ Charms...:[____%] □ Ken.........:[____%] □ Passions...:[____%] │ ║▓
+║ │ □ Speed.....:[___0%] □ Skill....:[___0%] □ Strength....:[___0%] □ Stamina....:[___0%] │ ║▓
+║ │ □ Smarts....:[___0%] □ Charms...:[___0%] □ Ken.........:[___0%] □ Passions...:[___0%] │ ║▓
 ║ └<^XP>────────────────<^XP>───────────────<^XP>──────────────────<^XP>──────────────────┘ ║▓
 ╠►Combat Stats◄═════════════════════════════════════════════════════════════════════════════╣▓
 ║┌[Condition]──────────────<Rules Reminder>───────────────────────────────────────────────┐ ║▓
-║│ □ Initiative...:[____%] (Match/Beat to start Combat in Holding/Recoiling Disposition). │ ║▓
-║│ □ Threat Rate..:[____%] (Match/Beat Attacker's TR to Hit/Miss Target)................. │ ║▓
-║│ □ Survival Rate:[____%] (Match/Beat Target's SR to Hit/Miss with Base/Special Attack). │ ║▓
-║│ □ Wounds/Max...:[__/__] (1 Wound = 1 Shift Down. When Wounds ≥ Max, character dies)... │ ║▓
+║│ □ Initiative...:[___0%] (Match/Beat to start Combat in Holding/Recoiling Disposition). │ ║▓
+║│ □ Threat Rate..:[___0%] (Match/Beat Attacker's TR to Hit/Miss Target)................. │ ║▓
+║│ □ Survival Rate:[___0%] (Match/Beat Target's SR to Hit/Miss with Base/Special Attack). │ ║▓
+║│ □ Wounds/Max...:[__/_3] (1 Wound = 1 Shift Down. When Wounds ≥ Max character dies).... │ ║▓
 ║├─<Disposition Track>────────────────────────────────────────────────────────────────────┤ ║▓
 ║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓
 ║│ ○ Retreating...... ○ Recoiling...... ○ Holding...... ○ Advancing...... ○ Charging......│ ║▓
@@ -482,11 +482,11 @@
 ║└<^Starving>──────────────┘└──^──────────────────────────────────────────────────────────┘ ║▓
 ╠►Abilities◄════════════════════════════════════════════════════════════════════════════════╣▓
 ║┌[Specific Abilities]────────┐┌[Common Abilities]────────────────────────────────────────┐ ║▓
-║│ Carapace..........:[___0%] ││ □ Construction.....:[____%] □ Hunting...........:[____%] │ ║▓
-║│ Flying............:[___0%] ││ □ Eusociology......:[____%] □ Leadership........:[____%] │ ║▓
-║│ Swarming..........:[___0%] ││ □ Exploration......:[____%] □ Perception........:[____%] │ ║▓
-║│ Venomous..........:[___0%] ││ □ Foraging.........:[____%] □ Signalling........:[____%] │ ║▓
-║│ Web Weaving.......:[___0%] ││ □ Healing..........:[____%] □ Sneaking..........:[____%] │ ║▓
+║│ Carapace..........:[___0%] ││ □ Construction.....:[___0%] □ Hunting...........:[___0%] │ ║▓
+║│ Flying............:[___0%] ││ □ Eusociology......:[___0%] □ Leadership........:[___0%] │ ║▓
+║│ Swarming..........:[___0%] ││ □ Exploration......:[___0%] □ Perception........:[___0%] │ ║▓
+║│ Venomous..........:[___0%] ││ □ Foraging.........:[___0%] □ Signalling........:[___0%] │ ║▓
+║│ Web Weaving.......:[___0%] ││ □ Healing..........:[___0%] □ Sneaking..........:[___0%] │ ║▓
 ║└────────────────────────────┘└<^XP>───────────────────────<^XP>─────────────────────────┘ ║▓
 ║┌[Effects]───────────────────────────────────┐┌[Inventory]───────────────────────────────┐ ║▓
 ║│ ○ Agony....:[___0%] ○ Immobilised.:[___0%] ││ ○ ______________________________:[____%] │ ║▓
@@ -499,6 +499,7 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                      Character Sheet                                      ║▓
 ║                                      ===============                                      ║▓
@@ -534,9 +535,9 @@
 ║ the game and the name of a character's Class.                                             ║▓
 ║                                                                                           ║▓
 ║ ╔►Nests & Insects◄═════════════════════════════════════════════════════►Character Sheet◄╗ ║▓
-║ ║........................................ CLASS ........................................║ ║▓
+║ ║....................................... TEMPLATE ......................................║ ║▓
 ║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
-║ Figure 1: Character sheet template; class header. In a completed sheet "CLASS" is         ║▓
+║ Figure 1: Character sheet template; class header. In a completed sheet "TEMPLATE" is      ║▓
 ║ replaced by the name of the character's class, e.g. Wasp, Spider, Ants, etc.              ║▓
 ║                                                                                           ║▓
 ║ Attributes Area                                                                           ║▓
@@ -545,15 +546,14 @@
 ║ Under the Class Header is the Attributes Area (Figure 2), listing Class Attributes.       ║▓
 ║ Attributes are Features that represent innate abilities of characters in a Class.         ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
 ╚════════════════════════════════════════════-7-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║ ╠►Attributes◄═══════════════════════════════════════════════════════════════════════════╣ ║▓
 ║ ║┌─────────────────────────────────────────────────────────────────────────────────────┐║ ║▓
-║ ║│ □ Speed....:[____%] □ Skill....:[____%] □ Strength...:[____%] □ Stamina....:[____%] │║ ║▓
-║ ║│ □ Smarts...:[____%] □ Charms...:[____%] □ Ken........:[____%] □ Passions...:[____%] │║ ║▓
+║ ║│ □ Speed....:[___0%] □ Skill....:[___0%] □ Strength...:[___0%] □ Stamina....:[___0%] │║ ║▓
+║ ║│ □ Smarts...:[___0%] □ Charms...:[___0%] □ Ken........:[___0%] □ Passions...:[___0%] │║ ║▓
 ║ ║└<^XP>───────────────<^XP>───────────────<^XP>─────────────────<^XP>──────────────────┘║ ║▓
 ║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
 ║ Figure 2: Attributes Area.                                                                ║▓
@@ -579,8 +579,8 @@
 ║ Features and Common Abilities.                                                            ║▓
 ║                                                                                           ║▓
 ║ ┌────────────────────                                                                     ║▓
-║ │ □ Speed....:[____%]                                                                     ║▓
-║ │ □ Smarts...:[____%]                                                                     ║▓
+║ │ □ Speed....:[___0%]                                                                     ║▓
+║ │ □ Smarts...:[___0%]                                                                     ║▓
 ║ └<^XP>───────────────                                                                     ║▓
 ║ ─────────────────────                                                                     ║▓
 ║ Figure 3: The XP tickbox for Speed and Smarts in the Attribute Area.                      ║▓
@@ -589,11 +589,11 @@
 ║ Figure 4 shows the Speed tickbox in Figure 3 ticked with the ✓ character (U+2713):        ║▓
 ║                                                                                           ║▓
 ║ ┌────────────────────                                                                     ║▓
-║ │ ✓ Speed....:[____%]                                                                     ║▓
-║ │ □ Smarts...:[____%]                                                                     ║▓
+║ │ ✓ Speed....:[___0%]                                                                     ║▓
+║ │ □ Smarts...:[___0%]                                                                     ║▓
 ║ └<^XP>───────────────                                                                     ║▓
 ║ ─────────────────────                                                                     ║▓
-║ Figure 4: Ticked XP tickbox for Speed                                                     ║▓
+║ Figure 4: Ticked XP tickbox for Speed.                                                    ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ╚════════════════════════════════════════════-8-════════════════════════════════════════════╝▓
@@ -619,10 +619,10 @@
 ║ and Wounds.                                                                               ║▓
 ║                                                                                           ║▓
 ║ ┌[Condition]──────────────<Rules Reminder>──────────────────────────────────────────────┐ ║▓
-║ │ □ Initiative...:[____%] (Match/Beat to start Combat in Holding/Recoiling Disposition) │ ║▓
-║ │ □ Threat Rate..:[____%] (Match/Beat Attacker's TR to Hit/Miss Target)................ │ ║▓
-║ │ □ Survival Rate:[____%] (Match/Beat Target's SR to Hit/Miss with Base/Special Attack) │ ║▓
-║ │ □ Wounds/Max...:[__/__] (1 Wound = 1 Shift Down. When Wounds ≥ Max, character dies).. │ ║▓
+║ │ □ Initiative...:[___0%] (Match/Beat to start Combat in Holding/Recoiling Disposition) │ ║▓
+║ │ □ Threat Rate..:[___0%] (Match/Beat Attacker's TR to Hit/Miss Target)................ │ ║▓
+║ │ □ Survival Rate:[___0%] (Match/Beat Target's SR to Hit/Miss with Base/Special Attack) │ ║▓
+║ │ □ Wounds/Max...:[__/_3] (1 Wound = 1 Shift Down. When Wounds ≥ Max, character dies).. │ ║▓
 ║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
 ║ Figure 6: Condition box.                                                                  ║▓
 ║                                                                                           ║▓
@@ -637,7 +637,7 @@
 ║ * Survival Rate is used as the Resistance of an Attack's target in Attack Actions.        ║▓
 ║                                                                                           ║▓
 ║ * Wounds count the injury caused by attacks. If the count of Wounds reaches its Maximum,  ║▓
-║   the character is killed.                                                                ║▓
+║   the character is killed. The default number of Wounds is 3.                             ║▓
 ║                                                                                           ║▓
 ║ Disposition Track                                                                         ║▓
 ║ -----------------                                                                         ║▓
@@ -812,11 +812,11 @@
 ║ The Common Abilities box (Figure 14) lists Abilities common to all character classes.     ║▓
 ║                                                                                           ║▓
 ║ ┌[Common Abilities]────────────────────────────────────────┐                              ║▓
-║ │ □ Construction.....:[____%] □ Hunting...........:[____%] │                              ║▓
-║ │ □ Eusociology......:[____%] □ Leadership........:[____%] │                              ║▓
-║ │ □ Exploration......:[____%] □ Perception........:[____%] │                              ║▓
-║ │ □ Foraging.........:[____%] □ Signalling........:[____%] │                              ║▓
-║ │ □ Healing..........:[____%] □ Sneaking..........:[____%] │                              ║▓
+║ │ □ Construction.....:[___0%] □ Hunting...........:[___0%] │                              ║▓
+║ │ □ Eusociology......:[___0%] □ Leadership........:[___0%] │                              ║▓
+║ │ □ Exploration......:[___0%] □ Perception........:[___0%] │                              ║▓
+║ │ □ Foraging.........:[___0%] □ Signalling........:[___0%] │                              ║▓
+║ │ □ Healing..........:[___0%] □ Sneaking..........:[___0%] │                              ║▓
 ║ └<^XP>───────────────────────<^XP>─────────────────────────┘                              ║▓
 ║ ────────────────────────────────────────────────────────────                              ║▓
 ║ Figure 14: Common Abilities                                                               ║▓
