@@ -245,7 +245,7 @@ format_command('\\newpage',Ls,[P,N,M,W],Acc,Acc,Ls_,[P,N,M,W]):-
 format_command('\\begin{nolayout}',Ls,[P,_N,M,W],Acc,Acc_,Ls_,[P_,1,M,W]):-
         skip_lines('\\end{nolayout}',Ls,1,Acc,Acc_,Ls_,_)
         ,succ(P,P_).
-format_command(C,[_L|Ls],[P,N,M,W],Acc,Acc,Ls,[P,N,M,W]):-
+format_command(C,Ls,[P,N,M,W],Acc,Acc,Ls,[P,N,M,W]):-
         atom_concat('%',_T,C).
 format_command('/*',Ls,[P,N,M,W],Acc,Acc,Ls_,[P,N,M,W]):-
         skip_lines('*/',Ls,0,[],_,Ls_,_).

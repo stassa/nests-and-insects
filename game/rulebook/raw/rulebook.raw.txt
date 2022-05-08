@@ -2372,7 +2372,6 @@ chance that they might find it).
 
 Initiating Survival and Exploration
 -----------------------------------
-
 % Explain how Rooms are resources to be spent to initiate S&E
 
 Players' characters have a shared pool of Rooms that they can spend at any time to
@@ -2552,7 +2551,6 @@ alarm pheromones. The pheromone trail spreads throughout the nest attracting mor
 and, soon enough, soldiers. Attacking a swarm of workers causes them to release alarm
 pheromones faster.
 % TODO: that last bit is missing a rule.
-
 
 \begin{table}[8]
 Feature                      &    Rating
