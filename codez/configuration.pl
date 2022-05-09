@@ -1,4 +1,5 @@
 :-module(configuration, [theorem/2
+                        ,label/2
                         ]).
 
 
@@ -11,3 +12,10 @@ theorem(example,'Example').
 theorem(note,'Note').
 theorem(rules_summary,'Rules Summary').
 
+
+%!      label(?Type,?Name) is semidet.
+%
+%       A caption/ label to be counted.
+%
+label(table, 'Table').
+label(figure, 'Figure').

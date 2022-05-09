@@ -7,6 +7,7 @@
 :-use_module(library(clp/clpfd)).
 :-use_module(src(tables)).
 :-use_module(src(theorem)).
+:-use_module(src(label)).
 :-use_module(src/charsheet).
 
 /** <module> Layout and formatting for text-based rulebooks.
@@ -275,6 +276,11 @@ format_command(C,Ls,[P,N,M,W,Cs],Acc,Acc,Rs,[P,N,M,W,Cs]):-
                  )
                 ,Rows)
         ,append(Rows,Ls_,Rs).
+format_command(C,Ls,[P,N,M,W,Cs],Acc,Acc_,Ls,[P,N_,M,W,Cs_]):-
+% Label and caption two-in-one.
+        label_lines(C,Cs,F,Cs_)
+        ,format_line(F,N,W,Acc,Acc_)
+        ,succ(N,N_).
 
 
 %!      skip_lines(+End,+Lines,+Count,+Acc,-New,-Newlines,-NewCount)
@@ -520,6 +526,11 @@ text_width(Ls,W):-
 %
 text_width([],W,W):-
         !.
+text_width([L|Ls],Wi,Bind):-
+% Skip label lines because the command can make them over-long.
+        atom_concat('\\label',_,L)
+        ,!
+        ,text_width(Ls,Wi,Bind).
 text_width([L|Ls],Wi,Bind):-
 % Skip Cover page, ToC, inserted pages, already formated.
 % See noformat_lines/6 for exaplanation.
