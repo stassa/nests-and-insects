@@ -1,8 +1,20 @@
+9/05/22
+=======
+
+Version: v.1.0.0
+
+Code
+----
+
+[DONE] Automate incrementing count of Tables, boxes, Figures.
 
 08/05/22
 ========
 
 Version: v.1.0.0
+
+Code
+----
 
 [FIXED] Line comments gobble up the next line.
 
@@ -13,6 +25,9 @@ Version: v.1.0.0
 ========
 
 Version: v.1.0.0
+
+Rulebook
+--------
 
 * Started on: Inventory Items Section.
 

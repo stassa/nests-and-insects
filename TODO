@@ -53,7 +53,7 @@ codez/
 
 [TODO] Automate ToC generation.
 
-[DOING] Automate incrementing count of Tables, boxes, Figures.
+[DONE] Automate incrementing count of Tables, boxes, Figures.
 
 [TODO] Automate typesetting of Chapter, Section etc. headers.
 
