@@ -92,8 +92,8 @@ format_table([L1|Ls],S,C,Fs):-
         ,format_table(Ls,Ws,Ws_Acc,S,[U,F],C,W,Fs).
 
 
-%!     format_table(+Lines,+Widths,+W_Acc,+Space,+Char,+UWid,+Acc,-Format)
-%!     is det.
+%!      format_table(+Lines,+Widths,+W_Acc,+Space,+Char,+UWid,+Acc,-Format)
+%!      is det.
 %
 %       Business end of format_table/2.
 %
