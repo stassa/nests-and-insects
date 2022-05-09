@@ -264,7 +264,7 @@
 ║ procedurally generate the first Room in the entrance to the first Level of the Nest, and  ║▓
 ║ the characters enter and begin their Job. After visiting a Room and defeating its         ║▓
 ║ challenges characters get a chance to rest and recoup their strength, and players can use ║▓
-║ experience gained to improve their characters. The game ends when the characters fulfill  ║▓
+║ experience gained to improve their characters. The game ends when the characters fulfil   ║▓
 ║ the terms of the Job, or give up, or run away, or die.                                    ║▓
 ║                                                                                           ║▓
 ║ Everything encountered by characters during a Job is procedurally generated. If the Game  ║▓
@@ -315,7 +315,7 @@
 ║ Complete Failure         Failing to Match Effort and Failing to Beat Resistance           ║▓
 ║ Critical Failure         Failing to Beat a Negative Modifier after a Complete Failure     ║▓
 ║ ─────────────────────────────────────────────────────────────────────────────────────     ║▓
-║ Table 1: Six Degrees of Success                                                           ║▓
+║ Table 1: Six Degrees of Success.                                                          ║▓
 ║                                                                                           ║▓
 ║ Decile Dice                                                                               ║▓
 ║ -----------                                                                               ║▓
@@ -571,7 +571,7 @@
 ║ Ken            Wisdom, common sense, and knowledge of the world                           ║▓
 ║ Passions       Willpower, morale, strength of spirit and courage                          ║▓
 ║ ───────────────────────────────────────────────────────────────────────────────────────   ║▓
-║ Table 5: Character Attributes                                                             ║▓
+║ Table 5: Character Attributes.                                                            ║▓
 ║                                                                                           ║▓
 ║ _XP Tickboxes_ In the Attributes Area each attribute is listed with an empty tickbox to   ║▓
 ║ the left, marked "XP", as shown in Figure 3. This is an *XP tickbox*. "XP" stands for     ║▓
@@ -1716,7 +1716,7 @@
 ║ Materials    Used to build a Shelter for Resting and Healing.                             ║▓
 ║ Message      Must be collected or delivered as part of a Job.                             ║▓
 ║ ────────────────────────────────────────────────────────────────────────────              ║▓
-║ Table: Item Types.                                                                        ║▓
+║ Table 8: Item Types.                                                                      ║▓
 ║                                                                                           ║▓
 ║ _Items With Multiple Types_ Some Items may have multiple types, the "Food" type, and one  ║▓
 ║ or more other types. Such Items can be used to pay a Hunger Cost and perform another      ║▓
@@ -1810,7 +1810,7 @@
 ║                                                                                           ║▓
 ║ ○ ______________________________:[____%]                                                  ║▓
 ║ ────────────────────────────────────────                                                  ║▓
-║ Figure: An empty Inventory Slot.                                                          ║▓
+║ Figure 17: An empty Inventory Slot.                                                       ║▓
 ║                                                                                           ║▓
 ║ _Recording Items_ When a new Item is acquired, add an entry for it in an empty Slot in    ║▓
 ║ the character's Inventory. If the character's Inventory is full, the item is "dropped"    ║▓
@@ -1993,9 +1993,9 @@
 ║ d100          0 to 99     d10         0,1,...,9     d10         0,1,...,9                 ║▓
 ║ d120          0 to 119    d12         0,1,...,11    d10         0,1,...,9                 ║▓
 ║ ──────────────────────────────────────────────────────────────────────────                ║▓
-║ Table: Decile dice, used for quantification on a percentile scale. d100 is also a decile  ║▓
-║ die, and the only one used for Action resolution. The d20 does not need a "tens" die and  ║▓
-║ is rolled on its own.                                                                     ║▓
+║ Table 9: Decile dice, used for quantification on a percentile scale. d100 is also a       ║▓
+║ decile die, and the only one used for Action resolution. The d20 does not need a "tens"   ║▓
+║ die and is rolled on its own.                                                             ║▓
 ╚═══════════════════════════════════════════-36-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
@@ -2116,7 +2116,7 @@
 ║ Complete Failure         Thwarts Intent                      Qualification Roll           ║▓
 ║ Critical Failure         Thwarts Intent with penalty         Modifiers                    ║▓
 ║ ───────────────────────────────────────────────────────────────────────────────           ║▓
-║ Table: Six Degrees of Success                                                             ║▓
+║ Table 10: Six Degrees of Success.                                                         ║▓
 ║                                                                                           ║▓
 ║ The six DoS are ordered from worst (Critical Failure) to best (Critical Success) with     ║▓
 ║ respect to the outcome of an Action. The exact outcome of an Action, such as rewards or   ║▓
@@ -2384,7 +2384,7 @@
 ║ False                      True                         Partial Failure                   ║▓
 ║ False                      False                        Complete Failure                  ║▓
 ║ ─────────────────────────────────────────────────────────────────────────                 ║▓
-║ Table: Degree of Success.                                                                 ║▓
+║ Table 11: Degree of Success.                                                              ║▓
 ║                                                                                           ║▓
 ║ _Possible Degrees of Success_ Not all Degrees of Success and Failure are possible to      ║▓
 ║ achieve just with a Qualification Roll. If Effort is lower than or equal to Resistance,   ║▓
@@ -2442,7 +2442,7 @@
 ║ Matches Modifier        Negative             Shift Down                                   ║▓
 ║ Beats Modifier          Negative             No change                                    ║▓
 ║ ──────────────────────────────────────────────────────────                                ║▓
-║ Table: Modifiers and change to DoS.                                                       ║▓
+║ Table 12: Modifiers and change to DoS.                                                    ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -2621,7 +2621,7 @@
 ║ True                        Success                                                       ║▓
 ║ False                       Failure                                                       ║▓
 ║ ──────────────────────────────────────────                                                ║▓
-║ Table: Boolean Roll                                                                       ║▓
+║ Table 13: Boolean Roll.                                                                   ║▓
 ║                                                                                           ║▓
 ║ A Boolean Roll may be called for by the rules of minigames. For example, the Combat       ║▓
 ║ minigame calls for a Boolean Roll to determine a character's starting Disposition at the  ║▓
@@ -2671,7 +2671,7 @@
 ║ False                      True                         Failure                           ║▓
 ║ False                      False                        Failure                           ║▓
 ║ ──────────────────────────────────────────────────────────────────────                    ║▓
-║ Table: Contested Boolean Roll                                                             ║▓
+║ Table 14: Contested Boolean Roll.                                                         ║▓
 ║                                                                                           ║▓
 ║ Unlike the Boolean Roll, the Contested Boolean Roll is not called for by any minigames.   ║▓
 ║ It's up to the GQ to decide when a Contested Boolean Roll is the preferred option. The    ║▓
@@ -2781,7 +2781,7 @@
 ║ Complete Failure             (Complete Failure outcome)                                   ║▓
 ║ Critical Failure             (Critical Failure outcome)                                   ║▓
 ║ ───────────────────────────────────────────────────────                                   ║▓
-║ Figure: Minigame Formula Template                                                         ║▓
+║ Figure 18: Minigame Formula Template.                                                     ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -2964,7 +2964,7 @@
 ║ Success                       Holding                                                     ║▓
 ║ Failure                       Recoiling                                                   ║▓
 ║ ──────────────────────────────────────────────────                                        ║▓
-║ Table: Starting Disposition                                                               ║▓
+║ Table 15: Starting Disposition.                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -3635,7 +3635,7 @@
 ║ Complete Failure             Cost, Cost, Risk                                             ║▓
 ║ Critical Failure             Cost, Cost, Cost                                             ║▓
 ║ ───────────────────────────────────────────────────                                       ║▓
-║ Figure: Exploration Action Formula                                                        ║▓
+║ Figure 19: Exploration Action Formula.                                                    ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -3668,7 +3668,7 @@
 ║ Effects     30% + Level    Apply, or modify the rating of deleterious Effects             ║▓
 ║ Darkness    25% + Level    Reduce lighting Items or suffer in Darkness                    ║▓
 ║ ─────────────────────────────────────────────────────────────────────────────             ║▓
-║ Table: Costs                                                                              ║▓
+║ Table 16: Costs.                                                                          ║▓
 ║                                                                                           ║▓
 ║ Risk              Chance         Description                                              ║▓
 ║ ───────────────────────────────────────────────────────────────────────────               ║▓
@@ -3677,7 +3677,7 @@
 ║ Obstacle          20% + Level    Prevents further Exploration until removed               ║▓
 ║ Infection         10% + Level    Bestows the Infection Effect                             ║▓
 ║ ───────────────────────────────────────────────────────────────────────────               ║▓
-║ Table: Risks                                                                              ║▓
+║ Table 17: Risks.                                                                          ║▓
 ║                                                                                           ║▓
 ║ Reward         Chance               Description                                           ║▓
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
@@ -3688,7 +3688,7 @@
 ║ Resource       15% + Level          Materials to build a Shelter for Resting and Healing  ║▓
 ║ Secret         Perception - Level   Generates a random Cost, Risk or Reward.              ║▓
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
-║ Table: Rewards                                                                            ║▓
+║ Table 18: Rewards.                                                                        ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -3719,7 +3719,7 @@
 ║ 61-80%     d80             d100                 d60                                       ║▓
 ║ 81-100%    d100            d120                 d40                                       ║▓
 ║ ───────────────────────────────────────────────────────────                               ║▓
-║ Table: Nest Levels and Quantification dice                                                ║▓
+║ Table 19: Nest Levels and Quantification dice.                                            ║▓
 ║                                                                                           ║▓
 ║ _Increasing Level ratings_ The rating of the Nest Level changes every time a character    ║▓
 ║ spends a Level Reward to explore a new Nest Level. At that time, the Costs/Risks Die      ║▓
@@ -3921,7 +3921,7 @@
 ║ Smarts, Charms, Ken,Passions         10%                                                  ║▓
 ║ Blind                                100%                                                 ║▓
 ║ ───────────────────────────────────────────                                               ║▓
-║ Table: Worker Termite Features                                                            ║▓
+║ Table 20: Worker Termite Features.                                                        ║▓
 ║                                                                                           ║▓
 ║ ┌[Special Rule - Alarm Pheromones]──────────────────────────────────────────────────────┐ ║▓
 ║ │                                                                                       │ ║▓
@@ -3939,7 +3939,7 @@
 ║ Major Termite Soldiers        5                       30%                                 ║▓
 ║ Nasute Soldiers               3                       25%                                 ║▓
 ║ ──────────────────────────────────────────────────────────────────────                    ║▓
-║ Table: Worker Termite summons                                                             ║▓
+║ Table 21: Worker Termite summons.                                                         ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -3973,7 +3973,7 @@
 ║ Smarts, Charms, Ken, Passions          20%                                                ║▓
 ║ Blind                                  100%                                               ║▓
 ║ ──────────────────────────────────────────────────────────                                ║▓
-║ Table: Minor Termite Soldier Features                                                     ║▓
+║ Table 22: Minor Termite Soldier Features.                                                 ║▓
 ║                                                                                           ║▓
 ║ ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐  ║▓
 ║ │ Name:....................Mandible Attack ││ Name:..........Autothysis (Self-Rupture) │  ║▓
@@ -3987,7 +3987,7 @@
 ║ │ Miss:................................... ││ Miss (Crit):.....Attacker takes 4 Wounds │  ║▓
 ║ └──────────────────────────────────────────┘└──────────────────────────────────────────┘  ║▓
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
-║ Figure: Minor Tremite Soldier Attacks                                                     ║▓
+║ Figure 20: Minor Tremite Soldier Attacks.                                                 ║▓
 ║                                                                                           ║▓
 ║ ┌[Special Rule - Swarm]─────────────────────────────────────────────────────────────────┐ ║▓
 ║ │                                                                                       │ ║▓
@@ -4009,14 +4009,14 @@
 ║ │ Termite Soldiers cannot Retreat, or Charge. Their Disposition track has the following │ ║▓
 ║ │ elements: Recoiling, Recoiling, Holding, Advancing, Advancing.                        │ ║▓
 ║ │                                                                                       │ ║▓
-║ │ ├─<Disposition Track>───────────────────────────────────────────────────────────────┤ │ ║▓
-║ │ │ (Advance this way -->) .................................... (<-- Recoil this way) │ │ ║▓
-║ │ │ ○ Rcoiling...... ○ Recoiling.... ○ Holding...... ○ Advancing..... ○ Advancing.....│ │ ║▓
-║ │ └<^-30>───────────<^-30%>─────────<^Doing Good>───<^+30%>──────────<^+30>───────────┘ │ ║▓
-║ │ ───────────────────────────────────────────────────────────────────────────────────── │ ║▓
-║ │ Figure: Minor Termite Soldier Disposition Track                                       │ ║▓
-║ │                                                                                       │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ ├─<Disposition Track>───────────────────────────────────────────────────────────────────┤ ║▓
+║ │ (Advance this way -->) ........................................ (<-- Recoil this way) │ ║▓
+║ │ ○ Rcoiling...... ○ Recoiling...... ○ Holding....... ○ Advancing...... ○ Advancing.....│ ║▓
+║ └<^-30>───────────<^-30%>───────────<^Doing Good>────<^+30%>───────────<^+30>───────────┘ ║▓
+║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
+║ Figure 21: Minor Termite Soldier Disposition Track.                                       ║▓
 ║                                                                                           ║▓
 ║ ┌[Special Rule - Nest Guardians]────────────────────────────────────────────────────────┐ ║▓
 ║ │                                                                                       │ ║▓
@@ -4071,7 +4071,7 @@
 ║ Passions                   50%                                                            ║▓
 ║ Blind                      100%                                                           ║▓
 ║ ─────────────────────────────────────                                                     ║▓
-║ Figure: Major Termite Soldier Features                                                    ║▓
+║ Figure 22: Major Termite Soldier Features.                                                ║▓
 ║                                                                                           ║▓
 ║ ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐  ║▓
 ║ │ Name:....................Mandible Attack ││ Name:..Greater Autothysis (Self-Rupture) │  ║▓
@@ -4085,7 +4085,7 @@
 ║ │ Miss:................................... ││ Miss (Add):..............Attacker killed │  ║▓
 ║ └──────────────────────────────────────────┘└──────────────────────────────────────────┘  ║▓
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
-║ Figure: Major Termite Soldier Attacks                                                     ║▓
+║ Figure 23: Major Termite Soldier Attacks.                                                 ║▓
 ║                                                                                           ║▓
 ║ ┌[Special Rule - Alarm Pheromones]──────────────────────────────────────────────────────┐ ║▓
 ║ │ Same as for Worker Termites.                                                          │ ║▓
@@ -4125,7 +4125,7 @@
 ║ Passions                   55%                                                            ║▓
 ║ Blind                      100%                                                           ║▓
 ║ ─────────────────────────────────────                                                     ║▓
-║ Figure: Nasute Soldier Features                                                           ║▓
+║ Figure 24: Nasute Soldier Features.                                                       ║▓
 ║                                                                                           ║▓
 ║ ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐  ║▓
 ║ │ Name:.............Fontanellar Gun Attack ││ Name:.....Greater Fontanellar Gun Attack │  ║▓
@@ -4139,7 +4139,7 @@
 ║ │ Miss:.............Attacker Recoils twice ││ Miss:.............Attacker Recoils twice │  ║▓
 ║ └──────────────────────────────────────────┘└──────────────────────────────────────────┘  ║▓
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
-║ Figure: Nasute Soldier Attacks                                                            ║▓
+║ Figure 25: Nasute Soldier Attacks.                                                        ║▓
 ║                                                                                           ║▓
 ║ ┌[Special Rule - Self-Sacrificing]──────────────────────────────────────────────────────┐ ║▓
 ║ │ Same as for Minor Termite Soldiers.                                                   │ ║▓

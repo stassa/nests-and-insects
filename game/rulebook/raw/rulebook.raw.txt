@@ -274,7 +274,7 @@ Partial Failure   &    Failing to Match Effort and Beating Resistance
 Complete Failure  &    Failing to Match Effort and Failing to Beat Resistance
 Critical Failure  &    Failing to Beat a Negative Modifier after a Complete Failure
 \end{table}
-Table 1: Six Degrees of Success
+\label{Six Degrees of Success.}[table]
 
 Decile Dice
 -----------
@@ -319,7 +319,7 @@ d80       &  0 to 79  &    d8       &  0,1,...,7  &  d10     &  0,1,...,9
 d100      &  0 to 99  &    d10      &  0,1,...,9  &  d10     &  0,1,...,9 
 d120      &  0 to 119 &    d12      &  0,1,...,11 &  d10     &  0,1,...,9 
 \end{table}
-Table 2: Decile dice, used for quantification of percentile effects. d100 is also a
+\label{Decile dice, used for quantification of percentile effects. d100 is also a}[table]
 decile die. The d20 does not need a "tens" die and is rolled on its own.
 
 Minigames
@@ -350,7 +350,7 @@ Partial Failure  &        Base Attack Misses
 Complete Failure &        Special Attack Misses
 Critical Failure &        Both Attacks Miss
 \end{table}
-Table 3: Combat minigame outcomes.
+\label{Combat minigame outcomes.}[table]
 \newpage
 
                                    Character
@@ -383,7 +383,7 @@ Combat Stats&   Condition box, Disposition Track, Attack boxes
 Survival    &   Hunger box, Luck box
 Abilities   &   Specific Abilities box, Common Abilities box, Effects box, Inventory box
 \end{table}
-Table 4: Areas and sub-areas in a character sheet.
+\label{Areas and sub-areas in a character sheet.}[table]
 
 The following Sections describe each area and sub-area of the character sheet.
 
@@ -396,7 +396,7 @@ the game and the name of a character's Class.
 ╔►Nests & Insects◄═════════════════════════════════════════════════════►Character Sheet◄╗
 ║....................................... TEMPLATE ......................................║
 ─────────────────────────────────────────────────────────────────────────────────────────
-Figure 1: Character sheet template; class header. In a completed sheet "TEMPLATE" is
+\label{Character sheet template; class header. In a completed sheet "TEMPLATE" is}[figure]
 replaced by the name of the character's class, e.g. Wasp, Spider, Ants, etc.
 
 Attributes Area
@@ -412,7 +412,7 @@ Attributes are Features that represent innate abilities of characters in a Class
 ║│ □ Smarts...:[___0%] □ Charms...:[___0%] □ Ken........:[___0%] □ Passions...:[___0%] │║
 ║└<^XP>───────────────<^XP>───────────────<^XP>─────────────────<^XP>──────────────────┘║
 ─────────────────────────────────────────────────────────────────────────────────────────
-Figure 2: Attributes Area.
+\label{Attributes Area.}[figure]
 
 Nests & Insects characters have eight Attributes (Table 5).
 
@@ -427,7 +427,7 @@ Charms   &       Charisma, talent for communication and influencing others' beha
 Ken      &       Wisdom, common sense, and knowledge of the world
 Passions &       Willpower, morale, strength of spirit and courage
 \end{table}
-Table 5: Character Attributes
+\label{Character Attributes.}[table]
 
 _XP Tickboxes_ In the Attributes Area each attribute is listed with an empty tickbox to
 the left, marked "XP", as shown in Figure 3. This is an *XP tickbox*. "XP" stands for
@@ -439,7 +439,7 @@ Features and Common Abilities.
 │ □ Smarts...:[___0%]
 └<^XP>───────────────
 ─────────────────────
-Figure 3: The XP tickbox for Speed and Smarts in the Attribute Area.
+\label{The XP tickbox for Speed and Smarts in the Attribute Area.}[figure]
 
 An XP tickbox is ticked to indicate that the relevant Feature has a chance to increase.
 Figure 4 shows the Speed tickbox in Figure 3 ticked with the ✓ character (U+2713):
@@ -449,7 +449,7 @@ Figure 4 shows the Speed tickbox in Figure 3 ticked with the ✓ character (U+27
 │ □ Smarts...:[___0%]
 └<^XP>───────────────
 ─────────────────────
-Figure 4: Ticked XP tickbox for Speed.
+\label{Ticked XP tickbox for Speed.}[figure]
 \newpage
 
 Combat Stats Area
@@ -459,7 +459,7 @@ The Combat Stats area starts with the Combat Stats header (Figure 5).
 
 ╠►Combat Stats◄════════════════════════════════════════════════════════════════════════╣▓
 ─────────────────────────────────────────────────────────────────────────────────────────
-Figure 5: Header of the Combat Stats Area.
+\label{Header of the Combat Stats Area.}[figure]
 
 The Combat Stats area lists Features used in the Combat minigame. It has 3 sub-areas: the
 Condition box, the Disposition Track and the Attack boxes.
@@ -476,7 +476,7 @@ and Wounds.
 │ □ Survival Rate:[___0%] (Match/Beat Target's SR to Hit/Miss with Base/Special Attack) │
 │ □ Wounds/Max...:[__/_3] (1 Wound = 1 Shift Down. When Wounds ≥ Max, character dies).. │
 ─────────────────────────────────────────────────────────────────────────────────────────
-Figure 6: Condition box.
+\label{Condition box.}[figure]
 
 The Condition box includes some reminder text to help players make sense of their
 character's Condition in Combat. The four Combat Conditions are explained, briefly,
@@ -503,7 +503,7 @@ both position and morale in Combat.
 │ ○ Retreating...... ○ Recoiling..... ○ Holding...... ○ Advancing...... ○ Charging..... │
 └<^Cant Attack>─────<^-30%>──────────<^Doing Good>───<^+30%>───────────<^Shift Up>──────┘
 ─────────────────────────────────────────────────────────────────────────────────────────
-Figure 7: Disposition Track. Modifiers apply to all Actions in Combat.
+\label{Disposition Track. Modifiers apply to all Actions in Combat.}[figure]
 
 The Disposition track includes reminder text to point out the direction in which
 Disposition Advances (increases) or Recoils (decreases) in Combat. Disposition is better
@@ -540,7 +540,7 @@ Attack and Special Attack. Each character class has its own Base and Special Att
 │ Miss (Alt):............................. ││ Miss (Alt):............................. │ 
 └──────────────────────────────────────────┘└──────────────────────────────────────────┘ 
 ────────────────────────────────────────────────────────────────────────────────────────
-Figure 8: Attack boxes
+\label{Attack boxes}[figure]
 \newpage
 
 Survival Area
@@ -550,7 +550,7 @@ The Survival Area begins with the Survival header (Figure 9).
 
 ╠►Survival◄════════════════════════════════════════════════════════════════════════════╣▓
 ─────────────────────────────────────────────────────────────────────────────────────────
-Figure 9: Survival header, demarcating the Survival Area.
+\label{Survival header, demarcating the Survival Area.}[figure]
 
 The Survival Area has two sub-Areas: the Food box, used in the Survival minigame; and the
 Luck box.
@@ -566,7 +566,7 @@ character takes a penalty in the DoS of all minigame Actions.
 │ ○ Hunger........[___0%] │
 └<^Starving>──────────────┘
 ───────────────────────────
-Figure 10: Food box.
+\label{Food box.}[figure]
 
 Luck box
 --------
@@ -579,7 +579,7 @@ an up-arrow (^) in the bottom of the Luck box.
 │ [11%].[22%].[33%].[44%].[55%].[66%].[77%].[88%].[99%].[00%].│
 └──^──────────────────────────────────────────────────────────┘
 ───────────────────────────────────────────────────────────────
-Figure 11: Luck box, with the Luck marker on 11% (starting Luck).
+\label{Luck box, with the Luck marker on 11% (starting Luck).}[figure]
 
 Characters start the game with 11% Luck. During the game a character's Luck rating
 changes whenever the player rolls a d100 and the same digit appears on both d10s. This is
@@ -594,7 +594,7 @@ The Abilities Area begins with the Abilities header (Figure 12).
 
 ╠►Abilities◄═══════════════════════════════════════════════════════════════════════════╣▓
 ─────────────────────────────────────────────────────────────────────────────────────────
-Figure 12: Abilities header, demarcating the Abilities area.
+\label{Abilities header, demarcating the Abilities area.}[figure]
 
 The Abilities Area has four sub-Areas: the Specific Abilities box, the Common Abilities
 box, the Effects box and the Inventory box.
@@ -614,7 +614,7 @@ character class has its own Specific Abilities.
 │ Web Weaving.......:[___0%] │
 └────────────────────────────┘
 ──────────────────────────────
-Figure 13: Specific Abilities box.
+\label{Specific Abilities box.}[figure]
 
 There are five Specific Abilities that character classes can have: Carapace, Flying,
 Swarming, Venomous, or Web Weaving. These are briefly described below.
@@ -653,7 +653,7 @@ The Common Abilities box (Figure 14) lists Abilities common to all character cla
 │ □ Healing..........:[___0%] □ Sneaking..........:[___0%] │
 └<^XP>───────────────────────<^XP>─────────────────────────┘
 ────────────────────────────────────────────────────────────
-Figure 14: Common Abilities
+\label{Common Abilities}[figure]
 
 Like Atributes and Conditions, Common Abilities have an XP Tickbox and can be improved
 with experience. Table 6 briefly describes Common Abilities and their use.
@@ -671,7 +671,7 @@ Perception    &        Find secrets and hidden items and Rooms
 Signalling    &        Display aposematic markings, emit pheromonic signals
 Sneaking      &        Move and act with stealth
 \end{table}
-Table 6: Common Abilities with brief description.
+\label{Common Abilities with brief description.}[table]
 
 Effects box
 -----------
@@ -689,7 +689,7 @@ Attacks in Combat, and other minigames.
 │ ○ Confused.:[___0%] ○ Stunned.....:[___0%] │
 └<^Applies>──────────<^Applies>──────────────┘
 ──────────────────────────────────────────────
-Figure 15: Effects box.
+\label{Effects box.}[figure]
 
 Effects each have a radio button. When this is ticked it marks that the Effect "Applies",
 i.e. that the character is currently subject to the Effect. The ten Effects in the Effect
@@ -708,7 +708,7 @@ Paralysed  &    ...cannot take any Actions
 Poisoned   &    ...has a negative modifier equal to Poisoned to all Actions
 Stunned    &    ...loses her next Turn in Combat
 \end{table}
-Table 7: Effects, with brief description of how a character is affected.
+\label{Effects, with brief description of how a character is affected.}[table]
 
 Inventory box
 -------------
@@ -724,7 +724,7 @@ Prey, and other items.
 │ ○ ______________________________:[____%] │
 └<^Edible>─────────────────────────────────┘
 ────────────────────────────────────────────
-Figure 16: Inventory box.
+\label{Inventory box.}[figure]
 
 Each line in the Inventory box is an Inventory item. Items have an "Edible" radio button
 that indicates whether the item is a Food item that can be consumed to reduce Hunger.
@@ -963,7 +963,7 @@ Lighting  &    Used to pay a Darkness Cost. May be Edible.
 Materials &    Used to build a Shelter for Resting and Healing.
 Message   &    Must be collected or delivered as part of a Job.
 \end{table}
-Table: Item Types.
+\label{Item Types.}[table]
 
 _Items With Multiple Types_ Some Items may have multiple types, the "Food" type, and one
 or more other types. Such Items can be used to pay a Hunger Cost and perform another
@@ -1023,7 +1023,7 @@ and a rating box.
 
 ○ ______________________________:[____%]
 ────────────────────────────────────────
-Figure: An empty Inventory Slot.
+\label{An empty Inventory Slot.}[figure]
 
 _Recording Items_ When a new Item is acquired, add an entry for it in an empty Slot in
 the character's Inventory. If the character's Inventory is full, the item is "dropped"
@@ -1174,9 +1174,9 @@ d80       &  0 to 79  &    d8       &  0,1,...,7  &  d10     &  0,1,...,9
 d100      &  0 to 99  &    d10      &  0,1,...,9  &  d10     &  0,1,...,9 
 d120      &  0 to 119 &    d12      &  0,1,...,11 &  d10     &  0,1,...,9 
 \end{table}
-Table: Decile dice, used for quantification on a percentile scale. d100 is also a decile
-die, and the only one used for Action resolution. The d20 does not need a "tens" die and
-is rolled on its own.
+\label{Decile dice, used for quantification on a percentile scale. d100 is also a}[table]
+decile die, and the only one used for Action resolution. The d20 does not need a "tens"
+die and is rolled on its own.
 
 Implementing Decile Dice
 ------------------------
@@ -1285,7 +1285,7 @@ Partial Failure   &    Thwarts Intent marginally    &    Qualification Roll
 Complete Failure  &    Thwarts Intent               &    Qualification Roll
 Critical Failure  &    Thwarts Intent with penalty  &    Modifiers
 \end{table}
-Table: Six Degrees of Success
+\label{Six Degrees of Success.}[table]
 
 The six DoS are ordered from worst (Critical Failure) to best (Critical Success) with
 respect to the outcome of an Action. The exact outcome of an Action, such as rewards or
@@ -1516,7 +1516,7 @@ True               &       False                &       Partial Success
 False              &       True                 &       Partial Failure
 False              &       False                &       Complete Failure
 \end{table}
-Table: Degree of Success.
+\label{Degree of Success.}[table]
 
 _Possible Degrees of Success_ Not all Degrees of Success and Failure are possible to
 achieve just with a Qualification Roll. If Effort is lower than or equal to Resistance,
@@ -1569,7 +1569,7 @@ Beats Modifier  &       Positive     &       No change
 Matches Modifier&       Negative     &       Shift Down
 Beats Modifier  &       Negative     &       No change
 \end{table}
-Table: Modifiers and change to DoS.
+\label{Modifiers and change to DoS.}[table]
 
 \newpage
 
@@ -1684,7 +1684,7 @@ Roll matches Feature&        Action Outcome
 True                &        Success       
 False               &        Failure       
 \end{table}
-Table: Boolean Roll
+\label{Boolean Roll.}[table]
 
 A Boolean Roll may be called for by the rules of minigames. For example, the Combat
 minigame calls for a Boolean Roll to determine a character's starting Disposition at the
@@ -1731,7 +1731,7 @@ True                &   False                 &   Failure
 False               &   True                  &   Failure      
 False               &   False                 &   Failure       
 \end{table}
-Table: Contested Boolean Roll
+\label{Contested Boolean Roll.}[table]
 
 Unlike the Boolean Roll, the Contested Boolean Roll is not called for by any minigames.
 It's up to the GQ to decide when a Contested Boolean Roll is the preferred option. The
@@ -1810,7 +1810,7 @@ Partial Failure   &    (Partial Failure outcome)
 Complete Failure  &    (Complete Failure outcome)
 Critical Failure  &    (Critical Failure outcome)
 \end{table}
-Figure: Minigame Formula Template
+\label{Minigame Formula Template.}[figure]
 
 \newpage
 
@@ -1909,7 +1909,7 @@ Initiative Roll Result &    Starting Disposition
 Success                &    Holding
 Failure                &    Recoiling
 \end{table}
-Table: Starting Disposition
+\label{Starting Disposition.}[table]
 
 \newpage
 
@@ -2426,7 +2426,7 @@ Partial Failure   &    Cost, Risk, Risk
 Complete Failure  &    Cost, Cost, Risk
 Critical Failure  &    Cost, Cost, Cost
 \end{table}
-Figure: Exploration Action Formula
+\label{Exploration Action Formula.}[figure]
 
 \newpage
 
@@ -2448,7 +2448,7 @@ Passage &  45% + Level&   Grants a chance to find a new Room
 Effects &  30% + Level&   Apply, or modify the rating of deleterious Effects
 Darkness&  25% + Level&   Reduce lighting Items or suffer in Darkness
 \end{table}
-Table: Costs
+\label{Costs.}[table]
 
 \begin{table}[4]
 Risk          &  Chance     &  Description
@@ -2457,7 +2457,7 @@ Item (Unknown)&  30% + Level&  Find as yet unidentified Food Items
 Obstacle      &  20% + Level&  Prevents further Exploration until removed
 Infection     &  10% + Level&  Bestows the Infection Effect
 \end{table}
-Table: Risks
+\label{Risks.}[table]
 
 \begin{table}[3]
 Reward      &  Chance             & Description
@@ -2468,7 +2468,7 @@ Item (Known)&  25% + Level        & Find a previously identified Food Item
 Resource    &  15% + Level        & Materials to build a Shelter for Resting and Healing
 Secret      &  Perception - Level & Generates a random Cost, Risk or Reward.
 \end{table}
-Table: Rewards
+\label{Rewards.}[table]
 
 % Explain how all Events with a Chance above the roll result occur, and that one roll is
 % made for each Event determined by the DoS of the Exploration Action.
@@ -2494,7 +2494,7 @@ Level  &   Features Die&   Costs / Risks Die&   Rewards Die
 61-80% &   d80         &   d100             &   d60 
 81-100%&   d100        &   d120             &   d40 
 \end{table}
-Table: Nest Levels and Quantification dice
+\label{Nest Levels and Quantification dice.}[table]
 
 _Increasing Level ratings_ The rating of the Nest Level changes every time a character
 spends a Level Reward to explore a new Nest Level. At that time, the Costs/Risks Die
@@ -2563,7 +2563,7 @@ Speed, Skill,Strength,Stamina&    20%
 Smarts, Charms, Ken,Passions &    10%
 Blind                        &    100%
 \end{table}
-Table: Worker Termite Features
+\label{Worker Termite Features.}[table]
 
 \begin{box}[Special Rule - Alarm Pheromones]
 
@@ -2581,7 +2581,7 @@ Minor Termite Soldiers  &    1                 &    60%
 Major Termite Soldiers  &    5                 &    30%
 Nasute Soldiers         &    3                 &    25%
 \end{table}
-Table: Worker Termite summons
+\label{Worker Termite summons.}[table]
 \newpage
 
 Minor Termite Soldier - Autothyte
@@ -2607,7 +2607,7 @@ Speed, Skill, Strength, Stamina&    40%
 Smarts, Charms, Ken, Passions  &    20%
 Blind                          &    100%
 \end{table}
-Table: Minor Termite Soldier Features
+\label{Minor Termite Soldier Features.}[table]
 
 ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐
 │ Name:....................Mandible Attack ││ Name:..........Autothysis (Self-Rupture) │
@@ -2621,7 +2621,7 @@ Table: Minor Termite Soldier Features
 │ Miss:................................... ││ Miss (Crit):.....Attacker takes 4 Wounds │
 └──────────────────────────────────────────┘└──────────────────────────────────────────┘
 ────────────────────────────────────────────────────────────────────────────────────────
-Figure: Minor Tremite Soldier Attacks
+\label{Minor Tremite Soldier Attacks.}[figure]
 
 \begin{box}[Special Rule - Swarm]
 
@@ -2640,14 +2640,15 @@ Same as for Worker Termites.
 Termite Soldiers cannot Retreat, or Charge. Their Disposition track has the following
 elements: Recoiling, Recoiling, Holding, Advancing, Advancing.
 
-├─<Disposition Track>───────────────────────────────────────────────────────────────┤
-│ (Advance this way -->) .................................... (<-- Recoil this way) │
-│ ○ Rcoiling...... ○ Recoiling.... ○ Holding...... ○ Advancing..... ○ Advancing.....│
-└<^-30>───────────<^-30%>─────────<^Doing Good>───<^+30%>──────────<^+30>───────────┘
-─────────────────────────────────────────────────────────────────────────────────────
-Figure: Minor Termite Soldier Disposition Track
-
 \end{box}
+
+% Don't place this figure in the box because the label code misses it.
+├─<Disposition Track>───────────────────────────────────────────────────────────────────┤
+│ (Advance this way -->) ........................................ (<-- Recoil this way) │
+│ ○ Rcoiling...... ○ Recoiling...... ○ Holding....... ○ Advancing...... ○ Advancing.....│
+└<^-30>───────────<^-30%>───────────<^Doing Good>────<^+30%>───────────<^+30>───────────┘
+─────────────────────────────────────────────────────────────────────────────────────────
+\label{Minor Termite Soldier Disposition Track.}[figure]
 
 \begin{box}[Special Rule - Nest Guardians]
 
@@ -2681,7 +2682,7 @@ Smarts, Charms, Ken&    20%
 Passions           &    50%
 Blind              &    100%
 \end{table}
-Figure: Major Termite Soldier Features
+\label{Major Termite Soldier Features.}[figure]
 
 ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐
 │ Name:....................Mandible Attack ││ Name:..Greater Autothysis (Self-Rupture) │
@@ -2695,7 +2696,7 @@ Figure: Major Termite Soldier Features
 │ Miss:................................... ││ Miss (Add):..............Attacker killed │
 └──────────────────────────────────────────┘└──────────────────────────────────────────┘
 ────────────────────────────────────────────────────────────────────────────────────────
-Figure: Major Termite Soldier Attacks
+\label{Major Termite Soldier Attacks.}[figure]
 
 \begin{box}[Special Rule - Alarm Pheromones]
 Same as for Worker Termites.
@@ -2732,7 +2733,7 @@ Smarts, Charms, Ken&    30%
 Passions           &    55%
 Blind              &    100%
 \end{table}
-Figure: Nasute Soldier Features
+\label{Nasute Soldier Features.}[figure]
 
 ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐
 │ Name:.............Fontanellar Gun Attack ││ Name:.....Greater Fontanellar Gun Attack │
@@ -2746,7 +2747,7 @@ Figure: Nasute Soldier Features
 │ Miss:.............Attacker Recoils twice ││ Miss:.............Attacker Recoils twice │
 └──────────────────────────────────────────┘└──────────────────────────────────────────┘
 ────────────────────────────────────────────────────────────────────────────────────────
-Figure: Nasute Soldier Attacks
+\label{Nasute Soldier Attacks.}[figure]
 
 \begin{box}[Special Rule - Self-Sacrificing]
 Same as for Minor Termite Soldiers.
