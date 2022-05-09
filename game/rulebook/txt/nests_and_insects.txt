@@ -237,7 +237,7 @@
 ║                                                                                           ║▓
 ║ Nests & Insects is a Roguelike TTRPG. It is "Roguelike" because it is inspired by         ║▓
 ║ computer roleplaying games (CRPGs) of the Roguelike genre, like Nethack, Angband, Moria,  ║▓
-║ Ancient Domains of Mystery, and Darkest Dungeon.                                          ║▓
+║ Ancient Domains of Mystery, and later games like Diablo and Darkest Dungeon.              ║▓
 ║                                                                                           ║▓
 ║ A "Roguelike TTRPG" is a case of board games imitating computer games, imitating board    ║▓
 ║ games: most roguelike CRPGs are inspired by TTRPGs, particularly Dungeons & Dragons, the  ║▓

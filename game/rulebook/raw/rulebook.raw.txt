@@ -202,7 +202,7 @@ The Game
 
 Nests & Insects is a Roguelike TTRPG. It is "Roguelike" because it is inspired by
 computer roleplaying games (CRPGs) of the Roguelike genre, like Nethack, Angband, Moria,
-Ancient Domains of Mystery, and Darkest Dungeon.
+Ancient Domains of Mystery, and later games like Diablo and Darkest Dungeon.
 
 A "Roguelike TTRPG" is a case of board games imitating computer games, imitating board
 games: most roguelike CRPGs are inspired by TTRPGs, particularly Dungeons & Dragons, the
@@ -226,7 +226,7 @@ character's beginning stats (collectively called Features). The Game Queen then 
 procedurally generate the first Room in the entrance to the first Level of the Nest, and
 the characters enter and begin their Job. After visiting a Room and defeating its
 challenges characters get a chance to rest and recoup their strength, and players can use
-experience gained to improve their characters. The game ends when the characters fulfill
+experience gained to improve their characters. The game ends when the characters fulfil
 the terms of the Job, or give up, or run away, or die.
 
 Everything encountered by characters during a Job is procedurally generated. If the Game
