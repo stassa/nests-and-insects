@@ -21,7 +21,8 @@ mercenaries, assassins, and thugs, hired to invade a Nest and carry out a Job on
 behalf of some arthropod client. Nests are the homes of eusocial insects: the
 nests of Bees, Ants and Termites. Common Jobs are to assasinate the Queen, or
 the King; steal nectar, honey, honeydew, aphids or mealybugs (farmed by ants) or
-fungi (cultivated by termites); steal, or kill, nymphs; or sabotage the Nest.
+fungi (cultivated by termites); steal, or kill, larvae; deliver, or pick up a
+message; or sabotage the Nest.
 
 At the beginning of a new game the players' characters enter a Nest to carry out
 their Job armed with their natural weapons and armour: mandibles, pincers,
@@ -37,16 +38,19 @@ characters want to do and roll the dice to see what happens. Then the Game Queen
 describes the results of the characters' actions. Nests & Insects' roleplaying
 system is a percentile system where a composite, "percentile" die (d100) is
 rolled to determine the outcome of actions and composite "decile dice" (d20,
-d40, d60, d80 and the d100 itself) are rolled to quantify the results of
-actions.
+d40, d60, d80, d120 and the d100 itself) are rolled to quantify the results of
+actions. The system is designed to remove all mental arithmetic from "action
+resolution" and to encourage the players to use their imagination to help their
+characters achieve their goals. Everything in Nests & Insects is procedurally
+generated: the Nest, its guardians, items, all challenges and rewards.
 
 Nests & Insects is a "Roguelike" TTRPG: it is inspired by Roguelike Computer
 RPGs (CRPGs) such as Nethack, Angband, Moria and ADoM. From Roguelike CRPGs it
-borrows: hack-and-slash, dungeon-crawling gameplay; lethal combat; hunger
-mechanics; and a focus on exploration and experimentation with the game world.
-From TTRPGs it borrows: weird dice; tortuous terminology with Pompous
-Capitalisation; over-engineered rules; unclear motivation to learn yet another
-roleplaying system; and crunch Crunch CRrRUNCH!
+borrows: procedural generation; hack-and-slash, dungeon-crawling gameplay;
+lethal combat; hunger mechanics; and a focus on exploration and experimentation
+with the game world. From TTRPGs it borrows: weird dice; tortuous terminology
+with Pompous Capitalisation; over-engineered rules; unclear motivation to learn
+yet another roleplaying system; and crunch Crunch CRrRUNCH!
 
 Reading the rulebook
 --------------------
