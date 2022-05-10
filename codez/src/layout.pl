@@ -1,6 +1,6 @@
 ﻿:-module(layout, [layout_rulebook/3
                  ,read_lines/2
-                 ,format_lines/3
+                 ,format_lines/4
                  ,longest_line/4
                  ]).
 
@@ -9,6 +9,7 @@
 :-use_module(src(theorem)).
 :-use_module(src(label)).
 :-use_module(src(styles)).
+:-use_module(src(toc)).
 :-use_module(src/charsheet).
 
 /** <module> Layout and formatting for text-based rulebooks.
@@ -52,19 +53,67 @@ border(vertical_shadow,'▓').
 %
 layout_rulebook(IP,N,OP):-
         read_lines(IP,Ls)
-        ,format_lines(Ls,N,Fs)
+        ,format_lines(Ls,N,Fs,[_P,_N,W,_Cs,Ts])
+        ,format_toc(Ts,N,W,Ts_F)
         ,O = open(OP,write,S,[alias(output_file)
                              ,close_on_abort(true)
                              ,encoding(utf8)
-                          ])
-        ,R = forall(member(F,Fs)
-                   ,writeln(S,F)
-                   )
+                             ])
+        ,R = (write_coverpage(S,N,Fs,Fs_)
+             % Print the ToC
+             ,forall(member(T,Ts_F)
+                    ,writeln(S,T))
+             % Print the rest of the rulebook.
+             ,forall(member(F,Fs_)
+                    ,writeln(S,F))
+             )
         ,C = close(S)
         ,setup_call_cleanup(O,R,C).
 
 
-%!      format_lines(+Lines,+Page_Lines,-Formatted) is det.
+%!      write_coverpage(+Stream,+Page_Lines,+Text,-Rest) is det.
+%
+%       Write the coverpage at the start of the rulebook.
+%
+%       The reason for the existence of this predicate is that we want
+%       to print the ToC immediately after printing the coverpage, but
+%       just before we start printing the text of the rulebook. The ToC
+%       follows immediately from the coverpage so we first print the
+%       coverpage, count the number of lines we print to make sure we
+%       know when we're done, and then we'll print the ToC (in
+%       layout_rulebook/3).
+%
+%       The coverpage starts at the first line of the document and takes
+%       exactly Page_Lines lines, so we can safely enough assume that
+%       after we have printed the first Page_Lines lines, we have
+%       printed the coverpage.
+%
+%       Stream is the rulebook file stream.
+%
+%       Page_Lines is the maximum number of lines per page.
+%
+%       Text is the list of lines of the already formatted text of the
+%       rulebook.
+%
+%       Rest is the list of lines in Text after the coverpage.
+%
+%       @tbd All this is a hack to avoid having to implement a proper
+%       \toc command and instead by default insert the ToC after the
+%       coverpage. Which works OK, but also hurts a bit and makes a bit
+%       of a mess.
+%
+write_coverpage(S,N,Fs,Fs_):-
+        write_coverpage(S,0,N,Fs,Fs_).
+
+write_coverpage(_S,M,M,Fs,Fs):-
+        !.
+write_coverpage(S,N,M,[F|Fs],Bind):-
+        writeln(S,F)
+        ,succ(N,N_)
+        ,write_coverpage(S,N_,M,Fs,Bind).
+
+
+%!      format_lines(+Lines,+Page_Lines,-Formatted,-Data) is det.
 %
 %       Formats a list of text Lines for a text-based rulebook.
 %
@@ -74,48 +123,61 @@ layout_rulebook(IP,N,OP):-
 %       Formatted is the lines of text in Lines formatted with a border
 %       and a header and footer.
 %
-format_lines(Ls,N,Fs):-
+%       Data is a list [P,N,M,W,Cs,Ts] where:
+%       * P is the page number of the last numbered page written to the
+%       rulebook.
+%       * N is the line number of the last line printed in the last page
+%       of the rulebook.
+%       * W is the width of pages written to the rulebook
+%       * Cs is a list of compounds c(Ti,I) where T is a theorem type
+%       and I is the count of that kind of theorem typeset in the
+%       rulebook.
+%       * Ts is a list of key-value pairs R-G where each key, R, is the
+%       title of a document part (chapter, section, etc) and each value,
+%       G, is the page in which the document part with that title was
+%       typeset.
+%
+format_lines(Ls,N,Fs,[P,Ni,W,Cs,Ts]):-
         text_width(Ls,W)
         % One line of header and two lines of footer
         % Plus off-by-one offset
         ,N_ is N - 2
-        ,format_lines(Ls,1,1,N_,W,[],[],Fs).
+        ,format_lines(Ls,[1,1,N_,W,[],[]],[P,Ni,_M,W,Cs,Ts],[],Fs).
 
 
-%!      format_lines(+Text,+Pages,+Lines,+Max,+Counts,+Acc,-Formatted)
-%!      is det.
+%!      format_lines(+Text,+Data,-Data_Bind,+Acc,-Formatted) is det.
 %
 %       Business end of format_lines/2.
 %
-%       Pages: current pages count.
+%       Data is a list [Pages,Lines,Max,Width,Counts,ToC] where:
+%       * Pages: current pages count.
+%       * Lines: current line count.
+%       * Max: number of lines per page.
+%       * Width: page width
+%       * Counts: list of theorem counts.
+%       * Toc: table of contents data.
 %
-%       Lines: current line count.
-%
-%       Max: number of lines per page.
-%
-%       Counts: list of theorem counts.
-%
-format_lines([],P,_N,_M,W,_Cs,Acc,Fs):-
+format_lines([],[P,N,M,W,Cs,Ts],[P,N,M,W,Cs,Ts],Acc,Fs):-
 % Format the last line in the entire text.
         format_line(nil,last(P),W,Acc,Acc_)
         ,reverse(Acc_,Fs)
         ,!.
-format_lines([L|Ls],P,M,M,W,Cs,Acc,Bind):-
+format_lines([L|Ls],[P,M,M,W,Cs,Ts],Ds_Bind,Acc,Bind):-
 % Format the last line in the current page.
         !
         ,format_line(nil,last(P),W,Acc,Acc_)
         ,succ(P,P_)
-        ,format_lines([L|Ls],P_,1,M,W,Cs,Acc_,Bind).
-format_lines([L|Ls],P,N,M,W,Cs,Acc,Bind):-
+        ,format_lines([L|Ls],[P_,1,M,W,Cs,Ts],Ds_Bind,Acc_,Bind).
+format_lines([L|Ls],[P,N,M,W,Cs,Ts],Ds_Bind,Acc,Bind):-
 % Execute a formatting command.
-        format_command(L,Ls,[P,N,M,W,Cs],Acc,Acc_,Ls_,[P_,N_,M_,W_,Cs_])
+        format_command(L,Ls,[P,N,M,W,Cs,Ts],Acc,Acc_,Ls_,[P_,N_,M_,W_,Cs_,Ts_])
         ,!
-        ,format_lines(Ls_,P_,N_,M_,W_,Cs_,Acc_,Bind).
-format_lines([L|Ls],P,N,M,W,Cs,Acc,Bind):-
+        ,format_lines(Ls_,[P_,N_,M_,W_,Cs_,Ts_],Ds_Bind,Acc_,Bind).
+format_lines([L|Ls],[P,N,M,W,Cs,Ts],Ds_Bind,Acc,Bind):-
 % Keep formatting lines
         format_line(L,N,W,Acc,Acc_)
         ,succ(N,N_)
-        ,format_lines(Ls,P,N_,M,W,Cs,Acc_,Bind).
+        ,format_lines(Ls,[P,N_,M,W,Cs,Ts],Ds_Bind,Acc_,Bind).
 
 
 %!      format_line(+Line,+Lnum,+Width,+Acc,-New) is det.
@@ -189,10 +251,11 @@ format_line(L,_N,W,Acc,[F|Acc]):-
 %
 %       Lines is the list of lines in the input text after the Command.
 %
-%       Counts is a list [P,N,M,W] where each element is a number and P
-%       is the current Page count, Lines is the current line count for
-%       the current page, M is the maximum number of lines per page and
-%       W is the maximum width of text in a page.
+%       Counts is a list [P,N,M,W,Cs,Ts] where each element P, N, M, W
+%       is a number, P is the current Page count, Lines is the
+%       current line count for the current page, M is the maximum number
+%       of lines per page and W is the maximum width of text in a page,
+%       and Cs is the list of counts of theorems and Ts the ToC data.
 %
 %       Acc is the accumulator of processsed lines.
 %
@@ -234,12 +297,12 @@ format_line(L,_N,W,Acc,[F|Acc]):-
 %       \\subsubsection{T} and \\paragraph{T} used to style document
 %       parts.
 %
-format_command(C,Ls,[P,_N,M,W,Cs],Acc,[CS|Acc],Ls,[P_,1,M,W,Cs]):-
+format_command(C,Ls,[P,_N,M,W,Cs,Ts],Acc,[CS|Acc],Ls,[P_,1,M,W,Cs,Ts]):-
         atom_concat('\\charsheet',T,C)
         ,sub_atom(T,1,_A,1,Class)
         ,format_charsheet(Class,CS)
         ,succ(P,P_).
-format_command(C,Ls,[P,N,M,W,Cs],Acc,Acc_,Ls_,[P,N_,M,W,Cs]):-
+format_command(C,Ls,[P,N,M,W,Cs,Ts],Acc,Acc_,Ls_,[P,N_,M,W,Cs,Ts]):-
         atom_concat('\\begin{box}',T,C)
         ,sub_atom(T,1,_A,1,Title)
         % Offset by box borders
@@ -247,28 +310,28 @@ format_command(C,Ls,[P,N,M,W,Cs],Acc,Acc_,Ls_,[P,N_,M,W,Cs]):-
         ,box_lines(1,['\\begin{box}',Title|Ls],W_,Acc,Acc_,Ls_,K)
         % Offset by box lines, header and footer.
         ,N_ is N + K.
-format_command(C,Ls,[P,N,M,W,Cs],Acc,Acc,Rs,[P,N,M,W,Cs_]):-
+format_command(C,Ls,[P,N,M,W,Cs,Ts],Acc,Acc,Rs,[P,N,M,W,Cs_,Ts]):-
 % Format theorem.
         theorem_lines([C|Ls],Cs,W,Fs,Cs_,Ls_,_K)
         ,append(Fs,Ls_,Rs).
-format_command('\\begin{coverpage}',Ls,[P,N,M,W,Cs],Acc,Acc_,Ls_,[P,N,M,W,Cs]):-
+format_command('\\begin{coverpage}',Ls,[P,N,M,W,Cs,Ts],Acc,Acc_,Ls_,[P,N,M,W,Cs,Ts]):-
         skip_lines('\\end{coverpage}',Ls,1,Acc,Acc_,Ls_,_).
-format_command('\\begin{toc}',Ls,[P,N,M,W,Cs],Acc,Acc_,Ls_,[P,N,M,W,Cs]):-
+format_command('\\begin{toc}',Ls,[P,N,M,W,Cs,Ts],Acc,Acc_,Ls_,[P,N,M,W,Cs,Ts]):-
         toc_lines(['\\begin{toc}'|Ls],[1,N,M,W],Acc,Acc_,Ls_).
-format_command('\\newpage',Ls,[P,N,M,W,Cs],Acc,Acc,Ls_,[P,N,M,W,Cs]):-
+format_command('\\newpage',Ls,[P,N,M,W,Cs,Ts],Acc,Acc,Ls_,[P,N,M,W,Cs,Ts]):-
         M_ is M - N
         ,findall(''
                ,between(1,M_,_K)
                ,Ss)
         ,append(Ss,Ls,Ls_).
-format_command('\\begin{nolayout}',Ls,[P,_N,M,W,Cs],Acc,Acc_,Ls_,[P_,1,M,W,Cs]):-
+format_command('\\begin{nolayout}',Ls,[P,_N,M,W,Cs,Ts],Acc,Acc_,Ls_,[P_,1,M,W,Cs,Ts]):-
         skip_lines('\\end{nolayout}',Ls,1,Acc,Acc_,Ls_,_)
         ,succ(P,P_).
-format_command(C,Ls,[P,N,M,W,Cs],Acc,Acc,Ls,[P,N,M,W,Cs]):-
+format_command(C,Ls,[P,N,M,W,Cs,Ts],Acc,Acc,Ls,[P,N,M,W,Cs,Ts]):-
         atom_concat('%',_T,C).
-format_command('/*',Ls,[P,N,M,W,Cs],Acc,Acc,Ls_,[P,N,M,W,Cs]):-
+format_command('/*',Ls,[P,N,M,W,Cs,Ts],Acc,Acc,Ls_,[P,N,M,W,Cs,Ts]):-
         skip_lines('*/',Ls,0,[],_,Ls_,_).
-format_command(C,Ls,[P,N,M,W,Cs],Acc,Acc,Rs,[P,N,M,W,Cs]):-
+format_command(C,Ls,[P,N,M,W,Cs,ToCs],Acc,Acc,Rs,[P,N,M,W,Cs,ToCs]):-
         atom_concat('\\begin{table}',S,C)
         ,sub_atom(S,1,_A,1,Space)
         ,atom_number(Space,Sp)
@@ -281,18 +344,21 @@ format_command(C,Ls,[P,N,M,W,Cs],Acc,Acc,Rs,[P,N,M,W,Cs]):-
                  )
                 ,Rows)
         ,append(Rows,Ls_,Rs).
-format_command(C,Ls,[P,N,M,W,Cs],Acc,Acc_,Ls,[P,N_,M,W,Cs_]):-
+format_command(C,Ls,[P,N,M,W,Cs,Ts],Acc,Acc_,Ls,[P,N_,M,W,Cs_,Ts]):-
 % Label and caption two-in-one.
         label_lines(C,Cs,F,Cs_)
         ,format_line(F,N,W,Acc,Acc_)
         ,succ(N,N_).
-format_command(C,Ls,[P,N,M,W,Cs],Acc,Acc,Ls_,[P,N,M,W,Cs]):-
+format_command(C,Ls,[P,N,M,W,Cs,Ts],Acc,Acc,Ls_,[P,N,M,W,Cs,[T_-P|Ts]]):-
 % Document parts styling
 % Keep the forall-write call because it outputs a nice layout
 % very helpful for debugging.
         style_part(C,W,Ps)
         %,forall(member(P_,Ps)
         %       ,writeln(P_))
+        ,Ps = [T|_U]
+        ,split_string(T,' ',' ',Ss)
+        ,atomic_list_concat(Ss,' ',T_)
         ,append(Ps,Ls,Ls_).
 
 
