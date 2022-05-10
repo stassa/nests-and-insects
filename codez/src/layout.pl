@@ -8,6 +8,7 @@
 :-use_module(src(tables)).
 :-use_module(src(theorem)).
 :-use_module(src(label)).
+:-use_module(src(styles)).
 :-use_module(src/charsheet).
 
 /** <module> Layout and formatting for text-based rulebooks.
@@ -229,6 +230,10 @@ format_line(L,_N,W,Acc,[F|Acc]):-
 %       * \\begin{table}: beginning of the rows of a table, including a
 %       caption line. Closing tag: \\end{table}.
 %
+%       * \\chapter{T}, \\section{T}, \\subsection{T},
+%       \\subsubsection{T} and \\paragraph{T} used to style document
+%       parts.
+%
 format_command(C,Ls,[P,_N,M,W,Cs],Acc,[CS|Acc],Ls,[P_,1,M,W,Cs]):-
         atom_concat('\\charsheet',T,C)
         ,sub_atom(T,1,_A,1,Class)
@@ -281,6 +286,14 @@ format_command(C,Ls,[P,N,M,W,Cs],Acc,Acc_,Ls,[P,N_,M,W,Cs_]):-
         label_lines(C,Cs,F,Cs_)
         ,format_line(F,N,W,Acc,Acc_)
         ,succ(N,N_).
+format_command(C,Ls,[P,N,M,W,Cs],Acc,Acc,Ls_,[P,N,M,W,Cs]):-
+% Document parts styling
+% Keep the forall-write call because it outputs a nice layout
+% very helpful for debugging.
+        style_part(C,W,Ps)
+        %,forall(member(P_,Ps)
+        %       ,writeln(P_))
+        ,append(Ps,Ls,Ls_).
 
 
 %!      skip_lines(+End,+Lines,+Count,+Acc,-New,-Newlines,-NewCount)
