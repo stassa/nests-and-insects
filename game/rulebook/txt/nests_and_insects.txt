@@ -209,8 +209,8 @@
 ║ │ text that follows this Overview Section.                                              │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-║ The Setting                                                                               ║▓
-║ -----------                                                                               ║▓
+║                                        The Setting                                        ║▓
+║                                        -----------                                        ║▓
 ║                                                                                           ║▓
 ║ Nests & Insects is a tabletop roleplaying game (TTRPG) for 2 to 7 players. One player     ║▓
 ║ assumes the role of the Game Queen and describes the game world to the other players. The ║▓
@@ -232,8 +232,8 @@
 ║ fungi, that can be consumed to provide not only sustenance but also healing, enhanced     ║▓
 ║ physical and mental abilities and other benefits.                                         ║▓
 ║                                                                                           ║▓
-║ The Game                                                                                  ║▓
-║ --------                                                                                  ║▓
+║                                         The Game                                          ║▓
+║                                         --------                                          ║▓
 ║                                                                                           ║▓
 ║ Nests & Insects is a Roguelike TTRPG. It is "Roguelike" because it is inspired by         ║▓
 ║ computer roleplaying games (CRPGs) of the Roguelike genre, like Nethack, Angband, Moria,  ║▓
@@ -271,8 +271,8 @@
 ║ Queen wishes, she can create hand-crafted Rooms, Levels, enemies, items, etc, and include ║▓
 ║ them in the game; but that is not strictly necessary.                                     ║▓
 ║                                                                                           ║▓
-║ The System                                                                                ║▓
-║ ----------                                                                                ║▓
+║                                        The System                                         ║▓
+║                                        ----------                                         ║▓
 ║                                                                                           ║▓
 ║ Nests & Insects' roleplaying system is called Fuzzy d100 (fd100). It is a "percentile"    ║▓
 ║ system where characters are defined by Features rated on a percentile scale from 1 to     ║▓
@@ -400,8 +400,8 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║                                    Character                                              ║▓
-║                                    =========                                              ║▓
+║                                         Character                                         ║▓
+║                                         =========                                         ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -502,7 +502,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                      Character Sheet                                      ║▓
-║                                      ===============                                      ║▓
+║                                      ---------------                                      ║▓
 ║                                                                                           ║▓
 ║ In Nests & Insects characters are described by percentile-rated Features, listed in a     ║▓
 ║ character sheet.                                                                          ║▓
@@ -951,7 +951,7 @@
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║                                     Character Classes                                     ║▓
-║                                     =================                                     ║▓
+║                                     -----------------                                     ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -1051,7 +1051,7 @@
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║                                           Ants                                            ║▓
-║                                           ====                                            ║▓
+║                                           ----                                            ║▓
 ║                                                                                           ║▓
 ║ Pronouns: they/them/theirs                                                                ║▓
 ║ --------------------------                                                                ║▓
@@ -1151,7 +1151,7 @@
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║                                          Beetle                                           ║▓
-║                                          ======                                           ║▓
+║                                          ------                                           ║▓
 ║                                                                                           ║▓
 ║ Pronouns: he/him/his                                                                      ║▓
 ║ --------------------                                                                      ║▓
@@ -1251,7 +1251,7 @@
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║                                          Ladybug                                          ║▓
-║                                          =======                                          ║▓
+║                                          -------                                          ║▓
 ║                                                                                           ║▓
 ║ Pronouns: she/her/hers                                                                    ║▓
 ║ ----------------------                                                                    ║▓
@@ -1351,7 +1351,7 @@
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║                                         Scorpion                                          ║▓
-║                                         ========                                          ║▓
+║                                         --------                                          ║▓
 ║                                                                                           ║▓
 ║ Pronouns: he/him/his                                                                      ║▓
 ║ --------------------                                                                      ║▓
@@ -1451,7 +1451,7 @@
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║                                          Spider                                           ║▓
-║                                          ======                                           ║▓
+║                                          ------                                           ║▓
 ║                                                                                           ║▓
 ║ Pronouns: she/her/hers.                                                                   ║▓
 ║ -----------------------                                                                   ║▓
@@ -1551,7 +1551,7 @@
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║                                           Wasp                                            ║▓
-║                                           ====                                            ║▓
+║                                           ----                                            ║▓
 ║                                                                                           ║▓
 ║ Pronouns: me/ ME/ MINE!                                                                   ║▓
 ║ -----------------------                                                                   ║▓
@@ -1601,7 +1601,7 @@
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║                                    Character Features                                     ║▓
-║                                    ==================                                     ║▓
+║                                    ------------------                                     ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -1651,7 +1651,7 @@
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║                                      Inventory Items                                      ║▓
-║                                      ===============                                      ║▓
+║                                      ---------------                                      ║▓
 ║                                                                                           ║▓
 ║ Inventory Items are characters' Featues representing consumable resources carried by a    ║▓
 ║ character and that the character must use in order to take certain Actions, or to pay     ║▓
@@ -1953,8 +1953,8 @@
 ║                                        Fuzzy d100                                         ║▓
 ║                                        ==========                                         ║▓
 ║                                                                                           ║▓
-║ Decile Dice                                                                               ║▓
-║ -----------                                                                               ║▓
+║                                        Decile Dice                                        ║▓
+║                                        -----------                                        ║▓
 ║                                                                                           ║▓
 ║ The die used to roll for action resolution in fd100 is the "d100". This is nominally a    ║▓
 ║ hundred-sided die, but, in practice, a composite die comprised of two, ten-sided dice     ║▓
@@ -2100,8 +2100,8 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ Six Degrees of Success and Failure                                                        ║▓
-║ ----------------------------------                                                        ║▓
+║                            Six Degrees of Success and Failure                             ║▓
+║                            ----------------------------------                             ║▓
 ║                                                                                           ║▓
 ║ The "Fuzzy" in the fd100 name alludes to the "fuzzy" action resolution that allows for    ║▓
 ║ six Degrees of Success and Failure (DoS) as the outcome of an action. Those are listed in ║▓
@@ -2150,8 +2150,8 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ Percentile Features                                                                       ║▓
-║ -------------------                                                                       ║▓
+║                                    Percentile Features                                    ║▓
+║                                    -------------------                                    ║▓
 ║                                                                                           ║▓
 ║ ┌[Rule Summaries]───────────────────────────────────────────────────────────────────────┐ ║▓
 ║ │ Throughout this Chapter you will find text boxes summarising definitions and rules.   │ ║▓
@@ -2201,7 +2201,7 @@
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║                                      Taking Actions                                       ║▓
-║                                      ==============                                       ║▓
+║                                      --------------                                       ║▓
 ║                                                                                           ║▓
 ║ Action resolution steps                                                                   ║▓
 ║ -----------------------                                                                   ║▓
@@ -2601,7 +2601,7 @@
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║                                     Simplified Rolls                                      ║▓
-║                                     ================                                      ║▓
+║                                     ----------------                                      ║▓
 ║                                                                                           ║▓
 ║ Boolean Roll                                                                              ║▓
 ║ ------------                                                                              ║▓
@@ -2700,8 +2700,8 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║                                       Minigames                                           ║▓
-║                                       =========                                           ║▓
+║                                         Minigames                                         ║▓
+║                                         ---------                                         ║▓
 ║                                                                                           ║▓
 ║ Nests & Insects is organised around four "minigames". A minigame is a set of special      ║▓
 ║ rules for a special game situation that Nests & Insects wants to model with more detail   ║▓
@@ -2801,7 +2801,7 @@
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║                                          Combat                                           ║▓
-║                                          ======                                           ║▓
+║                                          ------                                           ║▓
 ║                                                                                           ║▓
 ║ Combat Summary                                                                            ║▓
 ║ --------------                                                                            ║▓
@@ -3450,8 +3450,8 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║                               Survival and Exploration                                    ║▓
-║                               ========================                                    ║▓
+║                                 Survival and Exploration                                  ║▓
+║                                 ------------------------                                  ║▓
 ║                                                                                           ║▓
 ║ The Survival and Exploration minigame defines rules for the procedural generation of a    ║▓
 ║ Nest's environment. During the Survival and Exploration minigame, characters explore the  ║▓
@@ -3801,7 +3801,7 @@
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║                                          Enemies                                          ║▓
-║                                          =======                                          ║▓
+║                                          -------                                          ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓

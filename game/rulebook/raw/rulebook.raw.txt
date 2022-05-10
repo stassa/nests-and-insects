@@ -165,8 +165,7 @@ Setting ........................................................................
 
 \end{toc}
 
-                                        Overview
-                                        ========
+\chapter{Overview}
 \begin*{note_reader}
 This Section is a short introduction to the setting, the game and the system of Nests
 & Insects. It is designed to give you a general idea of the game. It is not designed
@@ -174,8 +173,7 @@ to give you everything you need to play the game. That information is found in t
 text that follows this Overview Section.
 \end{note_reader}
 
-The Setting
------------
+\section{The Setting}
 
 Nests & Insects is a tabletop roleplaying game (TTRPG) for 2 to 7 players. One player
 assumes the role of the Game Queen and describes the game world to the other players. The
@@ -197,8 +195,7 @@ starving to death. While foraging, characters may find food items, such as necta
 fungi, that can be consumed to provide not only sustenance but also healing, enhanced
 physical and mental abilities and other benefits.
 
-The Game
---------
+\section{The Game}
 
 Nests & Insects is a Roguelike TTRPG. It is "Roguelike" because it is inspired by
 computer roleplaying games (CRPGs) of the Roguelike genre, like Nethack, Angband, Moria,
@@ -233,8 +230,7 @@ Everything encountered by characters during a Job is procedurally generated. If 
 Queen wishes, she can create hand-crafted Rooms, Levels, enemies, items, etc, and include
 them in the game; but that is not strictly necessary.
 
-The System
-----------
+\section{The System}
 
 Nests & Insects' roleplaying system is called Fuzzy d100 (fd100). It is a "percentile"
 system where characters are defined by Features rated on a percentile scale from 1 to
@@ -276,8 +272,7 @@ Critical Failure  &    Failing to Beat a Negative Modifier after a Complete Fail
 \end{table}
 \label{Six Degrees of Success.}[table]
 
-Decile Dice
------------
+\subsection{Decile Dice}
 
 Some actions require quantification of their results. To quantify the results of actions
 on the same percentile scale as characters' Features, Nests & Insects uses "decile dice":
@@ -322,8 +317,7 @@ d120      &  0 to 119 &    d12      &  0,1,...,11 &  d10     &  0,1,...,9
 \label{Decile dice, used for quantification of percentile effects. d100 is also a}[table]
 decile die. The d20 does not need a "tens" die and is rolled on its own.
 
-Minigames
----------
+\subsection{Minigames}
 
 Nests & Insects is organised around "minigames" that define special rules for common
 in-game tasks. There are four minigames: Combat; Survival and Exploration; Hunting and
@@ -353,15 +347,13 @@ Critical Failure &        Both Attacks Miss
 \label{Combat minigame outcomes.}[table]
 \newpage
 
-                                   Character
-                                   =========
+\chapter{Character}
 
 \newpage
 \charsheet[template]
 
 
-                                     Character Sheet
-                                     ===============
+\section{Character Sheet}
 
 In Nests & Insects characters are described by percentile-rated Features, listed in a
 character sheet. 
@@ -387,8 +379,7 @@ Abilities   &   Specific Abilities box, Common Abilities box, Effects box, Inven
 
 The following Sections describe each area and sub-area of the character sheet.
 
-Class Header
-------------
+\subsection{Class Header}
 
 The first area in a character sheet is its Class Header (Figure 1), listing the name of
 the game and the name of a character's Class.
@@ -399,8 +390,7 @@ the game and the name of a character's Class.
 \label{Character sheet template; class header. In a completed sheet "TEMPLATE" is}[figure]
 replaced by the name of the character's class, e.g. Wasp, Spider, Ants, etc.
 
-Attributes Area
----------------
+\subsection{Attributes Area}
 
 Under the Class Header is the Attributes Area (Figure 2), listing Class Attributes.
 Attributes are Features that represent innate abilities of characters in a Class.
@@ -452,8 +442,7 @@ Figure 4 shows the Speed tickbox in Figure 3 ticked with the ✓ character (U+27
 \label{Ticked XP tickbox for Speed.}[figure]
 \newpage
 
-Combat Stats Area
------------------
+\subsection{Combat Stats Area}
 
 The Combat Stats area starts with the Combat Stats header (Figure 5).
 
@@ -464,8 +453,7 @@ The Combat Stats area starts with the Combat Stats header (Figure 5).
 The Combat Stats area lists Features used in the Combat minigame. It has 3 sub-areas: the
 Condition box, the Disposition Track and the Attack boxes.
 
-Condition box
--------------
+\subsection{Condition box}
 
 The Condition box (Figure 6) lists a character's Initiative, Threat Rate, Survival Rate
 and Wounds.
@@ -491,8 +479,7 @@ below.
 * Wounds count the injury caused by attacks. If the count of Wounds reaches its Maximum,
   the character is killed. The default number of Wounds is 3.
 
-Disposition Track
------------------
+\subsection{Disposition Track}
 
 The Disposition Track (Figure 7) follows a character's Disposition, a representation of
 both position and morale in Combat.
@@ -522,8 +509,7 @@ There are five Dispositions in the Disposition Track, discussed briefly below.
 
 * Charging: the character is impetuous and is Charging ahead Attacking in full force.
 
-Attack boxes
-------------
+\subsection{Attack boxes}
 
 The Attack boxes (Figure 8) list the details of a character's two Attacks: her Base
 Attack and Special Attack. Each character class has its own Base and Special Attacks.
@@ -543,8 +529,7 @@ Attack and Special Attack. Each character class has its own Base and Special Att
 \label{Attack boxes}[figure]
 \newpage
 
-Survival Area
--------------
+\subsection{Survival Area}
 
 The Survival Area begins with the Survival header (Figure 9).
 
@@ -555,8 +540,7 @@ The Survival Area begins with the Survival header (Figure 9).
 The Survival Area has two sub-Areas: the Food box, used in the Survival minigame; and the
 Luck box.
 
-Food box
---------
+\subsection{Food box}
 
 The Food box (Figure 10) lists the character's Hunger rating and has a radio-button for
 the Starving Effect. Starving is ticked when Hunger reaches 100%. While Starving, a
@@ -568,8 +552,7 @@ character takes a penalty in the DoS of all minigame Actions.
 ───────────────────────────
 \label{Food box.}[figure]
 
-Luck box
---------
+\subsection{Luck box}
 
 The Luck box (Figure 11) lists the character's Luck. Luck is used to avoid the worst
 outcome of Actions, Attacks and events in the game. The current Luck rating is marked by
@@ -587,8 +570,7 @@ known as "rolling a double". When a double is rolled, the Luck marker is moved t
 rating that matches the double.
 \newpage
 
-Abilities Area
---------------
+\subsection{Abilities Area}
 
 The Abilities Area begins with the Abilities header (Figure 12).
 
@@ -599,8 +581,7 @@ The Abilities Area begins with the Abilities header (Figure 12).
 The Abilities Area has four sub-Areas: the Specific Abilities box, the Common Abilities
 box, the Effects box and the Inventory box.
 
-Specific Abilities box
-----------------------
+\subsection{Specific Abilities box}
 
 The Specific Abilities box (Figure 13) lists Abilities that are particular to a Species
 (hence, "Specific"). Nests & Insects classes model individuals of a species hence each
@@ -640,8 +621,7 @@ Swarming, Venomous, or Web Weaving. These are briefly described below.
 * Web Weaving: the character can weave webs. Webs can be used to set traps or secure an
   area. Spider has Web Weaving.
 
-Common Abilities box
---------------------
+\subsection{Common Abilities box}
 
 The Common Abilities box (Figure 14) lists Abilities common to all character classes.
 
@@ -673,8 +653,7 @@ Sneaking      &        Move and act with stealth
 \end{table}
 \label{Common Abilities with brief description.}[table]
 
-Effects box
------------
+\subsection{Effects box}
 
 The Effects box (Figure 15) lists ten Effects that a character can be subject to.
 
@@ -710,8 +689,7 @@ Stunned    &    ...loses her next Turn in Combat
 \end{table}
 \label{Effects, with brief description of how a character is affected.}[table]
 
-Inventory box
--------------
+\subsection{Inventory box}
 
 The Inventory box (Figure 16) lists a character's possessions such as Food items, slaved
 Prey, and other items.
@@ -733,14 +711,12 @@ Characters can only carry as many items as there are lines in the Inventory box:
 5 lines, for 5 items.
 \newpage
 
-                                    Character Classes
-                                    =================
+\section{Character Classes}
 
 \newpage
 \charsheet[ants]
 
-                                          Ants
-                                          ====
+\section{Ants}
 
 Pronouns: they/them/theirs
 --------------------------
@@ -756,8 +732,7 @@ TODO
 \newpage
 \charsheet[beetle]
 
-                                         Beetle
-                                         ======
+\section{Beetle}
 
 Pronouns: he/him/his
 --------------------
@@ -804,8 +779,7 @@ ______________
 
 \charsheet[ladybug]
 
-                                         Ladybug
-                                         =======
+\section{Ladybug}
 
 Pronouns: she/her/hers
 ----------------------
@@ -821,8 +795,7 @@ TODO.
 \newpage
 \charsheet[scorpion]
 
-                                        Scorpion
-                                        ========
+\section{Scorpion}
 
 Pronouns: he/him/his
 --------------------
@@ -855,8 +828,7 @@ support.
 \newpage
 \charsheet[spider]
 
-                                         Spider
-                                         ======
+\section{Spider}
 
 Pronouns: she/her/hers.
 -----------------------
@@ -888,8 +860,7 @@ healer.
 \newpage
 \charsheet[wasp]
 
-                                          Wasp
-                                          ====
+\section{Wasp}
 
 Pronouns: me/ ME/ MINE!
 -----------------------
@@ -923,13 +894,11 @@ feared by its enemies, and equipped with good survival skills.
 
 \newpage
 
-                                   Character Features
-                                   ==================
+\section{Character Features}
 
 \newpage
 
-                                     Inventory Items
-                                     ===============
+\section{Inventory Items}
 
 Inventory Items are characters' Featues representing consumable resources carried by a
 character and that the character must use in order to take certain Actions, or to pay
@@ -947,8 +916,7 @@ off Hunger or grant special abilities.
 
 \newpage
 
-Item Types
-----------
+\subsection{Item Types}
 
 Inventory Items can belong to one of six types. An Item's type is recorded next to its
 name on a character's sheet, in parentheses. The six Item types are listed in the Item
@@ -994,8 +962,7 @@ Brody changes the name of the Item to indicate it's spoiled. The Item is now cal
 
 \newpage
 
-Acquiring Items
----------------
+\subsection{Acquiring Items}
 
 Characters acquire Inventory Items in one of two ways:
 
@@ -1013,8 +980,7 @@ description of Quantification Rolls.
 
 \newpage
 
-Carrying Items
---------------
+\subsection{Carrying Items}
 
 Inventory Items are carried about the character's person and kept track of in the
 character's Inventory. A character can only carry as many Items as there are entry
@@ -1054,8 +1020,7 @@ word "Cursed".
 
 \newpage
 
-Consuming Items
----------------
+\subsection{Consuming Items}
 
 Inventory Items are "consumed" and may become "depleted" or "exhausted" as a result of
 their consumption. An Inventory Item is depleted when its rating is reduced; it is
@@ -1092,8 +1057,7 @@ characters.
 
 \newpage
 
-                                         System
-                                         ======
+\chapter{System}
 
 This chapter introduces the roleplaying system used in Nests & Insects. For ease of
 reference, the system is called Fuzzy d100, shortened to fd100.
@@ -1134,8 +1098,7 @@ Intent and the Degree of Success of the action.
                                        Fuzzy d100
                                        ==========
 
-Decile Dice
------------
+\section{Decile Dice}
 
 The die used to roll for action resolution in fd100 is the "d100". This is nominally a
 hundred-sided die, but, in practice, a composite die comprised of two, ten-sided dice
@@ -1178,8 +1141,7 @@ d120      &  0 to 119 &    d12      &  0,1,...,11 &  d10     &  0,1,...,9
 decile die, and the only one used for Action resolution. The d20 does not need a "tens"
 die and is rolled on its own.
 
-Implementing Decile Dice
-------------------------
+\subsection{Implementing Decile Dice}
 
 While the d4, d6, d8, d12, and d20 are commonly used in TTRPGs and so are easy to find,
 they typically have faces numbered 1, 2, ..., n (where "n" is the number of faces of the
@@ -1269,8 +1231,7 @@ that it makes a perfect excuse to collect even more weird gaming dice.
 
 \newpage
 
-Six Degrees of Success and Failure
-----------------------------------
+\section{Six Degrees of Success and Failure}
 
 The "Fuzzy" in the fd100 name alludes to the "fuzzy" action resolution that allows for
 six Degrees of Success and Failure (DoS) as the outcome of an action. Those are listed in
@@ -1304,8 +1265,7 @@ Modifiers and DoS Shifts are described in the "Modification" Section.
 
 \newpage
 
-Percentile Features
--------------------
+\section{Percentile Features}
 
 \begin{box}[Rule Summaries]
 Throughout this Chapter you will find text boxes summarising definitions and rules.
@@ -1351,11 +1311,9 @@ Conditions, Effects, etc. The "Character Sheet" chapter briefly describes the di
 categories of character Features. Complete descriptions of the Features of characters and
 enemies, and their use in the game, are given in the Chapters "Character", and "Setting".
 
-                                     Taking Actions
-                                     ==============
+\section{Taking Actions}
 
-Action resolution steps
------------------------
+\subsection{Action resolution steps}
 
 Players' characters can take actions to achieve their goals within the context of
 minigames, and without. Actions are resolved in up to eight steps, summarised below and
@@ -1389,8 +1347,7 @@ them by heart.
 
 \newpage
 
-Describing Intent
------------------
+\subsection{Describing Intent}
 
 \begin{rules_summary}[Intent]
 An Action begins with a description of the character's Intent. The description must
@@ -1435,8 +1392,7 @@ used as a static modifier, or as a dramatic modifier, or ignored.
 
 \newpage
 
-Effort and Resistance
----------------------
+\subsection{Effort and Resistance}
 
 Effort and Resistance are the two target numbers for the Qualification Roll that
 determines the initial DoS of an Action.
@@ -1482,8 +1438,7 @@ is 68% which is already pretty good, but Cody wants to maximise the chance to in
 the Termites. It's up to the GQ whether to accept this or not. If the GQ decides that
 Signalling is the appropriate Feature to use as Effort, so it is.
 
-Qualification
--------------
+\subsection{Qualification}
 
 \begin{rules_summary}[Qualification Roll]
 To make a Qualification Roll means to roll a d100 and compare it to Effort and
@@ -1527,8 +1482,7 @@ following.
 
 \newpage
 
-Modification
-------------
+\subsection{Modification}
 
 \begin{rules_summary}[Static and Dramatic Modifiers]
 Modifiers change the DoS of an Action. There are two types of modifiers: static and
@@ -1573,8 +1527,7 @@ Beats Modifier  &       Negative     &       No change
 
 \newpage
 
-Choosing modifiers
-------------------
+\subsection{Choosing modifiers}
 
 \begin{rules_summary}[The Rule of Two]
 At most two dramatic modifiers may be applied to a single Action: either a) two
@@ -1602,8 +1555,7 @@ thumb, the GQ should grant no more than two or three dramatic modifiers per game
 
 \newpage
 
-Quantification
---------------
+\subsection{Quantification}
 
 \begin{rules_summary}[Quantification Roll]
 To make a Quantification Roll means to roll a decile die and change the rating of a
@@ -1644,8 +1596,7 @@ depend on the DoS of the Action.
 
 \newpage
 
-Resolution
-----------
+\subsection{Resolution}
 
 \begin{rules_summary}[Outcome description]
 The outcome of Actions is described by the GQ.
@@ -1663,11 +1614,9 @@ must ensure that the game is worthwhile for the entire group.
 
 \newpage
 
-                                    Simplified Rolls
-                                    ================
+\section{Simplified Rolls}
 
-Boolean Roll
-------------
+\subsection{Boolean Roll}
 
 \begin{rules_summary}[Boolean Roll]
 To make a Boolean Roll describe the character's Intent and choose Effort as for a
@@ -1710,8 +1659,7 @@ Unfortunately, the alternative "Crisp Roll" was not thematically appropriate.
 \end{note}
 
 
-Contested Boolean Roll
-----------------------
+\subsection{Contested Boolean Roll}
 
 \begin{rules_summary}[Contested Boolean Roll]
 To make a Contested Boolean Roll describe the character's Intent and choose Effort
@@ -1756,8 +1704,7 @@ Qualification Roll or a simple Boolean Roll instead.
 
 \newpage
 
-                                      Minigames
-                                      =========
+\section{Minigames}
 
 Nests & Insects is organised around four "minigames". A minigame is a set of special
 rules for a special game situation that Nests & Insects wants to model with more detail
@@ -1779,8 +1726,7 @@ and Resting and Healing. Brief descriptions are listed below.
 
 \newpage
 
-Minigame Formulaic Actions
---------------------------
+\subsection{Minigame Formulaic Actions}
 
 Each minigame is characterised by a set of standard Actions that characters typically
 take during the circumstances modelled by the minigame. For example, during Combat,
@@ -1814,11 +1760,9 @@ Critical Failure  &    (Critical Failure outcome)
 
 \newpage
 
-                                         Combat
-                                         ======
+\section{Combat}
 
-Combat Summary
---------------
+\subsection{Combat Summary}
 
 Combat begins when the characters and a group of enemies attack one another. Combat is
 divided into Rounds, divided into Turns in which characters and enemies participating in
@@ -1846,8 +1790,7 @@ Combat ends when all Combatants on one side are either killed, or Retreating.
 
 \newpage
 
-Combat Steps
-------------
+\subsection{Combat Steps}
 
 The Combat minigame plays out in nine Steps, two of which repeat until Combat ends. The
 nine Combat Steps are summarised in Rules Summary 20, below, and discussed in detail in
@@ -1878,8 +1821,7 @@ the following Sections.
 
 \newpage
 
-Determine Combatants and Sides
-------------------------------
+\subsection{Determine Combatants and Sides}
 
 Combat begins when either the characters, or Nest creatures attack one another. 
 
@@ -1895,8 +1837,7 @@ All the creatures on the two Sides of Combat are Combatants for the duration of 
 
 \newpage
 
-Starting Disposition
---------------------
+\subsection{Starting Disposition}
 
 Before the start of the first Combat Round each player makes a Boolean Roll against their
 character's Initiative, and the GQ similarly makes a Boolean Roll against Initiative for
@@ -1913,8 +1854,7 @@ Failure                &    Recoiling
 
 \newpage
 
-Initiative Order
-----------------
+\subsection{Initiative Order}
 
 Before the start of the first Combat Round and after Starting Disposition is determined,
 the GQ decides the Initiative Order for all Combatants.
@@ -1939,8 +1879,7 @@ If there are four, roll a d4. And so on.
 
 \newpage
 
-Combat Rounds
--------------
+\subsection{Combat Rounds}
 
 Once Initiative Order is determined the first Round of Combat begins and Combatants take
 Actions in Turn, in order of Initiative.
@@ -1983,8 +1922,7 @@ takes the Turn after that.
 
 \newpage
 
-Attack Action
--------------
+\subsection{Attack Action}
 
 In her Turn, a Combatant can take one Attack Action targeting an enemy with her Base or
 Special Attack. The DoS of the Attack determines which Attack Hits or Misses.
@@ -2027,8 +1965,7 @@ _Targeting allies_ Spider's Base and Special Attacks have an Alternative Hit res
 can heal, or remove Bleeding from an Ally. Spider can target an ally with her Attack.
 \newpage
 
-Suppress Action
----------------
+\subsection{Suppress Action}
 
 In an enemy's Turn, a Combatant can take the following Suppress Actions:
 
@@ -2096,8 +2033,7 @@ Features of the acting character; Target Modifiers are Features of the target.
 */
 \newpage
 
-Support Action
---------------
+\subsection{Support Action}
 
 In an ally's Turn, a Combatant can take the following Support Actions.
 
@@ -2143,8 +2079,7 @@ Shake    &     Charms    &    Charmed   &    Passions
 \end{table}
 
 
-Resisting Effects
------------------
+\subsection{Resisting Effects}
 
 In any Turn, before taking another Action, a Combatant can take a Resistance Action to
 ignore a single Effect for the duration of the remaining Combat Round. 
@@ -2187,8 +2122,7 @@ Stunned     &  None (cannot resist!)
 
 \newpage
 
-Manoeuver Action
-----------------
+\subsection{Manoeuver Action}
 
 Manoeuver Actions provide a mechanism for players' characters and enemies controlled by
 the GQ to take improvised actions, outside of the formulaic Actions of the Combat
@@ -2233,8 +2167,7 @@ brains to protect their home.
 \end{box}
 \newpage
 
-Breaking from Combat
---------------------
+\subsection{Breaking from Combat}
 
 A Combatant can Break from (leave) Combat at any time, as a Manoeuver Action. This is the
 only Manoeuver Action that gets its own rule.
@@ -2244,8 +2177,7 @@ Initiative as Effort. If the Roll succeeds, the character or enemy is no longer 
 and can take Actions other than formulaic Combat Actions, as usual. If the Roll fails,
 the Combatant remains a Combatant. She is free to try again in her next Turn.
 
-Consuming Food in Combat
-------------------------
+\subsection{Consuming Food in Combat}
 
 There is no formulaic Combat Action that allows a Combatant to consume a Food item during
 Combat. War is no picnic! Combatants are also not allowed to consume Food as a Manoeuver!
@@ -2253,8 +2185,7 @@ Combat. War is no picnic! Combatants are also not allowed to consume Food as a M
 If a player or the GQ wishes a character or enemy to consume a Food Item, the Combatant
 must first Break from Combat.
 
-Joining Combat
---------------
+\subsection{Joining Combat}
 
 A creature who is not in Combat can always Join Combat. The creature may have Broken from
 Combat previously, or she may not have been in the same Room as her friends when Combat
@@ -2274,8 +2205,7 @@ allies arrive, they Join Combat as described above.
 
 \newpage
 
-Combat Ends
------------
+\subsection{Combat Ends}
 
 When Combat ends, all Combatants cease to be Combatants and the two Sides cease to
 exist for rules purposes.
@@ -2284,8 +2214,7 @@ Nothing else worthy of note happens at the end of Combat.
 
 \newpage
 
-                              Survival and Exploration
-                              ========================
+\section{Survival and Exploration}
 
 The Survival and Exploration minigame defines rules for the procedural generation of a
 Nest's environment. During the Survival and Exploration minigame, characters explore the
@@ -2299,8 +2228,7 @@ In Nests & Insects procedural generation is an abstraction: no floor plans or ma
 generated. Instead what is generated are the Features of game entities, including the
 spaces inside the Nests, the creatures that roam them, and items that populate them.
 
-How Procedural Generation Works
--------------------------------
+\subsection{How Procedural Generation Works}
 
 The core mechanic of procedural generation is "rolling on tables". No, that is not to be
 taken literally. It means that the players or the GQ roll a d100 and cross-reference the
@@ -2327,8 +2255,7 @@ be used as the base Chance for an Event to occur, instead. Nest Levels also defi
 decile dice to roll for Quantification of the three kinds of Events and their Features.
 \newpage
 
-Nest Levels
------------
+\subsection{Nest Levels}
 
 A Nest is an environment that consists of multiple Nest Levels, each comprised of
 multiple Rooms, and Passages connecting Rooms. 
@@ -2350,8 +2277,7 @@ treasures and richess, rather they are things that help the characters get their
 done.
 \end{note}
 
-Rooms
------
+\subsection{Rooms}
 
 Rooms are represented as Rewards and are only generated (i.e. found) when a character
 takes an Exploration Action. Rooms have Features such as their Area, Height, or Darkness,
@@ -2370,8 +2296,7 @@ chance that they might find it).
 
 \newpage
 
-Initiating Survival and Exploration
------------------------------------
+\subsection{Initiating Survival and Exploration}
 % Explain how Rooms are resources to be spent to initiate S&E
 
 Players' characters have a shared pool of Rooms that they can spend at any time to
@@ -2391,8 +2316,7 @@ minigame takes place immediately after the Room is removed from the players' poo
 
 \newpage
 
-Exploration Action
-------------------
+\subsection{Exploration Action}
 
 The Survival and Exploration Minigame is initiated whenever a player declares that her
 character is exploring the Nest.
@@ -2430,8 +2354,7 @@ Critical Failure  &    Cost, Cost, Cost
 
 \newpage
 
-Event Generation
-----------------
+\subsection{Event Generation}
 
 Costs are generated every time a character enters a new Room. Risks and Rewards are
 generated every time a character takes an Exploration Action.
@@ -2475,8 +2398,7 @@ Secret      &  Perception - Level & Generates a random Cost, Risk or Reward.
 
 \newpage
 
-Level Quantification Dice
--------------------------
+\subsection{Level Quantification Dice}
 
 When an Event, or a Feature of the Nest environment need to be quantified, the
 Quantification Die rolled depends on the Nest Level. An example of a Nest environment
@@ -2513,18 +2435,15 @@ Nest Environment.
 
 \newpage
 
-                                         Setting
-                                         =======
+\chapter{Setting}
 
 \newpage
 
-                                         Enemies
-                                         =======
+\section{Enemies}
 
 \newpage
 
-                                        Termites
-                                        --------
+\section{Termites}
 
 Termites are detritivores: they feed on rotting plant matter, wood and leaves. They make
 their nests underground, by borrowing into wood, or by building above-ground structures
@@ -2541,8 +2460,7 @@ castes.
 
 \newpage
 
-Worker Termite
---------------
+\subsection{Worker Termite}
 
 Worker Termites are unarmed and blind, and cannot fight, but they are numerous, swarm,
 and will raise the alarm as soon as they become aware that the Nest has been breached.
@@ -2584,8 +2502,7 @@ Nasute Soldiers         &    3                 &    25%
 \label{Worker Termite summons.}[table]
 \newpage
 
-Minor Termite Soldier - Autothyte
----------------------------------
+\subsection{Minor Termite Soldier - Autothyte}
 
 Minor Termite Soldiers are about as big as Worker Termites, but can fight and form
 swarms. Like Ants, they don't suffer wound penalties and are blind. They cannot fly. In
@@ -2661,8 +2578,7 @@ the attack, and become impassable.
 \end{box}
 \newpage
 
-Major Termite Soldier - Autothyte
----------------------------------
+\subsection{Major Termite Soldier - Autothyte}
 
 The Major Termite Soldier is a larger, stronger version of the Minor Soldier, but also
 rarer. In mechanical terms, Major Autothye Soldiers have more powerful versions of the
@@ -2708,8 +2624,7 @@ Same as for Minor Termite Soldiers.
 Same as for Minor Termite Soldiers.
 \end{box}
 
-Nasute Soldier
---------------
+\subsection{Nasute Soldier}
 
 Nasute Soldiers have an elongated snout in place of the large crushing mandibles of other
 Soldier termites. In Combat, Nasutes eject from this snout a noxious liquid that
