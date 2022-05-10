@@ -2,17 +2,12 @@
               ]).
 
 :-use_module(src(layout)).
+:-use_module(configuration).
 :-use_module(src(styles)).
 
 /** <module> Generate a Table of Contents.
 
 */
-
-%!      toc_padding(?Char) is det.
-%
-%       The character with which to pad ToC lines.
-%
-toc_padding(.).
 
 
 %!      format_toc(+ToC,+Lines,+Width,-Formatted) is det.
@@ -35,7 +30,7 @@ format_toc(Ts,N,W,Ls):-
 format_toc_([],_W,Fs,Fs):-
         !.
 format_toc_([T-P|Ts],W,Acc,Bind):-
-        toc_padding(C)
+        configuration:toc_padding(C)
         ,atom_codes(C,[C_])
         ,format(atom(F),'~w~*t~w~*|',[T,C_,P,W])
         ,format_toc_(Ts,W,[F|Acc],Bind).

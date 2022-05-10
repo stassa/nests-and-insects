@@ -1,5 +1,6 @@
 :-module(configuration, [styles/2
                         ,theorem/2
+                        ,toc_padding/1
                         ,label/2
                         ,line/2
                         ]).
@@ -28,6 +29,13 @@ theorem(note_reader,'Note to the reader').
 theorem(example,'Example').
 theorem(note,'Note').
 theorem(rules_summary,'Rules Summary').
+
+
+%!      toc_padding(?Char) is det.
+%
+%       The character with which to pad ToC lines.
+%
+toc_padding(.).
 
 
 %!      label(?Type,?Name) is semidet.
