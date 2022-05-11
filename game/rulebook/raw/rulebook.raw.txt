@@ -1,5 +1,5 @@
 \begin{coverpage}
-╔►Nests and Insects v.1.0.0◄═════════════════════════════════════════════════════►Rulebook◄═╗
+╔►Nests & Insects v.1.0.0◄═══════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
 ║                 ░█▀█░█▀▀░█▀▀░▀█▀░█▀▀░░░■▀▀▄░░▀█▀░█▀█░█▀▀░█▀▀░█▀▀░▀█▀░█▀▀                  ║▓
 ║                 ░█░█░█▀▀░▀▀█░░█░░▀▀█░░░▉▀■▉■░░█░░█░█░▀▀█░█▀▀░█░░░░█░░▀▀█                  ║▓
@@ -131,7 +131,7 @@ intent, then roll a d100 and compare it to two target numbers, "Effort" and "Res
 
 To roll under Effort is to "match" Effort. To roll over, or equal to, Resistance, is to
 "beat" Resistance. If the d100 roll matches Effort, the initial DoS is a Success,
-otherwise it is a Failure. If the d100 roll beats Resistance, the initial Dos is a
+otherwise it is a Failure. If the d100 roll beats Resistance, the initial DoS is a
 Complete Success or a Partial Failure, otherwise it is a Partial Success or a Complete
 Failure.
 
@@ -1889,7 +1889,7 @@ Suppress Action-specific Effort, Resistance and modifier Features:
 
 \begin{table}[4]
 Action    &    Effort    &    Resistance&    Static Modifiers
-Charm     &    Charm     &    Passions  &    Smarts, Confused
+Charm     &    Charms    &    Passions  &    Smarts, Confused
 Confuse   &    Smarts    &    Ken       &    Leadership, Passions
 Intimidate&    Signalling&    Passions  &    Leadership, Swarming
 \end{table}
