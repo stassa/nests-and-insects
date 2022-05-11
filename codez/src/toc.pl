@@ -19,7 +19,7 @@ format_toc(Ts,N,W,Ls):-
         % Off by one error correction
         % I DON'T KNOW!! OK?
         ,N_ is N - 2
-        ,style_part('\\chapter{Table of Contents}',W,[H,U])
+        ,style_part('\\chapter{Table of Contents}',W,_,[H,U])
         ,once(toc_lines(['',H,U,''|Fs],[1,1,N_,W],[],Ls_))
         ,reverse(Ls_,Ls).
 
@@ -29,10 +29,12 @@ format_toc(Ts,N,W,Ls):-
 %
 format_toc_([],_W,Fs,Fs):-
         !.
-format_toc_([T-P|Ts],W,Acc,Bind):-
+format_toc_([toc(R,T,P)|Ts],W,Acc,Bind):-
         configuration:toc_padding(C)
         ,atom_codes(C,[C_])
-        ,format(atom(F),'~w~*t~w~*|',[T,C_,P,W])
+        ,toc_tabs(R,S)
+        ,format(atom(F),'~t~*+~w~*t~w~*|',[S,T,C_,P,W])
+        ,writeln(F)
         ,format_toc_(Ts,W,[F|Acc],Bind).
 
 

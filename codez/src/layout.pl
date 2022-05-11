@@ -349,11 +349,11 @@ format_command(C,Ls,[P,N,M,W,Cs,Ts],Acc,Acc_,Ls,[P,N_,M,W,Cs_,Ts]):-
         label_lines(C,Cs,F,Cs_)
         ,format_line(F,N,W,Acc,Acc_)
         ,succ(N,N_).
-format_command(C,Ls,[P,N,M,W,Cs,Ts],Acc,Acc,Ls_,[P,N,M,W,Cs,[T_-P|Ts]]):-
+format_command(C,Ls,[P,N,M,W,Cs,Ts],Acc,Acc,Ls_,[P,N,M,W,Cs,[toc(R,T_,P)|Ts]]):-
 % Document parts styling
 % Keep the forall-write call because it outputs a nice layout
 % very helpful for debugging.
-        style_part(C,W,Ps)
+        style_part(C,W,R,Ps)
         %,forall(member(P_,Ps)
         %       ,writeln(P_))
         ,Ps = [T|_U]

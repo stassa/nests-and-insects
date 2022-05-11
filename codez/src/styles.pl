@@ -1,4 +1,4 @@
-:- module(styles, [style_part/3
+:- module(styles, [style_part/4
                   ]).
 
 :-use_module(configuration).
@@ -8,7 +8,7 @@
 */
 
 
-%!      style_part(+Line,+Width,-Styled) is det.
+%!      style_part(+Line,+Width,-Part,-Styled) is det.
 %
 %       Style a document part: the title of a Chapter, Section etc.
 %
@@ -20,49 +20,53 @@
 %       Width is the width of the page on which the document part is to
 %       be placed and aligned either center- or left-.
 %
+%       Part is the kind of document part that was styled, i.e. one of:
+%       chapter, section, subsection, subsubsection, paragraph. Used to
+%       inform the ToC printing predicates what parts they're printing.
+%
 %       Styled is the part in Line styled according to its kind. The
 %       style of document parts is determined by the predicate styles/2.
 %       If the part is to be underlined the kind of underline is
 %       determined by line/2.
 %
-style_part(L,W,Ls):-
+style_part(L,W,P,Ls):-
         document_part(L,P,T)
         ,configuration:styles(P,Ss)
         ,line_styles(Ss,LS,Ss_)
-        ,style_part(T,Ss_,W,L_)
+        ,style_part_(T,Ss_,W,L_)
         ,(   LS = nil
          ->  Ls = [L_]
          ;   configuration:line(LS,C)
             ,underline(T,C,U)
-            ,style_part(U,Ss_,W,U_)
+            ,style_part_(U,Ss_,W,U_)
             ,Ls = [L_,U_]
          ).
 
-%!      style_part(+Line,+Styles,+Width,-Styled) is det.
+%!      style_part_(+Line,+Styles,+Width,-Styled) is det.
 %
-%       Business end of style_part/3.
+%       Business end of style_part_/3.
 %
-style_part(L,[],_W,L):-
+style_part_(L,[],_W,L):-
         !.
-style_part(L,[S|Ss],W,Bind_L):-
+style_part_(L,[S|Ss],W,Bind_L):-
         memberchk(S,[emphasize,capitalise])
         ,!
         ,S_ =.. [S,L,L_]
         ,call(S_)
-        ,style_part(L_,Ss,W,Bind_L).
-style_part(L,[S|Ss],W,Bind_L):-
+        ,style_part_(L_,Ss,W,Bind_L).
+style_part_(L,[S|Ss],W,Bind_L):-
         configuration:line(S,C)
         ,!
         ,split_string(L,' ',' ',[L_])
         ,S_ =.. [S,L_,C,U]
         ,call(S_)
-        ,style_part(U,Ss,W,Bind_L).
-style_part(L,[S|Ss],W,Bind_L):-
+        ,style_part_(U,Ss,W,Bind_L).
+style_part_(L,[S|Ss],W,Bind_L):-
         !
         ,memberchk(S,[center,left_align])
         ,S_ =.. [S,L,W,L_]
         ,call(S_)
-        ,style_part(L_,Ss,W,Bind_L).
+        ,style_part_(L_,Ss,W,Bind_L).
 
 
 %!      line_styles(+Styles,-Line,-Other) is det.

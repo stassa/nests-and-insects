@@ -1,6 +1,7 @@
 :-module(configuration, [styles/2
                         ,theorem/2
                         ,toc_padding/1
+                        ,toc_tabs/2
                         ,label/2
                         ,line/2
                         ]).
@@ -36,6 +37,17 @@ theorem(rules_summary,'Rules Summary').
 %       The character with which to pad ToC lines.
 %
 toc_padding(.).
+
+
+%!      toc_tabs(?Part,?Spaces) is semidet.
+%
+%       Number of Spaces with which to pad ToC Parts.
+%
+toc_tabs(chapter,0).
+toc_tabs(section,2).
+toc_tabs(subsection,4).
+toc_tabs(subsubsection,6).
+toc_tabs(paragraph,8).
 
 
 %!      label(?Type,?Name) is semidet.
