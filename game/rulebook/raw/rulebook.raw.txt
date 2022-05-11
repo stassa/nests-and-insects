@@ -1849,6 +1849,8 @@ target a Combatant with Flying > 0% if the attacker also has Flying > 0%.
 
 _Targeting allies_ Spider's Base and Special Attacks have an Alternative Hit result that
 can heal, or remove Bleeding from an Ally. Spider can target an ally with her Attack.
+
+% Explain what happens when an Attack hits or misses: damage, disposition, etc. 
 \newpage
 
 \subsection{Suppress Action}
