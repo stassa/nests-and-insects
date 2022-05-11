@@ -4,13 +4,12 @@
                  ,longest_line/4
                  ]).
 
-:-use_module(library(clp/clpfd)).
 :-use_module(src(tables)).
 :-use_module(src(theorem)).
 :-use_module(src(label)).
 :-use_module(src(styles)).
 :-use_module(src(toc)).
-:-use_module(src/charsheet).
+:-use_module(src(charsheet)).
 
 /** <module> Layout and formatting for text-based rulebooks.
 
