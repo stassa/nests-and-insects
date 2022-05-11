@@ -84,65 +84,65 @@
 ║   Wasp.................................................................................28 ║▓
 ║   Character Features...................................................................29 ║▓
 ║   Inventory Items......................................................................30 ║▓
-║     Item Types.........................................................................31 ║▓
+║     Carrying Items.....................................................................31 ║▓
 ║     Acquiring Items....................................................................32 ║▓
-║     Carrying Items.....................................................................33 ║▓
-║     Consuming Items....................................................................34 ║▓
-║ System.................................................................................35 ║▓
-║   Decile Dice..........................................................................36 ║▓
-║     Implementing Decile Dice...........................................................37 ║▓
-║   Six Degrees of Success and Failure...................................................39 ║▓
-║   Percentile Features..................................................................40 ║▓
-║   Taking Actions.......................................................................41 ║▓
-║     Action resolution steps............................................................41 ║▓
-║     Describing Intent..................................................................42 ║▓
+║     Dropping Items.....................................................................33 ║▓
+║     Item Types.........................................................................34 ║▓
+║     Changing Item Types................................................................35 ║▓
+║     Consuming Items....................................................................36 ║▓
+║ System.................................................................................37 ║▓
+║   Decile Dice..........................................................................38 ║▓
+║     Implementing Decile Dice...........................................................39 ║▓
+║   Six Degrees of Success and Failure...................................................41 ║▓
+║   Percentile Features..................................................................42 ║▓
+║   Taking Actions.......................................................................43 ║▓
 ╚════════════════════════════════════════════-i-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
-║     Effort and Resistance..............................................................43 ║▓
-║     Qualification......................................................................44 ║▓
-║     Modification.......................................................................45 ║▓
-║     Choosing modifiers.................................................................46 ║▓
-║     Quantification.....................................................................47 ║▓
-║     Resolution.........................................................................48 ║▓
-║   Simplified Rolls.....................................................................49 ║▓
-║     Boolean Roll.......................................................................49 ║▓
-║     Contested Boolean Roll.............................................................50 ║▓
-║   Minigames............................................................................51 ║▓
-║     Minigame Formulaic Actions.........................................................52 ║▓
-║   Combat...............................................................................53 ║▓
-║     Combat Summary.....................................................................53 ║▓
-║     Combat Steps.......................................................................54 ║▓
-║     Determine Combatants and Sides.....................................................55 ║▓
-║     Starting Disposition...............................................................56 ║▓
-║     Initiative Order...................................................................57 ║▓
-║     Combat Rounds......................................................................58 ║▓
-║     Attack Action......................................................................59 ║▓
-║     Suppress Action....................................................................60 ║▓
-║     Support Action.....................................................................61 ║▓
-║     Resisting Effects..................................................................62 ║▓
-║     Manoeuver Action...................................................................63 ║▓
-║     Breaking from Combat...............................................................64 ║▓
-║     Consuming Food in Combat...........................................................64 ║▓
-║     Joining Combat.....................................................................64 ║▓
-║     Combat Ends........................................................................65 ║▓
-║   Survival and Exploration.............................................................66 ║▓
-║     How Procedural Generation Works....................................................66 ║▓
-║     Nest Levels........................................................................67 ║▓
-║     Rooms..............................................................................67 ║▓
-║     Initiating Survival and Exploration................................................68 ║▓
-║     Exploration Action.................................................................69 ║▓
-║     Event Generation...................................................................70 ║▓
-║     Level Quantification Dice..........................................................71 ║▓
-║ Setting................................................................................72 ║▓
-║   Enemies..............................................................................73 ║▓
-║   Termites.............................................................................74 ║▓
-║     Worker Termite.....................................................................75 ║▓
-║     Minor Termite Soldier - Autothyte..................................................76 ║▓
-║     Major Termite Soldier - Autothyte..................................................78 ║▓
-║     Nasute Soldier.....................................................................79 ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║     Action resolution steps............................................................43 ║▓
+║     Describing Intent..................................................................44 ║▓
+║     Effort and Resistance..............................................................45 ║▓
+║     Qualification......................................................................46 ║▓
+║     Modification.......................................................................47 ║▓
+║     Choosing modifiers.................................................................48 ║▓
+║     Quantification.....................................................................49 ║▓
+║     Resolution.........................................................................50 ║▓
+║   Simplified Rolls.....................................................................51 ║▓
+║     Boolean Roll.......................................................................51 ║▓
+║     Contested Boolean Roll.............................................................52 ║▓
+║   Minigames............................................................................53 ║▓
+║     Minigame Formulaic Actions.........................................................54 ║▓
+║   Combat...............................................................................55 ║▓
+║     Combat Summary.....................................................................55 ║▓
+║     Combat Steps.......................................................................56 ║▓
+║     Determine Combatants and Sides.....................................................57 ║▓
+║     Starting Disposition...............................................................58 ║▓
+║     Initiative Order...................................................................59 ║▓
+║     Combat Rounds......................................................................60 ║▓
+║     Attack Action......................................................................61 ║▓
+║     Suppress Action....................................................................62 ║▓
+║     Support Action.....................................................................63 ║▓
+║     Resisting Effects..................................................................64 ║▓
+║     Manoeuver Action...................................................................65 ║▓
+║     Breaking from Combat...............................................................66 ║▓
+║     Consuming Food in Combat...........................................................66 ║▓
+║     Joining Combat.....................................................................66 ║▓
+║     Combat Ends........................................................................67 ║▓
+║   Survival and Exploration.............................................................68 ║▓
+║     How Procedural Generation Works....................................................68 ║▓
+║     Nest Levels........................................................................69 ║▓
+║     Rooms..............................................................................69 ║▓
+║     Initiating Survival and Exploration................................................70 ║▓
+║     Exploration Action.................................................................71 ║▓
+║     Event Generation...................................................................72 ║▓
+║     Level Quantification Dice..........................................................73 ║▓
+║ Setting................................................................................74 ║▓
+║   Enemies..............................................................................75 ║▓
+║   Termites.............................................................................76 ║▓
+║     Worker Termite.....................................................................77 ║▓
+║     Minor Termite Soldier - Autothyte..................................................78 ║▓
+║     Major Termite Soldier - Autothyte..................................................80 ║▓
+║     Nasute Soldier.....................................................................81 ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -444,7 +444,7 @@
 ║│ ○ Blind....:[___0%] ○ Paralysed...:[___0%] ││ ○ ______________________________:[____%] │ ║▓
 ║│ ○ Charmed..:[___0%] ○ Poisoned....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
 ║│ ○ Confused.:[___0%] ○ Stunned.....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
-║└<^Applies>──────────<^Applies>──────────────┘└<^Edible>─────────────────────────────────┘ ║▓
+║└<^Applies>──────────<^Applies>──────────────┘└<^Depleted>───────────────────────────────┘ ║▓
 ╚═══════════════════════════════════════════════════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
@@ -841,17 +841,17 @@
 ║ │ ○ ______________________________:[____%] │                                              ║▓
 ║ │ ○ ______________________________:[____%] │                                              ║▓
 ║ │ ○ ______________________________:[____%] │                                              ║▓
-║ └<^Edible>─────────────────────────────────┘                                              ║▓
+║ └<^Depleted>───────────────────────────────┘                                              ║▓
 ║ ────────────────────────────────────────────                                              ║▓
 ║ Figure 16: Inventory box.                                                                 ║▓
 ║                                                                                           ║▓
-║ Each line in the Inventory box is an Inventory item. Items have an "Edible" radio button  ║▓
+║ Each line in the Inventory box is an Inventory item. Items have a "Depleted" radio button ║▓
 ╚═══════════════════════════════════════════-14-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
-║ that indicates whether the item is a Food item that can be consumed to reduce Hunger.     ║▓
+║ that indicates whether the item has been depleted as a result of its use.                 ║▓
 ║                                                                                           ║▓
-║ Characters can only carry as many items as there are lines in the Inventory box: that is  ║▓
+║ Characters can only carry as many Items as there are lines in the Inventory box: that is  ║▓
 ║ 5 lines, for 5 items.                                                                     ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -989,12 +989,12 @@
 ║│ Web Weaving.......:[___0%] ││ □ Healing..........:[__48%] □ Sneaking..........:[__30%] │ ║▓
 ║└────────────────────────────┘└<^XP>───────────────────────<^XP>─────────────────────────┘ ║▓
 ║┌[Effects]───────────────────────────────────┐┌[Inventory]───────────────────────────────┐ ║▓
-║│ ○ Agony....:[___0%] ○ Immobilised.:[___0%] ││ ✓ Honeydew of Restoration_______:[__45%] │ ║▓
+║│ ○ Agony....:[___0%] ○ Immobilised.:[___0%] ││ ✓ Honeydew of Restoration [F]___:[__45%] │ ║▓
 ║│ ○ Bleeding.:[___0%] ○ Infected....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
 ║│ ✓ Blind....:[_100%] ○ Paralysed...:[___0%] ││ ○ ______________________________:[____%] │ ║▓
 ║│ ○ Charmed..:[___0%] ○ Poisoned....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
 ║│ ○ Confused.:[___0%] ○ Stunned.....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
-║└<^Applies>──────────<^Applies>──────────────┘└<^Edible>─────────────────────────────────┘ ║▓
+║└<^Applies>──────────<^Applies>──────────────┘└<^Depleted>───────────────────────────────┘ ║▓
 ╚═══════════════════════════════════════════════════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
@@ -1089,12 +1089,12 @@
 ║│ Web Weaving.......:[___0%] ││ □ Healing..........:[__48%] □ Sneaking..........:[__35%] │ ║▓
 ║└────────────────────────────┘└<^XP>───────────────────────<^XP>─────────────────────────┘ ║▓
 ║┌[Effects]───────────────────────────────────┐┌[Inventory]───────────────────────────────┐ ║▓
-║│ ○ Agony....:[___0%] ○ Immobilised.:[___0%] ││ ✓ Nectar of Shielding___________:[__45%] │ ║▓
+║│ ○ Agony....:[___0%] ○ Immobilised.:[___0%] ││ ✓ Nectar of Shielding [F]_______:[__45%] │ ║▓
 ║│ ○ Bleeding.:[___0%] ○ Infected....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
 ║│ ○ Blind....:[___0%] ○ Paralysed...:[___0%] ││ ○ ______________________________:[____%] │ ║▓
 ║│ ○ Charmed..:[___0%] ○ Poisoned....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
 ║│ ○ Confused.:[___0%] ○ Stunned.....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
-║└<^Applies>──────────<^Applies>──────────────┘└<^Edible>─────────────────────────────────┘ ║▓
+║└<^Applies>──────────<^Applies>──────────────┘└<^Depleted>───────────────────────────────┘ ║▓
 ╚═══════════════════════════════════════════════════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
@@ -1189,12 +1189,12 @@
 ║│ Web Weaving.......:[___0%] ││ □ Healing..........:[__48%] □ Sneaking..........:[__53%] │ ║▓
 ║└────────────────────────────┘└<^XP>───────────────────────<^XP>─────────────────────────┘ ║▓
 ║┌[Effects]───────────────────────────────────┐┌[Inventory]───────────────────────────────┐ ║▓
-║│ ○ Agony....:[___0%] ○ Immobilised.:[___0%] ││ ✓ Aphids________________________:[__45%] │ ║▓
+║│ ○ Agony....:[___0%] ○ Immobilised.:[___0%] ││ ✓ Aphids [F]____________________:[__45%] │ ║▓
 ║│ ○ Bleeding.:[___0%] ○ Infected....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
 ║│ ○ Blind....:[___0%] ○ Paralysed...:[___0%] ││ ○ ______________________________:[____%] │ ║▓
 ║│ ○ Charmed..:[___0%] ○ Poisoned....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
 ║│ ○ Confused.:[___0%] ○ Stunned.....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
-║└<^Applies>──────────<^Applies>──────────────┘└<^Edible>─────────────────────────────────┘ ║▓
+║└<^Applies>──────────<^Applies>──────────────┘└<^Depleted>───────────────────────────────┘ ║▓
 ╚═══════════════════════════════════════════════════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
@@ -1289,12 +1289,12 @@
 ║│ Web Weaving.......:[___0%] ││ □ Healing..........:[__28%] □ Sneaking..........:[__30%] │ ║▓
 ║└────────────────────────────┘└<^XP>───────────────────────<^XP>─────────────────────────┘ ║▓
 ║┌[Effects]───────────────────────────────────┐┌[Inventory]───────────────────────────────┐ ║▓
-║│ ○ Agony....:[___0%] ○ Immobilised.:[___0%] ││ ✓ Crickets______________________:[__45%] │ ║▓
+║│ ○ Agony....:[___0%] ○ Immobilised.:[___0%] ││ ✓ Crickets [F]__________________:[__45%] │ ║▓
 ║│ ○ Bleeding.:[___0%] ○ Infected....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
 ║│ ○ Blind....:[___0%] ○ Paralysed...:[___0%] ││ ○ ______________________________:[____%] │ ║▓
 ║│ ○ Charmed..:[___0%] ○ Poisoned....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
 ║│ ○ Confused.:[___0%] ○ Stunned.....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
-║└<^Applies>──────────<^Applies>──────────────┘└<^Edible>─────────────────────────────────┘ ║▓
+║└<^Applies>──────────<^Applies>──────────────┘└<^Depleted>───────────────────────────────┘ ║▓
 ╚═══════════════════════════════════════════════════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
@@ -1389,12 +1389,12 @@
 ║│ Web Weaving.......:[___0%] ││ □ Healing..........:[__50%] □ Sneaking..........:[__48%] │ ║▓
 ║└────────────────────────────┘└<^XP>───────────────────────<^XP>─────────────────────────┘ ║▓
 ║┌[Effects]───────────────────────────────────┐┌[Inventory]───────────────────────────────┐ ║▓
-║│ ○ Agony....:[___0%] ○ Immobilised.:[___0%] ││ ✓ Firefly_______________________:[__45%] │ ║▓
+║│ ○ Agony....:[___0%] ○ Immobilised.:[___0%] ││ ✓ Firefly [F,L]_________________:[__45%] │ ║▓
 ║│ ○ Bleeding.:[___0%] ○ Infected....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
 ║│ ○ Blind....:[___0%] ○ Paralysed...:[___0%] ││ ○ ______________________________:[____%] │ ║▓
 ║│ ○ Charmed..:[___0%] ○ Poisoned....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
 ║│ ○ Confused.:[___0%] ○ Stunned.....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
-║└<^Applies>──────────<^Applies>──────────────┘└<^Edible>─────────────────────────────────┘ ║▓
+║└<^Applies>──────────<^Applies>──────────────┘└<^Depleted>───────────────────────────────┘ ║▓
 ╚═══════════════════════════════════════════════════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
@@ -1489,12 +1489,12 @@
 ║│ Web Weaving.......:[___0%] ││ □ Healing..........:[__38%] □ Sneaking..........:[__53%] │ ║▓
 ║└────────────────────────────┘└<^XP>───────────────────────<^XP>─────────────────────────┘ ║▓
 ║┌[Effects]───────────────────────────────────┐┌[Inventory]───────────────────────────────┐ ║▓
-║│ ○ Agony....:[___0%] ○ Immobilised.:[___0%] ││ ✓ Nectar of Healing_____________:[__45%] │ ║▓
+║│ ○ Agony....:[___0%] ○ Immobilised.:[___0%] ││ ✓ Nectar of Healing [F]_________:[__45%] │ ║▓
 ║│ ○ Bleeding.:[___0%] ○ Infected....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
 ║│ ○ Blind....:[___0%] ○ Paralysed...:[___0%] ││ ○ ______________________________:[____%] │ ║▓
 ║│ ○ Charmed..:[___0%] ○ Poisoned....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
 ║│ ○ Confused.:[___0%] ○ Stunned.....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
-║└<^Applies>──────────<^Applies>──────────────┘└<^Edible>─────────────────────────────────┘ ║▓
+║└<^Applies>──────────<^Applies>──────────────┘└<^Depleted>───────────────────────────────┘ ║▓
 ╚═══════════════════════════════════════════════════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
@@ -1608,17 +1608,17 @@
 ║ certain Costs during the Survival and Exploration, Hunting and Foraging or Resting and    ║▓
 ║ Healing minigames.                                                                        ║▓
 ║                                                                                           ║▓
+║ Players' characters start with one Inventory Item each, determined by their Class.        ║▓
+║ Characters may also find and pick up new Items during Survival and Exploration and        ║▓
+║ Hunting and Foraging.                                                                     ║▓
+║                                                                                           ║▓
 ║ Inventory Items carried by a characer are recorded on the character's sheet, in the       ║▓
 ║ Inventory box, in the Abilities Area.                                                     ║▓
 ║                                                                                           ║▓
 ║ Like all Features, Inventory Items have a descriptive name and a rating that represents   ║▓
 ║ the amount of the relevant resource. Items also have types that describe their use,       ║▓
-║ recorded in parentheses next to the Item's name. Food Items are one type of Item,         ║▓
-║ distinguished by a tick in their "Edible" radio button. Food Items can be eaten to fend   ║▓
-║ off Hunger or grant special abilities.                                                    ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ recorded in parentheses next to the Item's name. One type of Item are Food Items that can ║▓
+║ be eaten to fend off Hunger or grant special abilities.                                   ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -1650,50 +1650,50 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ Item Types                                                                                ║▓
-║ ----------                                                                                ║▓
+║ Carrying Items                                                                            ║▓
+║ --------------                                                                            ║▓
 ║                                                                                           ║▓
-║ Inventory Items can belong to one of six types. An Item's type is recorded next to its    ║▓
-║ name on a character's sheet, in parentheses. The six Item types are listed in the Item    ║▓
-║ Types Table, below, along with a brief description thereof:                               ║▓
+║ Inventory Items are carried about the character's person and kept track of in the         ║▓
+║ character's Inventory. A character can only carry as many Items as there are entry        ║▓
+║ "slots" in her Inventory. Characters' Inventories have five Slots.                        ║▓
 ║                                                                                           ║▓
-║ Item Type    Description                                                                  ║▓
-║ ────────────────────────────────────────────────────────────────────────────              ║▓
-║ Companion    A creature accompanying a character. May be Edible.                          ║▓
-║ Food         Used to pay a Hunger Cost. May bestow Effects, grant Abilities.              ║▓
-║ Hint         May provide useful information.                                              ║▓
-║ Lighting     Used to pay a Darkness Cost. May be Edible.                                  ║▓
-║ Materials    Used to build a Shelter for Resting and Healing.                             ║▓
-║ Message      Must be collected or delivered as part of a Job.                             ║▓
-║ ────────────────────────────────────────────────────────────────────────────              ║▓
-║ Table 8: Item Types.                                                                      ║▓
+║ Inventory slots are blank lines, with a radio button and a rating field. The radio button ║▓
+║ is to record the Item as "Depleted" (See Section "Consuming Items", later in this         ║▓
+║ Chapter).                                                                                 ║▓
 ║                                                                                           ║▓
-║ _Items With Multiple Types_ Some Items may have multiple types, the "Food" type, and one  ║▓
-║ or more other types. Such Items can be used to pay a Hunger Cost and perform another      ║▓
-║ function, such as paying a Darkness Cost. However, if a Food Item is used to pay a Hunger ║▓
-║ Cost, all Types it has other than Food are removed from it and the Item can henceforth    ║▓
-║ only be used as a Food Item. The Item's name is changed to indicate it is only Food, by   ║▓
-║ appending the word "Carcass" or "Remains" to its original name.                           ║▓
+║ ○ ______________________________:[____%]  ○ Blue Nectar of Paralysis______:[__38%]        ║▓
+║ ────────────────────────────────────────  ────────────────────────────────────────        ║▓
+║ Figure 17: An empty Inventory Slot (left) and a Slot holding an Item (right).             ║▓
 ║                                                                                           ║▓
-║ ┌[Example 2]────────────────────────────────────────────────────────────────────────────┐ ║▓
-║ │ Cody's Spider character has a Gloworm: 45% Item in her Inventory. The Gloworm Item    │ ║▓
-║ │ has types Food and Lighting. Spider must pay a Hunger Cost and Cody decides that she  │ ║▓
-║ │ will eat some of the Gloworm to pay it. The Gloworm is now no longer a Lighting Item. │ ║▓
-║ │ Cody changes the Gloworm's name on Spider's character sheet to "Gloworm Carcass" as a │ ║▓
-║ │ reminder that the Gloworm is now only useable as Food.                                │ ║▓
-║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-║ _Spoiled Items_ Food Items can become spoiled as the result of paying a Spoilage Cost     ║▓
-║ during the Survival and Exploration or Hunting and Foraging minigames. Spoiled Items are  ║▓
-║ past their expiry date and cannot be consumed without risking adverse effects. The name   ║▓
-║ of Spoiled Food Items is prepended with "Spoiled" to indicate their Spoiled status.       ║▓
 ║                                                                                           ║▓
-║ ┌[Example 3]────────────────────────────────────────────────────────────────────────────┐ ║▓
-║ │ Brody's Ants character is carrying an Item named "Rare Red Fungus of Collocation"     │ ║▓
-║ │ marked as Edible. The Item becomes Spoiled as the result of paying a Spoilage Cost.   │ ║▓
-║ │ Brody changes the name of the Item to indicate it's spoiled. The Item is now called:  │ ║▓
-║ │ "Spoiled Rare Red Fungus of Collocation".                                             │ ║▓
-║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ╚═══════════════════════════════════════════-31-════════════════════════════════════════════╝▓
@@ -1706,19 +1706,19 @@
 ║ Characters acquire Inventory Items in one of two ways:                                    ║▓
 ║                                                                                           ║▓
 ║ * All character classes start with one Inventory Item recorded on their character sheet.  ║▓
-║   In that case an Item's initial rating and its "Edible" status are listed on the sheet.  ║▓
+║   In that case an Item's initial rating and its Types are listed on the character sheet.  ║▓
 ║                                                                                           ║▓
 ║ * Characters may find new Inventory Items as Risks or Rewards generated during the        ║▓
 ║   Survival and Exploration, or Hunting and Foraging minigames. In that case, an Item's    ║▓
 ║   initial rating is generated by a Quantification Roll according to the rules of Survival ║▓
-║   and Exploration. If an Item is edible, this is listed in the Item's listing (TBD).      ║▓
+║   and Exploration.                                                                        ║▓
 ║                                                                                           ║▓
 ║ See Section "Quantification" under "Taking Actions" in the "System" Chapter for a         ║▓
 ║ description of Quantification Rolls.                                                      ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ _Recording New Items_ When a new Item is acquired, add an entry for it in an empty Slot   ║▓
+║ in the character's Inventory. If the character's Inventory is full, the item is dropped   ║▓
+║ instead (no entry is made for it in the character's Inventory).                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -1750,23 +1750,24 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ Carrying Items                                                                            ║▓
+║ Dropping Items                                                                            ║▓
 ║ --------------                                                                            ║▓
 ║                                                                                           ║▓
-║ Inventory Items are carried about the character's person and kept track of in the         ║▓
-║ character's Inventory. A character can only carry as many Items as there are entry        ║▓
-║ "slots" in her Inventory. Inventory slots are blank lines, with an "Edible" radio button  ║▓
-║ and a rating box.                                                                         ║▓
+║ Items may be "dropped" from a character's Inventory either automatically, when the        ║▓
+║ character picks up an Item and her Iventory is already full; voluntarily, when the player ║▓
+║ decides it; or as a result of game events.                                                ║▓
 ║                                                                                           ║▓
-║ ○ ______________________________:[____%]                                                  ║▓
-║ ────────────────────────────────────────                                                  ║▓
-║ Figure 17: An empty Inventory Slot.                                                       ║▓
+║ _Dropped Items_ Dropped Items are removed from a character's Inventory and cannot be used ║▓
+║ anymore, unless they are picked up again.                                                 ║▓
 ║                                                                                           ║▓
-║ _Recording Items_ When a new Item is acquired, add an entry for it in an empty Slot in    ║▓
-║ the character's Inventory. If the character's Inventory is full, the item is "dropped"    ║▓
-║ instead (no entry is made for it in the character's Inventory).                           ║▓
+║ _Automatically dropping Items_ When a character tries to pick up a new Item and her       ║▓
+║ Inventory is already full, the item is "dropped" instead. No entry is made for the Item   ║▓
+║ in the character's Inventory.                                                             ║▓
 ║                                                                                           ║▓
-║ _Dropped Items_ When an Inventory Item is "dropped" it is left lying on the floor of the  ║▓
+║ _Voluntarily dropping Items_ A character is free to "drop" Items from her Inventory at    ║▓
+║ any time, to make space for other Items, or for any other reason.                         ║▓
+║                                                                                           ║▓
+║ _Inert Items_ When an Inventory Item is "dropped" it is left lying on the floor of the    ║▓
 ║ Nest in the Room where the character is currently in. Characters (including the character ║▓
 ║ who dropped an Item), or Nest denizens, may pick up dropped Items and add them to their   ║▓
 ║ own Inventory.                                                                            ║▓
@@ -1774,20 +1775,19 @@
 ║ _Lost Items_ Dropped Items stay on the floor of a Room where they were dropped, but have  ║▓
 ║ a chance to be lost. Lost Items disappear, and they can no longer be found or picked up.  ║▓
 ║ When all characters leave a Room where an Item was dropped (by anyone) the GQ makes a     ║▓
-║ Boolean Roll with Effort equal to the Nest Level of the Room. If the Roll succeeds, the   ║▓
-║ Item remains on the Room floor. If the Roll fails, the Item is lost.                      ║▓
+║ Boolean Roll with Effort equal to 100 minus the Nest Level of the Room. If the Roll       ║▓
+║ succeeds, the Item remains on the Room floor. If the Roll fails, the Item is lost.        ║▓
 ║                                                                                           ║▓
 ║ See Section "Boolean Roll" under "Simplified Rolls" in the "System" Chapter for a         ║▓
 ║ description of Boolean Rolls. See Section "Nest Levels" under "Survival and Exploration"  ║▓
 ║ in the "System" Chapter for a description of Nest Levels.                                 ║▓
 ║                                                                                           ║▓
-║ _Voluntarily dropping Items_ A character is free to "drop" Items from her Inventory at    ║▓
-║ any time, to make space for other Items, or for any other reason. Dropped Items are       ║▓
-║ removed from the player's Inventory.                                                      ║▓
+║ _Cursed Items_ Some Items are cursed and may not be removed from a character's Inventory, ║▓
+║ until their curse is lifted. An Item is cursed if its name starts with the word "Cursed". ║▓
 ║                                                                                           ║▓
-║ _Cursed Items_ Some Items are "Cursed" and may not be removed from a character's          ║▓
-║ Inventory, until their Curse is lifted. An Item is Cursed if its name starts with the     ║▓
-║ word "Cursed".                                                                            ║▓
+║ ○ Cursed Black Fungus of Death__:[__56%]                                                  ║▓
+║ ────────────────────────────────────────                                                  ║▓
+║ Figure 18: A Cursed Inventory Item; it cannot be dropped until the Curse is lifted.       ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -1800,41 +1800,41 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ Consuming Items                                                                           ║▓
-║ ---------------                                                                           ║▓
+║ Item Types                                                                                ║▓
+║ ----------                                                                                ║▓
 ║                                                                                           ║▓
-║ Inventory Items are "consumed" and may become "depleted" or "exhausted" as a result of    ║▓
-║ their consumption. An Inventory Item is depleted when its rating is reduced; it is        ║▓
-║ exhausted when its rating is reduced to 0%.                                               ║▓
+║ Inventory Items can belong to one of six types. An Item's type is recorded next to its    ║▓
+║ name on a character's sheet, in square brackets. The six Item types are listed in the     ║▓
+║ Item Types Table, below, along with a type symbol used to record the Item's type in a     ║▓
+║ character's Inventory, and a brief description of each type:                              ║▓
 ║                                                                                           ║▓
-║ _Consuming Items_ To consume an Inventory Item to take an Action or pay a Cost, make a    ║▓
-║ Boolean Roll. The Effort for the Roll is the Item's rating. The Roll is made immediately  ║▓
-║ after the Action is resolved, or in the process of paying the Cost.                       ║▓
+║ Item Type    Symbol    Description                                                        ║▓
+║ ──────────────────────────────────────────────────────────────────────────────────────    ║▓
+║ Companion    [C]       A creature accompanying a character. May be edible.                ║▓
+║ Food         [F]       Used to pay a Hunger Cost. May bestow Effects, grant Abilities.    ║▓
+║ Hint         [H]       May provide useful information.                                    ║▓
+║ Lighting     [L]       Used to pay a Darkness Cost. May be edible.                        ║▓
+║ Materials    [M]       Used to build a Shelter for Resting and Healing.                   ║▓
+║ Message      [S]       Must be collected or delivered as part of a Job.                   ║▓
+║ ──────────────────────────────────────────────────────────────────────────────────────    ║▓
+║ Table 8: Item Types.                                                                      ║▓
 ║                                                                                           ║▓
-║ * If the Roll succeeds, the Item is not depleted (the Item's rating remains unchanged).   ║▓
+║ _Recording Item Types_ To record an Item's type on a character's Sheet, write its type in ║▓
+║ square brackets next to the Item's Name in the character's Inventory.                     ║▓
 ║                                                                                           ║▓
-║ * If the Roll fails, the Item must be depleted: in that case, make a Quantification Roll  ║▓
-║   to reduce the Item's rating. The Quantification die for the Roll is the first decile    ║▓
-║   die whose maximum result is less than, or equal to, the current rating of the Item, or  ║▓
-║   the d20 if the current rating of the Item is less than 19%.                             ║▓
+║ ○ Crickets [F]__________________:[__45%]                                                  ║▓
+║ ────────────────────────────────────────                                                  ║▓
+║ Figure 19: A Food Item in an Inventory slot.                                              ║▓
 ║                                                                                           ║▓
-║ The player of the character taking the Action or paying the Cost makes both Rolls.        ║▓
+║ _Items With Multiple Types_ Some Items may have multiple types, the "Food" type, and one  ║▓
+║ or more other types. Such Items can be used to pay a Hunger Cost and perform another      ║▓
+║ function, such as paying a Darkness Cost.                                                 ║▓
 ║                                                                                           ║▓
-║ ┌[Example 4]────────────────────────────────────────────────────────────────────────────┐ ║▓
-║ │ The GQ tells Cody that his Spider character must pay a Hunger Cost. Spider has a Moth │ ║▓
-║ │ 23% Item in her Inventory, and the Moth Item is marked as edible, meaning that Spider │ ║▓
-║ │ can consume it to pay a Hunger Cost. Cody rolls d100 to use the Moth to pay the       │ ║▓
-║ │ Hunger Cost for Spider: 45. The Boolean Roll is Failed and the Moth Item is depleted. │ ║▓
-║ │ Cody must now make a Quantification Roll to reduce the Moth Item's rating. The first  │ ║▓
-║ │ decile die with a maximum result less than the Moth Item's current rating of 23% is   │ ║▓
-║ │ the d20. Cody Rolls d20: 11. The Moth Item's new rating is 11%. Cody modifies the     │ ║▓
-║ │ rating on Spider's character sheet and paying the Cost is completed.                  │ ║▓
-║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║ ○ Gloworm [F,L]_________________:[__45%]                                                  ║▓
+║ ────────────────────────────────────────                                                  ║▓
+║ Figure 20: An Item with multiple Types: Food and Lighting.                                ║▓
 ║                                                                                           ║▓
-║ _Exhausted Items_ When an Inventory Item is exhausted, it can no longer be consumed to    ║▓
-║ take Actions or pay Costs. Remove the Item's entry from the character's Inventory.        ║▓
-║ Exhausted Items are not "dropped": they just disappear and cannot be picked up by other   ║▓
-║ characters.                                                                               ║▓
+║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -1849,6 +1849,107 @@
 ╚═══════════════════════════════════════════-34-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ Changing Item Types                                                                       ║▓
+║ -------------------                                                                       ║▓
+║                                                                                           ║▓
+║ The types of an Item may change. This happens when an Item is eaten, or when it spoils.   ║▓
+║                                                                                           ║▓
+║ _Eaten Items_ When a Food Item is eaten, all types it has other than Food are removed     ║▓
+║ from it and the Item can henceforth only be used as a Food Item. The Item's name is       ║▓
+║ changed to indicate it is only Food, by appending the word "Carcass" or "Remains" to its  ║▓
+║ original name.                                                                            ║▓
+║                                                                                           ║▓
+║ ┌[Example 2]────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ │ Cody's Spider character has a Gloworm: 45% Item in her Inventory. The Gloworm Item    │ ║▓
+║ │ has types Food and Lighting. Spider must pay a Hunger Cost and Cody decides that she  │ ║▓
+║ │ will eat some of the Gloworm to pay it. The Gloworm is now no longer a Lighting Item. │ ║▓
+║ │ Cody changes the Gloworm's name on Spider's character sheet to "Gloworm Carcass" as a │ ║▓
+║ │ reminder that the Gloworm is now only useable as Food.                                │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ ○ Gloworm [L,F]_________________:[__45%] │  ○ Gloworm Carcass [F]___________:[__45%] │    ║▓
+║ ──────────────────────────────────────────  ──────────────────────────────────────────    ║▓
+║ Figure 21: Spider's Gloworm (left) and its Carcass (right) after it was eaten.            ║▓
+║                                                                                           ║▓
+║ _Spoiled Items_ Food Items can become spoiled as the result of paying a Spoilage Cost     ║▓
+║ during the Survival and Exploration or Hunting and Foraging minigames. Spoiled Items are  ║▓
+║ past their expiry date and cannot be consumed without risking adverse effects. The name   ║▓
+║ of Spoiled Food Items is prepended with "Spoiled" to indicate their Spoiled status.       ║▓
+║                                                                                           ║▓
+║ ┌[Example 3]────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ │ Brody's Ants character is carrying a Food Item named "Red Fungus of Collocation". The │ ║▓
+║ │ Item becomes Spoiled as the result of paying a Spoilage Cost.  Brody changes the name │ ║▓
+║ │ of the Item to indicate it's spoiled. The Item is now called: "Spoiled Red Fungus of  │ ║▓
+║ │ Collocation".                                                                         │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ ○ Red Fungus of Collocation [F]_:[__45%] │  ○ Spoiled Red Fungus of Col. [F]:[__45%] │    ║▓
+║ ──────────────────────────────────────────  ──────────────────────────────────────────    ║▓
+║ Figure 22: The Ants' Red Fungus before (left) and after (right) becoming spoiled.         ║▓
+║                                                                                           ║▓
+║ _Abbreviating Item Names_ As can be seen from the example in Figure 22, Items' names may  ║▓
+║ end up too long for an Inventory slot. In that case, simply abbreviate the Item's name.   ║▓
+║ In particular, if an Item's name is too long it does not need to "wrap" to take an        ║▓
+║ additional Inventory slot: the rule is "one item, one Inventory slot".                    ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-35-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ Consuming Items                                                                           ║▓
+║ ---------------                                                                           ║▓
+║                                                                                           ║▓
+║ Inventory Items are "consumed" and may become "depleted" or "exhausted" as a result       ║▓
+║ of taking an Action or paying a Cost. A depleted Item can still be used, but if it is     ║▓
+║ depleted again it becomes exhausted.                                                      ║▓
+║                                                                                           ║▓
+║ _Consumption Roll_ To consume an Inventory Item to take an Action or pay a Cost, make a   ║▓
+║ Boolean Roll. The Effort for the Roll is the Item's rating. The Roll is made immediately  ║▓
+║ after the Action is resolved, or in the process of paying the Cost.                       ║▓
+║                                                                                           ║▓
+║ * If the Roll succeeds, the Item remains unchanged.                                       ║▓
+║                                                                                           ║▓
+║ * If the Roll fails and the Item is not depleted, the Item becomes depleted. Tick the     ║▓
+║   "Depleted" radio button next to the Item in the character's Inventory.                  ║▓
+║                                                                                           ║▓
+║ * If the Roll fails and the Item is depleted, the Item becomes exhausted. Remove the Item ║▓
+║   from the character's Inventory.                                                         ║▓
+║                                                                                           ║▓
+║ The player of the character taking the Action or paying the Cost makes the Roll and       ║▓
+║ modifies the character's Inventory.                                                       ║▓
+║                                                                                           ║▓
+║ ┌[Example 4]────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ │ The GQ tells Cody that his Spider character must pay a Hunger Cost. Spider has a Moth │ ║▓
+║ │ Carcass 23% Food Item in her Inventory that can be consumed to pay Hunger Costs. The  │ ║▓
+║ │ Moth Carcass is not yet depleted. Cody decides that Spider will eat the Moth Carcass  │ ║▓
+║ │ to pay the Hunger Cost. He rolls d100 against the Moth Carcass' 23% rating; result:   │ ║▓
+║ │ 45. The Boolean Roll fails and the Moth Carcass Item becomes depleted. Cody ticks the │ ║▓
+║ │ "Depleted" radio button next to the Moth Carcass Item as a reminder of its status.    │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ ○ Moth Carcass__________________:[__23%] │  ✓ Moth Carcass__________________:[__23%] │    ║▓
+║ ^Depleted>───────────────────────────────┘  ^Depleted>───────────────────────────────┘    ║▓
+║ ──────────────────────────────────────────  ──────────────────────────────────────────    ║▓
+║ Figure 23: Spider's Moth Carcass, before (left) and after (right) becoming Depleted.      ║▓
+║                                                                                           ║▓
+║ ┌[Example 5]────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ │ Cody's Spider character must pay another Hunger Cost. Cody rolls d100 against the     │ ║▓
+║ │ Moth Carcass item's 23% rating; result: 63. The Boolean Roll fails again and the Moth │ ║▓
+║ │ Carcass Item becomes exhausted. Cody deletes the Moth Carcass from Spider's Inventory │ ║▓
+║ │ and unticks the radio button next to it to clear the Inventory slot.                  │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ _Exhausted Items_ When an Inventory Item is exhausted, it can no longer be consumed to    ║▓
+║ take Actions or pay Costs. Exhausted Items are not "dropped": they just disappear         ║▓
+║ and cannot be picked up by other characters.                                              ║▓
+╚═══════════════════════════════════════════-36-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                          System                                           ║▓
 ║                                          ======                                           ║▓
@@ -1895,8 +1996,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-╚═══════════════════════════════════════════-35-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-37-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -1946,7 +2046,7 @@
 ║ Table 9: Decile dice, used for quantification on a percentile scale. d100 is also a       ║▓
 ║ decile die, and the only one used for Action resolution. The d20 does not need a "tens"   ║▓
 ║ die and is rolled on its own.                                                             ║▓
-╚═══════════════════════════════════════════-36-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-38-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -1996,7 +2096,7 @@
 ║                                                                                           ║▓
 ║    The d100 doesn't change: it is comprised of two zero-based d10s read side-by-side, and ║▓
 ║    generating numbers from 00 to 99.                                                      ║▓
-╚═══════════════════════════════════════════-37-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-39-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2046,7 +2146,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-38-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-40-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2096,7 +2196,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-39-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-41-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2146,7 +2246,7 @@
 ║ Conditions, Effects, etc. The "Character Sheet" chapter briefly describes the different   ║▓
 ║ categories of character Features. Complete descriptions of the Features of characters and ║▓
 ║ enemies, and their use in the game, are given in the Chapters "Character", and "Setting". ║▓
-╚═══════════════════════════════════════════-40-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-42-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2196,7 +2296,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-41-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-43-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2219,11 +2319,11 @@
 ║ detailed for the GQ to be able to determine the Features to be used as Effort and         ║▓
 ║ Resistance, or modifiers.                                                                 ║▓
 ║                                                                                           ║▓
-║ ┌[Example 5]────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ ┌[Example 6]────────────────────────────────────────────────────────────────────────────┐ ║▓
 ║ │ Cody declares his character's intent: "Spider attacks the second Nasute Soldier".     │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-║ ┌[Example 6]────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ ┌[Example 7]────────────────────────────────────────────────────────────────────────────┐ ║▓
 ║ │ Brody declares his character's intent: "I want Wasp to display her stripes and scare  │ ║▓
 ║ │ the living beejeesus out of the Worker Bees! I want her to dive in towards them,      │ ║▓
 ║ │ buzzing menacingly and waving her abdomen around in, like, a threatening and          │ ║▓
@@ -2246,7 +2346,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-42-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-44-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2285,7 +2385,7 @@
 ║ player is free to negotiate a different pair but the GQ has the final word. Any           ║▓
 ║ negotiation should not take as long as to bore the rest of the group.                     ║▓
 ║                                                                                           ║▓
-║ ┌[Example 7]────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ ┌[Example 8]────────────────────────────────────────────────────────────────────────────┐ ║▓
 ║ │ Cody negotiates with the GQ: "But Wasp is Venomous so she can display her Stinger and │ ║▓
 ║ │ maximise the intimidation of the Minor Termite Soldiers".                             │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
@@ -2296,7 +2396,7 @@
 ║ is 68% which is already pretty good, but Cody wants to maximise the chance to intimidate  ║▓
 ║ the Termites. It's up to the GQ whether to accept this or not. If the GQ decides that     ║▓
 ║ Signalling is the appropriate Feature to use as Effort, so it is.                         ║▓
-╚═══════════════════════════════════════════-43-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-45-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2346,7 +2446,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-44-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-46-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2396,7 +2496,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-45-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-47-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2446,7 +2546,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-46-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-48-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2496,7 +2596,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-47-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-49-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2546,7 +2646,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-48-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-50-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2582,7 +2682,7 @@
 ║ the context of the Action, or when it is not clear from the context of an Action what the ║▓
 ║ difference is between different DoS.                                                      ║▓
 ║                                                                                           ║▓
-║ ┌[Example 8]────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ ┌[Example 9]────────────────────────────────────────────────────────────────────────────┐ ║▓
 ║ │ Beetle is trying to lift a piece of debris from the Nest's floor. This is a simple    │ ║▓
 ║ │ Action that can either succeed or fail. The GQ asks for a Boolean Roll against        │ ║▓
 ║ │ Beetle's Strength: 55%. The player rolls: 78. The result does not match Beetle's      │ ║▓
@@ -2596,7 +2696,7 @@
 ║ │ Unfortunately, the alternative "Crisp Roll" was not thematically appropriate.         │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-49-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-51-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2629,7 +2729,7 @@
 ║ it makes sense to take into account the Resistance to a character's Effort, but where the ║▓
 ║ full complexity of the Six Degrees of Success of the Qualification Roll is not needed.    ║▓
 ║                                                                                           ║▓
-║ ┌[Example 9]────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ ┌[Example 10]───────────────────────────────────────────────────────────────────────────┐ ║▓
 ║ │ Beetle is trying to lift a piece of debris from the Nest's floor. The GQ asks the     │ ║▓
 ║ │ Beetle player for a Contested Boolean Roll. Effort is Beetle's Strength: 55%, and     │ ║▓
 ║ │ Resistance is 45%, because the GQ determines the piece of debris is not too heavy.    │ ║▓
@@ -2646,7 +2746,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-50-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-52-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2696,7 +2796,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-51-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-53-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2731,7 +2831,7 @@
 ║ Complete Failure             (Complete Failure outcome)                                   ║▓
 ║ Critical Failure             (Critical Failure outcome)                                   ║▓
 ║ ───────────────────────────────────────────────────────                                   ║▓
-║ Figure 18: Minigame Formula Template.                                                     ║▓
+║ Figure 24: Minigame Formula Template.                                                     ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -2746,7 +2846,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-52-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-54-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2796,7 +2896,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-53-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-55-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2846,7 +2946,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-54-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-56-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2896,7 +2996,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-55-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-57-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2946,7 +3046,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-56-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-58-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -2996,7 +3096,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-57-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-59-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3046,7 +3146,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-58-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-60-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3096,7 +3196,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-59-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-61-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3146,7 +3246,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-60-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-62-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3196,7 +3296,7 @@
 ║ Shake          Charms          Charmed         Passions                                   ║▓
 ║ ───────────────────────────────────────────────────────────────                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-61-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-63-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3246,7 +3346,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-62-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-64-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3296,7 +3396,7 @@
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-63-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-65-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3346,7 +3446,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-64-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-66-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3396,7 +3496,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-65-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-67-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3446,7 +3546,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-66-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-68-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3496,7 +3596,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-67-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-69-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3546,7 +3646,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-68-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-70-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3585,7 +3685,7 @@
 ║ Complete Failure             Cost, Cost, Risk                                             ║▓
 ║ Critical Failure             Cost, Cost, Cost                                             ║▓
 ║ ───────────────────────────────────────────────────                                       ║▓
-║ Figure 19: Exploration Action Formula.                                                    ║▓
+║ Figure 25: Exploration Action Formula.                                                    ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -3596,7 +3696,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-69-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-71-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3646,7 +3746,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-70-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-72-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3696,7 +3796,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-71-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-73-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3746,7 +3846,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-72-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-74-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3796,7 +3896,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-73-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-75-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3846,7 +3946,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-74-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-76-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3896,7 +3996,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-75-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-77-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3937,7 +4037,7 @@
 ║ │ Miss:................................... ││ Miss (Crit):.....Attacker takes 4 Wounds │  ║▓
 ║ └──────────────────────────────────────────┘└──────────────────────────────────────────┘  ║▓
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
-║ Figure 20: Minor Tremite Soldier Attacks.                                                 ║▓
+║ Figure 26: Minor Tremite Soldier Attacks.                                                 ║▓
 ║                                                                                           ║▓
 ║ ┌[Special Rule - Swarm]─────────────────────────────────────────────────────────────────┐ ║▓
 ║ │                                                                                       │ ║▓
@@ -3946,7 +4046,7 @@
 ║ │                                                                                       │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-76-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-78-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -3966,7 +4066,7 @@
 ║ │ ○ Rcoiling...... ○ Recoiling...... ○ Holding....... ○ Advancing...... ○ Advancing.....│ ║▓
 ║ └<^-30>───────────<^-30%>───────────<^Doing Good>────<^+30%>───────────<^+30>───────────┘ ║▓
 ║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
-║ Figure 21: Minor Termite Soldier Disposition Track.                                       ║▓
+║ Figure 27: Minor Termite Soldier Disposition Track.                                       ║▓
 ║                                                                                           ║▓
 ║ ┌[Special Rule - Nest Guardians]────────────────────────────────────────────────────────┐ ║▓
 ║ │                                                                                       │ ║▓
@@ -3996,7 +4096,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-77-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-79-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -4021,7 +4121,7 @@
 ║ Passions                   50%                                                            ║▓
 ║ Blind                      100%                                                           ║▓
 ║ ─────────────────────────────────────                                                     ║▓
-║ Figure 22: Major Termite Soldier Features.                                                ║▓
+║ Figure 28: Major Termite Soldier Features.                                                ║▓
 ║                                                                                           ║▓
 ║ ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐  ║▓
 ║ │ Name:....................Mandible Attack ││ Name:..Greater Autothysis (Self-Rupture) │  ║▓
@@ -4035,7 +4135,7 @@
 ║ │ Miss:................................... ││ Miss (Add):..............Attacker killed │  ║▓
 ║ └──────────────────────────────────────────┘└──────────────────────────────────────────┘  ║▓
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
-║ Figure 23: Major Termite Soldier Attacks.                                                 ║▓
+║ Figure 29: Major Termite Soldier Attacks.                                                 ║▓
 ║                                                                                           ║▓
 ║ ┌[Special Rule - Alarm Pheromones]──────────────────────────────────────────────────────┐ ║▓
 ║ │ Same as for Worker Termites.                                                          │ ║▓
@@ -4046,7 +4146,7 @@
 ║ ┌[Special Rule - Nest Guardians]────────────────────────────────────────────────────────┐ ║▓
 ║ │ Same as for Minor Termite Soldiers.                                                   │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
-╚═══════════════════════════════════════════-78-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-80-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -4075,7 +4175,7 @@
 ║ Passions                   55%                                                            ║▓
 ║ Blind                      100%                                                           ║▓
 ║ ─────────────────────────────────────                                                     ║▓
-║ Figure 24: Nasute Soldier Features.                                                       ║▓
+║ Figure 30: Nasute Soldier Features.                                                       ║▓
 ║                                                                                           ║▓
 ║ ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐  ║▓
 ║ │ Name:.............Fontanellar Gun Attack ││ Name:.....Greater Fontanellar Gun Attack │  ║▓
@@ -4089,14 +4189,14 @@
 ║ │ Miss:.............Attacker Recoils twice ││ Miss:.............Attacker Recoils twice │  ║▓
 ║ └──────────────────────────────────────────┘└──────────────────────────────────────────┘  ║▓
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
-║ Figure 25: Nasute Soldier Attacks.                                                        ║▓
+║ Figure 31: Nasute Soldier Attacks.                                                        ║▓
 ║                                                                                           ║▓
 ║ ┌[Special Rule - Self-Sacrificing]──────────────────────────────────────────────────────┐ ║▓
 ║ │ Same as for Minor Termite Soldiers.                                                   │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-79-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-81-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -4146,5 +4246,5 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-80-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-82-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀

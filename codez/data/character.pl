@@ -7,7 +7,7 @@
                     ,common_ability/2
                     ,common_ability_factors/2
                     ,effect/2
-                    ,inventory_item/2
+                    ,inventory_item/3
                     ]).
 
 /** <module> Features of Characters.
@@ -140,11 +140,11 @@ effect(stunned,'Stunned').
 %
 %       An Inventory item.
 %
-inventory_item(honeydew_restoration,'Honeydew of Restoration').
-inventory_item(nectar_shielding,'Nectar of Shielding').
-inventory_item(aphids,'Aphids').
-inventory_item(crickets,'Crickets').
-inventory_item(firefly,'Firefly').
-inventory_item(nectar_healing,'Nectar of Healing').
-inventory_item(empty,'').
+inventory_item(honeydew_restoration,'Honeydew of Restoration',[f]).
+inventory_item(nectar_shielding,'Nectar of Shielding',[f]).
+inventory_item(aphids,'Aphids',[f]).
+inventory_item(crickets,'Crickets',[f]).
+inventory_item(firefly,'Firefly',[f,l]).
+inventory_item(nectar_healing,'Nectar of Healing',[f]).
+inventory_item(empty,'',[]).
 

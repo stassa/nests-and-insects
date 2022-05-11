@@ -295,20 +295,33 @@ format_effects_inventory(Id,Efs):-
                  ,Par-Par_Tic
                  ,Poi-Poi_Tic
                  ,Stu-Stu_Tic])
-        ,character:inventory_item(It,Nm)
-        ,atom_length(Nm, N)
-        ,Pad is 30 - N
-        ,(   Nm == ''
+        ,character:inventory_item(It,Nm,Ts)
+        % Force padding between name and type
+        % Because I don't know how to pad one space with Swi's format language.
+        ,(   Nm \= ''
+         ->  atom_concat(Nm,' ',Nm_)
+         ;   Nm_ = Nm
+         )
+        ,atom_length(Nm_, N)
+        ,(   Ts = []
+         ->  Ts_ =  ''
+            ,Pad is 30
+         ;   maplist(upcase_atom,Ts,Ts_)
+            ,list_chars(Ts_,L)
+            % Inventory slot length minus name and type
+            ,Pad is 30 - (N + L)
+         )
+        ,(   Nm_ == ''
          ->  Itm_Tic = '○'
          ;   Itm_Tic = '✓'
          )
         ,format(atom(Efs_Box),'║┌[Effects]───────────────────────────────────┐┌[Inventory]───────────────────────────────┐ ║▓~n',[])
-        ,format(atom(Efs_Ln1),'║│ ~w Agony....:[~|~`_t~w~4+%] ~w Immobilised.:[~|~`_t~w~4+%] ││ ~w ~w~|~`_t~*+:[~|~`_t~w~4+%] │ ║▓~n',[Ago_Tic,Ago,Imm_Tic,Imm,Itm_Tic,Nm,Pad,R])
+        ,format(atom(Efs_Ln1),'║│ ~w Agony....:[~|~`_t~w~4+%] ~w Immobilised.:[~|~`_t~w~4+%] ││ ~w ~w~`_t~w~|~`_t~*+:[~|~`_t~w~4+%] │ ║▓~n',[Ago_Tic,Ago,Imm_Tic,Imm,Itm_Tic,Nm_,Ts_,Pad,R])
         ,format(atom(Efs_Ln2),'║│ ~w Bleeding.:[~|~`_t~w~4+%] ~w Infected....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Ble_Tic,Ble,Inf_Tic,Inf])
         ,format(atom(Efs_Ln3),'║│ ~w Blind....:[~|~`_t~w~4+%] ~w Paralysed...:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Bli_Tic,Bli,Par_Tic,Par])
         ,format(atom(Efs_Ln4),'║│ ~w Charmed..:[~|~`_t~w~4+%] ~w Poisoned....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Cha_Tic,Cha,Poi_Tic,Poi])
         ,format(atom(Efs_Ln5),'║│ ~w Confused.:[~|~`_t~w~4+%] ~w Stunned.....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Con_Tic,Con,Stu_Tic,Stu])
-        ,format(atom(Efs_Foo),'║└<^Applies>──────────<^Applies>──────────────┘└<^Edible>─────────────────────────────────┘ ║▓~n',[])
+        ,format(atom(Efs_Foo),'║└<^Applies>──────────<^Applies>──────────────┘└<^Depleted>───────────────────────────────┘ ║▓~n',[])
         ,format(atom(Efs_End),'╚═══════════════════════════════════════════════════════════════════════════════════════════╝▓~n',[])
         ,format(atom(Efs_Sha),' ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀~n',[])
         ,atomic_list_concat([Efs_Box,
@@ -320,3 +333,27 @@ format_effects_inventory(Id,Efs):-
                              Efs_Foo,
                              Efs_End,
                              Efs_Sha],'',Efs).
+
+
+%!      list_chars(+List,-Chars) is det.
+%
+%       Number of characters to print a list.
+%
+%       When printing an Item's Type we need to calculate the length of
+%       padding inserted in the Inventory slot. This depends on the
+%       length of the Item's name in characters, but also on the number
+%       of characters in the list of type symbols _including_ the square
+%       brackets enclosing, and commas separating, the type symbols.
+%       This is what this predicate does.
+%
+list_chars([],2):-
+        !.
+list_chars(Ls,L):-
+        list_chars(Ls,2,L).
+
+list_chars([_L],N,N_):-
+        succ(N,N_)
+        ,!.
+list_chars([_L|Ls],N,Bind):-
+        N_ is N + 2
+        ,list_chars(Ls,N_,Bind).
