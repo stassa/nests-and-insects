@@ -34,7 +34,6 @@ format_toc_([toc(R,T,P)|Ts],W,Acc,Bind):-
         ,atom_codes(C,[C_])
         ,toc_tabs(R,S)
         ,format(atom(F),'~t~*+~w~*t~w~*|',[S,T,C_,P,W])
-        ,writeln(F)
         ,format_toc_(Ts,W,[F|Acc],Bind).
 
 
