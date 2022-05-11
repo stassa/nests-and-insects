@@ -8,6 +8,12 @@ Code
 
 [DONE] Add syntax highlighting file for vim.
 
+Rulebook
+--------
+
+[DONE] Corrected coverpage ASCII logo, art (was a bit skewed)
+
+[DONE] Flesh out Inventory Item rules (needed for Events rules).
 
 
 10/05/22
