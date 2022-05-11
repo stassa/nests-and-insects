@@ -1,3 +1,8 @@
+11/05/22
+========
+
+[TODO] Add syntax highlighting file for Notepad++, other editors (?).
+
 07/05/22
 ========
 
@@ -11,7 +16,7 @@ game/
 [TODO] Write up behaviour cycles for Termites. 
 
 
-07/05/22
+06/05/22
 ========
 
 game/
@@ -75,4 +80,4 @@ codez/
 
 [TODO] Add vim tags for easier searches.
 
-[TODO] Add syntax highlighting file for vim, Notepad++, other editors (?).
+[DONE] Add syntax highlighting file for vim.
