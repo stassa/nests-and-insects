@@ -450,7 +450,6 @@
 
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║                                                                                           ║▓
 ║                                      Character Sheet                                      ║▓
 ║                                      ---------------                                      ║▓
 ║                                                                                           ║▓
@@ -495,6 +494,7 @@
 ║                                                                                           ║▓
 ║ Under the Class Header is the Attributes Area (Figure 2), listing Class Attributes.       ║▓
 ║ Attributes are Features that represent innate abilities of characters in a Class.         ║▓
+║                                                                                           ║▓
 ║                                                                                           ║▓
 ╚════════════════════════════════════════════-7-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀

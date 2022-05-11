@@ -238,7 +238,6 @@ Critical Failure &        Both Attacks Miss
 \newpage
 \charsheet[template]
 
-
 \section{Character Sheet}
 
 In Nests & Insects characters are described by percentile-rated Features, listed in a
