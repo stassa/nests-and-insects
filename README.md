@@ -5,7 +5,8 @@ This is the repository for the rulebooks and code of Nests & Insects, a Roguelik
 Tabletop Roleplaying Game.
 
 Nests & Insects is still a work in progress, in the early stages of design and
-playtesting.
+playtesting. To see how much is done and how much remains to be done, check out
+the TODO file and `changelog.md`.
 
 The Game
 --------
@@ -14,6 +15,8 @@ Nests & Insects is a tabletop roleplaying game (TTRPG) for 2 to 7 players. One
 player assumes the role of the Game Queen and describes the game world to the
 other players. The other players control characters who explore, and interact
 with, the game world.
+
+### Characters
 
 Players' characters are arthropods that belong to one of six classes: Spider,
 Wasp, Scorpion, Ladybug, Beetle and Ants (plural). The characters are
@@ -24,6 +27,8 @@ the King; steal nectar, honey, honeydew, aphids or mealybugs (farmed by ants) or
 fungi (cultivated by termites); steal, or kill, larvae; deliver, or pick up a
 message; or sabotage the Nest.
 
+### The Nest
+
 At the beginning of a new game the players' characters enter a Nest to carry out
 their Job armed with their natural weapons and armour: mandibles, pincers,
 stingers, carapaces, wings, venom, webs. During a Job characters must survive
@@ -33,6 +38,8 @@ may find food items, such as nectar and fungi, that can be consumed to provide
 not only sustenance but also healing, enhanced physical and mental abilities and
 other benefits.
 
+### A tabletop roleplaying game
+
 Nests & Insects is a tabletop roleplaying game: the players say what their
 characters want to do and roll the dice to see what happens. Then the Game Queen
 describes the results of the characters' actions. Nests & Insects' roleplaying
@@ -41,16 +48,20 @@ rolled to determine the outcome of actions and composite "decile dice" (d20,
 d40, d60, d80, d120 and the d100 itself) are rolled to quantify the results of
 actions. The system is designed to remove all mental arithmetic from "action
 resolution" and to encourage the players to use their imagination to help their
-characters achieve their goals. Everything in Nests & Insects is procedurally
-generated: the Nest, its guardians, items, all challenges and rewards.
+characters achieve their goals. Everything characters encounter in Nests &
+Insects is procedurally generated: the Nest, its guardians, items, all
+challenges and rewards.
+
+### A roguelike tabletop roleplaying game
 
 Nests & Insects is a "Roguelike" TTRPG: it is inspired by Roguelike Computer
-RPGs (CRPGs) such as Nethack, Angband, Moria and ADoM. From Roguelike CRPGs it
-borrows: procedural generation; hack-and-slash, dungeon-crawling gameplay;
-lethal combat; hunger mechanics; and a focus on exploration and experimentation
-with the game world. From TTRPGs it borrows: weird dice; tortuous terminology
-with Pompous Capitalisation; over-engineered rules; unclear motivation to learn
-yet another roleplaying system; and crunch Crunch CRrRUNCH!
+RPGs (CRPGs) such as Nethack, Angband, Moria, ADoM and newer games like Diablo
+and Darkest Dungeon. From Roguelike CRPGs it borrows: procedural generation;
+hack-and-slash, dungeon-crawling gameplay; lethal combat; hunger mechanics; and
+a focus on exploration and experimentation with the game world. From TTRPGs it
+borrows: weird dice; tortuous terminology with Pompous Capitalisation;
+over-engineered rules; unclear motivation to learn yet another roleplaying
+system; and crunch Crunch CRrRUNCH!
 
 Reading the rulebook
 --------------------
