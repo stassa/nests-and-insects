@@ -51,11 +51,11 @@ game/
 codez/
 ------
 
-[TODO] Automate ToC generation.
+[DONE] Automate ToC generation.
 
 [DONE] Automate incrementing count of Tables, boxes, Figures.
 
-[TODO] Automate typesetting of Chapter, Section etc. headers.
+[DONE] Automate typesetting of Chapter, Section etc. headers.
 
 [DONE] Automatically insert charsheet template (as with class charsheets)
 

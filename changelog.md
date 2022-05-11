@@ -1,3 +1,15 @@
+11/05/22
+========
+
+Version: v.1.0.0
+
+Code
+----
+
+[DONE] Automate ToC generation.
+
+[DONE] Automate typesetting of Chapter, Section etc. headers.
+
 9/05/22
 =======
 
