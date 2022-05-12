@@ -780,7 +780,18 @@ feared by its enemies, and equipped with good survival skills.
 \newpage
 
 \section{Character Features}
+\newpage
 
+\section{Attributes}
+\newpage
+
+\section{Combat Conditions}
+\newpage
+
+\section{Survival Featues}
+\newpage
+
+\section{Abilities}
 \newpage
 
 \section{Inventory Items}
@@ -1012,7 +1023,6 @@ and unticks the radio button next to it to clear the Inventory slot.
 _Exhausted Items_ When an Inventory Item is exhausted, it can no longer be consumed to
 take Actions or pay Costs. Exhausted Items are not "dropped": they just disappear
 and cannot be picked up by other characters.
-
 
 \chapter{System}
 
@@ -1658,6 +1668,12 @@ than Resistance. When Resistance is equal to, or higher than Effort, the Action 
 only fail. In that case, either don't make any rolls at all, or make a full
 Qualification Roll or a simple Boolean Roll instead.
 \end{note}
+
+\newpage
+
+\section{Acting in tandem}
+
+% Rules for characters helping each other.
 
 \newpage
 
@@ -2394,12 +2410,35 @@ Nest Environment.
 
 \newpage
 
+\section{Hunting and Foraging}
+\newpage
+
+\section{Resting and Healing}
+\newpage
+
 \chapter{Setting}
+\newpage
+
+\section{Clients and Jobs}
+\newpage
+
+\section{Environment}
+
+\subsection{Nests}
+
+\subsection{Levels}
+
+\subsection{Rooms}
 
 \newpage
 
 \section{Enemies}
+\newpage
 
+\section{Ants}
+\newpage
+
+\section{Bees}
 \newpage
 
 \section{Termites}
@@ -2654,4 +2693,39 @@ chain of sticky, noxious death.
 
 \end{box}
 
+\newpage
+
+\subsection{Alates - King}
+\newpage
+
+\subsection{Alates - Queen}
+\newpage
+
+\subsection{Termitophiles}
+\newpage
+
+\subsection{Inquilines}
+\newpage
+
+\subsection{Parasites}
+\newpage
+
+\section{Items}
+\newpage
+
+\section{Food Items}
+
+\subsection{Fungi}
+
+\subsection{Honey}
+
+\subsection{Honeydew}
+
+\subsection{Nectar}
+\newpage
+
+\section{Prey}
+\newpage
+
+\section{Other Items}
 \newpage
