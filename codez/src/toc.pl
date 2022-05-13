@@ -30,9 +30,9 @@ format_toc(Ts,N,W,Ls):-
 %       Formats each line of the ToC with indentation, padding and page
 %       numbers.
 %
-format_toc_([],_W,Fs,Fs):-
+format_toc_([[_C,_S,_Sb,_SbSb]],_W,Fs,Fs):-
         !.
-format_toc_([toc(R,T,P)|Ts],W,Acc,Bind):-
+format_toc_([Cs,toc(R,T,P)|Ts],W,Acc,Bind):-
         configuration:toc_padding(C)
         ,atom_codes(C,[C_])
         ,toc_tabs(R,S)
@@ -42,7 +42,8 @@ format_toc_([toc(R,T,P)|Ts],W,Acc,Bind):-
          ->  Acc_ = ['',F|Acc]
          ;   Acc_ = [F|Acc]
          )
-        ,format_toc_(Ts,W,Acc_,Bind).
+        ,format_toc_([Cs|Ts],W,Acc_,Bind).
+
 
 
 %!      toc_lines(+Lines,+Counts,+Acc,-Formatted) is det.

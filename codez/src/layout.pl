@@ -141,7 +141,7 @@ format_lines(Ls,N,Fs,[P,Ni,W,Cs,Ts]):-
         % One line of header and two lines of footer
         % Plus off-by-one offset
         ,N_ is N - 2
-        ,format_lines(Ls,[1,1,N_,W,[],[]],[P,Ni,_M,W,Cs,Ts],[],Fs).
+        ,format_lines(Ls,[1,1,N_,W,[],[[0,0,0,0]]],[P,Ni,_M,W,Cs,Ts],[],Fs).
 
 
 %!      format_lines(+Text,+Data,-Data_Bind,+Acc,-Formatted) is det.
@@ -348,17 +348,18 @@ format_command(C,Ls,[P,N,M,W,Cs,Ts],Acc,Acc_,Ls,[P,N_,M,W,Cs_,Ts]):-
         label_lines(C,Cs,F,Cs_)
         ,format_line(F,N,W,Acc,Acc_)
         ,succ(N,N_).
-format_command(C,Ls,[P,N,M,W,Cs,Ts],Acc,Acc,Ls_,[P,N,M,W,Cs,[toc(R,T_,P)|Ts]]):-
+format_command(C,Ls,[P,N,M,W,Cs,[Ks|Ts]],Acc,Acc,Ls_,[P,N,M,W,Cs,[Ks_,toc(R,T_,P)|Ts]]):-
 % Document parts styling
 % Keep the forall-write call because it outputs a nice layout
 % very helpful for debugging.
-        style_part(C,W,R,Ps)
+        style_part(C,W,R,Ks,Ks_,Ps)
         %,forall(member(P_,Ps)
         %       ,writeln(P_))
         ,Ps = [T|_U]
         ,split_string(T,' ',' ',Ss)
         ,atomic_list_concat(Ss,' ',T_)
         ,append(Ps,Ls,Ls_).
+
 
 
 %!      skip_lines(+End,+Lines,+Count,+Acc,-New,-Newlines,-NewCount)

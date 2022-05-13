@@ -1,4 +1,5 @@
 :- module(styles, [style_part/4
+                  ,style_part/6
                   ]).
 
 :-use_module(configuration).
@@ -114,6 +115,78 @@ string([S|Ss]) --> [S], string(Ss).
 string([S]) --> [S].
 
 
+
+%!      style_part(+Line,+Width,+Part,+Counts,-New,-Styled) is det.
+%
+%       Syle a document part: the title of a Chapter, Section, etc.
+%
+%       As style_part/4 but also prepends a part number: 1.0.0.0,
+%       1.1.0.0, etc, where each dot-separated number is the count of
+%       chapters, sections, subsections and subsubsections,
+%       respectively.
+%
+%       The list Counts keeps track of part numbers and it has the form
+%       [Chapter, Section, Subsection, Subsubsection], where each
+%       element is the running count of the named document part.
+%
+%       New is the list Counts with the running count of the current
+%       document Part updated by one.
+%
+%       @tbd This is copy-pased from style_part/4 but the alternative is
+%       to make yet another predicate called something like
+%       "style_part", which I think is more confusion than is justified
+%       by the good practice of not duplicating code. So duplicate away.
+%
+style_part(L,W,P,Cs,Cs_,Ls):-
+        document_part(L,P,T)
+        ,numbered_part(P,Cs,N,Cs_)
+        ,atomic_list_concat([N,T],' ',T_)
+        ,configuration:styles(P,Ss)
+        ,line_styles(Ss,LS,Ss_)
+        ,style_part_(T_,Ss_,W,L_)
+        ,(   LS = nil
+         ->  Ls = [L_]
+         ;   configuration:line(LS,C)
+            ,underline(T_,C,U)
+            ,style_part_(U,Ss_,W,U_)
+            ,Ls = [L_,U_]
+         ).
+
+
+%!      numbered_part(+Part,+Counts,-Number,-New) is det.
+%
+%       Number a document part.
+%
+%       Part is a line that may be a part tag such as \\chapter{T},
+%       \\section{T} etc
+%
+%       Counts is the list of numbers representing running counts of
+%       document parts, inherited from style_part/6.
+%
+%       Number is an atom such as '1.0.0.0', '1.1.0.0' etc, that is to
+%       be appended to the styled part by style_part/6.
+%
+%       New is the list Counts updated so that the running count of the
+%       current Part is increased by one.
+%
+numbered_part(P,Cs,N,Cs_):-
+        parts_counts(Cs,P,Cs_)
+        ,atomic_list_concat(Cs_,'.',N).
+
+parts_counts([C,_S,_Sb,_SbSb],chapter,[C_,0,0,0]):-
+        !
+        ,succ(C,C_).
+parts_counts([C,S,_Sb,_SbSb],section,[C,S_,0,0]):-
+        !
+        ,succ(S,S_).
+parts_counts([C,S,Sb,_SbSb],subsection,[C,S,Sb_,0]):-
+        !
+        ,succ(Sb,Sb_).
+parts_counts([C,S,Sb,SbSb],subsubsection,[C,S,Sb,SbSb_]):-
+        succ(SbSb,SbSb_).
+
+
+
 %!      center(+Line,+Width,-Centered) is det.
 %
 %       Format a Line of text to be Center-aligned.
@@ -212,4 +285,3 @@ emphasize(L,L_):-
 %
 capitalise(L,L_):-
         upcase_atom(L,L_).
-
