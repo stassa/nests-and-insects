@@ -685,7 +685,34 @@ Diet: Omnivore
 Description
 -----------
 
-TODO
+Ants are descended from wasps, an ancestry evident in their form that indeed resembles
+that of a wingless wasp with geniculate (bent) antennae and a particularly narrow waist.
+
+Most Ants are eusocial, meaning that they live in nests with overlapping generations all
+born of a single reproductive female, the Queen. Accordingly, Nests & Insects Ants
+characters are a "swarm" of ten ants, rather than a single individual ant. When an Ants
+character takes a Wound in Combat or otherwise, one ant is lost from the swarm. The
+character suffers no penalties for Wounds, but if the character's Wounds reach their
+maximum of 10, the character is killed as usual.
+
+The Ants character in Nests & Insects is modelled after army ants (of which there are
+many species). The Ants character is blind and its individual ants represent soldiers of
+their species, armed with powerful mandibles. When an Ants character attacks an enemy,
+all the ants in the swarm pile on and try to take chunks out of their target.
+Mechanically speaking, the Damage caused by Ants character attacks is a function of the
+character's Wounds: the more Wounds, the more ants, the more Damage.
+
+The downside of being a swarm is that an Ants character's Wounds cannot be replenished
+with healing during Combat. Rather, the Ants character must actively summon new ants
+using their Swarming ability, and only during the Resting and Healing minigame.
+
+Ants characters have no carapace and cannot fly.
+
+Choose this class:
+------------------
+
+If you want your character to be a swarm of Ants who attack with a flurry of bites and
+don't mind taking Wounds.
 
 \newpage
 \charsheet[beetle]
