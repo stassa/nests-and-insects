@@ -235,13 +235,46 @@ Critical Failure &        Both Attacks Miss
 
 \chapter{Character}
 
+In Nests & Insects players control "characters", imaginary game entities that represent
+arthropod mercenaries on a Job to invade a Nest. Players control their characters by
+describing their characters' actions, then the players roll the dice to find out what
+happens. The Game Queen reads the dice and determines the outcome of the characters'
+actions, according to the rules of the game.
+
+Nests & Insects characters belong to one of six classes: Ants (plural), Beetle, Ladybug,
+Scorpion, Spider and Wasp. The six classes are modelled on real-world insect and arachnid
+species, but no class is meant to represent a particular species in detail- let alone
+with realism.
+
+The following sections describe the Nests & Insects characters, their classes, their
+Features, and the character sheets that record their Features.
+
+\newpage
+
+\section{Character Selection}
+
+To begin playing the game, players select one of the six character classes to be their
+character's class.
+
+Each character class can be selected at most once by any player in the group. In other
+words: no two players can play the same character class in the same game.
+
+There is no character creation, or character generation phase, as is common in CRPG
+Roguelikes and TTRPGs, alike. Each character of the same class has exactly the same
+starting Features with the exact same ratings, determined by the class' character sheet.
+
+To play a character, a player simply prints out the character sheet for her character's
+class, or copies it to her device so she can read and modify it during the game.
+
+Once all players have selected a character, the game begins.
+
 \newpage
 \charsheet[template]
 
 \section{Character Sheet}
 
 In Nests & Insects characters are described by percentile-rated Features, listed in a
-character sheet. 
+character sheet specific to a character's class.
 
 There are five categories of Features: Attributes, Combat Conditions, Survival Features,
 Abilities and Inventory Items. Features and their use in the game are described in detail
