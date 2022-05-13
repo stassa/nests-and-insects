@@ -3,6 +3,13 @@
 
 Version: v.1.0.0
 
+Rulebook
+--------
+
+[DONE] Write up rules for character death.
+
+[DONE] Fleshed out character selection.
+
 Code
 ----
 

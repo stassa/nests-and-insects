@@ -267,6 +267,46 @@ To play a character, a player simply prints out the character sheet for her char
 class, or copies it to her device so she can read and modify it during the game.
 
 Once all players have selected a character, the game begins.
+\newpage
+
+\section{Character Death}
+
+When a character dies, the player is free to select a new character.
+
+The new character begins in the same Room of the Nest as the other players' characters.
+
+The new character can be of the same class as the character who died, or of a different
+class, if that class is not currently taken (i.e. if another player is not playing a
+character of the desired class).
+
+\subsection{Bidding for a class}
+
+If a class is taken when a player's character dies, and the player wants to play a
+character of the taken class, the player can "bid" for the class.
+
+To bid for a class, the player informs the Game Queen that she (the player) wishes to
+play a character of her desired class the next time one will become available.
+
+A class becomes available when no characters of that class are currently alive in the
+game, and controlled by a player.
+
+Multiple players may bid for the same class.
+
+When a class becomes available, the first player who bid for the class can select the
+class for her character and join the game with the a fresh character of the desired
+class.
+
+If there are no living characters of a given class in the game and there are no bids for
+that class, then any player who wants to play a character of that class, can select the
+class without further ceremony.
+
+\subsection{The Cost of Death}
+
+The only mechanical consequence of character death is that a player must start with a
+fresh character, with base stats, without XP and without any Items (though some of the
+Items in a dead character's Inventory may remain on the floor of the Nest). Nests &
+Insects does not enforce any penalties for character death. Whether, and to what degree,
+a player is unhappy with the death of her character is left entirely up to the player.
 
 \newpage
 \charsheet[template]
