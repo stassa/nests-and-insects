@@ -1,9 +1,27 @@
+12/05/22
+========
+
+game/
+-----
+
+[TODO] Combat rules must explain Damage, wounds, Hit and Miss variants.  
+
+codez/
+------
+
+[DONE] Number Chapter, Section etc. to facilitate searching rulebook.
+
+
 11/05/22
 ========
 
-[TODO] For the love of goD make the vin syntax file sane.
+codez/
+------
+
+[TODO] For the love of goD make the vim syntax file sane.
 
 [TODO] Add syntax highlighting file for Notepad++, other editors (?).
+
 
 07/05/22
 ========
@@ -13,7 +31,8 @@ game/
 
 [DONE] Flesh out Inventory Item rules (needed for Events rules).
 
-[TODO] Add section_tags to facilitate searching rulebook.
+[NEVERMIND] Add section_tags to facilitate searching rulebook.
+            * Nevermind because numbered sections are a better option.
 
 [TODO] Write up behaviour cycles for Termites. 
 
@@ -53,7 +72,6 @@ game/
 [TODO] Start up Ants Subsection in Enemies Section.
 
 [TODO] Start up Bees Subsection in Enemies Section.
-
 
 codez/
 ------

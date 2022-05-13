@@ -1,3 +1,25 @@
+13/05/22
+========
+
+Version: v.1.0.0
+
+Code
+----
+
+[DONE] Number Chapter, Section etc. to facilitate searching rulebook.
+
+
+12/05/22
+========
+
+Version: v.1.0.0
+
+Rulebook
+--------
+
+[DONE] Added empty, placeholder pages to mark sections to be done.
+
+
 11/05/22
 ========
 
