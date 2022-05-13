@@ -1062,9 +1062,6 @@ Intent and the Degree of Success of the action.
 
 \newpage
 
-                                       Fuzzy d100
-                                       ==========
-
 \section{Decile Dice}
 
 The die used to roll for action resolution in fd100 is the "d100". This is nominally a
@@ -1107,6 +1104,7 @@ d120      &  0 to 119 &    d12      &  0,1,...,11 &  d10     &  0,1,...,9
 \label{Decile dice, used for quantification on a percentile scale. d100 is also a}[table]
 decile die, and the only one used for Action resolution. The d20 does not need a "tens"
 die and is rolled on its own.
+\newpage
 
 \subsection{Implementing Decile Dice}
 
