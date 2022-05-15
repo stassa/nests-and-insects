@@ -1,3 +1,13 @@
+14/05/22
+========
+
+codez/
+------
+
+[TODO] Append "TBD" to names of sections that are To Be Done to warn the reader.
+
+
+
 13/05/22
 ========
 
@@ -49,6 +59,8 @@ game/
 -----
 
 [TODO] Flesh out Events rules.
+       * Meaning the rules for specific Costs, Risks and Rewards, not the rules for
+         generating Events in Survival and Exploration.
 
 [TODO] Write up a brief description of Food Items.
 

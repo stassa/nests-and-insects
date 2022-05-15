@@ -1,3 +1,18 @@
+15/05/22
+========
+
+Version: v.1.0.0
+
+Rulebook
+--------
+
+[DONE] Clarified and extended Survival and Exploration Rules.
+       * Added step-by-step S&E rules.
+       * Clarified paying Costs, facing Risks, reaping Rewards.
+       * Added rules for forming Exploration Party.
+       * Added instructions for tracking Environment Pool.
+
+
 13/05/22
 ========
 

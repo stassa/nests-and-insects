@@ -141,58 +141,58 @@
 ║     3.8.15.0 Combat Ends...............................................................74 ║▓
 ║   3.9.0.0 Survival and Exploration.....................................................75 ║▓
 ║     3.9.1.0 How Procedural Generation Works............................................75 ║▓
-║     3.9.2.0 Nest Levels................................................................76 ║▓
-║     3.9.3.0 Rooms......................................................................76 ║▓
-║     3.9.4.0 Initiating Survival and Exploration........................................77 ║▓
-║     3.9.5.0 Exploration Action.........................................................78 ║▓
-║     3.9.6.0 Event Generation...........................................................79 ║▓
+║   3.10.0.0 The Nest environment........................................................76 ║▓
+║     3.10.1.0 Nest Levels...............................................................76 ║▓
+║     3.10.2.0 Rooms.....................................................................76 ║▓
+║     3.10.3.0 Passages..................................................................77 ║▓
+║     3.10.4.0 Shafts....................................................................77 ║▓
 ╚═══════════════════════════════════════════-ii-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
-║     3.9.7.0 Level Quantification Dice..................................................80 ║▓
-║   3.10.0.0 Hunting and Foraging........................................................81 ║▓
-║   3.11.0.0 Resting and Healing.........................................................82 ║▓
+║     3.10.5.0 Shortcuts.................................................................77 ║▓
+║   3.11.0.0 Event Generation............................................................78 ║▓
+║     3.11.1.0 Costs, Risks and Rewards..................................................78 ║▓
+║     3.11.2.0 Level Rating..............................................................79 ║▓
+║   3.12.0.0 The Environment Pool........................................................80 ║▓
+║   3.13.0.0 Survival and Exploration Steps..............................................82 ║▓
+║     3.13.1.0 Begin Survival and Exploration............................................83 ║▓
+║     3.13.2.0 Form an Exploration Party.................................................84 ║▓
+║     3.13.3.0 Spend a Room to pay the cost of the Exploration Action....................85 ║▓
+║     3.13.4.0 Resolve the Exploration Action............................................86 ║▓
+║     3.13.5.0 Generate and pay Costs determined by the Exploration Action...............87 ║▓
+║     3.13.6.0 Generate, then face Risks determined by the Exploration Action............88 ║▓
+║     3.13.7.0 Generate, then reap Rewards, determined by the Exploration Action.........89 ║▓
+║     3.13.8.0 Survival and Exploration Ends.............................................90 ║▓
+║   3.14.0.0 Hunting and Foraging........................................................91 ║▓
+║   3.15.0.0 Resting and Healing.........................................................92 ║▓
 ║                                                                                           ║▓
-║ 4.0.0.0 Setting........................................................................83 ║▓
-║   4.1.0.0 Clients and Jobs.............................................................84 ║▓
-║   4.2.0.0 Environment..................................................................85 ║▓
-║     4.2.1.0 Nests......................................................................85 ║▓
-║     4.2.2.0 Levels.....................................................................85 ║▓
-║     4.2.3.0 Rooms......................................................................85 ║▓
-║   4.3.0.0 Enemies......................................................................86 ║▓
-║   4.4.0.0 Ants.........................................................................87 ║▓
-║   4.5.0.0 Bees.........................................................................88 ║▓
-║   4.6.0.0 Termites.....................................................................89 ║▓
-║     4.6.1.0 Worker Termite.............................................................90 ║▓
-║     4.6.2.0 Minor Termite Soldier - Autothyte..........................................91 ║▓
-║     4.6.3.0 Major Termite Soldier - Autothyte..........................................93 ║▓
-║     4.6.4.0 Nasute Soldier.............................................................94 ║▓
-║     4.6.5.0 Alates - King..............................................................96 ║▓
-║     4.6.6.0 Alates - Queen.............................................................97 ║▓
-║     4.6.7.0 Termitophiles..............................................................98 ║▓
-║     4.6.8.0 Inquilines.................................................................99 ║▓
-║     4.6.9.0 Parasites.................................................................100 ║▓
-║   4.7.0.0 Items.......................................................................101 ║▓
-║   4.8.0.0 Food Items..................................................................102 ║▓
-║     4.8.1.0 Fungi.....................................................................102 ║▓
-║     4.8.2.0 Honey.....................................................................102 ║▓
-║     4.8.3.0 Honeydew..................................................................102 ║▓
-║     4.8.4.0 Nectar....................................................................102 ║▓
-║   4.9.0.0 Prey........................................................................103 ║▓
-║   4.10.0.0 Other Items................................................................104 ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ 4.0.0.0 Setting........................................................................93 ║▓
+║   4.1.0.0 Clients and Jobs.............................................................94 ║▓
+║   4.2.0.0 Environment..................................................................95 ║▓
+║     4.2.1.0 Nests......................................................................95 ║▓
+║     4.2.2.0 Levels.....................................................................95 ║▓
+║     4.2.3.0 Rooms......................................................................95 ║▓
+║   4.3.0.0 Enemies......................................................................96 ║▓
+║   4.4.0.0 Ants.........................................................................97 ║▓
+║   4.5.0.0 Bees.........................................................................98 ║▓
+║   4.6.0.0 Termites.....................................................................99 ║▓
+║     4.6.1.0 Worker Termite............................................................100 ║▓
+║     4.6.2.0 Minor Termite Soldier - Autothyte.........................................101 ║▓
+║     4.6.3.0 Major Termite Soldier - Autothyte.........................................103 ║▓
+║     4.6.4.0 Nasute Soldier............................................................104 ║▓
+║     4.6.5.0 Alates - King.............................................................106 ║▓
+║     4.6.6.0 Alates - Queen............................................................107 ║▓
+║     4.6.7.0 Termitophiles.............................................................108 ║▓
+║     4.6.8.0 Inquilines................................................................109 ║▓
+║     4.6.9.0 Parasites.................................................................110 ║▓
+║   4.7.0.0 Items.......................................................................111 ║▓
+║   4.8.0.0 Food Items..................................................................112 ║▓
+║     4.8.1.0 Fungi.....................................................................112 ║▓
+║     4.8.2.0 Honey.....................................................................112 ║▓
+║     4.8.3.0 Honeydew..................................................................112 ║▓
+║     4.8.4.0 Nectar....................................................................112 ║▓
+║   4.9.0.0 Prey........................................................................113 ║▓
+║   4.10.0.0 Other Items................................................................114 ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -3950,14 +3950,28 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.9.2.0 Nest Levels                                                                       ║▓
-║ -------------------                                                                       ║▓
+║                               3.10.0.0 The Nest environment                               ║▓
+║                               -----------------------------                               ║▓
 ║                                                                                           ║▓
 ║ A Nest is an environment that consists of multiple Nest Levels, each comprised of         ║▓
-║ multiple Rooms, and Passages connecting Rooms.                                            ║▓
+║ multiple Rooms, as well as Passages, Shortcuts and Shafts connecting Rooms between then,  ║▓
+║ and connecting a Level to other Levels.                                                   ║▓
 ║                                                                                           ║▓
-║ A Nest Level is a group of Rooms connected by Passages and situated in about the same     ║▓
-║ distance from the ground, much like a floor in a multi-storey house.                      ║▓
+║ Levels, Rooms, Shortcuts and Shafts are all generated as Events during the Survival and   ║▓
+║ Exploration minigame. They are collectively known as Nest Environment Events, or, more    ║▓
+║ simply, Environments.                                                                     ║▓
+║                                                                                           ║▓
+║ In mechanical terms, Environments act as resources that can be "spent" to initiate        ║▓
+║ minigames, or to pay Costs. In particular, in order to initiate the Survival and          ║▓
+║ Exploration minigame itself, a Room must be spent. The characters always start the game   ║▓
+║ with one Room: the Entrance to the Nest.                                                  ║▓
+║                                                                                           ║▓
+║ 3.10.1.0 Nest Levels                                                                      ║▓
+║ --------------------                                                                      ║▓
+║                                                                                           ║▓
+║ A Nest Level is a group of Rooms connected to each other by Passages and connected by     ║▓
+║ Shortcuts and Shafts to different Levels. Rooms in the same Level are situated at about   ║▓
+║ the same distance from the ground, much like a floor in a multi-storey house.             ║▓
 ║                                                                                           ║▓
 ║ In mechanical terms, Levels have a percentile rating that is used as the Resistance to    ║▓
 ║ Exploration Actions. As the characters delve deeper into the Nest, the Nest Level of the  ║▓
@@ -3973,69 +3987,55 @@
 ║ │ done.                                                                                 │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-║ 3.9.3.0 Rooms                                                                             ║▓
-║ -------------                                                                             ║▓
+║ 3.10.2.0 Rooms                                                                            ║▓
+║ --------------                                                                            ║▓
 ║                                                                                           ║▓
-║ Rooms are represented as Rewards and are only generated (i.e. found) when a character     ║▓
-║ takes an Exploration Action. Rooms have Features such as their Area, Height, or Darkness, ║▓
-║ that require Quantification.                                                              ║▓
-║                                                                                           ║▓
-║ Room Features are only quantified when characters must interact with them. For example,   ║▓
-║ Height affects the ability of a character to Fly, so it is only Quantified when a         ║▓
-║ character actually attempts to Fly. Nests & Insects calls this "Just-in-Time" (JIT)       ║▓
-║ generation.                                                                               ║▓
-║                                                                                           ║▓
-║ JIT generation is also used to generate Costs, Risks and Rewards (including Rooms).  In   ║▓
-║ particular, Costs are only generated when a character enters a Room, while Risks and      ║▓
-║ Rewards are generated every time a character takes an Exploration, Hunting, or Foraging   ║▓
-║ Action (in other words, when a character is searching for something, and there is a       ║▓
-║ chance that they might find it).                                                          ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ A Room is an enclosed area within a Level. In truth, eusocial insects' nests don't        ║▓
+║ ordinarily have many distinct rooms and are mainly composed of tunnels (with the          ║▓
+║ exception of bees' and eusocial wasps' nests that are entirely composed of hexagonal      ║▓
+║ cells, i.e. "rooms" of a sort). Despite this and for the sake of playing the game, Nests  ║▓
+║ & Insects pretends that Nests have Rooms.                                                 ║▓
 ║                                                                                           ║▓
 ╚═══════════════════════════════════════════-76-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║ Room Events are Rewards and are only generated (i.e. found) when a character takes an     ║▓
+║ Exploration Action.                                                                       ║▓
 ║                                                                                           ║▓
-║ 3.9.4.0 Initiating Survival and Exploration                                               ║▓
-║ -------------------------------------------                                               ║▓
+║ Rooms have Features such as their Area, Height, or Darkness, that require Quantification. ║▓
+║ Room Features are only quantified when characters must interact with them. For example,   ║▓
+║ Height affects the ability of a character to Fly, so it is only Quantified when a         ║▓
+║ character actually attempts to Fly, or takes another Action that requires the height of a ║▓
+║ Room to be known.                                                                         ║▓
 ║                                                                                           ║▓
-║ Players' characters have a shared pool of Rooms that they can spend at any time to        ║▓
-║ initiate a new instance of the Survival and Exploration minigame. Rooms can also be spent ║▓
-║ to initiate the Hunting and Foraging, and Resting and Healing minigames.                  ║▓
+║ 3.10.3.0 Passages                                                                         ║▓
+║ -----------------                                                                         ║▓
 ║                                                                                           ║▓
-║ When the game begins, the characters are given one Room, which represents their Entrance  ║▓
-║ to the Nest. The Nest Entrance can be spent immediately to initiate a first Survival and  ║▓
-║ Exploration minigame. It is advisable to only spend the Nest Entrance to initiate a       ║▓
-║ Survival and Exploration minigame, so as to ensure that more Rooms are generated as a     ║▓
-║ result of Exploration (but note that the Hunting and Foraging minigame can also generate  ║▓
-║ Rooms).                                                                                   ║▓
+║ A Passage is a tunnel, or a simple opening, or some other kind of entryway connecting two ║▓
+║ Rooms in the same Level.                                                                  ║▓
 ║                                                                                           ║▓
-║ When a Room is spent, it is removed from the players' pool of Rooms. The players and GQ   ║▓
-║ are free to track the pool of Rooms in any way they like. The Survival and Exploration    ║▓
-║ minigame takes place immediately after the Room is removed from the players' pool.        ║▓
+║ In mechanical terms, a Passage is a Cost Event that can be spent to grant a chance to     ║▓
+║ find a Room.                                                                              ║▓
 ║                                                                                           ║▓
+║ 3.10.4.0 Shafts                                                                           ║▓
+║ ---------------                                                                           ║▓
 ║                                                                                           ║▓
+║ A Shaft is a tunnel heading downwards, or upwards, towards the location of the target of  ║▓
+║ the current Job. As passages connect Rooms, Shafts connect Levels.                        ║▓
 ║                                                                                           ║▓
+║ In mechanical terms, a Shaft is a Reward Event that can be spent to grant a chance to     ║▓
+║ find a new Level with an increased Level rating, thus bringing characters closer to their ║▓
+║ Job's target.                                                                             ║▓
 ║                                                                                           ║▓
+║ 3.10.5.0 Shortcuts                                                                        ║▓
+║ ------------------                                                                        ║▓
 ║                                                                                           ║▓
+║ A Shortcut is a tunnel connecting the current Level with a Level closer to the center of  ║▓
+║ the Nest.                                                                                 ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ In mechanical terms, a Shortcut is a Reward Event that can be spent to grant a chance to  ║▓
+║ immediately find the Level with rating 100%, where the target of the current Job is       ║▓
+║ situated.                                                                                 ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -4050,74 +4050,30 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.9.5.0 Exploration Action                                                                ║▓
-║ --------------------------                                                                ║▓
+║                                 3.11.0.0 Event Generation                                 ║▓
+║                                 -------------------------                                 ║▓
 ║                                                                                           ║▓
-║ The Survival and Exploration Minigame is initiated whenever a player declares that her    ║▓
-║ character is exploring the Nest.                                                          ║▓
+║ 3.11.1.0 Costs, Risks and Rewards                                                         ║▓
+║ ---------------------------------                                                         ║▓
 ║                                                                                           ║▓
-║ _Exploration party_ More than one characer may take part in the Exploration Action        ║▓
-║ (indeed, this is typical). In that case, one character is the Acting character and every  ║▓
-║ other character taking part in the Action supports the Action with their Exploration      ║▓
-║ Feature applied as a positive modifier to the Acting character's Effort.                  ║▓
+║ Costs, Risks, and Rewards are generated every time a character takes an Exploration       ║▓
+║ Action. The Qualification Roll for the Exploration Action sets the number and kind of     ║▓
+║ Events that occur during the Action. Then the players or the GQ roll to generate Events   ║▓
+║ of the indicated types.                                                                   ║▓
 ║                                                                                           ║▓
-║ The outcome of the Exploration Action determines the number, and type of Events that      ║▓
-║ occur as a result of the Action. Up to three Events of up to three different types may    ║▓
-║ occur at once, depending on the DoS of the Exploration Action. The formula for the        ║▓
-║ Exploration Action is listed below.                                                       ║▓
-║                                                                                           ║▓
-║ Name of the Minigame: ............... Survival and Exploration                            ║▓
-║ Participating Entities: ............. Characters, Nest Environment                        ║▓
-║ List of Minigame Intents: ........... Explore the Nest                                    ║▓
-║ List of Minigame Actions: ........... Explore                                             ║▓
-║ Effort Variables: ................... Exploration                                         ║▓
-║ Resistance Variables: ............... Nest Level                                          ║▓
-║ Modifier Variables: ................. +Eusociology, +Perception                           ║▓
-║                                                                                           ║▓
-║ Outcomes of the six Degrees of Success and Failure:                                       ║▓
-║                                                                                           ║▓
-║ Degree of Success            Outcome                                                      ║▓
-║ ───────────────────────────────────────────────────                                       ║▓
-║ Critical Success             Reward, Reward, Reward                                       ║▓
-║ Complete Success             Risk, Reward, Reward                                         ║▓
-║ Partial Success              Cost, Risk, Reward                                           ║▓
-║ Partial Failure              Cost, Risk, Risk                                             ║▓
-║ Complete Failure             Cost, Cost, Risk                                             ║▓
-║ Critical Failure             Cost, Cost, Cost                                             ║▓
-║ ───────────────────────────────────────────────────                                       ║▓
-║ Figure 25: Exploration Action Formula.                                                    ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-╚═══════════════════════════════════════════-78-════════════════════════════════════════════╝▓
- ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
-║                                                                                           ║▓
-║ 3.9.6.0 Event Generation                                                                  ║▓
-║ ------------------------                                                                  ║▓
-║                                                                                           ║▓
-║ Costs are generated every time a character enters a new Room. Risks and Rewards are       ║▓
-║ generated every time a character takes an Exploration Action.                             ║▓
-║                                                                                           ║▓
-║ To generate an Event of the appropriate type, the characters or the GQ roll on the        ║▓
-║ appropriate Event table. Event tables are presented below. Each Event in the Tables is    ║▓
-║ given a brief description. Detailed Descriptions and mechanics for each kind of Event     ║▓
-║ follow in a subsequent Section.                                                           ║▓
+║ To generate an Event, the players or the GQ roll on the appropriate Event table. Event    ║▓
+║ tables are presented below. Each Event in the Tables is given a brief description.        ║▓
+║ Detailed Descriptions and mechanics for each kind of Event follow in a subsequent         ║▓
+║ Section.                                                                                  ║▓
 ║                                                                                           ║▓
 ║ Cost        Chance         Description                                                    ║▓
-║ ─────────────────────────────────────────────────────────────────────────────             ║▓
-║ Hunger      50% + Level    Increase Hunger, reduce Food, bestow Starving                  ║▓
+║ ───────────────────────────────────────────────────────────────────────────────           ║▓
+║ Hunger      50% + Level    Increase Hunger, deplete Food Items, bestow Starving           ║▓
 ║ Passage     45% + Level    Grants a chance to find a new Room                             ║▓
 ║ Effects     30% + Level    Apply, or modify the rating of deleterious Effects             ║▓
-║ Darkness    25% + Level    Reduce lighting Items or suffer in Darkness                    ║▓
-║ ─────────────────────────────────────────────────────────────────────────────             ║▓
+║ Darkness    25% + Level    Deplete lighting Items or suffer in Darkness                   ║▓
+║ Spoilage    15% + Level    Food Items have a chance to become Spoiled                     ║▓
+║ ───────────────────────────────────────────────────────────────────────────────           ║▓
 ║ Table 16: Costs.                                                                          ║▓
 ║                                                                                           ║▓
 ║ Risk              Chance         Description                                              ║▓
@@ -4140,18 +4096,12 @@
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
 ║ Table 18: Rewards.                                                                        ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-╚═══════════════════════════════════════════-79-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-78-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.9.7.0 Level Quantification Dice                                                         ║▓
-║ ---------------------------------                                                         ║▓
+║ 3.11.2.0 Level Rating                                                                     ║▓
+║ ---------------------                                                                     ║▓
 ║                                                                                           ║▓
 ║ When an Event, or a Feature of the Nest environment need to be quantified, the            ║▓
 ║ Quantification Die rolled depends on the Nest Level. An example of a Nest environment     ║▓
@@ -4173,7 +4123,7 @@
 ║                                                                                           ║▓
 ║ _Increasing Level ratings_ The rating of the Nest Level changes every time a character    ║▓
 ║ spends a Level Reward to explore a new Nest Level. At that time, the Costs/Risks Die      ║▓
-║ corresponding to the current Nest Level is rolled to quantify the new Level's rating. The ║▓
+║ corresponding to the current Nest Level is rolled to increase the new Level's rating. The ║▓
 ║ effect of this Quantification method is that as the characters delve deeper into the      ║▓
 ║ Nest, the chance to find a Level with 100% rating, where the target of their Job is       ║▓
 ║ found, increases.                                                                         ║▓
@@ -4196,11 +4146,561 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
+╚═══════════════════════════════════════════-79-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║                               3.12.0.0 The Environment Pool                               ║▓
+║                               -----------------------------                               ║▓
+║                                                                                           ║▓
+║ As described in earlier Sections, Environments can be used as resources to pay Costs or   ║▓
+║ play a minigame. To track the Environments generated so-far in the game, players have a   ║▓
+║ communal Environment Pool. This pool is simply a list of all the Environments generated   ║▓
+║ so far, and their properties.                                                             ║▓
+║                                                                                           ║▓
+║ Players are free to track their Environment Pool as best suits them, for example by       ║▓
+║ drawing a map of Environments and their connections and contents, etc.                    ║▓
+║                                                                                           ║▓
+║ One way to track an Environment Pool is to tabulate its contents. The following Table     ║▓
+║ gives an example of such tabulation.                                                      ║▓
+║                                                                                           ║▓
+║ Environment Id    Used?    Found In      Connections    Notes                             ║▓
+║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
+║ Entrance Room     Yes      Start         Red Room                                         ║▓
+║ Red Room          Yes      Entrance      Black Room     Shelter built                     ║▓
+║ Black Room        No       Red Room      Red Room                                         ║▓
+║ Shortcut 1        Yes      Black Room    Level 30%      Connects Black Room to Level 30%  ║▓
+║ Level 43%         Yes      Black Room                                                     ║▓
+║ Passage Right     Yes      Entrance                     Connects Entrance to Red Room     ║▓
+║ Passage Left      Yes      Red Room                     Connects Red Room to Black Room   ║▓
+║ Passage Up        No       Red Room                                                       ║▓
+║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
+║ Table 20: Environment Pool                                                                ║▓
+║                                                                                           ║▓
+║ In the Environment Pool Table, the "Environment Id" column lists a descriptive name for   ║▓
+║ each generated Environment (though one that should preferrably be kept short). This name  ║▓
+║ is up to the players to come up with. For example, a Room may be the "Black Fungus Room", ║▓
+║ because Black Fungus was found while Foraging in it; or a Room may be the "Sad Aphids     ║▓
+║ Farm", because Aphids were found penned in the Room and they looked sad; and so on.       ║▓
+║                                                                                           ║▓
+║ The "Used" column records whether an Environment has been spent to: either to pay a Cost, ║▓
+║ or to reap a Reward, or to initiate a Survival and Exploration, Hunting and Foraging or   ║▓
+║ Resting and Healing minigame.                                                             ║▓
+║                                                                                           ║▓
+║ Environments can only be spent once from the Environment Pool, but characters are free to ║▓
+║ visit them again for whatever reason, for example to try and find an Item dropped to the  ║▓
+║ floor of a Room. Additionally, a character, or an enemy, may be forced to retreat during  ║▓
+║ Combat, in which case they will likely end up in a Room already visited. In such cases a  ║▓
+║ character can move back in an Environment that has already been spent, without spending   ║▓
+║ it again.                                                                                 ║▓
+║                                                                                           ║▓
+║ The "Found In" column notes the Room in which an Environment was generated as the result  ║▓
+║ of an Exploration Action.                                                                 ║▓
 ╚═══════════════════════════════════════════-80-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║                               3.10.0.0 Hunting and Foraging                               ║▓
+║ The "Connections" column notes the other Environments to which an Environment is          ║▓
+║ connected. "Connected" means that there exists: a Passage; or a Shortcut; or a Shaft;     ║▓
+║ that leads to the connected Environment.                                                  ║▓
+║                                                                                           ║▓
+║ The "Notes" column is for players to mark down anything they wish to remember about the   ║▓
+║ Environment. In the example of the Environment Pool Table above, the players have noted   ║▓
+║ that a Shelter was built into the Red Room, and the connections between Environments      ║▓
+║ found so-far.                                                                             ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-81-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║                          3.13.0.0 Survival and Exploration Steps                          ║▓
+║                          ---------------------------------------                          ║▓
+║                                                                                           ║▓
+║ The Survival and Exploration minigame is carried out in distinct steps, listed below.     ║▓
+║ Unlike Combat, Survival and Exploration is not divided into Rounds or Turns. Instead,     ║▓
+║ each of the steps listed below is taken in the order in which it is listed, then the      ║▓
+║ minigame ends. A new Survival and Exploration minigame can begin immediately afterwards,  ║▓
+║ if the players so wish; otherwise, the players are free to control their characters as    ║▓
+║ they see fit.                                                                             ║▓
+║                                                                                           ║▓
+║ ┌[Survival and Exploration Steps]───────────────────────────────────────────────────────┐ ║▓
+║ │ 1. Begin Survival and Exploration.                                                    │ ║▓
+║ │                                                                                       │ ║▓
+║ │ 2. Form an Exploration Party (decide which characters go exploring).                  │ ║▓
+║ │                                                                                       │ ║▓
+║ │ 3. Spend a Room to pay the cost of the Exploration Action.                            │ ║▓
+║ │                                                                                       │ ║▓
+║ │ 4. Resolve the Exploration Action.                                                    │ ║▓
+║ │                                                                                       │ ║▓
+║ │ 5. Generate, then pay Costs determined by the outcome of the Exploration Action.      │ ║▓
+║ │                                                                                       │ ║▓
+║ │ 6. Generate, then face Risks determined by the Exploration Action.                    │ ║▓
+║ │                                                                                       │ ║▓
+║ │ 7. Generate, then reap Rewards, determined by the Exploration Action.                 │ ║▓
+║ │                                                                                       │ ║▓
+║ │ 8. Survival and Exploration Ends.                                                     │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ Each of the Steps in the Survival and Exploration Steps box above are described in detail ║▓
+║ in the following Sections.                                                                ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-82-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ 3.13.1.0 Begin Survival and Exploration                                                   ║▓
+║ ---------------------------------------                                                   ║▓
+║                                                                                           ║▓
+║ Survival and Exploration begins when a player declares that her character's Intent is to  ║▓
+║ "Explore the Nest".                                                                       ║▓
+║                                                                                           ║▓
+║ "Explore the Nest" is the formulaic Intent of the Exploration Action. A player is free to ║▓
+║ express her character's Intent to explore the Nest in her own words, as long as it's      ║▓
+║ clear that the characer wants to go exploring. If that's not clear, the GQ can always ask ║▓
+║ the player to clarify. If the player isn't sure what her character's Intent means in      ║▓
+║ mechanical terms, the decision is made by the GQ whether to start a Survival and          ║▓
+║ Exploration minigame, or not.                                                             ║▓
+║                                                                                           ║▓
+║ If more than one player wish their characters to explore the Nest, they can say so at     ║▓
+║ this point. Otherwise they can do so in the next Step.                                    ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-83-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ 3.13.2.0 Form an Exploration Party                                                        ║▓
+║ ----------------------------------                                                        ║▓
+║                                                                                           ║▓
+║ It's common for more than one player to explore the Nest at a time. In particular, all    ║▓
+║ the player characters may go exploring together, or the players may split their           ║▓
+║ characters into groups that will explore the Nest separately.                             ║▓
+║                                                                                           ║▓
+║ A group of characters exploring the Nest is an Exploration Party. To form an Exploration  ║▓
+║ Party the players decide between then which characters explore the Nest together. For     ║▓
+║ each such group, one Exploration Party is formed.                                         ║▓
+║                                                                                           ║▓
+║ For each Exploration Party, a separate Survival and Exploration Action is taken.          ║▓
+║ Nominate one character in each Exploration Party to be the "Scout" of the Party. The      ║▓
+║ Scout's Exploration Feature is used as the Effort for the subsequent Exploration Action.  ║▓
+║ For every other character in the Party, their Exploration Feature is used as a static     ║▓
+║ positive modifier to the Exploration Action.                                              ║▓
+║                                                                                           ║▓
+║ _Tracking Exploration Parties_ To facilitate the distinction between Exploration Parties, ║▓
+║ if more than one are formed, the GQ or the players can assign names to each party, or     ║▓
+║ describe the direction where a party is heading (this is despite the fact that Nest       ║▓
+║ environments do not specify clear directions). Tere are no specific rules for this. As an ║▓
+║ example, if the characters split into two Exploration Parties, the players can declare    ║▓
+║ that one party is exploring "to the North" and the other "to the South". Then the GQ and  ║▓
+║ the players can refer to the two parties as "the North Party" and the "South Party". The  ║▓
+║ GQ will probably want to make a note of what characters are in each Exploration Party.    ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-84-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ 3.13.3.0 Spend a Room to pay the cost of the Exploration Action                           ║▓
+║ ---------------------------------------------------------------                           ║▓
+║                                                                                           ║▓
+║ To take an Exploration Action, a character must spend a free Room from the characters'    ║▓
+║ Environment Pool. Mark a Room as "used" in the pool, so that it is not spent again later. ║▓
+║ Then resolve the Exploration Action as described in the following Section.                ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-85-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ 3.13.4.0 Resolve the Exploration Action                                                   ║▓
+║ ---------------------------------------                                                   ║▓
+║                                                                                           ║▓
+║ The Survival and Exploration Minigame is initiated whenever a player declares that her    ║▓
+║ character is exploring the Nest.                                                          ║▓
+║                                                                                           ║▓
+║ _Exploration party_ More than one characer may take part in the Exploration Action        ║▓
+║ (indeed, this is typical). In that case, one character is the Acting character and every  ║▓
+║ other character taking part in the Action supports the Action with their Exploration      ║▓
+║ Feature applied as a static positive modifier to the Acting character's Effort.           ║▓
+║                                                                                           ║▓
+║ The outcome of the Exploration Action determines the number, and type of Events that      ║▓
+║ occur as a result of the Action. Three Events of up to three different types will occur,  ║▓
+║ depending on the DoS of the Exploration Action. The formula for the Exploration Action is ║▓
+║ listed below.                                                                             ║▓
+║                                                                                           ║▓
+║ Name of the Minigame: ............... Survival and Exploration                            ║▓
+║ Participating Entities: ............. Characters, Nest Environment                        ║▓
+║ List of Minigame Intents: ........... Explore the Nest                                    ║▓
+║ List of Minigame Actions: ........... Explore                                             ║▓
+║ Effort Variables: ................... Exploration                                         ║▓
+║ Resistance Variables: ............... Nest Level                                          ║▓
+║ Modifier Variables: ................. +Eusociology, +Perception                           ║▓
+║                                                                                           ║▓
+║ Outcomes of the six Degrees of Success and Failure:                                       ║▓
+║                                                                                           ║▓
+║ Degree of Success            Outcome                                                      ║▓
+║ ───────────────────────────────────────────────────                                       ║▓
+║ Critical Success             Reward, Reward, Reward                                       ║▓
+║ Complete Success             Risk, Reward, Reward                                         ║▓
+║ Partial Success              Cost, Risk, Reward                                           ║▓
+║ Partial Failure              Cost, Risk, Risk                                             ║▓
+║ Complete Failure             Cost, Cost, Risk                                             ║▓
+║ Critical Failure             Cost, Cost, Cost                                             ║▓
+║ ───────────────────────────────────────────────────                                       ║▓
+║ Figure 25: Exploration Action Formula.                                                    ║▓
+║                                                                                           ║▓
+║ The Party Scout may add her Eusociology and Perception as static positive modifiers to    ║▓
+║ the Exploration Roll.                                                                     ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-86-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ 3.13.5.0 Generate and pay Costs determined by the Exploration Action.                     ║▓
+║ ---------------------------------------------------------------------                     ║▓
+║                                                                                           ║▓
+║ If the Outcome column of the Degrees of Success Table of the Exploration Action formula   ║▓
+║ includes one or more instances of the word "Cost", follow the steps below to generate,    ║▓
+║ and pay Costs.                                                                            ║▓
+║                                                                                           ║▓
+║    1. For each instance of the word "Cost":                                               ║▓
+║                                                                                           ║▓
+║    2. Roll d100.                                                                          ║▓
+║                                                                                           ║▓
+║    3. Look up the result on the Cost Table.                                               ║▓
+║                                                                                           ║▓
+║    4. Each Cost with a Chance that is equal to, or higher than the result of the d100     ║▓
+║    Roll is "generated".                                                                   ║▓
+║                                                                                           ║▓
+║    5. Each character in the Exploration Party pays each generated Cost.                   ║▓
+║                                                                                           ║▓
+║ ┌[Note 5]───────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ │ Depending on the result of the d100 roll, multiple Costs may need to be paid.         │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║ The Costs Table is reproduced below for the reader's convenience.                         ║▓
+║                                                                                           ║▓
+║ Cost        Chance         Description                                                    ║▓
+║ ───────────────────────────────────────────────────────────────────────────────           ║▓
+║ Hunger      50% + Level    Increase Hunger, deplete Food Items, bestow Starving           ║▓
+║ Passage     45% + Level    Grants a chance to find a new Room                             ║▓
+║ Effects     30% + Level    Apply, or modify the rating of deleterious Effects             ║▓
+║ Darkness    25% + Level    Deplete lighting Items or suffer in Darkness                   ║▓
+║ Spoilage    15% + Level    Food Items have a chance to become Spoiled                     ║▓
+║ ───────────────────────────────────────────────────────────────────────────────           ║▓
+║ Table 21: Costs.                                                                          ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-87-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ 3.13.6.0 Generate, then face Risks determined by the Exploration Action                   ║▓
+║ -----------------------------------------------------------------------                   ║▓
+║                                                                                           ║▓
+║ If the Outcome column of the Degrees of Success Table of the Exploration Action formula   ║▓
+║ includes one or more instances of the word "Risk", follow the steps below to generate,    ║▓
+║ and face Risks.                                                                           ║▓
+║                                                                                           ║▓
+║    1. For each instance of the word "Risk":                                               ║▓
+║                                                                                           ║▓
+║    2. Roll d100.                                                                          ║▓
+║                                                                                           ║▓
+║    3. Look up the result on the Risk Table.                                               ║▓
+║                                                                                           ║▓
+║    4. Each Risk with a Chance that is equal to, or higher than the result of the          ║▓
+║       d100 Roll is "generated".                                                           ║▓
+║                                                                                           ║▓
+║    5. All characters in the Exploration Party face the first generated Risk; once the     ║▓
+║       first Risk is faced and all Actions or minigames resulting are resolved, all        ║▓
+║       characters in the Exploration Party face the second generated Risk; and so on,      ║▓
+║       until all generated Risks have been faced.                                          ║▓
+║                                                                                           ║▓
+║ The Risks Table is reproduced below for the reader's convenience.                         ║▓
+║                                                                                           ║▓
+║ Risk              Chance         Description                                              ║▓
+║ ───────────────────────────────────────────────────────────────────────────               ║▓
+║ Encounter         50% + Level    Meet the nest's denizens                                 ║▓
+║ Item (Unknown)    30% + Level    Find as yet unidentified Food Items                      ║▓
+║ Obstacle          20% + Level    Prevents further Exploration until removed               ║▓
+║ Infection         10% + Level    Bestows the Infection Effect                             ║▓
+║ ───────────────────────────────────────────────────────────────────────────               ║▓
+║ Table 22: Risks.                                                                          ║▓
+║                                                                                           ║▓
+║ _Combat Risk_ Risks include the "Encounter" Event which may cause a Combat minigame to    ║▓
+║ begin. In that case, subsequent Risks are only faced once the Combat minigame has ended.  ║▓
+║ If some of the characters in the Exploration Party that faced the original Encounter Risk ║▓
+║ that initiated the Combat minigame are no longer in the same Room as the rest of the      ║▓
+║ Exploration party (usually because they are fleeing from Combat) only the characters      ║▓
+║ remaining in the Exploration Party face subsequent Risks.                                 ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-88-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ 3.13.7.0 Generate, then reap Rewards, determined by the Exploration Action                ║▓
+║ --------------------------------------------------------------------------                ║▓
+║                                                                                           ║▓
+║ If the Outcome column of the Degrees of Success Table of the Exploration Action formula   ║▓
+║ includes one or more instances of the word "Reward", follow the steps below to generate,  ║▓
+║ and reap Rewards.                                                                         ║▓
+║                                                                                           ║▓
+║    1. For each instance of the word "Reward":                                             ║▓
+║                                                                                           ║▓
+║    2. Roll d100.                                                                          ║▓
+║                                                                                           ║▓
+║    3. Look up the result on the Rewards Table.                                            ║▓
+║                                                                                           ║▓
+║    4. Each Reward with a Chance that is equal to, or higher than the result of the d100   ║▓
+║       Roll is "generated".                                                                ║▓
+║                                                                                           ║▓
+║    5. If a generated Reward is an Item, any character may add the Item to her Inventory.  ║▓
+║       If no character adds the Item to her Inventory the Item remains on the Room floor   ║▓
+║       as a "dropped" Item.                                                                ║▓
+║                                                                                           ║▓
+║       Which character picks up which Item is left to the players to decide. There are no  ║▓
+║       specific rules to manage that decision.                                             ║▓
+║                                                                                           ║▓
+║    6. If a generated Reward is a Room, Shortcut, or Level, the Reward is added to the     ║▓
+║       player Characters' communal Environment Pool.                                       ║▓
+║                                                                                           ║▓
+║    7. If a generated Reward is a Secret, follow the description of the Secret Event: this ║▓
+║       usually means that a new Event is generated.                                        ║▓
+║                                                                                           ║▓
+║ The Rewards Table is reproduced below for the reader's convenience.                       ║▓
+║                                                                                           ║▓
+║ Reward         Chance               Description                                           ║▓
+║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
+║ Room           100% - Level         Spend a Room to Explore, Hunt or Forage               ║▓
+║ Shortcut       Level - 50           Takes you closer to the Job Target                    ║▓
+║ Level          25% + Level          Entrance to a new, deeper Nest Level                  ║▓
+║ Item (Known)   25% + Level          Find a previously identified Food Item                ║▓
+║ Resource       15% + Level          Materials to build a Shelter for Resting and Healing  ║▓
+║ Secret         Perception - Level   Generates a random Cost, Risk or Reward.              ║▓
+║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
+║ Table 23: Rewards.                                                                        ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-89-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ 3.13.8.0 Survival and Exploration Ends                                                    ║▓
+║ --------------------------------------                                                    ║▓
+║                                                                                           ║▓
+║ Once all Costs, Risks and Rewards, are generated and dealt with as described in the       ║▓
+║ previous Sections, the Survival and Exploration minigame ends.                            ║▓
+║                                                                                           ║▓
+║ Nothing special happens when Survival and Exploration ends. Players are free to control   ║▓
+║ their characters as before.                                                               ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-90-════════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║                               3.14.0.0 Hunting and Foraging                               ║▓
 ║                               -----------------------------                               ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -4246,11 +4746,11 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-81-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-91-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║                               3.11.0.0 Resting and Healing                                ║▓
+║                               3.15.0.0 Resting and Healing                                ║▓
 ║                               ----------------------------                                ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -4296,7 +4796,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-82-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-92-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -4346,7 +4846,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-83-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-93-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -4396,7 +4896,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-84-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-94-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -4446,7 +4946,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-85-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-95-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -4496,7 +4996,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-86-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-96-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -4546,7 +5046,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-87-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-97-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -4596,7 +5096,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-88-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-98-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -4646,7 +5146,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-89-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-99-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -4671,7 +5171,7 @@
 ║ Smarts, Charms, Ken,Passions         10%                                                  ║▓
 ║ Blind                                100%                                                 ║▓
 ║ ───────────────────────────────────────────                                               ║▓
-║ Table 20: Worker Termite Features.                                                        ║▓
+║ Table 24: Worker Termite Features.                                                        ║▓
 ║                                                                                           ║▓
 ║ ┌[Special Rule - Alarm Pheromones]──────────────────────────────────────────────────────┐ ║▓
 ║ │                                                                                       │ ║▓
@@ -4689,14 +5189,14 @@
 ║ Major Termite Soldiers        5                       30%                                 ║▓
 ║ Nasute Soldiers               3                       25%                                 ║▓
 ║ ──────────────────────────────────────────────────────────────────────                    ║▓
-║ Table 21: Worker Termite summons.                                                         ║▓
+║ Table 25: Worker Termite summons.                                                         ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-90-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-100-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -4723,7 +5223,7 @@
 ║ Smarts, Charms, Ken, Passions          20%                                                ║▓
 ║ Blind                                  100%                                               ║▓
 ║ ──────────────────────────────────────────────────────────                                ║▓
-║ Table 22: Minor Termite Soldier Features.                                                 ║▓
+║ Table 26: Minor Termite Soldier Features.                                                 ║▓
 ║                                                                                           ║▓
 ║ ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐  ║▓
 ║ │ Name:....................Mandible Attack ││ Name:..........Autothysis (Self-Rupture) │  ║▓
@@ -4746,7 +5246,7 @@
 ║ │                                                                                       │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-91-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-101-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -4796,7 +5296,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-92-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-102-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -4846,7 +5346,7 @@
 ║ ┌[Special Rule - Nest Guardians]────────────────────────────────────────────────────────┐ ║▓
 ║ │ Same as for Minor Termite Soldiers.                                                   │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
-╚═══════════════════════════════════════════-93-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-103-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -4896,7 +5396,7 @@
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-94-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-104-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -4946,7 +5446,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-95-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-105-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -4996,7 +5496,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-96-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-106-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -5046,7 +5546,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-97-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-107-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -5096,7 +5596,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-98-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-108-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -5146,7 +5646,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-99-════════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-109-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -5196,7 +5696,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-100-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-110-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -5246,7 +5746,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-101-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-111-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -5296,7 +5796,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-102-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-112-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -5346,7 +5846,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-103-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-113-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -5396,5 +5896,5 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-104-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-114-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀

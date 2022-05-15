@@ -2328,13 +2328,26 @@ be used as the base Chance for an Event to occur, instead. Nest Levels also defi
 decile dice to roll for Quantification of the three kinds of Events and their Features.
 \newpage
 
-\subsection{Nest Levels}
+\section{The Nest environment}
 
 A Nest is an environment that consists of multiple Nest Levels, each comprised of
-multiple Rooms, and Passages connecting Rooms. 
+multiple Rooms, as well as Passages, Shortcuts and Shafts connecting Rooms between then,
+and connecting a Level to other Levels.
 
-A Nest Level is a group of Rooms connected by Passages and situated in about the same
-distance from the ground, much like a floor in a multi-storey house. 
+Levels, Rooms, Shortcuts and Shafts are all generated as Events during the Survival and
+Exploration minigame. They are collectively known as Nest Environment Events, or, more
+simply, Environments.
+
+In mechanical terms, Environments act as resources that can be "spent" to initiate
+minigames, or to pay Costs. In particular, in order to initiate the Survival and
+Exploration minigame itself, a Room must be spent. The characters always start the game
+with one Room: the Entrance to the Nest.
+
+\subsection{Nest Levels}
+
+A Nest Level is a group of Rooms connected to each other by Passages and connected by
+Shortcuts and Shafts to different Levels. Rooms in the same Level are situated at about
+the same distance from the ground, much like a floor in a multi-storey house. 
 
 In mechanical terms, Levels have a percentile rating that is used as the Resistance to
 Exploration Actions. As the characters delve deeper into the Nest, the Nest Level of the
@@ -2352,97 +2365,69 @@ done.
 
 \subsection{Rooms}
 
-Rooms are represented as Rewards and are only generated (i.e. found) when a character
-takes an Exploration Action. Rooms have Features such as their Area, Height, or Darkness,
-that require Quantification.
+A Room is an enclosed area within a Level. In truth, eusocial insects' nests don't
+ordinarily have many distinct rooms and are mainly composed of tunnels (with the
+exception of bees' and eusocial wasps' nests that are entirely composed of hexagonal
+cells, i.e. "rooms" of a sort). Despite this and for the sake of playing the game, Nests
+& Insects pretends that Nests have Rooms.
 
+Room Events are Rewards and are only generated (i.e. found) when a character takes an
+Exploration Action. 
+
+Rooms have Features such as their Area, Height, or Darkness, that require Quantification.
 Room Features are only quantified when characters must interact with them. For example,
 Height affects the ability of a character to Fly, so it is only Quantified when a
-character actually attempts to Fly. Nests & Insects calls this "Just-in-Time" (JIT)
-generation.
+character actually attempts to Fly, or takes another Action that requires the height of a
+Room to be known.
 
-JIT generation is also used to generate Costs, Risks and Rewards (including Rooms).  In
-particular, Costs are only generated when a character enters a Room, while Risks and
-Rewards are generated every time a character takes an Exploration, Hunting, or Foraging
-Action (in other words, when a character is searching for something, and there is a
-chance that they might find it).
+\subsection{Passages}
 
+A Passage is a tunnel, or a simple opening, or some other kind of entryway connecting two
+Rooms in the same Level.
+
+In mechanical terms, a Passage is a Cost Event that can be spent to grant a chance to
+find a Room.
+
+\subsection{Shafts}
+
+A Shaft is a tunnel heading downwards, or upwards, towards the location of the target of
+the current Job. As passages connect Rooms, Shafts connect Levels. 
+
+In mechanical terms, a Shaft is a Reward Event that can be spent to grant a chance to
+find a new Level with an increased Level rating, thus bringing characters closer to their
+Job's target.
+
+\subsection{Shortcuts}
+
+A Shortcut is a tunnel connecting the current Level with a Level closer to the center of
+the Nest.
+
+In mechanical terms, a Shortcut is a Reward Event that can be spent to grant a chance to
+immediately find the Level with rating 100%, where the target of the current Job is
+situated.
 \newpage
 
-\subsection{Initiating Survival and Exploration}
-% Explain how Rooms are resources to be spent to initiate S&E
+\section{Event Generation}
 
-Players' characters have a shared pool of Rooms that they can spend at any time to
-initiate a new instance of the Survival and Exploration minigame. Rooms can also be spent
-to initiate the Hunting and Foraging, and Resting and Healing minigames.
+\subsection{Costs, Risks and Rewards}
 
-When the game begins, the characters are given one Room, which represents their Entrance
-to the Nest. The Nest Entrance can be spent immediately to initiate a first Survival and
-Exploration minigame. It is advisable to only spend the Nest Entrance to initiate a
-Survival and Exploration minigame, so as to ensure that more Rooms are generated as a
-result of Exploration (but note that the Hunting and Foraging minigame can also generate
-Rooms).
+Costs, Risks, and Rewards are generated every time a character takes an Exploration
+Action. The Qualification Roll for the Exploration Action sets the number and kind of
+Events that occur during the Action. Then the players or the GQ roll to generate Events
+of the indicated types.
 
-When a Room is spent, it is removed from the players' pool of Rooms. The players and GQ
-are free to track the pool of Rooms in any way they like. The Survival and Exploration
-minigame takes place immediately after the Room is removed from the players' pool.
-
-\newpage
-
-\subsection{Exploration Action}
-
-The Survival and Exploration Minigame is initiated whenever a player declares that her
-character is exploring the Nest.
-
-_Exploration party_ More than one characer may take part in the Exploration Action
-(indeed, this is typical). In that case, one character is the Acting character and every
-other character taking part in the Action supports the Action with their Exploration
-Feature applied as a positive modifier to the Acting character's Effort.
-
-The outcome of the Exploration Action determines the number, and type of Events that
-occur as a result of the Action. Up to three Events of up to three different types may
-occur at once, depending on the DoS of the Exploration Action. The formula for the
-Exploration Action is listed below.
-
-Name of the Minigame: ............... Survival and Exploration
-Participating Entities: ............. Characters, Nest Environment
-List of Minigame Intents: ........... Explore the Nest
-List of Minigame Actions: ........... Explore
-Effort Variables: ................... Exploration
-Resistance Variables: ............... Nest Level
-Modifier Variables: ................. +Eusociology, +Perception
-
-Outcomes of the six Degrees of Success and Failure:
-
-\begin{table}[12]
-Degree of Success &    Outcome
-Critical Success  &    Reward, Reward, Reward
-Complete Success  &    Risk, Reward, Reward
-Partial Success   &    Cost, Risk, Reward
-Partial Failure   &    Cost, Risk, Risk
-Complete Failure  &    Cost, Cost, Risk
-Critical Failure  &    Cost, Cost, Cost
-\end{table}
-\label{Exploration Action Formula.}[figure]
-
-\newpage
-
-\subsection{Event Generation}
-
-Costs are generated every time a character enters a new Room. Risks and Rewards are
-generated every time a character takes an Exploration Action.
-
-To generate an Event of the appropriate type, the characters or the GQ roll on the
-appropriate Event table. Event tables are presented below. Each Event in the Tables is
-given a brief description. Detailed Descriptions and mechanics for each kind of Event
-follow in a subsequent Section.
+To generate an Event, the players or the GQ roll on the appropriate Event table. Event
+tables are presented below. Each Event in the Tables is given a brief description.
+Detailed Descriptions and mechanics for each kind of Event follow in a subsequent
+Section.
 
 \begin{table}[4]
 Cost    &  Chance     &   Description
-Hunger  &  50% + Level&   Increase Hunger, reduce Food, bestow Starving
+Hunger  &  50% + Level&   Increase Hunger, deplete Food Items, bestow Starving
 Passage &  45% + Level&   Grants a chance to find a new Room
 Effects &  30% + Level&   Apply, or modify the rating of deleterious Effects
-Darkness&  25% + Level&   Reduce lighting Items or suffer in Darkness
+Darkness&  25% + Level&   Deplete lighting Items or suffer in Darkness
+Spoilage&  15% + Level&   Food Items have a chance to become Spoiled
 \end{table}
 \label{Costs.}[table]
 
@@ -2469,9 +2454,7 @@ Secret      &  Perception - Level & Generates a random Cost, Risk or Reward.
 % Explain how all Events with a Chance above the roll result occur, and that one roll is
 % made for each Event determined by the DoS of the Exploration Action.
 
-\newpage
-
-\subsection{Level Quantification Dice}
+\subsection{Level Rating}
 
 When an Event, or a Feature of the Nest environment need to be quantified, the
 Quantification Die rolled depends on the Nest Level. An example of a Nest environment
@@ -2493,7 +2476,7 @@ Level  &   Features Die&   Costs / Risks Die&   Rewards Die
 
 _Increasing Level ratings_ The rating of the Nest Level changes every time a character
 spends a Level Reward to explore a new Nest Level. At that time, the Costs/Risks Die
-corresponding to the current Nest Level is rolled to quantify the new Level's rating. The
+corresponding to the current Nest Level is rolled to increase the new Level's rating. The
 effect of this Quantification method is that as the characters delve deeper into the
 Nest, the chance to find a Level with 100% rating, where the target of their Job is
 found, increases.
@@ -2506,6 +2489,309 @@ higher percentile rating for a Feature, slightly above the chance to do so with 
 The only use of the d120 in Nests & Insects is to quantify Events and Features of the
 Nest Environment.
 
+\newpage
+
+\section{The Environment Pool}
+
+As described in earlier Sections, Environments can be used as resources to pay Costs or
+play a minigame. To track the Environments generated so-far in the game, players have a
+communal Environment Pool. This pool is simply a list of all the Environments generated
+so far, and their properties.
+
+Players are free to track their Environment Pool as best suits them, for example by
+drawing a map of Environments and their connections and contents, etc.
+
+One way to track an Environment Pool is to tabulate its contents. The following Table
+gives an example of such tabulation.
+
+\begin{table}[4]
+Environment Id&  Used?&  Found In  &  Connections&  Notes
+Entrance Room &  Yes  &  Start     &  Red Room   &
+Red Room      &  Yes  &  Entrance  &  Black Room &  Shelter built
+Black Room    &  No   &  Red Room  &  Red Room   &
+Shortcut 1    &  Yes  &  Black Room&  Level 30%  &  Connects Black Room to Level 30%
+Level 43%     &  Yes  &  Black Room&             &
+Passage Right &  Yes  &  Entrance  &             &  Connects Entrance to Red Room
+Passage Left  &  Yes  &  Red Room  &             &  Connects Red Room to Black Room
+Passage Up    &  No   &  Red Room  &             &
+\end{table}
+\label{Environment Pool}[table]
+
+In the Environment Pool Table, the "Environment Id" column lists a descriptive name for
+each generated Environment (though one that should preferrably be kept short). This name
+is up to the players to come up with. For example, a Room may be the "Black Fungus Room",
+because Black Fungus was found while Foraging in it; or a Room may be the "Sad Aphids
+Farm", because Aphids were found penned in the Room and they looked sad; and so on.
+
+The "Used" column records whether an Environment has been spent to: either to pay a Cost,
+or to reap a Reward, or to initiate a Survival and Exploration, Hunting and Foraging or
+Resting and Healing minigame.
+
+Environments can only be spent once from the Environment Pool, but characters are free to
+visit them again for whatever reason, for example to try and find an Item dropped to the
+floor of a Room. Additionally, a character, or an enemy, may be forced to retreat during
+Combat, in which case they will likely end up in a Room already visited. In such cases a
+character can move back in an Environment that has already been spent, without spending
+it again.
+
+The "Found In" column notes the Room in which an Environment was generated as the result
+of an Exploration Action.
+
+The "Connections" column notes the other Environments to which an Environment is
+connected. "Connected" means that there exists: a Passage; or a Shortcut; or a Shaft;
+that leads to the connected Environment.
+
+The "Notes" column is for players to mark down anything they wish to remember about the
+Environment. In the example of the Environment Pool Table above, the players have noted
+that a Shelter was built into the Red Room, and the connections between Environments
+found so-far.
+
+\newpage
+
+\section{Survival and Exploration Steps}
+
+The Survival and Exploration minigame is carried out in distinct steps, listed below.
+Unlike Combat, Survival and Exploration is not divided into Rounds or Turns. Instead,
+each of the steps listed below is taken in the order in which it is listed, then the
+minigame ends. A new Survival and Exploration minigame can begin immediately afterwards,
+if the players so wish; otherwise, the players are free to control their characters as
+they see fit.
+
+\begin{box}[Survival and Exploration Steps]
+1. Begin Survival and Exploration.
+
+2. Form an Exploration Party (decide which characters go exploring).
+
+3. Spend a Room to pay the cost of the Exploration Action.
+
+4. Resolve the Exploration Action.
+
+5. Generate, then pay Costs determined by the outcome of the Exploration Action.
+
+6. Generate, then face Risks determined by the Exploration Action.
+
+7. Generate, then reap Rewards, determined by the Exploration Action.
+
+8. Survival and Exploration Ends.
+\end{box}
+
+Each of the Steps in the Survival and Exploration Steps box above are described in detail
+in the following Sections.
+\newpage
+
+\subsection{Begin Survival and Exploration}
+
+Survival and Exploration begins when a player declares that her character's Intent is to
+"Explore the Nest".
+
+"Explore the Nest" is the formulaic Intent of the Exploration Action. A player is free to
+express her character's Intent to explore the Nest in her own words, as long as it's
+clear that the characer wants to go exploring. If that's not clear, the GQ can always ask
+the player to clarify. If the player isn't sure what her character's Intent means in
+mechanical terms, the decision is made by the GQ whether to start a Survival and
+Exploration minigame, or not.
+
+If more than one player wish their characters to explore the Nest, they can say so at
+this point. Otherwise they can do so in the next Step.
+\newpage
+
+\subsection{Form an Exploration Party}
+
+It's common for more than one player to explore the Nest at a time. In particular, all
+the player characters may go exploring together, or the players may split their
+characters into groups that will explore the Nest separately.
+
+A group of characters exploring the Nest is an Exploration Party. To form an Exploration
+Party the players decide between then which characters explore the Nest together. For
+each such group, one Exploration Party is formed.
+
+For each Exploration Party, a separate Survival and Exploration Action is taken.
+Nominate one character in each Exploration Party to be the "Scout" of the Party. The
+Scout's Exploration Feature is used as the Effort for the subsequent Exploration Action.
+For every other character in the Party, their Exploration Feature is used as a static
+positive modifier to the Exploration Action.
+
+_Tracking Exploration Parties_ To facilitate the distinction between Exploration Parties,
+if more than one are formed, the GQ or the players can assign names to each party, or
+describe the direction where a party is heading (this is despite the fact that Nest
+environments do not specify clear directions). Tere are no specific rules for this. As an
+example, if the characters split into two Exploration Parties, the players can declare
+that one party is exploring "to the North" and the other "to the South". Then the GQ and
+the players can refer to the two parties as "the North Party" and the "South Party". The
+GQ will probably want to make a note of what characters are in each Exploration Party.
+
+\newpage
+
+\subsection{Spend a Room to pay the cost of the Exploration Action}
+
+To take an Exploration Action, a character must spend a free Room from the characters'
+Environment Pool. Mark a Room as "used" in the pool, so that it is not spent again later.
+Then resolve the Exploration Action as described in the following Section.
+\newpage
+
+\subsection{Resolve the Exploration Action}
+
+The Survival and Exploration Minigame is initiated whenever a player declares that her
+character is exploring the Nest.
+
+_Exploration party_ More than one characer may take part in the Exploration Action
+(indeed, this is typical). In that case, one character is the Acting character and every
+other character taking part in the Action supports the Action with their Exploration
+Feature applied as a static positive modifier to the Acting character's Effort.
+
+The outcome of the Exploration Action determines the number, and type of Events that
+occur as a result of the Action. Three Events of up to three different types will occur,
+depending on the DoS of the Exploration Action. The formula for the Exploration Action is
+listed below.
+
+Name of the Minigame: ............... Survival and Exploration
+Participating Entities: ............. Characters, Nest Environment
+List of Minigame Intents: ........... Explore the Nest
+List of Minigame Actions: ........... Explore
+Effort Variables: ................... Exploration
+Resistance Variables: ............... Nest Level
+Modifier Variables: ................. +Eusociology, +Perception
+
+Outcomes of the six Degrees of Success and Failure:
+
+\begin{table}[12]
+Degree of Success &    Outcome
+Critical Success  &    Reward, Reward, Reward
+Complete Success  &    Risk, Reward, Reward
+Partial Success   &    Cost, Risk, Reward
+Partial Failure   &    Cost, Risk, Risk
+Complete Failure  &    Cost, Cost, Risk
+Critical Failure  &    Cost, Cost, Cost
+\end{table}
+\label{Exploration Action Formula.}[figure]
+
+The Party Scout may add her Eusociology and Perception as static positive modifiers to
+the Exploration Roll.
+\newpage
+
+\subsection{Generate and pay Costs determined by the Exploration Action.}
+
+If the Outcome column of the Degrees of Success Table of the Exploration Action formula
+includes one or more instances of the word "Cost", follow the steps below to generate,
+and pay Costs.
+
+   1. For each instance of the word "Cost":
+   
+   2. Roll d100.
+   
+   3. Look up the result on the Cost Table. 
+   
+   4. Each Cost with a Chance that is equal to, or higher than the result of the d100
+   Roll is "generated".
+   
+   5. Each character in the Exploration Party pays each generated Cost.
+
+\begin{note}
+Depending on the result of the d100 roll, multiple Costs may need to be paid.
+\end{note}
+
+The Costs Table is reproduced below for the reader's convenience.
+
+\begin{table}[4]
+Cost    &  Chance     &   Description
+Hunger  &  50% + Level&   Increase Hunger, deplete Food Items, bestow Starving
+Passage &  45% + Level&   Grants a chance to find a new Room
+Effects &  30% + Level&   Apply, or modify the rating of deleterious Effects
+Darkness&  25% + Level&   Deplete lighting Items or suffer in Darkness
+Spoilage&  15% + Level&   Food Items have a chance to become Spoiled
+\end{table}
+\label{Costs.}[table]
+
+\newpage
+
+\subsection{Generate, then face Risks determined by the Exploration Action}
+
+If the Outcome column of the Degrees of Success Table of the Exploration Action formula
+includes one or more instances of the word "Risk", follow the steps below to generate,
+and face Risks.
+
+   1. For each instance of the word "Risk":
+   
+   2. Roll d100.
+   
+   3. Look up the result on the Risk Table. 
+   
+   4. Each Risk with a Chance that is equal to, or higher than the result of the
+      d100 Roll is "generated".
+   
+   5. All characters in the Exploration Party face the first generated Risk; once the
+      first Risk is faced and all Actions or minigames resulting are resolved, all
+      characters in the Exploration Party face the second generated Risk; and so on,
+      until all generated Risks have been faced.
+
+The Risks Table is reproduced below for the reader's convenience.
+
+\begin{table}[4]
+Risk          &  Chance     &  Description
+Encounter     &  50% + Level&  Meet the nest's denizens
+Item (Unknown)&  30% + Level&  Find as yet unidentified Food Items
+Obstacle      &  20% + Level&  Prevents further Exploration until removed
+Infection     &  10% + Level&  Bestows the Infection Effect
+\end{table}
+\label{Risks.}[table]
+
+_Combat Risk_ Risks include the "Encounter" Event which may cause a Combat minigame to
+begin. In that case, subsequent Risks are only faced once the Combat minigame has ended.
+If some of the characters in the Exploration Party that faced the original Encounter Risk
+that initiated the Combat minigame are no longer in the same Room as the rest of the
+Exploration party (usually because they are fleeing from Combat) only the characters
+remaining in the Exploration Party face subsequent Risks.
+\newpage
+
+\subsection{Generate, then reap Rewards, determined by the Exploration Action}
+
+If the Outcome column of the Degrees of Success Table of the Exploration Action formula
+includes one or more instances of the word "Reward", follow the steps below to generate,
+and reap Rewards.
+
+   1. For each instance of the word "Reward":
+   
+   2. Roll d100.
+   
+   3. Look up the result on the Rewards Table. 
+   
+   4. Each Reward with a Chance that is equal to, or higher than the result of the d100
+      Roll is "generated".
+
+   5. If a generated Reward is an Item, any character may add the Item to her Inventory.
+      If no character adds the Item to her Inventory the Item remains on the Room floor
+      as a "dropped" Item.
+
+      Which character picks up which Item is left to the players to decide. There are no
+      specific rules to manage that decision.
+
+   6. If a generated Reward is a Room, Shortcut, or Level, the Reward is added to the
+      player Characters' communal Environment Pool.
+
+   7. If a generated Reward is a Secret, follow the description of the Secret Event: this
+      usually means that a new Event is generated.
+
+The Rewards Table is reproduced below for the reader's convenience.
+
+\begin{table}[3]
+Reward      &  Chance             & Description
+Room        &  100% - Level       & Spend a Room to Explore, Hunt or Forage
+Shortcut    &  Level - 50         & Takes you closer to the Job Target
+Level       &  25% + Level        & Entrance to a new, deeper Nest Level
+Item (Known)&  25% + Level        & Find a previously identified Food Item
+Resource    &  15% + Level        & Materials to build a Shelter for Resting and Healing
+Secret      &  Perception - Level & Generates a random Cost, Risk or Reward.
+\end{table}
+\label{Rewards.}[table]
+\newpage
+
+\subsection{Survival and Exploration Ends}
+
+Once all Costs, Risks and Rewards, are generated and dealt with as described in the
+previous Sections, the Survival and Exploration minigame ends.
+
+Nothing special happens when Survival and Exploration ends. Players are free to control
+their characters as before. 
 \newpage
 
 \section{Hunting and Foraging}
