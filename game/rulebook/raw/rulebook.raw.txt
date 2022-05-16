@@ -2795,6 +2795,105 @@ Nothing special happens when Survival and Exploration ends. Players are free to 
 their characters as before. 
 \newpage
 
+\section{Events}
+
+The following Sections define the rules for the various Events generated during the
+Survival and Exploration minigame.
+
+\newpage
+
+\subsection{Hunger}
+
+When a Hunger Cost is paid, the character paying the Cost must consume one Food Item from
+her Inventory. 
+
+A character who does not have a Food Item in her Inventory cannot pay a Hunger Cost.
+
+A player may decide that her character will not consume any Food Items to pay a Hunger
+Cost (even if the character has a Food Item in her Inventory).
+
+If a character cannot (or her player will her not to) pay a Hunger Cost, then:
+
+* If the character is Starving, the character dies.
+
+* Else, if the character's Hunger is less than 100%, make a Quantification Roll to
+  increase the character's Hunger.
+
+* Or, if the character's Hunger is 100% the character becomes Starving. Tick the
+  tickbox of the Starving Effect in the Hunger box, as a reminder.
+
+The player of the character paying the Hunger Cost makes the Roll and ticks the Starving
+box.
+
+While a character is Starving, a Shift Down applies to the DoS of all Actions taken by
+the character.
+
+\newpage
+
+\subsection{Passage (TBD)}
+\newpage
+
+\subsection{Effects (Cost) (TBD)}
+\newpage
+
+\subsection{Darkness}
+
+When a Darkness Cost is paid, the character paying the Cost must consume one Light Item
+from her Inventory.
+
+A character who does not have a Light Item in her Inventory cannot pay a Darkness Cost.
+
+A player may decide that her character will not consume any Light Items to pay a Darkness
+Cost (even if the character has a Light Item in her Inventory).
+
+If a character cannot (or her player will her not to) pay a Darkness Cost, that character
+has no light source.
+
+If none of the characters in a Room has a Light source, the Room is in Darkness. Roll to
+Quantify the Darkness rating. The GQ makes the Quantification Roll.
+
+While a Room is in Darkness, all characters in the Room suffer a static negative modifier
+equal to the Room's Darkness rating to all their Actions that require vision.
+
+The exception is Blind characters (i.e. characters with Blind: 100%). Blind characters
+are not affected by Darkness and so do not suffer a negative modifier to any tasks as a
+result of being in a Room in Darkness.
+
+\newpage
+
+\subsection{Spoilage (TBD)}
+\newpage
+
+\subsection{Encounter (TBD)}
+\newpage
+
+\subsection{Unknown Item (TBD)}
+\newpage
+
+\subsection{Obstacle (TBOD)}
+\newpage
+
+\subsection{Infection (TBD)}
+\newpage
+
+\subsection{Room (Reward) (TBD)}
+\newpage
+
+\subsection{Shortcut (TBD)}
+\newpage
+
+\subsection{Level (Reward) (TBD)}
+\newpage
+
+\subsection{Known Item (TBD)}
+\newpage
+
+\subsection{Resource (TBD)}
+\newpage
+
+\subsection{Secret (TBD)}
+\newpage
+
 \section{Hunting and Foraging (TBD)}
 \newpage
 
