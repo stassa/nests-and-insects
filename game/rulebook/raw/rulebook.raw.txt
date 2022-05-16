@@ -335,6 +335,7 @@ Abilities   &   Specific Abilities box, Common Abilities box, Effects box, Inven
 \label{Areas and sub-areas in a character sheet.}[table]
 
 The following Sections describe each area and sub-area of the character sheet.
+\newpage
 
 \subsection{Class Header}
 
@@ -346,12 +347,12 @@ the game and the name of a character's Class.
 ─────────────────────────────────────────────────────────────────────────────────────────
 \label{Character sheet template; class header. In a completed sheet "TEMPLATE" is}[figure]
 replaced by the name of the character's class, e.g. Wasp, Spider, Ants, etc.
+\newpage
 
 \subsection{Attributes Area}
 
 Under the Class Header is the Attributes Area (Figure 2), listing Class Attributes.
 Attributes are Features that represent innate abilities of characters in a Class.
-\newpage
 
 ╠►Attributes◄═══════════════════════════════════════════════════════════════════════════╣
 ║┌─────────────────────────────────────────────────────────────────────────────────────┐║
@@ -382,26 +383,19 @@ the left, marked "XP", as shown in Figure 3. This is an *XP tickbox*. "XP" stand
 Features and Common Abilities.
 
 ┌────────────────────
-│ □ Speed....:[___0%]
-│ □ Smarts...:[___0%]
-└<^XP>───────────────
-─────────────────────
-\label{The XP tickbox for Speed and Smarts in the Attribute Area.}[figure]
-
-An XP tickbox is ticked to indicate that the relevant Feature has a chance to increase.
-Figure 4 shows the Speed tickbox in Figure 3 ticked with the ✓ character (U+2713):
-
-┌────────────────────
 │ ✓ Speed....:[___0%]
 │ □ Smarts...:[___0%]
 └<^XP>───────────────
 ─────────────────────
 \label{Ticked XP tickbox for Speed.}[figure]
+
+An XP tickbox is ticked to indicate that the relevant Feature has a chance to increase.
+Figure 3 shows the Speed XP tickbox ticked with the ✓ character (U+2713).
 \newpage
 
 \subsection{Combat Stats Area}
 
-The Combat Stats area starts with the Combat Stats header (Figure 5).
+The Combat Stats area starts with the Combat Stats header (Figure 4).
 
 ╠►Combat Stats◄════════════════════════════════════════════════════════════════════════╣▓
 ─────────────────────────────────────────────────────────────────────────────────────────
@@ -409,10 +403,11 @@ The Combat Stats area starts with the Combat Stats header (Figure 5).
 
 The Combat Stats area lists Features used in the Combat minigame. It has 3 sub-areas: the
 Condition box, the Disposition Track and the Attack boxes.
+\newpage
 
 \subsection{Condition box}
 
-The Condition box (Figure 6) lists a character's Initiative, Threat Rate, Survival Rate
+The Condition box (Figure 5) lists a character's Initiative, Threat Rate, Survival Rate
 and Wounds.
 
 ┌[Condition]──────────────<Rules Reminder>──────────────────────────────────────────────┐
@@ -435,12 +430,12 @@ below.
 
 * Wounds count the injury caused by attacks. If the count of Wounds reaches its Maximum,
   the character is killed. The default number of Wounds is 3.
+\newpage
 
 \subsection{Disposition Track}
 
-The Disposition Track (Figure 7) follows a character's Disposition, a representation of
+The Disposition Track (Figure 6) follows a character's Disposition, a representation of
 both position and morale in Combat.
-\newpage
 
 ├─<Disposition Track>───────────────────────────────────────────────────────────────────┤
 │ (Advance this way -->) ........................................ (<-- Recoil this way) │
@@ -465,10 +460,11 @@ There are five Dispositions in the Disposition Track, discussed briefly below.
 * Advancing: the character is bold and advancing towards the enemy.
 
 * Charging: the character is impetuous and is Charging ahead Attacking in full force.
+\newpage
 
 \subsection{Attack boxes}
 
-The Attack boxes (Figure 8) list the details of a character's two Attacks: her Base
+The Attack boxes (Figure 7) list the details of a character's two Attacks: her Base
 Attack and Special Attack. Each character class has its own Base and Special Attacks.
 
 ┌[Base Attack]─────────────────────────────┐┌[Special Attack]──────────────────────────┐ 
@@ -488,7 +484,7 @@ Attack and Special Attack. Each character class has its own Base and Special Att
 
 \subsection{Survival Area}
 
-The Survival Area begins with the Survival header (Figure 9).
+The Survival Area begins with the Survival header (Figure 8).
 
 ╠►Survival◄════════════════════════════════════════════════════════════════════════════╣▓
 ─────────────────────────────────────────────────────────────────────────────────────────
@@ -496,10 +492,11 @@ The Survival Area begins with the Survival header (Figure 9).
 
 The Survival Area has two sub-Areas: the Food box, used in the Survival minigame; and the
 Luck box.
+\newpage
 
 \subsection{Food box}
 
-The Food box (Figure 10) lists the character's Hunger rating and has a radio-button for
+The Food box (Figure 9) lists the character's Hunger rating and has a radio-button for
 the Starving Effect. Starving is ticked when Hunger reaches 100%. While Starving, a
 character takes a penalty in the DoS of all minigame Actions.
 
@@ -508,10 +505,11 @@ character takes a penalty in the DoS of all minigame Actions.
 └<^Starving>──────────────┘
 ───────────────────────────
 \label{Food box.}[figure]
+\newpage
 
 \subsection{Luck box}
 
-The Luck box (Figure 11) lists the character's Luck. Luck is used to avoid the worst
+The Luck box (Figure 10) lists the character's Luck. Luck is used to avoid the worst
 outcome of Actions, Attacks and events in the game. The current Luck rating is marked by
 an up-arrow (^) in the bottom of the Luck box.
 
@@ -529,7 +527,7 @@ rating that matches the double.
 
 \subsection{Abilities Area}
 
-The Abilities Area begins with the Abilities header (Figure 12).
+The Abilities Area begins with the Abilities header (Figure 11).
 
 ╠►Abilities◄═══════════════════════════════════════════════════════════════════════════╣▓
 ─────────────────────────────────────────────────────────────────────────────────────────
@@ -537,10 +535,11 @@ The Abilities Area begins with the Abilities header (Figure 12).
 
 The Abilities Area has four sub-Areas: the Specific Abilities box, the Common Abilities
 box, the Effects box and the Inventory box.
+\newpage
 
 \subsection{Specific Abilities box}
 
-The Specific Abilities box (Figure 13) lists Abilities that are particular to a Species
+The Specific Abilities box (Figure 12) lists Abilities that are particular to a Species
 (hence, "Specific"). Nests & Insects classes model individuals of a species hence each
 character class has its own Specific Abilities.
 
@@ -577,10 +576,11 @@ Swarming, Venomous, or Web Weaving. These are briefly described below.
 
 * Web Weaving: the character can weave webs. Webs can be used to set traps or secure an
   area. Spider has Web Weaving.
+\newpage
 
 \subsection{Common Abilities box}
 
-The Common Abilities box (Figure 14) lists Abilities common to all character classes.
+The Common Abilities box (Figure 13) lists Abilities common to all character classes.
 
 ┌[Common Abilities]────────────────────────────────────────┐
 │ □ Construction.....:[___0%] □ Hunting...........:[___0%] │
@@ -609,10 +609,11 @@ Signalling    &        Display aposematic markings, emit pheromonic signals
 Sneaking      &        Move and act with stealth
 \end{table}
 \label{Common Abilities with brief description.}[table]
+\newpage
 
 \subsection{Effects box}
 
-The Effects box (Figure 15) lists ten Effects that a character can be subject to.
+The Effects box (Figure 14) lists ten Effects that a character can be subject to.
 
 Effects are generally detrimental conditions that can affect a character as a result of
 Attacks in Combat, and other minigames.
@@ -645,10 +646,11 @@ Poisoned   &    ...has a negative modifier equal to Poisoned to all Actions
 Stunned    &    ...loses her next Turn in Combat
 \end{table}
 \label{Effects, with brief description of how a character is affected.}[table]
+\newpage
 
 \subsection{Inventory box}
 
-The Inventory box (Figure 16) lists a character's possessions such as Food items, slaved
+The Inventory box (Figure 15) lists a character's possessions such as Food items, slaved
 Prey, and other items.
 
 ┌[Inventory]───────────────────────────────┐
@@ -1070,7 +1072,7 @@ Collocation".
 ──────────────────────────────────────────  ──────────────────────────────────────────
 \label{The Ants' Red Fungus before (left) and after (right) becoming spoiled.}[figure]
 
-_Abbreviating Item Names_ As can be seen from the example in Figure 22, Items' names may
+_Abbreviating Item Names_ As can be seen from the example in Figure 21, Items' names may
 end up too long for an Inventory slot. In that case, simply abbreviate the Item's name.
 In particular, if an Item's name is too long it does not need to "wrap" to take an
 additional Inventory slot: the rule is "one item, one Inventory slot".
@@ -2621,7 +2623,7 @@ GQ will probably want to make a note of what characters are in each Exploration 
 
 \newpage
 
-\subsection{Spend a Room to pay the cost of the Exploration Action}
+\subsection{Spend a Room to take an Exploration Action}
 
 To take an Exploration Action, a character must spend a free Room from the characters'
 Environment Pool. Mark a Room as "used" in the pool, so that it is not spent again later.
@@ -2668,7 +2670,7 @@ The Party Scout may add her Eusociology and Perception as static positive modifi
 the Exploration Roll.
 \newpage
 
-\subsection{Generate and pay Costs determined by the Exploration Action.}
+\subsection{Generate and pay Costs}
 
 If the Outcome column of the Degrees of Success Table of the Exploration Action formula
 includes one or more instances of the word "Cost", follow the steps below to generate,
@@ -2703,7 +2705,7 @@ Spoilage&  15% + Level&   Food Items have a chance to become Spoiled
 
 \newpage
 
-\subsection{Generate, then face Risks determined by the Exploration Action}
+\subsection{Generate and face Risks}
 
 If the Outcome column of the Degrees of Success Table of the Exploration Action formula
 includes one or more instances of the word "Risk", follow the steps below to generate,
@@ -2742,7 +2744,7 @@ Exploration party (usually because they are fleeing from Combat) only the charac
 remaining in the Exploration Party face subsequent Risks.
 \newpage
 
-\subsection{Generate, then reap Rewards, determined by the Exploration Action}
+\subsection{Generate and reap Rewards}
 
 If the Outcome column of the Degrees of Success Table of the Exploration Action formula
 includes one or more instances of the word "Reward", follow the steps below to generate,
