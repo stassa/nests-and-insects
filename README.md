@@ -91,7 +91,7 @@ and open it with a pager like less or more etc. For instance, using less:
 
 ```
 cd .../game/rulebook/txt/
-less -z 50 ./game/rulebook/txt/nests_and_insects.txt
+less -z 50 nests_and_insects.txt
 ```
 
 Calling less with the argument "-z 50" sets the number of lines per page to 50,
