@@ -4,6 +4,10 @@
 game/
 -----
 
+[TODO] Clarify what Quantification die to Roll to Set, Increase, or Decrease Features.
+
+[TODO] Clarify the order in which multiple Costs, Risks and Reward are generated.
+
 [TODO]  Consider making all Items edible and typed only as "Meat" and "Plant".
 
 
@@ -67,7 +71,7 @@ game/
 game/
 -----
 
-[TODO] Flesh out Events rules.
+[DOING] Flesh out Events rules.
        * Meaning the rules for specific Costs, Risks and Rewards, not the rules for
          generating Events in Survival and Exploration.
 

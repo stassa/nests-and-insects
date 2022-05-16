@@ -1,3 +1,29 @@
+16/05/22
+========
+
+Version: v.1.0.0
+
+Rulebook
+--------
+
+[DONE] Wrote up Hunger rules.
+
+[DONE] Wrote up Darkness rules.
+
+[DONE] Wrote up Obstacle rules.
+
+* Kind of sets the tone there, doesn't it?
+
+Soundtrack
+----------
+
+* Disembody - Reigniting Hellfire (2022)
+* Murder Inc. - Umlčen Navěky (2018)
+* Equimanthorn - Nindinugga Nimshimshargal Enlillara (1994)
+* Black Mask - Queen of the Beasts (2022)
+* Basil Poledouris - Connan the Barbarian OST (1982)
+
+
 15/05/22
 ========
 

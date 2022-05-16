@@ -171,7 +171,7 @@
 ║     3.14.5.0 Spoilage (TBD)...........................................................102 ║▓
 ║     3.14.6.0 Encounter (TBD)..........................................................103 ║▓
 ║     3.14.7.0 Unknown Item (TBD).......................................................104 ║▓
-║     3.14.8.0 Obstacle (TBOD)..........................................................105 ║▓
+║     3.14.8.0 Obstacle.................................................................105 ║▓
 ║     3.14.9.0 Infection (TBD)..........................................................106 ║▓
 ║     3.14.10.0 Room (Reward) (TBD).....................................................107 ║▓
 ║     3.14.11.0 Shortcut (TBD)..........................................................108 ║▓
@@ -5103,6 +5103,9 @@
 ║ 3.14.1.0 Hunger                                                                           ║▓
 ║ ---------------                                                                           ║▓
 ║                                                                                           ║▓
+║ Hunger can make a character weak. Prolongued Hunger leads to starvation, which leads to   ║▓
+║ death from starvation.                                                                    ║▓
+║                                                                                           ║▓
 ║ When a Hunger Cost is paid, the character paying the Cost must consume one Food Item from ║▓
 ║ her Inventory.                                                                            ║▓
 ║                                                                                           ║▓
@@ -5126,9 +5129,6 @@
 ║                                                                                           ║▓
 ║ While a character is Starving, a Shift Down applies to the DoS of all Actions taken by    ║▓
 ║ the character.                                                                            ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -5253,6 +5253,8 @@
 ║ 3.14.4.0 Darkness                                                                         ║▓
 ║ -----------------                                                                         ║▓
 ║                                                                                           ║▓
+║ Darkness makes it harder to see things and to do things that require vision.              ║▓
+║                                                                                           ║▓
 ║ When a Darkness Cost is paid, the character paying the Cost must consume one Light Item   ║▓
 ║ from her Inventory.                                                                       ║▓
 ║                                                                                           ║▓
@@ -5273,8 +5275,6 @@
 ║ The exception is Blind characters (i.e. characters with Blind: 100%). Blind characters    ║▓
 ║ are not affected by Darkness and so do not suffer a negative modifier to any tasks as a   ║▓
 ║ result of being in a Room in Darkness.                                                    ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -5450,48 +5450,48 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.14.8.0 Obstacle (TBOD)                                                                  ║▓
-║ ------------------------                                                                  ║▓
+║ 3.14.8.0 Obstacle                                                                         ║▓
+║ -----------------                                                                         ║▓
 ║                                                                                           ║▓
+║ Obstacles stop characters from further exploring the Nest.                                ║▓
 ║                                                                                           ║▓
+║ Obstacles have a single Feature: Obstruction.                                             ║▓
 ║                                                                                           ║▓
+║ When an Obstacle Risk is faced, roll the current Level's Costs/ Risks die to set the      ║▓
+║ Obstacle's Obstruction rating. The GQ makes the Roll.                                     ║▓
 ║                                                                                           ║▓
+║ An Obstacle with Obstruction: 0% is "torn down".                                          ║▓
 ║                                                                                           ║▓
+║ While an Obstacle's Obstruction rating is higher than 0%:                                 ║▓
 ║                                                                                           ║▓
+║ * Characters may not take any Exploration, Hunting, or Foraging Actions in the Room where ║▓
+║   the Obstacle was generated.                                                             ║▓
 ║                                                                                           ║▓
+║ * No Risks or Rewards are generated as a result of the same Exploration Action that       ║▓
+║   generated the Obstacle.                                                                 ║▓
 ║                                                                                           ║▓
+║ Characters may attempt to tear down an Obstacle, thus reducing its Obstruction rating to  ║▓
+║ 0%.                                                                                       ║▓
 ║                                                                                           ║▓
+║ To attempt to tear down an Obstacle, any character can take a Construction Action. Make a ║▓
+║ Boolean Roll with Effort equal to the character's Construction rating. The character's    ║▓
+║ player makes the Roll. Then:                                                              ║▓
 ║                                                                                           ║▓
+║ * If the roll succeeds, the Obstacle is torn down: its Obstruction rating becomes 0%.     ║▓
 ║                                                                                           ║▓
+║ * If the roll fails, the character taking the Construction Action takes 1 Wound. The      ║▓
+║   Obstacle is not torn down: its rating remains unchanged.                                ║▓
 ║                                                                                           ║▓
+║ _Building Resources_ When an Obstacle is torn down there is a chance that an amount of    ║▓
+║ building Resources will be generated. Make a Boolean Roll with Effort equal to the        ║▓
+║ Obstacle's rating before it was torn down. If the Roll Succeeds, a building Resource Item ║▓
+║ remains on the floor of the Room where the Obstacle was torn down. Roll to Set the        ║▓
+║ Resource Item's rating. The GQ makes the roll.                                            ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ _Blocked Path_ If all characters leave the Room where an Obstacle was generated and the   ║▓
+║ Obstacle's Obstruction rating is higher than 0%, no Risks and Rewards are generated as a  ║▓
+║ result of the Exploration Action that generated the Obstacle, even if the characters      ║▓
+║ return in the Room and tear the Obstacle down later.                                      ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
