@@ -74,27 +74,35 @@ Reading the rulebook
 
 The text-based rulebook is in the following path:
 ```
-<project root>/games/rulebook/txt/nests_and_insects.txt
+<project root>/game/rulebook/txt/nests_and_insects.txt
 ```
 
 _The text-based version is the only version of the rulebook._
 
-To read the text-based rulebook, navigate to its directory and open it with a pager like
-less or more etc.
+To read the text-based rulebook, you can open the rulebook file in your
+favourite text editor. On Windows, Notepad and Notepad++ work fine. On Windows
+and everywhere else, vim, emacs and friends should work as well as usual.
+
+Once you open the file, you should be greeted by the glorious ASCII of the
+rulebook cover. 
+
+Alternatively, in your system's terminal navigate to the rulebook's directory
+and open it with a pager like less or more etc. For instance, using less:
 
 ```
 cd .../games/rulebook/txt/
-less nests_and_insects.txt
+less -z 50 ./game/rulebook/txt/nests_and_insects.txt
 ```
 
-You should then be greeted by the glorious ASCII of the rulebook cover. 
+Calling less with the argument "-z 50" sets the number of lines per page to 50,
+as in the rulebook's page height. This lets you page up and down by pressing z
+or w, even if your terminal's screen height is not exactly 50 rows.
 
-Alternatively, you can open the rulebook file in your favourite text editor. On
-Windows, Notepad and Notepad++ work fine. On Windows and everywhere else, vim, emacs
-and friends should work as well as usual.
+Preferred fonts
+---------------
 
-The cover and the rulebook are best rendered in the free font DejaVu Sans Mono. You can
-download it from here:
+The rulebook, and, in particular, its cover page, are best rendered in the free
+font DejaVu Sans Mono. You can download it from here:
 
 https://dejavu-fonts.github.io/
 
