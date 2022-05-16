@@ -293,8 +293,7 @@ game, and controlled by a player.
 Multiple players may bid for the same class.
 
 When a class becomes available, the first player who bid for the class can select the
-class for her character and join the game with the a fresh character of the desired
-class.
+class for her character and join the game with a fresh character of the desired class.
 
 If there are no living characters of a given class in the game and there are no bids for
 that class, then any player who wants to play a character of that class, can select the
@@ -669,7 +668,7 @@ Characters can only carry as many Items as there are lines in the Inventory box:
 5 lines, for 5 items.
 \newpage
 
-\section{Character Classes}
+\section{Character Classes (TBD)}
 
 \newpage
 \charsheet[ants]
@@ -879,19 +878,19 @@ feared by its enemies, and equipped with good survival skills.
 
 \newpage
 
-\section{Character Features}
+\section{Character Features (TBD)}
 \newpage
 
-\section{Attributes}
+\section{Attributes (TBD)}
 \newpage
 
-\section{Combat Conditions}
+\section{Combat Conditions (TBD)}
 \newpage
 
-\section{Survival Featues}
+\section{Survival Featues (TBD)}
 \newpage
 
-\section{Abilities}
+\section{Abilities (TBD)}
 \newpage
 
 \section{Inventory Items}
@@ -1558,7 +1557,7 @@ to the result of the roll.
 
 \begin{rules_summary}[Positive and Negative Modifiers]
 Modifiers can be positive or negative. Matching a positive modifier confers a Shift
-Up to the Dos. Failiing to beat a negative modifier confers a Shift Down to the DoS.
+Up to the DoS. Failiing to beat a negative modifier confers a Shift Down to the DoS.
 \end{rules_summary}
 
 \begin{rules_summary}[Shifts Up and Shifts Down]
@@ -1769,7 +1768,7 @@ Qualification Roll or a simple Boolean Roll instead.
 
 \newpage
 
-\section{Acting in tandem}
+\section{Acting in tandem (TBD)}
 
 % Rules for characters helping each other.
 
@@ -2794,35 +2793,35 @@ Nothing special happens when Survival and Exploration ends. Players are free to 
 their characters as before. 
 \newpage
 
-\section{Hunting and Foraging}
+\section{Hunting and Foraging (TBD)}
 \newpage
 
-\section{Resting and Healing}
+\section{Resting and Healing (TBD)}
 \newpage
 
-\chapter{Setting}
+\chapter{Setting (TBD)}
 \newpage
 
-\section{Clients and Jobs}
+\section{Clients and Jobs (TBD)}
 \newpage
 
-\section{Environment}
+\section{Environment (TBD)}
 
-\subsection{Nests}
+\subsection{Nests (TBD)}
 
-\subsection{Levels}
+\subsection{Levels (TBD)}
 
-\subsection{Rooms}
+\subsection{Rooms (TBD)}
 
 \newpage
 
-\section{Enemies}
+\section{Enemies (TBD)}
 \newpage
 
-\section{Ants}
+\section{Ants (TBD)}
 \newpage
 
-\section{Bees}
+\section{Bees (TBD)}
 \newpage
 
 \section{Termites}
@@ -3079,37 +3078,37 @@ chain of sticky, noxious death.
 
 \newpage
 
-\subsection{Alates - King}
+\subsection{Alates - King (TBD)}
 \newpage
 
-\subsection{Alates - Queen}
+\subsection{Alates - Queen (TBD)}
 \newpage
 
-\subsection{Termitophiles}
+\subsection{Termitophiles (TBD)}
 \newpage
 
-\subsection{Inquilines}
+\subsection{Inquilines (TBD)}
 \newpage
 
-\subsection{Parasites}
+\subsection{Parasites (TBD)}
 \newpage
 
-\section{Items}
+\section{Items (TBD)}
 \newpage
 
-\section{Food Items}
+\section{Food Items (TBD)}
 
-\subsection{Fungi}
+\subsection{Fungi (TBD)}
 
-\subsection{Honey}
+\subsection{Honey (TBD)}
 
-\subsection{Honeydew}
+\subsection{Honeydew (TBD)}
 
-\subsection{Nectar}
+\subsection{Nectar (TBD)}
 \newpage
 
-\section{Prey}
+\section{Prey (TBD)}
 \newpage
 
-\section{Other Items}
+\section{Other Items (TBD)}
 \newpage
