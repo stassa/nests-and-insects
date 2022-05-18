@@ -2504,9 +2504,9 @@
 ║ -------------------                                                                       ║▓
 ║                                                                                           ║▓
 ║ Inventory Items can belong to one of six types. An Item's type is recorded next to its    ║▓
-║ name on a character's sheet, in square brackets. The six Item types are listed in the     ║▓
-║ Item Types Table, below, along with a type symbol used to record the Item's type in a     ║▓
-║ character's Inventory, and a brief description of each type:                              ║▓
+║ name on a character's sheet, in square brackets. The six Item types are listed in Table   ║▓
+║ 8, below, along with a type symbol used to record the Item's type in a character's        ║▓
+║ Inventory, and a brief description of each type:                                          ║▓
 ║                                                                                           ║▓
 ║ Item Type    Symbol    Description                                                        ║▓
 ║ ──────────────────────────────────────────────────────────────────────────────────────    ║▓
@@ -2729,7 +2729,7 @@
 ║ Effect on a character or another game entity.                                             ║▓
 ║                                                                                           ║▓
 ║ Table 2 in the Section "Decile Dice" of the "Overview" Chapter illustrates decile dice.   ║▓
-║ The Table is reproduced here for ease of reference:                                       ║▓
+║ The Table is reproduced here as Table 9, below, for ease of reference:                    ║▓
 ║                                                                                           ║▓
 ║ Decile die    Range       Tens die    Numbered      Ones die    Numbered                  ║▓
 ║ ──────────────────────────────────────────────────────────────────────────                ║▓
@@ -2855,7 +2855,7 @@
 ║                                                                                           ║▓
 ║ The "Fuzzy" in the fd100 name alludes to the "fuzzy" action resolution that allows for    ║▓
 ║ six Degrees of Success and Failure (DoS) as the outcome of an action. Those are listed in ║▓
-║ the Six Degrees of Success Table below.                                                   ║▓
+║ Table 10, below.                                                                          ║▓
 ║                                                                                           ║▓
 ║ Degree of Success        Action outcome                      Determined by                ║▓
 ║ ───────────────────────────────────────────────────────────────────────────────           ║▓
@@ -2876,11 +2876,11 @@
 ║ minigame. Intent is described in the "Describing Intent" Section and minigames in the     ║▓
 ║ "Minigames" Section, both later in this Chapter.                                          ║▓
 ║                                                                                           ║▓
-║ Four of the DoS listed in the Table are determined by the result of an initial            ║▓
+║ Four of the DoS listed in Table 10 are determined by the result of an initial             ║▓
 ║ Qualification Roll (described in the "Qualification" Section) compared to Effort and      ║▓
 ║ Resistance. Two additional DoS can be achieved by the use of modifiers. Modifiers can     ║▓
 ║ make the DoS indicated by the Qualification Roll better or worse, by conferring a Shift   ║▓
-║ Up or Down the DoS ordering (from worst to best, or bottom to top on the Table).          ║▓
+║ Up or Down the DoS ordering (from worst to best, or bottom to top in Table 10).           ║▓
 ║ Modifiers and DoS Shifts are described in the "Modification" Section.                     ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -3124,8 +3124,8 @@
 ║ The result of the d100 roll relative to Effort and Resistance determines four initial     ║▓
 ║ Degrees of Success or Failure: Complete Failure, Partial Failure, Partial Success or      ║▓
 ║ Complete Success, in order from worst to best for the purpose of satisfying the           ║▓
-║ character's Intent. The four initial Degrees of Success and Failure are summarised in the ║▓
-║ Degree of Success Table below.                                                            ║▓
+║ character's Intent. The four initial Degrees of Success and Failure are summarised in     ║▓
+║ Table 11 below.                                                                           ║▓
 ║                                                                                           ║▓
 ║ Roll matches Effort        Roll beats Resistance        Degree of Success                 ║▓
 ║ ─────────────────────────────────────────────────────────────────────────                 ║▓
@@ -3182,7 +3182,7 @@
 ║                                                                                           ║▓
 ║ In mechanical terms, modifiers confer Shifts Up or Down to the DoS of an Action, after it ║▓
 ║ is determined by an initial Qualification Roll. A Shift moves the DoS up or down, from    ║▓
-║ worst to best. The Changes to DoS by the use of modifiers are summarised in the Table     ║▓
+║ worst to best. The Changes to DoS by the use of modifiers are summarised in Table 12      ║▓
 ║ below.                                                                                    ║▓
 ║                                                                                           ║▓
 ║ D100 Roll...            Modifier Sign        Change to DoS                                ║▓
@@ -3280,7 +3280,7 @@
 ║ Quantification Roll modifies the rating of a Feature of a character, an enemy, or the     ║▓
 ║ Nest environment. The rating of the Feature is directly set to the value of the           ║▓
 ║ Quantification Roll, without addition or subtraction, as summarised in Rules Summaries    ║▓
-║ 17-19.                                                                                    ║▓
+║ 13-16.                                                                                    ║▓
 ║                                                                                           ║▓
 ║ If the results of an Action need to be quantified, this will be explicitly stated in the  ║▓
 ║ rules: either the rules of a minigame, or the description of a Feature. The GQ may also   ║▓
@@ -3314,8 +3314,7 @@
 ║ the rating of a Feature.                                                                  ║▓
 ║                                                                                           ║▓
 ║ When a rule asks for a Quantification Roll and does not specify the decile die to roll,   ║▓
-║ consult the Quantification Dice Table below to determine the decile die for the           ║▓
-║ Quantification Roll.                                                                      ║▓
+║ consult Table 13 below to determine the decile die for the Quantification Roll.           ║▓
 ║                                                                                           ║▓
 ║ Feature Rating    Roll to Set    Roll to Increase/ Decrease                               ║▓
 ║ ───────────────────────────────────────────────────────────                               ║▓
@@ -3332,6 +3331,7 @@
 ║ d120 is used to quantify the Feature's rating, and the result rolled is higher than 100.  ║▓
 ║ The d120 is only used to (slightly) increase the chances to roll high, and so increase    ║▓
 ║ the rating of a Feature that is already close to 100%.                                    ║▓
+║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -4461,10 +4461,9 @@
 ║ Events that occur during the Action. Then the players or the GQ roll to generate Events   ║▓
 ║ of the indicated types.                                                                   ║▓
 ║                                                                                           ║▓
-║ To generate an Event, the players or the GQ roll on the appropriate Event table. Event    ║▓
-║ tables are presented below. Each Event in the Tables is given a brief description.        ║▓
-║ Detailed Descriptions and mechanics for each kind of Event follow in a subsequent         ║▓
-║ Section.                                                                                  ║▓
+║ To generate an Event, the players or the GQ roll on the appropriate Event table, given as ║▓
+║ Tables 17-19, below. Each Event in the Tables is given a brief description. Detailed      ║▓
+║ Descriptions and mechanics for each kind of Event follow in a subsequent Section.         ║▓
 ║                                                                                           ║▓
 ║ Cost        Chance         Description                                                    ║▓
 ║ ───────────────────────────────────────────────────────────────────────────────           ║▓
@@ -4496,10 +4495,10 @@
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
 ║ Table 19: Rewards.                                                                        ║▓
 ║                                                                                           ║▓
+║                                                                                           ║▓
 ╚═══════════════════════════════════════════-85-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
-║                                                                                           ║▓
 ║ 3.11.2.0 Level Rating                                                                     ║▓
 ║ ---------------------                                                                     ║▓
 ║                                                                                           ║▓
@@ -4507,9 +4506,8 @@
 ║ Quantification Die rolled depends on the Nest Level. An example of a Nest environment     ║▓
 ║ Feature that requires quantification is the rating of Darkness in a Room.                 ║▓
 ║                                                                                           ║▓
-║ Each Nest Level has a percentile rating. The Nest Level Table below lists Nest Levels'    ║▓
-║ ratings and their corresponding Quantification dice, used to quantify Nest Features and   ║▓
-║ Events.                                                                                   ║▓
+║ Each Nest Level has a percentile rating. Table 20 below lists Nest Levels' ratings and    ║▓
+║ their corresponding Quantification dice, used to quantify Nest Features and Events.       ║▓
 ║                                                                                           ║▓
 ║ Level      Features Die    Costs / Risks Die    Rewards Die                               ║▓
 ║ ───────────────────────────────────────────────────────────                               ║▓
@@ -4546,6 +4544,8 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
 ╚═══════════════════════════════════════════-86-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
@@ -4561,8 +4561,8 @@
 ║ Players are free to track their Environment Pool as best suits them, for example by       ║▓
 ║ drawing a map of Environments and their connections and contents, etc.                    ║▓
 ║                                                                                           ║▓
-║ One way to track an Environment Pool is to tabulate its contents. The following Table     ║▓
-║ gives an example of such tabulation.                                                      ║▓
+║ One way to track an Environment Pool is to tabulate its contents. Table 21 gives an       ║▓
+║ example of such tabulation.                                                               ║▓
 ║                                                                                           ║▓
 ║ Environment Id    Used?    Found In      Connections    Notes                             ║▓
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
@@ -4577,11 +4577,11 @@
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
 ║ Table 21: Environment Pool                                                                ║▓
 ║                                                                                           ║▓
-║ In the Environment Pool Table, the "Environment Id" column lists a descriptive name for   ║▓
-║ each generated Environment (though one that should preferrably be kept short). This name  ║▓
-║ is up to the players to come up with. For example, a Room may be the "Black Fungus Room", ║▓
-║ because Black Fungus was found while Foraging in it; or a Room may be the "Sad Aphids     ║▓
-║ Farm", because Aphids were found penned in the Room and they looked sad; and so on.       ║▓
+║ In Table 21, the "Environment Id" column lists a descriptive name for each generated      ║▓
+║ Environment (though one that should preferrably be kept short). This name is up to the    ║▓
+║ players to come up with. For example, a Room may be the "Black Fungus Room", because      ║▓
+║ Black Fungus was found while Foraging in it; or a Room may be the "Sad Aphids Farm",      ║▓
+║ because Aphids were found penned in the Room and they looked sad; and so on.              ║▓
 ║                                                                                           ║▓
 ║ The "Used" column records whether an Environment has been spent to: either to pay a Cost, ║▓
 ║ or to reap a Reward, or to initiate a Survival and Exploration, Hunting and Foraging or   ║▓
@@ -4605,9 +4605,9 @@
 ║ that leads to the connected Environment.                                                  ║▓
 ║                                                                                           ║▓
 ║ The "Notes" column is for players to mark down anything they wish to remember about the   ║▓
-║ Environment. In the example of the Environment Pool Table above, the players have noted   ║▓
-║ that a Shelter was built into the Red Room, and the connections between Environments      ║▓
-║ found so-far.                                                                             ║▓
+║ Environment. In the example in Table 21 above, the players have noted that a Shelter was  ║▓
+║ built into the Red Room, and the connections between Environments found so-far.           ║▓
+║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -4922,7 +4922,7 @@
 ║ │ Depending on the result of the d100 roll, multiple Costs may need to be paid.         │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-║ The Costs Table is reproduced below for the reader's convenience.                         ║▓
+║ The Costs Table is reproduced below as Table 22 for the reader's convenience.             ║▓
 ║                                                                                           ║▓
 ║ Cost        Chance         Description                                                    ║▓
 ║ ───────────────────────────────────────────────────────────────────────────────           ║▓
@@ -4971,7 +4971,7 @@
 ║       characters in the Exploration Party face the second generated Risk; and so on,      ║▓
 ║       until all generated Risks have been faced.                                          ║▓
 ║                                                                                           ║▓
-║ The Risks Table is reproduced below for the reader's convenience.                         ║▓
+║ The Risks Table is reproduced below as Table 23 for the reader's convenience.             ║▓
 ║                                                                                           ║▓
 ║ Risk              Chance         Description                                              ║▓
 ║ ───────────────────────────────────────────────────────────────────────────               ║▓
@@ -5029,7 +5029,7 @@
 ║    7. If a generated Reward is a Secret, follow the description of the Secret Event: this ║▓
 ║       usually means that a new Event is generated.                                        ║▓
 ║                                                                                           ║▓
-║ The Rewards Table is reproduced below for the reader's convenience.                       ║▓
+║ The Rewards Table is reproduced below as Table 24 for the reader's convenience.           ║▓
 ║                                                                                           ║▓
 ║ Reward         Chance               Description                                           ║▓
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
@@ -6376,9 +6376,9 @@
 ║ ┌[Special Rule - Alarm Pheromones]──────────────────────────────────────────────────────┐ ║▓
 ║ │                                                                                       │ ║▓
 ║ │ At the start of each Combat Turn the GQ makes a Boolean Roll against the Worker       │ ║▓
-║ │ Termites' Swarming. If the roll succeeds, new Termites arrive. Roll on the Termite    │ ║▓
-║ │ Worker Summons Table below and choose the result with the lowest "Chance to Summon"   │ ║▓
-║ │ that is higher than the roll value.                                                   │ ║▓
+║ │ Termites' Swarming. If the roll succeeds, new Termites arrive. Roll on Table 26 below │ ║▓
+║ │ and choose the result with the lowest "Chance to Summon" that is higher than the roll │ ║▓
+║ │ value.                                                                                │ ║▓
 ║ │                                                                                       │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
