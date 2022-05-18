@@ -1618,7 +1618,6 @@ restriction to the number of static modifiers that can apply to an Action.
 
 Dramatic modifiers should be used sparingly, in special circumstances. As a rough rule of
 thumb, the GQ should grant no more than two or three dramatic modifiers per game session.
-
 \newpage
 
 \subsection{Quantification}
@@ -1657,8 +1656,41 @@ rules: either the rules of a minigame, or the description of a Feature. The GQ m
 decide that an Action needs quantification.
 
 A Quantification Roll is only made after the Modification step of Action resolution, when
-the final DoS of an Action is known. This is because the decile die to roll will usually
-depend on the DoS of the Action.
+the final DoS of an Action is known. This is because the decile die to roll may depend on
+the DoS of the Action.
+\newpage
+
+\subsection{Quantification Die}
+
+\begin{rules_summary}[Quantification Die]
+The decile die rolled to set, increase or decrease a Feature depends on the current
+rating of the Feature. A Feature whose rating is not yet set has a rating of 0%.
+\end{rules_summary}
+
+A rule asking for a Quantification Roll may specify the decile die to be rolled.
+Otherwise, the decile die to roll is determined by the current rating of the Feature, and
+the type of the Quantification Roll: whether the Roll is to set, increase, or decrease
+the rating of a Feature.
+
+When a rule asks for a Quantification Roll and does not specify the decile die to roll,
+consult the Quantification Dice Table below to determine the decile die for the
+Quantification Roll.
+
+\begin{table}[4]
+Feature Rating &   Roll to Set&   Roll to Increase/ Decrease
+01-20%         &   d20        &   d40
+21-40%         &   d40        &   d60
+41-60%         &   d60        &   d80
+61-80%         &   d80        &   d100
+81-100%        &   d100       &   d120
+\end{table}
+\label{Quantification Dice.}[table]
+
+_d120 Quantification Die_ When the d120 is rolled for Quantification its effective range
+is "capped" at 100. That is to say, a Feature's rating can never exceed 100, even if the
+d120 is used to quantify the Feature's rating, and the result rolled is higher than 100.
+The d120 is only used to (slightly) increase the chances to roll high, and so increase
+the rating of a Feature that is already close to 100%.
 
 \newpage
 
@@ -2481,14 +2513,6 @@ corresponding to the current Nest Level is rolled to increase the new Level's ra
 effect of this Quantification method is that as the characters delve deeper into the
 Nest, the chance to find a Level with 100% rating, where the target of their Job is
 found, increases.
-
-_d120 Quantification_ When the d120 is rolled for Quantification of Events its effective
-range is "capped" at 100. That is to say, a Feature's rating can never exceed 100, even
-if the d120 is used to quantify the Feature's rating, and the result rolled is higher
-than 100. The d120 is only used to increase the chance to roll high, and generate a
-higher percentile rating for a Feature, slightly above the chance to do so with a d100.
-The only use of the d120 in Nests & Insects is to quantify Events and Features of the
-Nest Environment.
 
 \newpage
 

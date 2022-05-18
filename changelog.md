@@ -1,3 +1,19 @@
+18/05/22
+========
+
+Version: v.1.0.0
+
+Rulebook
+--------
+
+[DONE] Clarify what Quantification die to Roll to Set, Increase, or Decrease Features.
+
+Code
+----
+
+[FIXED] `longest_line/4` will now correctly ignore lines starting with `\\label`. 
+
+
 16/05/22
 ========
 
@@ -5,6 +21,8 @@ Version: v.1.0.0
 
 Rulebook
 --------
+
+[DONE] Append "TBD" to names of sections that are To Be Done to warn the reader.
 
 [DONE] Wrote up Hunger rules.
 

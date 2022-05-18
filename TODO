@@ -4,11 +4,11 @@
 game/
 -----
 
-[TODO] Clarify what Quantification die to Roll to Set, Increase, or Decrease Features.
+[DONE] Clarify what Quantification die to Roll to Set, Increase, or Decrease Features.
 
 [TODO] Clarify the order in which multiple Costs, Risks and Reward are generated.
 
-[TODO]  Consider making all Items edible and typed only as "Meat" and "Plant".
+[TODO] Consider making all Items edible and typed only as "Meat" and "Plant".
 
 
 14/05/22
@@ -17,7 +17,7 @@ game/
 codez/
 ------
 
-[TODO] Append "TBD" to names of sections that are To Be Done to warn the reader.
+[DONE] Append "TBD" to names of sections that are To Be Done to warn the reader.
 
 
 
