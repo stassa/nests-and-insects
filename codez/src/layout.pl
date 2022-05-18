@@ -683,6 +683,11 @@ longest_line(Ls,L,I,W):-
 longest_line([],W,W):-
         !.
 longest_line([L|Ls],Acc,Bind):-
+% Skip label lines because the command can make them over-long.
+        atom_concat('\\label',_,L)
+        ,!
+        ,longest_line(Ls,Acc,Bind).
+longest_line([L|Ls],Acc,Bind):-
 % Skip Cover page, ToC, inserted pages, already formated.
 % See noformat_lines/6 for exaplanation.
         memberchk(L,['\\begin{nolayout}','\\begin{coverpage}','\\begin{toc}'])
