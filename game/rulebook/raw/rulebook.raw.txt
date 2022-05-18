@@ -1012,14 +1012,8 @@ Message   &   [S]   &   Must be collected or delivered as part of a Job.
 \end{table}
 \label{Item Types.}[table]
 
-/*
-_Recording Item Types_ Items' Types are recorded on a character's sheet, in the Inventory
-box, next to the name of the Item and enclosed in square braces. The column "Symbols" In
-the Item Types Table lists a single-character abbreviation of each Type, used to record
-Items' types in a character's Inventory while taking minimal space.
-*/
-_Recording Item Types_ To record an Item's type on a character's Sheet, write its type in
-square brackets next to the Item's Name in the character's Inventory.
+_Recording Item Types_ To record an Item's type on a character's Sheet, write its type
+symbol in square brackets next to the Item's Name in the character's Inventory.
 
 ○ Crickets [F]__________________:[__45%]
 ────────────────────────────────────────

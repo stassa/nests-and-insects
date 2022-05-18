@@ -2519,8 +2519,8 @@
 ║ ──────────────────────────────────────────────────────────────────────────────────────    ║▓
 ║ Table 8: Item Types.                                                                      ║▓
 ║                                                                                           ║▓
-║ _Recording Item Types_ To record an Item's type on a character's Sheet, write its type in ║▓
-║ square brackets next to the Item's Name in the character's Inventory.                     ║▓
+║ _Recording Item Types_ To record an Item's type on a character's Sheet, write its type    ║▓
+║ symbol in square brackets next to the Item's Name in the character's Inventory.           ║▓
 ║                                                                                           ║▓
 ║ ○ Crickets [F]__________________:[__45%]                                                  ║▓
 ║ ────────────────────────────────────────                                                  ║▓
