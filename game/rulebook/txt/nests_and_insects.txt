@@ -2513,7 +2513,7 @@
 ║ Companion    [C]       A creature accompanying a character. May be edible.                ║▓
 ║ Food         [F]       Used to pay a Hunger Cost. May bestow Effects, grant Abilities.    ║▓
 ║ Hint         [H]       May provide useful information.                                    ║▓
-║ Lighting     [L]       Used to pay a Darkness Cost. May be edible.                        ║▓
+║ Light        [L]       Used to pay a Darkness Cost. May be edible.                        ║▓
 ║ Materials    [M]       Used to build a Shelter for Resting and Healing.                   ║▓
 ║ Message      [S]       Must be collected or delivered as part of a Job.                   ║▓
 ║ ──────────────────────────────────────────────────────────────────────────────────────    ║▓
@@ -2532,7 +2532,7 @@
 ║                                                                                           ║▓
 ║ ○ Gloworm [F,L]_________________:[__45%]                                                  ║▓
 ║ ────────────────────────────────────────                                                  ║▓
-║ Figure 19: An Item with multiple Types: Food and Lighting.                                ║▓
+║ Figure 19: An Item with multiple Types: Food and Light.                                   ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -2562,8 +2562,8 @@
 ║                                                                                           ║▓
 ║ ┌[Example 2]────────────────────────────────────────────────────────────────────────────┐ ║▓
 ║ │ Cody's Spider character has a Gloworm: 45% Item in her Inventory. The Gloworm Item    │ ║▓
-║ │ has types Food and Lighting. Spider must pay a Hunger Cost and Cody decides that she  │ ║▓
-║ │ will eat some of the Gloworm to pay it. The Gloworm is now no longer a Lighting Item. │ ║▓
+║ │ has types Food and Light. Spider must pay a Hunger Cost and Cody decides that she     │ ║▓
+║ │ will eat some of the Gloworm to pay it. The Gloworm is now no longer a Light Item.    │ ║▓
 ║ │ Cody changes the Gloworm's name on Spider's character sheet to "Gloworm Carcass" as a │ ║▓
 ║ │ reminder that the Gloworm is now only useable as Food.                                │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
