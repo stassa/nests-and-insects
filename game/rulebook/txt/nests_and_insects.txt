@@ -4966,11 +4966,11 @@
 ║    4. Each Cost with a Chance that is equal to, or higher than the result of the d100     ║▓
 ║    Roll is "generated".                                                                   ║▓
 ║                                                                                           ║▓
-║    5. Each character in the Exploration Party pays each generated Cost.                   ║▓
+║    Costs are generated in the order in which they appear in the Costs table, Table        ║▓
+║    22, starting with the first Cost (Hunger) in the top row of the Table.                 ║▓
 ║                                                                                           ║▓
-║ ┌[Note 5]───────────────────────────────────────────────────────────────────────────────┐ ║▓
-║ │ Depending on the result of the d100 roll, multiple Costs may need to be paid.         │ ║▓
-║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║    5. Each character in the Exploration Party pays each generated Cost in order of        ║▓
+║    generation.                                                                            ║▓
 ║                                                                                           ║▓
 ║ The Costs Table is reproduced below as Table 22 for the reader's convenience.             ║▓
 ║                                                                                           ║▓
@@ -5016,6 +5016,9 @@
 ║    4. Each Risk with a Chance that is equal to, or higher than the result of the          ║▓
 ║       d100 Roll is "generated".                                                           ║▓
 ║                                                                                           ║▓
+║       Risks are generated in the order in which they appear in the Risks table, Table     ║▓
+║       23, starting with the first Risk (Encounter) in the top row of the Table.           ║▓
+║                                                                                           ║▓
 ║    5. All characters in the Exploration Party face the first generated Risk; once the     ║▓
 ║       first Risk is faced and all Actions or minigames resulting are resolved, all        ║▓
 ║       characters in the Exploration Party face the second generated Risk; and so on,      ║▓
@@ -5043,9 +5046,6 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
 ╚═══════════════════════════════════════════-96-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
@@ -5065,6 +5065,9 @@
 ║                                                                                           ║▓
 ║    4. Each Reward with a Chance that is equal to, or higher than the result of the d100   ║▓
 ║       Roll is "generated".                                                                ║▓
+║                                                                                           ║▓
+║       Rewards are generated in the order in which they appear in the Rewards table,       ║▓
+║       Table 24, starting with the first Reward (Room) in the top row of the Table.        ║▓
 ║                                                                                           ║▓
 ║    5. If a generated Reward is an Item, any character may add the Item to her Inventory.  ║▓
 ║       If no character adds the Item to her Inventory the Item remains on the Room floor   ║▓
@@ -5091,9 +5094,6 @@
 ║ Secret         Perception - Level   Generates a random Cost, Risk or Reward.              ║▓
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
 ║ Table 24: Rewards.                                                                        ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ╚═══════════════════════════════════════════-97-════════════════════════════════════════════╝▓
