@@ -2435,16 +2435,33 @@ situated.
 
 \section{Event Generation}
 
-\subsection{Costs, Risks and Rewards}
-
 Costs, Risks, and Rewards are generated every time a character takes an Exploration
 Action. The Qualification Roll for the Exploration Action sets the number and kind of
 Events that occur during the Action. Then the players or the GQ roll to generate Events
 of the indicated types.
 
-To generate an Event, the players or the GQ roll on the appropriate Event table, given as
-Tables 17-19, below. Each Event in the Tables is given a brief description. Detailed
-Descriptions and mechanics for each kind of Event follow in a subsequent Section.
+To generate Events, the players or the GQ roll a d100 and reference the result on the
+appropriate Event tables. Event tables are given as Tables 17-19, in the following
+Section. 
+
+If Events of multiple kinds (Costs, Risks and Rewards) must be generated, a single
+d100 is rolled and its result referenced on all relevant tables.
+
+Each Event table has a "Chance" column, listing the Chance for each Event to occur.
+When the result of a d100 roll is referenced on an Event table, all Events in that
+table with a Chance higher than the result of the roll are generated.
+
+If multiple Events of the same kind (Cost, Risk or Reward) are generated as the result of
+the same Exploration Action, those Events are dealt with one-by-one, in the order in
+which they appear in their respective Event table, starting with the Event at the top
+row of the table.
+
+\newpage
+
+\subsection{Costs, Risks and Rewards}
+
+Tables 17-19, below, list Events along with a brief description of each. Detailed
+descriptions and mechanics for each kind of Event follow in a subsequent Section.
 
 \begin{table}[4]
 Cost    &  Chance     &   Description
@@ -2476,8 +2493,15 @@ Secret      &  Perception - Level & Generates a random Cost, Risk or Reward.
 \end{table}
 \label{Rewards.}[table]
 
-% Explain how all Events with a Chance above the roll result occur, and that one roll is
-% made for each Event determined by the DoS of the Exploration Action.
+\begin{example}
+Brody's Wasp character must pay a Cost as the result of an Exploration Action. Brody
+rolls a d100 and compares the result to the Costs table (Table 17). The d100 result
+is 37%. This is less than the Chance of the Hunger and Passage Costs, thus a Hunger
+Event and a Passage Event are generated. Hunger comes before Passage in Table 17,
+thus Brody's Wasp must first pay the Hunger Cost, then the Passage Cost must be paid.
+\end{example}
+
+\newpage
 
 \subsection{Level Rating}
 

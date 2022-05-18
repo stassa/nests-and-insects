@@ -6,6 +6,8 @@ Version: v.1.0.0
 Rulebook
 --------
 
+[DONE] Clarify the order in which multiple Costs, Risks and Reward are generated.
+
 [DONE] Clarify what Quantification die to Roll to Set, Increase, or Decrease Features.
 
 Code
