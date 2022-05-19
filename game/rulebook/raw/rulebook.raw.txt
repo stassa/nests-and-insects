@@ -2319,13 +2319,17 @@ The Survival and Exploration minigame defines rules for the procedural generatio
 Nest's environment. During the Survival and Exploration minigame, characters explore the
 Nest, while players and the GQ roll dice to determine what the characters find.
 
-Note that Procedural Generation also takes place during the Hunting and Foraging
-minigame. However, in order for Hunting and Foraging to be initiated, the characters must
-first explore the Nest by means of the Survival and Exploration minigame.
+\begin{note}
+Procedural Generation also takes place during the Hunting and Foraging minigame.
+However, in order for Hunting and Foraging to be initiated, the characters must first
+explore the Nest by means of the Survival and Exploration minigame.
+\end{note}
 
 In Nests & Insects procedural generation is an abstraction: no floor plans or maps are
 generated. Instead what is generated are the Features of game entities, including the
 spaces inside the Nests, the creatures that roam them, and items that populate them.
+
+\newpage
 
 \subsection{How Procedural Generation Works}
 
@@ -2334,24 +2338,34 @@ taken literally. It means that the players or the GQ roll a d100 and cross-refer
 result with the rows of a table. The table lists what the characters find and what
 happens to them while they explore the Nest.
 
-Survival and Exploration starts with an Exploration Action. This Action is resolved by a
-full Qualification Roll and its outcome determines the types, and numbers, of Events that
-occur as the characters explore the Nest. There are three types of Events: Costs, Risks
-and Rewards. Any Exploration Action may cause up to three Events to occur. A better DoS
-to the Exploration Action causes more Rewards to occur while a worse one causes more
-Costs and Risks to occur.
+_Exploration Action_ Survival and Exploration starts with an Exploration Action. This
+Action is resolved by a full Qualification Roll and its outcome determines the types, and
+numbers, of Events that occur as the characters explore the Nest. There are three types
+of Events: Costs, Risks and Rewards. Any Exploration Action may cause up to three Events
+to occur. A better DoS to the Exploration Action causes more Rewards to occur while a
+worse one causes more Costs and Risks to occur.
 
-Once the type and number of Events is determined, the players roll on the relevant Event
-tables (i.e. the Costs, Risks, and Rewards tables) to find which specific Event occurs.
-This roll is a Boolean Roll, where the target number is the Chance for the Event to occur
-(it doesn't make sense to call this target number an "Effort" as in ordinary Boolean
-Rolls). Some Events may also require a Quantification roll to quantify their Features.
+_Rolling for Events_ Once the type and number of Events is determined, the players roll
+on the relevant Event tables (i.e. the Costs, Risks, or Rewards tables) to find which
+specific Events occur. This roll is a Boolean Roll, where the target number is the Chance
+for an Event to occur (it doesn't make sense to call this target number an "Effort" as in
+ordinary Boolean Rolls). For each Exploration Action a single Boolean Roll is made and
+its result looked up on each relevant Event table in turn. Each Event whose Chance is
+matched by the Boolean Roll is "generated" (i.e. occurs). Thus, multiple Events may occur
+as a result of a single Exploration Action. Some Events may also require a Quantification
+roll to quantify their Features.
 
-The Chance for an Event to occur is determined by two values: one is a base Chance listed
-in the corresponding Event table; the other is the rating of the Nest Level on which the
-characters are currently located. In some cases a Feature of the exploring Character may
-be used as the base Chance for an Event to occur, instead. Nest Levels also define the
-decile dice to roll for Quantification of the three kinds of Events and their Features.
+_Chance of Events_ The Chance for an Event to occur is determined by two values, summed:
+one is a base Chance listed in the corresponding Event table; the other is the rating of
+the Nest Level on which the characters are currently located. In some cases a Feature of
+the exploring Character may be used as the base Chance for an Event to occur. Nest Levels
+closer to a Job's target have a higher rating thus causing the Exploration Action to fail
+more often and causing more Costs and Risks to occur. Nest Levels also define the decile
+dice to roll for Quantification of the three kinds of Events and their Features.
+
+Events are listed in Tables 17-19, in Section 3.11.1.0. Nest Level ratings and their
+Quantification Dice are listed in Table 20, in Section 3.11.2.0. 
+
 \newpage
 
 \section{The Nest environment}
@@ -2397,6 +2411,7 @@ exception of bees' and eusocial wasps' nests that are entirely composed of hexag
 cells, i.e. "rooms" of a sort). Despite this and for the sake of playing the game, Nests
 & Insects pretends that Nests have Rooms.
 
+
 Room Events are Rewards and are only generated (i.e. found) when a character takes an
 Exploration Action. 
 
@@ -2436,25 +2451,24 @@ situated.
 \section{Event Generation}
 
 Costs, Risks, and Rewards are generated every time a character takes an Exploration
-Action. The Qualification Roll for the Exploration Action sets the number and kind of
+Action. The Qualification Roll for the Exploration Action sets the number and type of
 Events that occur during the Action. Then the players or the GQ roll to generate Events
 of the indicated types.
 
-To generate Events, the players or the GQ roll a d100 and reference the result on the
-appropriate Event tables. Event tables are given as Tables 17-19, in the following
-Section. 
+To generate Events, the players or the GQ make a Boolean Roll and reference the result on
+the appropriate Event tables, Tables 17-19 in the following Section. 
 
-If Events of multiple kinds (Costs, Risks and Rewards) must be generated, a single
-d100 is rolled and its result referenced on all relevant tables.
+If Events of multiple types (Costs, Risks and Rewards) must be generated, a single
+Boolean Roll is made and its result referenced on all relevant tables.
 
-Each Event table has a "Chance" column, listing the Chance for each Event to occur.
-When the result of a d100 roll is referenced on an Event table, all Events in that
-table with a Chance higher than the result of the roll are generated.
+Each Event table has a "Chance" column, listing the Chance for each Event to occur, as a
+percentile rating. This Chance rating is used as the "Effort" of the Boolean Roll to
+generate Events. When the result of the Boolean Roll is referenced on an Event table, all
+Events in that table with a Chance matched by the result of the Roll are generated.
 
-If multiple Events of the same kind (Cost, Risk or Reward) are generated as the result of
-the same Exploration Action, those Events are dealt with one-by-one, in the order in
-which they appear in their respective Event table, starting with the Event at the top
-row of the table.
+If multiple Events of the same kind (Cost, Risk or Reward) are generated by the same
+Boolean Roll, those Events are dealt with one-by-one, in the order in which they appear
+in their respective Event table, starting with the Event at the top row of the table.
 
 \newpage
 
@@ -2495,10 +2509,10 @@ Secret      &  Perception - Level & Generates a random Cost, Risk or Reward.
 
 \begin{example}
 Brody's Wasp character must pay a Cost as the result of an Exploration Action. Brody
-rolls a d100 and compares the result to the Costs table (Table 17). The d100 result
-is 37%. This is less than the Chance of the Hunger and Passage Costs, thus a Hunger
-Event and a Passage Event are generated. Hunger comes before Passage in Table 17,
-thus Brody's Wasp must first pay the Hunger Cost, then the Passage Cost must be paid.
+rolls a d100 and references the result on the Costs table (Table 17). The d100 result
+is 37%. This mathces the Chance of the Hunger and Passage Costs, thus a Hunger Event
+and a Passage Event are generated. Hunger comes before Passage in Table 17, thus
+Brody's Wasp must first pay the Hunger Cost, then the Passage Cost must be paid.
 \end{example}
 
 \newpage
@@ -2533,27 +2547,29 @@ found, increases.
 
 \section{The Environment Pool}
 
-As described in earlier Sections, Environments can be used as resources to pay Costs or
-play a minigame. To track the Environments generated so-far in the game, players have a
-communal Environment Pool. This pool is simply a list of all the Environments generated
-so far, and their properties.
+As described in earlier Sections, Environments can be used as resources to pay Costs,
+reap Rewards, or play a minigame. To track the Environments generated so-far in the game,
+players have a communal Environment Pool. This pool is simply a list of all the
+Environments generated so far, and their properties.
 
+\begin{box}[Tracking the Environment Pool]
 Players are free to track their Environment Pool as best suits them, for example by
 drawing a map of Environments and their connections and contents, etc.
+\end{box}
 
 One way to track an Environment Pool is to tabulate its contents. Table 21 gives an
 example of such tabulation.
 
-\begin{table}[4]
-Environment Id&  Used?&  Found In  &  Connections&  Notes
-Entrance Room &  Yes  &  Start     &  Red Room   &
-Red Room      &  Yes  &  Entrance  &  Black Room &  Shelter built
-Black Room    &  No   &  Red Room  &  Red Room   &
-Shortcut 1    &  Yes  &  Black Room&  Level 30%  &  Connects Black Room to Level 30%
-Level 43%     &  Yes  &  Black Room&             &
-Passage Right &  Yes  &  Entrance  &             &  Connects Entrance to Red Room
-Passage Left  &  Yes  &  Red Room  &             &  Connects Red Room to Black Room
-Passage Up    &  No   &  Red Room  &             &
+\begin{table}[3]
+Environment Id&  Spent?&  Found In  &  Connections&  Notes
+Entrance Room &  Yes   &  Start     &  Red Room   &
+Red Room      &  Yes   &  Entrance  &  Black Room &  Shelter built
+Black Room    &  No    &  Red Room  &  Red Room   &
+Shortcut 1    &  Yes   &  Black Room&  Level 30%  &  Connects Black Room to Level 30%
+Level 43%     &  Yes   &  Black Room&             &
+Passage Right &  Yes   &  Entrance  &             &  Connects Entrance to Red Room
+Passage Left  &  Yes   &  Red Room  &             &  Connects Red Room to Black Room
+Passage Up    &  No    &  Red Room  &             &
 \end{table}
 \label{Environment Pool}[table]
 
@@ -2563,16 +2579,17 @@ players to come up with. For example, a Room may be the "Black Fungus Room", bec
 Black Fungus was found while Foraging in it; or a Room may be the "Sad Aphids Farm",
 because Aphids were found penned in the Room and they looked sad; and so on.
 
-The "Used" column records whether an Environment has been spent to: either to pay a Cost,
+The "Spent" column records whether an Environment has been spent: either to pay a Cost,
 or to reap a Reward, or to initiate a Survival and Exploration, Hunting and Foraging or
 Resting and Healing minigame.
 
-Environments can only be spent once from the Environment Pool, but characters are free to
-visit them again for whatever reason, for example to try and find an Item dropped to the
-floor of a Room. Additionally, a character, or an enemy, may be forced to retreat during
-Combat, in which case they will likely end up in a Room already visited. In such cases a
-character can move back in an Environment that has already been spent, without spending
-it again.
+_Going Back_ Environments can only be spent once from the Environment Pool, but
+characters are free to visit them again for whatever reason, for example to try and find
+an Item dropped to the floor of a Room. Additionally, a character, or an enemy, may be
+forced to retreat during Combat, in which case they will likely end up in a Room already
+visited. In such cases a character can move back in an Environment that has already been
+spent, without spending it again.
+
 
 The "Found In" column notes the Room in which an Environment was generated as the result
 of an Exploration Action.
@@ -2597,6 +2614,7 @@ if the players so wish; otherwise, the players are free to control their charact
 they see fit.
 
 \begin{box}[Survival and Exploration Steps]
+
 1. Begin Survival and Exploration.
 
 2. Form an Exploration Party (decide which characters go exploring).
@@ -2612,6 +2630,7 @@ they see fit.
 7. Generate, then reap Rewards, determined by the Exploration Action.
 
 8. Survival and Exploration Ends.
+
 \end{box}
 
 Each of the Steps in the Survival and Exploration Steps box above are described in detail
@@ -2623,12 +2642,12 @@ in the following Sections.
 Survival and Exploration begins when a player declares that her character's Intent is to
 "Explore the Nest".
 
-"Explore the Nest" is the formulaic Intent of the Exploration Action. A player is free to
-express her character's Intent to explore the Nest in her own words, as long as it's
-clear that the characer wants to go exploring. If that's not clear, the GQ can always ask
-the player to clarify. If the player isn't sure what her character's Intent means in
-mechanical terms, the decision is made by the GQ whether to start a Survival and
-Exploration minigame, or not.
+"Explore the Nest" is the formulaic Intent of the Exploration Action (described in
+Section 3.13.4.0). A player is free to express her character's Intent to explore the Nest
+in her own words, as long as it's clear that the characer wants to go exploring. If
+that's not clear, the GQ can always ask the player to clarify. If the player isn't sure
+what her character's Intent means in mechanical terms, the decision is made by the GQ
+whether to start a Survival and Exploration minigame, or not.
 
 If more than one player wish their characters to explore the Nest, they can say so at
 this point. Otherwise they can do so in the next Step.
@@ -2636,7 +2655,7 @@ this point. Otherwise they can do so in the next Step.
 
 \subsection{Form an Exploration Party}
 
-It's common for more than one player to explore the Nest at a time. In particular, all
+It's common for more than one character to explore the Nest at a time. In particular, all
 the player characters may go exploring together, or the players may split their
 characters into groups that will explore the Nest separately.
 
@@ -2663,20 +2682,24 @@ GQ will probably want to make a note of what characters are in each Exploration 
 
 \subsection{Spend a Room to take an Exploration Action}
 
-To take an Exploration Action, a character must spend a free Room from the characters'
-Environment Pool. Mark a Room as "used" in the pool, so that it is not spent again later.
-Then resolve the Exploration Action as described in the following Section.
+For one or more characters to take an Exploration Action, their players must spend a free
+Room from their Environment Pool. Mark a Room as "used" in the pool, so that it is not
+spent again later. Then resolve the Exploration Action as described in the following
+Section.
+
 \newpage
 
 \subsection{Resolve the Exploration Action}
 
-The Survival and Exploration Minigame is initiated whenever a player declares that her
-character is exploring the Nest.
+As described in earlier Sections, the Survival and Exploration minigame is initiated when
+one or more players decides that their characters will go exploring the Nest. During the
+Survival and Exploration minigame an Exploration Action is taken by the exploring
+character, or characters. This Section defines the formula for the Exploration Action.
 
-_Exploration party_ More than one characer may take part in the Exploration Action
-(indeed, this is typical). In that case, one character is the Acting character and every
-other character taking part in the Action supports the Action with their Exploration
-Feature applied as a static positive modifier to the Acting character's Effort.
+_Party Scout_ When more than one characters take part in the same Exploration Action,
+i.e. when an Exploration Party is formed, one character is nominated as the Scout and
+each other character in the Exploration Party supports the Scout with her Exploration
+Feature applied as a static, positive modifier to the Scout's Effort. 
 
 The outcome of the Exploration Action determines the number, and type of Events that
 occur as a result of the Action. Three Events of up to three different types will occur,
@@ -2704,8 +2727,9 @@ Critical Failure  &    Cost, Cost, Cost
 \end{table}
 \label{Exploration Action Formula.}[figure]
 
-The Party Scout may add her Eusociology and Perception as static positive modifiers to
-the Exploration Roll.
+The acting character, or the Party Scout, may add her Eusociology and Perception as
+static positive modifiers to the Exploration Roll.
+
 \newpage
 
 \subsection{Generate and pay Costs}
@@ -2718,7 +2742,7 @@ and pay Costs.
    
    2. Roll d100.
    
-   3. Look up the result on the Cost Table. 
+   3. Look up the result on the Costs Table. 
    
    4. Each Cost with a Chance that is equal to, or higher than the result of the d100
    Roll is "generated".
@@ -2753,7 +2777,7 @@ and face Risks.
    
    2. Roll d100.
    
-   3. Look up the result on the Risk Table. 
+   3. Look up the result on the Risks Table. 
    
    4. Each Risk with a Chance that is equal to, or higher than the result of the
       d100 Roll is "generated".
@@ -2779,10 +2803,12 @@ Infection     &  10% + Level&  Bestows the Infection Effect
 
 _Combat Risk_ Risks include the "Encounter" Event which may cause a Combat minigame to
 begin. In that case, subsequent Risks are only faced once the Combat minigame has ended.
-If some of the characters in the Exploration Party that faced the original Encounter Risk
-that initiated the Combat minigame are no longer in the same Room as the rest of the
-Exploration party (usually because they are fleeing from Combat) only the characters
-remaining in the Exploration Party face subsequent Risks.
+
+_Missing Characters_ If some of the characters in the Exploration Party that faced the
+original Encounter Risk that initiated a Combat minigame are no longer in the same Room
+as the rest of the Party (usually because they are fleeing from Combat) those missing
+characters do not face any subsequent Risks until they return to that Room.
+
 \newpage
 
 \subsection{Generate and reap Rewards}
@@ -2811,7 +2837,7 @@ and reap Rewards.
       specific rules to manage that decision.
 
    6. If a generated Reward is a Room, Shortcut, or Level, the Reward is added to the
-      player Characters' communal Environment Pool.
+      player characters' communal Environment Pool.
 
    7. If a generated Reward is a Secret, follow the description of the Secret Event: this
       usually means that a new Event is generated.
@@ -2848,8 +2874,10 @@ Survival and Exploration minigame.
 
 \subsection{Hunger}
 
-Hunger can make a character weak. Prolongued Hunger leads to starvation, which leads to
-death from starvation.
+\begin{box}[Effects of Hunger]
+Hunger can make a character weak. Prolongued Hunger leads to starvation, which leads
+to death from starvation.
+\end{box}
 
 When a Hunger Cost is paid, the character paying the Cost must consume one Food Item from
 her Inventory. 
@@ -2864,7 +2892,7 @@ If a character cannot (or her player will her not to) pay a Hunger Cost, then:
 * If the character is Starving, the character dies.
 
 * Else, if the character's Hunger is less than 100%, make a Quantification Roll to
-  increase the character's Hunger.
+  Increase the character's Hunger.
 
 * Or, if the character's Hunger is 100% the character becomes Starving. Tick the
   tickbox of the Starving Effect in the Hunger box, as a reminder.
@@ -2885,7 +2913,9 @@ the character.
 
 \subsection{Darkness}
 
+\begin{box}[Effects of Darkness]
 Darkness makes it harder to see things and to do things that require vision.
+\end{box}
 
 When a Darkness Cost is paid, the character paying the Cost must consume one Light Item
 from her Inventory.
@@ -2898,15 +2928,23 @@ Cost (even if the character has a Light Item in her Inventory).
 If a character cannot (or her player will her not to) pay a Darkness Cost, that character
 has no light source.
 
-If none of the characters in a Room has a Light source, the Room is in Darkness. Roll to
-Quantify the Darkness rating. The GQ makes the Quantification Roll.
+If none of the characters in a Room has a light source, the Room is in Darkness. Roll to
+Set the Darkness rating. The GQ makes the Quantification Roll.
 
-While a Room is in Darkness, all characters in the Room suffer a static negative modifier
-equal to the Room's Darkness rating to all their Actions that require vision.
+While a Room is in Darkness, all characters in the Room suffer a static, negative
+modifier equal to the Room's Darkness rating to all their Actions that require vision.
+%The exception is Blind characters (i.e. characters with Blind: 100%). Blind characters
+%are not affected by Darkness and so do not suffer a negative modifier to any tasks as a
+%result of being in a Room in Darkness.
+%The exception is Blind characters. Characters subject to a Blind Effect are not affected
+%by Darkness unless the Darkness rating is less than their Blind rating, and so do not
+%suffer a negative modifier to any tasks as a result of being in a Room in Darkness.
+%Characters with Blind less than 100% suffer normal Darkness penalties.
 
-The exception is Blind characters (i.e. characters with Blind: 100%). Blind characters
-are not affected by Darkness and so do not suffer a negative modifier to any tasks as a
-result of being in a Room in Darkness.
+_Blindness_ A character subject to a Blind Effect is only affected by Darkness if the
+Darkness rating is higher than the character's Blind rating. A character who is not
+affected by Darkness does not suffer a negative modifier to any tasks as a result of
+being in a Room in Darkness.
 
 \newpage
 
@@ -2921,9 +2959,11 @@ result of being in a Room in Darkness.
 
 \subsection{Obstacle}
 
+\begin{box}[Effects of Obstacles]
 Obstacles stop characters from further exploring the Nest.
+\end{box}
 
-Obstacles have a single Feature: Obstruction.
+Obstacles are elements of the Nest Environment and have a single Feature: Obstruction.
 
 When an Obstacle Risk is faced, roll the current Level's Costs/ Risks die to set the
 Obstacle's Obstruction rating. The GQ makes the Roll.
@@ -2952,9 +2992,9 @@ player makes the Roll. Then:
 
 _Building Resources_ When an Obstacle is torn down there is a chance that an amount of
 building Resources will be generated. Make a Boolean Roll with Effort equal to the
-Obstacle's rating before it was torn down. If the Roll Succeeds, a building Resource Item
-remains on the floor of the Room where the Obstacle was torn down. Roll to Set the
-Resource Item's rating. The GQ makes the roll.
+Obstacle's initial rating (i.e. when it was generated). If the Roll Succeeds, a building
+Resource Item remains on the floor of the Room where the Obstacle was torn down. Roll to
+Set the Resource Item's rating. The GQ makes the roll.
 
 _Blocked Path_ If all characters leave the Room where an Obstacle was generated and the
 Obstacle's Obstruction rating is higher than 0%, no Risks and Rewards are generated as a
