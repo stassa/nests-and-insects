@@ -1,3 +1,17 @@
+19/05/22
+========
+
+game/
+-----
+
+[TODO] Clarify leaving a Room before a generated Event is resolved.
+
+[TODO] Clarify how Authothysis makes a tunnel entrance unpassable
+       * It creates an Obstacle. 
+
+[TODO] Clarify how Nest Level ratings are determined.
+
+
 16/05/22
 ========
 
@@ -8,7 +22,8 @@ game/
 
 [DONE] Clarify the order in which multiple Costs, Risks and Reward are generated.
 
-[TODO] Consider making all Items edible and typed only as "Meat" and "Plant".
+[NEVERMIND] Consider making all Items edible and typed only as "Meat" and "Plant".
+            > Nevermind because I don't like that.
 
 
 14/05/22

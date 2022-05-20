@@ -1,3 +1,34 @@
+19/05/22
+========
+
+Version: v.1.0.0
+
+Rulebook
+--------
+
+[DONE] Refactored rules for choosing a Quantification Die
+
+[DONE] Clarified and improved rules for Survival and Exploration written so-far.
+
+Soundtrack
+----------
+
+* Melechesh - Rebirth of the Nemesis (2006)
+* Melechesh - Secrets Of Sumerian Sphynxology (2003)
+* Horna- Oi Kallis Kotimaa (2004)
+* Bathroy - Blood Fire Death (track) (1988) [RIP Ace]
+* Slayer - South of Heaven (1988)
+* Slayer - Black Magic (1983)
+* Death - Zombie Ritual (1987) 
+* Cannibal Corpse - Zero the Hero (1993)
+* Death - The Exorcist (2011)
+* Cannibal Corpse - The Exorcist (1993)
+* Possessed - The Exorcist (1985)
+* Judas Priest - Nostradamus (track) 2008.
+* KEYGEN CHURCH - █ ▓ - Bullug Gegbug Ibgabiug Gixcure Dagabciea Fuic (2019)
+* Basil Poledouris - Connan the Barbarian OST (1982)
+
+
 18/05/22
 ========
 

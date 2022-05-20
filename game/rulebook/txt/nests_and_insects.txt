@@ -116,7 +116,7 @@
 ║     3.4.5.0 Modification...............................................................59 ║▓
 ║     3.4.6.0 Choosing modifiers.........................................................60 ║▓
 ║     3.4.7.0 Quantification.............................................................61 ║▓
-║     3.4.8.0 Quantification Die.........................................................62 ║▓
+║     3.4.8.0 Choosing a Quantification Die..............................................62 ║▓
 ║     3.4.9.0 Resolution.................................................................63 ║▓
 ║   3.5.0.0 Simplified Rolls.............................................................64 ║▓
 ║     3.5.1.0 Boolean Roll...............................................................64 ║▓
@@ -3277,8 +3277,8 @@
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
 ║ A Quantification Roll is made to quantify the results of an Action. Invariably, the       ║▓
-║ Quantification Roll modifies the rating of a Feature of a character, an enemy, or the     ║▓
-║ Nest environment. The rating of the Feature is directly set to the value of the           ║▓
+║ Quantification Roll sets, or modifies, the rating of a Feature of a character, an enemy,  ║▓
+║ or the Nest environment. The rating of the Feature is directly set to the value of the    ║▓
 ║ Quantification Roll, without addition or subtraction, as summarised in Rules Summaries    ║▓
 ║ 13-16.                                                                                    ║▓
 ║                                                                                           ║▓
@@ -3300,30 +3300,35 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.4.8.0 Quantification Die                                                                ║▓
-║ --------------------------                                                                ║▓
+║ 3.4.8.0 Choosing a Quantification Die                                                     ║▓
+║ -------------------------------------                                                     ║▓
 ║                                                                                           ║▓
 ║ ┌[Rules Summary 17: Quantification Die]─────────────────────────────────────────────────┐ ║▓
 ║ │ The decile die rolled to set, increase or decrease a Feature depends on the current   │ ║▓
-║ │ rating of the Feature. A Feature whose rating is not yet set has a rating of 0%.      │ ║▓
+║ │ rating of the Feature, or the rating of the Feature used as Effort for an Action      │ ║▓
+║ │ requiring Quantification.                                                             │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
 ║ A rule asking for a Quantification Roll may specify the decile die to be rolled.          ║▓
-║ Otherwise, the decile die to roll is determined by the current rating of the Feature, and ║▓
-║ the type of the Quantification Roll: whether the Roll is to set, increase, or decrease    ║▓
-║ the rating of a Feature.                                                                  ║▓
+║ Otherwise, the decile die to roll is determined by:                                       ║▓
+║                                                                                           ║▓
+║ * either: the current rating of the Feature to be Quantified, if the Quantification       ║▓
+║   Roll is to increase or decrease, or                                                     ║▓
+║                                                                                           ║▓
+║ * the rating of the Feature used as Effort for the Action that resulted in the            ║▓
+║   Feature's Quantification if the Quantification Roll is to set.                          ║▓
 ║                                                                                           ║▓
 ║ When a rule asks for a Quantification Roll and does not specify the decile die to roll,   ║▓
 ║ consult Table 13 below to determine the decile die for the Quantification Roll.           ║▓
 ║                                                                                           ║▓
-║ Feature Rating    Roll to Set    Roll to Increase/ Decrease                               ║▓
-║ ───────────────────────────────────────────────────────────                               ║▓
-║ 01-20%            d20            d40                                                      ║▓
-║ 21-40%            d40            d60                                                      ║▓
-║ 41-60%            d60            d80                                                      ║▓
-║ 61-80%            d80            d100                                                     ║▓
-║ 81-100%           d100           d120                                                     ║▓
-║ ───────────────────────────────────────────────────────────                               ║▓
+║ Feature Rating    Quantification Die                                                      ║▓
+║ ────────────────────────────────────                                                      ║▓
+║ 01-20%            d40                                                                     ║▓
+║ 21-40%            d60                                                                     ║▓
+║ 41-60%            d80                                                                     ║▓
+║ 61-80%            d100                                                                    ║▓
+║ 81-100%           d120                                                                    ║▓
+║ ────────────────────────────────────                                                      ║▓
 ║ Table 13: Quantification Dice.                                                            ║▓
 ║                                                                                           ║▓
 ║ _d120 Quantification Die_ When the d120 is rolled for Quantification its effective range  ║▓
@@ -3331,11 +3336,6 @@
 ║ d120 is used to quantify the Feature's rating, and the result rolled is higher than 100.  ║▓
 ║ The d120 is only used to (slightly) increase the chances to roll high, and so increase    ║▓
 ║ the rating of a Feature that is already close to 100%.                                    ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
