@@ -1657,9 +1657,8 @@ the DoS of the Action.
 \subsection{Choosing a Quantification Die}
 
 \begin{rules_summary}[Quantification Die]
-The decile die rolled to set, increase or decrease a Feature depends on the current
-rating of the Feature, or the rating of the Feature used as Effort for an Action
-requiring Quantification.
+The decile die rolled to Quantify a Feature depends on the current rating of the
+Feature, or the rating of the Effort for an Action requiring Quantification.
 \end{rules_summary}
 
 A rule asking for a Quantification Roll may specify the decile die to be rolled.
@@ -1668,8 +1667,8 @@ Otherwise, the decile die to roll is determined by:
 * either: the current rating of the Feature to be Quantified, if the Quantification
   Roll is to increase or decrease, or
 
-* the rating of the Feature used as Effort for the Action that resulted in the
-  Feature's Quantification if the Quantification Roll is to set.
+* the rating of the Effort for the Action that resulted in the Feature's Quantification
+  if the Quantification Roll is to set.
 
 When a rule asks for a Quantification Roll and does not specify the decile die to roll,
 consult Table 13 below to determine the decile die for the Quantification Roll.
@@ -1690,6 +1689,15 @@ d120 is used to quantify the Feature's rating, and the result rolled is higher t
 The d120 is only used to (slightly) increase the chances to roll high, and so increase
 the rating of a Feature that is already close to 100%.
 
+\begin{example}
+Brody's Ants character is subject to a Bleeding Effect bestowed by an Attack with a
+Threat Rate of 45%. The Quantification Die corresponding to 45% in Table 13 is the
+d60. The GQ rolls a d60: 13%. Brody sets the Ants' Bleeding to 13%.
+
+Later, the Ants' Bleeding must increased to pay an Effects Cost (Section
+3.14.3.0). The Quantification Die corresponding to the current Bleeding rating of 13%
+in Table 13 is the d40. The GQ rolls d40: 32%. Brody sets the Ants' Bleeding to 32%.
+\end{example}
 \newpage
 
 \subsection{Resolution}
