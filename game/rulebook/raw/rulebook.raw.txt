@@ -59,18 +59,18 @@ to give you everything you need to play the game. That information is found in t
 text that follows this Overview Section.
 \end{note_reader}
 
-\section{The Setting}
-
 Nests & Insects is a tabletop roleplaying game (TTRPG) for 2 to 7 players. One player
 assumes the role of the Game Queen and describes the game world to the other players. The
 other players control characters who explore, and interact with, the game world.
+
+\section{The Setting}
 
 Players' characters are arthropods that belong to one of six classes: Spider, Wasp,
 Scorpion, Ladybug, Beetle and Ants (plural). The characters are mercenaries: assassins
 and thugs, hired to invade a Nest and carry out a Job on behalf of some arthropod client.
 Nests are the homes of eusocial insects: the nests of Bees, Ants and Termites. Common
-Jobs are to assasinate the Queen, or the King; steal nectar, honey, honeydew, aphids
-(farmed by ants) or fungi (cultivated by termites); steal, or kill, nymphs; or sabotage
+Jobs are to assassinate the Queen, or the King; steal nectar, honey, honeydew, aphids
+(farmed by ants) or fungi (cultivated by termites); steal, or kill, larvae; or sabotage
 the Nest.
 
 At the beginning of a new game the players' characters enter a Nest to carry out their
@@ -92,16 +92,16 @@ games: most roguelike CRPGs are inspired by TTRPGs, particularly Dungeons & Drag
 grandaddy of all TTRPGs (and all CRPGs to boot). Roguelikes borrow from TTRPGs the
 hack-and-slash, dungeon-crawling style of gameplay and common themes of fantasy and
 science fiction. Nests & Insects borrows from Roguelike CRPGs game elements like:
-procedural generation; hack-and-slash, dungeon-crawling gameplay; lethal combat; freedom
-to explore and experiment with the game world; freedom to tackle challenges in different
-ways; and the need for characters to find sustenance or die.
+procedural generation; hack-and-slash, dungeon-crawling gameplay; lethal combat; hunger
+and other resource management mechanics; freedom to explore and experiment with the game
+world.
 
 While Nests & Insects is a roleplaying game, it is not focused on roleplaying, because it
 is very difficult for humans to roleplay arthropods (and vice-versa). As in Roguelike
 CRPGs, Nests & Insects does not come with a built-in, pre-scripted story, and it is
 instead designed to encourage a story to emerge naturally from the interaction of the
 players' characters with the rules of the game and the procedurally generated elements of
-the game world (including Jobs, Nests and Nests' inhabitants).
+the game world.
 
 Nests & Insects is designed to be played with no preparation other than reading some of
 the rules. At the start of a new game players select a class that determines all of a
