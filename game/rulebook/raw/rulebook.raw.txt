@@ -167,15 +167,15 @@ Complete Failure and become a Critical Failure. Table 2 illustrates Shifts Up an
 and their effect on the initial DoS.
 
 With modifiers, and the Shifts Up or Down they confer, a total of six DoS can be
-achieved: Critical Failure, Complete Failure, Partial Failure, Partial Success, Complete
-Success and Critical Success, in order from worse to best.
+achieved. In order from worse to best the six DoS are: Critical Failure, Complete
+Failure, Partial Failure, Partial Success, Complete Success and Critical Success.
 
 \begin{note}
 The way that modifiers work in fd100 is a bit of a departure from the standard in
 TTRPGs, where a "modifier" is usually a number added to a roll, or to a character's
 stat. In fd100 modifiers are instead target numbers compared to a d100 roll, in the
-same way as Effort and Resistance. The purpose of this reform is to avoid having to
-calculate sums during the most involved moments of play, for instance, during Combat.
+same way as Effort and Resistance. The purpose of this reform is to avoid mental
+arithmetic during the most involved moments of play, for instance, during Combat.
 \end{note}
 
 \subsection{Describing results}
