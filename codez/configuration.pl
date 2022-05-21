@@ -18,7 +18,7 @@
 styles(chapter,[center,dunderline]).
 styles(section,[center,underline]).
 styles(subsection,[left_align,underline]).
-styles(subsubsection,[emphasize]).
+styles(subsubsection,[left_align]).
 styles(paragraph,[capitalise]).
 
 
