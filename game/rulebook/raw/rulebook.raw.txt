@@ -1100,7 +1100,7 @@ of Spoiled Food Items is prepended with "Spoiled" to indicate their Spoiled stat
 
 \begin{example}
 Brody's Ants character is carrying a Food Item named "Red Fungus of Collocation". The
-Item becomes Spoiled as the result of paying a Spoilage Cost.  Brody changes the name
+Item becomes Spoiled as the result of paying a Spoilage Cost. Brody changes the name
 of the Item to indicate it's spoiled. The Item is now called: "Spoiled Red Fungus of
 Collocation".
 \end{example}
@@ -1469,11 +1469,11 @@ detailed for the GQ to be able to determine the Features to be used as Effort an
 Resistance, or modifiers.
 
 \begin{example}
-Cody declares his character's intent: "Spider attacks the second Nasute Soldier".
+Brody declares his character's intent: "Spider attacks the second Nasute Soldier".
 \end{example}
 
 \begin{example}
-Brody declares his character's intent: "I want Wasp to display her stripes and scare
+Cody declares his character's intent: "I want Wasp to display her stripes and scare
 the living beejeesus out of the Worker Bees! I want her to dive in towards them,
 buzzing menacingly and waving her abdomen around in, like, a threatening and
 provocative manner! I want them to run away screaming from buzzing, venomous DEATH!
@@ -1483,12 +1483,12 @@ BzzZZZzzZZZZzz!"
 Both styles illustrated in Examples 1 and 2 are fine, as far as the game rules are
 concerned. It doesn't matter that Bees cannot scream and won't run away.
 
-In Example 5 it is clear that Cody's character is attacking. His character is acting
+In Example 6 it is clear that Brody's character is attacking. His character is acting
 either during Combat, or just before Combat begins, so the Effort and Resistance should
 be Spider's Threat Rate and the Nasute Soldier's Survival Rate, as determined by the
 Combat minigame.
 
-In Example 6, Brody is clearly describing the use of Wasp's Flying and Signalling to
+In Example 7, Cody is clearly describing the use of Wasp's Flying and Signalling to
 perform an aggressive display with the purpose of scaring the Worker Bees. Effort is
 Wasp's Signalling and Resistance is most likely the Bees' Passions. Wasp's Flying can be
 used as a static modifier, or as a dramatic modifier, or ignored.
@@ -1530,14 +1530,14 @@ player is free to negotiate a different pair but the GQ has the final word. Any
 negotiation should not take as long as to bore the rest of the group.
 
 \begin{example}
-Cody negotiates with the GQ: "But Wasp is Venomous so she can display her Stinger and
+Brody negotiates with the GQ: "But Wasp is Venomous so she can display her Stinger and
 maximise the intimidation of the Minor Termite Soldiers".
 \end{example}
 
-In Example 7 Cody is negotiating the use of Wasp's Venomous: 80% Specific Abiliy as
+In Example 8 Brody is negotiating the use of Wasp's Venomous: 80% Specific Abiliy as
 Effort to an Action with intent to intimidate some Termite Soldiers. Normally, an Action
 with this Intent would use a character's Signalling Feature as Effort. Wasp's Signalling
-is 68% which is already pretty good, but Cody wants to maximise the chance to intimidate
+is 68% which is already pretty good, but Brody wants to maximise the chance to intimidate
 the Termites. It's up to the GQ whether to accept this or not. If the GQ decides that
 Signalling is the appropriate Feature to use as Effort, so it is.
 
@@ -1733,13 +1733,13 @@ The d120 is only used to (slightly) increase the chances to roll high, and so in
 the rating of a Feature that is already close to 100%.
 
 \begin{example}
-Brody's Ants character is subject to a Bleeding Effect bestowed by an Attack with a
+Cody's Ants character is subject to a Bleeding Effect bestowed by an Attack with a
 Threat Rate of 45%. The Quantification Die corresponding to 45% in Table 14 is the
-d60. The GQ rolls a d60: 13%. Brody sets the Ants' Bleeding to 13%.
+d60. The GQ rolls a d60: 13%. Cody sets the Ants' Bleeding to 13%.
 
 Later, the Ants' Bleeding must increased to pay an Effects Cost (Section
 3.14.3.0). The Quantification Die corresponding to the current Bleeding rating of 13%
-in Table 14 is the d40. The GQ rolls d40: 32%. Brody sets the Ants' Bleeding to 32%.
+in Table 14 is the d40. The GQ rolls d40: 32%. Cody sets the Ants' Bleeding to 32%.
 \end{example}
 \newpage
 
@@ -1792,10 +1792,10 @@ the context of the Action, or when it is not clear from the context of an Action
 difference is between different DoS.
 
 \begin{example}
-Beetle is trying to lift a piece of debris from the Nest's floor. This is a simple
-Action that can either succeed or fail. The GQ asks for a Boolean Roll against
-Beetle's Strength: 55%. The player rolls: 78. The result does not match Beetle's
-Strength so Beetle fails to lift the piece of debris from the floor.
+Brody's Beetle is trying to lift a piece of debris from the Nest's floor. This is a
+simple Action that can either succeed or fail. The GQ asks for a Boolean Roll against
+Beetle's Strength: 55%. Brody rolls: 78. The result does not match Beetle's Strength
+so Beetle fails to lift the piece of debris from the floor.
 \end{example}
 
 \begin{note}
@@ -1835,11 +1835,11 @@ it makes sense to take into account the Resistance to a character's Effort, but 
 full complexity of the Six Degrees of Success of the Qualification Roll is not needed.
 
 \begin{example}
-Beetle is trying to lift a piece of debris from the Nest's floor. The GQ asks the
-Beetle player for a Contested Boolean Roll. Effort is Beetle's Strength: 55%, and
+Cody's Beetle is trying to lift a piece of debris from the Nest's floor. The GQ asks
+the Beetle player for a Contested Boolean Roll. Effort is Beetle's Strength: 55%, and
 Resistance is 45%, because the GQ determines the piece of debris is not too heavy.
-The Beetle player rolls: 15. That matches Beetle's Effort but does not beat
-Resistance. The Action outcome is a Failure and Beetle cannot lift the debris.
+Cody rolls: 15. That matches Beetle's Effort but does not beat Resistance. The Action
+outcome is a Failure and Beetle cannot lift the debris.
 \end{example}
 
 \begin{note}
