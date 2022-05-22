@@ -170,55 +170,55 @@
 ║     3.7.8.0 Cost Events...............................................................101 ║▓
 ║       3.7.8.1 Hunger..................................................................102 ║▓
 ║       3.7.8.2 Passage (TBD)...........................................................103 ║▓
-║       3.7.8.3 Effects (Cost) (TBD)....................................................104 ║▓
-║       3.7.8.4 Darkness................................................................105 ║▓
-║       3.7.8.5 Spoilage (TBD)..........................................................106 ║▓
-║     3.7.9.0 Risk Events (TBD).........................................................107 ║▓
-║       3.7.9.1 Encounter (TBD).........................................................108 ║▓
-║       3.7.9.2 Unknown Item (TBD)......................................................109 ║▓
-║       3.7.9.3 Obstacle................................................................110 ║▓
-║       3.7.9.4 Infection (TBD).........................................................111 ║▓
-║     3.7.10.0 Reward Events (TBD)......................................................112 ║▓
-║       3.7.10.1 Room (TBD).............................................................113 ║▓
-║       3.7.10.2 Shortcut (TBD).........................................................114 ║▓
-║       3.7.10.3 Level (Reward) (TBD)...................................................115 ║▓
-║       3.7.10.4 Known Item (TBD).......................................................116 ║▓
-║       3.7.10.5 Resource (TBD).........................................................117 ║▓
-║       3.7.10.6 Secret (TBD)...........................................................118 ║▓
-║   3.8.0.0 Hunting and Foraging (TBD)..................................................119 ║▓
-║   3.9.0.0 Resting and Healing (TBD)...................................................120 ║▓
+║       3.7.8.3 Effects (Cost)..........................................................104 ║▓
+║       3.7.8.4 Triggered Effects.......................................................105 ║▓
+║       3.7.8.5 Darkness................................................................108 ║▓
+║       3.7.8.6 Spoilage (TBD)..........................................................109 ║▓
+║     3.7.9.0 Risk Events (TBD).........................................................110 ║▓
+║       3.7.9.1 Encounter (TBD).........................................................111 ║▓
+║       3.7.9.2 Unknown Item (TBD)......................................................112 ║▓
+║       3.7.9.3 Obstacle................................................................113 ║▓
+║       3.7.9.4 Infection (TBD).........................................................114 ║▓
+║     3.7.10.0 Reward Events (TBD)......................................................115 ║▓
+║       3.7.10.1 Room (TBD).............................................................116 ║▓
+║       3.7.10.2 Shortcut (TBD).........................................................117 ║▓
+║       3.7.10.3 Level (Reward) (TBD)...................................................118 ║▓
+║       3.7.10.4 Known Item (TBD).......................................................119 ║▓
+║       3.7.10.5 Resource (TBD).........................................................120 ║▓
+║       3.7.10.6 Secret (TBD)...........................................................121 ║▓
+║   3.8.0.0 Hunting and Foraging (TBD)..................................................122 ║▓
+║   3.9.0.0 Resting and Healing (TBD)...................................................123 ║▓
 ║                                                                                           ║▓
-║ 4.0.0.0 Setting (TBD).................................................................121 ║▓
-║   4.1.0.0 Clients and Jobs (TBD)......................................................122 ║▓
-║   4.2.0.0 Environment (TBD)...........................................................123 ║▓
-║     4.2.1.0 Nests (TBD)...............................................................123 ║▓
-║     4.2.2.0 Levels (TBD)..............................................................123 ║▓
-║     4.2.3.0 Rooms (TBD)...............................................................123 ║▓
-║   4.3.0.0 Enemies (TBD)...............................................................124 ║▓
-║   4.4.0.0 Ants (TBD)..................................................................125 ║▓
+║ 4.0.0.0 Setting (TBD).................................................................124 ║▓
+║   4.1.0.0 Clients and Jobs (TBD)......................................................125 ║▓
+║   4.2.0.0 Environment (TBD)...........................................................126 ║▓
+║     4.2.1.0 Nests (TBD)...............................................................126 ║▓
+║     4.2.2.0 Levels (TBD)..............................................................126 ║▓
+║     4.2.3.0 Rooms (TBD)...............................................................126 ║▓
+║   4.3.0.0 Enemies (TBD)...............................................................127 ║▓
 ╚═══════════════════════════════════════════-iii-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
-║   4.5.0.0 Bees (TBD)..................................................................126 ║▓
-║   4.6.0.0 Termites....................................................................127 ║▓
-║     4.6.1.0 Worker Termite............................................................128 ║▓
-║     4.6.2.0 Minor Termite Soldier - Autothyte.........................................129 ║▓
-║     4.6.3.0 Major Termite Soldier - Autothyte.........................................131 ║▓
-║     4.6.4.0 Nasute Soldier............................................................132 ║▓
-║     4.6.5.0 Alates - King (TBD).......................................................134 ║▓
-║     4.6.6.0 Alates - Queen (TBD)......................................................135 ║▓
-║     4.6.7.0 Termitophiles (TBD).......................................................136 ║▓
-║     4.6.8.0 Inquilines (TBD)..........................................................137 ║▓
-║     4.6.9.0 Parasites (TBD)...........................................................138 ║▓
-║   4.7.0.0 Items (TBD).................................................................139 ║▓
-║   4.8.0.0 Food Items (TBD)............................................................140 ║▓
-║     4.8.1.0 Fungi (TBD)...............................................................140 ║▓
-║     4.8.2.0 Honey (TBD)...............................................................140 ║▓
-║     4.8.3.0 Honeydew (TBD)............................................................140 ║▓
-║     4.8.4.0 Nectar (TBD)..............................................................140 ║▓
-║   4.9.0.0 Prey (TBD)..................................................................141 ║▓
-║   4.10.0.0 Other Items (TBD)..........................................................142 ║▓
-║                                                                                           ║▓
+║   4.4.0.0 Ants (TBD)..................................................................128 ║▓
+║   4.5.0.0 Bees (TBD)..................................................................129 ║▓
+║   4.6.0.0 Termites....................................................................130 ║▓
+║     4.6.1.0 Worker Termite............................................................131 ║▓
+║     4.6.2.0 Minor Termite Soldier - Autothyte.........................................132 ║▓
+║     4.6.3.0 Major Termite Soldier - Autothyte.........................................134 ║▓
+║     4.6.4.0 Nasute Soldier............................................................135 ║▓
+║     4.6.5.0 Alates - King (TBD).......................................................137 ║▓
+║     4.6.6.0 Alates - Queen (TBD)......................................................138 ║▓
+║     4.6.7.0 Termitophiles (TBD).......................................................139 ║▓
+║     4.6.8.0 Inquilines (TBD)..........................................................140 ║▓
+║     4.6.9.0 Parasites (TBD)...........................................................141 ║▓
+║   4.7.0.0 Items (TBD).................................................................142 ║▓
+║   4.8.0.0 Food Items (TBD)............................................................143 ║▓
+║     4.8.1.0 Fungi (TBD)...............................................................143 ║▓
+║     4.8.2.0 Honey (TBD)...............................................................143 ║▓
+║     4.8.3.0 Honeydew (TBD)............................................................143 ║▓
+║     4.8.4.0 Nectar (TBD)..............................................................143 ║▓
+║   4.9.0.0 Prey (TBD)..................................................................144 ║▓
+║   4.10.0.0 Other Items (TBD)..........................................................145 ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -5400,36 +5400,36 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.8.3 Effects (Cost) (TBD)                                                              ║▓
+║ 3.7.8.3 Effects (Cost)                                                                    ║▓
 ║                                                                                           ║▓
+║ When an Effects Cost is paid, the character paying the Cost must "check" all Effects she  ║▓
+║ is subject to.                                                                            ║▓
 ║                                                                                           ║▓
+║ A character is subject to an Effect when the Effect's rating is more than 0%.             ║▓
 ║                                                                                           ║▓
+║ To check all Effects a character is subject to, make a single Boolean Roll. The           ║▓
+║ character's player makes the roll.                                                        ║▓
 ║                                                                                           ║▓
+║ Compare the result of the Boolean Roll to each Effect that the character is subject to,   ║▓
+║ in turn.                                                                                  ║▓
 ║                                                                                           ║▓
+║ For each Effect checked this way:                                                         ║▓
 ║                                                                                           ║▓
+║ * If the Boolean Roll beats the Effect's rating, the character is no longer subject to    ║▓
+║   that Effect.                                                                            ║▓
 ║                                                                                           ║▓
+║   In that case, reduce the rating of the Effect to 0%.                                    ║▓
 ║                                                                                           ║▓
+║   Also untick its "Applies" tickbox as a reminder that it no longer applies.              ║▓
 ║                                                                                           ║▓
+║ * If the Boolean Roll matches the Effect's rating, the Effect "triggers".                 ║▓
 ║                                                                                           ║▓
+║ ┌[Note 7]───────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ │ An Effect that triggers continues to apply. It must be checked again next time an     │ ║▓
+║ │ Effects Cost is paid.                                                                 │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ The next Section descirbes how to handle triggered Effects.                               ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -5450,7 +5450,157 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.8.4 Darkness                                                                          ║▓
+║ 3.7.8.4 Triggered Effects                                                                 ║▓
+║                                                                                           ║▓
+║ Some Effects cause changes to the subject character when they trigger. Resolve those      ║▓
+║ changes as follows:                                                                       ║▓
+║                                                                                           ║▓
+║ _Agony_                                                                                   ║▓
+║                                                                                           ║▓
+║ When an Agony Effect triggers the subject character has a chance to become Stunned.       ║▓
+║                                                                                           ║▓
+║ Make a Boolean Roll with Effort equal to the character's Agony rating.                    ║▓
+║                                                                                           ║▓
+║ If the Roll Succeeds, the character acquires a Stunned Effect.                            ║▓
+║                                                                                           ║▓
+║ Make a Quantification Roll to set the Stunned Effect. The Quantification Die for the Roll ║▓
+║ is the decile die corresponding to the rating of the character's Agony Effect.            ║▓
+║ Cross-reference the Agony rating on Table 14 ("Quantification Dice").                     ║▓
+║                                                                                           ║▓
+║ The Stunned Effect triggers.                                                              ║▓
+║                                                                                           ║▓
+║ See the rules for triggering the Stunned Effect at the end of this Section.               ║▓
+║                                                                                           ║▓
+║ _Bleeding_                                                                                ║▓
+║                                                                                           ║▓
+║ When a Bleeding Effect triggers the character takes one Wound.                            ║▓
+║                                                                                           ║▓
+║ _Charmed_                                                                                 ║▓
+║                                                                                           ║▓
+║ When a Charmed Effect triggers the subject character automatically attacks one of the     ║▓
+║ other player characters in the same Room with her. Select a character at random to be the ║▓
+║ target of the Attack (roll a die).                                                        ║▓
+║                                                                                           ║▓
+║ Combat begins. The Charmed character is on one Side and all other player characters in    ║▓
+║ the same Room are her enemies.                                                            ║▓
+║                                                                                           ║▓
+║ _Confused_                                                                                ║▓
+║                                                                                           ║▓
+║ When a Confused Effect triggers the subject character has a chance to attack her          ║▓
+║ erstwhile allies.                                                                         ║▓
+║                                                                                           ║▓
+║ Make a Boolean Roll with Effort equal to the character's Confused rating.                 ║▓
+║                                                                                           ║▓
+║ If the Roll Succeeds the character attacks one of the other player characters in the same ║▓
+║ Room with her. Select a character at random to be the target of the Attack (roll a die).  ║▓
+║                                                                                           ║▓
+║ Combat begins. The Confused character is on one Side and the character she attacked is    ║▓
+║ her enemy. Other player characters can join Combat or act otherwise.                      ║▓
+╚═══════════════════════════════════════════-105-═══════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ _Immobilised_                                                                             ║▓
+║                                                                                           ║▓
+║ When an Immobilised Effect triggers, nothing special happens. However, an Immobilised     ║▓
+║ character cannot take any actions that would initiate a Survival and Exploration or       ║▓
+║ Hunting and Foraging minigame.                                                            ║▓
+║                                                                                           ║▓
+║ _Infected_                                                                                ║▓
+║                                                                                           ║▓
+║ When an Infected Effect triggers, the subject character acquires a new Effect, or one of  ║▓
+║ her Effects gets worse.                                                                   ║▓
+║                                                                                           ║▓
+║ * If the character has any Effects with 0% rating on her sheet, Select one of those       ║▓
+║   Effects at random (roll a die).                                                         ║▓
+║                                                                                           ║▓
+║   The character acquires the selected Effect. Tick the Effect's "Applies" tickbox as a    ║▓
+║   reminder.                                                                               ║▓
+║                                                                                           ║▓
+║   Make a Quantification Roll to set the newly-acquired Effect.                            ║▓
+║                                                                                           ║▓
+║   The Quantification Die for the Roll is the decile die corresponding to the rating of    ║▓
+║   the character's Infected Effect. Cross-reference the Infected rating on Table 14        ║▓
+║   ("Quantification Dice").                                                                ║▓
+║                                                                                           ║▓
+║   Write the new Effect's rating on the character's sheet.                                 ║▓
+║                                                                                           ║▓
+║   The newly acquired Effect triggers.                                                     ║▓
+║                                                                                           ║▓
+║ * If the character has no Effects with 0% rating, instead select an Effect on the         ║▓
+║   character's sheet at random.                                                            ║▓
+║                                                                                           ║▓
+║   Include the Infected Effect itself in the randomised selection.                         ║▓
+║                                                                                           ║▓
+║   Make a Quantification Roll to increase the rating of the selected Effect.               ║▓
+║                                                                                           ║▓
+║   The Quantification Die for the Roll is the decile die corresponding to the rating of    ║▓
+║   the character's Infected Effect.                                                        ║▓
+║                                                                                           ║▓
+║   Update the Effect's rating on the character's sheet.                                    ║▓
+║                                                                                           ║▓
+║   The increased Effect triggers.                                                          ║▓
+║                                                                                           ║▓
+║ _Paralysed_                                                                               ║▓
+║                                                                                           ║▓
+║ When a Paralysed Effect triggers, nothing special happens. However, a Paralysed character ║▓
+║ cannot take any actions until she is no longer Paralysed.                                 ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-106-═══════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║ _Poisoned_                                                                                ║▓
+║                                                                                           ║▓
+║ When a Poisoned Effect triggers, make a Quantification Roll to increase Poisoning.        ║▓
+║                                                                                           ║▓
+║ A character subject to a Poisoned Effect has a static, negative modifier equal to her     ║▓
+║ Poisoned rating to all Actions.                                                           ║▓
+║                                                                                           ║▓
+║ _Stunned_                                                                                 ║▓
+║                                                                                           ║▓
+║ When a Stunned Effect triggers, the subject character cannot take any Actions until she   ║▓
+║ is no longer Stunned.                                                                     ║▓
+║                                                                                           ║▓
+║ ┌[Removing Immobilised, Paralysed or Stunned]───────────────────────────────────────────┐ ║▓
+║ │                                                                                       │ ║▓
+║ │ A character who subject to an Immobilised, Paralysed or Stunned Effect cannot take    │ ║▓
+║ │ some, or any, actions. Consequently she cannot remove the Effect restricting her.     │ ║▓
+║ │ However, she will get another chance to shake off her Immobilised, Stunned or         │ ║▓
+║ │ Paralysed when an Effects Cost is next paid.                                          │ ║▓
+║ │                                                                                       │ ║▓
+║ │ This may happen immediately after the current Cost is paid, if multiple Cost Events   │ ║▓
+║ │ were generated as a result of an Exploration Action. Or, the character's friends may  │ ║▓
+║ │ have to carry her through to another Room hoping for a new Effects Cost to be         │ ║▓
+║ │ generated. Or the GQ can houserule this one as she feels fit. Use imagination.        │ ║▓
+║ │                                                                                       │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-107-═══════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ 3.7.8.5 Darkness                                                                          ║▓
 ║                                                                                           ║▓
 ║ ┌[Effects of Darkness]──────────────────────────────────────────────────────────────────┐ ║▓
 ║ │ Darkness makes it harder to see things and to do things that require vision.          │ ║▓
@@ -5496,161 +5646,11 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-105-═══════════════════════════════════════════╝▓
- ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
-║                                                                                           ║▓
-║ 3.7.8.5 Spoilage (TBD)                                                                    ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-╚═══════════════════════════════════════════-106-═══════════════════════════════════════════╝▓
- ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
-║                                                                                           ║▓
-║ 3.7.9.0 Risk Events (TBD)                                                                 ║▓
-║ -------------------------                                                                 ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-╚═══════════════════════════════════════════-107-═══════════════════════════════════════════╝▓
- ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
-║                                                                                           ║▓
-║ 3.7.9.1 Encounter (TBD)                                                                   ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
 ╚═══════════════════════════════════════════-108-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.9.2 Unknown Item (TBD)                                                                ║▓
+║ 3.7.8.6 Spoilage (TBD)                                                                    ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -5700,49 +5700,49 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.9.3 Obstacle                                                                          ║▓
+║ 3.7.9.0 Risk Events (TBD)                                                                 ║▓
+║ -------------------------                                                                 ║▓
 ║                                                                                           ║▓
-║ ┌[Effects of Obstacles]─────────────────────────────────────────────────────────────────┐ ║▓
-║ │ Obstacles stop characters from further exploring the Nest.                            │ ║▓
-║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-║ Obstacles are elements of the Nest Environment and have a single Feature: Obstruction.    ║▓
 ║                                                                                           ║▓
-║ When an Obstacle Risk is faced, roll the current Level's Costs/ Risks die to set the      ║▓
-║ Obstacle's Obstruction rating. The GQ makes the Roll.                                     ║▓
 ║                                                                                           ║▓
-║ An Obstacle with Obstruction: 0% is "torn down".                                          ║▓
 ║                                                                                           ║▓
-║ While an Obstacle's Obstruction rating is higher than 0%:                                 ║▓
 ║                                                                                           ║▓
-║ * Characters may not take any Exploration, Hunting, or Foraging Actions in the Room where ║▓
-║   the Obstacle was generated.                                                             ║▓
 ║                                                                                           ║▓
-║ * No Risks or Rewards are generated as a result of the same Exploration Action that       ║▓
-║   generated the Obstacle.                                                                 ║▓
 ║                                                                                           ║▓
-║ Characters may attempt to tear down an Obstacle, thus reducing its Obstruction rating to  ║▓
-║ 0%.                                                                                       ║▓
 ║                                                                                           ║▓
-║ To attempt to tear down an Obstacle, any character can take a Construction Action. Make a ║▓
-║ Boolean Roll with Effort equal to the character's Construction rating. The character's    ║▓
-║ player makes the Roll. Then:                                                              ║▓
 ║                                                                                           ║▓
-║ * If the roll succeeds, the Obstacle is torn down: its Obstruction rating becomes 0%.     ║▓
 ║                                                                                           ║▓
-║ * If the roll fails, the character taking the Construction Action takes 1 Wound. The      ║▓
-║   Obstacle is not torn down: its rating remains unchanged.                                ║▓
 ║                                                                                           ║▓
-║ _Building Resources_ When an Obstacle is torn down there is a chance that an amount of    ║▓
-║ building Resources will be generated. Make a Boolean Roll with Effort equal to the        ║▓
-║ Obstacle's initial rating (i.e. when it was generated). If the Roll Succeeds, a building  ║▓
-║ Resource Item remains on the floor of the Room where the Obstacle was torn down. Roll to  ║▓
-║ Set the Resource Item's rating. The GQ makes the roll.                                    ║▓
 ║                                                                                           ║▓
-║ _Blocked Path_ If all characters leave the Room where an Obstacle was generated and the   ║▓
-║ Obstacle's Obstruction rating is higher than 0%, no Risks and Rewards are generated as a  ║▓
-║ result of the Exploration Action that generated the Obstacle, even if the characters      ║▓
-║ return in the Room and tear the Obstacle down later.                                      ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -5750,7 +5750,7 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.9.4 Infection (TBD)                                                                   ║▓
+║ 3.7.9.1 Encounter (TBD)                                                                   ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -5800,8 +5800,8 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.10.0 Reward Events (TBD)                                                              ║▓
-║ ----------------------------                                                              ║▓
+║ 3.7.9.2 Unknown Item (TBD)                                                                ║▓
+║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -5850,49 +5850,49 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.10.1 Room (TBD)                                                                       ║▓
+║ 3.7.9.3 Obstacle                                                                          ║▓
 ║                                                                                           ║▓
+║ ┌[Effects of Obstacles]─────────────────────────────────────────────────────────────────┐ ║▓
+║ │ Obstacles stop characters from further exploring the Nest.                            │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
+║ Obstacles are elements of the Nest Environment and have a single Feature: Obstruction.    ║▓
 ║                                                                                           ║▓
+║ When an Obstacle Risk is faced, roll the current Level's Costs/ Risks die to set the      ║▓
+║ Obstacle's Obstruction rating. The GQ makes the Roll.                                     ║▓
 ║                                                                                           ║▓
+║ An Obstacle with Obstruction: 0% is "torn down".                                          ║▓
 ║                                                                                           ║▓
+║ While an Obstacle's Obstruction rating is higher than 0%:                                 ║▓
 ║                                                                                           ║▓
+║ * Characters may not take any Exploration, Hunting, or Foraging Actions in the Room where ║▓
+║   the Obstacle was generated.                                                             ║▓
 ║                                                                                           ║▓
+║ * No Risks or Rewards are generated as a result of the same Exploration Action that       ║▓
+║   generated the Obstacle.                                                                 ║▓
 ║                                                                                           ║▓
+║ Characters may attempt to tear down an Obstacle, thus reducing its Obstruction rating to  ║▓
+║ 0%.                                                                                       ║▓
 ║                                                                                           ║▓
+║ To attempt to tear down an Obstacle, any character can take a Construction Action. Make a ║▓
+║ Boolean Roll with Effort equal to the character's Construction rating. The character's    ║▓
+║ player makes the Roll. Then:                                                              ║▓
 ║                                                                                           ║▓
+║ * If the roll succeeds, the Obstacle is torn down: its Obstruction rating becomes 0%.     ║▓
 ║                                                                                           ║▓
+║ * If the roll fails, the character taking the Construction Action takes 1 Wound. The      ║▓
+║   Obstacle is not torn down: its rating remains unchanged.                                ║▓
 ║                                                                                           ║▓
+║ _Building Resources_ When an Obstacle is torn down there is a chance that an amount of    ║▓
+║ building Resources will be generated. Make a Boolean Roll with Effort equal to the        ║▓
+║ Obstacle's initial rating (i.e. when it was generated). If the Roll Succeeds, a building  ║▓
+║ Resource Item remains on the floor of the Room where the Obstacle was torn down. Roll to  ║▓
+║ Set the Resource Item's rating. The GQ makes the roll.                                    ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ _Blocked Path_ If all characters leave the Room where an Obstacle was generated and the   ║▓
+║ Obstacle's Obstruction rating is higher than 0%, no Risks and Rewards are generated as a  ║▓
+║ result of the Exploration Action that generated the Obstacle, even if the characters      ║▓
+║ return in the Room and tear the Obstacle down later.                                      ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -5900,7 +5900,7 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.10.2 Shortcut (TBD)                                                                   ║▓
+║ 3.7.9.4 Infection (TBD)                                                                   ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -5950,8 +5950,8 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.10.3 Level (Reward) (TBD)                                                             ║▓
-║                                                                                           ║▓
+║ 3.7.10.0 Reward Events (TBD)                                                              ║▓
+║ ----------------------------                                                              ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -6000,7 +6000,7 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.10.4 Known Item (TBD)                                                                 ║▓
+║ 3.7.10.1 Room (TBD)                                                                       ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -6050,7 +6050,7 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.10.5 Resource (TBD)                                                                   ║▓
+║ 3.7.10.2 Shortcut (TBD)                                                                   ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -6100,7 +6100,7 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.10.6 Secret (TBD)                                                                     ║▓
+║ 3.7.10.3 Level (Reward) (TBD)                                                             ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -6150,6 +6150,156 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
+║ 3.7.10.4 Known Item (TBD)                                                                 ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-119-═══════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ 3.7.10.5 Resource (TBD)                                                                   ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-120-═══════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
+║ 3.7.10.6 Secret (TBD)                                                                     ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+║                                                                                           ║▓
+╚═══════════════════════════════════════════-121-═══════════════════════════════════════════╝▓
+ ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║▓
 ║                            3.8.0.0 Hunting and Foraging (TBD)                             ║▓
 ║                            ----------------------------------                             ║▓
 ║                                                                                           ║▓
@@ -6196,7 +6346,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-119-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-122-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -6246,7 +6396,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-120-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-123-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -6296,7 +6446,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-121-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-124-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -6346,7 +6496,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-122-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-125-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -6396,7 +6546,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-123-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-126-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -6446,7 +6596,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-124-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-127-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -6496,7 +6646,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-125-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-128-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -6546,7 +6696,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-126-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-129-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -6596,7 +6746,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-127-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-130-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -6646,7 +6796,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-128-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-131-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -6696,7 +6846,7 @@
 ║ │                                                                                       │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-129-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-132-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -6746,7 +6896,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-130-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-133-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -6796,7 +6946,7 @@
 ║ ┌[Special Rule - Nest Guardians]────────────────────────────────────────────────────────┐ ║▓
 ║ │ Same as for Minor Termite Soldiers.                                                   │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
-╚═══════════════════════════════════════════-131-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-134-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -6846,7 +6996,7 @@
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-132-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-135-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -6896,7 +7046,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-133-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-136-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -6946,7 +7096,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-134-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-137-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -6996,7 +7146,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-135-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-138-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -7046,7 +7196,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-136-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-139-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -7096,7 +7246,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-137-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-140-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -7146,7 +7296,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-138-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-141-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -7196,7 +7346,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-139-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-142-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -7246,7 +7396,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-140-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-143-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -7296,7 +7446,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-141-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-144-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
@@ -7346,5 +7496,5 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
-╚═══════════════════════════════════════════-142-═══════════════════════════════════════════╝▓
+╚═══════════════════════════════════════════-145-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀

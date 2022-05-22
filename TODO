@@ -1,3 +1,12 @@
+22/05/22
+========
+
+game/
+-----
+
+[TODO] Transfer Triggered Effects Section to Character Features Section. 
+
+
 21/05/22
 ========
 
@@ -70,7 +79,8 @@ codez/
 codez/
 ------
 
-[TODO] For the love of goD make the vim syntax file sane.
+[NEVERMIND] For the love of goD make the vim syntax file sane.
+            * Because it will never be sane.
 
 [TODO] Add syntax highlighting file for Notepad++, other editors (?).
 

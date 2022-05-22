@@ -1,3 +1,16 @@
+22/05/22
+========
+
+Version: v.1.0.0
+
+Code
+----
+
+[DONE] Wrote up Effects Cost rules
+
+[DONE] Improved vim syntax highlighting
+
+
 21/05/22
 ========
 
