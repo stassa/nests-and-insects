@@ -256,7 +256,7 @@
 ║ │ This Section is a short introduction to the setting, the game and the system of Nests │ ║▓
 ║ │ & Insects. It is designed to give you a general idea of the game. It is not designed  │ ║▓
 ║ │ to give you everything you need to play the game. That information is found in the    │ ║▓
-║ │ text that follows this Overview Section.                                              │ ║▓
+║ │ text that follows this Overview Chapter.                                              │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
 ║ Nests & Insects is a tabletop roleplaying game (TTRPG) for 2 to 7 players. One player     ║▓
@@ -289,7 +289,7 @@
 ║ Ancient Domains of Mystery, and later games like Diablo and Darkest Dungeon.              ║▓
 ║                                                                                           ║▓
 ║ A "Roguelike TTRPG" is a case of board games imitating computer games, imitating board    ║▓
-║ games: most roguelike CRPGs are inspired by TTRPGs, particularly Dungeons & Dragons, the  ║▓
+║ games: most Roguelike CRPGs are inspired by TTRPGs, particularly Dungeons & Dragons, the  ║▓
 ║ grandaddy of all TTRPGs (and all CRPGs to boot). Roguelikes borrow from TTRPGs the        ║▓
 ║ hack-and-slash, dungeon-crawling style of gameplay and common themes of fantasy and       ║▓
 ║ science fiction. Nests & Insects borrows from Roguelike CRPGs game elements like:         ║▓
@@ -337,7 +337,7 @@
 ║ by "Features" rated on a scale from 1 to 100, and where a d100 is rolled for action       ║▓
 ║ resolution. The d100 in fd100 generates results from "00" to "99".                        ║▓
 ║                                                                                           ║▓
-║ The "Fuzzy" in the d100 name refers to the six possible Degrees of Success or Failure of  ║▓
+║ The "Fuzzy" in the fd100 name refers to the six possible Degrees of Success or Failure of ║▓
 ║ an action (DoS). To determine the DoS of an action, players describe their character's    ║▓
 ║ Intent, then roll a d100 and compare it to two target numbers, "Effort" and "Resistance". ║▓
 ║                                                                                           ║▓
@@ -363,7 +363,7 @@
 ║ Table 2: Shifts Up and Down conferred by modifiers.                                       ║▓
 ║                                                                                           ║▓
 ║ The initial DoS of an Action is determined by comparing a d100 roll with Effort and       ║▓
-║ Resistance. This initial DoS may change, or "Shif", up or down, by further comparing the  ║▓
+║ Resistance. This initial DoS may change, or "Shift", up or down, by further comparing the ║▓
 ║ same d100 roll with additional target numbers, called "modifiers".                        ║▓
 ║                                                                                           ║▓
 ║ Modifiers can be either positive or negative. Matching a positive modifier confers a      ║▓
@@ -486,8 +486,8 @@
 ║ Shift Down. Too many Wounds can kill a character dead.                                    ║▓
 ║                                                                                           ║▓
 ║ The Combat minigame also tracks characters' Disposition, representing their position in   ║▓
-║ battle and their morale. Better disposition causes the DoS of subsequent Combat actions   ║▓
-║ to Shift Up. Worse disposition causes the DoS to Shift Down.                              ║▓
+║ battle and their morale. Better Disposition causes the DoS of subsequent Combat actions   ║▓
+║ to Shift Up. Worse Disposition causes the DoS to Shift Down.                              ║▓
 ║                                                                                           ║▓
 ║ Table 4 shows the "action formula" of the Attack Action that characters can take during   ║▓
 ║ Combat. In the same way, the other three minigames define formulae for their own special  ║▓
@@ -904,7 +904,6 @@
 ║                                                                                           ║▓
 ║ The Condition box (Figure 5) lists a character's Initiative, Threat Rate, Survival Rate   ║▓
 ║ and Wounds.                                                                               ║▓
-║                                                                                           ║▓
 ║ ┌[Condition]──────────────<Rules Reminder>──────────────────────────────────────────────┐ ║▓
 ║ │ □ Initiative...:[___0%] (Match/Beat to start Combat in Holding/Recoiling Disposition) │ ║▓
 ║ │ □ Threat Rate..:[___0%] (Match/Beat Attacker's TR to Hit/Miss Target)................ │ ║▓
@@ -946,6 +945,7 @@
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
+║                                                                                           ║▓
 ╚═══════════════════════════════════════════-14-════════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
@@ -962,7 +962,7 @@
 ║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
 ║ Figure 6: Disposition Track. Modifiers apply to all Actions in Combat.                    ║▓
 ║                                                                                           ║▓
-║ The Disposition track includes reminder text to point out the direction in which          ║▓
+║ The Disposition Track includes reminder text to point out the direction in which          ║▓
 ║ Disposition Advances (increases) or Recoils (decreases) in Combat. Disposition is better  ║▓
 ║ the further it moves towards "Charging".                                                  ║▓
 ║                                                                                           ║▓
@@ -1053,7 +1053,7 @@
 ║ 2.3.4.0 Survival Area                                                                     ║▓
 ║ ---------------------                                                                     ║▓
 ║                                                                                           ║▓
-║ The Survival Area begins with the Survival header (Figure 8).                             ║▓
+║ The Survival Area begins with the Survival Header (Figure 8).                             ║▓
 ║                                                                                           ║▓
 ║ ╠►Survival◄════════════════════════════════════════════════════════════════════════════╣▓ ║▓
 ║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
@@ -2353,7 +2353,7 @@
 ║ 2.11.5.0 Inventory Items                                                                  ║▓
 ║ ------------------------                                                                  ║▓
 ║                                                                                           ║▓
-║ Inventory Items are characters' Featues representing consumable resources carried by a    ║▓
+║ Inventory Items are characters' Features representing consumable resources carried by a   ║▓
 ║ character and that the character must use in order to take certain Actions, or to pay     ║▓
 ║ certain Costs during the Survival and Exploration, Hunting and Foraging or Resting and    ║▓
 ║ Healing minigames.                                                                        ║▓
@@ -2406,7 +2406,7 @@
 ║ character's Inventory. A character can only carry as many Items as there are entry        ║▓
 ║ "slots" in her Inventory. Characters' Inventories have five Slots.                        ║▓
 ║                                                                                           ║▓
-║ Inventory slots are blank lines, with a radio button and a rating field. The radio button ║▓
+║ Inventory Slots are blank lines, with a radio button and a rating field. The radio button ║▓
 ║ is to record the Item as "Depleted" (See Section "Consuming Items", later in this         ║▓
 ║ Chapter).                                                                                 ║▓
 ║                                                                                           ║▓
@@ -2503,8 +2503,8 @@
 ║ 2.11.5.3 Dropping Items                                                                   ║▓
 ║                                                                                           ║▓
 ║ Items may be "dropped" from a character's Inventory either automatically, when the        ║▓
-║ character picks up an Item and her Iventory is already full; voluntarily, when the player ║▓
-║ decides it; or as a result of game events.                                                ║▓
+║ character picks up an Item and her Inventory is already full; voluntarily, when the       ║▓
+║ player decides it; or as a result of game events.                                         ║▓
 ║                                                                                           ║▓
 ║ _Dropped Items_ Dropped Items are removed from a character's Inventory and cannot be used ║▓
 ║ anymore, unless they are picked up again.                                                 ║▓
@@ -3178,7 +3178,7 @@
 ║                                                                                           ║▓
 ║ Roll matches Effort        Roll beats Resistance        Degree of Success                 ║▓
 ║ ─────────────────────────────────────────────────────────────────────────                 ║▓
-║ True                       True                         Complete Succes                   ║▓
+║ True                       True                         Complete Success                  ║▓
 ║ True                       False                        Partial Success                   ║▓
 ║ False                      True                         Partial Failure                   ║▓
 ║ False                      False                        Complete Failure                  ║▓
@@ -3234,7 +3234,7 @@
 ║ worst to best. The Changes to DoS by the use of modifiers are summarised in Table 13      ║▓
 ║ below.                                                                                    ║▓
 ║                                                                                           ║▓
-║ D100 Roll...            Modifier Sign        Change to DoS                                ║▓
+║ d100 Roll...            Modifier Sign        Change to DoS                                ║▓
 ║ ──────────────────────────────────────────────────────────                                ║▓
 ║ Matches Modifier        Positive             Shift Up                                     ║▓
 ║ Beats Modifier          Positive             No change                                    ║▓
@@ -3855,7 +3855,7 @@
 ║ Before the start of the first Combat Round each player makes a Boolean Roll against their ║▓
 ║ character's Initiative, and the GQ similarly makes a Boolean Roll against Initiative for  ║▓
 ║ each of the enemies. Each Combatant whose Initiative roll is Successful starts Combat in  ║▓
-║ Holding Disposition. Each Combatant whose Initiative roll is Failud, starts Combat in     ║▓
+║ Holding Disposition. Each Combatant whose Initiative roll is Failed, starts Combat in     ║▓
 ║ Recoiling Disposition.                                                                    ║▓
 ║                                                                                           ║▓
 ║ Initiative Roll Result        Starting Disposition                                        ║▓
@@ -3959,7 +3959,7 @@
 ║                                                                                           ║▓
 ║ * one Tactical Action which can be an Attack, Suppress or Support Action;                 ║▓
 ║                                                                                           ║▓
-║ * one Resistance Action;                                                                  ║▓
+║ * one Resist Action;                                                                      ║▓
 ║                                                                                           ║▓
 ║ * and one Manoeuver Action.                                                               ║▓
 ║                                                                                           ║▓
@@ -3977,8 +3977,8 @@
 ║                                                                                           ║▓
 ║ * In an ally's Turn, take a Support Action targeting that ally.                           ║▓
 ║                                                                                           ║▓
-║ * In any Turn, before taking another Action, take a Resistance Action targeting one       ║▓
-║   Effect she is subject to.                                                               ║▓
+║ * In any Turn, before taking another Action, take a Resist Action targeting one Effect    ║▓
+║   she is subject to.                                                                      ║▓
 ║                                                                                           ║▓
 ║ * In her Turn, take a Manoeuver Action.                                                   ║▓
 ║                                                                                           ║▓
@@ -4040,7 +4040,7 @@
 ║ target a Combatant with Flying > 0% if the attacker also has Flying > 0%.                 ║▓
 ║                                                                                           ║▓
 ║ _Targeting allies_ Spider's Base and Special Attacks have an Alternative Hit result that  ║▓
-║ can heal, or remove Bleeding from an Ally. Spider can target an ally with her Attack.     ║▓
+║ can heal, or remove Bleeding from an ally. Spider can target an ally with her Attack.     ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -4152,8 +4152,8 @@
 ║                                                                                           ║▓
 ║ 3.6.2.8 Resisting Effects                                                                 ║▓
 ║                                                                                           ║▓
-║ In any Turn, before taking another Action, a Combatant can take a Resistance Action to    ║▓
-║ ignore a single Effect for the duration of the remaining Combat Round.                    ║▓
+║ In any Turn, before taking another Action, a Combatant can take a Resist Action to ignore ║▓
+║ a single Effect for the duration of the remaining Combat Round.                           ║▓
 ║                                                                                           ║▓
 ║ Name of the Minigame: ................ Combat                                             ║▓
 ║ Participating Entities: .............. Character or enemy                                 ║▓
@@ -6681,9 +6681,9 @@
 ║ │ Damage:..........................1 Wound ││ Damage:................................0 │  ║▓
 ║ │ Max. Range:........................Close ││ Max. Range:................Medium (Area) │  ║▓
 ║ │ Hit:..............Target Immobilised d40 ││ Hit:.............Targets Immobilised d60 │  ║▓
-║ │ Hit (Alt):.............................. ││ Hit(Add):.........Attacker takes 1 Wound │  ║▓
+║ │ Hit (Alt):.............................. ││ Hit (Add):........Attacker takes 1 Wound │  ║▓
 ║ │ Hit (Add):.............................. ││ Hit (Crit):....1 Target Dies (Randomise) │  ║▓
-║ │ Miss:....................Atacker Recoils ││ Miss:............Attacker takes 2 Wounds │  ║▓
+║ │ Miss:...................Attacker Recoils ││ Miss:............Attacker takes 2 Wounds │  ║▓
 ║ │ Miss:................................... ││ Miss (Crit):.....Attacker takes 4 Wounds │  ║▓
 ║ └──────────────────────────────────────────┘└──────────────────────────────────────────┘  ║▓
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
@@ -6713,7 +6713,7 @@
 ║                                                                                           ║▓
 ║ ├─<Disposition Track>───────────────────────────────────────────────────────────────────┤ ║▓
 ║ │ (Advance this way -->) ........................................ (<-- Recoil this way) │ ║▓
-║ │ ○ Rcoiling...... ○ Recoiling...... ○ Holding....... ○ Advancing...... ○ Advancing.....│ ║▓
+║ │ ○ Recoiling...... ○ Recoiling...... ○ Holding...... ○ Advancing...... ○ Advancing.....│ ║▓
 ║ └<^-30>───────────<^-30%>───────────<^Doing Good>────<^+30%>───────────<^+30>───────────┘ ║▓
 ║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
 ║ Figure 26: Minor Termite Soldier Disposition Track.                                       ║▓
@@ -6781,7 +6781,7 @@
 ║ │ Hit:..............Target Immobilised d40 ││ Hit:...............Targets Paralysed d60 │  ║▓
 ║ │ Hit (Alt):.............................. ││ Hit (Add):...............Attacker killed │  ║▓
 ║ │ Hit (Add):.............................. ││ Hit (Crit):....2 Targets Die (Randomise) │  ║▓
-║ │ Miss:....................Atacker Recoils ││ Miss:............Targets Immobilised d60 │  ║▓
+║ │ Miss:...................Attacker Recoils ││ Miss:............Targets Immobilised d60 │  ║▓
 ║ │ Miss:................................... ││ Miss (Add):..............Attacker killed │  ║▓
 ║ └──────────────────────────────────────────┘└──────────────────────────────────────────┘  ║▓
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
@@ -6806,7 +6806,7 @@
 ║ Nasute Soldiers have an elongated snout in place of the large crushing mandibles of other ║▓
 ║ Soldier termites. In Combat, Nasutes eject from this snout a noxious liquid that          ║▓
 ║ immobilises intruders and can kill them just with the force of the blow. This is called a ║▓
-║ Fontanellar Gun. While Nasutes are blind as other worker and soldier termites, they are   ║▓
+║ "Fontanellar Gun". While Nasutes are blind as other worker and soldier termites, they are ║▓
 ║ wicked shots with their Fontanellar Guns and can hit targets at Long range. Nasutes can   ║▓
 ║ fire their Fontanellar Guns repeatedly even though it tears off the lower part of their   ║▓
 ║ modified mandibles.                                                                       ║▓
