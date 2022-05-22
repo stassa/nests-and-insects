@@ -169,7 +169,7 @@
 ║       3.7.7.8 Survival and Exploration Ends...........................................100 ║▓
 ║     3.7.8.0 Cost Events...............................................................101 ║▓
 ║       3.7.8.1 Hunger..................................................................102 ║▓
-║       3.7.8.2 Passage (TBD)...........................................................103 ║▓
+║       3.7.8.2 Passage.................................................................103 ║▓
 ║       3.7.8.3 Effects (Cost)..........................................................104 ║▓
 ║       3.7.8.4 Triggered Effects.......................................................105 ║▓
 ║       3.7.8.5 Darkness................................................................108 ║▓
@@ -5350,24 +5350,24 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.8.2 Passage (TBD)                                                                     ║▓
+║ 3.7.8.2 Passage                                                                           ║▓
 ║                                                                                           ║▓
+║ ┌[Note 7]───────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ │ A Passage is a tunnel, or other passageway, that leads further into the current Level │ ║▓
+║ │ of the Nest. A Passage has a chance to lead to a Room but is not, itself, a Room.     │ ║▓
+║ │ That is why it is modelled as a Cost.                                                 │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
+║ When A Passage Cost is paid, make a Boolean Roll with Effort equal to 100 minus the       ║▓
+║ rating of the current Level. Then:                                                        ║▓
 ║                                                                                           ║▓
+║ * If the roll succeeds, the Passage leads to a Room.                                      ║▓
 ║                                                                                           ║▓
+║   In that case, add a Room to the player characters' Environment Pool.                    ║▓
 ║                                                                                           ║▓
+║ * Otherwise, the Passage is a dead end.                                                   ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║   In that case, no Room is added to the characters' Environment Pool.                     ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -5424,7 +5424,7 @@
 ║                                                                                           ║▓
 ║ * If the Boolean Roll matches the Effect's rating, the Effect "triggers".                 ║▓
 ║                                                                                           ║▓
-║ ┌[Note 7]───────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ ┌[Note 8]───────────────────────────────────────────────────────────────────────────────┐ ║▓
 ║ │ An Effect that triggers continues to apply. It must be checked again next time an     │ ║▓
 ║ │ Effects Cost is paid.                                                                 │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓

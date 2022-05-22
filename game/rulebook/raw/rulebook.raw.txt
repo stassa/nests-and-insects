@@ -2961,7 +2961,25 @@ the character.
 
 \newpage
 
-\subsubsection{Passage (TBD)}
+\subsubsection{Passage}
+
+\begin{note}
+A Passage is a tunnel, or other passageway, that leads further into the current Level
+of the Nest. A Passage has a chance to lead to a Room but is not, itself, a Room.
+That is why it is modelled as a Cost.
+\end{note}
+
+When A Passage Cost is paid, make a Boolean Roll with Effort equal to 100 minus the
+rating of the current Level. Then:
+
+* If the roll succeeds, the Passage leads to a Room. 
+
+  In that case, add a Room to the player characters' Environment Pool.
+
+* Otherwise, the Passage is a dead end.
+
+  In that case, no Room is added to the characters' Environment Pool.
+
 \newpage
 
 \subsubsection{Effects (Cost)}
