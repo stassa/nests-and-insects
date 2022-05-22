@@ -1,3 +1,16 @@
+21/05/22
+========
+
+Version: v.1.0.0
+
+Rulebook
+--------
+
+[DONE] Reformatted layout adding sub-subsections.
+
+[DONE] Reworked Overview Chapter to simplify language and add details.
+
+
 19/05/22
 ========
 

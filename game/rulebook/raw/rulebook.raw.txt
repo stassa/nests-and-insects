@@ -448,7 +448,7 @@ The Combat Stats area lists Features used in the Combat minigame. It has 3 sub-a
 Condition box, the Disposition Track and the Attack boxes.
 \newpage
 
-\subsection{Condition box}
+\subsubsection{Condition box}
 
 The Condition box (Figure 5) lists a character's Initiative, Threat Rate, Survival Rate
 and Wounds.
@@ -475,7 +475,7 @@ below.
   the character is killed. The default number of Wounds is 3.
 \newpage
 
-\subsection{Disposition Track}
+\subsubsection{Disposition Track}
 
 The Disposition Track (Figure 6) follows a character's Disposition, a representation of
 both position and morale in Combat.
@@ -505,7 +505,7 @@ There are five Dispositions in the Disposition Track, discussed briefly below.
 * Charging: the character is impetuous and is Charging ahead Attacking in full force.
 \newpage
 
-\subsection{Attack boxes}
+\subsubsection{Attack boxes}
 
 The Attack boxes (Figure 7) list the details of a character's two Attacks: her Base
 Attack and Special Attack. Each character class has its own Base and Special Attacks.
@@ -537,7 +537,7 @@ The Survival Area has two sub-Areas: the Food box, used in the Survival minigame
 Luck box.
 \newpage
 
-\subsection{Food box}
+\subsubsection{Food box}
 
 The Food box (Figure 9) lists the character's Hunger rating and has a radio-button for
 the Starving Effect. Starving is ticked when Hunger reaches 100%. While Starving, a
@@ -550,7 +550,7 @@ character takes a penalty in the DoS of all minigame Actions.
 \label{Food box.}[figure]
 \newpage
 
-\subsection{Luck box}
+\subsubsection{Luck box}
 
 The Luck box (Figure 10) lists the character's Luck. Luck is used to avoid the worst
 outcome of Actions, Attacks and events in the game. The current Luck rating is marked by
@@ -580,7 +580,7 @@ The Abilities Area has four sub-Areas: the Specific Abilities box, the Common Ab
 box, the Effects box and the Inventory box.
 \newpage
 
-\subsection{Specific Abilities box}
+\subsubsection{Specific Abilities box}
 
 The Specific Abilities box (Figure 12) lists Abilities that are particular to a Species
 (hence, "Specific"). Nests & Insects classes model individuals of a species hence each
@@ -621,7 +621,7 @@ Swarming, Venomous, or Web Weaving. These are briefly described below.
   area. Spider has Web Weaving.
 \newpage
 
-\subsection{Common Abilities box}
+\subsubsection{Common Abilities box}
 
 The Common Abilities box (Figure 13) lists Abilities common to all character classes.
 
@@ -654,7 +654,7 @@ Sneaking      &        Move and act with stealth
 \label{Common Abilities with brief description.}[table]
 \newpage
 
-\subsection{Effects box}
+\subsubsection{Effects box}
 
 The Effects box (Figure 14) lists ten Effects that a character can be subject to.
 
@@ -691,7 +691,7 @@ Stunned    &    ...loses her next Turn in Combat
 \label{Effects, with brief description of how a character is affected.}[table]
 \newpage
 
-\subsection{Inventory box}
+\subsubsection{Inventory box}
 
 The Inventory box (Figure 15) lists a character's possessions such as Food items, slaved
 Prey, and other items.
@@ -926,19 +926,19 @@ feared by its enemies, and equipped with good survival skills.
 \section{Character Features (TBD)}
 \newpage
 
-\section{Attributes (TBD)}
+\subsection{Attributes (TBD)}
 \newpage
 
-\section{Combat Conditions (TBD)}
+\subsection{Combat Conditions (TBD)}
 \newpage
 
-\section{Survival Featues (TBD)}
+\subsection{Survival Featues (TBD)}
 \newpage
 
-\section{Abilities (TBD)}
+\subsection{Abilities (TBD)}
 \newpage
 
-\section{Inventory Items}
+\subsection{Inventory Items}
 
 Inventory Items are characters' Featues representing consumable resources carried by a
 character and that the character must use in order to take certain Actions, or to pay
@@ -959,7 +959,7 @@ be eaten to fend off Hunger or grant special abilities.
 
 \newpage
 
-\subsection{Carrying Items}
+\subsubsection{Carrying Items}
 
 Inventory Items are carried about the character's person and kept track of in the
 character's Inventory. A character can only carry as many Items as there are entry
@@ -975,7 +975,7 @@ Chapter).
 
 \newpage
 
-\subsection{Acquiring Items}
+\subsubsection{Acquiring Items}
 
 Characters acquire Inventory Items in one of two ways:
 
@@ -997,7 +997,7 @@ instead (no entry is made for it in the character's Inventory).
 
 \newpage
 
-\subsection{Dropping Items}
+\subsubsection{Dropping Items}
 
 Items may be "dropped" from a character's Inventory either automatically, when the
 character picks up an Item and her Iventory is already full; voluntarily, when the player
@@ -1037,7 +1037,7 @@ until their curse is lifted. An Item is cursed if its name starts with the word 
 
 \newpage
 
-\subsection{Item Types}
+\subsubsection{Item Types}
 
 Inventory Items can belong to one of six types. An Item's type is recorded next to its
 name on a character's sheet, in square brackets. The six Item types are listed in Table
@@ -1072,7 +1072,7 @@ function, such as paying a Darkness Cost.
 
 \newpage
 
-\subsection{Changing Item Types}
+\subsubsection{Changing Item Types}
 
 The types of an Item may change. This happens when an Item is eaten, or when it spoils. 
 
@@ -1116,7 +1116,7 @@ additional Inventory slot: the rule is "one item, one Inventory slot".
 
 \newpage
 
-\subsection{Consuming Items}
+\subsubsection{Consuming Items}
 
 Inventory Items are "consumed" and may become "depleted" or "exhausted" as a result
 of taking an Action or paying a Cost. A depleted Item can still be used, but if it is
@@ -1161,6 +1161,7 @@ and unticks the radio button next to it to clear the Inventory slot.
 _Exhausted Items_ When an Inventory Item is exhausted, it can no longer be consumed to
 take Actions or pay Costs. Exhausted Items are not "dropped": they just disappear
 and cannot be picked up by other characters.
+\newpage
 
 \chapter{System}
 
@@ -1450,7 +1451,7 @@ them by heart.
 
 \newpage
 
-\subsection{Describing Intent}
+\subsubsection{Describing Intent}
 
 \begin{rules_summary}[Intent]
 An Action begins with a description of the character's Intent. The description must
@@ -1495,7 +1496,7 @@ used as a static modifier, or as a dramatic modifier, or ignored.
 
 \newpage
 
-\subsection{Effort and Resistance}
+\subsubsection{Effort and Resistance}
 
 Effort and Resistance are the two target numbers for the Qualification Roll that
 determines the initial DoS of an Action.
@@ -1530,8 +1531,8 @@ player is free to negotiate a different pair but the GQ has the final word. Any
 negotiation should not take as long as to bore the rest of the group.
 
 \begin{example}
-Brody negotiates with the GQ: "But Wasp is Venomous so she can display her Stinger and
-maximise the intimidation of the Minor Termite Soldiers".
+Brody negotiates with the GQ: "But Wasp is Venomous so she can display her Stinger
+and maximise the intimidation of the Minor Termite Soldiers".
 \end{example}
 
 In Example 8 Brody is negotiating the use of Wasp's Venomous: 80% Specific Abiliy as
@@ -1540,8 +1541,9 @@ with this Intent would use a character's Signalling Feature as Effort. Wasp's Si
 is 68% which is already pretty good, but Brody wants to maximise the chance to intimidate
 the Termites. It's up to the GQ whether to accept this or not. If the GQ decides that
 Signalling is the appropriate Feature to use as Effort, so it is.
+\newpage
 
-\subsection{Qualification}
+\subsubsection{Qualification}
 
 \begin{rules_summary}[Qualification Roll]
 To make a Qualification Roll means to roll a d100 and compare it to Effort and
@@ -1585,7 +1587,7 @@ following.
 
 \newpage
 
-\subsection{Modification}
+\subsubsection{Modification}
 
 \begin{rules_summary}[Static and Dramatic Modifiers]
 Modifiers change the DoS of an Action. There are two types of modifiers: static and
@@ -1630,7 +1632,7 @@ Beats Modifier  &       Negative     &       No change
 
 \newpage
 
-\subsection{Choosing modifiers}
+\subsubsection{Choosing modifiers}
 
 \begin{rules_summary}[The Rule of Two]
 At most two dramatic modifiers may be applied to a single Action: either a) two
@@ -1657,7 +1659,7 @@ Dramatic modifiers should be used sparingly, in special circumstances. As a roug
 thumb, the GQ should grant no more than two or three dramatic modifiers per game session.
 \newpage
 
-\subsection{Quantification}
+\subsubsection{Quantification}
 
 \begin{rules_summary}[Quantification Roll]
 To make a Quantification Roll means to roll a decile die and change the rating of a
@@ -1697,7 +1699,7 @@ the final DoS of an Action is known. This is because the decile die to roll may 
 the DoS of the Action.
 \newpage
 
-\subsection{Choosing a Quantification Die}
+\subsubsection{Choosing a Quantification Die}
 
 \begin{rules_summary}[Quantification Die]
 The decile die rolled to Quantify a Feature depends on the current rating of the
@@ -1737,13 +1739,13 @@ Cody's Ants character is subject to a Bleeding Effect bestowed by an Attack with
 Threat Rate of 45%. The Quantification Die corresponding to 45% in Table 14 is the
 d60. The GQ rolls a d60: 13%. Cody sets the Ants' Bleeding to 13%.
 
-Later, the Ants' Bleeding must increased to pay an Effects Cost (Section
-3.14.3.0). The Quantification Die corresponding to the current Bleeding rating of 13%
-in Table 14 is the d40. The GQ rolls d40: 32%. Cody sets the Ants' Bleeding to 32%.
+Later, the Ants' Bleeding must increased to pay an Effects Cost (Section 3.7.4.0).
+The Quantification Die corresponding to the current Bleeding rating of 13% in Table
+14 is the d40. The GQ rolls d40: 32%. Cody sets the Ants' Bleeding to 32%.
 \end{example}
 \newpage
 
-\subsection{Resolution}
+\subsubsection{Resolution}
 
 \begin{rules_summary}[Outcome description]
 The outcome of Actions is described by the GQ.
@@ -1761,9 +1763,9 @@ must ensure that the game is worthwhile for the entire group.
 
 \newpage
 
-\section{Simplified Rolls}
+\subsection{Simplified Rolls}
 
-\subsection{Boolean Roll}
+\subsubsection{Boolean Roll}
 
 \begin{rules_summary}[Boolean Roll]
 To make a Boolean Roll describe the character's Intent and choose Effort as for a
@@ -1804,9 +1806,9 @@ In percentile systems the Boolean Roll is more often known as as a "Skill Check"
 determination of success and Failure from the "fuzzy" one of the Qualification Roll.
 Unfortunately, the alternative "Crisp Roll" was not thematically appropriate.
 \end{note}
+\newpage
 
-
-\subsection{Contested Boolean Roll}
+\subsubsection{Contested Boolean Roll}
 
 \begin{rules_summary}[Contested Boolean Roll]
 To make a Contested Boolean Roll describe the character's Intent and choose Effort
@@ -1851,7 +1853,7 @@ Qualification Roll or a simple Boolean Roll instead.
 
 \newpage
 
-\section{Acting in tandem (TBD)}
+\subsection{Acting in tandem (TBD)}
 
 % Rules for characters helping each other.
 
@@ -1974,7 +1976,7 @@ the following Sections.
 
 \newpage
 
-\subsection{Determine Combatants and Sides}
+\subsubsection{Determine Combatants and Sides}
 
 Combat begins when either the characters, or Nest creatures attack one another. 
 
@@ -1990,7 +1992,7 @@ All the creatures on the two Sides of Combat are Combatants for the duration of 
 
 \newpage
 
-\subsection{Starting Disposition}
+\subsubsection{Starting Disposition}
 
 Before the start of the first Combat Round each player makes a Boolean Roll against their
 character's Initiative, and the GQ similarly makes a Boolean Roll against Initiative for
@@ -2007,7 +2009,7 @@ Failure                &    Recoiling
 
 \newpage
 
-\subsection{Initiative Order}
+\subsubsection{Initiative Order}
 
 Before the start of the first Combat Round and after Starting Disposition is determined,
 the GQ decides the Initiative Order for all Combatants.
@@ -2032,7 +2034,7 @@ If there are four, roll a d4. And so on.
 
 \newpage
 
-\subsection{Combat Rounds}
+\subsubsection{Combat Rounds}
 
 Once Initiative Order is determined the first Round of Combat begins and Combatants take
 Actions in Turn, in order of Initiative.
@@ -2075,7 +2077,7 @@ takes the Turn after that.
 
 \newpage
 
-\subsection{Attack Action}
+\subsubsection{Attack Action}
 
 In her Turn, a Combatant can take one Attack Action targeting an enemy with her Base or
 Special Attack. The DoS of the Attack determines which Attack Hits or Misses.
@@ -2120,7 +2122,7 @@ can heal, or remove Bleeding from an Ally. Spider can target an ally with her At
 % Explain what happens when an Attack hits or misses: damage, disposition, etc. 
 \newpage
 
-\subsection{Suppress Action}
+\subsubsection{Suppress Action}
 
 In an enemy's Turn, a Combatant can take the following Suppress Actions:
 
@@ -2188,7 +2190,7 @@ Features of the acting character; Target Modifiers are Features of the target.
 */
 \newpage
 
-\subsection{Support Action}
+\subsubsection{Support Action}
 
 In an ally's Turn, a Combatant can take the following Support Actions.
 
@@ -2232,9 +2234,9 @@ Focus    &     Smarts    &    Confused  &    Charms
 Rally    &     Leadership&    Passions  &    Threat Rate
 Shake    &     Charms    &    Charmed   &    Passions
 \end{table}
+\newpage
 
-
-\subsection{Resisting Effects}
+\subsubsection{Resisting Effects}
 
 In any Turn, before taking another Action, a Combatant can take a Resistance Action to
 ignore a single Effect for the duration of the remaining Combat Round. 
@@ -2277,7 +2279,7 @@ Stunned     &  None (cannot resist!)
 
 \newpage
 
-\subsection{Manoeuver Action}
+\subsubsection{Manoeuver Action}
 
 Manoeuver Actions provide a mechanism for players' characters and enemies controlled by
 the GQ to take improvised actions, outside of the formulaic Actions of the Combat
@@ -2322,7 +2324,7 @@ brains to protect their home.
 \end{box}
 \newpage
 
-\subsection{Breaking from Combat}
+\subsubsection{Breaking from Combat}
 
 A Combatant can Break from (leave) Combat at any time, as a Manoeuver Action. This is the
 only Manoeuver Action that gets its own rule.
@@ -2332,7 +2334,7 @@ Initiative as Effort. If the Roll succeeds, the character or enemy is no longer 
 and can take Actions other than formulaic Combat Actions, as usual. If the Roll fails,
 the Combatant remains a Combatant. She is free to try again in her next Turn.
 
-\subsection{Consuming Food in Combat}
+\subsubsection{Consuming Food in Combat}
 
 There is no formulaic Combat Action that allows a Combatant to consume a Food item during
 Combat. War is no picnic! Combatants are also not allowed to consume Food as a Manoeuver!
@@ -2340,7 +2342,7 @@ Combat. War is no picnic! Combatants are also not allowed to consume Food as a M
 If a player or the GQ wishes a character or enemy to consume a Food Item, the Combatant
 must first Break from Combat.
 
-\subsection{Joining Combat}
+\subsubsection{Joining Combat}
 
 A creature who is not in Combat can always Join Combat. The creature may have Broken from
 Combat previously, or she may not have been in the same Room as her friends when Combat
@@ -2360,7 +2362,7 @@ allies arrive, they Join Combat as described above.
 
 \newpage
 
-\subsection{Combat Ends}
+\subsubsection{Combat Ends}
 
 When Combat ends, all Combatants cease to be Combatants and the two Sides cease to
 exist for rules purposes.
@@ -2419,12 +2421,12 @@ closer to a Job's target have a higher rating thus causing the Exploration Actio
 more often and causing more Costs and Risks to occur. Nest Levels also define the decile
 dice to roll for Quantification of the three kinds of Events and their Features.
 
-Events are listed in Tables 18-20, in Section 3.11.1.0. Nest Level ratings and their
-Quantification Dice are listed in Table 21, in Section 3.11.2.0. 
+Events are listed in Tables 18-20, in Section 3.7.4.0. Nest Level ratings and their
+Quantification Dice are listed in Table 21, in Section 3.7.5.0. 
 
 \newpage
 
-\section{The Nest environment}
+\subsection{The Nest environment}
 
 A Nest is an environment that consists of multiple Nest Levels, each comprised of
 multiple Rooms, as well as Passages, Shortcuts and Shafts connecting Rooms between then,
@@ -2439,7 +2441,7 @@ minigames, or to pay Costs. In particular, in order to initiate the Survival and
 Exploration minigame itself, a Room must be spent. The characters always start the game
 with one Room: the Entrance to the Nest.
 
-\subsection{Nest Levels}
+\subsubsection{Nest Levels}
 
 A Nest Level is a group of Rooms connected to each other by Passages and connected by
 Shortcuts and Shafts to different Levels. Rooms in the same Level are situated at about
@@ -2459,14 +2461,13 @@ treasures and richess, rather they are things that help the characters get their
 done.
 \end{note}
 
-\subsection{Rooms}
+\subsubsection{Rooms}
 
 A Room is an enclosed area within a Level. In truth, eusocial insects' nests don't
 ordinarily have many distinct rooms and are mainly composed of tunnels (with the
 exception of bees' and eusocial wasps' nests that are entirely composed of hexagonal
 cells, i.e. "rooms" of a sort). Despite this and for the sake of playing the game, Nests
 & Insects pretends that Nests have Rooms.
-
 
 Room Events are Rewards and are only generated (i.e. found) when a character takes an
 Exploration Action. 
@@ -2477,7 +2478,7 @@ Height affects the ability of a character to Fly, so it is only Quantified when 
 character actually attempts to Fly, or takes another Action that requires the height of a
 Room to be known.
 
-\subsection{Passages}
+\subsubsection{Passages}
 
 A Passage is a tunnel, or a simple opening, or some other kind of entryway connecting two
 Rooms in the same Level.
@@ -2485,7 +2486,7 @@ Rooms in the same Level.
 In mechanical terms, a Passage is a Cost Event that can be spent to grant a chance to
 find a Room.
 
-\subsection{Shafts}
+\subsubsection{Shafts}
 
 A Shaft is a tunnel heading downwards, or upwards, towards the location of the target of
 the current Job. As passages connect Rooms, Shafts connect Levels. 
@@ -2494,7 +2495,7 @@ In mechanical terms, a Shaft is a Reward Event that can be spent to grant a chan
 find a new Level with an increased Level rating, thus bringing characters closer to their
 Job's target.
 
-\subsection{Shortcuts}
+\subsubsection{Shortcuts}
 
 A Shortcut is a tunnel connecting the current Level with a Level closer to the center of
 the Nest.
@@ -2504,7 +2505,7 @@ immediately find the Level with rating 100%, where the target of the current Job
 situated.
 \newpage
 
-\section{Event Generation}
+\subsection{Event Generation}
 
 Costs, Risks, and Rewards are generated every time a character takes an Exploration
 Action. The Qualification Roll for the Exploration Action sets the number and type of
@@ -2601,7 +2602,7 @@ found, increases.
 
 \newpage
 
-\section{The Environment Pool}
+\subsection{The Environment Pool}
 
 As described in earlier Sections, Environments can be used as resources to pay Costs,
 reap Rewards, or play a minigame. To track the Environments generated so-far in the game,
@@ -2660,7 +2661,7 @@ built into the Red Room, and the connections between Environments found so-far.
 
 \newpage
 
-\section{Survival and Exploration Steps}
+\subsection{Survival and Exploration Steps}
 
 The Survival and Exploration minigame is carried out in distinct steps, listed below.
 Unlike Combat, Survival and Exploration is not divided into Rounds or Turns. Instead,
@@ -2693,13 +2694,13 @@ Each of the Steps in the Survival and Exploration Steps box above are described 
 in the following Sections.
 \newpage
 
-\subsection{Begin Survival and Exploration}
+\subsubsection{Begin Survival and Exploration}
 
 Survival and Exploration begins when a player declares that her character's Intent is to
 "Explore the Nest".
 
 "Explore the Nest" is the formulaic Intent of the Exploration Action (described in
-Section 3.13.4.0). A player is free to express her character's Intent to explore the Nest
+Section 3.7.7.4). A player is free to express her character's Intent to explore the Nest
 in her own words, as long as it's clear that the characer wants to go exploring. If
 that's not clear, the GQ can always ask the player to clarify. If the player isn't sure
 what her character's Intent means in mechanical terms, the decision is made by the GQ
@@ -2709,7 +2710,7 @@ If more than one player wish their characters to explore the Nest, they can say 
 this point. Otherwise they can do so in the next Step.
 \newpage
 
-\subsection{Form an Exploration Party}
+\subsubsection{Form an Exploration Party}
 
 It's common for more than one character to explore the Nest at a time. In particular, all
 the player characters may go exploring together, or the players may split their
@@ -2736,7 +2737,7 @@ GQ will probably want to make a note of what characters are in each Exploration 
 
 \newpage
 
-\subsection{Spend a Room to take an Exploration Action}
+\subsubsection{Spend a Room to take an Exploration Action}
 
 For one or more characters to take an Exploration Action, their players must spend a free
 Room from their Environment Pool. Mark a Room as "used" in the pool, so that it is not
@@ -2745,7 +2746,7 @@ Section.
 
 \newpage
 
-\subsection{Resolve the Exploration Action}
+\subsubsection{Resolve the Exploration Action}
 
 As described in earlier Sections, the Survival and Exploration minigame is initiated when
 one or more players decides that their characters will go exploring the Nest. During the
@@ -2788,7 +2789,7 @@ static positive modifiers to the Exploration Roll.
 
 \newpage
 
-\subsection{Generate and pay Costs}
+\subsubsection{Generate and pay Costs}
 
 If the Outcome column of the Degrees of Success Table of the Exploration Action formula
 includes one or more instances of the word "Cost", follow the steps below to generate,
@@ -2823,7 +2824,7 @@ Spoilage&  15% + Level&   Food Items have a chance to become Spoiled
 
 \newpage
 
-\subsection{Generate and face Risks}
+\subsubsection{Generate and face Risks}
 
 If the Outcome column of the Degrees of Success Table of the Exploration Action formula
 includes one or more instances of the word "Risk", follow the steps below to generate,
@@ -2867,7 +2868,7 @@ characters do not face any subsequent Risks until they return to that Room.
 
 \newpage
 
-\subsection{Generate and reap Rewards}
+\subsubsection{Generate and reap Rewards}
 
 If the Outcome column of the Degrees of Success Table of the Exploration Action formula
 includes one or more instances of the word "Reward", follow the steps below to generate,
@@ -2912,7 +2913,7 @@ Secret      &  Perception - Level & Generates a random Cost, Risk or Reward.
 \label{Rewards.}[table]
 \newpage
 
-\subsection{Survival and Exploration Ends}
+\subsubsection{Survival and Exploration Ends}
 
 Once all Costs, Risks and Rewards, are generated and dealt with as described in the
 previous Sections, the Survival and Exploration minigame ends.
@@ -2921,14 +2922,14 @@ Nothing special happens when Survival and Exploration ends. Players are free to 
 their characters as before. 
 \newpage
 
-\section{Events}
+\subsection{Cost Events}
 
-The following Sections define the rules for the various Events generated during the
+The following Sections define the rules for the various Cost Events generated during the
 Survival and Exploration minigame.
 
 \newpage
 
-\subsection{Hunger}
+\subsubsection{Hunger}
 
 \begin{box}[Effects of Hunger]
 Hunger can make a character weak. Prolongued Hunger leads to starvation, which leads
@@ -2961,13 +2962,13 @@ the character.
 
 \newpage
 
-\subsection{Passage (TBD)}
+\subsubsection{Passage (TBD)}
 \newpage
 
-\subsection{Effects (Cost) (TBD)}
+\subsubsection{Effects (Cost) (TBD)}
 \newpage
 
-\subsection{Darkness}
+\subsubsection{Darkness}
 
 \begin{box}[Effects of Darkness]
 Darkness makes it harder to see things and to do things that require vision.
@@ -3004,16 +3005,19 @@ being in a Room in Darkness.
 
 \newpage
 
-\subsection{Spoilage (TBD)}
+\subsubsection{Spoilage (TBD)}
 \newpage
 
-\subsection{Encounter (TBD)}
+\subsection{Risk Events (TBD)}
 \newpage
 
-\subsection{Unknown Item (TBD)}
+\subsubsection{Encounter (TBD)}
 \newpage
 
-\subsection{Obstacle}
+\subsubsection{Unknown Item (TBD)}
+\newpage
+
+\subsubsection{Obstacle}
 
 \begin{box}[Effects of Obstacles]
 Obstacles stop characters from further exploring the Nest.
@@ -3059,25 +3063,28 @@ return in the Room and tear the Obstacle down later.
 
 \newpage
 
-\subsection{Infection (TBD)}
+\subsubsection{Infection (TBD)}
 \newpage
 
-\subsection{Room (Reward) (TBD)}
+\subsection{Reward Events (TBD)}
 \newpage
 
-\subsection{Shortcut (TBD)}
+\subsubsection{Room (TBD)}
 \newpage
 
-\subsection{Level (Reward) (TBD)}
+\subsubsection{Shortcut (TBD)}
 \newpage
 
-\subsection{Known Item (TBD)}
+\subsubsection{Level (Reward) (TBD)}
 \newpage
 
-\subsection{Resource (TBD)}
+\subsubsection{Known Item (TBD)}
 \newpage
 
-\subsection{Secret (TBD)}
+\subsubsection{Resource (TBD)}
+\newpage
+
+\subsubsection{Secret (TBD)}
 \newpage
 
 \section{Hunting and Foraging (TBD)}
