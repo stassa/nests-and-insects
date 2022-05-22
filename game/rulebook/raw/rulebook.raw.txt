@@ -3166,7 +3166,67 @@ being in a Room in Darkness.
 
 \newpage
 
-\subsubsection{Spoilage (TBD)}
+\subsubsection{Spoilage}
+
+When a Spoilage Cost is paid, there is a chance that one or more Food Items will become
+Spoiled. 
+
+Only Food Items in the Inventory of a character paying the Spoilage Cost have a chance to
+become Spoiled.
+
+To pay a Spoilage Cost, make a single Boolean Roll and compare its result to the rating
+of each Food Item in the Inventory of the character paying the Spoilage Cost.
+
+For each Food Item in the character's Inventory:
+
+* If the Boolean Roll beats the Food Item's rating, nothing happens: the Food Item does
+  not become Spoiled.
+
+* If the Boolean Roll matches the Food Item's rating, the Food Item becomes Spoiled.
+
+  Prepend the word "Spoiled" to the Food Item's name.
+
+  Food Items are spoiled as long as their name starts with the word "Spoiled" 
+
+\newpage
+
+\subsubsection{Eating Spoiled Food Items}
+
+A character who consumes a Spoiled Food Item may become ill as a result.
+
+When a character consumes a Spoiled Food Item, make a Consumption Roll for the Item
+as usual. 
+
+Once the Consumption Roll is resolved, make a full Qualification Roll to determine
+the effects of the Spoiled Food Item on the character's health.
+
+The Effort for the Roll is equal to the Food Item's rating. The Resistance for the
+Roll is equal to the character's Stamina.
+
+The player controlling the character who ate the Spoiled Food Item makes the Roll.
+
+Use the following minigame formula to resolve the Qualification Roll.
+
+Name of the Minigame: ............... Desperate Times
+Participating Entities: ............. A Character, Spoilage Organisms
+List of Minigame Intents: ........... Feed
+List of Minigame Actions: ........... Eat Spoiled Food Item
+Effort Variables: ................... Food Item's rating
+Resistance Variables: ............... Character's Stamina
+Modifier Variables: ................. None
+
+Outcomes of the six Degrees of Success and Failure:
+
+\begin{table}[12]
+Degree of Success &    Outcome
+Critical Success  &    The character is healed of 1 Wound
+Complete Success  &    The character enjoys her Spoiled Food Item
+Partial Success   &    The character is Poisoned: d40
+Partial Failure   &    The character is Infected: d60
+Complete Failure  &    The character is Blind: d80
+Critical Failure  &    The character takes 1 Wound.
+\end{table}
+
 \newpage
 
 \subsection{Risk Events (TBD)}
@@ -3224,7 +3284,49 @@ return in the Room and tear the Obstacle down later.
 
 \newpage
 
-\subsubsection{Infection (TBD)}
+\subsubsection{Infection}
+
+When an Infection Risk is faced, the subject character acquires a new Effect, or one of
+her Effects gets worse.
+
+The rules for resolving an Infection Risk are the same as the rules for paying an
+Infection Cost described in Section 3.7.8.3. They are reproduced here for the reader's
+convenience.
+
+To face an Infection Risk:
+
+* If the character has any Effects with 0% rating on her sheet, Select one of those
+  Effects at random (roll a die).
+
+  The character acquires the selected Effect. Tick the Effect's "Applies" tickbox as a
+  reminder.
+
+  Make a Quantification Roll to set the newly-acquired Effect.
+
+  The Quantification Die for the Roll is the decile die corresponding to the rating of
+  the character's Infected Effect. Cross-reference the Infected rating on Table 14
+  ("Quantification Dice").
+
+  Write the new Effect's rating on the character's sheet.
+
+  The newly acquired Effect triggers.
+
+* If the character has no Effects with 0% rating, instead select an Effect on the
+  character's sheet at random.
+
+  Include the Infected Effect itself in the randomised selection.
+
+  Make a Quantification Roll to increase the rating of the selected Effect.
+
+  The Quantification Die for the Roll is the decile die corresponding to the rating of
+  the character's Infected Effect.
+
+  Update the Effect's rating on the character's sheet.
+
+  The increased Effect triggers.
+
+See Section 3.7.8.3. for the rules of triggering Effects.
+
 \newpage
 
 \subsection{Reward Events (TBD)}
