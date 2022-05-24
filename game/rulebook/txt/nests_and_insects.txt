@@ -5704,14 +5704,13 @@
 ║                                                                                           ║▓
 ║ A character who consumes a Spoiled Food Item may become ill as a result.                  ║▓
 ║                                                                                           ║▓
-║ When a character consumes a Spoiled Food Item, make a Consumption Roll for the Item       ║▓
-║ as usual.                                                                                 ║▓
+║ When a character consumes a Spoiled Food Item, make a full Qualification Roll to          ║▓
+║ determine the effects of the Spoiled Food Item on the character's health.                 ║▓
 ║                                                                                           ║▓
-║ Once the Consumption Roll is resolved, make a full Qualification Roll to determine        ║▓
-║ the effects of the Spoiled Food Item on the character's health.                           ║▓
+║ Resolve the Qualification Roll before making a Consumption Roll for the Food Item.        ║▓
 ║                                                                                           ║▓
-║ The Effort for the Roll is equal to the Food Item's rating. The Resistance for the        ║▓
-║ Roll is equal to the character's Stamina.                                                 ║▓
+║ The Effort for the Roll is equal to the character's Stamina. The Resistance for the Roll  ║▓
+║ is equal to the Food Item's rating.                                                       ║▓
 ║                                                                                           ║▓
 ║ The player controlling the character who ate the Spoiled Food Item makes the Roll.        ║▓
 ║                                                                                           ║▓
@@ -5736,6 +5735,7 @@
 ║ Complete Failure             The character is Blind: d80                                  ║▓
 ║ Critical Failure             The character takes 1 Wound.                                 ║▓
 ║ ───────────────────────────────────────────────────────────────────────                   ║▓
+║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
