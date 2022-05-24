@@ -1706,24 +1706,24 @@ Feature, or the rating of the Effort for an Action requiring Quantification.
 \end{rules_summary}
 
 A rule asking for a Quantification Roll may specify the decile die to be rolled.
-Otherwise, the decile die to roll is determined by:
+Otherwise, the decile die to roll is determined by the current rating of a "Quantified
+Feature" which is either:
 
-* either: the current rating of the Feature to be Quantified, if the Quantification
-  Roll is to increase or decrease, or
+* the Feature to be Quantified, if the Quantification Roll is to increase or decrease, or
 
-* the rating of the Effort for the Action that resulted in the Feature's Quantification
-  if the Quantification Roll is to set.
+* the Effort for the Action that resulted in the Feature's Quantification if the
+  Quantification Roll is to set.
 
 When a rule asks for a Quantification Roll and does not specify the decile die to roll,
 consult Table 14 below to determine the decile die for the Quantification Roll.
 
 \begin{table}[4]
-Feature Rating &   Quantification Die
-01-20%         &   d40
-21-40%         &   d60
-41-60%         &   d80
-61-80%         &   d100
-81-100%        &   d120
+Quantified Feature Rating &   Quantification Die
+01-20%                    &   d40
+21-40%                    &   d60
+41-60%                    &   d80
+61-80%                    &   d100
+81-100%                   &   d120
 \end{table}
 \label{Quantification Dice.}[table]
 
@@ -1734,15 +1734,16 @@ The d120 is only used to (slightly) increase the chances to roll high, and so in
 the rating of a Feature that is already close to 100%.
 
 \begin{example}
-Cody's Ants character is subject to a Bleeding Effect bestowed by an Attack with a
-Threat Rate of 45%. The Quantification Die corresponding to 45% in Table 14 is the
-d60. The GQ rolls a d60: 13%. Cody sets the Ants' Bleeding to 13%.
+Cody's Ants character acquires a new Bleeding Effect bestowed by an Attack with a
+Threat Rate of 45%. The Bleeding Effect must be set, thus the Attack's Threat Rate is
+the Quantified Feature. The Quantification Die corresponding to 45% in Table 14 is
+the d60. The GQ rolls a d60: 13%. Cody sets the Ants' Bleeding to 13%.
 
-Later, the Ants' Bleeding must increased to pay an Effects Cost (Section 3.7.4.0).
-The Quantification Die corresponding to the current Bleeding rating of 13% in Table
-14 is the d40. The GQ rolls d40: 32%. Cody sets the Ants' Bleeding to 32%.
+Later, the Ants' Bleeding must increase to pay an Effects Cost (Section 3.7.4.0).
+The Quantified Feature is now the Bleeding Effect. The Quantification Die
+corresponding to the current Bleeding rating of 13% in Table 14 is the d40. The GQ
+rolls d40: 32%. Cody sets the Ants' Bleeding to 32%.
 \end{example}
-\newpage
 
 \subsubsection{Resolution}
 

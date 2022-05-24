@@ -6,7 +6,30 @@ Version: v.1.0.0
 Rulebook
 --------
 
+[DONE] Clarified rules for choosing Quantification Dice.
+
+[DONE] Tweaked layout and improved description of Obstacles Risk.
+
+[DONE] Corrected Effort/ Resistance for outcome of eating Spoiled Food Items.
+
+[DONE] Clarified Quantification Dice for Darkness Costs.
+
 [DONE] Corrected rules for Infection Risk.
+
+Soundtrack
+----------
+
+* Melechesh - Secrets Of Sumerian Sphynxology (2003)
+* Narciso Yepes - Brian Boru's March (1979)
+* The Chieftains - Brian Boru's March (1969)
+  > Now I miss my hurdy gurdy :(
+* Les Compagnons du Gras Jambon - Various (2013?)
+* Truthful Fields - La Cambo Me Fai Mau (2011)
+* Peregrin - Ai vist lo lop (2009)
+* Nuova Compagnia di Canto Popolare - Oi nenna nenna (1974)
+* Nuova Compagnia di Canto Popolare - 'O cunto 'e Masaniello (1974)
+* Renée Caron et les Petits chanteurs de l'Ile de France - Compagnons de la Marjolaine
+  (1966)
 
 
 22/05/22
