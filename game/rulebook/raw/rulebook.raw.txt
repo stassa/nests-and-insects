@@ -3153,8 +3153,11 @@ Cost (even if the character has a Light Item in her Inventory).
 If a character cannot (or her player will her not to) pay a Darkness Cost, that character
 has no light source.
 
-If none of the characters in a Room has a light source, the Room is in Darkness. Roll to
-Set the Darkness rating. The GQ makes the Quantification Roll.
+If all of a character's Light Items become exhausted, that character has no light source.
+
+If none of the characters in a Room has a light source, the Room is in Darkness. Make a
+Quantification Roll to set the Darkness rating. The Quantification Die for the Roll is
+the current Level's Costs / Risks die. The GQ makes the roll.
 
 While a Room is in Darkness, all characters in the Room suffer a static, negative
 modifier equal to the Room's Darkness rating to all their Actions that require vision.
