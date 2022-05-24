@@ -116,7 +116,7 @@ them in the game; but that is not strictly necessary.
 
 \section{The System}
 
-\begin{table}[8]
+\begin{table}[4]
 Roll matches Effort&       Roll beats Resistance&       Degree of Success
 True               &       True                 &       Complete Success
 True               &       False                &       Partial Success

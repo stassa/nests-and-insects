@@ -322,13 +322,13 @@
 ║                                    1.3.0.0 The System                                     ║▓
 ║                                    ------------------                                     ║▓
 ║                                                                                           ║▓
-║ Roll matches Effort        Roll beats Resistance        Degree of Success                 ║▓
-║ ─────────────────────────────────────────────────────────────────────────                 ║▓
-║ True                       True                         Complete Success                  ║▓
-║ True                       False                        Partial Success                   ║▓
-║ False                      True                         Partial Failure                   ║▓
-║ False                      False                        Complete Failure                  ║▓
-║ ─────────────────────────────────────────────────────────────────────────                 ║▓
+║ Roll matches Effort    Roll beats Resistance    Degree of Success                         ║▓
+║ ─────────────────────────────────────────────────────────────────                         ║▓
+║ True                   True                     Complete Success                          ║▓
+║ True                   False                    Partial Success                           ║▓
+║ False                  True                     Partial Failure                           ║▓
+║ False                  False                    Complete Failure                          ║▓
+║ ─────────────────────────────────────────────────────────────────                         ║▓
 ║ Table 1: Initial four Degrees of Success.                                                 ║▓
 ║                                                                                           ║▓
 ║ Nests & Insects' roleplaying system is called Fuzzy d100 (fd100). fd100 is designed to    ║▓
