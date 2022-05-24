@@ -1,14 +1,34 @@
+23/05/22
+========
+
+Version: v.1.0.0
+
+Rulebook
+--------
+
+[DONE] Corrected rules for Infection Risk.
+
+
 22/05/22
 ========
 
 Version: v.1.0.0
 
-Code
-----
+Rulebook
+--------
 
 [DONE] Wrote up Effects Cost rules
 
+Code
+----
+
 [DONE] Improved vim syntax highlighting
+
+Soundtrack
+----------
+
+* Peregrin – ...sic nullo modo! (2009) [Ai vist lo lop!]
+* Basil Poledouris - Connan the Barbarian OST (1982)
 
 
 21/05/22

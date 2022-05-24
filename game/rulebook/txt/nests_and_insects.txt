@@ -5952,46 +5952,46 @@
 ║                                                                                           ║▓
 ║ 3.7.9.4 Infection                                                                         ║▓
 ║                                                                                           ║▓
-║ When an Infection Risk is faced, the subject character acquires a new Effect, or one of   ║▓
-║ her Effects gets worse.                                                                   ║▓
+║ ┌[Effects of Infection]─────────────────────────────────────────────────────────────────┐ ║▓
+║ │ A character facing an Infection Risk may become Infected. If the character is already │ ║▓
+║ │ Infected, her Infection may get worse.                                                │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-║ The rules for resolving an Infection Risk are the same as the rules for paying an         ║▓
-║ Infection Cost described in Section 3.7.8.3. They are reproduced here for the reader's    ║▓
-║ convenience.                                                                              ║▓
+║ When an Infection Risk is faced, make a Boolean Roll with Effort equal to the current     ║▓
+║ Level's rating.                                                                           ║▓
 ║                                                                                           ║▓
-║ To face an Infection Risk:                                                                ║▓
+║ * If the Roll fails, nothing happens. The character escapes the Infection Risk.           ║▓
 ║                                                                                           ║▓
-║ * If the character has any Effects with 0% rating on her sheet, Select one of those       ║▓
-║   Effects at random (roll a die).                                                         ║▓
+║ * If the Roll succeeds, and the character facing the Infection Risk is not yet Infected   ║▓
+║   (her Infected rating is 0%), the character becomes Infected.                            ║▓
 ║                                                                                           ║▓
-║   The character acquires the selected Effect. Tick the Effect's "Applies" tickbox as a    ║▓
-║   reminder.                                                                               ║▓
+║   In that case make a Quantification Roll to set the character's Infected rating.         ║▓
 ║                                                                                           ║▓
-║   Make a Quantification Roll to set the newly-acquired Effect.                            ║▓
+║   The Quantification Die for the Roll is the current Level's Costs/ Risks die.            ║▓
 ║                                                                                           ║▓
-║   The Quantification Die for the Roll is the decile die corresponding to the rating of    ║▓
-║   the character's Infected Effect. Cross-reference the Infected rating on Table 14        ║▓
-║   ("Quantification Dice").                                                                ║▓
+║   Tick the Infected Effect's "Applies" tickbox as a reminder.                             ║▓
 ║                                                                                           ║▓
-║   Write the new Effect's rating on the character's sheet.                                 ║▓
+║ * If the Roll succeeds, and the character facing the Infection Risk is already Infected,  ║▓
+║   (her Infected rating is more than 0%) the Infection spreads.                            ║▓
 ║                                                                                           ║▓
-║   The newly acquired Effect triggers.                                                     ║▓
+║   In that case, the character's Infected Effect triggers.                                 ║▓
 ║                                                                                           ║▓
-║ * If the character has no Effects with 0% rating, instead select an Effect on the         ║▓
-║   character's sheet at random.                                                            ║▓
+║   See Section 3.7.8.4. for the rules of triggering an Infected Effect.                    ║▓
 ║                                                                                           ║▓
-║   Include the Infected Effect itself in the randomised selection.                         ║▓
+║ The player controlling the character facing an Infection Risk makes both Rolls and makes  ║▓
+║ the changes to the character's sheet.                                                     ║▓
 ║                                                                                           ║▓
-║   Make a Quantification Roll to increase the rating of the selected Effect.               ║▓
+║ ┌[Note 9]───────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ │ The risk of Infection while exploring a Nest comes from disease-causing               │ ║▓
+║ │ microorgranisms that inhabit the Nest. Common sources of infections are fungi and     │ ║▓
+║ │ bacteria that live in the soil or the air of the Nest. Characters may become Infected │ ║▓
+║ │ simply by walking into a new Room and coming into contact with the microorganisms     │ ║▓
+║ │ living in the Room.                                                                   │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-║   The Quantification Die for the Roll is the decile die corresponding to the rating of    ║▓
-║   the character's Infected Effect.                                                        ║▓
 ║                                                                                           ║▓
-║   Update the Effect's rating on the character's sheet.                                    ║▓
 ║                                                                                           ║▓
-║   The increased Effect triggers.                                                          ║▓
 ║                                                                                           ║▓
-║ See Section 3.7.8.3. for the rules of triggering Effects.                                 ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
