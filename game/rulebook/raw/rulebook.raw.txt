@@ -3261,23 +3261,28 @@ While an Obstacle's Obstruction rating is higher than 0%:
 * No Risks or Rewards are generated as a result of the same Exploration Action that
   generated the Obstacle.
 
+\newpage
+
+\subsubsection{Tearing Obstacles down}
+
 Characters may attempt to tear down an Obstacle, thus reducing its Obstruction rating to
 0%.
 
 To attempt to tear down an Obstacle, any character can take a Construction Action. Make a
-Boolean Roll with Effort equal to the character's Construction rating. The character's
-player makes the Roll. Then:
+Boolean Roll with Effort equal to the character's Construction rating. Then:
 
 * If the roll succeeds, the Obstacle is torn down: its Obstruction rating becomes 0%. 
 
 * If the roll fails, the character taking the Construction Action takes 1 Wound. The
   Obstacle is not torn down: its rating remains unchanged.
 
+The player of the character taking the Construction Action makes the Roll.
+
 _Building Resources_ When an Obstacle is torn down there is a chance that an amount of
 building Resources will be generated. Make a Boolean Roll with Effort equal to the
-Obstacle's initial rating (i.e. when it was generated). If the Roll Succeeds, a building
-Resource Item remains on the floor of the Room where the Obstacle was torn down. Roll to
-Set the Resource Item's rating. The GQ makes the roll.
+Obstacle's initial rating (i.e. before its Obstruction is reduced to 0%). If the Roll
+Succeeds, a building Resource Item remains on the floor of the Room where the Obstacle
+was torn down. Roll to Set the Resource Item's rating. The GQ makes the roll.
 
 _Blocked Path_ If all characters leave the Room where an Obstacle was generated and the
 Obstacle's Obstruction rating is higher than 0%, no Risks and Rewards are generated as a
