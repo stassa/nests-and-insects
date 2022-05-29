@@ -5329,10 +5329,10 @@
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
 ║ Room           100% - Level         Spend a Room to Explore, Hunt or Forage               ║▓
 ║ Shortcut       Level - 50           Takes you closer to the Job Target                    ║▓
-║ Level          25% + Level          Entrance to a new, deeper Nest Level                  ║▓
 ║ Item (Known)   25% + Level          Find a previously identified Food Item                ║▓
 ║ Resource       15% + Level          Materials to build a Shelter for Resting and Healing  ║▓
-║ Secret         Perception - Level   Generates a random Cost, Risk or Reward.              ║▓
+║ Level          10% + Level          Entrance to a new, deeper Nest Level                  ║▓
+║ Secret         Perception - Level   Generates a random Cost, Risk or Reward               ║▓
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
 ║ Table 20: Rewards.                                                                        ║▓
 ║                                                                                           ║▓
@@ -5887,9 +5887,9 @@
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
 ║ Room           100% - Level         Spend a Room to Explore, Hunt or Forage               ║▓
 ║ Shortcut       Level - 50           Takes you closer to the Job Target                    ║▓
-║ Level          25% + Level          Entrance to a new, deeper Nest Level                  ║▓
 ║ Item (Known)   25% + Level          Find a previously identified Food Item                ║▓
 ║ Resource       15% + Level          Materials to build a Shelter for Resting and Healing  ║▓
+║ Level          10% + Level          Entrance to a new, deeper Nest Level                  ║▓
 ║ Secret         Perception - Level   Generates a random Cost, Risk or Reward.              ║▓
 ║ ────────────────────────────────────────────────────────────────────────────────────────  ║▓
 ║ Table 25: Rewards.                                                                        ║▓
