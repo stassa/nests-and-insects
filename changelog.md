@@ -6,6 +6,8 @@ Version: v.1.0.0
 Rulebook
 --------
 
+[DONE] Fleshed out Reward Events rules.
+
 [DONE] Clarify how Authothysis makes a tunnel entrance unpassable.
 
 [DONE] Transfer Triggered Effects Section to Character Features Section. 

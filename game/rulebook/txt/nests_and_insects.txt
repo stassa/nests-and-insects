@@ -195,15 +195,15 @@
 ║       3.7.9.4 Tearing Obstacles down..................................................126 ║▓
 ║       3.7.9.5 Infection...............................................................127 ║▓
 ║     3.7.10.0 Reward Events (TBD)......................................................128 ║▓
-║       3.7.10.1 Room (TBD).............................................................129 ║▓
+║       3.7.10.1 Room (Reward)..........................................................129 ║▓
 ╚═══════════════════════════════════════════-iii-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
-║       3.7.10.2 Shortcut (TBD).........................................................130 ║▓
-║       3.7.10.3 Level (Reward) (TBD)...................................................131 ║▓
+║       3.7.10.2 Shortcut...............................................................130 ║▓
+║       3.7.10.3 Level (Reward).........................................................131 ║▓
 ║       3.7.10.4 Known Item (TBD).......................................................132 ║▓
-║       3.7.10.5 Resource (TBD).........................................................133 ║▓
-║       3.7.10.6 Secret (TBD)...........................................................134 ║▓
+║       3.7.10.5 Resource...............................................................133 ║▓
+║       3.7.10.6 Secret.................................................................134 ║▓
 ║   3.8.0.0 Hunting and Foraging (TBD)..................................................135 ║▓
 ║   3.9.0.0 Resting and Healing (TBD)...................................................136 ║▓
 ║                                                                                           ║▓
@@ -6650,9 +6650,9 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.10.1 Room (TBD)                                                                       ║▓
+║ 3.7.10.1 Room (Reward)                                                                    ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
+║ When a character reaps a Room Reward, add a Room to the characters' Environment Pool.     ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -6700,14 +6700,14 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.10.2 Shortcut (TBD)                                                                   ║▓
+║ 3.7.10.2 Shortcut                                                                         ║▓
 ║                                                                                           ║▓
+║ When a character reaps a Shortcut Reward, make a Quantification Roll to increase the      ║▓
+║ current Nest Level's rating.                                                              ║▓
 ║                                                                                           ║▓
+║ The Quantification Die for the Roll is the current Level's Rewards Die.                   ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ The player controlling the character who reaped the Reward makes the Roll.                ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -6750,23 +6750,23 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.10.3 Level (Reward) (TBD)                                                             ║▓
+║ 3.7.10.3 Level (Reward)                                                                   ║▓
 ║                                                                                           ║▓
+║ When a character reaps a Level Reward, make a Quantification Roll to increase the current ║▓
+║ Nest Level's rating.                                                                      ║▓
 ║                                                                                           ║▓
+║ The Quantification Die for the Roll is the current Level's Rewards Die.                   ║▓
 ║                                                                                           ║▓
+║ The player controlling the character who reaped the Reward makes the Roll.                ║▓
 ║                                                                                           ║▓
+║ Add a Room to the characters' Environment Pool. This new Room represents the entrance to  ║▓
+║ the new Level.                                                                            ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ ┌[Special Rule: Levelling down]─────────────────────────────────────────────────────────┐ ║▓
+║ │ A Level Reward can only be reaped once per Exploration Action. If multiple Rewards    │ ║▓
+║ │ must be reaped as a result of the same Exploration Action, only one Level Reward can  │ ║▓
+║ │ be generated until a new Exploration Action is taken.                                 │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -6850,23 +6850,23 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.10.5 Resource (TBD)                                                                   ║▓
+║ 3.7.10.5 Resource                                                                         ║▓
 ║                                                                                           ║▓
+║ When a character reaps a Resource Reward, the character acquires a Building Resources     ║▓
+║ Inventory Item:                                                                           ║▓
 ║                                                                                           ║▓
+║ * If the character already has a Building Resources Item in her Inventory, make a         ║▓
+║   Quantification Roll to increase this Item's rating.                                     ║▓
 ║                                                                                           ║▓
+║ * If the character does not have a Building Resources Item in her Inventory, add a new    ║▓
+║   Building Resources Item to her Inventory.                                               ║▓
 ║                                                                                           ║▓
+║   Then, make a Quantification Roll to set the new Item's rating.                          ║▓
 ║                                                                                           ║▓
+║ In both cases, the Quantification Die for the Roll is the current Level's Rewards Die.    ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ The player of the character who reaped the Resources reward makes the roll and changes    ║▓
+║ the character's sheet.                                                                    ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -6900,31 +6900,31 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.10.6 Secret (TBD)                                                                     ║▓
+║ 3.7.10.6 Secret                                                                           ║▓
 ║                                                                                           ║▓
+║ When a character reaps a Secret Reward, a random Cost, Risk or Reward is generated.       ║▓
 ║                                                                                           ║▓
+║ Randomise Costs, Risks and Rewards:                                                       ║▓
 ║                                                                                           ║▓
+║ * Roll 1d6 to select Cost (1-2), Risk (3-4) or Reward (5-6).                              ║▓
 ║                                                                                           ║▓
+║ * Randomise the Events of the selected type.                                              ║▓
 ║                                                                                           ║▓
+║   To randomise Costs, roll 1d10 to select Hunger (1-2), Passage(3-4), Effects (5-6),      ║▓
+║   Darkness (7-8) or Spoilage (9-10).                                                      ║▓
 ║                                                                                           ║▓
+║   To randomise Risks, roll 1d8 to select Encounter (1-2), Unknown Item (3-4), Obstacle    ║▓
+║   (5-6) or Infection (7-8).                                                               ║▓
 ║                                                                                           ║▓
+║   To randomise Rewards, roll 1d6 to select Room (1), Shortcut (2), Level (3), Known Item  ║▓
+║   (4), Resource (5) or Secret (6).                                                        ║▓
 ║                                                                                           ║▓
+║ The character who reaped the Secret Reward pays, or faces, or reaps the randomly selected ║▓
+║ Cost, or Risk, or Reward, accordingly.                                                    ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ ┌[Note 10]──────────────────────────────────────────────────────────────────────────────┐ ║▓
+║ │ A Secret Reward can cause a new Secret Reward to be reaped.                           │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
