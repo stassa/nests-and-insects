@@ -3615,6 +3615,9 @@ an Autothyte Soldier's Special Attack fires, there is a 60% chance that the tunn
 entrance that it is guarding will be blocked by the sticky substance secreted during
 the attack, and become impassable.
 
+Mechanically speaking, an Autothyte Soldier's Special Attack creates an Obstacle, as
+described in Section 3.7.9.3.
+
 \end{box}
 \newpage
 

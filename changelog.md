@@ -6,7 +6,16 @@ Version: v.1.0.0
 Rulebook
 --------
 
+[DONE] Clarify how Authothysis makes a tunnel entrance unpassable.
+
 [DONE] Transfer Triggered Effects Section to Character Features Section. 
+
+Soundtrack
+----------
+
+* Basil Poledouris - Connan the Barbarian OST (1982)
+* Equimanthorn (Switzerland) - Under the Seasons (1993)
+* Equimanthorn - Entrance To The Ancient Flame (1992)
 
 
 23/05/22

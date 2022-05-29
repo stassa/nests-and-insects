@@ -24,7 +24,7 @@ game/
 
 [TODO] Clarify leaving a Room before a generated Event is resolved.
 
-[TODO] Clarify how Authothysis makes a tunnel entrance unpassable
+[DONE] Clarify how Authothysis makes a tunnel entrance unpassable
        * It creates an Obstacle. 
 
 [TODO] Codify how Nest Level ratings are determined.
