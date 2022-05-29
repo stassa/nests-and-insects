@@ -937,6 +937,247 @@ feared by its enemies, and equipped with good survival skills.
 \subsection{Abilities (TBD)}
 \newpage
 
+\subsection{Effects}
+
+This Section defines the rules for handling Effects. Effects are physical or mental
+conditions that may affect a character during the course of a game. 
+
+The Effects rules rely on the rules for Boolean Rolls in Section 3.4.2.1. and the rules
+for Quantification in Section 3.4.1.6. You may need to reference those Sections while
+reading the current Section.
+
+\newpage
+
+\subsubsection{Effects ratings}
+
+Nests & Insects characters may be subject to ten Effects, all of which are detrimental.
+The ten Effects are listed in the character sheet, in the Effects box, in the Abilities
+area.
+
+Each Effect in the Effects box has a rating, and a tickbox marked "Applies".
+
+When the rating of an Effect on a character's sheet is more than 0% we say that the
+character is "subject to" the Effect. Alternatively, we say that the Effect "applies" to
+the character.
+
+The "Applies" tickbox next to an Effect serves as a reminder that the Effect applies to
+the character. Tick it when the Effect's rating increases above 0%. Remember to untick it
+when the Effect's rating is reduced to 0%.
+
+\newpage
+
+\subsubsection{Acquiring Effects}
+
+Most characters start with all Effects in their character sheet rated at 0%.
+
+Some characters begin the game subject to an Effect. For example, Ants start with Blind:
+100%.
+
+A character may acquire an Effect during the course of the game. Characters acquire
+Effects as a result of:
+
+* their Actions, 
+
+* or the Actions of enemies, 
+
+* or the Events that occur while they explore the Nest.
+
+When a character acquires an Effect, we say that the Effect is "bestowed" on the
+character.
+
+When an Effect is bestowed on a character, the Effect's rating may increase above 0% and
+the character become subject to the Effect.
+
+\newpage
+
+\subsubsection{Checking Effects}
+
+When a character is subject to one or more Effects, those Effect must be checked during
+Combat, Survival and Exploration, or Hunting and Foraging. Each minigame determines when
+Effects must be "checked".
+
+When the rules of a minigame say that Effects must be checked, all Effects a character is
+subject to are checked simultanously.
+
+To check all Effects a character is subject to, make a single Boolean Roll. The
+character's player makes the roll.
+
+Compare the result of the Boolean Roll to each Effect that the character is subject to,
+in turn. 
+
+For each Effect checked this way:
+
+* If the Boolean Roll beats the Effect's rating, the character is no longer subject to
+  that Effect.
+
+  In that case, reduce the rating of the Effect to 0%.
+
+  Also untick its "Applies" tickbox as a reminder that it no longer applies.
+
+* If the Boolean Roll matches the Effect's rating, the Effect "triggers".
+
+\begin{note}
+An Effect that triggers continues to apply. It must be checked again next time a
+minigame's rules say Effects must be checked.
+\end{note}
+
+The next Section descirbes how to handle triggered Effects.
+\newpage
+%\subsubsection{Triggered Effects}
+%
+%When an Effect is checked, the character who is subject to the Effect may suffer from
+%the consequences of the Effect. In that case we say that the Effect "triggers".
+
+\subsubsection{Agony}
+
+When an Agony Effect triggers the subject character has a chance to become Stunned.
+
+Make a Boolean Roll with Effort equal to the character's Passions rating.
+
+* If the Roll succeeds, nothing happens. The character is not Stunned.
+
+* If the Roll fails, the character acquires a Stunned Effect.
+
+  In that case, make a Quantification Roll to set the Stunned Effect.
+
+  The Quantification Die for the Roll is the decile die corresponding to the rating
+  of the character's Agony Effect. Cross-reference the Agony rating on Table 14
+  ("Quantification Dice").
+
+  The Stunned Effect triggers.
+
+  See the rules for triggering the Stunned Effect at the end of this Section.
+\newpage
+
+\subsubsection{Bleeding}
+
+When a Bleeding Effect triggers the character takes one Wound.
+\newpage
+
+\subsubsection{Charmed}
+
+When a Charmed Effect triggers the subject character automatically attacks one of the
+other player characters in the same Room with her. 
+
+Select a character at random to be the target of the Charmed character's Attack (roll a
+die). Then:
+
+* If the character is participating in Combat, the character changes Sides: she joins the
+  Side of her erstwhile enemies.
+
+* Otherwise, Combat begins. The Charmed character is on one Side and all other player
+  characters in the same Room are her enemies.
+
+See Section 3.6.0.0. for the rules of Combat. See Section 3.6.2.2. for the rules of
+determining Combat Sides.
+
+\newpage
+
+\subsubsection{Confused}
+
+When a Confused Effect triggers the subject character has a chance to attack her
+erstwhile allies.
+
+Make a Boolean Roll with Effort equal to the character's Smarts rating.
+
+If the Roll fails the character attacks one of the other player characters in the same
+Room with her.
+
+Select a character at random to be the target of the Attack (roll a die). Then:
+
+* If the character is participating in Combat, the character changes Sides: she joins the
+  Side of her erstwhile enemies.
+
+* Otherwise Combat begins between the Confused character and the target of her Attack.
+
+  In that case, the Confused character is on one Side and the character she attacked is
+  her enemy.
+
+  Other player characters can join Combat or act otherwise.
+
+\newpage
+
+\subsubsection{Immobilised}
+
+When an Immobilised Effect triggers, nothing special happens.
+
+However, an Immobilised character cannot take any actions that would initiate a Survival
+and Exploration or Hunting and Foraging minigame.
+
+\newpage
+
+\subsubsection{Infected}
+
+When an Infected Effect triggers, the subject character acquires a new Effect, or one of
+her Effects gets worse.
+
+* If the character has any Effects with 0% rating on her sheet, Select one of those
+  Effects at random (roll a die).
+
+  The character acquires the selected Effect. Tick the Effect's "Applies" tickbox as a
+  reminder.
+
+  Make a Quantification Roll to set the newly-acquired Effect.
+
+  The Quantification Die for the Roll is the decile die corresponding to the rating of
+  the character's Infected Effect. Cross-reference the Infected rating on Table 14
+  ("Quantification Dice").
+
+  Write the new Effect's rating on the character's sheet.
+
+  The newly acquired Effect triggers.
+
+* If the character has no Effects with 0% rating, instead select an Effect on the
+  character's sheet at random.
+
+  Include the Infected Effect itself in the randomised selection.
+
+  Make a Quantification Roll to increase the rating of the selected Effect.
+
+  The Quantification Die for the Roll is the decile die corresponding to the rating of
+  the character's Infected Effect.
+
+  Update the Effect's rating on the character's sheet.
+
+  The increased Effect triggers.
+\newpage
+
+\subsubsection{Paralysed}
+
+When a Paralysed Effect triggers, nothing special happens.
+
+However, a Paralysed character cannot take any actions until she is no longer Paralysed.
+
+\newpage
+
+\subsubsection{Poisoned}
+
+When a Poisoned Effect triggers, make a Quantification Roll to increase Poisoning.
+
+A character subject to a Poisoned Effect has a static, negative modifier equal to her
+Poisoned rating to all Actions.
+\newpage
+
+\subsubsection{Stunned}
+
+When a Stunned Effect triggers, the subject character cannot take any Actions until she
+is no longer Stunned.
+\newpage
+
+\subsubsection{Removing Immobilised, Paralysed or Stunned}
+
+A character subject to an Immobilised, Paralysed or Stunned Effect cannot take some, or
+any, actions. Consequently she cannot remove the Effect restricting her. However, she
+will get another chance to shake off her Immobilised, Stunned or Paralysed when an
+Effects Cost is next paid.
+
+This may happen immediately after the current Cost is paid, if multiple Cost Events were
+generated as a result of an Exploration Action. Or, the character's friends may have to
+carry her through to another Room hoping for a new Effects Cost to be generated. Or the
+GQ can houserule this one as she feels fit. Use imagination.
+
+\newpage
+
 \subsection{Inventory Items}
 
 Inventory Items are characters' Features representing consumable resources carried by a
@@ -2985,155 +3226,13 @@ rating of the current Level. Then:
 
 \subsubsection{Effects (Cost)}
 
-When an Effects Cost is paid, the character paying the Cost must "check" all Effects she
-is subject to.
+When an Effects Cost is paid, the character paying the Cost must check all Effects she is
+subject to.
 
-A character is subject to an Effect when the Effect's rating is more than 0%.
+When an Effect is checked, there is a chance that it will trigger.
 
-To check all Effects a character is subject to, make a single Boolean Roll. The
-character's player makes the roll.
-
-Compare the result of the Boolean Roll to each Effect that the character is subject to,
-in turn. 
-
-For each Effect checked this way:
-
-* If the Boolean Roll beats the Effect's rating, the character is no longer subject to
-  that Effect.
-
-  In that case, reduce the rating of the Effect to 0%.
-
-  Also untick its "Applies" tickbox as a reminder that it no longer applies.
-
-* If the Boolean Roll matches the Effect's rating, the Effect "triggers".
-
-\begin{note}
-An Effect that triggers continues to apply. It must be checked again next time an
-Effects Cost is paid.
-\end{note}
-
-The next Section descirbes how to handle triggered Effects.
-
-\newpage
-
-\subsubsection{Triggered Effects}
-
-Some Effects cause changes to the subject character when they trigger. Resolve those
-changes as follows:
-
-_Agony_
-
-When an Agony Effect triggers the subject character has a chance to become Stunned.
-
-Make a Boolean Roll with Effort equal to the character's Agony rating.
-
-If the Roll Succeeds, the character acquires a Stunned Effect.
-
-Make a Quantification Roll to set the Stunned Effect. The Quantification Die for the Roll
-is the decile die corresponding to the rating of the character's Agony Effect.
-Cross-reference the Agony rating on Table 14 ("Quantification Dice").
-
-The Stunned Effect triggers.
-
-See the rules for triggering the Stunned Effect at the end of this Section.
-
-_Bleeding_
-
-When a Bleeding Effect triggers the character takes one Wound.
-
-_Charmed_
-
-When a Charmed Effect triggers the subject character automatically attacks one of the
-other player characters in the same Room with her. Select a character at random to be the
-target of the Attack (roll a die).
-
-Combat begins. The Charmed character is on one Side and all other player characters in
-the same Room are her enemies.
-
-_Confused_
-
-When a Confused Effect triggers the subject character has a chance to attack her
-erstwhile allies.
-
-Make a Boolean Roll with Effort equal to the character's Confused rating.
-
-If the Roll Succeeds the character attacks one of the other player characters in the same
-Room with her. Select a character at random to be the target of the Attack (roll a die).
-
-Combat begins. The Confused character is on one Side and the character she attacked is
-her enemy. Other player characters can join Combat or act otherwise.
-
-_Immobilised_
-
-When an Immobilised Effect triggers, nothing special happens. However, an Immobilised
-character cannot take any actions that would initiate a Survival and Exploration or
-Hunting and Foraging minigame.
-
-_Infected_
-
-When an Infected Effect triggers, the subject character acquires a new Effect, or one of
-her Effects gets worse.
-
-* If the character has any Effects with 0% rating on her sheet, Select one of those
-  Effects at random (roll a die).
-
-  The character acquires the selected Effect. Tick the Effect's "Applies" tickbox as a
-  reminder.
-
-  Make a Quantification Roll to set the newly-acquired Effect.
-
-  The Quantification Die for the Roll is the decile die corresponding to the rating of
-  the character's Infected Effect. Cross-reference the Infected rating on Table 14
-  ("Quantification Dice").
-
-  Write the new Effect's rating on the character's sheet.
-
-  The newly acquired Effect triggers.
-
-* If the character has no Effects with 0% rating, instead select an Effect on the
-  character's sheet at random.
-
-  Include the Infected Effect itself in the randomised selection.
-
-  Make a Quantification Roll to increase the rating of the selected Effect.
-
-  The Quantification Die for the Roll is the decile die corresponding to the rating of
-  the character's Infected Effect.
-
-  Update the Effect's rating on the character's sheet.
-
-  The increased Effect triggers.
-
-_Paralysed_
-
-When a Paralysed Effect triggers, nothing special happens. However, a Paralysed character
-cannot take any actions until she is no longer Paralysed.
-
-_Poisoned_
-
-When a Poisoned Effect triggers, make a Quantification Roll to increase Poisoning.
-
-A character subject to a Poisoned Effect has a static, negative modifier equal to her
-Poisoned rating to all Actions.
-
-_Stunned_
-
-When a Stunned Effect triggers, the subject character cannot take any Actions until she
-is no longer Stunned.
-
-\begin{box}[Removing Immobilised, Paralysed or Stunned]
-
-A character who subject to an Immobilised, Paralysed or Stunned Effect cannot take
-some, or any, actions. Consequently she cannot remove the Effect restricting her.
-However, she will get another chance to shake off her Immobilised, Stunned or
-Paralysed when an Effects Cost is next paid.
-
-This may happen immediately after the current Cost is paid, if multiple Cost Events
-were generated as a result of an Exploration Action. Or, the character's friends may
-have to carry her through to another Room hoping for a new Effects Cost to be
-generated. Or the GQ can houserule this one as she feels fit. Use imagination.
-
-\end{box}
+Refer to Section 2.11.5.3. for the rules of Checking Effects. Refer to Sections 2.11.5.4.
+to 2.11.5.13. for the rules of triggering Effects.
 
 \newpage
 
