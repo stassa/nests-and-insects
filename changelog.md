@@ -1,3 +1,14 @@
+30/05/22
+========
+
+Version: v.1.0.0
+
+Rulebook
+--------
+
+[TODO] Corrected swapped Effort/Resistance for Eating Spoiled Food Items Action.
+
+
 29/05/22
 ========
 

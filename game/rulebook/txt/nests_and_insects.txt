@@ -6270,8 +6270,8 @@
 ║ Participating Entities: ............. A Character, Spoilage Organisms                     ║▓
 ║ List of Minigame Intents: ........... Feed                                                ║▓
 ║ List of Minigame Actions: ........... Eat Spoiled Food Item                               ║▓
-║ Effort Variables: ................... Food Item's rating                                  ║▓
-║ Resistance Variables: ............... Character's Stamina                                 ║▓
+║ Effort Variables: ................... Character's Stamina                                 ║▓
+║ Resistance Variables: ............... Food Item's rating                                  ║▓
 ║ Modifier Variables: ................. None                                                ║▓
 ║                                                                                           ║▓
 ║ Outcomes of the six Degrees of Success and Failure:                                       ║▓
