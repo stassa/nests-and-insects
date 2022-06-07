@@ -3180,6 +3180,17 @@ to death from starvation.
 When a Hunger Cost is paid, the character paying the Cost must consume one Food Item from
 her Inventory. 
 
+If the character consumes a Food Item, make a Quantification Roll to reduce the
+character's Hunger rating.
+
+The Quantification Die for the Roll is the decile die that corresponds to the character's
+current Hunger rating. Cross-reference the character's current Hunger rating on Table 14
+("Quantification Dice").
+
+\newpage
+
+\subsubsection{Starvation}
+
 A character who does not have a Food Item in her Inventory cannot pay a Hunger Cost.
 
 A player may decide that her character will not consume any Food Items to pay a Hunger
