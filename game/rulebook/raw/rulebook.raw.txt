@@ -1403,6 +1403,30 @@ take Actions or pay Costs. Exhausted Items are not "dropped": they just disappea
 and cannot be picked up by other characters.
 \newpage
 
+\subsubsection{Consuming Food Items}
+
+When a Food Item is consumed, the Hunger of the character consuming the Item may be
+reduced.
+
+When a character consumes a Food Item:
+
+* Make a Consumption Roll as described in Section 2.11.6.6.
+
+* Then make a Quantification Roll to reduce the character's Hunger rating.
+
+  The Quantification Die for the Roll is the decile die that corresponds to the
+  character's current Hunger rating. Cross-reference the character's current Hunger
+  rating on Table 14 ("Quantification Dice").
+
+The player of the character consuming the Food Item makes the Roll and changes the
+character's Hunger rating.
+
+__Beetle Consuming Food Items__ Beetle characters do not have a Hunger Feature. When a
+Beetle character consumes a Food Item, their Hunger rating does not change, because they
+have no Hunger rating to change.
+
+\newpage
+
 \chapter{System}
 
 This chapter introduces the roleplaying system used in Nests & Insects. For ease of
@@ -3181,11 +3205,7 @@ When a Hunger Cost is paid, the character paying the Cost must consume one Food 
 her Inventory. 
 
 If the character consumes a Food Item, make a Quantification Roll to reduce the
-character's Hunger rating.
-
-The Quantification Die for the Roll is the decile die that corresponds to the character's
-current Hunger rating. Cross-reference the character's current Hunger rating on Table 14
-("Quantification Dice").
+character's Hunger rating. See Section 2.11.6.7. for the rules of consuming Food Items.
 
 \newpage
 

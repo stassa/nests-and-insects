@@ -1,3 +1,14 @@
+07/06/22
+========
+
+Rulebook
+--------
+
+[DONE] Clarify rules for reducing Hunger when consuming a Food Item.
+
+[DONE] Clarified rules for reducing Hunger when paying a Hunger Cost.
+
+
 30/05/22
 ========
 
