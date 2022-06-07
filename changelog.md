@@ -1,6 +1,14 @@
 07/06/22
 ========
 
+Version: v.1.0.0
+
+Code
+----
+
+[FIXED] Corrected syntax highlighting for "Beetle".
+
+
 Rulebook
 --------
 

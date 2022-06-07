@@ -61,8 +61,8 @@ syntax match nniConstant /\(Class\( Header\)*\|Feature\|Character Sheet\|Combat 
 syntax match nniIdentifier /\(Hunger\|Luck\|Starving\)/
 
 "Class and enemy names
-syntax match nniSpecial /\(Ant\|Beetle\|Ladybug\|Scorpion\|Spider\|Wasp\|Termite\)\(s\)*/
 syntax match nniSpecial /\(King\|Soldier\|Worker\|Bee\|Termite\)\(s\)*/
+syntax match nniSpecial /\(Ant\|Beetle\|Ladybug\|Scorpion\|Spider\|Wasp\|Termite\)\(s\)*/
 syntax keyword nniSpecial Minor Major Autothyte Autothytes Nasute Nasutes
 syntax match nniSpecial /Queen/ 
 syntax keyword nniSpecial ANTS BEETLE LADYBUG SCORPION SPIDER WASP

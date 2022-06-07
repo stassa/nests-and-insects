@@ -3418,7 +3418,7 @@
 ║ The player of the character consuming the Food Item makes the Roll and changes the        ║▓
 ║ character's Hunger rating.                                                                ║▓
 ║                                                                                           ║▓
-║ __Beetle Consuming Food Items__ Beetle characters do not have a Hunger Feature. When a    ║▓
+║ _Beetle Consuming Food Items_ Beetle characters do not have a Hunger Feature. When a      ║▓
 ║ Beetle character consumes a Food Item, their Hunger rating does not change, because they  ║▓
 ║ have no Hunger rating to change.                                                          ║▓
 ║                                                                                           ║▓
