@@ -6626,7 +6626,7 @@
 ║                                                                                           ║▓
 ║   In that case, the character's Infected Effect triggers.                                 ║▓
 ║                                                                                           ║▓
-║   See Section 3.7.8.4. for the rules of triggering an Infected Effect.                    ║▓
+║   See Section 2.11.5.9. for the rules of triggering an Infected Effect.                   ║▓
 ║                                                                                           ║▓
 ║ The player controlling the character facing an Infection Risk makes both Rolls and makes  ║▓
 ║ the changes to the character's sheet.                                                     ║▓
