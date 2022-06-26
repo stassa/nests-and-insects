@@ -5204,7 +5204,7 @@
 ║ ----------------------------                                                              ║▓
 ║                                                                                           ║▓
 ║ A Nest is an environment that consists of multiple Nest Levels, each comprised of         ║▓
-║ multiple Rooms, as well as Passages, Shortcuts and Shafts connecting Rooms between then,  ║▓
+║ multiple Rooms, as well as Passages, Shortcuts and Shafts connecting Rooms between them,  ║▓
 ║ and connecting a Level to other Levels.                                                   ║▓
 ║                                                                                           ║▓
 ║ Levels, Rooms, Shortcuts and Shafts are all generated as Events during the Survival and   ║▓
@@ -5389,7 +5389,7 @@
 ║ ┌[Example 12]───────────────────────────────────────────────────────────────────────────┐ ║▓
 ║ │ Brody's Wasp character must pay a Cost as the result of an Exploration Action. Brody  │ ║▓
 ║ │ rolls a d100 and references the result on the Costs table (Table 18). The d100 result │ ║▓
-║ │ is 37%. This mathces the Chance of the Hunger and Passage Costs, thus a Hunger Event  │ ║▓
+║ │ is 37%. This matches the Chance of the Hunger and Passage Costs, thus a Hunger Event  │ ║▓
 ║ │ and a Passage Event are generated. Hunger comes before Passage in Table 18, thus      │ ║▓
 ║ │ Brody's Wasp must first pay the Hunger Cost, then the Passage Cost must be paid.      │ ║▓
 ║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
@@ -6320,7 +6320,7 @@
 ║                                                                                           ║▓
 ║   Prepend the word "Spoiled" to the Food Item's name.                                     ║▓
 ║                                                                                           ║▓
-║   Food Items are spoiled as long as their name starts with the word "Spoiled"             ║▓
+║   Food Items are spoiled as long as their name starts with the word "Spoiled".            ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
