@@ -58,34 +58,38 @@ layout_rulebook(IP,N,OP):-
                              ,close_on_abort(true)
                              ,encoding(utf8)
                              ])
-        ,R = (write_coverpage(S,N,Fs,Fs_)
+        ,R = (write_preformatted(S,N,Fs,Fs_)
+             ,write_preformatted(S,N,Fs_,Fs_1)
              % Print the ToC
              ,forall(member(T,Ts_F)
                     ,writeln(S,T))
              % Print the rest of the rulebook.
-             ,forall(member(F,Fs_)
+             ,forall(member(F,Fs_1)
                     ,writeln(S,F))
              )
         ,C = close(S)
         ,setup_call_cleanup(O,R,C).
 
 
-%!      write_coverpage(+Stream,+Page_Lines,+Text,-Rest) is det.
+
+%!      write_preformatted(+Stream,+Page_Lines,+Text,-Rest) is det.
 %
-%       Write the coverpage at the start of the rulebook.
+%       Write a preformatted page at the start of the rulebook.
 %
 %       The reason for the existence of this predicate is that we want
-%       to print the ToC immediately after printing the coverpage, but
-%       just before we start printing the text of the rulebook. The ToC
-%       follows immediately from the coverpage so we first print the
-%       coverpage, count the number of lines we print to make sure we
-%       know when we're done, and then we'll print the ToC (in
+%       to print the ToC immediately after printing the coverpage and
+%       the credits page, but just before we start printing the text of
+%       the rulebook. The ToC follows immediately from the
+%       credit page which follows immediately from the coverpage so we
+%       first print the coverpage, count the number of lines we print to
+%       make sure we know when we're done, then we do the same for
+%       the credite page, and then we'll print the ToC (in
 %       layout_rulebook/3).
 %
 %       The coverpage starts at the first line of the document and takes
 %       exactly Page_Lines lines, so we can safely enough assume that
 %       after we have printed the first Page_Lines lines, we have
-%       printed the coverpage.
+%       printed the coverpage. The same goes for the credits page.
 %
 %       Stream is the rulebook file stream.
 %
@@ -94,22 +98,24 @@ layout_rulebook(IP,N,OP):-
 %       Text is the list of lines of the already formatted text of the
 %       rulebook.
 %
-%       Rest is the list of lines in Text after the coverpage.
+%       Rest is the list of lines in Text after the preformatted page
+%       (the coverpage or the credits page).
 %
-%       @tbd All this is a hack to avoid having to implement a proper
-%       \toc command and instead by default insert the ToC after the
-%       coverpage. Which works OK, but also hurts a bit and makes a bit
-%       of a mess.
+%       @tbd All this is a hack to avoid having to implement proper
+%       \cover, \credits and \toc commands and instead by default insert
+%       the credits page after the cover page and the ToC after the
+%       credits page. Which works OK, but also hurts a bit and makes a
+%       bit of a mess.
 %
-write_coverpage(S,N,Fs,Fs_):-
-        write_coverpage(S,0,N,Fs,Fs_).
+write_preformatted(S,N,Fs,Fs_):-
+        write_preformatted(S,0,N,Fs,Fs_).
 
-write_coverpage(_S,M,M,Fs,Fs):-
+write_preformatted(_S,M,M,Fs,Fs):-
         !.
-write_coverpage(S,N,M,[F|Fs],Bind):-
+write_preformatted(S,N,M,[F|Fs],Bind):-
         writeln(S,F)
         ,succ(N,N_)
-        ,write_coverpage(S,N_,M,Fs,Bind).
+        ,write_preformatted(S,N_,M,Fs,Bind).
 
 
 %!      format_lines(+Lines,+Page_Lines,-Formatted,-Data) is det.
@@ -276,8 +282,11 @@ format_line(L,_N,W,Acc,[F|Acc]):-
 %       theorem. Title is the theorem's title. Closing tag:
 %       \\end(Theorem).
 %
-%       * \\begin{coverpage}: marks the beginning the cover page of the
-%       entire text. Closing tag: \\end{coverpage}.
+%       * \\begin{coverpage}: marks the beginning of the cover page.
+%       Closing tag: \\end{coverpage}.
+%
+%       * \\begin{credits}: marks the beginning the credits page.
+%       Closing tag: \\end{credits}.
 %
 %       * \\begin{toc}: marks the beginning of the Table of Contents.
 %       Closing tag: \\end{toc}
@@ -315,6 +324,8 @@ format_command(C,Ls,[P,N,M,W,Cs,Ts],Acc,Acc,Rs,[P,N,M,W,Cs_,Ts]):-
         ,append(Fs,Ls_,Rs).
 format_command('\\begin{coverpage}',Ls,[P,N,M,W,Cs,Ts],Acc,Acc_,Ls_,[P,N,M,W,Cs,Ts]):-
         skip_lines('\\end{coverpage}',Ls,1,Acc,Acc_,Ls_,_).
+format_command('\\begin{credits}',Ls,[P,N,M,W,Cs,Ts],Acc,Acc_,Ls_,[P,N,M,W,Cs,Ts]):-
+        skip_lines('\\end{credits}',Ls,1,Acc,Acc_,Ls_,_).
 format_command('\\begin{toc}',Ls,[P,N,M,W,Cs,Ts],Acc,Acc_,Ls_,[P,N,M,W,Cs,Ts]):-
         toc_lines(['\\begin{toc}'|Ls],[1,N,M,W],Acc,Acc_,Ls_).
 format_command('\\newpage',Ls,[P,N,M,W,Cs,Ts],Acc,Acc,Ls_,[P,N,M,W,Cs,Ts]):-
@@ -582,7 +593,10 @@ arabic_roman(10,x).
 %       @tbd This can be replaced with skip_lines/7 now.
 %
 noformat_lines([L|Ls],N,Acc,Acc,Ls,N):-
-        memberchk(L,['\\end{nolayout}','\\end{coverpage}','\\end{toc}'])
+        memberchk(L,['\\end{credits}'
+                    ,'\\end{nolayout}'
+                    ,'\\end{coverpage}'
+                    ,'\\end{toc}'])
         ,!.
 noformat_lines([L|Ls],N,Acc,Bind,Ls_Bind,N_Bind):-
         succ(N,N_)
@@ -611,9 +625,12 @@ text_width([L|Ls],Wi,Bind):-
         ,!
         ,text_width(Ls,Wi,Bind).
 text_width([L|Ls],Wi,Bind):-
-% Skip Cover page, ToC, inserted pages, already formated.
+% Skip Cover page, credits page, ToC, inserted pages, already formated.
 % See noformat_lines/6 for exaplanation.
-        memberchk(L,['\\begin{nolayout}','\\begin{coverpage}','\\begin{toc}'])
+        memberchk(L,['\\begin{credits}'
+                    ,'\\begin{nolayout}'
+                    ,'\\begin{coverpage}'
+                    ,'\\begin{toc}'])
         ,!
         ,noformat_lines(Ls,1,[],_,Ls_,_)
         ,text_width(Ls_,Wi,Bind).
@@ -688,9 +705,12 @@ longest_line([L|Ls],Acc,Bind):-
         ,!
         ,longest_line(Ls,Acc,Bind).
 longest_line([L|Ls],Acc,Bind):-
-% Skip Cover page, ToC, inserted pages, already formated.
+% Skip Cover page, credits page, ToC, inserted pages, already formated.
 % See noformat_lines/6 for exaplanation.
-        memberchk(L,['\\begin{nolayout}','\\begin{coverpage}','\\begin{toc}'])
+        memberchk(L,['\\begin{credits}'
+                    ,'\\begin{nolayout}'
+                    ,'\\begin{coverpage}'
+                    ,'\\begin{toc}'])
         ,!
         ,noformat_lines(Ls,1,[],_,Ls_,_)
         ,longest_line(Ls_,Acc,Bind).

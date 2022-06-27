@@ -6,6 +6,21 @@ Version: v.1.0.0
 Code
 ----
 
+[DONE] Added code format a credits page.
+
+Rulebook
+--------
+
+[DONE] Replaced coverpage with one by LDA. Thanks dude!
+
+26/06/22
+========
+
+Version: v.1.0.0
+
+Rulebook
+--------
+
 [DONE] Codified generation of Food Items.
 
 
