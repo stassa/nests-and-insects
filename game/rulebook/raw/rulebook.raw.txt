@@ -3619,10 +3619,36 @@ Critical Failure  &    The character takes 1 Wound.
 \subsection{Risk Events (TBD)}
 \newpage
 
-\subsubsection{Encounter (TBD)}
+\subsubsection{Encounter}
+
+\begin{box}[Nest Encounters]
+An "Encounter" is an impromptu meeting with a Nest's denizens: its guardians, or
+their (wanted or unwanted) guests.
+\end{box}
+
+When an Encounter Risk is faced, generate an Encounter according to the Encounter
+Table for the type of Nest in which the characters are currently located.
+
+Encounter Tables are specific to each kind of Nest. Look for Encounter Tables in the
+Sections, later in this rulebook, on Termite, Bee, and Ant nests.
+
+To generate an Encounter, make a Boolean Roll with Effort equal to the Chance of
+generating a particular Encounter. The Encounter Table for each Nest lists the Chance of
+each Encounter. All Encounters with a Chance matched by this "Encounter Roll" are
+generated. 
+
 \newpage
 
-\subsubsection{Unknown Item (TBD)}
+\subsubsection{Unknown Item}
+
+\begin{box}[Finding Unknown Food Items]
+Food Items can be found while exploring a Nest. At first those Items are Unknown,
+meaning that while their Form is known, their Function must be Identified.
+\end{box}
+
+When an Unknown Food Item Risk is faced, generate a new Food Item's Form, as explained in
+Sections 2.11.6.8 and 2.11.6.9.
+
 \newpage
 
 \subsubsection{Obstacle}
@@ -3756,7 +3782,21 @@ be generated until a new Exploration Action is taken.
 
 \newpage
 
-\subsubsection{Known Item (TBD)}
+\subsubsection{Known Item}
+
+When a character reaps a Known Item Reward, make a Roll to generate a Known Food Item.
+
+Unlike other generated game entities and Features, there is no table to roll on to
+generate Food Items. This is because the list of Known Food Items will change during a
+game and between games, as new Items are generated and Identified.
+
+To generate a Known Food Item then, select one of the Food Items that any character has
+Identified so far. For the sake of simplicity we assume that as soon as one character has
+Identified an Item, it is Known for all other characters, also.
+
+There are no special rules to track Known (or Unknown) Food Items. The GQ is expected to
+keep notes herself. Or the players can.
+
 \newpage
 
 \subsubsection{Resource}

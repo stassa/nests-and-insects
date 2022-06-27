@@ -245,11 +245,11 @@
 ║       3.7.8.6 Spoilage................................................................127 ║▓
 ║       3.7.8.7 Eating Spoiled Food Items...............................................128 ║▓
 ║     3.7.9.0 Risk Events (TBD).........................................................129 ║▓
-║       3.7.9.1 Encounter (TBD).........................................................130 ║▓
+║       3.7.9.1 Encounter...............................................................130 ║▓
 ╚═══════════════════════════════════════════-iii-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
-║       3.7.9.2 Unknown Item (TBD)......................................................131 ║▓
+║       3.7.9.2 Unknown Item............................................................131 ║▓
 ║       3.7.9.3 Obstacle................................................................132 ║▓
 ║       3.7.9.4 Tearing Obstacles down..................................................133 ║▓
 ║       3.7.9.5 Infection...............................................................134 ║▓
@@ -257,7 +257,7 @@
 ║       3.7.10.1 Room (Reward)..........................................................136 ║▓
 ║       3.7.10.2 Shortcut...............................................................137 ║▓
 ║       3.7.10.3 Level (Reward).........................................................138 ║▓
-║       3.7.10.4 Known Item (TBD).......................................................139 ║▓
+║       3.7.10.4 Known Item.............................................................139 ║▓
 ║       3.7.10.5 Resource...............................................................140 ║▓
 ║       3.7.10.6 Secret.................................................................141 ║▓
 ║   3.8.0.0 Hunting and Foraging (TBD)..................................................142 ║▓
@@ -6750,23 +6750,23 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.9.1 Encounter (TBD)                                                                   ║▓
+║ 3.7.9.1 Encounter                                                                         ║▓
 ║                                                                                           ║▓
+║ ┌[Nest Encounters]──────────────────────────────────────────────────────────────────────┐ ║▓
+║ │ An "Encounter" is an impromptu meeting with a Nest's denizens: its guardians, or      │ ║▓
+║ │ their (wanted or unwanted) guests.                                                    │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
+║ When an Encounter Risk is faced, generate an Encounter according to the Encounter         ║▓
+║ Table for the type of Nest in which the characters are currently located.                 ║▓
 ║                                                                                           ║▓
+║ Encounter Tables are specific to each kind of Nest. Look for Encounter Tables in the      ║▓
+║ Sections, later in this rulebook, on Termite, Bee, and Ant nests.                         ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ To generate an Encounter, make a Boolean Roll with Effort equal to the Chance of          ║▓
+║ generating a particular Encounter. The Encounter Table for each Nest lists the Chance of  ║▓
+║ each Encounter. All Encounters with a Chance matched by this "Encounter Roll" are         ║▓
+║ generated.                                                                                ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -6800,15 +6800,15 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.9.2 Unknown Item (TBD)                                                                ║▓
+║ 3.7.9.2 Unknown Item                                                                      ║▓
 ║                                                                                           ║▓
+║ ┌[Finding Unknown Food Items]───────────────────────────────────────────────────────────┐ ║▓
+║ │ Food Items can be found while exploring a Nest. At first those Items are Unknown,     │ ║▓
+║ │ meaning that while their Form is known, their Function must be Identified.            │ ║▓
+║ └───────────────────────────────────────────────────────────────────────────────────────┘ ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ When an Unknown Food Item Risk is faced, generate a new Food Item's Form, as explained in ║▓
+║ Sections 2.11.6.8 and 2.11.6.9.                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -7200,20 +7200,20 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.10.4 Known Item (TBD)                                                                 ║▓
+║ 3.7.10.4 Known Item                                                                       ║▓
 ║                                                                                           ║▓
+║ When a character reaps a Known Item Reward, make a Roll to generate a Known Food Item.    ║▓
 ║                                                                                           ║▓
+║ Unlike other generated game entities and Features, there is no table to roll on to        ║▓
+║ generate Food Items. This is because the list of Known Food Items will change during a    ║▓
+║ game and between games, as new Items are generated and Identified.                        ║▓
 ║                                                                                           ║▓
+║ To generate a Known Food Item then, select one of the Food Items that any character has   ║▓
+║ Identified so far. For the sake of simplicity we assume that as soon as one character has ║▓
+║ Identified an Item, it is Known for all other characters, also.                           ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ There are no special rules to track Known (or Unknown) Food Items. The GQ is expected to  ║▓
+║ keep notes herself. Or the players can.                                                   ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
