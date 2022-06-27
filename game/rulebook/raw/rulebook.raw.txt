@@ -3883,10 +3883,52 @@ A Secret Reward can cause a new Secret Reward to be reaped.
 \section{Environment (TBD)}
 
 \subsection{Nests (TBD)}
+\newpage
 
-\subsection{Levels (TBD)}
+\subsubsection{Termite Nests}
 
-\subsection{Rooms (TBD)}
+Termites' Nests are networks of long tunnels dug through soil, wood, or other soft
+materials. Some Termite Nests are fully underground. Others are built from mud and hang
+from tree branches. Others yet start underground and protrude overground, like alien
+fotresses. Nests provide protection to the colony living inside them and the network of
+tunnels that spread from their heart protect the individuals of the Worker caste as they
+go about their daily foraging duties. Expect a Termite Nest to be populated by millions
+of Termites of all castes. A direct assault is never a great idea, as any attack on a
+termite will spread alarm pheromones throughout the Nest, quickly summoning the
+Soldier castes.
+
+Termite Nests in Nests & Insects are assumed to be of the type that is sometimes called a
+"Termite Cathedral": a real castle built with mud and, er, the termites' feces, extending
+above and below the ground and with tunnels all around in every direction. The entire
+mass of the above-ground mound is criss-crossed by tunnels and ventilation shafts that
+make entomologists' knees go soft with excitement. Near the center of the mound are
+situated the fungal gardens where the Termites cultivate fungi for sustenance ... and
+other uses. The heart of the Nest is where the Queen's chambers are located.
+
+Roll on the following table to generate an Encounter Event when invading a Termite Nest.
+
+\begin{table}[4]
+Encounter                          & Chance      & Description
+Worker Termite                     & 80%         & Worker caste
+Minor Termite Soldier - Autothyte  & 50% + Level & Soldier caste
+Major Termite Soldier - Authothyte & 25% + Level & Bigger soldier caste
+Nasute Soldier                     & 15% + Level & Scarier soldier caste
+Nest Invader - Centipede           & 10% + Level & Armoured and venomous
+Termitophile - Moth                & 8% + Level  & Charming and affable
+Alates - King                      & 5% + Level  & Commander of the Soldier castes
+Alates - Queen, tertiary           & Level - 35% & Cute Termite princess. Aaaw!
+Alates - Queen, secondary          & Level - 45% & Second in command
+Alates - Queen, primary            & Level - 50% & Big honcho. Common Job target
+\end{table}
+\label{Termite Nest Encounter Table}[table]
+
+\begin{note}
+In reality, it would be very unlikely for, say, a rhinoceros beetle or a
+yellowjacket, let alone a centipede, to be found inside a termite Nest. If nothing
+else, the tunnels created by the Termites are usually too small for such larger
+insects. In this case (also) Nests & Insects sacrifices realism for the needs of the
+game.
+\end{note}
 
 \newpage
 
@@ -3942,7 +3984,7 @@ Blind                        &    100%
 \begin{box}[Special Rule - Alarm Pheromones]
 
 At the start of each Combat Turn the GQ makes a Boolean Roll against the Worker
-Termites' Swarming. If the roll succeeds, new Termites arrive. Roll on Table 33 below
+Termites' Swarming. If the roll succeeds, new Termites arrive. Roll on Table 34 below
 and choose the result with the lowest "Chance to Summon" that is higher than the roll
 value.
 
