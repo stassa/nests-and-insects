@@ -1,3 +1,14 @@
+27/06/22
+========
+
+Version: v.1.0.0
+
+Code
+----
+
+[DONE] Codified generation of Food Items.
+
+
 07/06/22
 ========
 

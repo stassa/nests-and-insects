@@ -13,7 +13,7 @@ game/
 game/
 -----
 
-[TODO] Improve rules for Conrused Effect, currently redundant with Charmed.
+[TODO] Improve rules for Confused Effect, currently redundant with Charmed.
 
 [TODO] Codify checking Effects during Combat (at start of Round).
 
@@ -129,7 +129,8 @@ game/
        * Meaning the rules for specific Costs, Risks and Rewards, not the rules for
          generating Events in Survival and Exploration.
 
-[TODO] Write up a brief description of Food Items.
+[NEVERMIND] Write up a brief description of Food Items.
+            * Nevermind because this is now rolled up into Food Item generation.
 
 [DONE] Write up Ants class description.
 
