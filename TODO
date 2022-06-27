@@ -125,7 +125,7 @@ game/
 game/
 -----
 
-[DOING] Flesh out Events rules.
+[DONE] Flesh out Events rules.
        * Meaning the rules for specific Costs, Risks and Rewards, not the rules for
          generating Events in Survival and Exploration.
 

@@ -3443,6 +3443,9 @@ their characters as before.
 
 \subsection{Cost Events}
 
+Cost Events stress the characters' resources and test their endurance and resilience
+while exploring the Nest.
+
 The following Sections define the rules for the various Cost Events generated during the
 Survival and Exploration minigame.
 
@@ -3616,7 +3619,14 @@ Critical Failure  &    The character takes 1 Wound.
 
 \newpage
 
-\subsection{Risk Events (TBD)}
+\subsection{Risk Events}
+
+Risk Events add a frisson of excitement to the otherwise drab and boring act of slogging
+through a Nest looking for the subject of a Job.
+
+The following Sections define the rules for the various Risk Events generated during the
+Survival and Exploration minigame.
+
 \newpage
 
 \subsubsection{Encounter}
@@ -3742,7 +3752,18 @@ living in the Room.
 \end{note}
 \newpage
 
-\subsection{Reward Events (TBD)}
+\subsection{Reward Events}
+
+Reward Events give the characters the resources they need to complete their Job
+successfully.
+
+Remember that the characters are not invading a Nest to become rich. Arthropod society
+does not understand the concept of "richess". Accordingly the Reward Events generated
+while exploring a Nest are only designed to help the characters complete their Job.
+
+The following Sections define the rules for the various Reward Events generated during
+the Survival and Exploration minigame.
+
 \newpage
 
 \subsubsection{Room (Reward)}

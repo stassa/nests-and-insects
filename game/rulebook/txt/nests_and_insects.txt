@@ -244,7 +244,7 @@
 ║       3.7.8.5 Darkness................................................................126 ║▓
 ║       3.7.8.6 Spoilage................................................................127 ║▓
 ║       3.7.8.7 Eating Spoiled Food Items...............................................128 ║▓
-║     3.7.9.0 Risk Events (TBD).........................................................129 ║▓
+║     3.7.9.0 Risk Events...............................................................129 ║▓
 ║       3.7.9.1 Encounter...............................................................130 ║▓
 ╚═══════════════════════════════════════════-iii-═══════════════════════════════════════════╝▓
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
@@ -253,7 +253,7 @@
 ║       3.7.9.3 Obstacle................................................................132 ║▓
 ║       3.7.9.4 Tearing Obstacles down..................................................133 ║▓
 ║       3.7.9.5 Infection...............................................................134 ║▓
-║     3.7.10.0 Reward Events (TBD)......................................................135 ║▓
+║     3.7.10.0 Reward Events............................................................135 ║▓
 ║       3.7.10.1 Room (Reward)..........................................................136 ║▓
 ║       3.7.10.2 Shortcut...............................................................137 ║▓
 ║       3.7.10.3 Level (Reward).........................................................138 ║▓
@@ -6303,11 +6303,11 @@
 ║ 3.7.8.0 Cost Events                                                                       ║▓
 ║ -------------------                                                                       ║▓
 ║                                                                                           ║▓
+║ Cost Events stress the characters' resources and test their endurance and resilience      ║▓
+║ while exploring the Nest.                                                                 ║▓
+║                                                                                           ║▓
 ║ The following Sections define the rules for the various Cost Events generated during the  ║▓
 ║ Survival and Exploration minigame.                                                        ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -6700,14 +6700,14 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.9.0 Risk Events (TBD)                                                                 ║▓
-║ -------------------------                                                                 ║▓
+║ 3.7.9.0 Risk Events                                                                       ║▓
+║ -------------------                                                                       ║▓
 ║                                                                                           ║▓
+║ Risk Events add a frisson of excitement to the otherwise drab and boring act of slogging  ║▓
+║ through a Nest looking for the subject of a Job.                                          ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ The following Sections define the rules for the various Risk Events generated during the  ║▓
+║ Survival and Exploration minigame.                                                        ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
@@ -7000,18 +7000,18 @@
  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 ╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
 ║                                                                                           ║▓
-║ 3.7.10.0 Reward Events (TBD)                                                              ║▓
-║ ----------------------------                                                              ║▓
+║ 3.7.10.0 Reward Events                                                                    ║▓
+║ ----------------------                                                                    ║▓
 ║                                                                                           ║▓
+║ Reward Events give the characters the resources they need to complete their Job           ║▓
+║ successfully.                                                                             ║▓
 ║                                                                                           ║▓
+║ Remember that the characters are not invading a Nest to become rich. Arthropod society    ║▓
+║ does not understand the concept of "richess". Accordingly the Reward Events generated     ║▓
+║ while exploring a Nest are only designed to help the characters complete their Job.       ║▓
 ║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
+║ The following Sections define the rules for the various Reward Events generated during    ║▓
+║ the Survival and Exploration minigame.                                                    ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓
 ║                                                                                           ║▓

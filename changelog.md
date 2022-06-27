@@ -11,6 +11,8 @@ Code
 Rulebook
 --------
 
+[DONE] Flesh out Events rules.
+
 [DONE] Replaced coverpage with one by LDA. Thanks dude!
 
 26/06/22
