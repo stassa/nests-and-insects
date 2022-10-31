@@ -120,7 +120,7 @@ format_combat_stats(Id,Com):-
 	,format(atom(Com_Rem),'║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓~n',[])
 	,format(atom(Com_Tra),'║│ ○ Retreating...... ○ Recoiling...... ○ Holding...... ○ Advancing...... ○ Charging......│ ║▓~n',[])
 	,format(atom(Com_Mod),'║└<^Cant Attack>─────<^-30%>───────────<^Doing Good>───<^+30%>───────────<^Shift Up>──────┘ ║▓~n',[])
-       %,format(atom(Com_Sep2),'║ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ║▓~n',[])
+       ,format(atom(Com_Sep2),'║ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ║▓~n',[])
 	,atomic_list_concat([Com_H
                             ,Com_Con
                             ,Com_Ini
@@ -130,7 +130,8 @@ format_combat_stats(Id,Com):-
                             ,Com_Dis
                             ,Com_Rem
                             ,Com_Tra
-                            ,Com_Mod],'',Com).
+                            ,Com_Mod
+                            ,Com_Sep2],'',Com).
 
 
 %!      format_attacks(+Class) is det.
@@ -323,7 +324,7 @@ format_effects_inventory(Id,Efs):-
         ,format(atom(Efs_Ln5),'║│ ~w Confused.:[~|~`_t~w~4+%] ~w Stunned.....:[~|~`_t~w~4+%] ││ ○ ______________________________:[____%] │ ║▓~n',[Con_Tic,Con,Stu_Tic,Stu])
         ,format(atom(Efs_Foo),'║└<^Applies>──────────<^Applies>──────────────┘└<^Depleted>───────────────────────────────┘ ║▓~n',[])
         ,format(atom(Efs_End),'╚═══════════════════════════════════════════════════════════════════════════════════════════╝▓~n',[])
-        ,format(atom(Efs_Sha),' ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀~n',[])
+        ,format(atom(Efs_Sha),' ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀',[])
         ,atomic_list_concat([Efs_Box,
                              Efs_Ln1,
                              Efs_Ln2,

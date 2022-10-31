@@ -9,6 +9,23 @@ spider:attribute(charms,30).
 spider:attribute(ken,45).
 spider:attribute(passions,30).
 
+spider:attribute_modifiers(smarts,+5).
+
+spider:condition_modifiers(init,+10).
+spider:condition_modifiers(tr,-5).
+spider:condition_modifiers(sr,-5).
+
+spider:class_specific_ability(venomous,75).
+spider:class_specific_ability(web_weaving,90).
+
+spider:common_ability_modifiers(construction,+25).
+spider:common_ability_modifiers(eusociology,-30).
+spider:common_ability_modifiers(foraging,-20).
+spider:common_ability_modifiers(healing,+10).
+spider:common_ability_modifiers(hunting,+25).
+spider:common_ability_modifiers(perception,+5).
+spider:common_ability_modifiers(sneaking,+5).
+
 spider:base_attack([name-'Web Attack'
                      ,keywords-['Entangling','Healing']
                      ,damage-'N/A'
@@ -31,3 +48,5 @@ spider:special_attack([name-'Bite Attack'
                         ,miss_1-'Attacker Recoils'
                         ,miss_2-['(Alt)','']]
                        ).
+
+spider:class_inventory(firefly,45).
