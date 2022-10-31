@@ -16,8 +16,8 @@
 %
 format_toc(Ts,N,W,Ls):-
         format_toc_(Ts,W,[],Fs)
-        % Off by one error correction
-        % I DON'T KNOW!! OK?
+        % One line of header and two lines of footer
+        % Plus off-by-one offset
         ,N_ is N - 2
         ,style_part('\\chapter{Table of Contents}',W,_,[H,U])
         ,once(toc_lines(['',H,U|Fs],[1,1,N_,W],[],Ls_))
@@ -55,13 +55,12 @@ format_toc_([Cs,toc(R,T,P)|Ts],W,Acc,Bind):-
 %       page and W is the page width.
 %
 %       Formatted is the list of lines in Lines with page layout
-%       applied, i.e. with ASCII bordesr. How quaint.
+%       applied, i.e. with ASCII borders. How quaint.
 %
 toc_lines([],[P,N,M,W],Acc,Acc_):-
         !
-        % Offset lines so far er plus ... one? Why?
-        ,M_ is M - N + 1
-        ,layout:pad_toc(1,M_,W,Acc,Acc_1)
+        ,M_ is M - N
+        ,layout:pad_toc(0,M_,W,Acc,Acc_1)
         ,layout:arabic_roman(P,R)
         ,layout:format_line(nil,last(R),W,Acc_1,Acc_).
 toc_lines([L|Ls],[P,1,M,W],Acc,Bind):-
