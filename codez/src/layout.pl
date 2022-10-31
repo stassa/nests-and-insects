@@ -207,8 +207,8 @@ format_line(L,1,W,Acc,[L_,F|Acc]):-
 format_line(nil,last(P),W,Acc,[F2,F1|Acc]):-
 % Process last line
         !
-        ,configuration:border(lower_left_corner,ULC)
-        ,configuration:border(lower_right_corner,URC)
+        ,configuration:border(lower_left_corner,LLC)
+        ,configuration:border(lower_right_corner,LRC)
         ,configuration:border(horizontal,HOR)
         ,configuration:border(vertical_shadow,SHA_V)
         ,configuration:border(horizontal_shadow,SHA_H)
@@ -218,7 +218,7 @@ format_line(nil,last(P),W,Acc,[F2,F1|Acc]):-
         ,W2 is (W + 5)
         ,atom_codes(HOR,[C1])
         ,atom_codes(SHA_H,[C2])
-        ,format(atom(F1),'~|~w~*t-~w-~*t~w~*|~w',[ULC,C1,P,C1,URC,W1,SHA_V])
+        ,format(atom(F1),'~|~w~*t-~w-~*t~w~*|~w',[LLC,C1,P,C1,LRC,W1,SHA_V])
         ,format(atom(F2),' ~|~*t~*|',[C2,W2]).
 format_line(L,_N,W,Acc,[F|Acc]):-
 % Process all other lines

@@ -26,8 +26,10 @@
 syntax case match
 
 " Keywords.
-syntax keyword nniType Chapter Chapters Section Sections
-syntax match nniType /\(Table\|Figure\|Note\|Example\)\(:\)*\s*\(\d\+\)*/
+syntax keyword nniType Chapters Sections
+syntax match nniType /\v(Chapter|Section|Table|Figure|Note|Example)(\s|\.)@=/
+syntax match nniType /\(Table\|Figure\|Note\|Example\)\(:\)*\s*\(\d\+\)\+/
+syntax match nniType /\vSection \d+.\d+.\d+.\d+/
 
 " Constants
 syntax match nniConstant /Nest\(s*\)/
@@ -36,11 +38,11 @@ syntax match nniConstant /\([Mm]inigame\|Base\|Special\|Attack\|Action\|Disposit
 syntax match nniSpecial /\(Advance\|Recoil\)/
 syntax match nniConstant /\(Match\|Beat\|Retreating\|Holding\|Recoiling\|Advancing\|Charging\|Targets*\|Attackers*\)/
 syntax match nniConstant /\(Matches\|Beats\|Retreats\|Holds\|Recoils\|Advances\|Charges\)/
-syntax match nniConstant /ones\|tens/
+syntax match nniConstant / ones\| tens/
 syntax match nniConstant /\(\cdecile\|one\|ten\)s* di\(c\)*e/
 syntax match nniConstant /\(Nethack\|Angband\|Moria\|Ancient Domains of Mystery\|Diablo\|Darkest Dungeon\|Dungeons & Dragons\)/
 syntax match nniConstant /\(Round\|Turn\|Step\|Order\|Side\)\(s\)*/
-syntax match nniConstant /\(Tactical\|Resist\|Manoeuver\|Support\)\( Action\(s\)*\)*/
+syntax match nniConstant /\(Tactical\|Resist\|Manoeuver\|Support\|Suppress\)\( Action\(s\)*\)*/
 syntax match nniConstant '\u\{2,}s\{0,1}'
 syntax match nniConstant /\[[CFHLMS]\]/
 syntax match nniConstant /\d\+\(%\)*/
@@ -64,7 +66,7 @@ syntax match nniIdentifier /\(Hunger\|Luck\|Starving\)/
 syntax match nniSpecial /\(King\|Soldier\|Worker\|Bee\|Termite\)\(s\)*/
 syntax match nniSpecial /\(Ant\|Beetle\|Ladybug\|Scorpion\|Spider\|Wasp\|Termite\)\(s\)*/
 syntax keyword nniSpecial Minor Major Autothyte Autothytes Nasute Nasutes
-syntax match nniSpecial /Queen/ 
+syntax match nniSpecial /Queen\(\s\|\.\|,\)\@=/ 
 syntax keyword nniSpecial ANTS BEETLE LADYBUG SCORPION SPIDER WASP
 syntax keyword nniSpecial Cody Brody
 
@@ -123,7 +125,7 @@ syntax match nniSpecial /\(Hit\|Miss\(es\)*\)s*/
 syntax match nniConstant /\(Name\|Keywords\|Damage\|Max. Range\)\(:\)*/
 syntax match nniConstant /\(Hit\|Miss\)\( (\w\{3,5})\)*:/
 
-syntax match nniConstant /\d\+\.\d\+\.\d\+\.\d\+\s[A-Za-z -]\+/
+syntax match nniConstant /\d\+\.\d\+\.\d\+\.\d\+\s[A-Za-z -',]\+/
 
 hi def link nniType       Type
 hi def link nniIdentifier Identifier

@@ -9,6 +9,21 @@ ants:attribute(charms,45).
 ants:attribute(ken,60).
 ants:attribute(passions,25).
 
+ants:attribute_modifiers(skill,+5).
+
+ants:condition_modifiers(wounds,+7).
+
+ants:class_specific_ability(swarming,90).
+
+ants:common_ability_modifiers(construction,+10).
+ants:common_ability_modifiers(eusociology,+15).
+ants:common_ability_modifiers(exploration,+10).
+ants:common_ability_modifiers(foraging,+10).
+ants:common_ability_modifiers(healing,-10).
+ants:common_ability_modifiers(hunting,-20).
+ants:common_ability_modifiers(signalling,+15).
+ants:common_ability_modifiers(sneaking,-15).
+
 ants:base_attack([name-'Bite Attack'
                      ,keywords-['Crushing','Shredding']
                      ,damage-'1 Wound per Ant'
@@ -31,3 +46,5 @@ ants:special_attack([name-'Swarming Attack'
                         ,miss_1-'Attacker Recoils'
                         ,miss_2-['(Alt)','']]
                        ).
+
+ants:class_inventory(honeydew_restoration,45).

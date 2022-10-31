@@ -9,6 +9,21 @@ beetle:attribute(charms,30).
 beetle:attribute(ken,30).
 beetle:attribute(passions,35).
 
+beetle:attribute_modifiers(strength,+5).
+
+beetle:condition_modifiers(init,-10).
+beetle:condition_modifiers(sr,+15).
+beetle:condition_modifiers(wounds,+2).
+
+beetle:class_specific_ability(carapace,60).
+beetle:class_specific_ability(flying,35).
+
+beetle:common_ability_modifiers(construction,+15).
+beetle:common_ability_modifiers(exploration,-5).
+beetle:common_ability_modifiers(foraging,+10).
+beetle:common_ability_modifiers(healing,+10).
+beetle:common_ability_modifiers(hunting,-15).
+
 beetle:base_attack([name-'Bite Attack'
                      ,keywords-['Crushing']
                      ,damage-'2 Wounds'
@@ -31,3 +46,5 @@ beetle:special_attack([name-'Flying Horn Attack'
                         ,miss_1-'Attacker Stunned: d60'
                         ,miss_2-['(Crit)','Attacker Bleeding: d60']]
                        ).
+                       
+beetle:class_inventory(nectar_shielding,45).

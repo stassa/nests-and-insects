@@ -149,7 +149,7 @@ survival_features(C,[Hs,Ls]):-
 specific_abilities(C,As):-
         findall(Id-R
                 ,(specific_ability(Id,_)
-                 ,(   class_specific_ability(C,Id,R)
+                 ,(   C:class_specific_ability(Id,R)
                   ->  true
                   ;   R = 0
                   )
@@ -211,7 +211,7 @@ innate_effects(C,Es):-
 %
 starting_inventory(C,Is):-
         findall(I-R
-               ,class_inventory(C,I,R)
+               ,C:class_inventory(I,R)
                ,Is).
 
 
@@ -223,7 +223,7 @@ starting_inventory(C,Is):-
 attribute(C,A,R):-
         A_ =.. [attribute,A,R_]
         ,C:A_
-        ,(   class:attribute_modifiers(C,A,M)
+        ,(   C:attribute_modifiers(A,M)
          ->  R is R_ + M
          ;   R = R_
          ).
@@ -313,7 +313,7 @@ starting_luck(_C,luck-11).
 %       Retrieve the Rating of a Specific Ability of a Class.
 %
 specific_ability(C,A,R):-
-        class_specific_ability(C,A,R).
+        C:class_specific_ability(A,R).
 
 
 %!      common_ability(+Class,+Ability,-Rating) is det.
@@ -323,7 +323,7 @@ specific_ability(C,A,R):-
 common_ability(C,A,R):-
         common_ability_factors(A,Fs)
         ,attributes_mean(C,Fs,R_)
-        ,(   common_ability_modifiers(C,A,M)
+        ,(   C:common_ability_modifiers(A,M)
          ->  R is R_ + M
          ;   R = R_
         ).
@@ -344,7 +344,7 @@ innate_effect(C,E,R):-
 %       Starting Inventory Item and its Rating for a Class.
 %
 starting_inventory(C,I,R):-
-        class_inventory(C,I,R).
+        C:starting_inventory(I,R).
 
 
 %!      modified_condition(+Class,+Feature,+Rating,-Modified) is det.
@@ -352,7 +352,7 @@ starting_inventory(C,I,R):-
 %       Calculate the Modified rating of a Feature.
 %
 modified_condition(C,F,V,V_):-
-        (   condition_modifiers(C,F,M)
+        (   C:condition_modifiers(F,M)
         ->  V_ is V + M
         ;   V_ = V
         ).

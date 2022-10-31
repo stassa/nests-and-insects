@@ -9,6 +9,14 @@ template:attribute(charms,0).
 template:attribute(ken,0).
 template:attribute(passions,0).
 
+template:attribute_modifiers(_,0).
+
+template:condition_modifiers(_,0).
+
+template:class_specific_ability(_,0).
+
+template:common_ability_modifiers(_,0).
+
 template:base_attack([name-''
                      ,keywords-['']
                      ,damage-''
@@ -31,3 +39,5 @@ template:special_attack([name-''
                         ,miss_1-''
                         ,miss_2-['(Alt)','']]
                        ).
+
+template:class_inventory(empty,'').
