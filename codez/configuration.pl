@@ -70,3 +70,17 @@ label(figure, 'Figure').
 %
 line(underline,-).
 line(dunderline,=).
+
+
+%!      border(?Position,?Characters) is semidet.
+%
+%       A portion of a border, footer, or header.
+%
+border(upper_left_corner,'╔►Nests & Insects◄').
+border(upper_right_corner,'►Rulebook◄═╗').
+border(horizontal,'═').
+border(vertical,'║').
+border(lower_left_corner,'╚').
+border(lower_right_corner,'╝').
+border(horizontal_shadow,'▀').
+border(vertical_shadow,'▓').

@@ -4,6 +4,7 @@
                  ,longest_line/4
                  ]).
 
+:-use_module(configuration).
 :-use_module(src(tables)).
 :-use_module(src(theorem)).
 :-use_module(src(label)).
@@ -29,22 +30,6 @@ too long it will make the page longer.
 
 
 */
-
-%!      border(?Position,?Characters) is semidet.
-%
-%       A portion of a border, footer, or header.
-%
-%       @tbd This should be in the configuration module.
-%
-border(upper_left_corner,'╔►Nests & Insects◄').
-border(upper_right_corner,'►Rulebook◄═╗').
-border(horizontal,'═').
-border(vertical,'║').
-border(lower_left_corner,'╚').
-border(lower_right_corner,'╝').
-border(horizontal_shadow,'▀').
-border(vertical_shadow,'▓').
-
 
 %!      layout_rulebook(+In_Path,+Page_Lines,+Out_Path) is det.
 %
@@ -211,9 +196,9 @@ format_lines([L|Ls],[P,N,M,W,Cs,Ts],Ds_Bind,Acc,Bind):-
 format_line(L,1,W,Acc,[L_,F|Acc]):-
 % Process first line
         !
-        ,border(upper_left_corner,ULC)
-        ,border(upper_right_corner,URC)
-        ,border(horizontal,HOR)
+        ,configuration:border(upper_left_corner,ULC)
+        ,configuration:border(upper_right_corner,URC)
+        ,configuration:border(horizontal,HOR)
         % Width of the line plus space plus borders
         ,W_ is (W + 4)
         ,atom_codes(HOR,[C])
@@ -222,11 +207,11 @@ format_line(L,1,W,Acc,[L_,F|Acc]):-
 format_line(nil,last(P),W,Acc,[F2,F1|Acc]):-
 % Process last line
         !
-        ,border(lower_left_corner,ULC)
-        ,border(lower_right_corner,URC)
-        ,border(horizontal,HOR)
-        ,border(vertical_shadow,SHA_V)
-        ,border(horizontal_shadow,SHA_H)
+        ,configuration:border(lower_left_corner,ULC)
+        ,configuration:border(lower_right_corner,URC)
+        ,configuration:border(horizontal,HOR)
+        ,configuration:border(vertical_shadow,SHA_V)
+        ,configuration:border(horizontal_shadow,SHA_H)
         % Width of the line plus space plus borders
         ,W1 is (W + 4)
         % Extra space at the start of the footer shadow
@@ -237,8 +222,8 @@ format_line(nil,last(P),W,Acc,[F2,F1|Acc]):-
         ,format(atom(F2),' ~|~*t~*|',[C2,W2]).
 format_line(L,_N,W,Acc,[F|Acc]):-
 % Process all other lines
-        border(vertical,VER)
-        ,border(vertical_shadow,SHA)
+        configuration:border(vertical,VER)
+        ,configuration:border(vertical_shadow,SHA)
         % Width of the line plus borders, minus space
         ,W_ is W + 3
         ,format(atom(F),'~w ~w~` t~*|~w~w',[VER,L,W_,VER,SHA])
@@ -288,9 +273,6 @@ format_line(L,_N,W,Acc,[F|Acc]):-
 %       * \\begin{credits}: marks the beginning the credits page.
 %       Closing tag: \\end{credits}.
 %
-%       * \\begin{toc}: marks the beginning of the Table of Contents.
-%       Closing tag: \\end{toc}
-%
 %       * \\newpage: inserts a new page or completes the current page by
 %       filling it with empty lines until it is M lines long. Closing
 %       tag: None.
@@ -326,8 +308,6 @@ format_command('\\begin{coverpage}',Ls,[P,N,M,W,Cs,Ts],Acc,Acc_,Ls_,[P,N,M,W,Cs,
         skip_lines('\\end{coverpage}',Ls,1,Acc,Acc_,Ls_,_).
 format_command('\\begin{credits}',Ls,[P,N,M,W,Cs,Ts],Acc,Acc_,Ls_,[P,N,M,W,Cs,Ts]):-
         skip_lines('\\end{credits}',Ls,1,Acc,Acc_,Ls_,_).
-format_command('\\begin{toc}',Ls,[P,N,M,W,Cs,Ts],Acc,Acc_,Ls_,[P,N,M,W,Cs,Ts]):-
-        toc_lines(['\\begin{toc}'|Ls],[1,N,M,W],Acc,Acc_,Ls_).
 format_command('\\newpage',Ls,[P,N,M,W,Cs,Ts],Acc,Acc,Ls_,[P,N,M,W,Cs,Ts]):-
         M_ is M - N
         ,findall(''
@@ -463,56 +443,6 @@ box_lines(N,[L|Ls],W,Acc,Bind,Ls_Bind,N_Bind):-
         ,format_line(F,nil,W,Acc,Acc_)
         ,succ(N,N_)
         ,box_lines(N_,Ls,W,Acc_,Bind,Ls_Bind,N_Bind).
-
-
-%!      toc_lines(+Lines,+Counts,+Acc,-New,-Rest) is det.
-%
-%       Format Table of Content Lines.
-%
-%       Lines is a list of lines of text. The first line should be the
-%       command '\\begin{toc}'. This predicate will add borders and
-%       number pages with Roman numerals until the closing tag
-%       '\\end{toc}'.
-%
-%       Counts is ta list [P,N,M,W] with counts of pages, lines, maximum
-%       lines and width, inherited from format_command/7.
-%
-%       Acc is the accumulator of processed lines inherited from
-%       format_lines/7.
-%
-%       New is Acc updated with the formatted lines of the ToC.
-%
-%       Rest is the list of lines remaining in Lines after the
-%       '\\end{toc}' tag is encountered.
-%
-%       This predicate will pad the last page of the ToC up to the
-%       maximum page length (M in Counts). Unfortunately this can't be
-%       done easily with the \newpage command because that doesn't know
-%       to stop when it encounters another command. Maybe something to
-%       fix later.
-%
-toc_lines(['\\begin{toc}',L|Ls],[P,N,M,W],Acc,Bind,Ls_Bind):-
-        !
-        ,format_line(L,1,W,Acc,Acc_)
-        ,succ(N,N_)
-        ,toc_lines(Ls,[P,N_,M,W],Acc_,Bind,Ls_Bind).
-toc_lines(['\\end{toc}'|Ls],[P,N,M,W],Acc,Acc_,Ls):-
-        !
-        % Offset lines so far er plus ... one? Why?
-        ,M_ is M - N + 1
-        ,pad_toc(1,M_,W,Acc,Acc_1)
-        ,arabic_roman(P,R)
-        ,format_line(nil,last(R),W,Acc_1,Acc_).
-toc_lines(Ls,[P,M,M,W],Acc,Bind,Ls_Bind):-
-        !
-        ,arabic_roman(P,R)
-        ,format_line(nil,last(R),W,Acc,Acc_)
-        ,succ(P,P_)
-        ,toc_lines(Ls,[P_,1,M,W],Acc_,Bind,Ls_Bind).
-toc_lines([L|Ls],[P,N,M,W],Acc,Bind,Ls_Bind):-
-        format_line(L,N,W,Acc,Acc_)
-        ,succ(N,N_)
-        ,toc_lines(Ls,[P,N_,M,W],Acc_,Bind,Ls_Bind).
 
 
 %!      pad_toc(+Count,+Max,+Width,+Acc,-New) is det.
