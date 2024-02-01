@@ -11,7 +11,7 @@
 ║│ □ Initiative.........:[__35%] (Roll for Starting Disposition. Spe+Sma+Pas/3, +5 if ✓)..│ ║▓
 ║│ □ Threat Rate........:[__37%] (Effort of Attack Rolls. Ski+Str+Pas/3, +5 if ✓).........│ ║▓
 ║│ ✓ Survival Rate......:[__49%] (Resistance of Attack Rolls. Ski+Sta+Sma/3, +5 if ✓).....│ ║▓
-║│ Wounds/Max|Swarm/Max.:[__/03]|[__/06] (Max Wounds: Sta / 10, Max Swarm: Swarming / 10).│ ║▓
+║│ Wounds/Max|Swarm/Max.:[__/03]|[__/04] (Max Wounds: Sta / 10, Max Swarm: Swarming / 10).│ ║▓
 ║├─<Disposition Track>────────────────────────────────────────────────────────────────────┤ ║▓
 ║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓
 ║│   ○ Retreating ○ 40% ○ 30% ○ 20% ○ 10% ○ Holding ○ 10% ○ 20% ○ 30% ○ 40% ○ Charging    │ ║▓
@@ -36,7 +36,7 @@
 ║┌[Specific Abilities]────────┐┌[Common Abilities]────────────────────────────────────────┐ ║▓
 ║│ □ Carapace........:[___0%] ││ □ Construction.....:[__50%] □ Hunting...........:[__25%] │ ║▓
 ║│ □ Flying..........:[___0%] ││ □ Eusociology......:[__60%] □ Leadership........:[__30%] │ ║▓
-║│ □ Swarming........:[__60%] ││ □ Exploration......:[__40%] □ Perception........:[__35%] │ ║▓
+║│ □ Swarming........:[__40%] ││ □ Exploration......:[__40%] □ Perception........:[__35%] │ ║▓
 ║│ □ Venomous........:[___0%] ││ □ Foraging.........:[__55%] □ Signalling........:[__45%] │ ║▓
 ║│ □ Web Weaving.....:[___0%] ││ □ Healing..........:[__40%] □ Sneaking..........:[__30%] │ ║▓
 ║└<^XP>───────────────────────┘└<^XP>───────────────────────<^XP>─────────────────────────┘ ║▓
