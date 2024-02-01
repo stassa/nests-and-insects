@@ -8,10 +8,10 @@
 ║ └<^XP>────────────────<^XP>───────────────<^XP>──────────────────<^XP>──────────────────┘ ║▓
 ╠►Combat Stats◄═════════════════════════════════════════════════════════════════════════════╣▓
 ║┌[Condition]──────────────<Rules Reminder>───────────────────────────────────────────────┐ ║▓
-║│ □ Initiative...:[__35%] (Match/Beat to start Combat Holding/Recoiling 20% Disposition).│ ║▓
-║│ □ Threat Rate..:[__55%] (Match/Beat Attacker's TR to Hit/Miss Target)..................│ ║▓
-║│ □ Survival Rate:[__45%] (Match/Beat Target's SR to Hit/Miss with Base/Special Attack)..│ ║▓
-║│   Wounds/Max...:[__/05] (1 Wound = 1 Shift Down. When Wounds ≥ Max character dies).....│ ║▓
+║│ □ Initiative.........:[__37%] (Roll for Starting Disposition. Spe+Sma+Pas/3, +5 if ✓)..│ ║▓
+║│ □ Threat Rate........:[__55%] (Effort of Attack Rolls. Ski+Str+Pas/3, +5 if ✓).........│ ║▓
+║│ □ Survival Rate......:[__45%] (Resistance of Attack Rolls. Ski+Sta+Sma/3, +5 if ✓).....│ ║▓
+║│ Wounds/Max|Swarm/Max.:[__/05]|[__/00] (Max Wounds: Sta / 10, Max Swarm: Swarming / 10).│ ║▓
 ║├─<Disposition Track>────────────────────────────────────────────────────────────────────┤ ║▓
 ║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓
 ║│   ○ Retreating ○ 40% ○ 30% ○ 20% ○ 10% ○ Holding ○ 10% ○ 20% ○ 30% ○ 40% ○ Charging    │ ║▓
