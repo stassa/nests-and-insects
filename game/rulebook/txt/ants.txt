@@ -17,8 +17,8 @@
 ║│   ○ Retreating ○ 40% ○ 30% ○ 20% ○ 10% ○ Holding ○ 10% ○ 20% ○ 30% ○ 40% ○ Charging    │ ║▓
 ║└──<^Cant Attack>───<^Negative Mods^>───<^Doing Good>──<^Positive Mods^>──<^Shift Up>────┘ ║▓
 ║┌[Base Attack]─────────—─────────────────────┬[Special Attack]────────────────────────────┐║▓
-║│ Name:..........................Bite Attack │ Name:....................Swarming the Area │║▓
-║│ Keywords:........................Shredding │ Keywords:..................Area, Shredding │║▓
+║│ Name:..........................Bite Attack │ Name:.......................Swarm the Area │║▓
+║│ Keywords:........................Shredding │ Keywords:........Area, Shredding, Swarming │║▓
 ║│ Max. Range:..........................Close │ Max. Range:......Close Target (Close Area) │║▓
 ║│ Critical Hit:...Target takes 4W + 2W/Swarm │ Critical Hit:........Targets Take 2W/Swarm │║▓
 ║│ ............Target Bleeding d60, Blind d60 │ ...........Targets Bleeding d60, Blind d60 │║▓
