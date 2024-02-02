@@ -16,18 +16,23 @@
 ║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓
 ║│   ○ Retreating ○ 40% ○ 30% ○ 20% ○ 10% ○ Holding ○ 10% ○ 20% ○ 30% ○ 40% ○ Charging    │ ║▓
 ║└──<^Cant Attack>───<^Negative Mods^>───<^Doing Good>──<^Positive Mods^>──<^Shift Up>────┘ ║▓
-║  ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧   ║▓
-║┌[Base Attack]──────────────────────────────┐┌[Special Attack]───────────────────────────┐ ║▓
-║│ Name:.........................Bite Attack ││ Name:......................Stinger Attack │ ║▓
-║│ Keywords:.......................Shredding ││ Keywords:........Piercing,Venomous,Lethal │ ║▓
-║│ Damage:..........................2 Wounds ││ Damage:..........................2 Wounds │ ║▓
-║│ Max. Range:.........................Close ││ Max. Range:.........................Close │ ║▓
-║│ Hit:.......................Target Recoils ││ Hit:.................Target Poisoned: d60 │ ║▓
-║│ Hit (Alt):............................... ││ Hit (Crit):.................Target Killed │ ║▓
-║│ Hit (Add):............................... ││ Hit (Crit,Rem):....(Swarms take 2 Wounds) │ ║▓
-║│ Miss:....................Attacker Recoils ││ Miss:...............Attacker Stunned: d60 │ ║▓
-║│ Miss (Alt):.............................. ││ Miss (Alt):.............................. │ ║▓
-║└───────────────────────────────────────────┘└───────────────────────────────────────────┘ ║▓
+║┌[Base Attack]─────────—─────────────────────┬[Special Attack]────────────────────────────┐║▓
+║│ Name:..........................Bite Attack │ Name:.......................Stinger Attack │║▓
+║│ Keywords:.........................Piercing │ Keywords:.......Piercing, Venomous, Lethal │║▓
+║│ Max. Range:..........................Close │ Max. Range:..........................Close │║▓
+║│ Critical Hit:..............Target Takes 4W │ Critical Hit:..........Target Poisoned d60 │║▓
+║│ ..........................Target Agony d80 │ ............Target Killed (Swarms Take 4W) │║▓
+║│ Total Hit:.................Target Takes 3W │ Total Hit:.................Target Takes 3W │║▓
+║│ ..........................Target Agony d60 │ .......................Target Poisoned d40 │║▓
+║│ Partial Hit:...............Target Takes 2W │ Partial Hit:...............Target Takes 2W │║▓
+║│ ............................Target Recoils │ ............................Target Recoils │║▓
+║│ Partial Miss:.............Attacker Recoils │ Partial Miss:.............Attacker Recoils │║▓
+║│ .......................................... │ .......................................... │║▓
+║│ Total Miss:...............Attacker Recoils │ Total Miss:...........Attacker Stunned d60 │║▓
+║│ .......................................... │ .......................................... │║▓
+║│ Critical Miss:............Attacker Recoils │ Critical Miss:............Attacker Recoils │║▓
+║│ ..................Attacker Immobilised d60 │ ......................Attacker Stunned d60 │║▓
+║└────────────────────────────────────────────┴────────────────────────────────────────────┘║▓
 ╠►Survival◄═════════════════════════════════════════════════════════════════════════════════╣▓
 ║┌[Food]───────────────────┐┌[Luck][Positive Mod to All Rolls. Roll Doubles to set.]──────┐ ║▓
 ║│ ○ Hunger........[____%] ││ [00%].[11%].[22%].[33%].[44%].[55%].[66%].[77%].[88%].[99%].│ ║▓

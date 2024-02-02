@@ -16,18 +16,23 @@
 ║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓
 ║│   ○ Retreating ○ 40% ○ 30% ○ 20% ○ 10% ○ Holding ○ 10% ○ 20% ○ 30% ○ 40% ○ Charging    │ ║▓
 ║└──<^Cant Attack>───<^Negative Mods^>───<^Doing Good>──<^Positive Mods^>──<^Shift Up>────┘ ║▓
-║  ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧   ║▓
-║┌[Base Attack]──────────────────────────────┐┌[Special Attack]───────────────────────────┐ ║▓
-║│ Name:.........................Bite Attack ││ Name:.................Furious Bite Attack │ ║▓
-║│ Keywords:..............Piercing,Shredding ││ Keywords:..............Piercing,Shredding │ ║▓
-║│ Damage:...........................1 Wound ││ Damage:..........................2 Wounds │ ║▓
-║│ Max. Range:.........................Close ││ Max. Range:.........................Close │ ║▓
-║│ Hit:.................Target Bleeding: d40 ││ Hit:.................Target Bleeding: d60 │ ║▓
-║│ Hit (Alt):............................... ││ Hit (Alt):............................... │ ║▓
-║│ Hit (Add):............................... ││ Hit (Crit):..................Attack Again │ ║▓
-║│ Miss:....................Attacker Recoils ││ Miss:...............Attacker Stunned: d60 │ ║▓
-║│ Miss (Alt):.............................. ││ Miss (Alt):.............................. │ ║▓
-║└───────────────────────────────────────────┘└───────────────────────────────────────────┘ ║▓
+║┌[Base Attack]─────────—─────────────────────┬[Special Attack]────────────────────────────┐║▓
+║│ Name:..........................Bite Attack │ Name:....................Lucky Star Impact │║▓
+║│ Keywords:........................Shredding │ Keywords:.........Flying, Carapace, Impact │║▓
+║│ Max. Range:..........................Close │ Max. Range:............Medium (Close Area) │║▓
+║│ Critical Hit:.......Attacker Attacks Again │ Critical Hit:..............Targets take 4W │║▓
+║│ .............Target takes 4W, Bleeding d60 │ .....Targets Bleeding d60, Immobilised d60 │║▓
+║│ Total Hit:.................Target Takes 3W │ Total Hit:.................Targets take 3W │║▓
+║│ .......................Target Bleeding d60 │ ......................Targets Bleeding d60 │║▓
+║│ Partial Hit:...............Target Takes 2W │ Partial Hit:...............Targets take 2W │║▓
+║│ .......................Target Bleeding d40 │ ...................Targets Immobilised d40 │║▓
+║│ Partial Miss:.............Attacker Recoils │ Partial Miss:.............Attacker Recoils │║▓
+║│ .......................................... │ .......................................... │║▓
+║│ Total Miss:...........Attacker Stunned d60 │ Total Miss:.......Attacker Immobilised d60 │║▓
+║│ .......................................... │ .......................................... │║▓
+║│ Critical Miss:............Attacker Recoils │ Critical Miss:............Attacker Recoils │║▓
+║│ ......................Attacker Stunned d60 │ ....Attacker Immobilised d60, Bleeding d60 │║▓
+║└────────────────────────────────────────────┴────────────────────────────────────────────┘║▓
 ╠►Survival◄═════════════════════════════════════════════════════════════════════════════════╣▓
 ║┌[Food]───────────────────┐┌[Luck][Positive Mod to All Rolls. Roll Doubles to set.]──────┐ ║▓
 ║│ ○ Hunger........[____%] ││ [00%].[11%].[22%].[33%].[44%].[55%].[66%].[77%].[88%].[99%].│ ║▓

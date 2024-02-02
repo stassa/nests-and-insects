@@ -16,18 +16,23 @@
 ║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓
 ║│   ○ Retreating ○ 40% ○ 30% ○ 20% ○ 10% ○ Holding ○ 10% ○ 20% ○ 30% ○ 40% ○ Charging    │ ║▓
 ║└──<^Cant Attack>───<^Negative Mods^>───<^Doing Good>──<^Positive Mods^>──<^Shift Up>────┘ ║▓
-║  ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧   ║▓
-║┌[Base Attack]──────────────────────────────┐┌[Special Attack]───────────────────────────┐ ║▓
-║│ Name:..........................Web Attack ││ Name:.........................Bite Attack │ ║▓
-║│ Keywords:..............Entangling,Healing ││ Keywords:....Piercing,Venomous,Paralysing │ ║▓
-║│ Damage:...............................N/A ││ Damage:...........................1 Wound │ ║▓
-║│ Max. Range:........................Medium ││ Max. Range:.........................Close │ ║▓
-║│ Hit:...............Enemy Immobilised: d60 ││ Hit:.................Enemy Paralysed: d80 │ ║▓
-║│ Hit (Alt):................Ally Stabilised ││ Hit (Alt):....................Ally Healed │ ║▓
-║│ Hit (Rem):..(Stabilised: Remove Bleeding) ││ Hit (Rem):.....(Healed: Remove one Wound) │ ║▓
-║│ Miss:.................................... ││ Miss:....................Attacker Recoils │ ║▓
-║│ Miss (Alt):.............................. ││ Miss (Alt):.............................. │ ║▓
-║└───────────────────────────────────────────┘└───────────────────────────────────────────┘ ║▓
+║┌[Base Attack]─────────—─────────────────────┬[Special Attack]────────────────────────────┐║▓
+║│ Name:..........................Bite Attack │ Name:...........................Web Attack │║▓
+║│ Keywords:......Piercing, Venomous, Healing │ Keywords:............Area, Projectile, Web │║▓
+║│ Max. Range:..........Close (Enemy or Ally) │ Max. Range:............Medium (Close Area) │║▓
+║│ Critical Hit:......Ally Heals 3W, Advances │ Critical Hit:............Allies Stabilised │║▓
+║│ .............Enemy Takes 4W, Paralysed d80 │ ........Targets Immobilised d60, Blind d60 │║▓
+║│ Total Hit:...................Ally Heals 2W │ Total Hit:.........Enemies Immobilised d60 │║▓
+║│ .............Enemy Takes 3W, Paralysed d60 │ ....................Allies Reduce Bleeding │║▓
+║│ Partial Hit:.................Ally Heals 1W │ Partial Hit:.......Targets Immobilised d40 │║▓
+║│ ...........Enemy Takes 3W, Immobilised d60 │ .......................................... │║▓
+║│ Partial Miss:.............Attacker Recoils │ Partial Miss:.............Attacker Recoils │║▓
+║│ .......................................... │ .......................................... │║▓
+║│ Total Miss:.........Attacker Recoils Twice │ Total Miss:.........Attacker Recoils Twice │║▓
+║│ .......................................... │ .......................................... │║▓
+║│ Critical Miss:............Attacker Recoils │ Critical Miss:......Attacker Recoils Twice │║▓
+║│ ......................Attacker Stunned d60 │ ..Attacker Can't Use This Attack Next Turn │║▓
+║└────────────────────────────────────────────┴────────────────────────────────────────────┘║▓
 ╠►Survival◄═════════════════════════════════════════════════════════════════════════════════╣▓
 ║┌[Food]───────────────────┐┌[Luck][Positive Mod to All Rolls. Roll Doubles to set.]──────┐ ║▓
 ║│ ○ Hunger........[____%] ││ [00%].[11%].[22%].[33%].[44%].[55%].[66%].[77%].[88%].[99%].│ ║▓
