@@ -1,106 +1,101 @@
- ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-╔►Nests & Insects◄═════════════════════════════════════════════════════════►Character Sheet◄╗
-║......................................... SCORPION ........................................║▓
-╠►Attributes◄═══════════════════════════════════════════════════════════════════════════════╣▓
-║ ┌───────────────────────────────────────────────────────────────────────────────────────┐ ║▓
-║ │ □ Speed.....:[__45%] □ Skill....:[__25%] □ Strength....:[__45%] □ Stamina....:[__55%] │ ║▓
-║ │ □ Smarts....:[__35%] □ Charms...:[__30%] □ Ken.........:[__30%] □ Passions...:[__60%] │ ║▓
-║ └<^XP>────────────────<^XP>───────────────<^XP>──────────────────<^XP>──────────────────┘ ║▓
-╠►Combat Stats◄═════════════════════════════════════════════════════════════════════════════╣▓
-║┌[Condition]──────────────<Rules Reminder>───────────────────────────────────────────────┐ ║▓
-║│ □ Initiative.........:[__52%] (Roll for Starting Disposition. Spe+Sma+Pas/3, +5 if ✓)..│ ║▓
-║│ □ Threat Rate........:[__44%] (Effort of Attack Rolls. Ski+Str+Pas/3, +5 if ✓).........│ ║▓
-║│ □ Survival Rate......:[__39%] (Resistance of Attack Rolls. Ski+Sta+Sma/3, +5 if ✓).....│ ║▓
-║│ Wounds/Max|Swarm/Max.:[__/06]|[__/00] (Max Wounds: Sta / 10, Max Swarm: Swarming / 10).│ ║▓
-║├─<Disposition Track>────────────────────────────────────────────────────────────────────┤ ║▓
-║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓
-║│   ○ Retreating ○ 40% ○ 30% ○ 20% ○ 10% ○ Holding ○ 10% ○ 20% ○ 30% ○ 40% ○ Charging    │ ║▓
-║└──<^Cant Attack>───<^Negative Mods^>───<^Doing Good>──<^Positive Mods^>──<^Shift Up>────┘ ║▓
-║┌[Base Attack]─────────—─────────────────────┬[Special Attack]────────────────────────────┐║▓
-║│ Name:........................Pincer Attack │ Name:.......................Stinger Attack │║▓
-║│ Keywords:.........................Crushing │ Keywords:.......Piercing, Venomous, Lethal │║▓
-║│ Max. Range:..........................Close │ Max. Range:..........................Close │║▓
-║│ Critical Hit:..............Target Takes 3W │ Critical Hit:..........Target in Agony d80 │║▓
-║│ ...............Target Recoils, Stunned d60 │ ............Target Killed (Swarms take 3W) │║▓
-║│ Total Hit:.................Target Takes 2W │ Total Hit:.................Target Takes 2W │║▓
-║│ ........................Target Stunned d60 │ .......................Target in Agony d60 │║▓
-║│ Partial Hit:...............Target Takes 1W │ Partial Hit:...............Target Takes 2W │║▓
-║│ ............................Target Recoils │ ....................Target Immobilised d40 │║▓
-║│ Partial Miss:.............Attacker Recoils │ Partial Miss:.............Attacker Recoils │║▓
-║│ .......................................... │ .......................................... │║▓
-║│ Total Miss:...............Attacker Recoils │ Total Miss:.........Attacker Recoils Twice │║▓
-║│ .......................................... │ .......................................... │║▓
-║│ Critical Miss:......Attacker Recoils Twice │ Critical Miss:......Attacker Recoils Twice │║▓
-║│ .......................................... │ ......................Attacker Stunned d60 │║▓
-║└────────────────────────────────────────────┴────────────────────────────────────────────┘║▓
-╠►Survival◄═════════════════════════════════════════════════════════════════════════════════╣▓
-║┌[Food]───────────────────┐┌[Luck][Positive Mod to All Rolls. Roll Doubles to set.]──────┐ ║▓
-║│ ○ Hunger........[____%] ││ [00%].[11%].[22%].[33%].[44%].[55%].[66%].[77%].[88%].[99%].│ ║▓
-║└<^Starving>──────────────┘└─────────^───────────────────────────────────────────────────┘ ║▓
-╠►Abilities◄════════════════════════════════════════════════════════════════════════════════╣▓
-║┌[Specific Abilities]────────┐┌[Common Abilities]────────────────────────────────────────┐ ║▓
-║│ □ Carapace........:[__20%] ││ □ Construction.....:[__40%] □ Hunting...........:[__50%] │ ║▓
-║│ □ Flying..........:[____%] ││ □ Eusociology......:[__30%] □ Leadership........:[__60%] │ ║▓
-║│ □ Swarming........:[____%] ││ □ Exploration......:[__45%] □ Perception........:[__40%] │ ║▓
-║│ □ Venomous........:[__20%] ││ □ Foraging.........:[__35%] □ Signalling........:[__55%] │ ║▓
-║│ □ Web Weaving.....:[____%] ││ □ Healing..........:[__25%] □ Sneaking..........:[__30%] │ ║▓
-║└<^XP>───────────────────────┘└<^XP>───────────────────────<^XP>─────────────────────────┘ ║▓
-║┌[Effects]───────────────────────────────────┐┌[Inventory]───────────────────────────────┐ ║▓
-║│ ○ Agony....:[___0%] ○ Immobilised.:[___0%] ││ ✓ Crickets [F]__________________:[__45%] │ ║▓
-║│ ○ Bleeding.:[___0%] ○ Infected....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
-║│ ○ Blind....:[___0%] ○ Paralysed...:[___0%] ││ ○ ______________________________:[____%] │ ║▓
-║│ ○ Charmed..:[___0%] ○ Poisoned....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
-║│ ○ Confused.:[___0%] ○ Stunned.....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
-║└<^Applies>──────────<^Applies>──────────────┘└<^Depleted>───────────────────────────────┘ ║▓
-╚═══════════════════════════════════════════════════════════════════════════════════════════╝▓
- ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
-║                                                                                           ║▓
-║                                     2.8.0.0 Scorpion                                      ║▓
-║                                     ----------------                                      ║▓
-║                                                                                           ║▓
-║ Pronouns: he/him/his                                                                      ║▓
-║ --------------------                                                                      ║▓
-║                                                                                           ║▓
-║ Diet: Carnivore                                                                           ║▓
-║ ---------------                                                                           ║▓
-║                                                                                           ║▓
-║ Description                                                                               ║▓
-║ -----------                                                                               ║▓
-║                                                                                           ║▓
-║ Scorpions are not insects! They are arthropods, like insects, but they belong to their    ║▓
-║ own taxonomic Class, Arachnida (the Arachnids), along with spiders. Scorpions, like most  ║▓
-║ Arachnids, have eight legs and a front pair of appendages, their frightful pincers,       ║▓
-║ specialised to grasp and manipulate, in particular, their food. Scorpions' tails are      ║▓
-║ armed with their fearful stinger that injects an extremely painful, lethal venom.         ║▓
-║ Scorpions can move with precision on their eight legs but are slowed down by their tough  ║▓
-║ exoskeleton that functions as a carapace armour. Nests & Insects Scorpions can use their  ║▓
-║ excellent Leadership to support their allies in Combat by improving their Disposition.    ║▓
-║ They can also use their Signalling to perform an aggressive display showcasing their      ║▓
-║ pincers and stinger in such a fashion as to frighten their enemies and worsen their       ║▓
-║ Disposition.                                                                              ║▓
-║                                                                                           ║▓
-║ Choose this class:                                                                        ║▓
-║ ------------------                                                                        ║▓
-║                                                                                           ║▓
-║ If you want your character to be a lethal, well-protected tactician specialised in heavy  ║▓
-║ support.                                                                                  ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-╚═══════════════════════════════════════════-33-════════════════════════════════════════════╝▓
- ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔═►Nests & Insects◄═══════════════════════════════════════════════════════►Character Sheet◄═╗
+║......................................... SCORPION ........................................║
+╠═►Attributes◄══════════════════════════════════════════════════════════════════════════════╣
+║  □ Speed.......:[_45%] □ Skill.......:[_25%] □ Strength....:[_45%] □ Stamina.....:[_55%]  ║
+║  □ Smarts......:[_35%] □ Charms......:[_30%] □ Ken.........:[_30%] □ Passions....:[_60%]  ║
+╠═►Combat Stats◄══════════╦═►Specific Abilities◄═══╦═►Effects◄══════════════════════════════╣
+║ Initiative......:[_47%] ║ □ Carapace.....:[_20%] ║ Agony.......:[___%] Immobilised:[___%] ║
+║ Threat Rate.....:[_43%] ║ □ Flying.......:[___%] ║ Bleeding....:[___%] Infected...:[___%] ║
+║ Survival Rate...:[_39%] ║ □ Swarming.....:[___%] ║ Blind.......:[___%] Paralysed..:[___%] ║
+║ Wounds/Max.....:[__/06] ║ □ Venomous.....:[_20%] ║ Charmed.....:[___%] Poisoned...:[___%] ║
+║ Swarm/Max......:[__/__] ║ □ Web Weaving..:[___%] ║ Confused....:[___%] Stunned....:[___%] ║
+╠═►Luck◄══════════════════╩════════════════════════╩═══════════╦═►Food◄═════════════════════╣
+║ ○[00%]○[11%]○[22%]○[33%]○[44%]○[55%]○[66%]○[77%]○[88%]○[99%] ║ Hunger:[___%]..Starving: ○ ║
+╠═►Common Abilities◄════╦═►Inventory◄══════════════════════════╩════════════════════════════╣
+║ □ Construction:[_40%] ║─[Name & Rating]───────────────────────────┬[D]┬[S]┬[B]┬[L]┬[H]┬[C]║
+║ □ Eusociology.:[_30%] ║ Crickets__________________________ [_45%] │ □ │ □ │ □ │ □ │ □ │ X ║
+║ □ Exploration.:[_45%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Foraging....:[_35%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Healing.....:[_25%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Hunting.....:[_50%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Leadership..:[_60%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Perception..:[_40%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Signalling..:[_55%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Sneaking....:[_30%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+╠═[Advance ->]══════════╩══════════►Disposition Track◄═══════════════════════════[<-Recoil]═╣
+║ ○ Retreating ○ -40% ○ -30% ○ -20% ○ -10% ○ Holding ○ +10% ○ +20% ○ +30% ○ +40% ○ Charging ║
+╠═►Attacks◄═══════════════════════════════════╦═════════════════════════════════════════════╣
+║────────────────[Base Attack]─────────—──────║───────────────[Special Attack]──────────────║
+║ Name:.........................Pincer Attack ║ Name:........................Stinger Attack ║
+║ Keywords:..........................Crushing ║ Keywords:........Piercing, Venomous, Lethal ║
+║ Max. Range:...........................Close ║ Max. Range:...........................Close ║
+║ Critical Hit:...............Target Takes 3W ║ Critical Hit:...........Target in Agony d80 ║
+║ ................Target Recoils, Stunned d60 ║ .............Target Killed (Swarms take 3W) ║
+║ Total Hit:..................Target Takes 2W ║ Total Hit:..................Target Takes 2W ║
+║ .........................Target Stunned d60 ║ ........................Target in Agony d60 ║
+║ Partial Hit:................Target Takes 1W ║ Partial Hit:................Target Takes 2W ║
+║ .............................Target Recoils ║ .....................Target Immobilised d40 ║
+║ Partial Miss:..............Attacker Recoils ║ Partial Miss.:.............Attacker Recoils ║
+║ ........................................... ║ ........................................... ║
+║ Total Miss:................Attacker Recoils ║ Total Miss:..........Attacker Recoils Twice ║
+║ ........................................... ║ ........................................... ║
+║ Critical Miss:.......Attacker Recoils Twice ║ Critical Miss:.......Attacker Recoils Twice ║
+║ ........................................... ║ .......................Attacker Stunned d60 ║
+╠═►Reminders◄═════════════════════════════════╩═════════════════════════════════════════════╣
+║ When you gain XP, choose a feature and check □. When you roll doubles, set Luck bar...... ║
+║ Initiative = SPE+SMA+PAS/3, Threat Rate = SKI+STR+PAS/3, Survival Rate = SKI+STA+SMA/3... ║
+║ Max Wounds = STA/10. Max Swarm = Swarming/10. Disposition: +/- mod to all rolls in combat ║
+║ Items: [D]epleted, [S]poiled, [F]ood, [B]uilding, [L]ight. Diets: [H]erbivore/[C]arnivore ║
+╚═══════════════════════════════════════════════════════════════════════════════════════════╝
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔═►Nests & Insects◄══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║
+║                                     2.8.0.0 Scorpion                                      ║
+║                                     ----------------                                      ║
+║                                                                                           ║
+║ Pronouns: he/him/his                                                                      ║
+║ --------------------                                                                      ║
+║                                                                                           ║
+║ Diet: Carnivore                                                                           ║
+║ ---------------                                                                           ║
+║                                                                                           ║
+║ Description                                                                               ║
+║ -----------                                                                               ║
+║                                                                                           ║
+║ Scorpions are not insects! They are arthropods, like insects, but they belong to their    ║
+║ own taxonomic Class, Arachnida (the Arachnids), along with spiders. Scorpions, like most  ║
+║ Arachnids, have eight legs and a front pair of appendages, their frightful pincers,       ║
+║ specialised to grasp and manipulate, in particular, their food. Scorpions' tails are      ║
+║ armed with their fearful stinger that injects an extremely painful, lethal venom.         ║
+║ Scorpions can move with precision on their eight legs but are slowed down by their tough  ║
+║ exoskeleton that functions as a carapace armour. Nests & Insects Scorpions can use their  ║
+║ excellent Leadership to support their allies in Combat by improving their Disposition.    ║
+║ They can also use their Signalling to perform an aggressive display showcasing their      ║
+║ pincers and stinger in such a fashion as to frighten their enemies and worsen their       ║
+║ Disposition.                                                                              ║
+║                                                                                           ║
+║ Choose this class:                                                                        ║
+║ ------------------                                                                        ║
+║                                                                                           ║
+║ If you want your character to be a lethal, well-protected tactician specialised in heavy  ║
+║ support.                                                                                  ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+╚═══════════════════════════════════════════-33-════════════════════════════════════════════╝
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀

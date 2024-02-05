@@ -1,106 +1,101 @@
- ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-╔►Nests & Insects◄═════════════════════════════════════════════════════════►Character Sheet◄╗
-║.......................................... BEETLE .........................................║▓
-╠►Attributes◄═══════════════════════════════════════════════════════════════════════════════╣▓
-║ ┌───────────────────────────────────────────────────────────────────────────────────────┐ ║▓
-║ │ □ Speed.....:[__25%] □ Skill....:[__45%] □ Strength....:[__55%] □ Stamina....:[__60%] │ ║▓
-║ │ □ Smarts....:[__35%] □ Charms...:[__30%] □ Ken.........:[__30%] □ Passions...:[__45%] │ ║▓
-║ └<^XP>────────────────<^XP>───────────────<^XP>──────────────────<^XP>──────────────────┘ ║▓
-╠►Combat Stats◄═════════════════════════════════════════════════════════════════════════════╣▓
-║┌[Condition]──────────────<Rules Reminder>───────────────────────────────────────────────┐ ║▓
-║│ □ Initiative.........:[__35%] (Roll for Starting Disposition. Spe+Sma+Pas/3, +5 if ✓)..│ ║▓
-║│ □ Threat Rate........:[__45%] (Effort of Attack Rolls. Ski+Str+Pas/3, +5 if ✓).........│ ║▓
-║│ □ Survival Rate......:[__50%] (Resistance of Attack Rolls. Ski+Sta+Sma/3, +5 if ✓).....│ ║▓
-║│ Wounds/Max|Swarm/Max.:[__/06]|[__/00] (Max Wounds: Sta / 10, Max Swarm: Swarming / 10).│ ║▓
-║├─<Disposition Track>────────────────────────────────────────────────────────────────────┤ ║▓
-║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓
-║│   ○ Retreating ○ 40% ○ 30% ○ 20% ○ 10% ○ Holding ○ 10% ○ 20% ○ 30% ○ 40% ○ Charging    │ ║▓
-║└──<^Cant Attack>───<^Negative Mods^>───<^Doing Good>──<^Positive Mods^>──<^Shift Up>────┘ ║▓
-║┌[Base Attack]─────────—─────────────────────┬[Special Attack]────────────────────────────┐║▓
-║│ Name:..........................Bite Attack │ Name:...................Flying Horn Attack │║▓
-║│ Keywords:.........................Crushing │ Keywords:.........Carapace, Flying, Impact │║▓
-║│ Max. Range:..........................Close │ Max. Range:..................Medium Charge │║▓
-║│ Critical Hit:..............Target Takes 3W │ Critical Hit:..............Targets Take 3W │║▓
-║│ .......Target Immobilised d60, Stunned d60 │ ......Targets Immobilised d60, Stunned d60 │║▓
-║│ Total Hit:.................Target Takes 2W │ Total Hit:.................Targets Take 3W │║▓
-║│ ........................Target Stunned d60 │ .......................Targets Stunned d60 │║▓
-║│ Partial Hit:...............Target Takes 1W │ Partial Hit:...............Targets Take 3W │║▓
-║│ ....................Target Immobilised d40 │ ...................Targets Immobilised d40 │║▓
-║│ Partial Miss:............................. │ Partial Miss:.............Attacker Recoils │║▓
-║│ .......................................... │ .......................................... │║▓
-║│ Total Miss:...............Attacker Recoils │ Total Miss:...........Attacker Stunned d60 │║▓
-║│ .......................................... │ .......................................... │║▓
-║│ Critical Miss:............Attacker Recoils │ Critical Miss:............Attacker Recoils │║▓
-║│ .......................................... │ ........Attacker Bleeding d60, Stunned d60 │║▓
-║└────────────────────────────────────────────┴────────────────────────────────────────────┘║▓
-╠►Survival◄═════════════════════════════════════════════════════════════════════════════════╣▓
-║┌[Food]───────────────────┐┌[Luck][Positive Mod to All Rolls. Roll Doubles to set.]──────┐ ║▓
-║│ ✗ Hunger........[_NONE] ││ [00%].[11%].[22%].[33%].[44%].[55%].[66%].[77%].[88%].[99%].│ ║▓
-║└<^Starving>──────────────┘└─────────^───────────────────────────────────────────────────┘ ║▓
-╠►Abilities◄════════════════════════════════════════════════════════════════════════════════╣▓
-║┌[Specific Abilities]────────┐┌[Common Abilities]────────────────────────────────────────┐ ║▓
-║│ □ Carapace........:[__20%] ││ □ Construction.....:[__60%] □ Hunting...........:[__25%] │ ║▓
-║│ □ Flying..........:[__20%] ││ □ Eusociology......:[__35%] □ Leadership........:[__40%] │ ║▓
-║│ □ Swarming........:[____%] ││ □ Exploration......:[__45%] □ Perception........:[__30%] │ ║▓
-║│ □ Venomous........:[____%] ││ □ Foraging.........:[__50%] □ Signalling........:[__30%] │ ║▓
-║│ □ Web Weaving.....:[____%] ││ □ Healing..........:[__55%] □ Sneaking..........:[__40%] │ ║▓
-║└<^XP>───────────────────────┘└<^XP>───────────────────────<^XP>─────────────────────────┘ ║▓
-║┌[Effects]───────────────────────────────────┐┌[Inventory]───────────────────────────────┐ ║▓
-║│ ○ Agony....:[___0%] ○ Immobilised.:[___0%] ││ ✓ Nectar of Shielding [F]_______:[__45%] │ ║▓
-║│ ○ Bleeding.:[___0%] ○ Infected....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
-║│ ○ Blind....:[___0%] ○ Paralysed...:[___0%] ││ ○ ______________________________:[____%] │ ║▓
-║│ ○ Charmed..:[___0%] ○ Poisoned....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
-║│ ○ Confused.:[___0%] ○ Stunned.....:[___0%] ││ ○ ______________________________:[____%] │ ║▓
-║└<^Applies>──────────<^Applies>──────────────┘└<^Depleted>───────────────────────────────┘ ║▓
-╚═══════════════════════════════════════════════════════════════════════════════════════════╝▓
- ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-╔►Nests & Insects◄═══════════════════════════════════════════════════════════════►Rulebook◄═╗
-║                                                                                           ║▓
-║                                      2.6.0.0 Beetle                                       ║▓
-║                                      --------------                                       ║▓
-║                                                                                           ║▓
-║ Pronouns: he/him/his                                                                      ║▓
-║ --------------------                                                                      ║▓
-║                                                                                           ║▓
-║ Diet: Vegetarian (but see Description)                                                    ║▓
-║ --------------------------------------                                                    ║▓
-║                                                                                           ║▓
-║ Description                                                                               ║▓
-║ -----------                                                                               ║▓
-║                                                                                           ║▓
-║ Beetles are the armoured knights of the insect kingdom¹. They have an outer pair of wings ║▓
-║ modified into a hardened wing-case, the elytra (Greek for "sheaths"), that protect their  ║▓
-║ delicate flying wings and also, their bodies. Their heads are large and armoured, and     ║▓
-║ armed with powerful mandibles that can deliver crushing bites. Beetles' heads come in a   ║▓
-║ wild variety of shapes, sizes and forms, specialised for digging, fighting, or feeding.   ║▓
-║                                                                                           ║▓
-║ The Nests & Insects Beetle character class is modelled after the European rhinoceros      ║▓
-║ beetle. These beetles' heads are armed with horns that they normally use in mating fights ║▓
-║ with other males; in the game, they use them to attack Nests' guardians. They can fly,    ║▓
-║ but their elytra make them clumsy and slow fliers. They can, however, combine their       ║▓
-║ flying abiity and their horned head to perform a devastating cannonbal attack that can    ║▓
-║ strike right at the heart of a swarm.                                                     ║▓
-║                                                                                           ║▓
-║ Beetle characters are adults of their species and do not need to feed: they subsist       ║▓
-║ during their short lives on the food consumed as larvae. Mechanically speaking, Beetle    ║▓
-║ characters' Hunger rating is replaced with the word NONE and cannot change with the       ║▓
-║ consumption of Food items. Beetle characters cannot become Starving. They can, however,   ║▓
-║ benefit from the effects of Food items such as Nectars or Fungi, thus their Diet is       ║▓
-║ recorded as "vegetarian" for this purpose only.                                           ║▓
-║                                                                                           ║▓
-║ Choose this class:                                                                        ║▓
-║ ------------------                                                                        ║▓
-║                                                                                           ║▓
-║ If you wish your character to be a heavily armoured main battle tank without the need to  ║▓
-║ feed.                                                                                     ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║                                                                                           ║▓
-║ ______________                                                                            ║▓
-║                                                                                           ║▓
-║ ¹ Technically, insects are a taxonomic *Class*.                                           ║▓
-║                                                                                           ║▓
-╚═══════════════════════════════════════════-29-════════════════════════════════════════════╝▓
- ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔═►Nests & Insects◄═══════════════════════════════════════════════════════►Character Sheet◄═╗
+║.......................................... BEETLE .........................................║
+╠═►Attributes◄══════════════════════════════════════════════════════════════════════════════╣
+║  □ Speed.......:[_25%] □ Skill.......:[_45%] □ Strength....:[_55%] □ Stamina.....:[_60%]  ║
+║  □ Smarts......:[_45%] □ Charms......:[_30%] □ Ken.........:[_30%] □ Passions....:[_35%]  ║
+╠═►Combat Stats◄══════════╦═►Specific Abilities◄═══╦═►Effects◄══════════════════════════════╣
+║ Initiative......:[_35%] ║ □ Carapace.....:[_20%] ║ Agony.......:[___%] Immobilised:[___%] ║
+║ Threat Rate.....:[_45%] ║ □ Flying.......:[_20%] ║ Bleeding....:[___%] Infected...:[___%] ║
+║ Survival Rate...:[_50%] ║ □ Swarming.....:[___%] ║ Blind.......:[___%] Paralysed..:[___%] ║
+║ Wounds/Max.....:[__/06] ║ □ Venomous.....:[___%] ║ Charmed.....:[___%] Poisoned...:[___%] ║
+║ Swarm/Max......:[__/__] ║ □ Web Weaving..:[___%] ║ Confused....:[___%] Stunned....:[___%] ║
+╠═►Luck◄══════════════════╩════════════════════════╩═══════════╦═►Food◄═════════════════════╣
+║ ○[00%]○[11%]○[22%]○[33%]○[44%]○[55%]○[66%]○[77%]○[88%]○[99%] ║ Hunger:[NONE]..Starving: - ║
+╠═►Common Abilities◄════╦═►Inventory◄══════════════════════════╩════════════════════════════╣
+║ □ Construction:[_60%] ║─[Name & Rating]───────────────────────────┬[D]┬[S]┬[B]┬[L]┬[H]┬[C]║
+║ □ Eusociology.:[_35%] ║ Nectar of Shielding_______________ [_45%] │ □ │ □ │ □ │ □ │ X │ □ ║
+║ □ Exploration.:[_45%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Foraging....:[_50%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Healing.....:[_55%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Hunting.....:[_25%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Leadership..:[_40%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Perception..:[_30%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Signalling..:[_30%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Sneaking....:[_40%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+╠═[Advance ->]══════════╩══════════►Disposition Track◄═══════════════════════════[<-Recoil]═╣
+║ ○ Retreating ○ -40% ○ -30% ○ -20% ○ -10% ○ Holding ○ +10% ○ +20% ○ +30% ○ +40% ○ Charging ║
+╠═►Attacks◄═══════════════════════════════════╦═════════════════════════════════════════════╣
+║────────────────[Base Attack]─────────—──────║───────────────[Special Attack]──────────────║
+║ Name:...........................Bite Attack ║ Name:....................Flying Horn Attack ║
+║ Keywords:..........................Crushing ║ Keywords:..........Carapace, Flying, Impact ║
+║ Max. Range:...........................Close ║ Max. Range:...................Medium Charge ║
+║ Critical Hit:...............Target Takes 4W ║ Critical Hit:...............Targets Take 4W ║
+║ ...............Immobilised d60, Stunned d60 ║ .......Targets Immobilised d60, Stunned d60 ║
+║ Total Hit:..................Target Takes 3W ║ Total Hit:..................Targets Take 3W ║
+║ .........................Target Stunned d60 ║ ........................Targets Stunned d60 ║
+║ Partial Hit:................Target Takes 2W ║ Partial Hit:................Targets Take 2W ║
+║ .....................Target Immobilised d40 ║ ....................Targets Immobilised d40 ║
+║ Partial Miss:.............................. ║ Partial Miss:..............Attacker Recoils ║
+║ ........................................... ║ ........................................... ║
+║ Total Miss:................Attacker Recoils ║ Total Miss:............Attacker Stunned d60 ║
+║ ........................................... ║ ........................................... ║
+║ Critical Miss:.............Attacker Recoils ║ Critical Miss:.............Attacker Recoils ║
+║ ........................................... ║ .........Attacker Bleeding d60, Stunned d60 ║
+╠═►Reminders◄═════════════════════════════════╩═════════════════════════════════════════════╣
+║ When you gain XP, choose a feature and check □. When you roll doubles, set Luck bar...... ║
+║ Initiative = SPE+SMA+PAS/3, Threat Rate = SKI+STR+PAS/3, Survival Rate = SKI+STA+SMA/3... ║
+║ Max Wounds = STA/10. Max Swarm = Swarming/10. Disposition: +/- mod to all rolls in combat ║
+║ Items: [D]epleted, [S]poiled, [F]ood, [B]uilding, [L]ight. Diets: [H]erbivore/[C]arnivore ║
+╚═══════════════════════════════════════════════════════════════════════════════════════════╝
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔═►Nests & Insects◄══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║
+║                                      2.6.0.0 Beetle                                       ║
+║                                      --------------                                       ║
+║                                                                                           ║
+║ Pronouns: he/him/his                                                                      ║
+║ --------------------                                                                      ║
+║                                                                                           ║
+║ Diet: Vegetarian (but see Description)                                                    ║
+║ --------------------------------------                                                    ║
+║                                                                                           ║
+║ Description                                                                               ║
+║ -----------                                                                               ║
+║                                                                                           ║
+║ Beetles are the armoured knights of the insect kingdom¹. They have an outer pair of wings ║
+║ modified into a hardened wing-case, the elytra (Greek for "sheaths"), that protect their  ║
+║ delicate flying wings and also, their bodies. Their heads are large and armoured, and     ║
+║ armed with powerful mandibles that can deliver crushing bites. Beetles' heads come in a   ║
+║ wild variety of shapes, sizes and forms, specialised for digging, fighting, or feeding.   ║
+║                                                                                           ║
+║ The Nests & Insects Beetle character class is modelled after the European rhinoceros      ║
+║ beetle. These beetles' heads are armed with horns that they normally use in mating fights ║
+║ with other males; in the game, they use them to attack Nests' guardians. They can fly,    ║
+║ but their elytra make them clumsy and slow fliers. They can, however, combine their       ║
+║ flying abiity and their horned head to perform a devastating cannonbal attack that can    ║
+║ strike right at the heart of a swarm.                                                     ║
+║                                                                                           ║
+║ Beetle characters are adults of their species and do not need to feed: they subsist       ║
+║ during their short lives on the food consumed as larvae. Mechanically speaking, Beetle    ║
+║ characters' Hunger rating is replaced with the word NONE and cannot change with the       ║
+║ consumption of Food items. Beetle characters cannot become Starving. They can, however,   ║
+║ benefit from the effects of Food items such as Nectars or Fungi, thus their Diet is       ║
+║ recorded as "vegetarian" for this purpose only.                                           ║
+║                                                                                           ║
+║ Choose this class:                                                                        ║
+║ ------------------                                                                        ║
+║                                                                                           ║
+║ If you wish your character to be a heavily armoured main battle tank without the need to  ║
+║ feed.                                                                                     ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+║ ______________                                                                            ║
+║                                                                                           ║
+║ ¹ Technically, insects are a taxonomic *Class*.                                           ║
+║                                                                                           ║
+╚═══════════════════════════════════════════-29-════════════════════════════════════════════╝
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
