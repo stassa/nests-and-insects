@@ -7,7 +7,7 @@
 ╠═►Combat Stats◄══════════╦═►Specific Abilities◄═══╦═►Effects◄══════════════════════════════╣
 ║ Initiative......:[_35%] ║ □ Carapace.....:[___%] ║ Agony.......:[___%] Immobilised:[___%] ║
 ║ Threat Rate.....:[_37%] ║ □ Flying.......:[___%] ║ Bleeding....:[___%] Infected...:[___%] ║
-║ Survival Rate...:[_44%] ║ □ Swarming.....:[_40%] ║ Blind.......:[___%] Paralysed..:[___%] ║ 
+║ Survival Rate...:[_44%] ║ □ Swarming.....:[_40%] ║ Blind.......:[___%] Paralysed..:[___%] ║
 ║ Wounds/Max.....:[__/03] ║ □ Venomous.....:[___%] ║ Charmed.....:[___%] Poisoned...:[___%] ║
 ║ Swarm/Max......:[__/04] ║ □ Web Weaving..:[___%] ║ Confused....:[___%] Stunned....:[___%] ║
 ╠═►Luck◄══════════════════╩════════════════════════╩═══════════╦═►Food◄═════════════════════╣
