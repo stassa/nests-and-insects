@@ -1,0 +1,41 @@
+╔═►Nests & Insects◄═══════════════════════════════════════════════════════►Character Sheet◄═╗
+║ ................................ Nasute Termite Soldier ................................. ║
+╠═►Attributes◄══════════════════════════════════════════════════════════════════════════════╣
+║  SPE:[_60%] SKI:[_60%] STR:[_50%] STA:[_50%] SMA:[_30%] CHA:[_30%] KEN:[_30%] PAS:[_55%]  ║
+╠═►Combat Stats◄══════════╦═►Specific Abilities◄═══╦═►Effects◄══════════════════════════════╣
+║ Initiative......:[_49%] ║ Carapace.......:[_70%] ║ Agony.......:[___%] Immobilised:[___%] ║
+║ Threat Rate.....:[_55%] ║ Flying.........:[___%] ║ Bleeding....:[___%] Infected...:[___%] ║
+║ Survival Rate...:[_47%] ║ Swarming.......:[_40%] ║ Blind.......:[100%] Paralysed..:[___%] ║
+║ Wounds/Max.....:[__/05] ║ Venomous.......:[___%] ║ Charmed.....:[___%] Poisoned...:[___%] ║
+║ Swarm/Max......:[__/__] ║ Web Weaving....:[___%] ║ Confused....:[___%] Stunned....:[___%] ║
+╠═[Advance ->]════════════╩════►Disposition Track◄═╩═════════════════════════════[<-Recoil]═╣
+║      ○ -50% ○ -40% ○ -30% ○ -20% ○ -10% ○ Holding ○ +10% ○ +20% ○ +30% ○ +40% ○ +50%      ║
+╠═►Attacks◄═══════════════════════════════════╦═════════════════════════════════════════════╣
+║────────────────[Base Attack]─────────—──────║───────────────[Special Attack]──────────────║
+║ Name:................Fontanellar Gun Attack ║ Name:........Greater Fontanellar Gun Attack ║
+║ Keywords:...............Projectile, Noxious ║ Keywords:..Area Attack, Projectile, Noxious ║
+║ Max. Range:............................Long ║ Max. Range:.Long (Close Area Around Target) ║
+║ Critical Hit:.Target Takes 4W, Poisoned d80 ║ Critical Hit:.Targets Take 2W, Poisoned d80 ║
+║ ........................................... ║ .....Main Target Takes 2W, Attacker Recoils ║
+║ Total Hit:....Target Takes 3W, Poisoned d60 ║ Total Hit:....Targets Take 1W, Poisoned d60 ║
+║ ...........................Attacker Recoils ║ .....Main Target Takes 2W, Attacker Recoils ║
+║ Partial Hit:..Target Takes 2W, Poisoned d40 ║ Partial Hit:...........Targets Poisoned d40 ║
+║ ...........................Attacker Recoils ║ .....Main Target Takes 2W, Attacker Recoils ║
+║ Partial Miss:..............Attacker Recoils ║ Partial Miss:..............Attacker Recoils ║
+║ .....................Target Immobilised d60 ║ .....................Target Immobilised d60 ║
+║ Total Miss:................Attacker Recoils ║ Total Miss:................Attacker Recoils ║
+║ .....................Target Immobilised d40 ║ .....................Target Immobilised d40 ║
+║ Critical Miss:.......Attacker Recoils Twice ║ Critical Miss:.......Attacker Recoils Twice ║
+║ ..........................Attacker Takes 1W ║ ..........................Attacker Takes 1W ║
+╠═►Special Rules◄═════════════════════════════╩═════════════════════════════════════════════╣
+║┌───[Alarm Pheromones]─────────────────────—──────────────—──────────────—──────────────—─┐║
+║│ At the start of the Soldiers' Turn the GQ makes a Boolean Roll against the Soldiers'    │║
+║│ Swarming. If the roll succeeds, new Termites arrive. Roll on the table below and choose │║
+║│ the result with the lowest "Chance to Summon" that is higher than the roll value.       │║
+║├─[Termite Caste]────────────────────[Numbers Summoned]──────[Chance to Summon]───────────┤║
+║│  Juvenile Major Termite Soldiers    1                       100%                        │║
+║│  Major Termite Soldiers             1                        80%                        │║
+║│  Juvenile Nasute Soldier            1                        60%                        │║
+║│  Nasute Soldier                     1                        30%                        │║
+║└─────────────────────────────────────────────────────────────────────────────────────────┘║
+╚═══════════════════════════════════════════════════════════════════════════════════════════╝

@@ -1,0 +1,48 @@
+╔═►Nests & Insects◄═══════════════════════════════════════════════════════►Character Sheet◄═╗
+║ ............................. Juvenile Minor Termite Soldiers ........................... ║
+╠═►Attributes◄══════════════════════════════════════════════════════════════════════════════╣
+║  SPE:[_35%] SKI:[_35%] STR:[_35%] STA:[_35%] SMA:[_15%] CHA:[_15%] KEN:[_15%] PAS:[_15%]  ║
+╠═►Combat Stats◄══════════╦═►Specific Abilities◄═══╦═►Effects◄══════════════════════════════╣
+║ Initiative......:[_22%] ║ Carapace.......:[_30%] ║ Agony.......:[___%] Immobilised:[___%] ║
+║ Threat Rate.....:[_29%] ║ Flying.........:[___%] ║ Bleeding....:[___%] Infected...:[___%] ║
+║ Survival Rate...:[_29%] ║ Swarming.......:[_80%] ║ Blind.......:[100%] Paralysed..:[___%] ║
+║ Wounds/Max.....:[__/04] ║ Venomous.......:[___%] ║ Charmed.....:[___%] Poisoned...:[___%] ║
+║ Swarm/Max......:[__/03] ║ Web Weaving....:[___%] ║ Confused....:[___%] Stunned....:[___%] ║
+╠═[Advance ->]════════════╩════►Disposition Track◄═╩═════════════════════════════[<-Recoil]═╣
+║      ○ -50% ○ -40% ○ -30% ○ -20% ○ -10% ○ Holding ○ +10% ○ +20% ○ +30% ○ +40% ○ +50%      ║
+╠═►Attacks◄═══════════════════════════════════╦═════════════════════════════════════════════╣
+║────────────────[Base Attack]─────────—──────║───────────────[Special Attack]──────────────║
+║ Name:.......................Mandible Attack ║ Name:............................Autothysis ║
+║ Keywords:..........................Crushing ║ Keywords:..............Area Attack, Noxious ║
+║ Max. Range:...........................Close ║ Max. Range:.............Close (Medium Area) ║
+║ Critical Hit:...............Target Takes 3W ║ Critical Hit:.............Attacker takes 1W ║
+║ .....................Target Immobilised d60 ║ ...........Targets take 2W, Immobilised d60 ║
+║ Total Hit:..................Target Takes 2W ║ Total Hit:................Attacker Takes 1W ║
+║ .....................Target Immobilised d40 ║ ...........Targets Take 1W, Immobilised d40 ║
+║ Partial Hit:................Target Takes 1W ║ Partial Hit:........Targets Immobilised d20 ║
+║ .....................Target Immobilised d20 ║ ..........................Attacker Takes 1W ║
+║ Partial Miss:..............Attacker Recoils ║ Partial Miss:.............Attacker Takes 1W ║
+║ ........................................... ║ ........................................... ║
+║ Total Miss:................Attacker Recoils ║ Total Miss:...............Attacker Takes 2W ║
+║ ........................................... ║ ........................................... ║
+║ Critical Miss:.....Attacker Immobilised d60 ║ Critical Miss:............Attacker Takes 4W ║
+║ ........................................... ║ ........................................... ║
+╠═►Special Rules◄═════════════════════════════╩═════════════════════════════════════════════╣
+║┌───[Alarm Pheromones]─────────────────────—──────────────—──────────────—──────────────—─┐║
+║│At the start of the Swarm's Turn the GQ makes a Boolean Roll against the Worker Termites'│║
+║│Swarming. If the roll succeeds, new Termites arrive. Roll on the table below and choose  │║
+║│the result with the lowest "Chance to Summon" that is higher than the roll value.        │║
+║├─[Termite Caste]────────────────────[Numbers Summoned]──────[Chance to Summon]───────────┤║
+║│  Juvenile Minor Termite Soldiers    1 with 3 Max Swarm      100%                        │║
+║│  Minor Termite Soldiers             1 with 6 Max Swarm       70%                        │║
+║│  Juvenile Major Termite Soldiers    2                        45%                        │║
+║│  Juvenile Nasute Soldier            1                        20%                        │║
+║└─────────────────────────────────────────────────────────────────────────────────────────┘║
+║┌───[Nest Guardians]───────────────────────—──────────────—──────────────—──────────────—─┐║
+║│Autothyte Soldiers do not engage enemies directly, rather they stand in place in front of│║
+║│their tunnels and attempt to stop intruders from entering the tunnels. When an Autothyte │║
+║│Soldier's uses its Autothysis Attack, there is a 60% chance that the sticky substance    │║
+║│secreted during the attack will create an Obstacle (Section 3.7.9.3), blocking off the   │║
+║│tunnel entrance it was guarding.                                                         │║
+║└─────────────────────────────────────────────────────────────────────────────────────────┘║
+╚═══════════════════════════════════════════════════════════════════════════════════════════╝

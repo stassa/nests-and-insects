@@ -1,0 +1,24 @@
+╔═►Nests & Insects◄═══════════════════════════════════════════════════════►Character Sheet◄═╗
+║ .............................. Juvenile Termite Workers ................................. ║
+╠═►Attributes◄══════════════════════════════════════════════════════════════════════════════╣
+║  SPE:[_15%] SKI:[_15%] STR:[_15%] STA:[_15%] SMA:[__5%] CHA:[__5%] KEN:[__5%] PAS:[__5%]  ║
+╠═►Combat Stats◄══════════╦═►Specific Abilities◄═══╦═►Effects◄══════════════════════════════╣
+║ Initiative......:[__9%] ║ Carapace.......:[___%] ║ Agony.......:[___%] Immobilised:[___%] ║
+║ Threat Rate.....:[_12%] ║ Flying.........:[___%] ║ Bleeding....:[___%] Infected...:[___%] ║
+║ Survival Rate...:[_12%] ║ Swarming.......:[_95%] ║ Blind.......:[100%] Paralysed..:[___%] ║
+║ Wounds/Max.....:[__/02] ║ Venomous.......:[___%] ║ Charmed.....:[___%] Poisoned...:[___%] ║
+║ Swarm/Max(d10).:[__/__] ║ Web Weaving....:[___%] ║ Confused....:[___%] Stunned....:[___%] ║
+╠═[Advance ->]════════════╩════►Disposition Track◄═╩═════════════════════════════[<-Recoil]═╣
+║ ○ Retreating ○ -40% ○ -30% ○ -20% ○ -10% ○ Holding ○ +10% ○ +20% ○ +30% ○ +40% ○ Charging ║
+╠═►Special Rules◄═══════════════════════════════════════════════════════════════════════════╣
+║┌───[Alarm Pheromones]─────────────────────—──────────────—──────────────—──────────────—─┐║
+║│ At the start of the Workers' Turn the GQ makes a Boolean Roll against the Workers'      │║
+║│ Swarming. If the roll succeeds, new Termites arrive. Roll on the table below and choose │║
+║│ the result with the lowest "Chance to Summon" that is higher than the roll value.       │║
+║├─[Termite Caste]────────────────────[Numbers Summoned]──────[Chance to Summon]───────────┤║
+║│  Juvenile Termite Workers           1 with d10 Max Swarm    100%                        │║
+║│  Termite Workers                    1 with d20 Max Swarm     50%                        │║
+║│  Juvenile Minor Termite Soldiers    1                        20%                        │║
+║│  Minor Termite Soldiers             1                         5%                        │║
+║└─────────────────────────────────────────────────────────────────────────────────────────┘║
+╚═══════════════════════════════════════════════════════════════════════════════════════════╝

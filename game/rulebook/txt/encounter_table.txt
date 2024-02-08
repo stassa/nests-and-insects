@@ -1,0 +1,15 @@
+║ Encounter                             Chance         Description                          ║▓
+║ ────────────────────────────────────────────────────────────────────────────────────      ║▓
+║ Juvenile Worker Termite               100% + Level   Younger Worker caste                 ║▓
+║ Worker Termite                        80% + Level    Worker caste                         ║▓
+║ Juvenile Minor Termite Soldier        50% + Level    Younger Soldier caste                ║▓
+║ Minor Termite Soldier - Autothyte     25% + Level    Soldier caste                        ║▓
+║ Juvenile Major Termite Soldier        15% + Level    Younger Bigger Soldier caste         ║▓
+║ Juvenile Nasute Soldier               10% + Level    Younger Scarier soldier caste        ║▓
+║ Major Termite Soldier - Authothyte    5% + Level     Bigger soldier caste                 ║▓
+║ Nasute Soldier                        Level - 10%    Scarier soldier caste                ║▓
+║ Alates - King                         Level - 25%    Commander of the Soldier castes      ║▓
+║ Alates - Queen, tertiary              Level - 40%    Cute Termite princess. Aaaw!         ║▓
+║ Alates - Queen, secondary             Level - 55%    Second in command                    ║▓
+║ Alates - Queen, primary               Level - 70%    Big honcho. Common Job target        ║▓
+║ ────────────────────────────────────────────────────────────────────────────────────      ║▓
