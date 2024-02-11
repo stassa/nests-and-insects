@@ -1,0 +1,135 @@
+Changelog:
+
+Character Creation:
+
+Attributes: Assign the following numbers to your character's Attributes:
+25, 30, 30, 35, 45, 45, 55, 60
+
+Conditions: Conditions are calculated in the following manner. Round up each time:
+Initiative:	Speed + Smarts + Passions / 3
+Threat Rate:	Skill + Strength + Passions / 3
+Survival Rate:	Skill + Stamina + Smarts / 3
+Max Wounds: Stamina / 10
+Max Swarm: Swarming / 10
+
+Specific Abilities: When it comes to Specific Abilities, you have two options.
+
+1) Choose two Specific Abilities to start with a rating of 30%
+OR
+2) Choose one Specific Ability to start with a rating of 50%
+
+Common Abilities: Assign the following numbers to your character's Common Abilities:
+25, 30, 30, 35, 40, 40, 45, 50, 55, 60
+
+END CHARACTER CREATION
+TODO: A formalisation of Attack options, also split Base Attack and Special Attack
+
+Character Sheet:
+
+Luck Box:
+┌[Luck][Positive Mod to All Rolls. Roll Doubles to set.]──────┐ ║▓
+│ [00%].[11%].[22%].[33%].[44%].[55%].[66%].[77%].[88%].[99%].│ ║▓
+└─────────^───────────────────────────────────────────────────┘ ║▓
+Disposition Track:
+║│ (Advance this way -->) ......................................... (<-- Recoil this way) │ ║▓
+║│   ○ Retreating ○ 40% ○ 30% ○ 20% ○ 10% ○ Holding ○ 10% ○ 20% ○ 30% ○ 40% ○ Charging    │ ║▓
+║└──<^Cant Attack>───<^Negative Mods^>───<^Doing Good>──<^Positive Mods^>──<^Shift Up>────┘ ║▓
+║  ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧   ║▓
+
+Specific Abilities Box:
+║┌[Specific Abilities]────────┐
+║│ □ Carapace........:[___0%] │
+║│ □ Flying..........:[___0%] │
+║│ □ Swarming........:[__60%] │
+║│ □ Venomous........:[___0%] │
+║│ □ Web Weaving.....:[___0%] │
+║└<^XP>───────────────────────┘
+Characters can now choose to put experience in any Specific Ability they have with a rating >0%.
+
+END CHARACTER SHEET
+
+Experience: Risks are how the characters gain experience (XP). Whenever the party resolves a Risk,
+each character gains 1 XP to assign to any one attribute, condition, or ability.
+
+Specific Abilities:
+Carapace: If an Attack has keywords Crushing, Piercing or Shredding and the target has
+Carapace > 0%, the target's Carapace rating is a negative static modifier to the Attack Roll.
+Carapace also acts as a positive static modifier to any Impact rolls.
+
+Flying_ If the target of an Attack has Flying > 0%, the target's Flying rating is a
+negative, static modifier to the Attack Roll. Additionally, Close range Attacks can only
+target a Combatant with Flying > 0% if the attacker also has Flying > 0%.
+
+Web Weaving: Allows the player to set traps, secure an area, and hinder enemies. Web Weaving is
+a positive static modifier to all Construction rolls and used to create structures or secure an area.
+as well as all Healing rolls. Acts as a Positive Static Modifier to Web Attacks.
+
+Swarming: A character with Swarming can summon additional creatures to fight with them as one.
+Their Wound Maximum increases by Swarming / 10, rounded up. These additional wounds do not inflict
+penalties when lost, but they can only be healed during the Resting & Healing minigame.
+Some attacks may also change based on the number of creatures in the swarm.
+When a swarm of creatures is hit by an Attack that would kill the target, it takes 2 wounds instead.
+
+Venomous: Allows the character to inflict Poisoned on their foes. When a creature with Venomous > 0% makes an Attack Roll with the Venomous Keyword, their Venomous Rating acts as a positive static modifier
+
+Combat:
+In Combat, Characters can make one each of the following actions during their turn:
+Attack Action: Make an Attack Roll
+Resist Action: Resist an effect
+Tactical Action: Support an Ally, Suppress an Enemy, or make a Manoeuver
+
+New Suppress Table: (Changes how Recoil & Advances are expressed)
+║ Degree of Success    Intimidate Outcome    Charm or Confuse Outcome                       ║▓
+║ ──────────────────────────────────────────────────────────────────────────────            ║▓
+║ Critical Success     Target Recoils 3      Bestow Charmed / Confused: d80                 ║▓
+║ Complete Success     Target Recoils 2      Bestow Charmed / Confused: d60                 ║▓
+║ Partial Success      Target Recoils 1      Bestow Charmed / Confused: d40                 ║▓
+║ Partial Failure      Target Holds          Bestow Confused: d40 on random Ally            ║▓
+║ Complete Failure     Target Advances 1     Bestow Confused: d60 on random Ally            ║▓
+║ Critical Failure     Target Advances 2     Bestow Confused: d80 on random Ally            ║▓
+║ ────────────────────────────────────────────────────────────────────────────── 
+║ Action        Effort        Resistance    Static Modifiers                                ║▓
+║ ──────────────────────────────────────────────────────────────                            ║▓
+║ Charm         Charms        Passions      Smarts, Confused                                ║▓
+║ Confuse       Smarts        Ken           Leadership, Passions                            ║▓
+║ Intimidate    Signalling    Passions      Leadership, Swarming                            ║▓
+║ ──────────────────────────────────────────────────────────────                            ║▓
+
+New Support Table: (Ally holds is now Partial Failure. Encourage & Rally now one action)
+║ Degree of Success    Rally or Encourage Outcome    Focus or Shake Outcome                 ║▓
+║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
+║ Critical Success     Ally Advances 3               Remove Effect and Shift Disposition Up ║▓
+║ Complete Success     Ally Advances 2               Remove Effect (reduce to 0%)           ║▓
+║ Partial Success      Ally Advance 1                Reduce Effect (roll to decrease)       ║▓
+║ Partial Failure      Ally Holds                    Effect remains                         ║▓
+║ Complete Failure     Ally Recoils 1                Effect is enhanced (roll to increase)  ║▓
+║ Critical Failure     Ally Recoils 2                Effect is maximised (set to 100%)      ║▓
+║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓                                                                                          ║▓
+║ Action         Effort          Resistance      Static Modifiers                           ║▓
+║ ───────────────────────────────────────────────────────────────                           ║▓
+║ Rally		 Leadership      Passions        Smarts		                            ║▓
+║ Focus          Smarts          Confused        Charms                                     ║▓
+║ Shake          Charms          Charmed         Passions                                   ║▓
+║ ───────────────────────────────────────────────────────────────                           ║▓
+
+Hunting and Foraging Minigame
+1. Each player chooses a room to hunt or forage in. The room must have a food item or a resource in it to engage in hunting or foraging.
+2. Each player declares what they are hunting or foraging. Each item in a room can only be harvested once per Hunting and Foraging Minigame.
+3. Each player makes a Roll with the room's Level Rating as the Resistance. The effort depends on what they are harvesting. For a carnivore's food, make a Hunting Roll. For an Herbivore's food, make a Foraging Roll. For a Building Resource, make a Construction Roll. If the roll fails, the Room is depleted of that item. If the roll succeeds, the resource is still plentiful. Either way, make a Quantification Roll to set the rating of the item or resource.
+Degree of Success      Hunt or Forage Outcome	     Salvage Outcome
+║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
+║ Critical Success     Find Two of Item              Find Two of Building Resource	    ║▓
+║ Complete Success     Find Item       		     Find Building Resource                 ║▓
+║ Partial Success      Find Item, Item is Depleted   Find Depleted Building Resource
+║ Partial Failure      Find Spoiled Item             Find Nothing
+║ Complete Failure     Nothing                       Room no longer has Resource
+║ Critical Failure     Room no longer has Item       Room no longer has Resource, Take 1W
+║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
+║ Action         Effort          Resistance      Static Modifiers (Choose One)              ║▓
+║ ───────────────────────────────────────────────────────────────                           ║▓
+║ Hunt		 Hunting         Room Level      Speed, Sneaking, Venomous, Web Weaving     ║▓
+║ Forage         Foraging        Room Level      Skill, Ken, Perception, Swarming           ║▓
+║ Salvage        Construction    Room Level      Strength, Smarts, Swarming, Carapace       ║▓
+║ ───────────────────────────────────────────────────────────────                           ║▓
+
+Area Attacks: The user makes a roll against their Threat Rate. This determines whether the attack Hits or Misses. For each target in the area, use their resistance to determine if it is a partial or total hit. Then, apply all relevant modifiers for that target. Targets suffer the effects of the attack's degree of success against them, and if the attack missed against any of the targets, the attacker suffers the most egregious effects.

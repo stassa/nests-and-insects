@@ -1,0 +1,271 @@
+1.3.0.0 The System
+
+- People are more used to mental arithmetic than abstract interval arithmetic
+	Roll under Effort -> "match"
+	Roll over Resistance -> "beat"
+	Think about different terminology, or different ways to represent the system
+
+1.3.1.0 Modifiers
+
+- Use a different way to represent the shifts up and down
+	Display a table showing the different DoS in a hierarchy
+
+Critical Success
+Complete Success
+Partial Success
+Partial Failure
+Complete Failure
+Critical Failure
+
+Thought: Show that shifting up and down just moves them up and down this list.
+Modifier Thoughts: Disposition should be on more of a sliding scale, instead of just five stages of dispisition, do it like 5% at a time
+
+Possible Suggestion
+
+Advance That Way ->								       <- Recoil That Way
+
+Recoiling: Fixed Negative Modifier |	   | Advancing (Positive Modifier Relative to Effort)
+Retreating | 20% | 15% | 10% | 5% | Holding | Effort+5% | Effort+10% | Effort+15% | Effort+20% | Charging
+
+Alternate Suggestion:
+
+Advance That Way ->					     <- Recoil That Way
+Recoiling: Static Negative Modifier|	     |Advancing: Static Positive Modifier
+Retreating | 80% | 60% | 40% | 20% | Holding | 20% | 40% | 60% | 80% | Charging
+Retreating: When a character begins retreating, they cannot take Tactical Actions, but they can use a Resist Action to attempt to steel their mind.
+Make a Boolean Roll with Ken. On a success, the character is no longer retreating.
+
+Working Disposition:
+║│   ○ Retreating ○ 40% ○ 30% ○ 20% ○ 10% ○ Holding ○ 10% ○ 20% ○ 30% ○ 40% ○ Charging    │ ║▓
+
+Thoughts: There are too many negative modifiers to accumulate, and not enough positive modifiers.
+Combat starts to spiral out of control with nobody being able to accomplish anything.
+The most stable point of combat seems to be with everyone Retreating.
+Either remove Wound penalties, or remove Disposition system.
+
+2.3.2.0 Attribute Areas
+
+CHARACTER CREATION: Possible Starting Array of Attributes:
+25, 30, 30, 35, 45, 45, 55, 60
+
+The XP Tickboxes are mentioned, but awarding XP is never explained.
+And neither is using XP.
+
+2.3.3.1 Condition Box
+CHARACTER CREATION: Ideas for starting Condition stats
+Assign 35, 45, and 55 between Initiative, Threat Rate, and Survival Rate.
+Max Wounds = Stamina / 10, rounded up.
+
+2.3.4.2 Luck Box
+There doesn't seem to be any reference for "Luck" in the game.
+Consider applying as a positive modifier to all your rolls?
+Proposal:
+Rearrange Luck scale so that 00% is the bottom of the scale. Players start at 11%.
+Luck is a positive modifier to all rolls.
+Working Luck Box
+┌[Luck][Positive Mod to All Rolls. Roll Doubles to set.]──────┐ ║▓
+│ [00%].[11%].[22%].[33%].[44%].[55%].[66%].[77%].[88%].[99%].│ ║▓
+└─────────^───────────────────────────────────────────────────┘ ║▓
+
+THOUGHTS ON XP:
+Whenever a character rolls under their luck modifier, they gain 1 XP that they can assign to any of their things
+Whenever the party overcomes a Risk event, each character assigns 1 XP to a condition, ability, or attribute of their choice.
+
+2.3.5.1 Specific Abilities Box
+
+Spider does not have any "Web Weaving" ability. It is 0%.
+CHARACTER CREATION:
+Choose two Specific Abilities to start at 30%, or One Specific Ability to start at 50%.
+
+2.3.5.2 Common Abilities Box
+Resting & Healing minigame not described.
+Foraging & Hunting refer to finding food items, is this meant to be separate from the event to get a food item?
+CHARACTER CREATION: Starting spread of Common Abilities:
+25, 30, 30, 35, 40, 40, 45, 50, 55, 60
+
+2.4.0.0 Character Classed (TBD)
+Section could be used to give an overview of each class before the in-depth class descriptions.
+
+2.5.0.0 Ants
+Ants start with the Blind condition 100%, but the rulebook never tells you what this *means*
+Is Blindness bad? Does being Blind somehow give you protection from the darkness? Why?
+
+3.4.1.7 Choosing a Quantification Die
+║ Quantified Feature Rating    Quantification Die                                           ║▓
+║ ───────────────────────────────────────────────                                           ║▓
+║ 01-20%                       d40                                                          ║▓
+║ 21-40%                       d60                                                          ║▓
+║ 41-60%                       d80                                                          ║▓
+║ 61-80%                       d100                                                         ║▓
+║ 81-100%                      d120                                                         ║▓
+║ ───────────────────────────────────────────────                                           ║▓
+║ Table 20: Quantification Dice. 
+
+Thoughts: Don't use Quantification Dice for leveling skills. It has way too much catapult potential.
+
+2.11.0.0 Character Features (TBD)
+Blank section, should have detailed descriptions of Features, Attributes, Combat Conditions, Survival Fatures, Abilities.
+2.11.5.3
+Combat does not specify when Effects must be checked.
+THOUGHTS: Check Effects at the start of a creature's turn.
+
+4.6.1.0 Worker Termite
+1d20 wounds max is a lot of health for something that has a 90% chance for an 80% chance to
+summon more enemies. On the table of summoned insects, there is a 55% chance of summoning another
+termite that has the same Alarm Pheromones ability. And even without the prospect of summoning additional
+termites, the Minor Termite Soldier has high enough Initiative, Threat Rate, and Survival rate to be difficult for
+anyone in the group to touch, and threaten them back greatly.
+Also, once again, BLINDNESS DOES NOTHING
+
+Change Base Attack and Special Attack to be two separate attacks that you try, each with their own DoS.
+
+
+Immobilised: Characters do not benefit from their Flying Rating
+
+Resting & Healing Mini-Game:
+Step 1: Choose an explored room to hole up in
+Step 2: Make a Construction Roll
+Effort: Construction
+Resistance: Level
+Modifiers: Web Weaving, Building Resource Rating
+Degree of Success      Secure a Room
+║ ─────────────────────────────────────────────────────────────────────────────────────────
+║ Critical Success     Room Secured, all Healing and Swarming increased by 1W
+║ Complete Success     Room Secured
+║ Partial Success      Room Secured, Building Resource Consumed
+║ Partial Failure      Room Secured, Building Resource Depleted
+║ Complete Failure     Room Not Secured, Building Resource Depleted and Reduced
+║ Critical Failure     Room Not Secured, Building Resource Exhausted
+║ ─────────────────────────────────────────────────────────────────────────────────────────
+Step 3: Spend Experience. Each character that has XP to spend rolls a d6, and adds the result to each feature that has XP. Those features no longer have XP.
+Step 4: One person make a Boolean Healing Roll. If successful, every character heals 1 wound.
+Step 5: Each character with Swarming can make a Boolean Swarming Roll. If successful, the swarm recovers 2 units.
+Step 6: Identify Unknown Items: For each unknown item the party has, one person can attempt to identify.
+Step 7: Consume Food - Each character may consume a food item to reduce their hunger. If they do, they may also roll to reduce one effect they suffer.
+Step 8: End Resting & Healing
+
+Attack Template:
+Basic attacks are single target, and can only apply Immobilised or Bleeding.
+If a creature has Venomous, their attacks might also cause Poisoned or Agony.
+║┌[Base Attack]──────────────────────────────┐
+║│ Name: Bite Attack | Max. Range: Close     │
+║│ Keywords:                                 │
+║│ DoS │ DMG │ Additional                 │
+║│───────────────────────────────────────────│
+║│ CrS │ 3   │ Trg Immobilised d60, Bleeding d60 │
+║│ CoS │ 2   │ Trg Immobilised d60     │
+║│ PS  │ 1   │ Trg Immobilised d40     │
+║│ PF  │ -   │                            │
+║│ CoF │ -   │                            │
+║│ CrF │ -   │                            │
+║└───────────────────────────────────────────┘
+
+Special Attacks
+Special Attacks are high risk, high reward moves available to insects.
+They have chances to inflict higher damage, higher effect chances, and more debilitating effects.
+Some special attacks may also have chances to inflict their damage or effects over an area.
+The tradeoff is that these attacks may also result in more severe costs of the attacker.
+
+
+From the source code:
+Initiative: Speed + Smarts + Passions / 3
+Threat Rate: Skill + Strength + Passions / 3
+Survival Rate: Skill + Stamina + Smarts / 3
+MINE:
+Wounds: RoundUp(Stamina / 10) + RoundUp(Swarm / 10)
+
+Attacks:
+Choose Body Pieces:
+Mouthparts:
+Purposes:
+Cutting
+Chewing
+Piercing
+Sucking
+Shredding
+Siphoning
+Filtering
+Types:
+Mandibles - Cutting, Shredding, Tearing, Crushing, Chewing
+Forcipules - Poison fangs, modified legs.
+Chelicerae - Pincers, Venom injection
+Proboscis - Succ
+
+Specialized Adaptations:
+Stinger - Pierce through armor and potentially inject venom.
+Horn - Front-facing horn, antler, or armored plating.
+Gun - Sling web or venom.
+
+Basic Attack:		
+Choose from the following Keywords		
+Keyword		Effect				Miss
+Crushing	Recoil, Immobilised		Recoil
+Shredding	Bleeding, Attack Again		Recoil
+Piercing	Bleeding, Infected		Recoil
+Projectile	Attacker Recoils, Agony		Recoil Twice, Stunned
+		
+Common arthropod Basic Attacks:
+Mandibles
+Bite Attack
+Pincer Attack
+Siphon Attack
+Fontanellar Gun
+
+Common Special Attacks:
+Charge (Requires Carapace): Impact Area Attack in a line
+Ground Slam (Requires Flying and Carapace): Impact Area Attack in a radius around landing
+Dive Bomb (Requires Flying): Precision flying strike
+Stinger (Requires Venomous): Pierce target to inject venom
+Autothysis (Requires Swarming): Sacrifice one of the swarm to release debilitating fluids
+Venom Spray (Requires Venomous): Project venom at a target
+Web Sling (Requires Web Weaving): Throw webs over a target or area to ensnare them
+Swarming Attack (Requires Swarming): Attack all targets in an area.
+
+Special Abilities and Attacks		
+
+Carapace:
+Allows for a Charging attack, either slamming the basic armor into enemies, or a specialized
+part of the armor, such as a horn. These attacks inflict damage in an area, but risk pain to
+the user.
+
+Venomous:
+Shredding, Piercing, and Projectile attacks can also inflict one of the following effects:
+Agony	Paralysed	Poisoned	Instant Death (Critical Hits Only)
+Venomous can also provide an alternate use that Heals wounds to allies instead of inflicting them to enemies.
+
+Swarming:
+Swarming provides some additional options for a special attack.
+1. Attack becomes Area. Target takes same damage as Basic Attack, but other targets in Area also take damage.
+2. Autothysis: Swarm Members can sacrifice themselves, detonating to inflict damage and status on enemies. On a success, Attacker loses 1 Swarm or dies. On a failure, Attacker loses 2 Swarm or dies. 
+On Basic Attacks, Swarming also increases the damage dealt by 1 Wound for each creature in the Swarm.
+
+Flying:
+Though Flying offers great defense and maneuverability, it can also come at a great risk. Special Attacks inflict Stunned on the attacker when they miss.
+
+Web Weaving:
+Enables a Medium range Projectile Special Attack. This attack does no damage, but can greatly immobilise enemies, and can also be used to stabilize Allies who are bleeding.
+
+Rework Enemies:
+Add Juvenile forms of the different Castes
+Juvenile Termite Workers
+Juvenile Minor Termite Soldiers
+Juvenile Major Termite Soldier
+Juvenile Nasute Soldier
+Adjust encounter table so that only certain ones are accessible on certain levels
+Also adjust Swarming Summons tables, as well as Swarming stats.
+
+║ Encounter                             Chance         Description                          ║▓
+║ ────────────────────────────────────────────────────────────────────────────────────      ║▓
+║ Juvenile Worker Termite               100% + Level   Younger Worker caste                 ║▓
+║ Worker Termite                        80% + Level    Worker caste                         ║▓
+║ Juvenile Minor Termite Soldier        50% + Level    Younger Soldier caste                ║▓
+║ Minor Termite Soldier - Autothyte     25% + Level    Soldier caste                        ║▓
+║ Juvenile Major Termite Soldier        15% + Level    Younger Bigger Soldier caste         ║▓
+║ Juvenile Nasute Soldier               10% + Level    Younger Scarier soldier caste        ║▓
+║ Major Termite Soldier - Authothyte    5% + Level     Bigger soldier caste                 ║▓
+║ Nasute Soldier                        Level - 10%    Scarier soldier caste                ║▓
+║ Alates - King                         Level - 25%    Commander of the Soldier castes      ║▓
+║ Alates - Queen, tertiary              Level - 40%    Cute Termite princess. Aaaw!         ║▓
+║ Alates - Queen, secondary             Level - 55%    Second in command                    ║▓
+║ Alates - Queen, primary               Level - 70%    Big honcho. Common Job target        ║▓
+║ ────────────────────────────────────────────────────────────────────────────────────      ║▓

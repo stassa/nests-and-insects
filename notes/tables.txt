@@ -1,0 +1,172 @@
+Exploration DoS
+	- Effort: Scout's Exploration
+	- Resistance Variables: Nest's Level
+	- Static Modifiers: Eusociology, Perception
+║ Degree of Success            Outcome                                                      ║
+║ ───────────────────────────────────────────────────                                       ║
+║ Critical Success             Reward, Reward, Reward                                       ║
+║ Total Success                Risk, Reward, Reward                                         ║
+║ Partial Success              Cost, Risk, Reward                                           ║
+║ Partial Failure              Cost, Risk, Risk                                             ║
+║ Total Failure                Cost, Cost, Risk                                             ║
+║ Critical Failure             Cost, Cost, Cost                                             ║
+║ ───────────────────────────────────────────────────                                       ║
+
+Cost Generation:
+║ Cost                Chance         Description                                            ║
+║ ───────────────────────────────────────────────────────────────────────────────           ║
+║ 3.7.8.1 Hunger      50% + Level    Increase Hunger, deplete Food Items, bestow Starving   ║
+║ 3.7.8.3 Passage     45% + Level    Grants a chance to find a new Room                     ║
+║ 3.7.8.4 Effects     30% + Level    Apply, or modify the rating of deleterious Effects     ║
+║ 3.7.8.5 Darkness    25% + Level    Deplete lighting Items or suffer in Darkness           ║
+║ 3.7.8.6 Spoilage    15% + Level    Food Items have a chance to become Spoiled             ║
+
+Risk Generation:
+║ Risk                    Chance         Description                                              ║
+║ ───────────────────────────────────────────────────────────────────────────               ║
+║ 4.2.1.1 Encounter       50% + Level    Meet the nest's denizens ()                                 ║
+║ 2.11.6.8 Item (Unknown) 30% + Level    Find as yet unidentified Food Items ()                      ║
+║ 3.7.9.3 Obstacle        20% + Level    Prevents further Exploration until removed ()               ║
+║ 3.7.9.5 Infection       10% + Level    Bestows the Infection Effect ()                             ║
+║ ───────────────────────────────────────────────────────────────────────────               ║
+
+Reward Generation:
+║ Reward                  Chance               Description                                           ║
+║ ────────────────────────────────────────────────────────────────────────────────────────  ║
+║ 3.7.10.1 Room           100% - Level         Spend a Room to Explore, Hunt or Forage ()               ║
+║ 3.7.10.2 Shortcut       Level - 50           Takes you closer to the Job Target ()                    ║
+║ 3.7.10.4 Item (Known)   25% + Level          Find a previously identified Food Item ()               ║
+║ 3.7.10.5 Resource       15% + Level          Materials to build a Shelter for Resting and Healing () ║
+║ 3.7.10.3 Level          10% + Level          Entrance to a new, deeper Nest Level ()                 ║
+║ 3.7.10.6 Secret         Perception - Level   Generates a random Cost, Risk or Reward. ()             ║
+║ ────────────────────────────────────────────────────────────────────────────────────────  ║
+
+Suppress DoS
+║ Degree of Success    Intimidate Outcome    Charm or Confuse Outcome                       ║
+║ ──────────────────────────────────────────────────────────────────────────────            ║
+║ Critical Success     Target Retreats       Bestow Charmed / Confused: d80                 ║
+║ Total Success	       Target Recoils        Bestow Charmed / Confused: d60                 ║
+║ Partial Success      Target Recoils        Bestow Charmed / Confused: d40                 ║
+║ Partial Failure      Target Holds          Bestow Confused: d40 on random Ally            ║
+║ Total Failure        Target Advances       Bestow Confused: d60 on random Ally            ║
+║ Critical Failure     Target Charges        Bestow Confused: d80 on random Ally            ║
+║ ────────────────────────────────────────────────────────────────────────────── 
+║ Action        Effort        Resistance    Static Modifiers                                ║
+║ ──────────────────────────────────────────────────────────────                            ║
+║ Charm         Charms        Passions      Smarts, Confused                                ║
+║ Confuse       Smarts        Ken           Leadership, Passions                            ║
+║ Intimidate    Signalling    Passions      Leadership, Swarming                            ║
+║ ──────────────────────────────────────────────────────────────   
+
+Support DoS
+║ Degree of Success    Rally or Encourage Outcome    Focus or Shake Outcome                 ║
+║ ───────────────────────────────────────────────────────────────────────────────────────── ║
+║ Critical Success     Ally Advances Thrice          Remove Effect and Shift Disposition Up ║
+║ Total Success        Ally Advances Twice           Remove Effect (reduce to 0%)           ║
+║ Partial Success      Ally Advances                 Reduce Effect (roll to decrease)       ║
+║ Partial Failure      Ally Holds                    Effect remains                         ║
+║ Total Failure        Ally Recoils                  Effect is enhanced (roll to increase)  ║
+║ Critical Failure     Ally Recoils Twice            Effect is maximised (set to 100%)      ║
+║ ───────────────────────────────────────────────────────────────────────────────────────── ║                                                                                          ║
+║ Action         Effort          Resistance      Static Modifiers                           ║
+║ ───────────────────────────────────────────────────────────────                           ║
+║ Encourage      Leadership      Passions        Smarts                                     ║
+║ Focus          Smarts          Confused        Charms                                     ║
+║ Rally          Leadership      Passions        Threat Rate                                ║
+║ Shake          Charms          Charmed         Passions                                   ║
+║ ───────────────────────────────────────────────────────────────                           ║
+
+Resist DoS
+║ Degree of Success        Outcome                                                          ║
+║ ───────────────────────────────────────────────────────────────                           ║
+║ Critical Success         Remove Effect and Shift Disposition Up                           ║
+║ Total Success            Remove Effect (reduce to 0%)                                     ║
+║ Partial Success          Reduce Effect (roll to decrease)                                 ║
+║ Partial Failure          Effect remains                                                   ║
+║ Total Failure            Effect is enhanced (roll to increase)                            ║
+║ Critical Failure         Effect is maximised (set to 100%)                                ║
+║ ───────────────────────────────────────────────────────────────                           ║                                                       ║
+║ Effect             Resist with                                                            ║
+║ ──────────────────────────────────────────────                                            ║
+║ Agony              Passions                                                               ║
+║ Bleeding           Stamina                                                                ║
+║ Blind              Smarts                                                                 ║
+║ Charmed            Passions                                                               ║
+║ Confused           Smarts                                                                 ║
+║ Immobilised        Strength                                                               ║
+║ Infected           Stamina                                                                ║
+║ Paralysed          None (cannot take Actions!)                                            ║
+║ Poisoned           Stamina                                                                ║
+║ Stunned            None (cannot resist!)                                                  ║
+║ ──────────────────────────────────────────────                                            ║
+
+Food Generation:
+║ 1. Generate the Item's Colour.                                                            ║
+║ d12 Result    Food Colour                                                                 ║
+║ ─────────────────────────                                                                 ║
+║ 1-2           Black                                                                       ║
+║ 3-4           Blue                                                                        ║
+║ 5-6           Green                                                                       ║
+║ 7-8           Red                                                                         ║
+║ 9-10           White                                                                       ║
+║ 11-12         Yellow                                                                      ║
+║ ─────────────────────────                                                                 ║
+║ Table 10: Food Colours                                                                    ║
+║ 2. Generate the Item's Food Type                                                          ║
+║ d8 Result    Food Type                                                                    ║
+║ ──────────────────────                                                                    ║
+║ 1-2          Nectar                                                                       ║
+║ 3-4          Honey                                                                        ║
+║ 5-6          Honeydew                                                                     ║
+║ 7-8          Fungus                                                                       ║
+║ ──────────────────────                                                                    ║
+║ Table 11: Food Types                                                                      ║
+║                                                                                           ║
+║ 3. Quantify the amount of the Item found.                                                 ║
+Generate a Food Item's Function:
+║ 1. Generate the Item's Condition.                                                         ║
+║ d10 Result  Condition   Description                                                       ║
+║ ──────────────────────────────────────────────────────────────────────────────────        ║
+║ 0-1         Ordinary    Nothing special, an ordinary Item                                 ║
+║ 2-3         Blessed     Roll to increase amount if Beneficial; decrease if Harmful        ║
+║ 4-5         Cursed      Roll to increase amount if Harmful; cannot be dropped             ║
+║ 6-7         Spoiled     May bestow Infected when consumed.                                ║
+║ 8-9         Nutritious  Roll twice to decrease Hunger when consumed.                      ║
+║ ──────────────────────────────────────────────────────────────────────────────────        ║
+║ Table 12: Item Conditions                                                                 ║
+║ 2. Generate the Item's Alignment.                                                         ║
+║ d6 Result    Item Alignment                                                               ║
+║ ───────────────────────────                                                               ║
+║ 1-3          Beneficial                                                                   ║
+║ 4-6          Harmful                                                                      ║
+║ ───────────────────────────                                                               ║
+║ Table 13: Item Alignment                                                                  ║
+║ 3. Generate the Item's Abilities                                                          ║
+║ d10 Result    Beneficial Ability                                                          ║
+║ ──────────────────────────────────────────────────────────────────────────────────────    ║
+║ 0             Healing - reduce Wounds by 1                                                ║
+║ 1             Relief - reduce one Effect's rating to 0% (choose the Effect at random)     ║
+║ 2             Restoration - reduce Wounds by 1, reduce a chosen Effect's rating to 0%     ║
+║ 3             Shielding - ignore the next 1 Wound                                         ║
+║ 4             Flight - gain Flying: d80                                                   ║
+║ 5             Armour - gain Carapace: d60                                                 ║
+║ 6             Courage - start next Combat in Advancing Disposition                        ║
+║ 7             Rage - start next Combat in Charging Disposition, take a Wound              ║
+║ 8             Venom - gain Venomous: d60, Attacks bestow Poisoned: d60                    ║
+║ 9             Clarity - +d80 to next Exploration, Foraging, Hunting or Perception Roll    ║
+║ ──────────────────────────────────────────────────────────────────────────────────────    ║
+║ Table 14: Beneficial Abilities                                                            ║
+║ d10 Result    Harmful Ability                                                             ║
+║ ───────────────────────────────────────────────                                           ║
+║ 0             Agony - gain Agony                                                          ║
+║ 1             Bleeding - gain Bleeding                                                    ║
+║ 2             Blindness - gain Blind                                                      ║
+║ 3             Charming - gain Charmed                                                     ║
+║ 4             Confusion - gain Confused                                                   ║
+║ 5             Immobilisation - gain Immobilised                                           ║
+║ 6             Infection - gain Infected                                                   ║
+║ 7             Paralysis - gain Paralysed                                                  ║
+║ 8             Poisonning - gain Poisoned                                                  ║
+║ 9             Stunning - gain Stunned                                                     ║
+║ ───────────────────────────────────────────────                                           ║
+║ Table 15: Harmful Abilities                                                               ║
