@@ -256,9 +256,9 @@ Also adjust Swarming Summons tables, as well as Swarming stats.
 
 ║ Encounter                             Chance         Description                          ║▓
 ║ ────────────────────────────────────────────────────────────────────────────────────      ║▓
-║ Juvenile Worker Termite               100% + Level   Younger Worker caste                 ║▓
-║ Worker Termite                        80% + Level    Worker caste                         ║▓
-║ Juvenile Minor Termite Soldier        50% + Level    Younger Soldier caste                ║▓
+║ Juvenile Worker Termite               100%           Younger Worker caste                 ║▓
+║ Worker Termite                        80%            Worker caste                         ║▓
+║ Juvenile Minor Termite Soldier        50%            Younger Soldier caste                ║▓
 ║ Minor Termite Soldier - Autothyte     25% + Level    Soldier caste                        ║▓
 ║ Juvenile Major Termite Soldier        15% + Level    Younger Bigger Soldier caste         ║▓
 ║ Juvenile Nasute Soldier               10% + Level    Younger Scarier soldier caste        ║▓
@@ -269,3 +269,19 @@ Also adjust Swarming Summons tables, as well as Swarming stats.
 ║ Alates - Queen, secondary             Level - 55%    Second in command                    ║▓
 ║ Alates - Queen, primary               Level - 70%    Big honcho. Common Job target        ║▓
 ║ ────────────────────────────────────────────────────────────────────────────────────      ║▓
+
+Thoughts: Have an "enemies" die that you roll in each level range?
+      Level Die
+	  0-20. d4
+	 21-40. d6
+     41-60. d8
+	 61-80. d10
+	81-100. d12
+Or: Have fixed numbers of enemies per level range.
+      Level Enemies
+      0-20. 2
+	 21-40. 4
+     41-60. 6
+	 61-80. 8
+	81-100. 10
+Have certain classes be fixed chance levels.
