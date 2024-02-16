@@ -134,39 +134,32 @@ Generate a Food Item's Function:
 ║ 8-9         Nutritious  Roll twice to decrease Hunger when consumed.                      ║
 ║ ──────────────────────────────────────────────────────────────────────────────────        ║
 ║ Table 12: Item Conditions                                                                 ║
-║ 2. Generate the Item's Alignment.                                                         ║
-║ d6 Result    Item Alignment                                                               ║
-║ ───────────────────────────                                                               ║
-║ 1-3          Beneficial                                                                   ║
-║ 4-6          Harmful                                                                      ║
-║ ───────────────────────────                                                               ║
-║ Table 13: Item Alignment                                                                  ║
-║ 3. Generate the Item's Abilities                                                          ║
-║ d10 Result    Beneficial Ability                                                          ║
+║ 2. Generate the Item's Alignment and Abilities                                            ║
+║ d20 Result    Beneficial Ability                                                          ║
 ║ ──────────────────────────────────────────────────────────────────────────────────────    ║
-║ 0             Healing - reduce Wounds by 1                                                ║
-║ 1             Relief - reduce one Effect's rating to 0% (choose the Effect at random)     ║
-║ 2             Restoration - reduce Wounds by 1, reduce a chosen Effect's rating to 0%     ║
-║ 3             Shielding - ignore the next 1 Wound                                         ║
-║ 4             Flight - gain Flying: d80                                                   ║
-║ 5             Armour - gain Carapace: d60                                                 ║
-║ 6             Courage - start next Combat in Advancing Disposition                        ║
-║ 7             Rage - start next Combat in Charging Disposition, take a Wound              ║
-║ 8             Venom - gain Venomous: d60, Attacks bestow Poisoned: d60                    ║
-║ 9             Clarity - +d80 to next Exploration, Foraging, Hunting or Perception Roll    ║
+║  1            Healing - reduce Wounds by 1                                                ║
+║  2            Relief - reduce one Effect's rating to 0% (choose the Effect at random)     ║
+║  3            Restoration - reduce Wounds by 1, reduce a chosen Effect's rating to 0%     ║
+║  4            Shielding - ignore the next 1 Wound                                         ║
+║  5            Flight - gain Flying: d80                                                   ║
+║  6            Armour - gain Carapace: d60                                                 ║
+║  7            Courage - start next Combat in Advancing Disposition                        ║
+║  7            Rage - start next Combat in Charging Disposition, take a Wound              ║
+║  9            Venom - gain Venomous: d60, Attacks bestow Poisoned: d60                    ║
+║ 10            Clarity - +d80 to next Exploration, Foraging, Hunting or Perception Roll    ║
 ║ ──────────────────────────────────────────────────────────────────────────────────────    ║
 ║ Table 14: Beneficial Abilities                                                            ║
-║ d10 Result    Harmful Ability                                                             ║
+║ d20 Result    Harmful Ability                                                             ║
 ║ ───────────────────────────────────────────────                                           ║
-║ 0             Agony - gain Agony                                                          ║
-║ 1             Bleeding - gain Bleeding                                                    ║
-║ 2             Blindness - gain Blind                                                      ║
-║ 3             Charming - gain Charmed                                                     ║
-║ 4             Confusion - gain Confused                                                   ║
-║ 5             Immobilisation - gain Immobilised                                           ║
-║ 6             Infection - gain Infected                                                   ║
-║ 7             Paralysis - gain Paralysed                                                  ║
-║ 8             Poisonning - gain Poisoned                                                  ║
-║ 9             Stunning - gain Stunned                                                     ║
+║ 11             Agony - gain Agony                                                         ║
+║ 12             Bleeding - gain Bleeding                                                   ║
+║ 13             Blindness - gain Blind                                                     ║
+║ 14            Charming - gain Charmed                                                     ║
+║ 15            Confusion - gain Confused                                                   ║
+║ 16            Immobilisation - gain Immobilised                                           ║
+║ 17            Infection - gain Infected                                                   ║
+║ 18            Paralysis - gain Paralysed                                                  ║
+║ 19            Poisonning - gain Poisoned                                                  ║
+║ 20            Stunning - gain Stunned                                                     ║
 ║ ───────────────────────────────────────────────                                           ║
 ║ Table 15: Harmful Abilities                                                               ║
