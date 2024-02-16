@@ -1,0 +1,101 @@
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔═►Nests & Insects◄═══════════════════════════════════════════════════════►Character Sheet◄═╗
+║ .......................................... ANTS ......................................... ║
+╠═►Attributes◄══════════════════════════════════════════════════════════════════════════════╣
+║  □ Speed.......:[_35%] □ Skill.......:[_55%] □ Strength....:[_30%] □ Stamina.....:[_30%]  ║
+║  □ Smarts......:[_45%] □ Charms......:[_45%] □ Ken.........:[_60%] □ Passions....:[_25%]  ║
+╠═►Combat Stats◄══════════╦═►Specific Abilities◄═══╦═►Effects◄══════════════════════════════╣
+║ Initiative......:[_35%] ║ □ Carapace.....:[___%] ║ Agony.......:[___%] Immobilised:[___%] ║
+║ Threat Rate.....:[_37%] ║ □ Flying.......:[___%] ║ Bleeding....:[___%] Infected...:[___%] ║
+║ Survival Rate...:[_44%] ║ □ Swarming.....:[_40%] ║ Blind.......:[___%] Paralysed..:[___%] ║
+║ Wounds/Max.....:[__/03] ║ □ Venomous.....:[___%] ║ Charmed.....:[___%] Poisoned...:[___%] ║
+║ Swarm/Max......:[__/04] ║ □ Web Weaving..:[___%] ║ Confused....:[___%] Stunned....:[___%] ║
+╠═►Luck◄══════════════════╩════════════════════════╩═══════════╦═►Food◄═════════════════════╣
+║ ○[00%]○[11%]○[22%]○[33%]○[44%]○[55%]○[66%]○[77%]○[88%]○[99%] ║ Hunger:[___%]..Starving: ○ ║
+╠═►Common Abilities◄════╦═►Inventory◄══════════════════════════╩════════════════════════════╣
+║ □ Construction:[_50%] ║─[Name & Rating]───────────────────────────┬[D]┬[S]┬[B]┬[L]┬[H]┬[C]║
+║ □ Eusociology.:[_60%] ║ Honeydew of Restoration___________ [_45%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Exploration.:[_40%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Foraging....:[_55%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Healing.....:[_40%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Hunting.....:[_25%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Leadership..:[_30%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Perception..:[_35%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Signalling..:[_45%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+║ □ Sneaking....:[_30%] ║ __________________________________ [___%] │ □ │ □ │ □ │ □ │ □ │ □ ║
+╠═[Advance ->]══════════╩══════════►Disposition Track◄═══════════════════════════[<-Recoil]═╣
+║ ○ Retreating ○ -40% ○ -30% ○ -20% ○ -10% ○ Holding ○ +10% ○ +20% ○ +30% ○ +40% ○ Charging ║
+╠═►Attacks◄═══════════════════════════════════╦═════════════════════════════════════════════╣
+║────────────────[Base Attack]─────────—──────║───────────────[Special Attack]──────────────║
+║ Name:...........................Bite Attack ║ Name:........................Swarm the Area ║
+║ Keywords:.........................Shredding ║ Keywords:.........Area, Shredding, Swarming ║
+║ Max. Range:...........................Close ║ Max. Range:.......Close Target (Close Area) ║
+║ Critical Hit:....Target takes 4W + 2W/Swarm ║ Critical Hit:.........Targets Take 2W/Swarm ║
+║ .............Target Bleeding d60, Blind d60 ║ ............Targets Bleeding d60, Blind d60 ║
+║ Total Hit:.......Target Takes 3W + 1W/Swarm ║ Total Hit:.............Targets Bleeding d60 ║
+║ ........................Target Bleeding d60 ║ .Main Target Takes 2W/Swarm, Others Take 3W ║
+║ Partial Hit:.....Target Takes 2W + 1W/Swarm ║ Partial Hit:...........Targets Bleeding d40 ║
+║ ........................Target Bleeding d40 ║ .Main Target Takes 1W/Swarm, Others Take 2W ║
+║ Partial Miss:.............................. ║ Partial Miss:..............Attacker Recoils ║
+║ ........................................... ║ ........................................... ║
+║ Total Miss:................Attacker Recoils ║ Total Miss:...............Attacker Takes 1W ║
+║ ........................................... ║ ...................Attacker Immobilised d40 ║
+║ Critical Miss:.......Attacker Recoils Twice ║ Critical Miss:............Attacker Takes 2W ║
+║ ........................................... ║ .......................Attacker Stunned d60 ║
+╠═►Reminders◄═════════════════════════════════╩═════════════════════════════════════════════╣
+║ When you gain XP, choose a feature and check □. When you roll doubles, set Luck bar...... ║
+║ Initiative = SPE+SMA+PAS/3, Threat Rate = SKI+STR+PAS/3, Survival Rate = SKI+STA+SMA/3... ║
+║ Max Wounds = STA/10. Max Swarm = Swarming/10. Disposition: +/- mod to all rolls in combat ║
+║ Items: [D]epleted, [S]poiled, [F]ood, [B]uilding, [L]ight. Diets: [H]erbivore/[C]arnivore ║
+╚═══════════════════════════════════════════════════════════════════════════════════════════╝
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+╔═►Nests & Insects◄══════════════════════════════════════════════════════════════►Rulebook◄═╗
+║                                                                                           ║
+║                                       2.5.0.0 Ants                                        ║
+║                                       ------------                                        ║
+║                                                                                           ║
+║ Pronouns: they/them/theirs                                                                ║
+║ --------------------------                                                                ║
+║                                                                                           ║
+║ Diet: Omnivore                                                                            ║
+║ --------------                                                                            ║
+║                                                                                           ║
+║ Description                                                                               ║
+║ -----------                                                                               ║
+║                                                                                           ║
+║ Ants are descended from wasps, an ancestry evident in their form that indeed resembles    ║
+║ that of a wingless wasp with geniculate (bent) antennae and a particularly narrow waist.  ║
+║                                                                                           ║
+║ Most Ants are eusocial, meaning that they live in nests with overlapping generations all  ║
+║ born of a single reproductive female, the Queen. Accordingly, Nests & Insects Ants        ║
+║ characters are a "swarm" of ten ants, rather than a single individual ant. When an Ants   ║
+║ character takes a Wound in Combat or otherwise, one ant is lost from the swarm. The       ║
+║ character suffers no penalties for Wounds, but if the character's Wounds reach their      ║
+║ maximum of 10, the character is killed as usual.                                          ║
+║                                                                                           ║
+║ The Ants character in Nests & Insects is modelled after army ants (of which there are     ║
+║ many species). The Ants character is blind and its individual ants represent soldiers of  ║
+║ their species, armed with powerful mandibles. When an Ants character attacks an enemy,    ║
+║ all the ants in the swarm pile on and try to take chunks out of their target.             ║
+║ Mechanically speaking, the Damage caused by Ants character attacks is a function of the   ║
+║ character's Wounds: the more Wounds, the more ants, the more Damage.                      ║
+║                                                                                           ║
+║ The downside of being a swarm is that an Ants character's Wounds cannot be replenished    ║
+║ with healing during Combat. Rather, the Ants character must actively summon new ants      ║
+║ using their Swarming ability, and only during the Resting and Healing minigame.           ║
+║                                                                                           ║
+║ Ants characters have no carapace and cannot fly.                                          ║
+║                                                                                           ║
+║ Choose this class:                                                                        ║
+║ ------------------                                                                        ║
+║                                                                                           ║
+║ If you want your character to be a swarm of Ants who attack with a flurry of bites and    ║
+║ don't mind taking Wounds.                                                                 ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+║                                                                                           ║
+╚═══════════════════════════════════════════-27-════════════════════════════════════════════╝
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
