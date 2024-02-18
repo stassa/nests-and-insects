@@ -285,3 +285,31 @@ Or: Have fixed numbers of enemies per level range.
 	 61-80. 8
 	81-100. 10
 Have certain classes be fixed chance levels.
+
+Reduce to 4 stats?
+Speed + Skill -> Speed
+Strength + Stamina -> Strength
+Smarts + Ken -> Ken
+Charms + Passions -> Passions
+
+old dets:
+spe+smatrt+pass = init
+Ski + str + pass = tr
+ski + sta + smar = sr
+Spe + Skill: 3
+Str + Sta: 2
+Smart + Ken: 2
+Charms + Passions: 2
+Old Spread: 25, 30, 30, 35, 45, 45, 55, 60
+New Spread: 25, 35, 45, 55
+         Ants Beetle Ladybug Scorpion Spider Wasp
+Speed    45   35     55      35       45     55
+Strength 25   55     45      55       35     45
+Ken      55   45     35      25       55     25
+Passions 35   25     25      45       25     35
+
+Need some kind of rules for how to travel between rooms
+	Speed determines how far you can go in one trip
+	Sneaking, Perception, Eusociology help you get through without encounters
+Need better rules for when and where they can camp & rest
+	Each entrance of a room needs to be secured before it can be used to rest?
