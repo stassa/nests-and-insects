@@ -108,19 +108,27 @@ Food Generation:
 ║ 3-4           Blue                                                                        ║
 ║ 5-6           Green                                                                       ║
 ║ 7-8           Red                                                                         ║
-║ 9-10           White                                                                       ║
+║ 9-10          White                                                                       ║
 ║ 11-12         Yellow                                                                      ║
 ║ ─────────────────────────                                                                 ║
 ║ Table 10: Food Colours                                                                    ║
 ║ 2. Generate the Item's Food Type                                                          ║
 ║ d8 Result    Food Type                                                                    ║
 ║ ──────────────────────                                                                    ║
-║ 1-2          Nectar                                                                       ║
-║ 3-4          Honey                                                                        ║
-║ 5-6          Honeydew                                                                     ║
-║ 7-8          Fungus                                                                       ║
+║ 1            Nectar                                                                       ║
+║ 2            Honey                                                                        ║
+║ 3            Honeydew                                                                     ║
+║ 4            Fungus                                                                       ║
 ║ ──────────────────────                                                                    ║
-║ Table 11: Food Types                                                                      ║
+║ Table 11: Herbivore Food Types                                                            ║
+║ d8 Result    Food Type                                                                    ║
+║ ──────────────────────                                                                    ║
+║ 5            Aphid                                                                        ║
+║ 6            Cricket                                                                      ║
+║ 7            Firefly                                                                      ║
+║ 8            Maggot                                                                       ║
+║ ──────────────────────                                                                    ║
+║ Table 11: Carnivore Food Types                                                            ║
 ║                                                                                           ║
 ║ 3. Quantify the amount of the Item found.                                                 ║
 Generate a Food Item's Function:
@@ -144,7 +152,7 @@ Generate a Food Item's Function:
 ║  5            Flight - gain Flying: d80                                                   ║
 ║  6            Armour - gain Carapace: d60                                                 ║
 ║  7            Courage - start next Combat in Advancing Disposition                        ║
-║  7            Rage - start next Combat in Charging Disposition, take a Wound              ║
+║  8            Rage - start next Combat in Charging Disposition, take a Wound              ║
 ║  9            Venom - gain Venomous: d60, Attacks bestow Poisoned: d60                    ║
 ║ 10            Clarity - +d80 to next Exploration, Foraging, Hunting or Perception Roll    ║
 ║ ──────────────────────────────────────────────────────────────────────────────────────    ║
