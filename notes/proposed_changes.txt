@@ -107,7 +107,7 @@ New Support Table: (Ally holds is now Partial Failure. Encourage & Rally now one
 ║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓                                                                                          ║▓
 ║ Action         Effort          Resistance      Static Modifiers                           ║▓
 ║ ───────────────────────────────────────────────────────────────                           ║▓
-║ Rally		 Leadership      Passions        Smarts		                            ║▓
+║ Rally          Leadership      Passions        Smarts                                     ║▓
 ║ Focus          Smarts          Confused        Charms                                     ║▓
 ║ Shake          Charms          Charmed         Passions                                   ║▓
 ║ ───────────────────────────────────────────────────────────────                           ║▓
@@ -118,8 +118,8 @@ Hunting and Foraging Minigame
 3. Each player makes a Roll with the room's Level Rating as the Resistance. The effort depends on what they are harvesting. For a carnivore's food, make a Hunting Roll. For an Herbivore's food, make a Foraging Roll. For a Building Resource, make a Construction Roll. If the roll fails, the Room is depleted of that item. If the roll succeeds, the resource is still plentiful. Either way, make a Quantification Roll to set the rating of the item or resource.
 Degree of Success      Hunt or Forage Outcome	     Salvage Outcome
 ║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
-║ Critical Success     Find Two of Item              Find Two of Building Resource	    ║▓
-║ Complete Success     Find Item       		     Find Building Resource                 ║▓
+║ Critical Success     Find Two of Item              Find Two of Building Resource          ║▓
+║ Complete Success     Find Item                     Find Building Resource                 ║▓
 ║ Partial Success      Find Item, Item is Depleted   Find Depleted Building Resource
 ║ Partial Failure      Find Spoiled Item             Find Nothing
 ║ Complete Failure     Nothing                       Room no longer has Resource
@@ -127,7 +127,7 @@ Degree of Success      Hunt or Forage Outcome	     Salvage Outcome
 ║ ───────────────────────────────────────────────────────────────────────────────────────── ║▓
 ║ Action         Effort          Resistance      Static Modifiers (Choose One)              ║▓
 ║ ───────────────────────────────────────────────────────────────                           ║▓
-║ Hunt		 Hunting         Room Level      Speed, Sneaking, Venomous, Web Weaving     ║▓
+║ Hunt           Hunting         Room Level      Speed, Sneaking, Venomous, Web Weaving     ║▓
 ║ Forage         Foraging        Room Level      Skill, Ken, Perception, Swarming           ║▓
 ║ Salvage        Construction    Room Level      Strength, Smarts, Swarming, Carapace       ║▓
 ║ ───────────────────────────────────────────────────────────────                           ║▓
