@@ -2,16 +2,15 @@
 ╔═►Nests & Insects◄═══════════════════════════════════════════════════════►Character Sheet◄═╗
 ║ .......................................... ANTS ......................................... ║
 ╠═►Attributes◄══════════════════════════════════════════════════════════════════════════════╣
-║  □ Speed.......:[_35%] □ Skill.......:[_55%] □ Strength....:[_30%] □ Stamina.....:[_30%]  ║
-║  □ Smarts......:[_45%] □ Charms......:[_45%] □ Ken.........:[_60%] □ Passions....:[_25%]  ║
+║  □ Speed.......:[_45%] □ Strength....:[_25%] □ Ken.........:[_55%] □ Passions....:[_35%]  ║
 ╠═►Combat Stats◄══════════╦═►Specific Abilities◄═══╦═►Effects◄══════════════════════════════╣
-║ Initiative......:[_35%] ║ □ Carapace.....:[___%] ║ Agony.......:[___%] Immobilised:[___%] ║
-║ Threat Rate.....:[_37%] ║ □ Flying.......:[___%] ║ Bleeding....:[___%] Infected...:[___%] ║
-║ Survival Rate...:[_44%] ║ □ Swarming.....:[_40%] ║ Blind.......:[___%] Paralysed..:[___%] ║
-║ Wounds/Max.....:[__/03] ║ □ Venomous.....:[___%] ║ Charmed.....:[___%] Poisoned...:[___%] ║
+║ Initiative......:[_45%] ║ □ Carapace.....:[___%] ║ Agony.......:[___%] Immobilised:[___%] ║
+║ Threat Rate.....:[_40%] ║ □ Flying.......:[___%] ║ Bleeding....:[___%] Infected...:[___%] ║
+║ Survival Rate...:[_50%] ║ □ Swarming.....:[_40%] ║ Blind.......:[___%] Paralysed..:[___%] ║
+║ Wounds/Max.....:[__/02] ║ □ Venomous.....:[___%] ║ Charmed.....:[___%] Poisoned...:[___%] ║
 ║ Swarm/Max......:[__/04] ║ □ Web Weaving..:[___%] ║ Confused....:[___%] Stunned....:[___%] ║
 ╠═►Luck◄══════════════════╩════════════════════════╩═══════════╦═►Food◄═════════════════════╣
-║ ○[00%]○[11%]○[22%]○[33%]○[44%]○[55%]○[66%]○[77%]○[88%]○[99%] ║ Hunger:[___%]..Starving: ○ ║
+║ ○[00%]X[11%]○[22%]○[33%]○[44%]○[55%]○[66%]○[77%]○[88%]○[99%] ║ Hunger:[___%]..Starving: ○ ║
 ╠═►Common Abilities◄════╦═►Inventory◄══════════════════════════╩════════════════════════════╣
 ║ □ Construction:[_50%] ║─[Name & Rating]───────────────────────────┬[D]┬[S]┬[B]┬[L]┬[H]┬[C]║
 ║ □ Eusociology.:[_60%] ║ Honeydew of Restoration___________ [_45%] │ □ │ □ │ □ │ □ │ □ │ □ ║
@@ -30,12 +29,12 @@
 ║ Name:...........................Bite Attack ║ Name:........................Swarm the Area ║
 ║ Keywords:.........................Shredding ║ Keywords:.........Area, Shredding, Swarming ║
 ║ Max. Range:...........................Close ║ Max. Range:.......Close Target (Close Area) ║
-║ Critical Hit:....Target takes 4W + 2W/Swarm ║ Critical Hit:.........Targets Take 2W/Swarm ║
+║ Critical Hit:....Target takes 3W + 1W/Swarm ║ Critical Hit:.........Targets Take 2W/Swarm ║
 ║ .............Target Bleeding d60, Blind d60 ║ ............Targets Bleeding d60, Blind d60 ║
-║ Total Hit:.......Target Takes 3W + 1W/Swarm ║ Total Hit:.............Targets Bleeding d60 ║
-║ ........................Target Bleeding d60 ║ .Main Target Takes 2W/Swarm, Others Take 3W ║
-║ Partial Hit:.....Target Takes 2W + 1W/Swarm ║ Partial Hit:...........Targets Bleeding d40 ║
-║ ........................Target Bleeding d40 ║ .Main Target Takes 1W/Swarm, Others Take 2W ║
+║ Total Hit:.....Target Takes 2W + (Swarm/2)W ║ Total Hit:.............Targets Bleeding d60 ║
+║ ........................Target Bleeding d60 ║ .Main Target Takes 2W/Swarm, Others Take 2W ║
+║ Partial Hit:...Target Takes 1W + (Swarm/2)W ║ Partial Hit:...........Targets Bleeding d40 ║
+║ ........................Target Bleeding d40 ║ .Main Target Takes 1W/Swarm, Others Take 1W ║
 ║ Partial Miss:.............................. ║ Partial Miss:..............Attacker Recoils ║
 ║ ........................................... ║ ........................................... ║
 ║ Total Miss:................Attacker Recoils ║ Total Miss:...............Attacker Takes 1W ║
@@ -44,7 +43,7 @@
 ║ ........................................... ║ .......................Attacker Stunned d60 ║
 ╠═►Reminders◄═════════════════════════════════╩═════════════════════════════════════════════╣
 ║ When you gain XP, choose a feature and check □. When you roll doubles, set Luck bar...... ║
-║ Initiative = SPE+SMA+PAS/3, Threat Rate = SKI+STR+PAS/3, Survival Rate = SKI+STA+SMA/3... ║
+║ Initiative = KEN+PAS/2, Threat Rate = SPE+PAS/2, Survival Rate = SPE+KEN/2............... ║
 ║ Max Wounds = STA/10. Max Swarm = Swarming/10. Disposition: +/- mod to all rolls in combat ║
 ║ Items: [D]epleted, [S]poiled, [F]ood, [B]uilding, [L]ight. Diets: [H]erbivore/[C]arnivore ║
 ╚═══════════════════════════════════════════════════════════════════════════════════════════╝

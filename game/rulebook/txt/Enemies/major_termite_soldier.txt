@@ -1,12 +1,12 @@
 ╔═►Nests & Insects◄═══════════════════════════════════════════════════════►Character Sheet◄═╗
 ║ ................................ Major Termite Soldiers ................................. ║
 ╠═►Attributes◄══════════════════════════════════════════════════════════════════════════════╣
-║  SPE:[_30%] SKI:[_30%] STR:[_60%] STA:[_60%] SMA:[_20%] CHA:[_20%] KEN:[_20%] PAS:[_50%]  ║
+║  □ Speed.......:[_35%] □ Strength....:[_60%] □ Ken.........:[_25%] □ Passions....:[_55%]  ║
 ╠═►Combat Stats◄══════════╦═►Specific Abilities◄═══╦═►Effects◄══════════════════════════════╣
-║ Initiative......:[_34%] ║ Carapace.......:[_60%] ║ Agony.......:[___%] Immobilised:[___%] ║
-║ Threat Rate.....:[_47%] ║ Flying.........:[___%] ║ Bleeding....:[___%] Infected...:[___%] ║
-║ Survival Rate...:[_37%] ║ Swarming.......:[_45%] ║ Blind.......:[100%] Paralysed..:[___%] ║
-║ Wounds/Max.....:[__/05] ║ Venomous.......:[___%] ║ Charmed.....:[___%] Poisoned...:[___%] ║
+║ Initiative......:[_40%] ║ Carapace.......:[_60%] ║ Agony.......:[___%] Immobilised:[___%] ║
+║ Threat Rate.....:[_45%] ║ Flying.........:[___%] ║ Bleeding....:[___%] Infected...:[___%] ║
+║ Survival Rate...:[_30%] ║ Swarming.......:[_45%] ║ Blind.......:[100%] Paralysed..:[___%] ║
+║ Wounds/Max.....:[__/06] ║ Venomous.......:[___%] ║ Charmed.....:[___%] Poisoned...:[___%] ║
 ║ Swarm/Max......:[__/__] ║ Web Weaving....:[___%] ║ Confused....:[___%] Stunned....:[___%] ║
 ╠═[Advance ->]════════════╩════►Disposition Track◄═╩═════════════════════════════[<-Recoil]═╣
 ║      ○ -50% ○ -40% ○ -30% ○ -20% ○ -10% ○ Holding ○ +10% ○ +20% ○ +30% ○ +40% ○ +50%      ║

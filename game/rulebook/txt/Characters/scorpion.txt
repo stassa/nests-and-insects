@@ -2,16 +2,15 @@
 ╔═►Nests & Insects◄═══════════════════════════════════════════════════════►Character Sheet◄═╗
 ║......................................... SCORPION ........................................║
 ╠═►Attributes◄══════════════════════════════════════════════════════════════════════════════╣
-║  □ Speed.......:[_45%] □ Skill.......:[_25%] □ Strength....:[_45%] □ Stamina.....:[_55%]  ║
-║  □ Smarts......:[_35%] □ Charms......:[_30%] □ Ken.........:[_30%] □ Passions....:[_60%]  ║
+║  □ Speed.......:[_35%] □ Strength....:[_45%] □ Ken.........:[_25%] □ Passions....:[_55%]  ║
 ╠═►Combat Stats◄══════════╦═►Specific Abilities◄═══╦═►Effects◄══════════════════════════════╣
-║ Initiative......:[_47%] ║ □ Carapace.....:[_20%] ║ Agony.......:[___%] Immobilised:[___%] ║
-║ Threat Rate.....:[_43%] ║ □ Flying.......:[___%] ║ Bleeding....:[___%] Infected...:[___%] ║
-║ Survival Rate...:[_39%] ║ □ Swarming.....:[___%] ║ Blind.......:[___%] Paralysed..:[___%] ║
-║ Wounds/Max.....:[__/06] ║ □ Venomous.....:[_20%] ║ Charmed.....:[___%] Poisoned...:[___%] ║
+║ Initiative......:[_40%] ║ □ Carapace.....:[_20%] ║ Agony.......:[___%] Immobilised:[___%] ║
+║ Threat Rate.....:[_45%] ║ □ Flying.......:[___%] ║ Bleeding....:[___%] Infected...:[___%] ║
+║ Survival Rate...:[_30%] ║ □ Swarming.....:[___%] ║ Blind.......:[___%] Paralysed..:[___%] ║
+║ Wounds/Max.....:[__/04] ║ □ Venomous.....:[_20%] ║ Charmed.....:[___%] Poisoned...:[___%] ║
 ║ Swarm/Max......:[__/__] ║ □ Web Weaving..:[___%] ║ Confused....:[___%] Stunned....:[___%] ║
 ╠═►Luck◄══════════════════╩════════════════════════╩═══════════╦═►Food◄═════════════════════╣
-║ ○[00%]○[11%]○[22%]○[33%]○[44%]○[55%]○[66%]○[77%]○[88%]○[99%] ║ Hunger:[___%]..Starving: ○ ║
+║ ○[00%]X[11%]○[22%]○[33%]○[44%]○[55%]○[66%]○[77%]○[88%]○[99%] ║ Hunger:[___%]..Starving: ○ ║
 ╠═►Common Abilities◄════╦═►Inventory◄══════════════════════════╩════════════════════════════╣
 ║ □ Construction:[_40%] ║─[Name & Rating]───────────────────────────┬[D]┬[S]┬[B]┬[L]┬[H]┬[C]║
 ║ □ Eusociology.:[_30%] ║ Crickets__________________________ [_45%] │ □ │ □ │ □ │ □ │ □ │ X ║
@@ -30,11 +29,11 @@
 ║ Name:.........................Pincer Attack ║ Name:........................Stinger Attack ║
 ║ Keywords:..........................Crushing ║ Keywords:........Piercing, Venomous, Lethal ║
 ║ Max. Range:...........................Close ║ Max. Range:...........................Close ║
-║ Critical Hit:...............Target Takes 3W ║ Critical Hit:...........Target in Agony d80 ║
-║ ................Target Recoils, Stunned d60 ║ .............Target Killed (Swarms take 3W) ║
-║ Total Hit:..................Target Takes 2W ║ Total Hit:..................Target Takes 2W ║
+║ Critical Hit:...............Target Takes 4W ║ Critical Hit:...........Target in Agony d80 ║
+║ ................Target Recoils, Stunned d60 ║ .............Target Killed (Swarms take 4W) ║
+║ Total Hit:..................Target Takes 3W ║ Total Hit:..................Target Takes 3W ║
 ║ .........................Target Stunned d60 ║ ........................Target in Agony d60 ║
-║ Partial Hit:................Target Takes 1W ║ Partial Hit:................Target Takes 2W ║
+║ Partial Hit:................Target Takes 2W ║ Partial Hit:................Target Takes 2W ║
 ║ .............................Target Recoils ║ .....................Target Immobilised d40 ║
 ║ Partial Miss:..............Attacker Recoils ║ Partial Miss.:.............Attacker Recoils ║
 ║ ........................................... ║ ........................................... ║
@@ -44,7 +43,7 @@
 ║ ........................................... ║ .......................Attacker Stunned d60 ║
 ╠═►Reminders◄═════════════════════════════════╩═════════════════════════════════════════════╣
 ║ When you gain XP, choose a feature and check □. When you roll doubles, set Luck bar...... ║
-║ Initiative = SPE+SMA+PAS/3, Threat Rate = SKI+STR+PAS/3, Survival Rate = SKI+STA+SMA/3... ║
+║ Initiative = KEN+PAS/2, Threat Rate = SPE+PAS/2, Survival Rate = SPE+KEN/2............... ║
 ║ Max Wounds = STA/10. Max Swarm = Swarming/10. Disposition: +/- mod to all rolls in combat ║
 ║ Items: [D]epleted, [S]poiled, [F]ood, [B]uilding, [L]ight. Diets: [H]erbivore/[C]arnivore ║
 ╚═══════════════════════════════════════════════════════════════════════════════════════════╝

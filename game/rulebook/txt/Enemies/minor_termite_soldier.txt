@@ -2,12 +2,13 @@
 ║ ................................ Minor Termite Soldiers ................................. ║
 ╠═►Attributes◄══════════════════════════════════════════════════════════════════════════════╣
 ║  SPE:[_40%] SKI:[_40%] STR:[_40%] STA:[_40%] SMA:[_20%] CHA:[_20%] KEN:[_20%] PAS:[_20%]  ║
+║  □ Speed.......:[_60%] □ Strength....:[_40%] □ Ken.........:[_20%] □ Passions....:[_30%]  ║
 ╠═►Combat Stats◄══════════╦═►Specific Abilities◄═══╦═►Effects◄══════════════════════════════╣
-║ Initiative......:[_27%] ║ Carapace.......:[_40%] ║ Agony.......:[___%] Immobilised:[___%] ║
-║ Threat Rate.....:[_34%] ║ Flying.........:[___%] ║ Bleeding....:[___%] Infected...:[___%] ║
-║ Survival Rate...:[_34%] ║ Swarming.......:[_70%] ║ Blind.......:[100%] Paralysed..:[___%] ║
+║ Initiative......:[_25%] ║ Carapace.......:[_40%] ║ Agony.......:[___%] Immobilised:[___%] ║
+║ Threat Rate.....:[_45%] ║ Flying.........:[___%] ║ Bleeding....:[___%] Infected...:[___%] ║
+║ Survival Rate...:[_40%] ║ Swarming.......:[_70%] ║ Blind.......:[100%] Paralysed..:[___%] ║
 ║ Wounds/Max.....:[__/04] ║ Venomous.......:[___%] ║ Charmed.....:[___%] Poisoned...:[___%] ║
-║ Swarm/Max......:[__/06] ║ Web Weaving....:[___%] ║ Confused....:[___%] Stunned....:[___%] ║
+║ Swarm/Max......:[__/07] ║ Web Weaving....:[___%] ║ Confused....:[___%] Stunned....:[___%] ║
 ╠═[Advance ->]════════════╩════►Disposition Track◄═╩═════════════════════════════[<-Recoil]═╣
 ║      ○ -50% ○ -40% ○ -30% ○ -20% ○ -10% ○ Holding ○ +10% ○ +20% ○ +30% ○ +40% ○ +50%      ║
 ╠═►Attacks◄═══════════════════════════════════╦═════════════════════════════════════════════╣
@@ -15,11 +16,11 @@
 ║ Name:.......................Mandible Attack ║ Name:............................Autothysis ║
 ║ Keywords:..........................Crushing ║ Keywords:..............Area Attack, Noxious ║
 ║ Max. Range:...........................Close ║ Max. Range:.............Close (Medium Area) ║
-║ Critical Hit:...............Target Takes 3W ║ Critical Hit:.............Attacker takes 1W ║
+║ Critical Hit:...............Target Takes 4W ║ Critical Hit:.............Attacker takes 1W ║
 ║ .....................Target Immobilised d60 ║ ......Targets take 2W, 1 Random Target Dies ║
-║ Total Hit:..................Target Takes 2W ║ Total Hit:................Attacker Takes 1W ║
+║ Total Hit:..................Target Takes 3W ║ Total Hit:................Attacker Takes 1W ║
 ║ .....................Target Immobilised d40 ║ ...........Targets Take 1W, Immobilised d40 ║
-║ Partial Hit:................Target Takes 1W ║ Partial Hit:........Targets Immobilised d20 ║
+║ Partial Hit:................Target Takes 2W ║ Partial Hit:........Targets Immobilised d20 ║
 ║ .....................Target Immobilised d20 ║ ..........................Attacker Takes 1W ║
 ║ Partial Miss:..............Attacker Recoils ║ Partial Miss:.............Attacker Takes 1W ║
 ║ ........................................... ║ ........................................... ║

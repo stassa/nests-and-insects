@@ -1,11 +1,11 @@
 ╔═►Nests & Insects◄═══════════════════════════════════════════════════════►Character Sheet◄═╗
 ║ ................................ Nasute Termite Soldier ................................. ║
 ╠═►Attributes◄══════════════════════════════════════════════════════════════════════════════╣
-║  SPE:[_60%] SKI:[_60%] STR:[_50%] STA:[_50%] SMA:[_30%] CHA:[_30%] KEN:[_30%] PAS:[_55%]  ║
+║  □ Speed.......:[_60%] □ Strength....:[_50%] □ Ken.........:[_30%] □ Passions....:[_50%]  ║
 ╠═►Combat Stats◄══════════╦═►Specific Abilities◄═══╦═►Effects◄══════════════════════════════╣
-║ Initiative......:[_49%] ║ Carapace.......:[_70%] ║ Agony.......:[___%] Immobilised:[___%] ║
+║ Initiative......:[_40%] ║ Carapace.......:[_70%] ║ Agony.......:[___%] Immobilised:[___%] ║
 ║ Threat Rate.....:[_55%] ║ Flying.........:[___%] ║ Bleeding....:[___%] Infected...:[___%] ║
-║ Survival Rate...:[_47%] ║ Swarming.......:[_40%] ║ Blind.......:[100%] Paralysed..:[___%] ║
+║ Survival Rate...:[_45%] ║ Swarming.......:[_40%] ║ Blind.......:[100%] Paralysed..:[___%] ║
 ║ Wounds/Max.....:[__/05] ║ Venomous.......:[___%] ║ Charmed.....:[___%] Poisoned...:[___%] ║
 ║ Swarm/Max......:[__/__] ║ Web Weaving....:[___%] ║ Confused....:[___%] Stunned....:[___%] ║
 ╠═[Advance ->]════════════╩════►Disposition Track◄═╩═════════════════════════════[<-Recoil]═╣

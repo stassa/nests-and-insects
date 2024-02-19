@@ -2,16 +2,15 @@
 ╔═►Nests & Insects◄═══════════════════════════════════════════════════════►Character Sheet◄═╗
 ║.......................................... SPIDER .........................................║
 ╠═►Attributes◄══════════════════════════════════════════════════════════════════════════════╣
-║  □ Speed.......:[_55%] □ Skill.......:[_35%] □ Strength....:[_45%] □ Stamina.....:[_25%]  ║
-║  □ Smarts......:[_60%] □ Charms......:[_30%] □ Ken.........:[_45%] □ Passions....:[_30%]  ║
+║  □ Speed.......:[_45%] □ Strength....:[_35%] □ Ken.........:[_55%] □ Passions....:[_25%]  ║
 ╠═►Combat Stats◄══════════╦═►Specific Abilities◄═══╦═►Effects◄══════════════════════════════╣
-║ Initiative......:[_49%] ║ □ Carapace.....:[___%] ║ Agony.......:[___%] Immobilised:[___%] ║
-║ Threat Rate.....:[_37%] ║ □ Flying.......:[___%] ║ Bleeding....:[___%] Infected...:[___%] ║
-║ Survival Rate...:[_40%] ║ □ Swarming.....:[___%] ║ Blind.......:[___%] Paralysed..:[___%] ║
+║ Initiative......:[_40%] ║ □ Carapace.....:[___%] ║ Agony.......:[___%] Immobilised:[___%] ║
+║ Threat Rate.....:[_35%] ║ □ Flying.......:[___%] ║ Bleeding....:[___%] Infected...:[___%] ║
+║ Survival Rate...:[_50%] ║ □ Swarming.....:[___%] ║ Blind.......:[___%] Paralysed..:[___%] ║
 ║ Wounds/Max.....:[__/03] ║ □ Venomous.....:[_20%] ║ Charmed.....:[___%] Poisoned...:[___%] ║
 ║ Swarm/Max......:[__/__] ║ □ Web Weaving..:[_20%] ║ Confused....:[___%] Stunned....:[___%] ║
 ╠═►Luck◄══════════════════╩════════════════════════╩═══════════╦═►Food◄═════════════════════╣
-║ ○[00%]○[11%]○[22%]○[33%]○[44%]○[55%]○[66%]○[77%]○[88%]○[99%] ║ Hunger:[___%]..Starving: ○ ║
+║ ○[00%]X[11%]○[22%]○[33%]○[44%]○[55%]○[66%]○[77%]○[88%]○[99%] ║ Hunger:[___%]..Starving: ○ ║
 ╠═►Common Abilities◄════╦═►Inventory◄══════════════════════════╩════════════════════════════╣
 ║ □ Construction:[_50%] ║─[Name & Rating]───────────────────────────┬[D]┬[S]┬[B]┬[L]┬[H]┬[C]║
 ║ □ Eusociology.:[_25%] ║ Firefly___________________________ [_45%] │ □ │ □ │ □ │ X │ □ │ X ║
@@ -31,11 +30,11 @@
 ║ Keywords:.......Piercing, Venomous, Healing ║ Keywords:.................................. ║
 ║ Max. Range:...........Close (Enemy or Ally) ║ Max. Range:................................ ║
 ║ Critical Hit:.......Ally Heals 3W, Advances ║ Critical Hit:.............................. ║
-║ ..............Enemy Takes 4W, Paralysed d80 ║ ........................................... ║
+║ ..............Enemy Takes 3W, Paralysed d80 ║ ........................................... ║
 ║ Total Hit:....................Ally Heals 2W ║ Total Hit:................................. ║
-║ ..............Enemy Takes 3W, Paralysed d60 ║ ........................................... ║
+║ ..............Enemy Takes 2W, Paralysed d60 ║ ........................................... ║
 ║ Partial Hit::.................Ally Heals 1W ║ Partial Hit:............................... ║
-║ ............Enemy Takes 2W, Immobilised d60 ║ ........................................... ║
+║ ............Enemy Takes 1W, Immobilised d60 ║ ........................................... ║
 ║ Partial Miss:..............Attacker Recoils ║ Partial Miss:.............................. ║
 ║ ........................................... ║ ........................................... ║
 ║ Total Miss:..........Attacker Recoils Twice ║ Total Miss:................................ ║
@@ -44,7 +43,7 @@
 ║ .......................Attacker Stunned d60 ║ ........................................... ║
 ╠═►Reminders◄═════════════════════════════════╩═════════════════════════════════════════════╣
 ║ When you gain XP, choose a feature and check □. When you roll doubles, set Luck bar...... ║
-║ Initiative = SPE+SMA+PAS/3, Threat Rate = SKI+STR+PAS/3, Survival Rate = SKI+STA+SMA/3... ║
+║ Initiative = KEN+PAS/2, Threat Rate = SPE+PAS/2, Survival Rate = SPE+KEN/2............... ║
 ║ Max Wounds = STA/10. Max Swarm = Swarming/10. Disposition: +/- mod to all rolls in combat ║
 ║ Items: [D]epleted, [S]poiled, [F]ood, [B]uilding, [L]ight. Diets: [H]erbivore/[C]arnivore ║
 ╚═══════════════════════════════════════════════════════════════════════════════════════════╝
