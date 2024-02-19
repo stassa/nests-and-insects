@@ -302,14 +302,115 @@ Smart + Ken: 2
 Charms + Passions: 2
 Old Spread: 25, 30, 30, 35, 45, 45, 55, 60
 New Spread: 25, 35, 45, 55
-         Ants Beetle Ladybug Scorpion Spider Wasp
-Speed    45   35     55      35       45     55
-Strength 25   55     45      55       35     45
-Ken      55   45     35      25       55     25
-Passions 35   25     25      45       25     35
+			SPE	STR	KEN	PAS
+Ants		45	25	55	35
+Beetle		35	55	45	25
+Ladybug		55	45	25	35
+Scorpion	35	45	25	55
+Spider		45	35	55	25
+Wasp		55	45	25	35
 
 Need some kind of rules for how to travel between rooms
 	Speed determines how far you can go in one trip
 	Sneaking, Perception, Eusociology help you get through without encounters
+	Need to be Costs & Risks to travel as well. Player characters are not in every room all the time. Players can secure rooms to cause them to not
+	Maybe not use a static number for how far you can go, just look at how many connections you have to travel through.
+║ Name of the Minigame: ............... Travel                                              ║
+║ Participating Entities: ............. One or more Characters                              ║
+║ List of Minigame Intents: ........... Move from one Room to another                       ║
+║ List of Minigame Actions: ........... Travel                                              ║
+║ Effort Variables: ................... Speed                                               ║
+║ Resistance Variables: ............... (Highest Room Level + Number of Connections)        ║
+║ Modifier Variables: ................. Sneaking, Exploration                               ║
+║                                                                                           ║
+║ Outcomes of the six Degrees of Success and Failure:                                       ║
+║                                                                                           ║
+║ Degree of Success            Outcome                                                      ║
+║ ───────────────────────────────────────────────────                                       ║
+║ Critical Success                                                                          ║
+║ Total Success                Risk                                                         ║
+║ Partial Success              Cost, Risk                                                   ║
+║ Partial Failure              Cost, Risk, Risk                                             ║
+║ Total Failure                Cost, Cost, Risk                                             ║
+║ Critical Failure             Cost, Cost, Cost                                             ║
+║ ───────────────────────────────────────────────────                                       ║
+Resistance = Highest Level Room passed through + # of Rooms being traveled through. Roll Speed + Sneaking + Exploration
 Need better rules for when and where they can camp & rest
 	Each entrance of a room needs to be secured before it can be used to rest?
+
+If Speed is tied to movement speed, then it really can't also be tied to initiative AND threat rate AND survival rate. It just becomes the only stat worth investing in.
+New Determinations:
+Speed + Passions = Init
+Strength + Passions = Threat Rate
+Strength + Smarts = Survival Rate
+Max Wounds = Strength / 10
+Movement = Speed / 10
+Max Swarm = Swarming / 10
+
+Sources of Experience:
+Discover a new room
+Encounter
+Identify an unknown item
+Overcome an Obstacle
+Discover a new Level.
+
+Uses for Smarts:
+- Resist Confused
+- Bestow Confused
+- Modifier to Charm
+- Suppress an Ally's Confused
+- Resist Blind
+- Resist a Manoeuver Action for one character to signal another for a weak spot
+- Part of Initiative + Survival Rate
+
+Uses for Ken:
+- Identify unknown items
+- Resist Confused
+- Manoeuver to direct an ally to where an enemy was hit before
+
+New Uses for Ken (bundled):
+- Bestow, Resist, and Suppress Confused
+- A character's Ken is a negative modifier applied to any roll to bestow Charmed on them.
+- Resist Blind
+- Survival Rate calculation
+- Manoeuver Action: Roll Ken + Signalling vs. Ken to direct an ally to where an enemy has been hit before.
+- Identify Unknown Items
+
+Uses for Speed:
+- Initiative
+- Movement
+- Travel
+- "Give an enemy the old run-around"
+
+Uses for Strength:
+- Resist Immobilised
+- Lift an enemy off the ground and throw her behind her allies' lines: roll Strength vs. Strength
+- Lift an enemy off the ground, carry her, flying, behind her allies lines and drop her there: Roll Flying + Strength vs. the enemy's Strength
+- Resist Bleeding, Infected, Poisoned
+- Eat spoiled items
+- Threat Rate
+- Survival Rate
+- Maximum Wounds
+
+Uses for Passions:
+- Roll Passions vs. Passions to bestow Charmed
+- Roll Passions vs. Charmed to remove Charmed
+- Resist Agony
+- Roll Signalling vs. Passions to Intimidate
+- Static Modifier to Confuse action
+- Resistance to Rally the character
+- Resistance to Shake the character
+- Resist Charmed
+- Initiative
+- Threat Rate
+
+Should insert section to better describe skills.
+
+Speed + Smarts
+Smarts + Passions
+Speed + Passions
+
+Initiative: Ken + Passions (Assessment of the situation + Warrior Spirit)
+Threat Rate: Speed + Passions (Swiftness & Skill + Warrior Spirit)
+Survival Rate: Speed + Ken (Mobility & Combat Analysis)
+Strength is used to determine how many wounds you can survive, and how much damage your attacks do.
