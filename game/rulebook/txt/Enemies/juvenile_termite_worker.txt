@@ -3,10 +3,10 @@
 ╠═►Attributes◄══════════════════════════════════════════════════════════════════════════════╣
 ║  □ Speed.......:[_15%] □ Strength....:[_15%] □ Ken.........:[__5%] □ Passions....:[__5%]  ║
 ╠═►Combat Stats◄══════════╦═►Specific Abilities◄═══╦═►Effects◄══════════════════════════════╣
-║ Initiative......:[__9%] ║ Carapace.......:[___%] ║ Agony.......:[___%] Immobilised:[___%] ║
-║ Threat Rate.....:[_12%] ║ Flying.........:[___%] ║ Bleeding....:[___%] Infected...:[___%] ║
-║ Survival Rate...:[_12%] ║ Swarming.......:[_95%] ║ Blind.......:[100%] Paralysed..:[___%] ║
-║ Wounds/Max.....:[__/02] ║ Venomous.......:[___%] ║ Charmed.....:[___%] Poisoned...:[___%] ║
+║ Initiative......:[__5%] ║ Carapace.......:[___%] ║ Agony.......:[___%] Immobilised:[___%] ║
+║ Threat Rate.....:[__7%] ║ Flying.........:[___%] ║ Bleeding....:[___%] Infected...:[___%] ║
+║ Survival Rate...:[__7%] ║ Swarming.......:[_95%] ║ Blind.......:[100%] Paralysed..:[___%] ║
+║ Wounds/Max.....:[__/01] ║ Venomous.......:[___%] ║ Charmed.....:[___%] Poisoned...:[___%] ║
 ║ Swarm/Max(d10).:[__/__] ║ Web Weaving....:[___%] ║ Confused....:[___%] Stunned....:[___%] ║
 ╠═[Advance ->]════════════╩════►Disposition Track◄═╩═════════════════════════════[<-Recoil]═╣
 ║ ○ Retreating ○ -40% ○ -30% ○ -20% ○ -10% ○ Holding ○ +10% ○ +20% ○ +30% ○ +40% ○ Charging ║
