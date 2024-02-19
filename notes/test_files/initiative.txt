@@ -1,0 +1,20 @@
+
+Name     Init Disp  W/Max Sw/Max Effects
+Ants      45  +00%   2/2    4/4  
+Spider    40  +00%   3/3    -/-  
+Scorpion  40  +00%   4/4    -/-  
+Beetle    35  +00%   5/5    -/-  
+Wasp      30  +00%   4/4    -/-  
+Ladybug   30  +00%   4/4    -/-  
+
+
+
+Name     Init Disp  W/Max Sw/Max Effects
+J. Work   05  +00%   1/1  00/d10 
+Worker    10  +00%   2/2  00/d20 
+J. Minor  20  +00%   3/3   8/8   
+Minor     25  +00%   4/4   7/7   
+J. Major  30  +00%   4/4   5/5   
+Major     40  +00%   6/6   4/4   
+J. Nas    32  +00%   4/4   4/4   
+Nasute    40  +00%   5/5   4/4   

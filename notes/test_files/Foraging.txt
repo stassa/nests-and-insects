@@ -1,0 +1,31 @@
+Known Food Items:
+1. Honeydew of Restoration
+2. Nectar of Shielding
+3. Aphids
+4. Crickets
+5. Firefly
+6. Nectar of Healing
+
+Hunting:
+Spider 60
+Scorpion 50
+Ladybug 50
+Ants 25
+Beetle 25
+Wasp 25
+
+Foraging:
+Ants 55
+Wasp 55
+Beetle 50
+Scorpion 35
+Spider 30
+Ladybug 30
+
+Construction:
+Beetle 60
+Ladybug 60
+Spider 50
+Wasp 50
+Ants 50
+Scorpion 40
