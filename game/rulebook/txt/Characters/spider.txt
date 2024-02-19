@@ -26,21 +26,21 @@
 ║ ○ Retreating ○ -40% ○ -30% ○ -20% ○ -10% ○ Holding ○ +10% ○ +20% ○ +30% ○ +40% ○ Charging ║
 ╠═►Attacks◄═══════════════════════════════════╦═════════════════════════════════════════════╣
 ║────────────────[Base Attack]─────────—──────║───────────────[Special Attack]──────────────║
-║ Name:...........................Bite Attack ║ Name:...................................... ║
-║ Keywords:.......Piercing, Venomous, Healing ║ Keywords:.................................. ║
-║ Max. Range:...........Close (Enemy or Ally) ║ Max. Range:................................ ║
-║ Critical Hit:.......Ally Heals 3W, Advances ║ Critical Hit:.............................. ║
-║ ..............Enemy Takes 3W, Paralysed d80 ║ ........................................... ║
-║ Total Hit:....................Ally Heals 2W ║ Total Hit:................................. ║
+║ Name:...........................Bite Attack ║ Name:............................Web Attack ║
+║ Keywords:.......Piercing, Venomous, Healing ║ Keywords:............Area Attack, Ensnaring ║
+║ Max. Range:...........Close (Enemy or Ally) ║ Max. Range:.............Medium (Close Area) ║
+║ Critical Hit:.......Ally Heals 3W, Advances ║ Critical Hit:.......Targets Immobilised d40 ║
+║ ..............Enemy Takes 3W, Paralysed d80 ║ .......................Targets Poisoned d40 ║
+║ Total Hit:....................Ally Heals 2W ║ Total Hit:..........Targets Immobilised d40 ║
 ║ ..............Enemy Takes 2W, Paralysed d60 ║ ........................................... ║
-║ Partial Hit::.................Ally Heals 1W ║ Partial Hit:............................... ║
+║ Partial Hit::.................Ally Heals 1W ║ Partial Hit:........Targets Immobilised d20 ║
 ║ ............Enemy Takes 1W, Immobilised d60 ║ ........................................... ║
-║ Partial Miss:..............Attacker Recoils ║ Partial Miss:.............................. ║
+║ Partial Miss:..............Attacker Recoils ║ Partial Miss:..............Attacker Recoils ║
 ║ ........................................... ║ ........................................... ║
-║ Total Miss:..........Attacker Recoils Twice ║ Total Miss:................................ ║
-║ ........................................... ║ ........................................... ║
-║ Critical Misss:............Attacker Recoils ║ Critical Miss:............................. ║
-║ .......................Attacker Stunned d60 ║ ........................................... ║
+║ Total Miss:..........Attacker Recoils Twice ║ Total Miss:................Attacker Recoils ║
+║ ........................................... ║ ...................Attacker Immobilised d40 ║
+║ Critical Miss:.............Attacker Recoils ║ Critical Miss:.......Attacker Recoils Twice ║
+║ .......................Attacker Stunned d60 ║ ...................Attacker Immobilised d60 ║
 ╠═►Reminders◄═════════════════════════════════╩═════════════════════════════════════════════╣
 ║ When you gain XP, choose a feature and check □. When you roll doubles, set Luck bar...... ║
 ║ Initiative = KEN+PAS/2, Threat Rate = SPE+PAS/2, Survival Rate = SPE+KEN/2............... ║
